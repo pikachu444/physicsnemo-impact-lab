@@ -30,6 +30,13 @@ def probe(label, network):
               "disk_bytes": {"total": disk.total, "free": disk.free},
               "nvidia_smi": command(["nvidia-smi", "--query-gpu=name,memory.total,driver_version", "--format=csv"]),
               "cuda_compiler": command(["nvcc", "--version"])}
+    if platform.system() == "Linux":
+        result["linux_gpu_devices"] = [str(p) for p in Path("/dev").glob("nvidia*")]
+        result["cgroup_limits"] = {}
+        for filename in ("memory.max", "cpu.max"):
+            path = Path("/sys/fs/cgroup") / filename
+            if path.exists():
+                result["cgroup_limits"][filename] = path.read_text().strip()
     try:
         import psutil
         mem = psutil.virtual_memory()

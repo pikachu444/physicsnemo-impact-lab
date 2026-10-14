@@ -1,0 +1,7 @@
+{
+  "source": "/sys/fs/cgroup/memory.max and cpu.max in command evidence",
+  "memory_max_bytes": 34359738368,
+  "cpu_quota_us": 400000,
+  "cpu_period_us": 100000,
+  "cpu_quota_cores": 4
+}

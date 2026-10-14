@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-14T23:43:01.522252+00:00",
+  "execution_location_label": "local-windows-sandbox",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.5",
+  "cpu_count": 16,
+  "disk_bytes": {
+    "total": 1022726836224,
+    "free": 101556088832
+  },
+  "nvidia_smi": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,driver_version",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 576.02\n",
+    "stderr": "",
+    "seconds": 0.1094241000009788
+  },
+  "cuda_compiler": {
+    "command": [
+      "nvcc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Apr__9_19:29:17_Pacific_Daylight_Time_2025\nCuda compilation tools, release 12.9, V12.9.41\nBuild cuda_12.9.r12.9/compiler.35813241_0\n",
+    "stderr": "",
+    "seconds": 0.9444064999988768
+  },
+  "memory_bytes": {
+    "total": 16841400320,
+    "available": 328376320
+  },
+  "torch": {
+    "command": [
+      "C:\\Program Files\\Python313\\python.exe",
+      "-c",
+      "import torch,json; r={'version':torch.__version__, 'cuda_build':torch.version.cuda,'cuda_available':torch.cuda.is_available()}; r.update({'device':torch.cuda.get_device_name(0),'tensor_gpu_result':(torch.ones(8,device='cuda')*2).sum().item()} if torch.cuda.is_available() else {}); print(json.dumps(r))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"version\": \"2.13.0+cpu\", \"cuda_build\": null, \"cuda_available\": false}\n",
+    "stderr": "",
+    "seconds": 11.415158200001315
+  },
+  "network": []
+}
