@@ -1,0 +1,85 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                        OpenCourant Starter                         **
+**                                                                    **
+**            Non-linear Finite Element Analysis Software             **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+**                  Windows 64 bits, Intel compiler                   **
+**                      Double Precision Version                      **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+************************************************************************
+** OpenCourant Software                                               **
+** COPYRIGHT (C) 2026 Siemens                                         **
+** Licensed under GNU Affero General Public License.                  **
+** See License file.                                                  **
+************************************************************************
+ 
+
+WARNING ID : 100214
+** WARNING IN INPUT OPTIONS
+DESCRIPTION :  
+-- BLOCK: /IOFLAG
+-- LINE: 5                   0         0         0         0         0
+unsupported field exists
+SOLUTION :     
+    Please check input format and fields description defined in the Reference Guide.
+BOX1 bloc : test nouvelles sections
+ .. UNITS SYSTEM                                                                         
+ .. CONTROL VARIABLES                                                                    
+ .. STARTER RUNNING ON    2 THREADS
+ .. MATERIALS                                                                            
+
+WARNING ID :   1220
+** WARNING ON MATERIAL LAW DATA
+ .. NODES                                                                                
+ .. SUBMODELS
+ .. PROPERTIES                                                                           
+ .. 3D SHELL ELEMENTS                                                                    
+ .. SUBSETS
+ .. ELEMENT GROUPS
+ .. PART GROUPS
+ .. NODE GROUP
+ .. INITIAL VELOCITIES                                                                   
+ .. DOMAIN DECOMPOSITION
+ .. ELEMENT GROUPS                                                                       
+ .. RIGID WALLS                                                                          
+ .. ADDED MASSES                                                                         
+ .. RIGID BODIES                                                                         
+ .. ELEMENT BUFFER INITIALIZATION                                                        
+ .. SECTIONS
+ .. GEOMETRY PLOT FILE                                                                   
+ .. PARALLEL RESTART FILES GENERATION                                                    
+  
+------------------------------------------------------------------------
+  
+                   ** COMPUTE TIME INFORMATION **
+  
+ EXECUTION STARTED      :      2026/10/15  08:43:07
+ EXECUTION COMPLETED    :      2026/10/15  08:43:11
+  
+ ELAPSED TIME...........=          3.19 s
+                               00:00:03
+  
+------------------------------------------------------------------------
+
+
+
+     TERMINATION WITH WARNING           
+     ------------------                                                                  
+              0 ERROR(S)            
+              2 WARNING(S)          
+
+
+
+
+PLEASE CHECK LISTING FILE FOR FURTHER DETAILS
+
+
+
+
+

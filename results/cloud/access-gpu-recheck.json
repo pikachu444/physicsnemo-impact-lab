@@ -1,0 +1,121 @@
+{
+  "utc": "2026-10-14T23:53:05.536937+00:00",
+  "command": [
+    "python3",
+    "/workspace/physicsnemo-impact-lab/results/cloud/access-gpu-recheck-20261014T235245Z.py"
+  ],
+  "source_sha256": "75edfde6ce3d2ad9ee977c2f1a0c5b95af25161b72971acd744cc6d32495bcd4",
+  "network": {
+    "dataset_api": [
+      {
+        "method": "GET",
+        "url": "https://huggingface.co/api/datasets/AIRBORNEPANDA/BumperBeamCrashExample",
+        "timeout_seconds": 20,
+        "response_code": 200,
+        "bytes_read": 305226,
+        "complete_body": true,
+        "sha256_received_bytes": "1195b97cdd467f7c0c5df47ee2e511034c33069d6cf72a66df3e8547dd1c62d8",
+        "json_valid": true,
+        "json_type": "dict",
+        "top_level_keys": [
+          "_id",
+          "id",
+          "author",
+          "sha",
+          "lastModified",
+          "private",
+          "gated",
+          "disabled",
+          "tags",
+          "description",
+          "downloads",
+          "likes",
+          "siblings",
+          "createdAt",
+          "usedStorage"
+        ],
+        "dataset_revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+        "elapsed_seconds": 0.3851109329999929
+      }
+    ],
+    "global_features": [
+      {
+        "method": "GET",
+        "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/main/CURATED_DATA_VTP/GLOBAL_FEATURES.json",
+        "timeout_seconds": 20,
+        "response_code": 307,
+        "redirect_host": "huggingface.co",
+        "redirect_path": "/api/resolve-cache/datasets/AIRBORNEPANDA/BumperBeamCrashExample/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP%2FGLOBAL_FEATURES.json",
+        "redirect_query_present": true,
+        "followed": true,
+        "elapsed_seconds": 0.2939113319999933
+      },
+      {
+        "method": "GET",
+        "url": "https://huggingface.co/api/resolve-cache/datasets/AIRBORNEPANDA/BumperBeamCrashExample/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP%2FGLOBAL_FEATURES.json?%2Fdatasets%2FAIRBORNEPANDA%2FBumperBeamCrashExample%2Fresolve%2Fmain%2FCURATED_DATA_VTP%2FGLOBAL_FEATURES.json=&etag=%22bc9e0a2c47a9d6c05a6f47dd12d3a83b83b84c6f%22",
+        "timeout_seconds": 20,
+        "response_code": 200,
+        "bytes_read": 15994,
+        "complete_body": true,
+        "sha256_received_bytes": "6267b9345ee1fb1f942a8bfcbe7e466d4853ceeeb223b31fc77307b1d58089da",
+        "json_valid": true,
+        "json_type": "dict",
+        "top_level_keys": [
+          "Run100",
+          "Run101",
+          "Run102",
+          "Run103",
+          "Run104",
+          "Run105",
+          "Run106",
+          "Run107",
+          "Run108",
+          "Run109",
+          "Run110",
+          "Run111",
+          "Run112",
+          "Run113",
+          "Run114",
+          "Run115",
+          "Run116",
+          "Run117",
+          "Run118",
+          "Run119",
+          "Run120",
+          "Run121",
+          "Run122",
+          "Run123",
+          "Run124",
+          "Run125",
+          "Run126",
+          "Run127",
+          "Run128",
+          "Run129"
+        ],
+        "elapsed_seconds": 0.24130998300000783
+      }
+    ]
+  },
+  "gpu_exposure": {
+    "dev_nvidia_nodes": [],
+    "pci_devices_inspected": 8,
+    "pci_nvidia_devices": [],
+    "pci_inspection_errors": [],
+    "nvidia_smi_path": null,
+    "nvcc_path": null
+  },
+  "cgroup": {
+    "cpu.max": "400000 100000",
+    "cpuset.cpus.effective": "0-4",
+    "memory.max": "34359738368",
+    "memory.current": "70950912",
+    "memory.swap.max": "max",
+    "pids.max": "max",
+    "cgroup.controllers": "cpuset cpu io memory hugetlb pids"
+  },
+  "process_cgroup": "0::/",
+  "visible_cpu_count": 5,
+  "training_run": false,
+  "elapsed_seconds": 0.9448917920000213,
+  "peak_rss_kib": 19200
+}

@@ -1,0 +1,88 @@
+{
+  "claim_scope": "Unmodified small public FEM regression model executed locally on Windows; no AI training or accuracy claim.",
+  "solver_commit": "cb760c206e346eff12161a2268b134ef9d48a4ef",
+  "solver_release": "latest-20261011",
+  "reference_comparison": {
+    "last_cycle_index": {
+      "reference": 1102.0,
+      "actual_printed": 1102.0,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "time": {
+      "reference": 0.1001,
+      "actual_printed": 0.1001,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "time_step": {
+      "reference": 8.502e-05,
+      "actual_printed": 8.502e-05,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "element_id": {
+      "reference": 12.0,
+      "actual_printed": 12.0,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "energy_error_percent": {
+      "reference": -0.0,
+      "actual_printed": -0.0,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "internal_energy": {
+      "reference": 34.97,
+      "actual_printed": 34.97,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "kinetic_energy_translation": {
+      "reference": 7646.0,
+      "actual_printed": 7646.0,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    },
+    "kinetic_energy_rotation": {
+      "reference": 0.006788,
+      "actual_printed": 0.006788,
+      "absolute_difference": 0.0,
+      "matches_at_reported_precision": true
+    }
+  },
+  "printed_energy_balance_error_percent": -0.0,
+  "summary_total_number_of_cycles": 1103,
+  "last_cycle_index": 1102,
+  "vtk_snapshots": 11,
+  "vtk_points_including_visual_entities": 168,
+  "vtk_cells_including_visual_entities": 268,
+  "time_history_samples": 100,
+  "last_time_history_sample_model_time": 0.09903467,
+  "time_history_csv_final_internal_energy_model_unit": 34.56966,
+  "time_history_csv_final_plastic_work_model_unit": 31.83706,
+  "time_history_csv_final_hourglass_energy_model_unit": 0.306874,
+  "units": {
+    "solver_process_duration": "wall-clock seconds",
+    "model_length": "unverified model length unit",
+    "model_time": "unverified model time unit",
+    "model_energy": "unverified model energy unit",
+    "declared_begin_input_work_units": "kg m s / kg m s",
+    "caution": "Legacy QA values rho=7.8e-6, E=205, yield=0.25 do not constitute physically validated steel SI values despite the /BEGIN declaration; no conversion to physical product units is claimed."
+  },
+  "starter_warnings": [
+    "100214: unsupported /IOFLAG field in legacy input",
+    "1220: strain-rate effect without activated rate filtering"
+  ],
+  "source_input_license": "CC BY-NC 4.0; preserve header. Solver code is AGPL-3.0.",
+  "input_sha256": {
+    "BOX1BL_0000.rad": "58ff657f3ce81dc0499f7054cc1847ca5f90a4bf100f0b01bbac3fd7f79dd8a4",
+    "BOX1BL_0001.rad": "02b83271d045716360e0b0a03c72ba0c72845a106fd9ed145f8f5bdf7dfd4e21",
+    "motcle": "9cc1361ae65748271fd85b7d6bf02177da9b8199d72d006d61d3a270a3092204",
+    "qadiags.inc": "130b846f8a588888aa1839d18a7a147c1f8f9d5c2fcf93f92ff85dac96609a26",
+    "readme.txt": "43f62dc6bfe7d81d711a19f30cf9f89fddcc7c0f3cfdc8b666c8d66911cbcccb",
+    "ref.extract": "f05782dc7ae234fa35b8128a43f36df0971a76771f352d91336579e15a08eec3"
+  },
+  "raw_results_bytes": 2461881
+}

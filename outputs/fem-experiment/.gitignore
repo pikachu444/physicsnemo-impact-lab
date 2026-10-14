@@ -1,0 +1,12 @@
+# Download inputs from their pinned upstream URLs instead of redistributing them here.
+original-input/
+run/*.rad
+run/*.inc
+run/*.rst
+run/BOX1BLA[0-9][0-9][0-9]
+run/*.gz
+run/BOX1BLT01
+# Never commit the downloaded executable package or dependency libraries.
+*.exe
+*.dll
+*.zip

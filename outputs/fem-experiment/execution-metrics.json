@@ -1,0 +1,18 @@
+[
+  {
+    "stage": "starter",
+    "executable": "starter_win64.exe",
+    "arguments": "-i BOX1BL_0000.rad -np 1 -nt 2",
+    "exit_code": 0,
+    "elapsed_seconds": 4.3829558,
+    "sampled_peak_working_set_bytes": 172793856
+  },
+  {
+    "stage": "engine",
+    "executable": "engine_win64.exe",
+    "arguments": "-i BOX1BL_0001.rad -nt 2",
+    "exit_code": 0,
+    "elapsed_seconds": 1.8563169,
+    "sampled_peak_working_set_bytes": 50266112
+  }
+]
