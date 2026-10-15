@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-15T08:30:52.845594+00:00",
+  "audit_kind": "independent_read_only_metadata_audit_receipt_and_orchestrator_aggregation",
+  "independent_auditor": "/root/complete_static_training/audit_static_summary",
+  "independent_report": {
+    "checks": 448,
+    "failures": 0,
+    "material_discrepancies": 0,
+    "model_count": 12,
+    "configurations_per_domain": 6,
+    "input_hash_count": 39,
+    "frozen_source_hash_count": 8,
+    "png_count": 54,
+    "phone_png_count": 24,
+    "bumper_png_count": 30,
+    "scalar_metric_rows": 78,
+    "epsp_histories": 18,
+    "scope": "JSON metadata, source text and PNG bytes only; no checkpoint or numerical arrays opened, no framework imports or inference, no files modified by auditor"
+  },
+  "observed_execution": {
+    "suite_status": "completed",
+    "started_utc": "2026-10-15T06:05:08.882775+00:00",
+    "finished_utc": "2026-10-15T08:27:18.068969+00:00",
+    "all_model_stages_exit_zero": true,
+    "owned_model_framework_processes_after_completion": 0,
+    "nvidia_smi_compute_app_list_after_completion": "empty",
+    "gpu_returned_to_root_before_metadata_summary": true
+  },
+  "aggregate": {
+    "optimizer_compute_seconds": 2882.901454700099,
+    "training_wall_seconds": 7694.107827700009,
+    "optimizer_updates": 17590,
+    "training_case_observations": 71950,
+    "heldout_model_passes": 12,
+    "heldout_case_forwards": 54,
+    "heldout_forward_seconds_cuda_synchronized": 6.853112199998577,
+    "heldout_process_wall_seconds": 429.45649990000675
+  },
+  "validation_scope": {
+    "checkpoint_selection": "All validation cases in each domain (phone2, bumper12), full node/time/channel normalized MSE per case averaged across cases; only complete epochs eligible",
+    "fresh_process_reload_gate": "One first-validation-case anchor per saved checkpoint, compared with saved normalized validation_reference.npy; no target response read; tolerance1e-5. This is not a full validation-split reevaluation."
+  },
+  "visual_qa_scope_of_this_worker": "Two representative PNGs actually viewed: one phone VM and one bumper upper-VM. The54-PNG audit is file/hash/PNG-structure verification, not visual inspection of all54 images. Root visual QA is recorded separately.",
+  "interpretation": "All12 training-sufficiency/function/reload gates pass. No convergence or engineering-accuracy success is established by those gates. Raw negative nonnegative-field predictions and EPSP-history errors remain unmodified and reported. No extra fit or heldout inference was performed for this summary/audit.",
+  "artifact_sha256": {
+    "outputs/expanded-research/benchmarks/drop_test/models-full-c6/SUMMARY.json": "b03f554f4e22f8cc223506c19d04c1691583ff70fe00f2162868190e7c307a48",
+    "outputs/expanded-research/benchmarks/drop_test/models-full-c6/SUMMARY.md": "219632e2fbe826614988be2bf53028bac75d32f72c0841f16da79d845f3e2ae9",
+    "outputs/expanded-research/benchmarks/bumper/models-c7/SUMMARY.json": "eb9dbbd4edbc1af82051b6011bcf05d44c9547b5a045a7bd2755c32c45908746",
+    "outputs/expanded-research/benchmarks/bumper/models-c7/SUMMARY.md": "abb742439567d11787c110fcd292e8231b43d53e289497af2106a6bbf9ccbd95",
+    "work/expanded-ml/summarize_budgeted.py": "2c16062080dcf96e579060db818dc85bf690c1f445dc64965a6f71f07b1043cc",
+    "work/expanded-ml/concurrent-cpu-workloads.json": "ed5f9c370c7b61d7ca75f71eff140e034466d11b88d91025b328c2f36f885367",
+    "work/expanded-ml/budgeted-suite-plan.json": "53f0afdd773cd8981de1ec9794987546adceb461a9544dad81ba177b75d87b34",
+    "work/expanded-ml/budgeted-suite-execution.json": "5a13bd876028c94ce62357cc289d8a41013180bd4cf6e317251523e6570c764f"
+  }
+}

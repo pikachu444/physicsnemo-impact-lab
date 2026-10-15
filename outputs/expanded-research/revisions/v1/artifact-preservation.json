@@ -1,0 +1,37 @@
+{
+  "status": "immutable_original_evidence_copied_and_verified",
+  "preserved_utc": "2026-10-15T08:33:47.229165+00:00",
+  "files": {
+    "plot_full_support_comparison.py": {
+      "sha256": "7f6146a0ac26e194ea96f8e44a749fd3b799d6aac20b30f3cca9d6a4f6f308ce",
+      "bytes": 23924,
+      "archive_copy_sha256": "7f6146a0ac26e194ea96f8e44a749fd3b799d6aac20b30f3cca9d6a4f6f308ce"
+    },
+    "full-support-comparison-execution-protocol.json": {
+      "sha256": "4520dd30eac3fb9d23cfef4368d7cde899995b8339ba6bca78cc383d51b3d5dc",
+      "bytes": 14002,
+      "archive_copy_sha256": "4520dd30eac3fb9d23cfef4368d7cde899995b8339ba6bca78cc383d51b3d5dc"
+    },
+    "full-support-comparison-execution-protocol.md": {
+      "sha256": "db1166d11b17da895a7540e151e93f34d6467d33223c05ab23c1e95a1a90e592",
+      "bytes": 3008,
+      "archive_copy_sha256": "db1166d11b17da895a7540e151e93f34d6467d33223c05ab23c1e95a1a90e592"
+    },
+    "full-support-algorithm-comparison.png": {
+      "sha256": "4167d650862e911d8252a8715cabf4ca1153fa29a1ebd3d70d8bcb4683a193c1",
+      "bytes": 289488,
+      "archive_copy_sha256": "4167d650862e911d8252a8715cabf4ca1153fa29a1ebd3d70d8bcb4683a193c1"
+    },
+    "full-support-algorithm-comparison.json": {
+      "sha256": "78e083691207ecd7106673093424ac28959f1803110cd50479c19c5600d9c1e8",
+      "bytes": 121585,
+      "archive_copy_sha256": "78e083691207ecd7106673093424ac28959f1803110cd50479c19c5600d9c1e8"
+    },
+    "visual-review.json": {
+      "sha256": "3063457d13a06780e3a16919c7d60f796831d407b1de89936bd2752ade88e405",
+      "bytes": 2022
+    }
+  },
+  "originals_deleted_or_overwritten": false,
+  "reason": "Preserve first render and observed tick-label QA limitation before an explicitly authorized bounded correction."
+}

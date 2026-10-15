@@ -1,0 +1,455 @@
+{
+  "status": "V2_TICK_LABEL_CORRECTION_PREPARED_EXPLICIT_ROOT_AUTHORIZATION",
+  "prepared_utc": "2026-10-15T08:05:51.367949+00:00",
+  "script": "plot_full_support_comparison.py",
+  "script_sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+  "readiness_at_preparation": {
+    "checked_utc": "2026-10-15T08:08:31.122662+00:00",
+    "all_twelve_tests_completed": false,
+    "completed_count": 9,
+    "rows": [
+      {
+        "domain": "phone",
+        "model": "transolver",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\transolver\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "flare",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\flare\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "geotransolver",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\geotransolver\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "geoflare",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\geoflare\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "meshgraphnet",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "figconvunet",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\figconvunet\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "transolver",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\transolver\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "flare",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\flare\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "geotransolver",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\geotransolver\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "geoflare",
+        "status": "missing",
+        "path": "benchmarks\\bumper\\models-c7\\geoflare\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "meshgraphnet",
+        "status": "missing",
+        "path": "benchmarks\\bumper\\models-c7\\meshgraphnet\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "figconvunet",
+        "status": "missing",
+        "path": "benchmarks\\bumper\\models-c7\\figconvunet\\test_report.json"
+      }
+    ],
+    "rendered": false,
+    "frameworks_imported": false
+  },
+  "authorization": "Only a subsequent explicit root CPU-window assignment authorizes the documented render command. Preparation and --check-inputs do not render or import third-party libraries.",
+  "resource_policy": {
+    "CPU_affinity_logical_cores": 1,
+    "OMP_OPENBLAS_MKL_NUMEXPR_threads": 1,
+    "preflight_and_preimport_available_bytes": 1610612736,
+    "runtime_host_available_floor_bytes": 536870912,
+    "process_peak_RSS_cap_bytes": 262144000,
+    "watchdog_sample_interval_seconds": 0.25,
+    "guard_exit_code": 74,
+    "observer_failure_exit_code": 76,
+    "preflight_deferred_exit_code": 75,
+    "guard_scope": "Own postprocessor only; no unrelated process control. Memory guard stop is not CUDA OOM."
+  },
+  "execution_command_documented_only": "Pipe exact execution_wrapper_source to work/expanded-ml/venv/Scripts/python.exe -. Output destinations alone are redirected in memory to preserve v1 artifacts; main retains all safety gates.",
+  "check_command_safe_before_authorization": "& work/expanded-ml/venv/Scripts/python.exe -S outputs/expanded-research/plot_full_support_comparison.py --check-inputs",
+  "mandatory_gates": [
+    "All12exact domain/model test_report.json statuses completed; no other domain/support replaces a missing run.",
+    "Each test_performance_passes=1, completed training and fixed checkpoint/validation roundtrip; checkpoint hash and training report hash match frozen metadata.",
+    "Per-run archived training/evaluation/model adapter sources and native model source bytes match recorded SHA; plot source and this protocol are tracked and remain unchanged through rendering.",
+    "NN/mean/POD/direct-RBF shape,testcase order,field/units/time,manifest,READY,normalization and savedmean/truth hashes must agree by domain. Arrays/weights are never opened or rehashed.",
+    "Preflight and preimport available RAM>=1.5GiB; then continuous own-process monitor enforces512MiBfloor/250MiBpeakRSS.",
+    "OutputPNG/JSONmust not exist; JSONexclusive creation records the single attempt. No overwrite, rerender, fitting, inference, test, clipping or metric recalculation.",
+    "Final actual view_image of the generatedPNG is mandatory before final delivery. Script leaves status rendered_pending_actual_visual_review."
+  ],
+  "domains": {
+    "phone": {
+      "NN_root": "benchmarks/drop_test/models-full-c6",
+      "POD": "benchmarks/rom/phone9-full/metrics.json",
+      "direct_RBF": "benchmarks/rom/phone9-full-direct-rbf/metrics.json",
+      "support": "76065physical corners;2test×10nominal2..20us;C6",
+      "field_note": "GPSnodalVM(MPa), projected total-strain tensorFrobenius, separateEPSP."
+    },
+    "bumper": {
+      "NN_root": "benchmarks/bumper/models-c7",
+      "POD": "benchmarks/rom/bumper7/metrics.json",
+      "direct_RBF": "benchmarks/rom/bumper7-direct-rbf/metrics.json",
+      "support": "13675nodes;7test×10nominal10..100ms;C7",
+      "field_note": "Upper/lowerprojectedVMstoredGPa→displayRMSEMPa×1000;upper/lowerEPSP, not totalstrain."
+    }
+  },
+  "training_mean_input": "full-support-mean-baselines.json:domains[domain].physical_metrics",
+  "methods": [
+    "Transolver",
+    "FLARE",
+    "GeoTransolver GALE",
+    "GeoTransolver GALE_FA",
+    "MeshGraphNet",
+    "FIGConvUNet",
+    "Training mean",
+    "POD + RBF",
+    "POD + Ridge",
+    "Direct RBF"
+  ],
+  "panels": {
+    "phone": [
+      {
+        "title": "Displacement vector\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "displacement_vector",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "Centroid-removed vector\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "displacement_vector",
+            "key": "centroid_removed_relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "GPS nodal VM\nRMSE [MPa]",
+        "series": [
+          {
+            "field": "von_mises_GPS",
+            "key": "rmse",
+            "display_factor": 1.0,
+            "unit": "MPa",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "GPS nodal VM\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "von_mises_GPS",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "Total-strain Frobenius\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "total_strain_frobenius",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "EPSP\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "epsp",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      }
+    ],
+    "bumper": [
+      {
+        "title": "Displacement vector\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "displacement_vector",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "Centroid-removed vector\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "displacement_vector",
+            "key": "centroid_removed_relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "single"
+          }
+        ]
+      },
+      {
+        "title": "Projected layer VM\nRMSE [MPa]",
+        "series": [
+          {
+            "field": "inplane_vm_upper",
+            "key": "rmse",
+            "display_factor": 1000.0,
+            "unit": "MPa",
+            "layer": "upper"
+          },
+          {
+            "field": "inplane_vm_lower",
+            "key": "rmse",
+            "display_factor": 1000.0,
+            "unit": "MPa",
+            "layer": "lower"
+          }
+        ]
+      },
+      {
+        "title": "Projected layer VM\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "inplane_vm_upper",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "upper"
+          },
+          {
+            "field": "inplane_vm_lower",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "lower"
+          }
+        ]
+      },
+      {
+        "title": "Upper EPSP\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "EPSP_upper",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "upper"
+          }
+        ]
+      },
+      {
+        "title": "Lower EPSP\nrelative L2 [%]",
+        "series": [
+          {
+            "field": "EPSP_lower",
+            "key": "relative_l2",
+            "display_factor": 100.0,
+            "unit": "%",
+            "layer": "lower"
+          }
+        ]
+      }
+    ]
+  },
+  "display": {
+    "kind": "Static scientific PNG",
+    "pixels": [
+      3680,
+      1920
+    ],
+    "layout": "Two domain rows,six separate metric axes per row,ten method positions per axis",
+    "scale": "Logarithmic metric x axes; displacement andcentroid-removedL2%,VMRMSEMPa,VML2%,native strain taskL2% separately. No incompatible units combined on one numeric axis.",
+    "Bumper_VM_layers": "Circle upper,triangle lower; no averaged or recomputed layer metric.",
+    "null_policy": "Recorded undefinednull is annotated/excluded from numeric logaxis; missingkeys stop the run.",
+    "zero_policy": "Exactzero is written as text without assigning a fabricated positive log coordinate.",
+    "quality_note": "All6completedNNresults remain present; insufficient quality budget getsdagger,not silently omitted.",
+    "readability": "Named methods on first axis of each domain,rowheadings withsupport/time,12ptaxis titles,logticks,max3major ticks,physicalunits,explicit layer and error definitions.",
+    "layout_spacing": {
+      "subplot_top": 0.835,
+      "bumper_heading_y": 0.515,
+      "reason": "Independent static review identified possible two-line title/domain-heading overlap; margins enlarged before first render."
+    },
+    "actual_axis_metadata": "Record actualxlimits/visiblemajor tickvalues andtext/scale/nullandzerocountsafteractualrender.",
+    "log_tick_correction": "FixedLocator with visible1/2/5 decades (<=5 labels), FuncFormatter decimal labels; exact metric x limits unchanged."
+  },
+  "interpretation_notes": [
+    "Neural runs are bounded optimizercompute budget and one seed,not a convergenceor tunedrecipe certification.Quality budget andactualupdates/observations are retained per method.",
+    "Physical pooledtestmetrics only.No normalizedtrainingloss or componentwiseL2 substitutes for vector or centroid-removedvector errors.",
+    "ROM CPU fit/validationselection budgets differ fromNN; comparison isnot matchedoptimizer training effort.",
+    "POD+RBF/POD+Ridge share trainbasis; phone fullrankPOD+RBF≈directRBFis not independent superiority evidence.",
+    "GALE_FA isGeoTransolvervariant.Reloads and attention variants are not extra algorithm families.",
+    "Projected/nodalheaderrors are distinct from nativecell/IPhotspotpeaks; phone totalstrainFrob and bumperEPSP are different targets."
+  ],
+  "outputs": [
+    "revisions/v2/full-support-algorithm-comparison.png",
+    "revisions/v2/full-support-algorithm-comparison.json"
+  ],
+  "required_actual_visual_review": [
+    "Open actualPNGwithview_image; do not infer visualQAfrom file existence.",
+    "Read all10methodlabels,phoneandbumperdomain/support/time headings,allmetricunitsandlogticks.",
+    "Confirm separate MPaRMSEvsrelativeL2 andcircle/triangleupper/lowerlegend; phoneFrobvsbumperEPSP labels.",
+    "Check legend/footer clipping,overlap,ticklegibility atnative resolution,zero/nullannotations andwidephone ranges.",
+    "Record visualQA in root review/evidence. Renderingalone isnot a final reviewedchart."
+  ],
+  "preparation_checks": {
+    "AST_compile": true,
+    "top_level_imports_stdlib_only": true,
+    "unit_percent_GPa_to_MPa_null_zero_missing_key_selfchecks": true,
+    "synthetic_floor_RSS_and_observer_failure_guards": true,
+    "real_metadata_schema_subset_checked": "PhoneandbumperTransolver/FLAREonly; fourcompletedreports/sources, no rendering; doesnotfulfill12run gate.",
+    "NumPy_Matplotlib_ML_imported": false,
+    "chart_generated": false,
+    "inference_or_retesting": false,
+    "array_or_checkpoint_read": false,
+    "independent_static_review": "PASS after requested margin update; no other material issue found. Source hash refreshed after margin/axis-metadata update."
+  },
+  "final_preparation_utc": "2026-10-15T08:08:31.122693+00:00",
+  "v2_correction": {
+    "reason": "Actual first PNG and axis metadata showed no numeric tick in Bumper projected VM relative-L2 axis; seven other axes had only one tick.",
+    "authorized_scope": "One bounded locator/formatter correction and one additional plot render; not a new source/data-selection experiment.",
+    "script_v1_sha256": "7f6146a0ac26e194ea96f8e44a749fd3b799d6aac20b30f3cca9d6a4f6f308ce",
+    "script_v2_sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+    "scientific_change": "None: same saved metric values, data selections, units, transformations, normalization, exact x limits, ordering, layout, and model calls=0.",
+    "tick_change": "Fixed visible nice log ticks from mantissas1,2,5, sparsified to at most5 labels where required; numeric decimal labels. Bumper VM relativeL2 has20,50 within unchanged10.0396..62.2041 limits.",
+    "render_count_authorized_total": 2,
+    "archive_v1": "revisions/v1",
+    "output_v2": "revisions/v2",
+    "v1_input_hashes_checked_before_change": 130,
+    "expected_changes": [
+      "plot_full_support_comparison.py",
+      "full-support-comparison-execution-protocol.json"
+    ],
+    "original_execution_outputs_untouched": true,
+    "prepared_utc": "2026-10-15T08:35:48.436899+00:00"
+  },
+  "execution_wrapper_source": "from pathlib import Path\nimport importlib.util,sys\nbase=Path('outputs/expanded-research').resolve()\nspec=importlib.util.spec_from_file_location('full_support_plot_v2',base/'plot_full_support_comparison.py')\nmodule=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(module)\nmodule.PNG=base/'revisions/v2/full-support-algorithm-comparison.png'\nmodule.JSON=base/'revisions/v2/full-support-algorithm-comparison.json'\nsys.argv=[str(base/'plot_full_support_comparison.py'),'--cpu-window-authorized','--expected-script-sha256','c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b']\nraise SystemExit(module.main())\n",
+  "readiness_at_v2_correction": {
+    "checked_utc": "2026-10-15T08:35:48.445586+00:00",
+    "all_twelve_tests_completed": true,
+    "completed_count": 12,
+    "rows": [
+      {
+        "domain": "phone",
+        "model": "transolver",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\transolver\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "flare",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\flare\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "geotransolver",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\geotransolver\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "geoflare",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\geoflare\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "meshgraphnet",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\test_report.json"
+      },
+      {
+        "domain": "phone",
+        "model": "figconvunet",
+        "status": "completed",
+        "path": "benchmarks\\drop_test\\models-full-c6\\figconvunet\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "transolver",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\transolver\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "flare",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\flare\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "geotransolver",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\geotransolver\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "geoflare",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\geoflare\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "meshgraphnet",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\meshgraphnet\\test_report.json"
+      },
+      {
+        "domain": "bumper",
+        "model": "figconvunet",
+        "status": "completed",
+        "path": "benchmarks\\bumper\\models-c7\\figconvunet\\test_report.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2770 @@
+{
+  "status": "rendered_and_actual_visual_review_passed",
+  "started_utc": "2026-10-15T08:36:25.123430+00:00",
+  "source_sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+  "root_cpu_window_authorized": true,
+  "CPU_affinity_single_bit": 1,
+  "resource_policy": {
+    "CPU_affinity_logical_cores": 1,
+    "OMP_OPENBLAS_MKL_NUMEXPR_threads": 1,
+    "preflight_and_preimport_available_bytes": 1610612736,
+    "runtime_host_available_floor_bytes": 536870912,
+    "process_peak_RSS_cap_bytes": 262144000,
+    "watchdog_sample_interval_seconds": 0.25,
+    "guard_exit_code": 74,
+    "observer_failure_exit_code": 76,
+    "preflight_deferred_exit_code": 75,
+    "guard_scope": "Own postprocessor only; no unrelated process control. Memory guard stop is not CUDA OOM."
+  },
+  "resource_samples": [
+    {
+      "utc": "2026-10-15T08:36:25.003541+00:00",
+      "host_available_bytes": 2645159936,
+      "rss_bytes": 20140032,
+      "peak_rss_bytes": 20185088
+    },
+    {
+      "utc": "2026-10-15T08:36:25.123322+00:00",
+      "host_available_bytes": 2631118848,
+      "rss_bytes": 22319104,
+      "peak_rss_bytes": 23080960
+    },
+    {
+      "utc": "2026-10-15T08:36:25.379325+00:00",
+      "host_available_bytes": 2614390784,
+      "rss_bytes": 32145408,
+      "peak_rss_bytes": 32145408
+    },
+    {
+      "utc": "2026-10-15T08:36:25.644398+00:00",
+      "host_available_bytes": 2594816000,
+      "rss_bytes": 51879936,
+      "peak_rss_bytes": 51879936
+    },
+    {
+      "utc": "2026-10-15T08:36:25.905380+00:00",
+      "host_available_bytes": 2586443776,
+      "rss_bytes": 64888832,
+      "peak_rss_bytes": 64888832
+    },
+    {
+      "utc": "2026-10-15T08:36:26.170287+00:00",
+      "host_available_bytes": 2568396800,
+      "rss_bytes": 98746368,
+      "peak_rss_bytes": 98746368
+    },
+    {
+      "utc": "2026-10-15T08:36:26.426984+00:00",
+      "host_available_bytes": 2535505920,
+      "rss_bytes": 128204800,
+      "peak_rss_bytes": 128204800
+    },
+    {
+      "utc": "2026-10-15T08:36:26.567968+00:00",
+      "host_available_bytes": 2537021440,
+      "rss_bytes": 100696064,
+      "peak_rss_bytes": 128942080
+    }
+  ],
+  "inputs": {
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-comparison-execution-protocol.json": {
+      "sha256": "7d87084bebbb51dfc389a508940e2a059e95a5ea40c10d7dfcd55655696206f6",
+      "bytes": 18641
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\plot_full_support_comparison.py": {
+      "sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+      "bytes": 24208
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-mean-baselines.json": {
+      "sha256": "2031d5e80c314c8a8b3c0a80aec9361099fe0b283f64d3404416dad50cd3a365",
+      "bytes": 82366
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\rom\\phone9-full\\metrics.json": {
+      "sha256": "a955e45abdbe46f8bbfd773c41bdf695dfa8bd5fe49186d3af4b9c62ffeeec7c",
+      "bytes": 45439
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\rom\\phone9-full-direct-rbf\\metrics.json": {
+      "sha256": "cec11e85b71ea1b9a8173501ca79f611b783e955755b5c762b4e5e5a03eab6ca",
+      "bytes": 26435
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\test_report.json": {
+      "sha256": "746fd2bf7166f41fcbafb8a85a49cbe0790915cc8ebf22ca227c9db891d0f070",
+      "bytes": 56459
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\checkpoint-frozen.json": {
+      "sha256": "5076485fe81c85912c5e6b5002b0ed42a4a7d31f1f3ab86f7ff97d33c2b7938f",
+      "bytes": 1933
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\training_report.json": {
+      "sha256": "058f0c73e3f7611d2a722c13d2df7226fc5b5e89259fe1f121d80e292b5c5ef4",
+      "bytes": 504920
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py": {
+      "sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+      "bytes": 26210
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\test_report.json": {
+      "sha256": "2a4f31a6f889e9a6ef9deb6b46308e0a73572a0b1a341f507445b36cede6386e",
+      "bytes": 56325
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\checkpoint-frozen.json": {
+      "sha256": "e2dde64d190142a2f3b0ccb8e4b8008e80a1fb8026f6926566de163cc662f4df",
+      "bytes": 1932
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\training_report.json": {
+      "sha256": "967ad47af7c0967f345945171a4df66b4c7e857cc7687e222470c267dc8f384b",
+      "bytes": 198901
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\flare\\flare.py": {
+      "sha256": "b3b9d9136f71c5df9f0870a5e5bc9bced2190509113e1a74fa078aa150fd8aa9",
+      "bytes": 7130
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\test_report.json": {
+      "sha256": "7cc5f35e36761fbde07e4a1dbd513948ff9786843a008e20dc7073f5b1775ecc",
+      "bytes": 56545
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\checkpoint-frozen.json": {
+      "sha256": "9bed820b6172228334236ee8425d803a960a91e6aaf8e3ae6b0968cec86fe583",
+      "bytes": 1933
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\training_report.json": {
+      "sha256": "693f0bee92490c25af13c3bdf9da190e0b9b96f1085bb57e307518c7ffab5d27",
+      "bytes": 452661
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\geotransolver\\geotransolver.py": {
+      "sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+      "bytes": 30927
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\test_report.json": {
+      "sha256": "d3a5dcf502863bc3f19139d30216bdb1ef03182a8e9cebb2a04a3b3814f452e4",
+      "bytes": 56506
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\checkpoint-frozen.json": {
+      "sha256": "50f04d39b4544a2ff0fbc6241d267621d9eaf60160372627b619140e6ef7b769",
+      "bytes": 1933
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\training_report.json": {
+      "sha256": "549c976c74e3c0d0a760026ff9c2f5c2318adff573118bf99f5c547948ebee7e",
+      "bytes": 161537
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\test_report.json": {
+      "sha256": "3646172b74e595072dcca9f6ee3076ae014eaf72409d89629f3908294ae0d498",
+      "bytes": 56133
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\checkpoint-frozen.json": {
+      "sha256": "1969edad380a953a9409bb068889fd265a7bf43a27ca5cd0e505daf4ef7c43e8",
+      "bytes": 1839
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\training_report.json": {
+      "sha256": "0421b0376f7cdc476cd3f7e02c95b10feb558843822bf92b7dd8b21f978f8e19",
+      "bytes": 119886
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\meshgraphnet.py": {
+      "sha256": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee",
+      "bytes": 21031
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\test_report.json": {
+      "sha256": "ade6eaf27c9b3052350418361cf3fc250cbe781ab66fb028a4d183e55b2a8832",
+      "bytes": 56659
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\checkpoint-frozen.json": {
+      "sha256": "0ddb1f0284cc14088505b7ecc3afde01d2907e5e38234b11cffd3cefeb1171e4",
+      "bytes": 1933
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\training_report.json": {
+      "sha256": "a54eae5412aa75fe6e70dca7384213edf932010e5157460e15ae0d8961d39b78",
+      "bytes": 110363
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\figconvnet\\figconvunet.py": {
+      "sha256": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042",
+      "bytes": 26729
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\rom\\bumper7\\metrics.json": {
+      "sha256": "de09fc1bfa981f1b15849d3bc5f1c395ce8fe1971a011a03b1eaddba44697652",
+      "bytes": 197637
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\rom\\bumper7-direct-rbf\\metrics.json": {
+      "sha256": "8d75cb66cab405b82d59acf184b8ab98692da4df5a1e09bd89d55c300f00e806",
+      "bytes": 149604
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\test_report.json": {
+      "sha256": "5684d8a3042a36528e4ce3fd951f34531b179cca3d21cf7fc7bdffe6f973ba68",
+      "bytes": 71210
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\checkpoint-frozen.json": {
+      "sha256": "28f3cc0dcd15038e46f9e04d43f5411425748e4d2c31d4209fd1135860fe13c4",
+      "bytes": 1921
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\training_report.json": {
+      "sha256": "4ed854d16200a39f0bee07ae3a01a922a85a58c75ee78c2e5f91cb640468ed2a",
+      "bytes": 251967
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\test_report.json": {
+      "sha256": "0a2a33043f7668ad22d97df83cecd4fc4ed8a18000a172fafb2cb3dc45ca0890",
+      "bytes": 71087
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\checkpoint-frozen.json": {
+      "sha256": "1ae16724a933d09d78205ec163bf897e6c12f19e0314223c1271a3c6f454735a",
+      "bytes": 1922
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\training_report.json": {
+      "sha256": "eda8865d75a9d54d45bb11f4497bac88df0dcd601723b5d7423650051eb8548a",
+      "bytes": 171466
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\test_report.json": {
+      "sha256": "3647b33f1d08c419035ab935b3bf8f0e9d46b27eec783ca499c131d82fd9afc9",
+      "bytes": 71294
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\checkpoint-frozen.json": {
+      "sha256": "8bfd18aa8f089c547242b9222e9182516642f507804ccf2225b6496ce347cde9",
+      "bytes": 1922
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\training_report.json": {
+      "sha256": "29d11f8f7cc79ddb47de5b8ea4183ebb8db2d194aaeb0263706cfe68098d5533",
+      "bytes": 234194
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\test_report.json": {
+      "sha256": "28e5be6105bf220fb1230af0c02bb17c8acd13c2589b8d83c2f44737096e1d01",
+      "bytes": 71307
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\checkpoint-frozen.json": {
+      "sha256": "9a88d8f2720d4ec959251e76682f18375fe9d7ac7725b89ba71d7f0b121395a0",
+      "bytes": 1921
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\training_report.json": {
+      "sha256": "9e4255a23c46486bfb6a250a3502b53ba1133a89ea4779cfbce1baa75268a986",
+      "bytes": 163150
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\test_report.json": {
+      "sha256": "8c6af5c516a4a0b4da6aee374ea3aba4cb65d16485fe87a20530d0c8345a3ed1",
+      "bytes": 71467
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\checkpoint-frozen.json": {
+      "sha256": "0623604dc8ee4c01eb6d1b025f7bd59c4dea6935fa589de007bc33f483a4f8cf",
+      "bytes": 1922
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\training_report.json": {
+      "sha256": "e4c5076749614f892362d007464e121e129e574cbf70f3e2a1f3914eea27f65d",
+      "bytes": 168987
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\test_report.json": {
+      "sha256": "d1b35d19babafd01bec442b35f46dccf4bdbe0c8b55c5ecbbeb09f6fef21cbc3",
+      "bytes": 71402
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\checkpoint-frozen.json": {
+      "sha256": "cdcd36306e872c1521cdfd6798d8bbae782c98b2783ba2af5f32222812af5c5d",
+      "bytes": 1922
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\training_report.json": {
+      "sha256": "69a3500d8c717259e73234d48b470fa8e161705595cb0ec28319bb62f5b17072",
+      "bytes": 145603
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\train_budgeted.py": {
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "bytes": 24463
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\evaluate_budgeted.py": {
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "bytes": 33300
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\budgeted_runtime.py": {
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "bytes": 7739
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\budget_protocol.py": {
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+      "bytes": 12094
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\benchmark_data.py": {
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\model_adapters.py": {
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146
+    },
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet\\source\\batch_adapters.py": {
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "bytes": 3050
+    }
+  },
+  "domains": {
+    "phone": {
+      "shape": [
+        2,
+        76065,
+        10,
+        6
+      ],
+      "test_cases": [
+        "phone_e090_rxp050",
+        "phone_e110_rxm050"
+      ],
+      "field_names": [
+        "displacement_x",
+        "displacement_y",
+        "displacement_z",
+        "von_mises_GPS",
+        "total_strain_frobenius",
+        "epsp"
+      ],
+      "field_units": [
+        "mm",
+        "mm",
+        "mm",
+        "MPa",
+        "1",
+        "1"
+      ],
+      "time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "time_unit": "s",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "READY_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+      "normalization_file_sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+      "methods": [
+        {
+          "id": "transolver",
+          "label": "Transolver",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 795,
+          "case_observations": 3975,
+          "optimizer_compute_seconds": 240.2440714999684,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\transolver\\test_report.json"
+        },
+        {
+          "id": "flare",
+          "label": "FLARE",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 247,
+          "case_observations": 1235,
+          "optimizer_compute_seconds": 240.23157769990212,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\flare\\test_report.json"
+        },
+        {
+          "id": "geotransolver",
+          "label": "GeoTransolver GALE",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 682,
+          "case_observations": 3410,
+          "optimizer_compute_seconds": 240.29586960017332,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\geotransolver\\test_report.json"
+        },
+        {
+          "id": "geoflare",
+          "label": "GeoTransolver GALE_FA",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 208,
+          "case_observations": 1040,
+          "optimizer_compute_seconds": 241.1268417000174,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\geoflare\\test_report.json"
+        },
+        {
+          "id": "meshgraphnet",
+          "label": "MeshGraphNet",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 764,
+          "case_observations": 764,
+          "optimizer_compute_seconds": 240.29764160010382,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\meshgraphnet\\test_report.json"
+        },
+        {
+          "id": "figconvunet",
+          "label": "FIGConvUNet",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 403,
+          "case_observations": 672,
+          "optimizer_compute_seconds": 240.2314284999884,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\drop_test\\models-full-c6\\figconvunet\\test_report.json"
+        },
+        {
+          "id": "training_mean",
+          "label": "Training mean",
+          "kind": "mean",
+          "fit_note": "Training-only mean, not an independent neural fit"
+        },
+        {
+          "id": "pod_rbf",
+          "label": "POD + RBF",
+          "kind": "rom",
+          "fit_note": "Shares train POD decomposition with POD+Ridge",
+          "selected": {
+            "method": "pod_rbf",
+            "gamma": 0.1,
+            "alpha": 0.0001,
+            "rank": 4,
+            "training_energy_retained": 1.0,
+            "validation_normalized_mse": 0.00032372033988203544,
+            "validation_projection_lower_bound_mse": 0.00021233197173298074
+          }
+        },
+        {
+          "id": "pod_ridge",
+          "label": "POD + Ridge",
+          "kind": "rom",
+          "fit_note": "Shares train POD decomposition with POD+RBF",
+          "selected": {
+            "method": "pod_ridge",
+            "degree": 2,
+            "alpha": 0.0001,
+            "rank": 4,
+            "training_energy_retained": 1.0,
+            "validation_normalized_mse": 0.000258834273038992,
+            "validation_projection_lower_bound_mse": 0.00021233197173298074
+          }
+        },
+        {
+          "id": "direct_rbf",
+          "label": "Direct RBF",
+          "kind": "rom",
+          "fit_note": "Phone full-rank POD+RBF and direct RBF are nearly equivalent here; not two independent superiority results"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Displacement vector\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.013028496944769876,
+                  "display_factor": 100.0,
+                  "value": 1.3028496944769876,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.017803969285024094,
+                  "display_factor": 100.0,
+                  "value": 1.7803969285024095,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.014415961578398662,
+                  "display_factor": 100.0,
+                  "value": 1.4415961578398662,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.028238464582188094,
+                  "display_factor": 100.0,
+                  "value": 2.823846458218809,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.014552826792411032,
+                  "display_factor": 100.0,
+                  "value": 1.4552826792411033,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.024611336276353372,
+                  "display_factor": 100.0,
+                  "value": 2.4611336276353373,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.0010736241225743986,
+                  "display_factor": 100.0,
+                  "value": 0.10736241225743985,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.00026196913758755357,
+                  "display_factor": 100.0,
+                  "value": 0.026196913758755356,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.00028467446227431,
+                  "display_factor": 100.0,
+                  "value": 0.028467446227430998,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.0002619691316252358,
+                  "display_factor": 100.0,
+                  "value": 0.02619691316252358,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Centroid-removed vector\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.6744301175313252,
+                  "display_factor": 100.0,
+                  "value": 67.44301175313252,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.8646311519159461,
+                  "display_factor": 100.0,
+                  "value": 86.46311519159461,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.7406755283956147,
+                  "display_factor": 100.0,
+                  "value": 74.06755283956147,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 1.4548372835648267,
+                  "display_factor": 100.0,
+                  "value": 145.48372835648266,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.6714080651231259,
+                  "display_factor": 100.0,
+                  "value": 67.1408065123126,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 1.2704630204589837,
+                  "display_factor": 100.0,
+                  "value": 127.04630204589837,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.055563783172283616,
+                  "display_factor": 100.0,
+                  "value": 5.556378317228361,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.013559841893706796,
+                  "display_factor": 100.0,
+                  "value": 1.3559841893706797,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.014740528634470812,
+                  "display_factor": 100.0,
+                  "value": 1.4740528634470813,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.013559836493200826,
+                  "display_factor": 100.0,
+                  "value": 1.3559836493200825,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPS nodal VM\nRMSE [MPa]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.1506702065570738,
+                  "display_factor": 1.0,
+                  "value": 0.1506702065570738,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.24604676794844135,
+                  "display_factor": 1.0,
+                  "value": 0.24604676794844135,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.14268762829468165,
+                  "display_factor": 1.0,
+                  "value": 0.14268762829468165,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.2703770048155503,
+                  "display_factor": 1.0,
+                  "value": 0.2703770048155503,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.1639033827982853,
+                  "display_factor": 1.0,
+                  "value": 0.1639033827982853,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.23663367631147503,
+                  "display_factor": 1.0,
+                  "value": 0.23663367631147503,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.045739661921806146,
+                  "display_factor": 1.0,
+                  "value": 0.045739661921806146,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.011662902003591734,
+                  "display_factor": 1.0,
+                  "value": 0.011662902003591734,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.010027701772859625,
+                  "display_factor": 1.0,
+                  "value": 0.010027701772859625,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "rmse",
+                  "source_value": 0.011662897204594267,
+                  "display_factor": 1.0,
+                  "value": 0.011662897204594267,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPS nodal VM\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.33799964440714514,
+                  "display_factor": 100.0,
+                  "value": 33.79996444071451,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5519586252282608,
+                  "display_factor": 100.0,
+                  "value": 55.195862522826076,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.3200922646019764,
+                  "display_factor": 100.0,
+                  "value": 32.00922646019764,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6065388345300203,
+                  "display_factor": 100.0,
+                  "value": 60.65388345300203,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.3676857314320028,
+                  "display_factor": 100.0,
+                  "value": 36.76857314320028,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5308421636611805,
+                  "display_factor": 100.0,
+                  "value": 53.084216366118056,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.10260813878301334,
+                  "display_factor": 100.0,
+                  "value": 10.260813878301335,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.02616347863355545,
+                  "display_factor": 100.0,
+                  "value": 2.616347863355545,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.022495221257718027,
+                  "display_factor": 100.0,
+                  "value": 2.2495221257718025,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "von_mises_GPS",
+                  "source_key": "relative_l2",
+                  "source_value": 0.026163467867927167,
+                  "display_factor": 100.0,
+                  "value": 2.616346786792717,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Total-strain Frobenius\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.36493891691825026,
+                  "display_factor": 100.0,
+                  "value": 36.49389169182503,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5777643828257809,
+                  "display_factor": 100.0,
+                  "value": 57.77643828257809,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.3514880481622702,
+                  "display_factor": 100.0,
+                  "value": 35.14880481622702,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6771497163987499,
+                  "display_factor": 100.0,
+                  "value": 67.71497163987499,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.34254486806794404,
+                  "display_factor": 100.0,
+                  "value": 34.254486806794404,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6316443579274491,
+                  "display_factor": 100.0,
+                  "value": 63.16443579274491,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06115375967219824,
+                  "display_factor": 100.0,
+                  "value": 6.115375967219824,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.02110853392276768,
+                  "display_factor": 100.0,
+                  "value": 2.110853392276768,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.021358196550558293,
+                  "display_factor": 100.0,
+                  "value": 2.1358196550558293,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "total_strain_frobenius",
+                  "source_key": "relative_l2",
+                  "source_value": 0.021108534327006472,
+                  "display_factor": 100.0,
+                  "value": 2.1108534327006474,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "EPSP\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9608125866170917,
+                  "display_factor": 100.0,
+                  "value": 96.08125866170917,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9935419469898695,
+                  "display_factor": 100.0,
+                  "value": 99.35419469898696,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9694685338329022,
+                  "display_factor": 100.0,
+                  "value": 96.94685338329022,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9997531859638994,
+                  "display_factor": 100.0,
+                  "value": 99.97531859638994,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9711748884802934,
+                  "display_factor": 100.0,
+                  "value": 97.11748884802934,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.9952727212880994,
+                  "display_factor": 100.0,
+                  "value": 99.52727212880994,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.720852437374346,
+                  "display_factor": 100.0,
+                  "value": 72.0852437374346,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.30971125009019196,
+                  "display_factor": 100.0,
+                  "value": 30.971125009019197,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.25076132149229824,
+                  "display_factor": 100.0,
+                  "value": 25.076132149229824,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "epsp",
+                  "source_key": "relative_l2",
+                  "source_value": 0.3097112878800451,
+                  "display_factor": 100.0,
+                  "value": 30.97112878800451,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "bumper": {
+      "shape": [
+        7,
+        13675,
+        10,
+        7
+      ],
+      "test_cases": [
+        "Run224",
+        "Run225",
+        "Run226",
+        "Run227",
+        "Run228",
+        "Run229",
+        "Run230"
+      ],
+      "field_names": [
+        "displacement_x",
+        "displacement_y",
+        "displacement_z",
+        "inplane_vm_upper",
+        "inplane_vm_lower",
+        "EPSP_upper",
+        "EPSP_lower"
+      ],
+      "field_units": [
+        "mm",
+        "mm",
+        "mm",
+        "GPa",
+        "GPa",
+        "dimensionless",
+        "dimensionless"
+      ],
+      "time_values": [
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0
+      ],
+      "time_unit": "ms",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "READY_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+      "normalization_file_sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+      "methods": [
+        {
+          "id": "transolver",
+          "label": "Transolver",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 4120,
+          "case_observations": 20063,
+          "optimizer_compute_seconds": 240.03653499998472,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\transolver\\test_report.json"
+        },
+        {
+          "id": "flare",
+          "label": "FLARE",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 1488,
+          "case_observations": 7248,
+          "optimizer_compute_seconds": 240.00237550000747,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\flare\\test_report.json"
+        },
+        {
+          "id": "geotransolver",
+          "label": "GeoTransolver GALE",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 3579,
+          "case_observations": 17430,
+          "optimizer_compute_seconds": 240.00856839997869,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\geotransolver\\test_report.json"
+        },
+        {
+          "id": "geoflare",
+          "label": "GeoTransolver GALE_FA",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 1237,
+          "case_observations": 6026,
+          "optimizer_compute_seconds": 240.10758870009158,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\geoflare\\test_report.json"
+        },
+        {
+          "id": "meshgraphnet",
+          "label": "MeshGraphNet",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 3387,
+          "case_observations": 6774,
+          "optimizer_compute_seconds": 240.05824039992876,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\meshgraphnet\\test_report.json"
+        },
+        {
+          "id": "figconvunet",
+          "label": "FIGConvUNet",
+          "kind": "neural",
+          "seed": 20261015,
+          "quality_budget_passed": true,
+          "optimizer_updates": 680,
+          "case_observations": 3313,
+          "optimizer_compute_seconds": 240.26071609995415,
+          "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+          "evidence": "benchmarks\\bumper\\models-c7\\figconvunet\\test_report.json"
+        },
+        {
+          "id": "training_mean",
+          "label": "Training mean",
+          "kind": "mean",
+          "fit_note": "Training-only mean, not an independent neural fit"
+        },
+        {
+          "id": "pod_rbf",
+          "label": "POD + RBF",
+          "kind": "rom",
+          "fit_note": "Shares train POD decomposition with POD+Ridge",
+          "selected": {
+            "method": "pod_rbf",
+            "gamma": 3.0,
+            "alpha": 0.1,
+            "rank": 27,
+            "training_energy_retained": 0.9510597179443265,
+            "validation_normalized_mse": 0.11834814975083412,
+            "validation_projection_lower_bound_mse": 0.02794025769944181
+          }
+        },
+        {
+          "id": "pod_ridge",
+          "label": "POD + Ridge",
+          "kind": "rom",
+          "fit_note": "Shares train POD decomposition with POD+RBF",
+          "selected": {
+            "method": "pod_ridge",
+            "degree": 2,
+            "alpha": 0.0001,
+            "rank": 109,
+            "training_energy_retained": 0.9999275759770809,
+            "validation_normalized_mse": 0.23113642444273472,
+            "validation_projection_lower_bound_mse": 0.01229064289017097
+          }
+        },
+        {
+          "id": "direct_rbf",
+          "label": "Direct RBF",
+          "kind": "rom",
+          "fit_note": "Phone full-rank POD+RBF and direct RBF are nearly equivalent here; not two independent superiority results"
+        }
+      ],
+      "panels": [
+        {
+          "title": "Displacement vector\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06320781616932733,
+                  "display_factor": 100.0,
+                  "value": 6.320781616932733,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.07169686807332394,
+                  "display_factor": 100.0,
+                  "value": 7.169686807332394,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06003179419999904,
+                  "display_factor": 100.0,
+                  "value": 6.003179419999904,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06986953703630228,
+                  "display_factor": 100.0,
+                  "value": 6.986953703630228,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06390397870090661,
+                  "display_factor": 100.0,
+                  "value": 6.390397870090661,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.0833745828305615,
+                  "display_factor": 100.0,
+                  "value": 8.337458283056149,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.20550271462251915,
+                  "display_factor": 100.0,
+                  "value": 20.550271462251914,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.030320253280522146,
+                  "display_factor": 100.0,
+                  "value": 3.0320253280522147,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.06623408374916916,
+                  "display_factor": 100.0,
+                  "value": 6.623408374916916,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "relative_l2",
+                  "source_value": 0.030529985832400377,
+                  "display_factor": 100.0,
+                  "value": 3.0529985832400377,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Centroid-removed vector\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "single",
+              "values": [
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.10994352689189837,
+                  "display_factor": 100.0,
+                  "value": 10.994352689189837,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.11885985080036769,
+                  "display_factor": 100.0,
+                  "value": 11.88598508003677,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.10837183616480471,
+                  "display_factor": 100.0,
+                  "value": 10.837183616480472,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.11567040309846896,
+                  "display_factor": 100.0,
+                  "value": 11.567040309846895,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.11451381734815999,
+                  "display_factor": 100.0,
+                  "value": 11.451381734816,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.14821782419557325,
+                  "display_factor": 100.0,
+                  "value": 14.821782419557325,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.3331622212205892,
+                  "display_factor": 100.0,
+                  "value": 33.31622212205892,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.047447926353367004,
+                  "display_factor": 100.0,
+                  "value": 4.7447926353367,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.11066474342613548,
+                  "display_factor": 100.0,
+                  "value": 11.066474342613548,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "displacement_vector",
+                  "source_key": "centroid_removed_relative_l2",
+                  "source_value": 0.0469482193418774,
+                  "display_factor": 100.0,
+                  "value": 4.69482193418774,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Projected layer VM\nRMSE [MPa]",
+          "series": [
+            {
+              "layer": "upper",
+              "values": [
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.07507267525252852,
+                  "display_factor": 1000.0,
+                  "value": 75.07267525252851,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.084273829072812,
+                  "display_factor": 1000.0,
+                  "value": 84.273829072812,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.07077669279405684,
+                  "display_factor": 1000.0,
+                  "value": 70.77669279405684,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.08129555023629988,
+                  "display_factor": 1000.0,
+                  "value": 81.29555023629987,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.07663366111766927,
+                  "display_factor": 1000.0,
+                  "value": 76.63366111766926,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.07418566701094714,
+                  "display_factor": 1000.0,
+                  "value": 74.18566701094714,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.11939342723349196,
+                  "display_factor": 1000.0,
+                  "value": 119.39342723349196,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.0433569892435961,
+                  "display_factor": 1000.0,
+                  "value": 43.356989243596104,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.08110491764910659,
+                  "display_factor": 1000.0,
+                  "value": 81.10491764910658,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "rmse",
+                  "source_value": 0.044492623254112705,
+                  "display_factor": 1000.0,
+                  "value": 44.49262325411271,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            },
+            {
+              "layer": "lower",
+              "values": [
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.075442479850753,
+                  "display_factor": 1000.0,
+                  "value": 75.442479850753,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.083651517937925,
+                  "display_factor": 1000.0,
+                  "value": 83.651517937925,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.07100580951459011,
+                  "display_factor": 1000.0,
+                  "value": 71.00580951459011,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.08053461376563885,
+                  "display_factor": 1000.0,
+                  "value": 80.53461376563885,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.07637744395785703,
+                  "display_factor": 1000.0,
+                  "value": 76.37744395785704,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.07560506028874553,
+                  "display_factor": 1000.0,
+                  "value": 75.60506028874553,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.12025818346495074,
+                  "display_factor": 1000.0,
+                  "value": 120.25818346495073,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.04520101984860168,
+                  "display_factor": 1000.0,
+                  "value": 45.201019848601675,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.08291380414888667,
+                  "display_factor": 1000.0,
+                  "value": 82.91380414888667,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "rmse",
+                  "source_value": 0.04633038829564807,
+                  "display_factor": 1000.0,
+                  "value": 46.33038829564807,
+                  "unit": "MPa",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Projected layer VM\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "upper",
+              "values": [
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.26075287209721393,
+                  "display_factor": 100.0,
+                  "value": 26.07528720972139,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2927116011178154,
+                  "display_factor": 100.0,
+                  "value": 29.27116011178154,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2458314674615371,
+                  "display_factor": 100.0,
+                  "value": 24.583146746153712,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.28236702823674265,
+                  "display_factor": 100.0,
+                  "value": 28.236702823674264,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.26617470562411893,
+                  "display_factor": 100.0,
+                  "value": 26.617470562411892,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2576719915266438,
+                  "display_factor": 100.0,
+                  "value": 25.76719915266438,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.41469388104181343,
+                  "display_factor": 100.0,
+                  "value": 41.46938810418134,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.1505935339686049,
+                  "display_factor": 100.0,
+                  "value": 15.05935339686049,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.28170489658286507,
+                  "display_factor": 100.0,
+                  "value": 28.170489658286506,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.15453797618939158,
+                  "display_factor": 100.0,
+                  "value": 15.453797618939157,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            },
+            {
+              "layer": "lower",
+              "values": [
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.25990000424384485,
+                  "display_factor": 100.0,
+                  "value": 25.990000424384483,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.28818021239599756,
+                  "display_factor": 100.0,
+                  "value": 28.818021239599755,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2446156360539547,
+                  "display_factor": 100.0,
+                  "value": 24.46156360539547,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2774424502067455,
+                  "display_factor": 100.0,
+                  "value": 27.74424502067455,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2631209637865971,
+                  "display_factor": 100.0,
+                  "value": 26.31209637865971,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2604600952775412,
+                  "display_factor": 100.0,
+                  "value": 26.046009527754123,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.4142904959477655,
+                  "display_factor": 100.0,
+                  "value": 41.42904959477655,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.1557179095082521,
+                  "display_factor": 100.0,
+                  "value": 15.571790950825209,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.2856387819276314,
+                  "display_factor": 100.0,
+                  "value": 28.56387819276314,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "inplane_vm_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.15960859370581423,
+                  "display_factor": 100.0,
+                  "value": 15.960859370581423,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Upper EPSP\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "upper",
+              "values": [
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.4295399811940684,
+                  "display_factor": 100.0,
+                  "value": 42.95399811940684,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6181797665440424,
+                  "display_factor": 100.0,
+                  "value": 61.81797665440424,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.4451569762203194,
+                  "display_factor": 100.0,
+                  "value": 44.515697622031944,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5807971061048351,
+                  "display_factor": 100.0,
+                  "value": 58.07971061048352,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5655720766630126,
+                  "display_factor": 100.0,
+                  "value": 56.55720766630126,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.47859236648245274,
+                  "display_factor": 100.0,
+                  "value": 47.85923664824527,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.838202067901107,
+                  "display_factor": 100.0,
+                  "value": 83.8202067901107,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5184886538899989,
+                  "display_factor": 100.0,
+                  "value": 51.84886538899989,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6830750026189555,
+                  "display_factor": 100.0,
+                  "value": 68.30750026189556,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_upper",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5275224104562125,
+                  "display_factor": 100.0,
+                  "value": 52.752241045621254,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lower EPSP\nrelative L2 [%]",
+          "series": [
+            {
+              "layer": "lower",
+              "values": [
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.4324818166457302,
+                  "display_factor": 100.0,
+                  "value": 43.24818166457302,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.6282636288373488,
+                  "display_factor": 100.0,
+                  "value": 62.82636288373487,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.44891435944556607,
+                  "display_factor": 100.0,
+                  "value": 44.891435944556605,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5922323798809925,
+                  "display_factor": 100.0,
+                  "value": 59.22323798809926,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5834423628640084,
+                  "display_factor": 100.0,
+                  "value": 58.34423628640084,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.48532278385265676,
+                  "display_factor": 100.0,
+                  "value": 48.53227838526568,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.8465012249237555,
+                  "display_factor": 100.0,
+                  "value": 84.65012249237554,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5502177047931419,
+                  "display_factor": 100.0,
+                  "value": 55.02177047931419,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.7027737744980355,
+                  "display_factor": 100.0,
+                  "value": 70.27737744980355,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                },
+                {
+                  "source_field": "EPSP_lower",
+                  "source_key": "relative_l2",
+                  "source_value": 0.5629852504979702,
+                  "display_factor": 100.0,
+                  "value": 56.29852504979702,
+                  "unit": "%",
+                  "display_status": "positive_log_coordinate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "model_calls": 0,
+  "array_or_checkpoint_files_opened": 0,
+  "metric_work": "Saved scalar JSON values with display-only unit conversions",
+  "provenance_scope": "Saved metadata digests compared; original NPY/NPZ/PT arrays/weights never opened.",
+  "visual_review": {
+    "status": "PASS_ACTUAL_VISUAL_REVIEW",
+    "reviewed_utc": "2026-10-15T08:38:20.324861+00:00",
+    "viewer": "tools.view_image(detail=original)",
+    "actual_original_pixels": [
+      3680,
+      1920
+    ],
+    "tool_display_pixels": [
+      2048,
+      1069
+    ],
+    "PNG_sha256": "292e1686382d796503057fbc659cb3e731ddd898f70272f6c93f9408b30540de",
+    "checks": {
+      "all_ten_method_names_legible": true,
+      "twelve_numeric_log_axes_legible": true,
+      "visible_ticks_per_axis_minimum": 2,
+      "visible_ticks_per_axis_maximum": 5,
+      "bumper_VM_relative_L2_ticks": [
+        20,
+        50
+      ],
+      "domain_support_and_time_windows_correct": true,
+      "phone_time_window": "2 test cases x 10 nominal2..20us times",
+      "bumper_time_window": "7 test cases x 10 nominal10..100ms times",
+      "VM_RMSE_MPa_and_relative_L2_percent_separate": true,
+      "phone_total_strain_Frobenius_vs_bumper_EPSP_distinct": true,
+      "upper_circle_lower_triangle_legend_legible": true,
+      "all_titles_labels_legend_and_footer_unclipped": true,
+      "bounded_budget_single_seed_shared_ROM_basis_caveats_visible": true,
+      "native_cell_IP_peak_vs_nodal_projection_distinction_visible": true
+    },
+    "comparison_to_v1": {
+      "all_140_value_records_and_domains_identical": true,
+      "all_12_x_limits_identical": true,
+      "input_hashes_unchanged": 129,
+      "input_hashes_changed": [
+        "full-support-comparison-execution-protocol.json",
+        "plot_full_support_comparison.py"
+      ],
+      "input_additions_or_deletions": 0,
+      "scientific_change": "None; only axis locator/formatter was corrected. Output routing preserves original execution evidence."
+    },
+    "independent_read_only_metadata_review": {
+      "reviewer": "batch_summary_review",
+      "status": "PASS",
+      "v1_source_value_unit_factor_comparisons": [
+        140,
+        140
+      ],
+      "v1_metric_JSON_hash_matches": [
+        17,
+        17
+      ],
+      "v2_domains_and_140_records_identical": true,
+      "v2_x_limits_identical": 12,
+      "v2_all_visible_ticks_in_range": true,
+      "v1_root_render_JSON_byte_identity": true
+    },
+    "mean_vs_NN_audit_scope": {
+      "mean_evidence": "full-support-mean-baselines.json",
+      "mean_evidence_sha256": "2031d5e80c314c8a8b3c0a80aec9361099fe0b283f64d3404416dad50cd3a365",
+      "domains": {
+        "phone": {
+          "status": "computed_and_self_checked",
+          "training_case_count": 5,
+          "validation_scope": "Baseline computation plus source/arithmetic/finite/shape self-checks; not a third-party independent acceptance verdict"
+        },
+        "bumper": {
+          "status": "computed_and_self_checked",
+          "training_case_count": 112,
+          "validation_scope": "Baseline computation plus source/arithmetic/finite/shape self-checks; not a third-party independent acceptance verdict"
+        }
+      },
+      "NN_independent_audit_evidence": "full-support-evaluation-review.json",
+      "NN_independent_audit_evidence_sha256": "0042a6a2c37b8c2d67aa7a1d51d8e309da5d72d07a5795a987e7f759b81b33af",
+      "NN_completed_independent_audits": 12,
+      "scope_note": "Mean computation/source/arithmetic/chunk self-checks are distinct from the existing independent NN audit. Chart rendering performs neither additional NN acceptance audits nor model tests."
+    },
+    "render_count_total": 2,
+    "model_calls_total": 0,
+    "fit_inference_test_or_training_calls_total": 0,
+    "array_or_checkpoint_files_opened_total": 0,
+    "raw_values_clipped_or_recomputed": false,
+    "remaining_material_visual_findings": [],
+    "limits": "Pooled errors for fixed saved supports and windows; one bounded NN seed and unequal ROM/NN optimization budgets. This chart does not establish convergence, generalization to new geometry, or new independent algorithm families."
+  },
+  "finished_utc": "2026-10-15T08:36:26.567985+00:00",
+  "display": {
+    "matplotlib_version": "3.10.1",
+    "PNG_pixels": [
+      3680,
+      1920
+    ],
+    "layout": "2domain rows ×6separate metric axes,10methods per axis",
+    "metric_axis_scale": "log_x",
+    "actual_axes": [
+      {
+        "domain": "phone",
+        "panel_title": "Displacement vector\nrelative L2 [%]",
+        "x_limits": [
+          0.01746460877501572,
+          4.235769687328213
+        ],
+        "visible_major_ticks": [
+          [
+            0.05,
+            "0.05"
+          ],
+          [
+            0.1,
+            "0.1"
+          ],
+          [
+            0.5,
+            "0.5"
+          ],
+          [
+            1.0,
+            "1"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "phone",
+        "panel_title": "Centroid-removed vector\nrelative L2 [%]",
+        "x_limits": [
+          0.9039890995467217,
+          218.225592534724
+        ],
+        "visible_major_ticks": [
+          [
+            1.0,
+            "1"
+          ],
+          [
+            5.0,
+            "5"
+          ],
+          [
+            10.0,
+            "10"
+          ],
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "phone",
+        "panel_title": "GPS nodal VM\nRMSE [MPa]",
+        "x_limits": [
+          0.00668513451523975,
+          0.4055655072233255
+        ],
+        "visible_major_ticks": [
+          [
+            0.01,
+            "0.01"
+          ],
+          [
+            0.02,
+            "0.02"
+          ],
+          [
+            0.05,
+            "0.05"
+          ],
+          [
+            0.1,
+            "0.1"
+          ],
+          [
+            0.2,
+            "0.2"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "phone",
+        "panel_title": "GPS nodal VM\nrelative L2 [%]",
+        "x_limits": [
+          1.4996814171812016,
+          90.98082517950304
+        ],
+        "visible_major_ticks": [
+          [
+            2.0,
+            "2"
+          ],
+          [
+            5.0,
+            "5"
+          ],
+          [
+            10.0,
+            "10"
+          ],
+          [
+            20.0,
+            "20"
+          ],
+          [
+            50.0,
+            "50"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "phone",
+        "panel_title": "Total-strain Frobenius\nrelative L2 [%]",
+        "x_limits": [
+          1.4072355948511788,
+          101.57245745981248
+        ],
+        "visible_major_ticks": [
+          [
+            5.0,
+            "5"
+          ],
+          [
+            10.0,
+            "10"
+          ],
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "phone",
+        "panel_title": "EPSP\nrelative L2 [%]",
+        "x_limits": [
+          16.717421432819883,
+          149.96297789458492
+        ],
+        "visible_major_ticks": [
+          [
+            20.0,
+            "20"
+          ],
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Displacement vector\nrelative L2 [%]",
+        "x_limits": [
+          2.0213502187014765,
+          30.82540719337787
+        ],
+        "visible_major_ticks": [
+          [
+            5.0,
+            "5"
+          ],
+          [
+            10.0,
+            "10"
+          ],
+          [
+            20.0,
+            "20"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Centroid-removed vector\nrelative L2 [%]",
+        "x_limits": [
+          3.1298812894584933,
+          49.974333183088376
+        ],
+        "visible_major_ticks": [
+          [
+            5.0,
+            "5"
+          ],
+          [
+            10.0,
+            "10"
+          ],
+          [
+            20.0,
+            "20"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Projected layer VM\nRMSE [MPa]",
+        "x_limits": [
+          28.904659495730737,
+          180.3872751974261
+        ],
+        "visible_major_ticks": [
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Projected layer VM\nrelative L2 [%]",
+        "x_limits": [
+          10.039568931240327,
+          62.20408215627201
+        ],
+        "visible_major_ticks": [
+          [
+            20.0,
+            "20"
+          ],
+          [
+            50.0,
+            "50"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Upper EPSP\nrelative L2 [%]",
+        "x_limits": [
+          28.635998746271227,
+          125.73031018516605
+        ],
+        "visible_major_ticks": [
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      },
+      {
+        "domain": "bumper",
+        "panel_title": "Lower EPSP\nrelative L2 [%]",
+        "x_limits": [
+          28.832121109715345,
+          126.97518373856332
+        ],
+        "visible_major_ticks": [
+          [
+            50.0,
+            "50"
+          ],
+          [
+            100.0,
+            "100"
+          ]
+        ],
+        "scale": "log",
+        "null_annotations": 0,
+        "exact_zero_annotations": 0
+      }
+    ],
+    "zero_policy": "Exact zero annotated at axis fraction, not assigned a false log coordinate",
+    "null_policy": "Recorded null annotated and excluded from numeric axis"
+  },
+  "PNG_valid": true,
+  "PNG_sha256": "292e1686382d796503057fbc659cb3e731ddd898f70272f6c93f9408b30540de",
+  "PNG_bytes": 295055,
+  "minimum_sampled_host_available_bytes": 2535505920,
+  "maximum_process_peak_rss_bytes": 128942080,
+  "correction_history": {
+    "reason": "Actual v1 tick-label QA finding; explicitly authorized one bounded correction and second render. No source/data-selection experiment.",
+    "render_count_total": 2,
+    "v1": {
+      "directory": "revisions/v1",
+      "source_sha256": "7f6146a0ac26e194ea96f8e44a749fd3b799d6aac20b30f3cca9d6a4f6f308ce",
+      "PNG_sha256": "4167d650862e911d8252a8715cabf4ca1153fa29a1ebd3d70d8bcb4683a193c1",
+      "render_JSON_sha256": "78e083691207ecd7106673093424ac28959f1803110cd50479c19c5600d9c1e8",
+      "QA_sha256": "3063457d13a06780e3a16919c7d60f796831d407b1de89936bd2752ade88e405",
+      "preservation_manifest_sha256": "cb8e0166736b5c45c10a7050a8b2bb74c6afdb7dab196db8c080888af6e9d579",
+      "original_root_PNG_and_JSON_untouched": true
+    },
+    "v2": {
+      "directory": "revisions/v2",
+      "source_sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+      "PNG_sha256": "292e1686382d796503057fbc659cb3e731ddd898f70272f6c93f9408b30540de",
+      "raw_render_JSON_sha256": "d7fecb26c9f298f933353266e4c0471f46af2dc867a2729cca41e492bcea2d93",
+      "QA_sha256": "fcc78520d5c589965a7fbc56078e1cc166aab23cef3de4353d2476dec20dce35",
+      "scientific_inputs_unchanged": 129,
+      "changed_inputs": [
+        "full-support-comparison-execution-protocol.json",
+        "plot_full_support_comparison.py"
+      ],
+      "all_domain_values_metadata_and_xlimits_identical": true
+    }
+  }
+}

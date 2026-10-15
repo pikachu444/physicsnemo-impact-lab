@@ -1,0 +1,41 @@
+{
+  "status": "FINAL_V2_RENDER_AND_ACTUAL_VISUAL_QA_COMPLETE",
+  "frozen_utc": "2026-10-15T08:38:20.324861+00:00",
+  "adopted_PNG": "revisions/v2/full-support-algorithm-comparison.png",
+  "adopted_JSON": "revisions/v2/full-support-algorithm-comparison.json",
+  "files": {
+    "full-support-algorithm-comparison.json": {
+      "sha256": "5bad22e81d00ca23d7d4bde229cb9c01d4fca3fc7f54d6230a6a09ed5fad2d3c",
+      "bytes": 127837
+    },
+    "full-support-algorithm-comparison.png": {
+      "sha256": "292e1686382d796503057fbc659cb3e731ddd898f70272f6c93f9408b30540de",
+      "bytes": 295055
+    },
+    "full-support-comparison-execution-protocol.json": {
+      "sha256": "7d87084bebbb51dfc389a508940e2a059e95a5ea40c10d7dfcd55655696206f6",
+      "bytes": 18641
+    },
+    "full-support-comparison-execution-protocol.md": {
+      "sha256": "e8974eabe69e7131a89dcebe88e6f7aeb639330433537cefce9796acdee1cea0",
+      "bytes": 2724
+    },
+    "plot_full_support_comparison.py": {
+      "sha256": "c5a4276a65a6735ccfd8b7b6d6d034ae26d17b75cc017c36a40b021ad9618c0b",
+      "bytes": 24208
+    },
+    "raw-render-record.json": {
+      "sha256": "d7fecb26c9f298f933353266e4c0471f46af2dc867a2729cca41e492bcea2d93",
+      "bytes": 122617
+    },
+    "visual-review.json": {
+      "sha256": "fcc78520d5c589965a7fbc56078e1cc166aab23cef3de4353d2476dec20dce35",
+      "bytes": 3780
+    }
+  },
+  "render_count_total": 2,
+  "model_calls_total": 0,
+  "no_more_render_or_model_work_authorized_or_needed": true,
+  "v1_archive_untouched": true,
+  "root_README_Git_Page_coverage_changed": false
+}

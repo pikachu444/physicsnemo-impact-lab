@@ -1,0 +1,87 @@
+{
+  "status": "PASS_ACTUAL_VISUAL_REVIEW",
+  "reviewed_utc": "2026-10-15T08:38:20.324861+00:00",
+  "viewer": "tools.view_image(detail=original)",
+  "actual_original_pixels": [
+    3680,
+    1920
+  ],
+  "tool_display_pixels": [
+    2048,
+    1069
+  ],
+  "PNG_sha256": "292e1686382d796503057fbc659cb3e731ddd898f70272f6c93f9408b30540de",
+  "checks": {
+    "all_ten_method_names_legible": true,
+    "twelve_numeric_log_axes_legible": true,
+    "visible_ticks_per_axis_minimum": 2,
+    "visible_ticks_per_axis_maximum": 5,
+    "bumper_VM_relative_L2_ticks": [
+      20,
+      50
+    ],
+    "domain_support_and_time_windows_correct": true,
+    "phone_time_window": "2 test cases x 10 nominal2..20us times",
+    "bumper_time_window": "7 test cases x 10 nominal10..100ms times",
+    "VM_RMSE_MPa_and_relative_L2_percent_separate": true,
+    "phone_total_strain_Frobenius_vs_bumper_EPSP_distinct": true,
+    "upper_circle_lower_triangle_legend_legible": true,
+    "all_titles_labels_legend_and_footer_unclipped": true,
+    "bounded_budget_single_seed_shared_ROM_basis_caveats_visible": true,
+    "native_cell_IP_peak_vs_nodal_projection_distinction_visible": true
+  },
+  "comparison_to_v1": {
+    "all_140_value_records_and_domains_identical": true,
+    "all_12_x_limits_identical": true,
+    "input_hashes_unchanged": 129,
+    "input_hashes_changed": [
+      "full-support-comparison-execution-protocol.json",
+      "plot_full_support_comparison.py"
+    ],
+    "input_additions_or_deletions": 0,
+    "scientific_change": "None; only axis locator/formatter was corrected. Output routing preserves original execution evidence."
+  },
+  "independent_read_only_metadata_review": {
+    "reviewer": "batch_summary_review",
+    "status": "PASS",
+    "v1_source_value_unit_factor_comparisons": [
+      140,
+      140
+    ],
+    "v1_metric_JSON_hash_matches": [
+      17,
+      17
+    ],
+    "v2_domains_and_140_records_identical": true,
+    "v2_x_limits_identical": 12,
+    "v2_all_visible_ticks_in_range": true,
+    "v1_root_render_JSON_byte_identity": true
+  },
+  "mean_vs_NN_audit_scope": {
+    "mean_evidence": "full-support-mean-baselines.json",
+    "mean_evidence_sha256": "2031d5e80c314c8a8b3c0a80aec9361099fe0b283f64d3404416dad50cd3a365",
+    "domains": {
+      "phone": {
+        "status": "computed_and_self_checked",
+        "training_case_count": 5,
+        "validation_scope": "Baseline computation plus source/arithmetic/finite/shape self-checks; not a third-party independent acceptance verdict"
+      },
+      "bumper": {
+        "status": "computed_and_self_checked",
+        "training_case_count": 112,
+        "validation_scope": "Baseline computation plus source/arithmetic/finite/shape self-checks; not a third-party independent acceptance verdict"
+      }
+    },
+    "NN_independent_audit_evidence": "full-support-evaluation-review.json",
+    "NN_independent_audit_evidence_sha256": "0042a6a2c37b8c2d67aa7a1d51d8e309da5d72d07a5795a987e7f759b81b33af",
+    "NN_completed_independent_audits": 12,
+    "scope_note": "Mean computation/source/arithmetic/chunk self-checks are distinct from the existing independent NN audit. Chart rendering performs neither additional NN acceptance audits nor model tests."
+  },
+  "render_count_total": 2,
+  "model_calls_total": 0,
+  "fit_inference_test_or_training_calls_total": 0,
+  "array_or_checkpoint_files_opened_total": 0,
+  "raw_values_clipped_or_recomputed": false,
+  "remaining_material_visual_findings": [],
+  "limits": "Pooled errors for fixed saved supports and windows; one bounded NN seed and unequal ROM/NN optimization budgets. This chart does not establish convergence, generalization to new geometry, or new independent algorithm families."
+}

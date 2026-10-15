@@ -1,0 +1,60 @@
+{
+  "phone_mean_original_record_sources": {
+    "generator_sha256": "28b9fbc81d0f366a196dd6ed81da26d9a53804bae49e7e35c9673e35977403d3",
+    "generator_snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\28b9fbc81d0f366a196dd6ed81da26d9a53804bae49e7e35c9673e35977403d3\\compute_mean_baselines.py",
+    "generator_preservation": "Exact-byte reconstruction; matched SHA from original completed record; reconstructed code not executed",
+    "helper_sha256": "7c6b9458b2bbb593077e00d2eb23ac80d4ab25ca469ee88e03ffbd0db4aad699",
+    "helper_snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\7c6b9458b2bbb593077e00d2eb23ac80d4ab25ca469ee88e03ffbd0db4aad699\\audit_full_support.py",
+    "helper_preservation": "Original bytes remained current and were preserved before further changes"
+  },
+  "preserved_prior_records": [
+    {
+      "file": "full-support-mean-baselines.json",
+      "sha256": "c37982aecbaefefa471046c0563a6efc19861f8dcb96b72d0d6c3b1c2bbdd952",
+      "bytes": 24188,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\c37982aecbaefefa471046c0563a6efc19861f8dcb96b72d0d6c3b1c2bbdd952\\full-support-mean-baselines.json",
+      "preserved_utc": "2026-10-15T07:39:27.166937+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    },
+    {
+      "file": "full-support-mean-baselines.md",
+      "sha256": "444ec04252a53bad55bdeb75a1497c29afee578e4225d1b904576e26e8c397b2",
+      "bytes": 1486,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\444ec04252a53bad55bdeb75a1497c29afee578e4225d1b904576e26e8c397b2\\full-support-mean-baselines.md",
+      "preserved_utc": "2026-10-15T07:39:27.171284+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    },
+    {
+      "file": "full-support-evaluation-review.json",
+      "sha256": "f08f1a4e182c20cdd497042eac18d571653fb1f1385bacd71de78c7cf15b1891",
+      "bytes": 190717,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f08f1a4e182c20cdd497042eac18d571653fb1f1385bacd71de78c7cf15b1891\\full-support-evaluation-review.json",
+      "preserved_utc": "2026-10-15T07:39:27.187723+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    },
+    {
+      "file": "full-support-evaluation-review.md",
+      "sha256": "6d05a7afd5516989cacca577e791ba33ac58c3885bb5d8b30574abfc30606e54",
+      "bytes": 3044,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\6d05a7afd5516989cacca577e791ba33ac58c3885bb5d8b30574abfc30606e54\\full-support-evaluation-review.md",
+      "preserved_utc": "2026-10-15T07:39:27.201998+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    }
+  ],
+  "older_field_auditor_limitation": "Older cumulative audit revisions 8667e028..., a0b0806..., 28b5c9fc... did not preserve source bytes before mutation; some per-model source hashes were not individually recorded. No current code is relabelled as those revisions.",
+  "source_snapshot_root": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots",
+  "record_snapshot_root": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots",
+  "resolution_status": "complete_saved_prediction_repeat_12_of_12",
+  "resolution_evidence": {
+    "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\final-saved-result-verification.json",
+    "latest_report": {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-latest-audit.json",
+      "bytes": 559737,
+      "sha256": "1db3f586c928d2f6792d7e73eeb1ff37670f504a84b4fe1af39f7f79c68c3c19"
+    },
+    "numerical_auditor_sha256": "5f9f578a2fdef265a0cefa920daf4704c7253b7ef4a85bd428a01adac9f11352",
+    "source_snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\5f9f578a2fdef265a0cefa920daf4704c7253b7ef4a85bd428a01adac9f11352\\audit_full_support.py",
+    "resource_limit_status": "transient_RSS_excess_detected_then_deferred_and_restarted"
+  },
+  "resolution_plan_historical": "After static suite completion, run one source-pinned latest-audit of all saved predictions, preserving cumulative report/history/test markers and using no NN inference/training. Future executions preserve source bytes before array work."
+}

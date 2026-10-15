@@ -10,6 +10,8 @@
 | OpenCourant DP600 인장 시편 | 직접 생성한 13해석, shell808개·학습 절점919개·10시점. 학습5/검증4/평가4 | native VM, EPSP, native total-strain tensor의 면내 주값 major/minor. 총변형률을 변위 미분으로 대체하지 않음 |
 | OpenCourant 휴대폰 초기 충격 | 실제 9조건·전체 출력 corner76,065절점·17부품, 학습5/검증2/평가2. 별도 중심 조건0.5ms도 정상 완주 | native solid stress·total strain·EPSP 및 GPS nodal stress. AI9조건은20µs까지이며 중심 FEM0.5ms의 전체 반발 완료는 확인되지 않음 |
 | 공개 DeformingPlate | 실제 400시점 궤적 다운로드·학습·자기회귀 실행 | 원본 nodal scalar `stress`는 원논문이 von Mises로 정의(물리 단위 미확정). 원 COMSOL strain 출력은 없으며, 좌표에서 계산한 Green–Lagrange strain은 별도 유도 기준값 |
+| 공식 Q1 선형 탄성·수치 DDM | CPU 단일 영역 solve와 전체32×32 문제의2×2영역 분할 solve를 실제 실행. DDM64반복 수렴·독립25검사 통과 | Q1 FEM의 변위·미소변형률·평면응력·VM을 비교한 수치 기준선. 신경망 학습이나 낙하·접촉·소성 정확도 검증으로 세지 않음 |
+| OpenCourant BOX1BL 충돌 회귀시험 | 앞선 단계에서 공개 MiniQA Starter·Engine 실제 실행 | 작은 구조 충돌 solver 실행 확인. 이번 다물리량 surrogate fit을 추가로 완료한 사례로 세지 않음 |
 
 공개 curated 범퍼의 변위만으로 응력 학습이 됐다고 주장하지 않았다. RAW ANIM 3.799GB를 추가 확보하고, hash·형상·ID·실제 시점·물리량·112/12/7 분할을 검증한 2.921GB 라벨 캐시를 동결했다. 전체 cache 작성자의 전수 hash 검증과 독립 검토자의 메타데이터 전수·원 binary 표본 검산은 별개다. [범퍼 정답 추출](fem-labels/README.md), [시편 정답 생성](benchmarks/structural_coupon/README.md)
 
@@ -41,7 +43,7 @@ FIG는 이번 신경망 중 응력 오차가 가장 작았지만 EPSP 음수6,78
 
 범퍼의 다중 물리량 POD+RBF도 실제 학습·내부 검증 선택·평가를 마쳤다. 변위 L2는 3.0320%지만 VM upper/lower L2는 15.059%/15.572%(RMSE 43.357/45.201MPa), EPSP는 51.849%/55.022%였다. EPSP 예측의 약 22%가 음수였다. **변위가 잘 맞는다는 이유로 소성변형·파손 위험도 맞는다고 판단할 수 없다.** 이 사례의 strain은 EPSP이며 total strain과 다르다.
 
-동일한 범퍼 전체 support·112/12/7 분할에서 Transolver·FLARE·GeoTransolver GALE도 학습·새 프로세스 validation 재추론 차이0·test7조건 한 번·독립 수치 검산을 마쳤다. 아래는 완료된 결과만 모은 표다. 나머지 세 신경망 설정은 진행 중이며 미완료 값을 채우지 않는다.
+동일한 범퍼 전체 support·112/12/7 분할에서 여섯 신경망 모두 실제 학습·새 프로세스 재로딩 검사·test7조건 한 번·독립 수치 검산을 마쳤다. MGN의 재로딩 정규화 차이는1.90735e-6으로 사전 허용치1e-5 이내이고 나머지 다섯 설정은0이었다.
 
 | 범퍼, 평가7조건 | 변위 벡터 L2 | 병진 제거 형상 변위 L2 | VM upper / lower L2 | VM upper / lower RMSE | EPSP upper / lower L2 |
 |---|---:|---:|---:|---:|---:|
@@ -50,12 +52,23 @@ FIG는 이번 신경망 중 응력 오차가 가장 작았지만 EPSP 음수6,78
 | Transolver B5, 240초 optimizer 예산 | 6.3208% | 10.9944% | 26.0753% / 25.9900% | 75.073 / 75.442MPa | 42.9540% / 43.2482% |
 | FLARE B5, 같은 계산 예산 | 7.1697% | 11.8860% | 29.2712% / 28.8180% | 84.274 / 83.652MPa | 61.8180% / 62.8264% |
 | GeoTransolver GALE B5, 같은 계산 예산 | 6.0032% | 10.8372% | 24.5831% / 24.4616% | 70.777 / 71.006MPa | 44.5157% / 44.8914% |
+| GeoTransolver GALE_FA B5, 같은 계산 예산 | 6.9870% | 11.5670% | 28.2367% / 27.7442% | 81.296 / 80.535MPa | 58.0797% / 59.2232% |
+| MeshGraphNet B2, 같은 계산 예산 | 6.3904% | 11.4514% | 26.6175% / 26.3121% | 76.634 / 76.377MPa | 56.5572% / 58.3442% |
+| FIGConvUNet B5, 같은 계산 예산 | 8.3375% | 14.8218% | 25.7672% / 26.0460% | 74.186 / 75.605MPa | 47.8592% / 48.5323% |
 
 이 Transolver는 실제4,120업데이트·20,063조건 관측·179완료 epoch 중 best149를 선택했다. 마지막 부분 epoch의3업데이트·15관측은 선택에서 제외했다. Optimizer240.037초와 training wall901.421초를 구분한다. POD+RBF가 변위·응력에 유리했으나 이번 신경망이 EPSP에는 더 낮은 오차를 보였으므로 한 방법이 모든 물리량에서 낫다고 결론내리지 않는다. VM 원 단위는 GPa이며 위 RMSE는 ×1000한 MPa다. Raw 음수 VM upper/lower4,239/5,942개, 음수 EPSP201,590/205,166개와 EPSP 이력 감소258,776/263,206개도 남아 있다. [첫 범퍼 신경망 원 지표](benchmarks/bumper/models-c7/transolver/test_report.json), [평균장 기준선](full-support-mean-baselines.md)
 
 FLARE는 실제1,488업데이트·7,248관측·64완료 epoch 중 best58을 선택했고 부분 epoch16업데이트는 제외했다. Optimizer240.002초·training wall537.195초였으며 EPSP 음수479,915/488,649개·이력 감소358,977/354,601개를 기록했다. 두 신경망은 평균장보다 집계 오차가 낮지만 원 물리 제약 위반과 단일 seed·예산 제한을 함께 보고한다. [FLARE 원 지표](benchmarks/bumper/models-c7/flare/test_report.json)
 
 GeoTransolver GALE는 실제3,579업데이트·17,430관측·155완료 epoch 중 best153을 선택했고 부분 epoch14업데이트는 제외했다. Optimizer240.009초·training wall787.704초였다. EPSP 음수274,291/250,132개·이력 감소378,649/390,680개도 남아 있다. 수치 감사 통과는 저장 지표의 일치이며 제품 적용 정확도 승인을 뜻하지 않는다. [GALE 원 지표](benchmarks/bumper/models-c7/geotransolver/test_report.json)
+
+GALE_FA는1,237업데이트·6,026관측·53완료 epoch 중 best48이며 부분 epoch18업데이트는 제외했다. Optimizer240.108초·training wall471.925초, EPSP 음수328,149/334,074개·이력 감소345,633/354,332개였다. [GALE_FA 원 지표](benchmarks/bumper/models-c7/geoflare/test_report.json)
+
+MGN은3,387업데이트·6,774관측·60완료 epoch 중 best48이며 부분 epoch27업데이트는 제외했다. Optimizer240.058초·training wall495.465초였다. FIG는680업데이트·3,313관측·29완료 epoch 중 best29(667업데이트·3,248관측)를 선택했고 부분 epoch13업데이트는 제외했다. Optimizer240.261초·training wall397.828초이며 마지막 검증도 개선 중이라 수렴은 미확인이다. MGN/FIG의 EPSP 음수 upper/lower는 각각429,689/407,520개와392,711/371,146개다. [전체 범퍼 설정·노출·메모리·시간 비교](benchmarks/bumper/models-c7/SUMMARY.md)
+
+![같은 support·분할에서의 전체 휴대폰·범퍼 알고리즘 비교](revisions/v2/full-support-algorithm-comparison.png)
+
+각 열은 별도 로그 축이며 변위 벡터·병진 제거·MPa 응력 RMSE·응력/변형률 L2를 구분한다. 그림의 fixed geometry는 공통 reference mesh 좌표를 뜻한다. 범퍼는 두께 배율·벽 y위치가 변하고 속도는 전부−5mm/ms이며, 휴대폰은 공통 E배율·벽 normal의 Rx가 변한다. 제품 NODE를 회전하거나 새 형상을 생성한 데이터가 아니다. Upper/lower와 native cell/IP hotspot도 구분해 읽는다. 최초 렌더의 빠진 숫자 눈금은 원본을 보존하고 plot source의 눈금만 수정했으며 총2회 렌더·모델 호출0회였다. [수치·입력 hash·시각 QA](revisions/v2/full-support-algorithm-comparison.json)
 
 DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 실제 학습했다. 각각 12epoch·1,920업데이트이며 399단계 자기회귀를 평가했다. noise 제거와 loss 정규화 변경을 묶은 설정은 drift를 줄였지만 내부 검증 응력을 악화했고, 두 설정 모두 정확도 실패였다. 원 COMSOL strain이 없는 이 예제의 유도 strain 비교를 native FEM strain 검증이라고 부르지 않는다. [판 실행 기록](benchmarks/deforming_plate/README.md)
 
@@ -79,7 +92,7 @@ DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 �
 
 전체 메시의 첫 신경망 Transolver는 실제795epoch/795Adam업데이트/3,975조건 관측을 마쳤고 best754epoch를 내부 검증으로 선택했다. 새 프로세스 validation 재추론 차이0 후 test2조건을 한 번 예측하고, 별도 수치 검산에서 원 FEM·예측·RMSE/L2/P95/max·checkpoint 선택을 확인했다. VM RMSE0.150670MPa, total-strain Frobenius RMSE7.96288e-5, EPSP RMSE3.31994e-6였다. 원 예측의 음수 VM600,081개·Frobenius520,256개·EPSP658,778개, EPSP 시간 감소593,109/1,369,170개를 보존했다. EPSP 참값은 전체1,521,300점×시점 중27개만 양수다. 엄밀0 기준 support 통계와 감소량을 물리적 파손 허용치로 해석하지 않는다. 원 예측 배열은 로컬에 보존한다. [최종 지표·실행 hash·그림](benchmarks/drop_test/models-full-c6/transolver/), [독립 검산](full-support-evaluation-review.md)
 
-이 첫 실행의240.244초는 optimizer 구간이며 총 wall은923.502초였다. data read/정규화238.807초, H2D21.025초, CPU상태/체크포인트2.415초, validation4.763초, Windows 전체 프로세스 관측372.581초 등을 기록했다. 일부 타이머 경계가 겹치므로 이를 전부 더해 wall의 완전한 분할로 취급하지 않는다. 관측 비용만 총 wall의 약40.3%이므로 이를 순수 모델 계산 시간으로 보고하지 않는다. 휴대폰 여섯 설정은 같은 실행 소스·240초 규약으로 학습·평가를 마쳤고 범퍼 비교는 계속 진행 중이다.
+이 첫 실행의240.244초는 optimizer 구간이며 총 wall은923.502초였다. data read/정규화238.807초, H2D21.025초, CPU상태/체크포인트2.415초, validation4.763초, Windows 전체 프로세스 관측372.581초 등을 기록했다. 일부 타이머 경계가 겹치므로 이를 전부 더해 wall의 완전한 분할로 취급하지 않는다. 관측 비용만 총 wall의 약40.3%이므로 이를 순수 모델 계산 시간으로 보고하지 않는다. 휴대폰·범퍼12설정은 같은 실행 소스·240초 규약으로 학습·평가를 마쳤다.
 
 FLARE와 GeoTransolver GALE도 실제 학습·새 프로세스 검증 재추론 차이0·test 한 번·원 FEM 기준 독립 수치 검산을 마쳤다. 각각247/682업데이트·1,235/3,410조건 관측이며, 최선 체크포인트가 마지막 완료 epoch247/682다. 두 설정은 마지막 validation도 개선 중이므로 수렴을 입증하지 못했다. VM RMSE는 각각0.246047/0.142688MPa다. 이번 제한된 계산 예산의 결과를 알고리즘의 일반적 우열로 확대하지 않는다.
 
@@ -111,19 +124,27 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 
 분할은 해석 조건 단위로 고정했으며 정규화와 학습에는 training 조건만 사용했다. 체크포인트 선택에는 validation을 사용했다. 각 신경망의 ‘test 한 번’은 고정한 checkpoint의 성능 예측 pass 횟수이며 저장 배열을 다시 읽는 수치 검산·후처리 횟수와 다르다. 같은 test 조건은 앞선 회귀/축약 모델 등에도 이미 평가에 쓰였으므로 연구 전체에서 처음 보는 비공개 최종 holdout이라고 주장하지 않는다. 제품 적용 전에는 후속 선택에 사용하지 않은 별도 FEM·가능하면 실험 조건으로 검증해야 한다.
 
+휴대폰·범퍼의12개 정적 실행에서 checkpoint 선택은 validation 전체(각2/12조건)의 normalized MSE 평균을 사용했다. 별도 프로세스의 fresh-validation은 validation 첫 조건1개의 저장 기준 예측과 target 없이 비교하는 직렬화·재로딩 검사다. 전체 validation 재평가라고 부르지 않는다. 사전 정규화 허용치는1e-5였으며 phone MGN5.72205e-6·bumper MGN1.90735e-6, 나머지10개는 차이0이었다.
+
+완료 후 같은 고정 감사 소스로12모델의 저장 예측을 다시 검산해 모두 기존 수치와 일치했다. [최종 재검산](full-support-latest-audit.md)과 [정확한 소스 snapshot](full-support-audit-sources/snapshot-payload-inventory.json)을 보존했다. 새 NN 학습·추론·test는 추가하지 않았다. 이 감사의 전체 과정 peakRSS는201.640625MiB로200MiB 관측 상한을1.640625MiB 넘겨 보류·새 프로세스 재개한 이력이 있으며, 성공한 모델 행의 peak193.703MiB만을 전체 peak로 쓰지 않는다. 수치 일치와 자원 상한 준수는 별개다. Mean baseline은 산출자 자체 검산이며 과거 미보존 감사 코드의 한계도 원 기록에 남겼다.
+
 실제 실행 장소는 사용자 PC의 RTX3060 Laptop 6GiB다. Codex Cloud는 별도 컨테이너에서 CPU·RAM·네트워크·GPU 장치를 검사했지만 NVIDIA GPU가 노출되지 않았다. 이 로컬 GPU 결과를 Cloud GPU 실행으로 기록하지 않는다. 유료 GPU나 추가 결제는 사용하지 않았다.
 
-PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 전용 학습 환경에 설치했다. 이 환경은 기존 system/user site 의존 경로를 포함하며 완전히 독립된 clean 설치와 구분한다. 별도 독립 환경 재설치는 진행 중이고 완료를 주장하지 않는다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 설정은 13,675절점에서 CUDA 역전파와 가중치 갱신을 통과했다. 시편 여섯 설정의 학습·평가는 위 표로 구분하며, 휴대폰·범퍼의 다물리량 신경망 학습은 별도로 진행한다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
+PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 전용 학습 환경에 설치했다. 이 환경은 기존 system/user site 의존 경로를 포함하며 완전히 독립된 clean 설치와 구분한다. 별도 독립 환경 재설치는 진행 중이고 완료를 주장하지 않는다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 정적 설정은 시편·휴대폰·범퍼에서 다물리량 학습·평가를 마쳤으며 결과를 위 표로 구분했다. 휴대폰·범퍼의 다물리량 시간 전개6설정은 이 정적12실행과 별도인 후속 실험이다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
 
 공식 Q1 `Elasticity2DSolver`도 CPU에서 실제 실행해 독립 해·힘·모멘트·에너지 등13개 검사를 통과했다. 변위 상대 L2는2.324e-10, 두 solve 합계0.592초, import 포함10.898초, 최대 메모리196.68MiB였다. 이는 수치 FEM baseline이며 구조 FNO·DDM 전체 실행이나 AI 학습으로 세지 않는다. [실행·독립 검산](benchmarks/elasticity_numerical/execution-report.md)
 
-범퍼·휴대폰의 실제 native B2/B5 배치24개 조합도 실행했다. 22개는 출력·gradient·입력 독립성·Adam 갱신 검사를 통과했고, 휴대폰 MGN B5는 CUDA OOM, FIG B5는 OS 가용 물리 메모리 하한으로 중단했다. 후자는 CUDA OOM으로 분류하지 않았다. 휴대폰 MGN은 성공한 B1, FIG는 B2로 본학습하며, 기능/배치 검사를 정확도 완료로 세지 않는다. [실제 배치 결과·실패·노출 회계](benchmarks/batching/README.md)
+후속 전체 수치 DDM도 실제 완료했다. 첫 시도는 host 메모리 가드로11반복 뒤 중단했으나 GPU 작업 종료 후 같은 과학 조건으로 재시도해64반복·interface RMSE8.62933e-9에서 수렴했다. Monolithic 대비 변위/strain/stress/VM 상대 L2는 각각2.78033e-6/5.57345e-6/6.58985e-6/3.79882e-6이며 독립25검사를 통과했다. Monolithic stage1.450초·전체 recipe40.369초·프로세스 wall50.420초·관측 peakRSS200.2MiB였다. 수치 FEM 분할 해법이며 AI 학습·구조 FNO 실행으로 세지 않는다. [완료 DDM·부분 중단·검산](benchmarks/elasticity_numerical/full-ddm/attempt02/README.md)
+
+정적12개 실행의 optimizer 총합은48.048분, training wall 합은128.235분이었다. Test54개 조건 forward의 동기화 GPU 계산 합6.853초와 test 프로세스 wall429.456초는 서로 다른 범위다. 설치·FEM 데이터 생성·학습·원시결과 추출·오차와 그림 생성까지 포함한 전체 연구 시간을6.853초로 표현하지 않는다. 정확도 조건이 충족되지 않은 예측의 계산 시간만으로 실용적인 FEM 대체 가속률도 확정하지 않는다. [휴대폰 시간·자원](benchmarks/drop_test/models-full-c6/SUMMARY.md), [범퍼 시간·자원](benchmarks/bumper/models-c7/SUMMARY.md)
+
+범퍼·휴대폰의 실제 native B2/B5 배치24개 조합도 실행했다. 22개는 출력·gradient·입력 독립성·Adam 갱신 검사를 통과했고, 휴대폰 MGN B5는 CUDA OOM, FIG B5는 OS 가용 물리 메모리 하한으로 중단했다. 후자는 CUDA OOM으로 분류하지 않았다. 휴대폰 MGN은 성공한 B1, FIG는 B2로 위 본학습을 완료했다. 기능/배치 검사는 정확도 완료와 구분한다. [실제 배치 결과·실패·노출 회계](benchmarks/batching/README.md)
 
 ## 가전제품에 적용할 때의 판단
 
 직접 확인한 범위는 **공개 FEM 입력 실행 → native 응력·변형률 확보 → 학습 라벨과 원 출력의 대응 → GPU 학습 → 독립 FEM 조건 예측 → 물리 단위 오차 검산**이다. 이 연결은 실제로 작동한다. 현재 신경망의 큰 국부 오차와 음수 응력·소성 이력 위반 때문에 제품 합격 판정이나 파손 위험의 대체 해석기로 사용할 정확도는 확보하지 못했다. 작은 고정 형상·두 조건축에서 회귀/축약 모델이 유리했던 결과도 새 제품·접촉·파손 일반화의 근거는 아니다.
 
-전체 조립체를 연구 대상에서 제외할 이유는 없다. 다만 이번17부품 휴대폰은 질량27.01477g의 단순화한 공개 benchmark이며, 유리는 선형탄성이고 파손·접합분리 법칙은 없다. 학습 입력도 초기 형상·mesh 길이 대리값·공통 탄성계수 배율·작은 자세 변화다. 각 부품의 재료 법칙·연결부·접촉 상태를 모두 독립 입력으로 준 모델이 아니다. Element graph의17성분 사이에는 FEM의 tied/contact edge도 없다. 이를 TV·세탁기의 체결부·포장재·서스펜션·유리 파손을 포함한 범용 낙하 모델로 확대하려면 해당 상태와 하중 경로를 표현하고 별도 검증해야 한다. [공개 FEM의 물리 범위](benchmarks/drop_test/PHONE-FEM-AND-DATASET.md), [실제 조립체 입력·graph 감사](benchmarks/assembly_input_audit/README.md)
+전체 조립체를 연구 대상에서 제외할 이유는 없다. 다만 이번17부품 휴대폰은 질량27.01477g의 단순화한 공개 benchmark이며, 유리는 선형탄성이고 파손·접합분리 법칙은 없다. 학습 입력도 공통 초기 형상·mesh 길이 대리값·공통 탄성계수 배율·벽 normal의 작은 Rx 변화다. 제품 자체의 NODE 좌표 회전은 없다. 각 부품의 재료 법칙·연결부·접촉 상태를 모두 독립 입력으로 준 모델이 아니다. Element graph의17성분 사이에는 FEM의 tied/contact edge도 없다. 이를 TV·세탁기의 체결부·포장재·서스펜션·유리 파손을 포함한 범용 낙하 모델로 확대하려면 해당 상태와 하중 경로를 표현하고 별도 검증해야 한다. [공개 FEM의 물리 범위](benchmarks/drop_test/PHONE-FEM-AND-DATASET.md), [실제 조립체 입력·graph 감사](benchmarks/assembly_input_audit/README.md)
 
 Graph의 단절을 모든 backbone에서 부품 간 영향이 전혀 전달되지 않는다는 뜻으로 확대하지 않는다. Attention·공간 격자 방식은 좌표와 학습 응답에서 결합 영향을 배울 여지가 있다. 다만 이번 입력에 접촉의 열림·닫힘·미끄럼이나 체결 상태를 명시적으로 준 것은 아니며, 현재 오차의 원인을 graph 하나로 분리 입증한 실험도 아니다.
 

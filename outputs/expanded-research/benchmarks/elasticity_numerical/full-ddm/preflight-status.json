@@ -1,0 +1,12 @@
+{
+  "status": "ready_waiting_for_memory_gate",
+  "observed_utc": "2026-10-15T07:02:47Z",
+  "official_source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "cpu_allocation": "Conditionally approved by root; global CPU-only Torch2.13, explicit CPU, CUDA hidden, one thread, 350MiB working-set and 300-second wall caps.",
+  "minimum_available_memory_bytes": 1395864371,
+  "available_memory_observations_bytes": [1227993088, 711946240, 589041664],
+  "framework_imported": false,
+  "solver_executed": false,
+  "preparation": "Isolated adapter, full official run_elasticity driver, supervisor and independent standard-library field checker prepared. Existing saved sources/results unchanged.",
+  "next_action": "Execute only after the 1.3GiB available-memory gate succeeds; no repeated polling beyond the allocation window."
+}

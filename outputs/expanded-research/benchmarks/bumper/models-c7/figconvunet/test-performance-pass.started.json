@@ -1,0 +1,11 @@
+{
+  "status": "started_irrevocably",
+  "utc": "2026-10-15T08:27:04.692753+00:00",
+  "process_identity": {
+    "pid": 45604,
+    "created_unix_seconds": 1792052803.998592
+  },
+  "checkpoint_sha256": "22b8d9157bd082637641b2eac57da34f938f3c69352085914663ee3befcb5ea4",
+  "validation_report_sha256": "419a393f14263804e5a75aad44d55a8fd58f8d7f5c3e116e1c0cada2edce2279",
+  "rule": "One pass only, including partial failure. Any further metrics must use saved predictions."
+}

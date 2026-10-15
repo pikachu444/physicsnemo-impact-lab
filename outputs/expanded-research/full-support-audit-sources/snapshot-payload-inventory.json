@@ -1,0 +1,58 @@
+{
+  "verified_utc": "2026-10-15T08:33:59.229041+00:00",
+  "scope": "Existing source snapshot payload hashes only; missing historical auditor revisions are not claimed recovered",
+  "count": 10,
+  "all_match_content_address": true,
+  "files": [
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\28b9fbc81d0f366a196dd6ed81da26d9a53804bae49e7e35c9673e35977403d3\\compute_mean_baselines.py",
+      "bytes": 10936,
+      "sha256": "28b9fbc81d0f366a196dd6ed81da26d9a53804bae49e7e35c9673e35977403d3"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\3e3525784bddab646b45dc26e0adadff1b4d81ca7948c5f3f1378c5fe71e0c43\\source_preservation.py",
+      "bytes": 1236,
+      "sha256": "3e3525784bddab646b45dc26e0adadff1b4d81ca7948c5f3f1378c5fe71e0c43"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\5f9f578a2fdef265a0cefa920daf4704c7253b7ef4a85bd428a01adac9f11352\\audit_full_support.py",
+      "bytes": 54283,
+      "sha256": "5f9f578a2fdef265a0cefa920daf4704c7253b7ef4a85bd428a01adac9f11352"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\698c7e14681c1942bd5e3c4e36d61d4e9374b2b0c8069e5d7e3b59f3a5f941cd\\watch_full_support.py",
+      "bytes": 6533,
+      "sha256": "698c7e14681c1942bd5e3c4e36d61d4e9374b2b0c8069e5d7e3b59f3a5f941cd"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\6ad733444439d13584deab7edbe9719d7803b4168329a7edd72bd0c33503c725\\watch_full_support.py",
+      "bytes": 8071,
+      "sha256": "6ad733444439d13584deab7edbe9719d7803b4168329a7edd72bd0c33503c725"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\7c6b9458b2bbb593077e00d2eb23ac80d4ab25ca469ee88e03ffbd0db4aad699\\audit_full_support.py",
+      "bytes": 52648,
+      "sha256": "7c6b9458b2bbb593077e00d2eb23ac80d4ab25ca469ee88e03ffbd0db4aad699"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\8c8ea92c9be8f4fb2e5b5c596dbdfb07656cbc97c1493de39f588dc09e6b7534\\finalize_audit_evidence.py",
+      "bytes": 9018,
+      "sha256": "8c8ea92c9be8f4fb2e5b5c596dbdfb07656cbc97c1493de39f588dc09e6b7534"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\912f02beb146b058a1fd4f8cfd51daf856adb89fc12138593d04fe3306b74ba4\\watch_full_support.py",
+      "bytes": 7744,
+      "sha256": "912f02beb146b058a1fd4f8cfd51daf856adb89fc12138593d04fe3306b74ba4"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\b8b01959b43bc5c78566b5c04c0b47c69b2394c91a9e26a4686775ad82dd780f\\compute_mean_baselines.py",
+      "bytes": 11956,
+      "sha256": "b8b01959b43bc5c78566b5c04c0b47c69b2394c91a9e26a4686775ad82dd780f"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\f2daed763f7d14c8424fd9844a9ddb77e5bbbf95fe21fbb70c4570449083db5d\\compute_mean_baselines.py",
+      "bytes": 12688,
+      "sha256": "f2daed763f7d14c8424fd9844a9ddb77e5bbbf95fe21fbb70c4570449083db5d"
+    }
+  ]
+}

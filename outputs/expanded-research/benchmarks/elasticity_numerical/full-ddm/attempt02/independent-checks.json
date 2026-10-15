@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "independent_checker": "Standard library only; analytic manufactured fields and separately implemented Q1 energy quadrature. No solver/framework import.",
+  "checker_sha256": "0df398e4645852ec4d961b0ec5e5868071ea38a0881c87f9d712f314b0ea560e",
+  "fields_sha256": "33fd5dd6548742cc2e9d307bd2956e08a034215efb6fa9448ae0b1d4dac5fffc",
+  "analytic_reference": {
+    "u_y": ".01*y^2",
+    "u_x": "-.032*x*y",
+    "strain_y_x": [
+      [
+        ".02*y",
+        "-.016*x"
+      ],
+      [
+        "-.016*x",
+        "-.032*y"
+      ]
+    ],
+    "stress_y_x": [
+      [
+        "1.536*y",
+        "-1.536*x"
+      ],
+      [
+        "-1.536*x",
+        "-3.456*y"
+      ]
+    ],
+    "von_mises": "sqrt(19.611648*y^2+7.077888*x^2)",
+    "body_force": [
+      0,
+      0
+    ],
+    "continuum_unit_square_energy": 0.031744,
+    "exact_nodal_q1_interpolant_energy": 0.031743556018036766
+  },
+  "boundary_recovery_note": "Official one-sided outer-y derivatives have epsilon_yy error +/- .01*h, sigma_yy +/-1.28*h, sigma_xx +/-.32*h even for exact nodal displacement. Boundary-aware target includes this known discretization error.",
+  "metrics": {
+    "reference": {
+      "manufactured_boundary_aware_relative_L2": {
+        "u": 1.8757279000229462e-09,
+        "strain": 3.8527668326604696e-09,
+        "stress": 4.1984986844670775e-09,
+        "von_mises": 2.8424466116792666e-09
+      },
+      "uncorrected_continuum_relative_L2": {
+        "u": 1.8757279000229462e-09,
+        "strain": 0.00314928385803277,
+        "stress": 0.004191918622720687,
+        "von_mises": 0.0012097905953903946
+      },
+      "physical_boundary_displacement_max_abs_error": 3.469446951953614e-18,
+      "independent_q1_gauss_energy": 0.03174355601803675,
+      "energy_vs_analytic_q1_relative": 4.3718440996116076e-16,
+      "energy_vs_continuum_relative": 1.3986326967287468e-05
+    },
+    "ddm": {
+      "manufactured_boundary_aware_relative_L2": {
+        "u": 2.7817752366042785e-06,
+        "strain": 5.5757909900663606e-06,
+        "stress": 6.592613273504276e-06,
+        "von_mises": 3.8007022094102652e-06
+      },
+      "uncorrected_continuum_relative_L2": {
+        "u": 2.7817752366042785e-06,
+        "strain": 0.003149018413093062,
+        "stress": 0.004191563913349721,
+        "von_mises": 0.0012095861585962593
+      },
+      "physical_boundary_displacement_max_abs_error": 3.469446951953614e-18,
+      "independent_q1_gauss_energy": 0.03174355601937683,
+      "energy_vs_analytic_q1_relative": 4.22154009946696e-11,
+      "energy_vs_continuum_relative": 1.3986284752039733e-05
+    }
+  },
+  "checks": {
+    "finite_32_by_32_fields": true,
+    "cpu_only_runtime": true,
+    "no_thermal_or_fno_imports": true,
+    "schwarz_converged": true,
+    "independent_affine_energy_integrator_selfcheck": true,
+    "reference_manufactured_u": true,
+    "reference_manufactured_strain": true,
+    "reference_manufactured_stress": true,
+    "reference_manufactured_von_mises": true,
+    "reference_physical_bc": true,
+    "reference_independent_q1_energy": true,
+    "reference_independent_vs_official_energy": true,
+    "reference_free_equilibrium": true,
+    "ddm_manufactured_u": true,
+    "ddm_manufactured_strain": true,
+    "ddm_manufactured_stress": true,
+    "ddm_manufactured_von_mises": true,
+    "ddm_physical_bc": true,
+    "ddm_independent_q1_energy": true,
+    "ddm_independent_vs_official_energy": true,
+    "ddm_free_equilibrium": true,
+    "ddm_vs_monolithic_displacement": true,
+    "ddm_vs_monolithic_strain": true,
+    "ddm_vs_monolithic_stress": true,
+    "ddm_vs_monolithic_von_mises": true
+  }
+}

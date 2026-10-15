@@ -1,0 +1,881 @@
+{
+  "status": "passed",
+  "domain": "bumper",
+  "architecture": "meshgraphnet",
+  "batch_size": 2,
+  "seed": 20261015,
+  "timing_repeats": 2,
+  "started_utc": "2026-10-15T04:30:30.289245+00:00",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py",
+    "--domain",
+    "bumper",
+    "--architecture",
+    "meshgraphnet",
+    "--batch-size",
+    "2",
+    "--out",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\meshgraphnet\\B2",
+    "--timing-repeats",
+    "2",
+    "--gpu-slot-authorized"
+  ],
+  "python_executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "stage": "actual_Adam_update:3:complete",
+  "source_sha256": {
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py": "d3f3f5898eff47be4e5fdb54f489808f11e8ae501867d8257386e9548a19f6e6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\train_probe_data.py": "0287662371b5268a005b36a9cc3a5b278ea56a4b8b52a3a207e9725a4a9f78f5",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\run_benchmark.py": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab"
+  },
+  "torch": "2.10.0+cu126",
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_total_bytes": 6441926656,
+  "tf32": false,
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "determinism": {
+    "seed": 20261015,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "torch_deterministic_algorithms": false,
+    "note": "Original native CUDA scatter reductions may differ by float32 rounding. Numerical equivalence uses the declared tolerances; bitwise repeatability is not claimed. Strict deterministic-algorithm mode is not forced because unsupported native scatter would test a different execution restriction."
+  },
+  "train_cases": [
+    "Run192",
+    "Run179"
+  ],
+  "train_count": 112,
+  "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+  "normalization_sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+  "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+  "opened_data_files": [
+    {
+      "name": "coordinates.npy",
+      "bytes": 164228,
+      "sha256": "5ab7e0b25ef2aa8e273facf479272de4fe2c3eb4f1d4fcbf77e04d0b19fc252e"
+    },
+    {
+      "name": "edge_index.npy",
+      "bytes": 873664,
+      "sha256": "4bd560b695749c90680b847c6bbcacf3633afa3e93eab11bd3a59dba88ca126a"
+    },
+    {
+      "name": "runs/Run179.npy",
+      "bytes": 3829128,
+      "sha256": "3ef667f61a522a727ff0af44bb63c566785a291d590f29694c126a19de337c74"
+    },
+    {
+      "name": "runs/Run179_thickness.npy",
+      "bytes": 54828,
+      "sha256": "c467360af23111807b86099b8f214a9faf3fb063f968eda96659b201b3b09659"
+    },
+    {
+      "name": "runs/Run192.npy",
+      "bytes": 3829128,
+      "sha256": "06dc6308afa30d8b256c980075442640600806d86690c6ac61b70d1c46cf1232"
+    },
+    {
+      "name": "runs/Run192_thickness.npy",
+      "bytes": 54828,
+      "sha256": "19a9573a708276bacfbbdc77f2d14e90a41cf49e5234c28fbbd87629254c29f7"
+    }
+  ],
+  "no_validation_or_test_label_file_opened": true,
+  "shape": [
+    2,
+    13675,
+    70
+  ],
+  "global_dim": 3,
+  "real_directed_edges_per_case": 54596,
+  "static_feature_name": "nodal_thickness",
+  "model_config": {
+    "input_dim_nodes": 7,
+    "input_dim_edges": 4,
+    "output_dim": 70,
+    "processor_size": 3,
+    "hidden_dim_processor": 48,
+    "hidden_dim_node_encoder": 48,
+    "hidden_dim_edge_encoder": 48,
+    "hidden_dim_node_decoder": 48,
+    "num_layers_node_encoder": 2,
+    "num_layers_edge_encoder": 2,
+    "num_layers_node_decoder": 2,
+    "num_layers_node_processor": 2,
+    "num_layers_edge_processor": 2,
+    "mlp_activation_fn": "relu",
+    "aggregation": "sum",
+    "do_concat_trick": false,
+    "num_processor_checkpoint_segments": 0,
+    "checkpoint_offloading": false,
+    "recompute_activation": false,
+    "norm_type": "LayerNorm"
+  },
+  "model_source": {
+    "architecture": "meshgraphnet",
+    "module": "physicsnemo.models.meshgraphnet",
+    "class_name": "MeshGraphNet",
+    "implementation_module": "physicsnemo.models.meshgraphnet.meshgraphnet",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\meshgraphnet.py",
+    "source_sha256": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "3_global_parameters"
+    ],
+    "extra_structure": "actual directed FEM mesh edges supplied by caller",
+    "edge_features": "xyz[source]-xyz[target], Euclidean length",
+    "dependencies": [
+      "torch_geometric",
+      "torch_scatter"
+    ]
+  },
+  "parameters": 82006,
+  "peak_sampled_rss_bytes": 1751760896,
+  "cuda_peak_allocated_bytes": 641286656,
+  "cuda_peak_reserved_bytes": 767557632,
+  "initial_weight_sha256": "4cf404746c3611236c15d91227e0e46e1b8cf6eb5ddce09fc3493c6d9cdc22da",
+  "output_checks": {
+    "original_B1_vs_native_batch": {
+      "passed": true,
+      "max_absolute_difference": 3.5762786865234375e-07,
+      "relative_l2_difference": 2.2627410004633654e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "case_order_independence": {
+      "passed": true,
+      "max_absolute_difference": 4.172325134277344e-07,
+      "relative_l2_difference": 2.3363215765200806e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "other_case_globals_independence": {
+      "passed": true,
+      "max_absolute_difference": 2.980232238769531e-07,
+      "relative_l2_difference": 2.052430058816517e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_original_B1_vs_batch": {
+      "passed": true,
+      "max_absolute_difference": 3.5762786865234375e-07,
+      "relative_l2_difference": 2.43575041692286e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_output_max_delta": 0.036034464836120605,
+    "normalized_global_delta": 0.375
+  },
+  "gradient_check": {
+    "passed": true,
+    "definition": "gradient(mean_B mean_NTC MSE) versus sum_B gradient(B1 MSE)/B, same eval weights",
+    "original_B1_mean_loss": 1.044283390045166,
+    "native_batchmean_loss": 1.044283390045166,
+    "loss_absolute_difference": 0.0,
+    "atol": 1e-05,
+    "rtol": 0.0005,
+    "parameters": {
+      "edge_encoder.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 8.731149137020111e-11,
+        "relative_l2_difference": 3.87224146555365e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.178705133497715e-09,
+        "relative_l2_difference": 1.357016510452334e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.259629011154175e-09,
+        "relative_l2_difference": 2.2542887549383495e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.6566128730773926e-09,
+        "relative_l2_difference": 1.846757130843372e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.6566128730773926e-09,
+        "relative_l2_difference": 2.2566599405559793e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 2.0275855019843783e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 2.334116259643585e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "edge_encoder.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.3969838619232178e-09,
+        "relative_l2_difference": 2.1168893095134672e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 4.096183638109132e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.3283064365386963e-09,
+        "relative_l2_difference": 2.9136094536723185e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 6.51925802230835e-09,
+        "relative_l2_difference": 2.870483045576324e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.773028194904327e-09,
+        "relative_l2_difference": 1.9800149190997507e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 2.3334732403409725e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.0244548320770264e-08,
+        "relative_l2_difference": 1.795705577977356e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 2.2779231558372546e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_encoder.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.3969838619232178e-09,
+        "relative_l2_difference": 1.957937813038612e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 1.1934975929663334e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 4.7944398043710715e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 1.249631029285797e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 6.505885604986826e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 1.2746762666223464e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "node_decoder.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 5.8050153429906516e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 3.1273377646625496e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 2.0642242966109226e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 6.51925802230835e-09,
+        "relative_l2_difference": 2.728230198936194e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.6566128730773926e-09,
+        "relative_l2_difference": 2.4061706007147563e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.6566128730773926e-09,
+        "relative_l2_difference": 2.457845455898816e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.51925802230835e-09,
+        "relative_l2_difference": 2.0516886786486717e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 2.659453819921612e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.0.edge_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 2.2236487618104998e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 1.6480890245298183e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 1.3053237843020927e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 1.7264169083334977e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 1.75755778257996e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 1.9014197611998209e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 1.5993633122695202e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.3969838619232178e-09,
+        "relative_l2_difference": 1.5786197629804755e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.1.node_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 1.795643271738511e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.87545844912529e-08,
+        "relative_l2_difference": 7.681131891336291e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.2282197177410126e-09,
+        "relative_l2_difference": 6.983877330059184e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.7939677238464355e-09,
+        "relative_l2_difference": 1.2497176452889897e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 4.130824963685974e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.3283064365386963e-09,
+        "relative_l2_difference": 1.3308640395141783e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 5.332639550593674e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 1.285872513330683e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.2.edge_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.984919309616089e-10,
+        "relative_l2_difference": 1.3255874190827176e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 1.4714624840035244e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1641532182693481e-10,
+        "relative_l2_difference": 5.435321901313942e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 1.1481860566007954e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 8.169912087994062e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 1.2768298246167314e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 6.543759883419314e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 1.1970751457585208e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.3.node_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 1.0274887162788699e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 2.3263157970773088e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1641532182693481e-10,
+        "relative_l2_difference": 4.803945178137753e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 1.3648282438364596e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.3283064365386963e-10,
+        "relative_l2_difference": 3.798597652323145e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.1641532182693481e-09,
+        "relative_l2_difference": 1.4411625509917802e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 4.244501622127102e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.1641532182693481e-10,
+        "relative_l2_difference": 5.8712687033456525e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.4.edge_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 1.913186292636081e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 1.2154945351526724e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 5.820766091346741e-11,
+        "relative_l2_difference": 4.605339060347877e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 1.2014971224191869e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 9.150555976886245e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.4.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 1.1613965941071026e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.4.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 4.255841413646074e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.5.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 1.0853938158365313e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "processor.processor_layers.5.node_mlp.model.5.bias": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 9.403408801466574e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      }
+    }
+  },
+  "timing": {
+    "forward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.029970999999932246,
+            "rss_bytes": 1686056960,
+            "windows_process_peak_wset_bytes": 1686056960,
+            "cuda_peak_allocated_bytes": 112445952,
+            "cuda_peak_reserved_bytes": 767557632
+          },
+          {
+            "seconds": 0.030220800003007753,
+            "rss_bytes": 1686110208,
+            "windows_process_peak_wset_bytes": 1686110208,
+            "cuda_peak_allocated_bytes": 112788480,
+            "cuda_peak_reserved_bytes": 767557632
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.03129370000169729,
+            "rss_bytes": 1686056960,
+            "windows_process_peak_wset_bytes": 1686056960,
+            "cuda_peak_allocated_bytes": 191589888,
+            "cuda_peak_reserved_bytes": 767557632
+          },
+          {
+            "seconds": 0.031582799998432165,
+            "rss_bytes": 1686073344,
+            "windows_process_peak_wset_bytes": 1686073344,
+            "cuda_peak_allocated_bytes": 191932416,
+            "cuda_peak_reserved_bytes": 767557632
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.03009590000147,
+      "native_batch_median_seconds": 0.03143825000006473,
+      "original_B1_simulations_per_second": 66.45423462672032,
+      "native_batch_simulations_per_second": 63.61677256195502,
+      "measured_speedup": 0.9573020127204293,
+      "native_faster_in_every_paired_repeat": false
+    },
+    "forward_backward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.06574239999827114,
+            "rss_bytes": 1686056960,
+            "windows_process_peak_wset_bytes": 1686056960,
+            "cuda_peak_allocated_bytes": 337502720,
+            "cuda_peak_reserved_bytes": 767557632
+          },
+          {
+            "seconds": 0.06707840000308352,
+            "rss_bytes": 1686196224,
+            "windows_process_peak_wset_bytes": 1686196224,
+            "cuda_peak_allocated_bytes": 337502720,
+            "cuda_peak_reserved_bytes": 767557632
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.06130779999875813,
+            "rss_bytes": 1686056960,
+            "windows_process_peak_wset_bytes": 1686056960,
+            "cuda_peak_allocated_bytes": 640601088,
+            "cuda_peak_reserved_bytes": 767557632
+          },
+          {
+            "seconds": 0.06194589999722666,
+            "rss_bytes": 1686159360,
+            "windows_process_peak_wset_bytes": 1686159360,
+            "cuda_peak_allocated_bytes": 640601088,
+            "cuda_peak_reserved_bytes": 767557632
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.06641040000067733,
+      "native_batch_median_seconds": 0.061626849997992394,
+      "original_B1_simulations_per_second": 30.115765000355392,
+      "native_batch_simulations_per_second": 32.45338679593641,
+      "measured_speedup": 1.0776211992474183,
+      "native_faster_in_every_paired_repeat": true
+    }
+  },
+  "adam": {
+    "updates": [
+      {
+        "update": 1,
+        "normalized_mse": 1.044283390045166,
+        "seconds": 0.1691358999996737,
+        "rss_bytes": 1751707648,
+        "windows_process_peak_wset_bytes": 1751707648,
+        "cuda_peak_allocated_bytes": 640601088,
+        "cuda_peak_reserved_bytes": 767557632
+      },
+      {
+        "update": 2,
+        "normalized_mse": 0.9880223870277405,
+        "seconds": 0.061205300000438,
+        "rss_bytes": 1751732224,
+        "windows_process_peak_wset_bytes": 1751732224,
+        "cuda_peak_allocated_bytes": 641286656,
+        "cuda_peak_reserved_bytes": 767557632
+      },
+      {
+        "update": 3,
+        "normalized_mse": 0.9789468050003052,
+        "seconds": 0.062150300000212155,
+        "rss_bytes": 1751732224,
+        "windows_process_peak_wset_bytes": 1751732224,
+        "cuda_peak_allocated_bytes": 641286656,
+        "cuda_peak_reserved_bytes": 767557632
+      }
+    ],
+    "optimizer_updates": 3,
+    "simulation_observations": 6,
+    "learning_rate": 0.001,
+    "final_weight_sha256": "a71242ea535cbedfe3828b53c89d8695dfdfc8a74323befe59408a601edfbe8d"
+  },
+  "budget_note": "Timing compares equal 2-simulation workloads: B separate original B1 calls versus one native batch. Forward-backward timing uses one accumulated mean gradient and no optimizer update in either path. The separate Adam probe performs exactly 3 updates and 6 simulation observations. B1's 3 updates observe 3 simulations; matching epochs with batch B reduces updates to ceil(train_count/B). Timing benefit alone does not establish equal training convergence or equal optimizer-update budgets.",
+  "timing_note": "One correctness forward and one correctness backward warm each path before two default timed repetitions. CUDA synchronization brackets each timing. Inputs/labels already reside on GPU; adapter layout/graph preparation is included, disk reading and transfer excluded. Allocator peaks cover phase work and live tensors, not driver VRAM. Both forward paths retain all B simulation outputs until after synchronization/memory sampling. RSS is a phase-boundary snapshot; windows_process_peak_wset_bytes is process-wide context, not a per-phase CPU peak. No test labels or held-out cases are opened.",
+  "memory_final": {
+    "rss_bytes": 1751760896,
+    "windows_process_peak_wset_bytes": 1751760896,
+    "cuda_peak_allocated_bytes": 641286656,
+    "cuda_peak_reserved_bytes": 767557632
+  },
+  "total_seconds": 24.655088700001215
+}

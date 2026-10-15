@@ -1,0 +1,119 @@
+{
+  "process_identity": {
+    "pid": 28652,
+    "created_unix_seconds": 1792052316.1812298
+  },
+  "pid": 28652,
+  "architecture": "meshgraphnet",
+  "checkpoint_sha256": "da8513c51b0f35fc2138293fab08ed3844552e22e1bb770aacb4baa7a3d095dd",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 22.147064099997806,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\checkpoint-frozen.json": "0623604dc8ee4c01eb6d1b025f7bd59c4dea6935fa589de007bc33f483a4f8cf",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\training_report.json": "e4c5076749614f892362d007464e121e129e574cbf70f3e2a1f3914eea27f65d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\best_checkpoint.pt": "da8513c51b0f35fc2138293fab08ed3844552e22e1bb770aacb4baa7a3d095dd",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\validation_reference.npy": "69c6ab5e1ccdb7c36f866538a82a15481358994da0cad8b4f3208ce096154da5",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\validation_serialization_roundtrip.json": "f272c0292033afd1ccae31a279758407b22a274951dc196ff62e1ea13af4a3d9",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\normalization.json": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\training_mean_field.npy": "c43458747b232eecabd882d023b345013065473c7c41d2b8e59643a31a88ffaf",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\meshgraphnet.py": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "meshgraphnet",
+    "module": "physicsnemo.models.meshgraphnet",
+    "class_name": "MeshGraphNet",
+    "implementation_module": "physicsnemo.models.meshgraphnet.meshgraphnet",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\meshgraphnet.py",
+    "source_sha256": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "3_global_parameters"
+    ],
+    "extra_structure": "actual directed FEM mesh edges supplied by caller",
+    "edge_features": "xyz[source]-xyz[target], Euclidean length",
+    "dependencies": [
+      "torch_geometric",
+      "torch_scatter"
+    ]
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-15T08:19:00.197610+00:00",
+  "validation_anchor_case": "Run219",
+  "max_scale_normalized_difference": 1.9073486328125e-06,
+  "tolerance_scale_normalized": 1e-05,
+  "test_values_used": false,
+  "forward_seconds_cuda_synchronized": 0.2748250000004191,
+  "preparation": {
+    "read_normalize_seconds": 0.0025432000038563274,
+    "read_seconds": 0.0016737999976612628,
+    "normalize_seconds": 0.000862900007632561,
+    "host_device_transfer_seconds": 0.0005519999976968393
+  },
+  "data_value_access": {
+    "train": {
+      "Run192": 1
+    },
+    "validation": {},
+    "test": {}
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "total_wall_seconds": 23.78625729999476,
+  "definition": "Fresh executable process reconstructs model from fixed serialized checkpoint and compares its validation anchor with training's saved normalized reference; no test response values."
+}

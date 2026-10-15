@@ -1,6 +1,6 @@
 {
   "scope": "Root visual inspection of saved scientific figures, distinct from numeric source-array audits.",
-  "last_updated_utc": "2026-10-15T07:01:00Z",
+  "last_updated_utc": "2026-10-15T09:03:21Z",
   "reviewed": [
     {
       "path": "coupon-algorithm-comparison.png",
@@ -36,6 +36,16 @@
       "path": "benchmarks/drop_test/500us-final/phone-500us-native-fields.png",
       "status": "readable",
       "checks": "Actual final500.006427us FEM snapshot, requested stop, observed earlier VM peak, XY cell-center projection and explicit visualization subsampling are legible. Native VM MPa, signed total strain xx at IP111, and EPSP are labeled separately. This is FEM-only; strain xx image is distinct from the all-valid-IP Frobenius maximum."
+    },
+    {
+      "path": "benchmarks/elasticity_numerical/full-ddm/attempt02/comparison.png",
+      "status": "readable",
+      "checks": "Root actually viewed 4x3 scientific figure: monolithic/DDM/absolute error for displacement magnitude, small-strain tensor norm, plane-stress tensor norm and VM. Shared truth/DDM color scales and independent error orders of magnitude are readable. Coordinates and fields use consistent model units, with no unsupported MPa label; numerical DDM is explicitly distinct from neural prediction."
+    },
+    {
+      "path": "revisions/v2/full-support-algorithm-comparison.png",
+      "status": "readable",
+      "checks": "Root actually viewed final v2 six-panel comparison, ten predictors/baselines, separate logarithmic axes with readable numeric ticks, MPa stress RMSE, and upper/lower markers. Fixed geometry means shared reference mesh XYZ: bumper thickness and wall location vary, while phone common E scale and wall normal Rx vary. These are not new mesh or product-shape tests. Original v1 is preserved; v2 only corrects missing numeric tick labels, with 140 plotted values and 12 axis ranges unchanged. This inspection is distinct from saved-array audits and makes no new model calls."
     }
   ],
   "limits": "Reference XY point projections may overlap different parts. These are not deformed3D surfaces. First-case EPSP is exactly zero in the FEM; both fixed cases and a FEM-defined positive-support envelope must be inspected separately. Other saved figures are not declared visually reviewed by this record."

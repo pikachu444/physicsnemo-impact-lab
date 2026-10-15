@@ -1,0 +1,208 @@
+{
+  "completed_utc": "2026-10-15T08:33:59.229041+00:00",
+  "scope": "Stdlib-only metadata finalization of saved-array audit; no new numeric array work, NN training, prediction, test pass, or selection",
+  "completion_count": 12,
+  "numeric_audit_passed": 12,
+  "quality_budget_satisfied": 12,
+  "frozen_numerical_auditor_sha256": "5f9f578a2fdef265a0cefa920daf4704c7253b7ef4a85bd428a01adac9f11352",
+  "numeric_dictionaries_equal_to_prior_audit": {
+    "phone/transolver": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "phone/flare": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "phone/geotransolver": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "phone/geoflare": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "phone/meshgraphnet": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "phone/figconvunet": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/transolver": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/flare": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/geotransolver": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/geoflare": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/meshgraphnet": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    },
+    "bumper/figconvunet": {
+      "metrics": true,
+      "epsp": true,
+      "inverse_normalization": true,
+      "ballistic_values_equal_ignoring_added_production_path_description": true
+    }
+  },
+  "resource_scope": "All latest-audit processes including immutable partial-attempt snapshots, not only final successful rows or final-process header",
+  "peak_RSS_bytes_all_attempts": 211435520,
+  "minimum_host_available_bytes_all_attempts": 2643894272,
+  "RSS_limit_bytes": 209715200,
+  "RSS_transient_excess_bytes": 1720320,
+  "resource_limit_status": "transient_RSS_excess_detected_then_deferred_and_restarted",
+  "threads": 1,
+  "GPU_used": false,
+  "framework_imports": false,
+  "partial_attempt_records": [
+    {
+      "path": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "bytes": 172637,
+      "sha256": "f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4"
+    }
+  ],
+  "memory_deferrals_preserved": [
+    {
+      "model": "phone/meshgraphnet",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=211435520, peak working set=211435520, available=3015303168"
+    },
+    {
+      "model": "phone/figconvunet",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=81027072, peak working set=211435520, available=3216424960"
+    },
+    {
+      "model": "bumper/transolver",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=83836928, peak working set=211435520, available=3415658496"
+    },
+    {
+      "model": "bumper/flare",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=84668416, peak working set=211435520, available=3421970432"
+    },
+    {
+      "model": "bumper/geotransolver",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=86061056, peak working set=211435520, available=3406458880"
+    },
+    {
+      "model": "bumper/geoflare",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=86396928, peak working set=211435520, available=3453763584"
+    },
+    {
+      "model": "bumper/meshgraphnet",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=87076864, peak working set=211435520, available=3446841344"
+    },
+    {
+      "model": "bumper/figconvunet",
+      "record": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\record-snapshots\\f017cdfa559f8fc8f4312a607355af1d1ace34e853961efe4429379d4d276fc4\\full-support-latest-audit.json",
+      "reason": "array work deferred: RSS=87105536, peak working set=211435520, available=3433074688"
+    }
+  ],
+  "mean_baseline_status": {
+    "phone": "computed_and_self_checked",
+    "bumper": "computed_and_self_checked"
+  },
+  "mean_claim_scope": "Computed and self-checked by baseline author; no third-party independent numerical acceptance verdict",
+  "historical_source_limit": "Older cumulative audit revisions 8667e028..., a0b0806..., 28b5c9fc... did not preserve source bytes before mutation; some per-model source hashes were not individually recorded. No current code is relabelled as those revisions.",
+  "resolution": "Final saved predictions for all twelve models rechecked under exact frozen auditor bytes; historical missing revisions remain explicitly unrecovered",
+  "finalizer_source_snapshots": {
+    "finalize_audit_evidence.py": {
+      "file": "finalize_audit_evidence.py",
+      "sha256": "8c8ea92c9be8f4fb2e5b5c596dbdfb07656cbc97c1493de39f588dc09e6b7534",
+      "bytes": 9018,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\8c8ea92c9be8f4fb2e5b5c596dbdfb07656cbc97c1493de39f588dc09e6b7534\\finalize_audit_evidence.py",
+      "preserved_utc": "2026-10-15T08:33:59.199797+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    },
+    "source_preservation.py": {
+      "file": "source_preservation.py",
+      "sha256": "3e3525784bddab646b45dc26e0adadff1b4d81ca7948c5f3f1378c5fe71e0c43",
+      "bytes": 1236,
+      "snapshot": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\source-snapshots\\3e3525784bddab646b45dc26e0adadff1b4d81ca7948c5f3f1378c5fe71e0c43\\source_preservation.py",
+      "preserved_utc": "2026-10-15T08:33:59.201308+00:00",
+      "policy": "content-addressed exact bytes; never overwrite an existing snapshot"
+    }
+  },
+  "environment": {
+    "python_executable": "C:\\Program Files\\Python313\\python.exe",
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy_installed_metadata_version": "2.5.2",
+    "numpy_imported_by_finalizer": false
+  },
+  "unverified": [
+    "Model and scalar-baseline figures",
+    "Optimizer convergence",
+    "Native-cell hotspot accuracy from projected nodal heads"
+  ],
+  "final_reports": [
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-evaluation-review.json",
+      "bytes": 546441,
+      "sha256": "0042a6a2c37b8c2d67aa7a1d51d8e309da5d72d07a5795a987e7f759b81b33af"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-evaluation-review.md",
+      "bytes": 2903,
+      "sha256": "b4065c7c5cae56e4189f1fa1996ef3abd7abe8cc01282695057e25165bc31462"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-latest-audit.json",
+      "bytes": 559737,
+      "sha256": "1db3f586c928d2f6792d7e73eeb1ff37670f504a84b4fe1af39f7f79c68c3c19"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-latest-audit.md",
+      "bytes": 3897,
+      "sha256": "9fec804424de3202e5e8a194dc683220a6941dd9b9610718b5aba4ee9b9dae28"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-mean-baselines.json",
+      "bytes": 82366,
+      "sha256": "2031d5e80c314c8a8b3c0a80aec9361099fe0b283f64d3404416dad50cd3a365"
+    },
+    {
+      "path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\full-support-mean-baselines.md",
+      "bytes": 2778,
+      "sha256": "fb16c2f1bcf4130bdf9fdce3fc41cb9d39e33e87a300a7fed166a197c22fea82"
+    }
+  ]
+}

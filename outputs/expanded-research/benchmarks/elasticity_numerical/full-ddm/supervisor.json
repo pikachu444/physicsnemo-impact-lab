@@ -1,0 +1,22 @@
+{
+  "host_free_memory_floor_bytes": 536870912,
+  "stage": "actual_official_numerical_2x2_ddm",
+  "cpu_threads": 1,
+  "process_reaped": true,
+  "minimum_observed_free_bytes": 523370496,
+  "started_utc": "2026-10-15T07:25:45.2599244Z",
+  "pid": 2548,
+  "elapsed_seconds": 20.6751994,
+  "available_before_launch_bytes": 1231073280,
+  "wall_cap_seconds": 300,
+  "sampled_peak_working_set_bytes": 208797696,
+  "working_set_cap_bytes": 367001600,
+  "required_available_bytes": 1073741824,
+  "terminated_by_guard": true,
+  "stop_reason": "host_free_memory_floor_512_MiB",
+  "concurrent_performance_only": true,
+  "python_path": "C:\\Program Files\\Python313\\python.exe",
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "ended_utc": "2026-10-15T07:26:05.9350072Z",
+  "observed_exit_code": -1
+}

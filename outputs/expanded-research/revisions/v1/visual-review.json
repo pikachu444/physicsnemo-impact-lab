@@ -1,0 +1,53 @@
+{
+  "status": "VISUAL_REVIEW_COMPLETE_WITH_READABILITY_LIMITATION",
+  "reviewed_utc": "2026-10-15T08:33:47.185061+00:00",
+  "image_viewer": "tools.view_image(detail=original)",
+  "actual_original_pixels": [
+    3680,
+    1920
+  ],
+  "tool_display_pixels": [
+    2048,
+    1069
+  ],
+  "PNG_sha256": "4167d650862e911d8252a8715cabf4ca1153fa29a1ebd3d70d8bcb4683a193c1",
+  "checks": {
+    "all_ten_method_names_legible": true,
+    "domain_support_and_time_windows_correct": true,
+    "physical_units_and_VM_RMSE_vs_relative_L2_separated": true,
+    "phone_total_strain_Frobenius_vs_bumper_EPSP_separated": true,
+    "upper_circle_lower_triangle_legend_legible": true,
+    "titles_labels_footer_no_clipping": true,
+    "log_metric_axes": true
+  },
+  "findings": [
+    {
+      "severity": "readability",
+      "domain": "bumper",
+      "panel": "Projected layer VM relative L2 [%]",
+      "actual_x_limits": [
+        10.039568931240327,
+        62.20408215627201
+      ],
+      "visible_major_ticks": [],
+      "description": "No numeric tick is visible; the base10 locator selected decades outside the unchanged displayed range."
+    },
+    {
+      "severity": "readability_note",
+      "description": "Seven other axes have only one visible major numeric tick."
+    }
+  ],
+  "independent_saved_metadata_review": {
+    "displayed_values_match_source": 140,
+    "displayed_values_total": 140,
+    "metric_input_JSON_hashes_match": 17,
+    "NN_independent_audit_passed": 12,
+    "NN_audit_source": "full-support-evaluation-review.json",
+    "mean_baseline_status_both_domains": "computed_and_self_checked",
+    "mean_scope": "Computation/arithmetic/chunk self-checks, not third-party independent acceptance; no new neural test pass"
+  },
+  "render_count_so_far": 1,
+  "model_calls": 0,
+  "array_or_checkpoint_files_opened": 0,
+  "next_action": "Root explicitly authorized one axis locator/formatter correction and one additional plot render; original files remain unchanged."
+}
