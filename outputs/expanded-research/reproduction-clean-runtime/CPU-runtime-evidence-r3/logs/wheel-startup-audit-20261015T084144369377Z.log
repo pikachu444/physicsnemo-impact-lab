@@ -1,0 +1,17 @@
+{
+  "status": "passed_no_framework_startup_hooks",
+  "checked_utc": "2026-10-15T08:41:54.588366+00:00",
+  "wheels_checked": 90,
+  "pth_files": [
+    {
+      "wheel": "setuptools-80.9.0-py3-none-any.whl",
+      "path": "distutils-precedence.pth",
+      "sha256": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+      "content": "import os; var = 'SETUPTOOLS_USE_DISTUTILS'; enabled = os.environ.get(var, 'local') == 'local'; enabled and __import__('_distutils_hack').add_shim(); \n",
+      "allowed_exact_setuptools_distutils_hook": true
+    }
+  ],
+  "findings": [],
+  "framework_imported": false,
+  "wheel_payloads_executed": false
+}

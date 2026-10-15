@@ -1,0 +1,6 @@
+Looking in links: ${WORKSPACE}\work\expanded-clean-runtime\wheelhouse
+Processing ${WORKSPACE}\work\expanded-clean-runtime\wheelhouse\setuptools-80.9.0-py3-none-any.whl (from -r ${WORKSPACE}\outputs\expanded-research\reproduction-clean-runtime\build-tools-lock.txt (line 1))
+Processing ${WORKSPACE}\work\expanded-clean-runtime\wheelhouse\wheel-0.45.1-py3-none-any.whl (from -r ${WORKSPACE}\outputs\expanded-research\reproduction-clean-runtime\build-tools-lock.txt (line 2))
+Installing collected packages: wheel, setuptools
+
+Successfully installed setuptools-80.9.0 wheel-0.45.1

@@ -1,0 +1,145 @@
+{
+  "status": "local_metadata_and_current_small_wheel_hashes_only",
+  "wheels": [
+    {
+      "filename": "torch_geometric-2.8.1-py3-none-any.whl",
+      "bytes": 1325471,
+      "sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/torch-geometric/json",
+      "published_sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "published_bytes": 1325471,
+      "hash_source": "Live official PyPI JSON file digests",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_geometric-2.8.1-py3-none-any.whl",
+      "present_now": true,
+      "hash_status": "current_local_bytes_verified",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "filename": "torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 3953267,
+      "sha256": "060587be83a7815a274d608d3b9921bd63942b59d2055140b6f426ee9004fb27",
+      "official_expected_sha256": null,
+      "url": "https://data.pyg.org/whl/torch-2.10.0%2Bcu126/torch_scatter-2.1.2%2Bpt210cu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+      "published_sha256": null,
+      "hash_source": "Official index does not publish a hash fragment; record downloaded-file SHA256 without independent published-hash verification",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "present_now": true,
+      "hash_status": "current_local_bytes_verified",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 2589881709,
+      "sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "official_expected_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.10.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "present_now": false,
+      "hash_status": "historically_recorded_not_currently_present"
+    },
+    {
+      "filename": "torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 8811635,
+      "sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "official_expected_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torchvision-0.25.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "present_now": true,
+      "hash_status": "current_local_bytes_verified",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "bytes": 36520,
+      "sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/xxhash/json",
+      "published_sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "published_bytes": 36520,
+      "hash_source": "Live official PyPI JSON file digests",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "present_now": true,
+      "hash_status": "current_local_bytes_verified",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "bytes": 2942045,
+      "sha256": "c447771384d92f5c31547e293f65b70e0947f8829981f34c7e8300daf1b8d2eb",
+      "url": "https://files.pythonhosted.org/packages/5d/22/1750a9651df15d81440f4a5ad7a7610c3f8cdbe7fd69245a9879b72da8b3/nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "url_evidence": "outputs/experiment/pip-physicsnemo.log:26,36",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/5/3/9/d/9539db41fd237aca378f99a587f85c4608c282b947f112399447f575.body",
+      "present_now": true,
+      "hash_status": "current_local_bytes_verified_no_fresh_remote_metadata_check",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "bytes": 144577,
+      "sha256": "9a700628218e270a26588ffc54233dc3d8799e82ae4194edf7a953e338812d7c",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/wheels/1a/97/32/461f837398029ad76911109f07047fde1d7b661a147c7c56d1/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "present_now": true,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "origin": {
+        "archive_info": {
+          "hash": "sha256=f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+          "hashes": {
+            "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b"
+          }
+        },
+        "url": "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz"
+      },
+      "provenance_limit": "Previously cached pure-Python wheel built from the recorded source archive; not a publisher-distributed wheel. No source build occurs in this task."
+    },
+    {
+      "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "bytes": 144613,
+      "sha256": "427af86ad97e26ca09162a03e8dbecbeae84a89e98191aa81428830f09183a75",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/wheels/d5/b3/74/a35b66048c9de6631cd74cbc9475e6feb3e69a467983446bd8/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "present_now": true,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "origin": {
+        "archive_info": {
+          "hash": "sha256=f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+          "hashes": {
+            "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b"
+          }
+        },
+        "url": "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz"
+      },
+      "provenance_limit": "Previously cached pure-Python wheel built from the recorded source archive; not a publisher-distributed wheel. No source build occurs in this task."
+    }
+  ],
+  "not_claimed": [
+    "All 90 dependency wheels locally cached",
+    "Every dependency has a publisher binary wheel",
+    "Fresh verification of remote published hashes",
+    "Torch 2.10 wheel absent everywhere on disk"
+  ]
+}

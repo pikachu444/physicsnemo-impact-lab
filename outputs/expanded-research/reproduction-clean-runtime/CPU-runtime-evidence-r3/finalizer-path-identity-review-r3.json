@@ -1,0 +1,35 @@
+{
+  "status": "PASS_independent_read_only_bounded_path_identity_correction",
+  "original_preserved_source": "work/expanded-clean-runtime/finalize_antlr_build_r1.py",
+  "original_preserved_sha256": "ed40bf1d8388cc93e0f575dbc2517a237842e608a81ab96ffee31f59dedf13fe",
+  "revision_source": "work/expanded-clean-runtime/finalize_antlr_build.py",
+  "revision_sha256": "88d9e270654f5725d748137185f942c99fd2670d517bf1c4dc0b6ef206b73620",
+  "scope": "Windows resolved path identity and fixed fourteen-argument command binding; source_root literal and full sentinel argv equality remain strict.",
+  "stdlib_selfcheck_and_AST": "PASS",
+  "positive_cases": [
+    "token forward",
+    "token backslash",
+    "absolute forward",
+    "absolute backslash",
+    "Windows case equivalence"
+  ],
+  "negative_cases": [
+    "sibling",
+    "prefix child",
+    "outside root",
+    "different drive",
+    "traversal",
+    "UNC",
+    "device path",
+    "relative",
+    "drive-relative",
+    "extra argument",
+    "wrong interpreter",
+    "destination sibling",
+    "unapproved tools"
+  ],
+  "archive_source_audit_tool_environment_and_one_build_pins_unchanged": true,
+  "actual_finalizer_reruns_before_this_review": 0,
+  "new_ANTLR_build_authorized": false,
+  "reviewer_performed_actual_build_install_network_or_payload_reads": false
+}

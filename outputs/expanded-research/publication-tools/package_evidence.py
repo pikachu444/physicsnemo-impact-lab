@@ -13,9 +13,9 @@ import re
 from pathlib import Path
 
 
-ALLOWED = {".md", ".json", ".csv", ".py", ".ps1", ".txt", ".log",
+ALLOWED = {".md", ".json", ".jsonl", ".csv", ".py", ".ps1", ".txt", ".log",
            ".png", ".yaml", ".yml", ".toml", ".out"}
-REDACT = {".md", ".json", ".csv", ".txt", ".log", ".yaml", ".yml", ".out"}
+REDACT = {".md", ".json", ".jsonl", ".csv", ".txt", ".log", ".yaml", ".yml", ".out"}
 
 
 def sha(data: bytes) -> str:
@@ -59,7 +59,11 @@ def main() -> None:
         for path in paths:
             if not path.is_file():
                 continue
-            if "__pycache__" in path.parts or path.suffix.lower() not in ALLOWED:
+            # These two text metadata receipts describe the old inherited
+            # environment. They are never installed/executed by this tool.
+            metadata_area = source / "benchmarks/temporal_strategies/resource-calibration-v1/metadata"
+            is_text_metadata = path.is_relative_to(metadata_area) and (path.suffix.lower() == ".pth" or path.name == "METADATA")
+            if "__pycache__" in path.parts or (path.suffix.lower() not in ALLOWED and not is_text_metadata):
                 excluded += 1
                 continue
             original = path.read_bytes()
@@ -76,7 +80,7 @@ def main() -> None:
                     excluded += 1
                     continue
             public = original
-            if path.suffix.lower() in REDACT:
+            if path.suffix.lower() in REDACT or is_text_metadata:
                 text = original.decode("utf-8-sig")
                 text = redact_local_paths(text, workspace, Path.home())
                 public = text.encode("utf-8")

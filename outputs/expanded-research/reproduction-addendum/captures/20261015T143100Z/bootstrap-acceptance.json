@@ -1,0 +1,111 @@
+{
+  "status": "passed_source_preservation_and_restore_only",
+  "checked_at_utc": "2026-10-15T14:33:48.555521+00:00",
+  "capture_as_of_utc": "2026-10-15T14:31:00Z",
+  "manifest_sha256": "e0b64b6ecaccaf8727d87468af707bb0cde8027fbc7b1249dacbbfe80c6a4bdc",
+  "packaged_files_verified": 676,
+  "python_ast_files_verified": 301,
+  "profiles_restored_in_fresh_temporary_directories": {
+    "current": {
+      "files": 467,
+      "bytes": 9302851,
+      "hashes_verified": 467
+    },
+    "fullsupport-bumper-figconvunet": {
+      "files": 477,
+      "bytes": 9610835,
+      "hashes_verified": 477
+    },
+    "fullsupport-bumper-flare": {
+      "files": 477,
+      "bytes": 9635217,
+      "hashes_verified": 477
+    },
+    "fullsupport-bumper-geoflare": {
+      "files": 477,
+      "bytes": 9627618,
+      "hashes_verified": 477
+    },
+    "fullsupport-bumper-geotransolver": {
+      "files": 477,
+      "bytes": 9696514,
+      "hashes_verified": 477
+    },
+    "fullsupport-bumper-meshgraphnet": {
+      "files": 477,
+      "bytes": 9633621,
+      "hashes_verified": 477
+    },
+    "fullsupport-bumper-transolver": {
+      "files": 477,
+      "bytes": 9713538,
+      "hashes_verified": 477
+    },
+    "fullsupport-phone-figconvunet": {
+      "files": 478,
+      "bytes": 9523750,
+      "hashes_verified": 478
+    },
+    "fullsupport-phone-flare": {
+      "files": 478,
+      "bytes": 9608769,
+      "hashes_verified": 478
+    },
+    "fullsupport-phone-geoflare": {
+      "files": 478,
+      "bytes": 9573033,
+      "hashes_verified": 478
+    },
+    "fullsupport-phone-geotransolver": {
+      "files": 478,
+      "bytes": 9855017,
+      "hashes_verified": 478
+    },
+    "fullsupport-phone-meshgraphnet": {
+      "files": 478,
+      "bytes": 9532104,
+      "hashes_verified": 478
+    },
+    "fullsupport-phone-transolver": {
+      "files": 478,
+      "bytes": 9905409,
+      "hashes_verified": 478
+    }
+  },
+  "refusals_verified": [
+    "current:overwrite",
+    "fullsupport-bumper-figconvunet:overwrite",
+    "fullsupport-bumper-flare:overwrite",
+    "fullsupport-bumper-geoflare:overwrite",
+    "fullsupport-bumper-geotransolver:overwrite",
+    "fullsupport-bumper-meshgraphnet:overwrite",
+    "fullsupport-bumper-transolver:overwrite",
+    "fullsupport-phone-figconvunet:overwrite",
+    "fullsupport-phone-flare:overwrite",
+    "fullsupport-phone-geoflare:overwrite",
+    "fullsupport-phone-geotransolver:overwrite",
+    "fullsupport-phone-meshgraphnet:overwrite",
+    "fullsupport-phone-transolver:overwrite",
+    "path:../outside.py",
+    "path:/outside.py",
+    "path:work/../outside.py",
+    "path:work//outside.py",
+    "path:work/venv/a.py",
+    "path:work/cache/a.py",
+    "path:C:/outside.py",
+    "path:work/a.npy",
+    "path:work\\outside.py",
+    "manifest:conflicting-destination"
+  ],
+  "original_bundle_manifest_unchanged": null,
+  "experiment_sources_imported": false,
+  "environment_installed": false,
+  "framework_or_gpu_used": false,
+  "arrays_or_weights_read": false,
+  "training_inference_or_FEM_executed": false,
+  "limits": [
+    "Restoration only; not a clean environment installation or complete training reproduction",
+    "External data, packages, solver and historical checkpoints are absent",
+    "JSON tokens require explicit rebinding and new-run hash fixation"
+  ]
+}

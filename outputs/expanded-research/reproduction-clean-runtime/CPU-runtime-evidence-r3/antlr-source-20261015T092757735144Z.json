@@ -1,0 +1,20 @@
+{
+  "stage": "antlr-source",
+  "attempt": "antlr-source-20261015T092757735144Z",
+  "started_utc": "2026-10-15T09:27:57.735144+00:00",
+  "CPU_threads": 1,
+  "priority": "BelowNormal",
+  "RSS_cap_bytes": 367001600,
+  "preflight_min_available_bytes": 1610612736,
+  "running_min_available_bytes": 536870912,
+  "preflight_min_disk_bytes": 16106127360,
+  "running_min_disk_bytes": 5368709120,
+  "framework_import_authorized": false,
+  "GPU_used": false,
+  "supervisor_source_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+  "supervisor_source_snapshot": "work/expanded-clean-runtime/executed-sources/antlr-source-20261015T092757735144Z-guard-45d6bfb697b9.py",
+  "preflight_available_bytes": 1578786816,
+  "preflight_disk_free_bytes": 65489625088,
+  "status": "deferred_resource_preflight",
+  "child_started": false
+}

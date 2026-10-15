@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-10-15T13:25:03.6730147Z",
+  "actual_attempt_finished_at_utc": "2026-10-15T09:36:42.078322+00:00",
+  "unified_session_id": 48506,
+  "unified_session_reaped_exit_code": 0,
+  "owned_process_id": 33220,
+  "owned_process_present": false,
+  "compute_apps_raw": [],
+  "free_physical_bytes": 668770304,
+  "gpu_ownership_returned_to_root": true,
+  "additional_neural_inference_after_completion": 0,
+  "additional_training_after_completion": 0,
+  "note": "Completion timestamp comes from original final-attempt receipt. Process absence and empty compute-app list were observed only at this closure time, after interruption; no earlier release-observation claim."
+}

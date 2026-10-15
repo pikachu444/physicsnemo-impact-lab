@@ -1,0 +1,14 @@
+{
+  "stage": "checkpoint_general_restart_to500us",
+  "exit_code": 0,
+  "stopped_reason": null,
+  "elapsed_seconds": 3202.1274249,
+  "sampled_peak_working_set_bytes": 412368896,
+  "minimum_sampled_system_free_memory_KiB": 375184,
+  "minimum_sampled_system_free_virtual_memory_KiB": 17323092,
+  "omp_threads": 2,
+  "priority": "BelowNormal",
+  "requested_final_time_s": 0.0005,
+  "source_checkpoint_sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca",
+  "AI_targets_unchanged": true
+}

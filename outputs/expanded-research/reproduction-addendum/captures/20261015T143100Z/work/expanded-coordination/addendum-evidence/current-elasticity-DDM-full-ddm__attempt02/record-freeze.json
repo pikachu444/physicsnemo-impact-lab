@@ -1,0 +1,120 @@
+{
+  "status": "completed_full_numerical_ddm_frozen",
+  "created_utc": "2026-10-15T08:33:38.517555+00:00",
+  "completed_full_ddm": true,
+  "converged": true,
+  "independent_checks_passed": 25,
+  "independent_checks_total": 25,
+  "independent_review": "no_critical_issues_found",
+  "png_visually_inspected": true,
+  "neural_models_trained": 0,
+  "official_cli_unchanged_claim": false,
+  "raw_execution_context_correction_required": true,
+  "files": [
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/allocation-and-release.json",
+      "sha256": "f126dab18f9bbc1299c304022c9795581cfaf489ae04d536fa405324a4cdcc16",
+      "bytes": 1090
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/comparison.png",
+      "sha256": "d798463070350c32c59612577154520209eaa8d7efb5017a97c89f05f5f736d0",
+      "bytes": 197751
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/driver.stderr.log",
+      "sha256": "6d92c5d56dadfdb839f481185a11e285f0322425b3327eb1197a7176b17cb7bf",
+      "bytes": 15241
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/driver.stdout.log",
+      "sha256": "71f0a68ecfe705a04824627bd3c2a565b5db7fd37229a15880687d587688ebfb",
+      "bytes": 8862
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/elasticity_metrics.csv",
+      "sha256": "492d84b30cf490358415473d61be4b4a7135fcabe96a4805b64df1deb02fa5a4",
+      "bytes": 2889
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/execution-context-correction.json",
+      "sha256": "d6d216759c2f265511496d956eb6a72b0786865330e3b7986c2c9077e4014f43",
+      "bytes": 1007
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/execution.json",
+      "sha256": "a748650b8789bb3862c8e6ecdaf93c3a2c6a462e8e66a65d51ec2cf3b8dc7a57",
+      "bytes": 11204
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/fields.csv",
+      "sha256": "33fd5dd6548742cc2e9d307bd2956e08a034215efb6fa9448ae0b1d4dac5fffc",
+      "bytes": 414090
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/independent-checks.json",
+      "sha256": "ee543372d719452e01215a1417ca17bab9980b8028eb6d26b992e2c5faef60e0",
+      "bytes": 3725
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/independent-review.json",
+      "sha256": "ab95e5d292d63142445eeaa5a3a76c90b8cbe37e32bec10469b8c29aad02b0bc",
+      "bytes": 1607
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/README.md",
+      "sha256": "faebc4bfcc8389160758e7ec8fdc552d6e6cabea1fe274bb061cc635bb33e193",
+      "bytes": 4370
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/stage-events.jsonl",
+      "sha256": "adcf5d861b3c320a76dd3ba52252c73aa31c9c99bd00619af986c65ecb9c8492",
+      "bytes": 51848
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02/supervisor.json",
+      "sha256": "11e829af33a51df827d9c665bae2ec9408942d1a7c38d1bba0135a4ac894d95c",
+      "bytes": 936
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/adapter-manifest.json",
+      "sha256": "ab8db664d4b436857b9247d3df05c81dc359ece7696227d599dbe91f14c1fa9b",
+      "bytes": 3645
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/attempt02-preparation-manifest.json",
+      "sha256": "03d1e595980f3662ac3344348b310d2381dc09b8b98098f5c177512ec6bfb08a",
+      "bytes": 1934
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/check-fields.py",
+      "sha256": "0df398e4645852ec4d961b0ec5e5868071ea38a0881c87f9d712f314b0ea560e",
+      "bytes": 7586
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/plot-fields.py",
+      "sha256": "017c4c2934e235fd90e9491ca69ea0be53f972dbb73236a53a905c20beea6853",
+      "bytes": 2730
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/resource-protocol-v3.json",
+      "sha256": "f5f8c2cf4ce96d06e5ac47d383598696af94a5d48e6b88c2cde63ec9cf96f4ef",
+      "bytes": 1611
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/run-full-ddm.py",
+      "sha256": "5086fc7a19b97e21d7ff3402c0b042c367c348208eb5ca1f46db50afe22656d2",
+      "bytes": 10129
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/run-supervised.ps1",
+      "sha256": "3a01f1034c4faa7629040ca5aad4eef35844ed8e14909de94326302f01a6194c",
+      "bytes": 4632
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/stage-observer.py",
+      "sha256": "b20a35d2b0af5b9e297d01e706f9ffa5abf4339f7fd1cbddea0ee58ae562b9ad",
+      "bytes": 3134
+    }
+  ]
+}

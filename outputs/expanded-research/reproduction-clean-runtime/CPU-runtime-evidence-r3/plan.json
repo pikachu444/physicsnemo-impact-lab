@@ -1,0 +1,85 @@
+{
+  "status": "PLAN_PREPARED_NOT_INSTALLED_OR_RUNTIME_VALIDATED",
+  "prepared_utc": "2026-10-15T07:30:14.049450+00:00",
+  "target": {
+    "python": "3.13.5 CPython win_amd64",
+    "new_environment": "work/expanded-clean-runtime/venv",
+    "system_site_packages": false,
+    "user_site": false,
+    "inherited_pth_paths": false,
+    "core": "PhysicsNeMo 2.2.2 exact source hashes",
+    "torch": "2.10.0+cu126",
+    "scatter": "2.1.2+pt210cu126"
+  },
+  "dependency_scope": {
+    "packages": 90,
+    "reason": "Runtime roots plus complete declared Windows dependencies, including required tensordict[zarr]; unrelated applications excluded for clean pip check",
+    "metadata_missing": [],
+    "marker_unresolved": [],
+    "installed_record_bytes_estimate": 4883582249,
+    "not_yet_a_hash_lock": true
+  },
+  "resource_proposal": {
+    "CPU_threads": 1,
+    "priority": "BelowNormal",
+    "non_ML_child_RSS_cap_bytes": 367001600,
+    "minimum_available_host_bytes_before_non_ML_stage": 1073741824,
+    "minimum_free_disk_bytes": 16106127360,
+    "expected_incremental_disk_budget_bytes": 12884901888,
+    "current_disk_free_bytes": 62409695232,
+    "Torch_missing_wheel_expected_download_bytes": 2589881709,
+    "stage_policy": "Fail closed on resource guard; preserve interrupted staging; no repeated automatic retries during active model training"
+  },
+  "steps": [
+    {
+      "phase": 0,
+      "status": "done_metadata_only",
+      "action": "Inspect exact current source hashes, explicit metadata paths, local wheel availability, disk and inheritance"
+    },
+    {
+      "phase": 1,
+      "status": "requires_root_plan_approval",
+      "action": "Resolve official metadata and binary-wheel availability against exact constraints; recover matching cached wheels first. Record package/version, URL, tags, size, publisher SHA where available, observed bytes SHA and cache provenance. Do not build from source."
+    },
+    {
+      "phase": 2,
+      "status": "requires_root_plan_approval_and_memory_gate",
+      "action": "Create a separate venv without --system-site-packages. Clear PYTHONPATH/PYTHONHOME/PIP_USER; disable user-site. Use the existing CPython base executable. No old .pth files or package directories are copied."
+    },
+    {
+      "phase": 3,
+      "status": "requires_root_plan_approval_and_memory_gate",
+      "action": "Retrieve only unresolved binary wheels, including the exact official Torch wheel if unavailable locally. Stream downloads and hashes, preserve exact URL/SHA/size. Generate a complete --require-hashes lock; install from an offline wheelhouse with --no-index --only-binary=:all:. Never update/uninstall global packages."
+    },
+    {
+      "phase": 4,
+      "status": "not_run",
+      "action": "Use isolated environment pip check; require zero missing/conflicting dependencies. Verify pyvenv.cfg false, no external .pth path, user site disabled and no old environment/global/user package paths. Compare all recorded core source hashes without importing frameworks."
+    },
+    {
+      "phase": 5,
+      "status": "requires_separate_explicit_framework_GPU_slot",
+      "action": "Import frameworks only in the allocated slot. Log actual imported module files/versions under the clean venv; standard library and application source are separately identified. Run tiny train-only CUDA forward/backward/update checks for needed model families. Do not call this full training reproduction."
+    },
+    {
+      "phase": 6,
+      "status": "requires_separate_explicit_framework_GPU_slot",
+      "action": "Reload one already-frozen validation checkpoint and compare its existing validation anchor with recorded tolerance/hashes. No held-out test, retuning or repeat full experiments. Report exactly which architecture/anchor was checked."
+    }
+  ],
+  "known_limits": [
+    "Exact Torch wheel is absent in the bounded caches checked; about 2.59GB retrieval may be necessary after approval",
+    "Only the listed cached wheel URLs/hashes are known locally; remaining official metadata/compatible wheel availability is pending approval",
+    "ANTLR4 4.9.3 cached wheels were historically built from source. If publisher-only wheels are required, keep this as an explicit unresolved dependency rather than build one",
+    "Existing plate driver prepends work/expanded-plate/deps. Clean runtime verification must use a separate clean launcher and reject fallback package imports; existing driver/source stays untouched",
+    "A clean environment passing representative functional and frozen validation checks does not prove reproduction of every training run"
+  ],
+  "actions_performed": {
+    "venv_created": false,
+    "pip_run": false,
+    "network_or_download": false,
+    "framework_import": false,
+    "GPU_used": false,
+    "arrays_or_weights_read": false
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "status": "static_source_import_inventory_no_execution",
+  "observed_utc": "2026-10-15T07:55:37.343488+00:00",
+  "files": [
+    {
+      "source": "work/expanded-ml/benchmark_data.py",
+      "source_sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy"
+      }
+    },
+    {
+      "source": "work/expanded-ml/model_adapters.py",
+      "source_sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "direct_third_party_distribution_roots": {
+        "torch": "torch",
+        "torch_geometric": "torch-geometric"
+      }
+    },
+    {
+      "source": "work/expanded-ml/budgeted_runtime.py",
+      "source_sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "psutil": "psutil",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-ml/train_budgeted.py",
+      "source_sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+      "direct_third_party_distribution_roots": {}
+    },
+    {
+      "source": "work/expanded-ml/evaluate_budgeted.py",
+      "source_sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+      "direct_third_party_distribution_roots": {
+        "matplotlib": "matplotlib"
+      }
+    },
+    {
+      "source": "work/expanded-plate/train_plate.py",
+      "source_sha256": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "physicsnemo": "nvidia-physicsnemo",
+        "psutil": "psutil",
+        "torch": "torch",
+        "torch_geometric": "torch-geometric"
+      }
+    },
+    {
+      "source": "work/expanded-plate/plate_data.py",
+      "source_sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "scipy": "scipy"
+      }
+    },
+    {
+      "source": "work/expanded-plate/plate_evaluation.py",
+      "source_sha256": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/run_domain_temporal.py",
+      "source_sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "psutil": "psutil",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/run_budget_temporal_v2.py",
+      "source_sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "psutil": "psutil",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/run_budget_temporal_v3.py",
+      "source_sha256": "3510516d26e5253d6d503c47bd469841555a370050b4ee7a29cc118cb5e3fc6a",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "psutil": "psutil",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/native_scalar_rollout_v3.py",
+      "source_sha256": "d9394b7fe601549a72c6a72285bf0b71dd16db112aec4574c0f263954d4591d0",
+      "direct_third_party_distribution_roots": {
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/sources/crash/rollout.py",
+      "source_sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb",
+      "direct_third_party_distribution_roots": {
+        "physicsnemo": "nvidia-physicsnemo",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/sources/drop_test/rollout.py",
+      "source_sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354",
+      "direct_third_party_distribution_roots": {
+        "physicsnemo": "nvidia-physicsnemo",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/sources/crash/datapipe.py",
+      "source_sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "physicsnemo": "nvidia-physicsnemo",
+        "torch": "torch"
+      }
+    },
+    {
+      "source": "work/expanded-temporal/sources/drop_test/datapipe.py",
+      "source_sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239",
+      "direct_third_party_distribution_roots": {
+        "numpy": "numpy",
+        "physicsnemo": "nvidia-physicsnemo",
+        "torch": "torch"
+      }
+    }
+  ],
+  "scope_reason": "Actual neural, plate and temporal drivers plus installed PhysicsNeMo declared Windows dependency closure. Optional cloud/CUDAextras, Sym, VTK/pyvista/mlflow/wandb stacks excluded. Default package metadata dependencies remain present so clean pip check can succeed.",
+  "explicit_abi_pin": "torch-scatter 2.1.2+pt210cu126 / CPython3.13 win_amd64 paired with torch2.10.0+cu126; scatter metadata alone does not enforce this coupling.",
+  "plate_fallback": "Existing train_plate.py adds sibling deps. Clean scratch workspace must omit that directory and actual imported package paths must be under new venv.",
+  "frameworks_imported": false
+}

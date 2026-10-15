@@ -91,4 +91,6 @@ RTX 3060 Laptop GPU에서 실행했으며 PhysicsNeMo 2.2.2, Torch 2.10.0+cu126,
 
 최종 metrics SHA256은 `04eaa2a4c140b4da658da5b6c3a78a6bc948713b2429a95d95042cd4308eb8a8`이다. 원 v2 source lock은 `5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640`, 교정 lock은 `84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70`이다.
 
-이번 closure는 stdlib만 사용했고 추가 학습·신경망 추론·marker 삭제·시험 재시도는 0회다. 저장 NPZ는 SHA256만 확인했으며 지표를 배열에서 독립 재계산하지 않았다. 새 field PNG·hotspot 재읽기·raw-array 수치 감사도 아직 완료하지 않았으므로 완료한 것처럼 세지 않는다.
+**2026-10-15 13:28 UTC 당시 closure의 검사 범위:** 이번 closure는 stdlib만 사용했고 추가 학습·신경망 추론·marker 삭제·시험 재시도는 0회다. 저장 NPZ는 SHA256만 확인했으며 지표를 배열에서 독립 재계산하지 않았다. 새 field PNG·hotspot 재읽기·raw-array 수치 감사도 아직 완료하지 않았으므로 완료한 것처럼 세지 않는다.
+
+**같은 날 후속 검산·그림 완료 기록:** 위 문장은13:28 종료 기록의 범위이며 현재 후속 검사 상태를 뜻하지 않는다. 이후 별도 독립 [원 source·저장 예측 배열 검산](../review/official32-streaming-numeric-audit-v1.md)에서297개 검사·0불일치를 확인했다. 여섯 사례의399시점 변위·응력·처방 경계,21표본시점 좌표 유도 GL과399시점 detF 집계가 일치했다. 이 검산은7.627초·최대60.30MiB·추가 NN0회였다. 첫 fresh test0002/source step399의 [변위·응력·유도 GL 비교 그림](../review/official32-first-fresh-field-comparison.png)도 완성해 직접 확인했다. 총 렌더3회는 배치 교정2회를 포함하며 학습·추론 재실행이 아니다. 기록된 큰 오차와 예측 역전은 그대로이며 정확도 합격으로 바뀌지 않는다. 원 closure·시험 receipt·metrics·checkpoint는 수정하지 않았다.

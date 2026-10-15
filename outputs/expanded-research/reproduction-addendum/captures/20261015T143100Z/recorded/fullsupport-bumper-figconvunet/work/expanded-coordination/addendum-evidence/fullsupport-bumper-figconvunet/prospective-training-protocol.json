@@ -1,0 +1,51 @@
+{
+  "status": "prospectively_fixed_before_full_support_static_training",
+  "date": "2026-10-15",
+  "scope": [
+    "OpenCourant phone9 full output corners C6",
+    "public bumper131 C7"
+  ],
+  "configurations": [
+    "Transolver",
+    "FLARE",
+    "GeoTransolver GALE",
+    "GeoTransolver GALE_FA",
+    "MeshGraphNet",
+    "FIGConvUNet"
+  ],
+  "family_count": 5,
+  "purpose": "A bounded first comparison using measured resources; not an optimized recipe, convergence claim or universal algorithm ranking.",
+  "data": {
+    "support": "Use each domain's frozen complete output support, stored times and common train-only normalization. No node subsampling for this comparison.",
+    "splits": "Keep phone5/2/2 and bumper112/12/7 simulation splits.",
+    "test_access": "Source/READY verification may hash held-out files. Held-out values must not determine batch size, training duration, weights or checkpoint selection. These simulation splits have already been evaluated by separately reported ROM methods; they are not a globally unseen research holdout."
+  },
+  "batch_selection": {
+    "candidate_sizes": [
+      1,
+      2,
+      5
+    ],
+    "evidence": "Actual fixed-weight output/gradient/independence and Adam-update probes on training cases only; B2/B5 use a strict train-file loader.",
+    "rule": "Use a passing candidate with measured throughput improvement in both timing repeats and sufficient measured GPU memory. Preserve any failed or unattempted larger-batch outcome. Do not claim identical optimizer trajectories when batch size changes."
+  },
+  "training": {
+    "synchronized_optimizer_compute_budget_seconds": 240,
+    "maximum_optimizer_updates": 5000,
+    "minimum_updates_quality_gate": 100,
+    "minimum_complete_epochs_quality_gate": 2,
+    "quality_gate_failure": "Report failure without silently extending the declared budget.",
+    "optimizer": "Adam, initial constant learning rate 0.001",
+    "timing": "Accumulate synchronized forward/loss/backward/Adam-update elapsed time. Report data reading, normalization, host/device transfer, setup, validation, checkpoint I/O and total wall separately. Concurrent local workloads must be recorded.",
+    "validation_interval": "At the next complete epoch after each additional 15 seconds of optimizer compute, plus initial and final complete-epoch states.",
+    "checkpoint": "Choose minimum full internal-validation loss among complete-epoch states. Record partial final-epoch work but do not select that unevaluated state. Preserve best and final-state provenance.",
+    "near_cap_improvement": "Explicitly report that convergence is unverified when validation is still improving near the cap."
+  },
+  "evaluation": {
+    "selection_roundtrip": "Verify serialization on validation input after freezing the best checkpoint.",
+    "test": "One held-out performance prediction pass per frozen configuration in a fresh process. Further metric recomputation uses saved predictions rather than reselecting a model.",
+    "metrics": "Physical-unit RMSE, relative L2, P95/max, raw negative output counts, EPSP support/history, strain principal ordering where applicable and centroid-removed displacement error.",
+    "baseline_scope": "Use identical field/support/split definitions for direct ROM comparisons. Earlier displacement-only or differently normalized experiments remain separate."
+  },
+  "resource": "Local RTX3060 Laptop6GiB. One GPU worker at a time. The user separately approved extending the central phone FEM to0.5ms; record any concurrent solver workload and resource interference. No paid resources."
+}

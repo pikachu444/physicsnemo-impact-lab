@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "reviewer": "/root/complete_temporal_training/review_temporal_aux",
+  "scope": "Bounded independent read-only review of auxiliary exposure accounting and command/resource runner; original V2 driver gate not repeated.",
+  "runner_sha256": "5fd31205911bee38d34cea1c2bd29aeebc907e488b40863075e2e660ff949de9",
+  "exposure_script_sha256": "07cc43b8ae324e117388450cec28ba7b09ba8f064923ce924b0a0d59890a7b2a",
+  "passed": [
+    "Selected checkpoint complete-epoch exposure reconstruction matches V2 seeded cyclic schedule for all three strategies.",
+    "Actual minus selected exposure and actual minus last-complete exposure separate post-selection and terminal-partial work.",
+    "Fast-exiting child records its actual exit code even if the psutil process constructor sees NoSuchProcess.",
+    "Unexpected observer failure terminates and reaps the child, records actual child exit plus distinct runner failure and traceback.",
+    "Exclusive creation protects command, log, resource and exit receipt paths.",
+    "Cadence is described as nominal 5-second wait plus observation time; UTC timestamps provide actual intervals.",
+    "Posthoc pointwise training mean uses exactly frozen training cases after manifest, split, READY hash and per-target SHA verification; baseline provenance is recorded."
+  ],
+  "synthetic_selfchecks": "Both auxiliary exposure and process/resource failure-handling stdlib selfchecks passed. Subprocess and GPU queries were mocked.",
+  "framework_imported": false,
+  "numpy_imported": false,
+  "hardware_queried": false,
+  "cache_or_heldout_arrays_accessed": false,
+  "new_domain_actual_training_claimed": false
+}

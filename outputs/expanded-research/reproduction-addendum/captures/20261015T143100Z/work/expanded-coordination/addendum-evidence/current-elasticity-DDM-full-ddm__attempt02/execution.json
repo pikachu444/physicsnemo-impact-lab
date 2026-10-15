@@ -1,0 +1,405 @@
+{
+  "status": "full_numerical_ddm_executed",
+  "official_source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "execution_scope": "Actual official run_elasticity, Q1 solver, domain, interface exchange, metrics, and Schwarz/EarlyStopping. Only two unused thermal/FNO imports removed from isolated Schwarz copy. No official CLI claim.",
+  "algorithm": "Actual official 2x2 overlapping Schwarz with Q1/BiCGSTAB local numerical solves; no neural model or training.",
+  "source_adapter_manifest_sha256": "ab8db664d4b436857b9247d3df05c81dc359ece7696227d599dbe91f14c1fa9b",
+  "driver_sha256": "5086fc7a19b97e21d7ff3402c0b042c367c348208eb5ca1f46db50afe22656d2",
+  "resource_protocol_version": 3,
+  "stage_observer_sha256": "b20a35d2b0af5b9e297d01e706f9ffa5abf4339f7fd1cbddea0ee58ae562b9ad",
+  "resource_protocol_sha256": "f5f8c2cf4ce96d06e5ac47d383598696af94a5d48e6b88c2cde63ec9cf96f4ef",
+  "pid": 26748,
+  "torch_version": "2.13.0+cpu",
+  "device": "cpu",
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "torch_cuda_build_version": null,
+  "cuda_initialized": false,
+  "all_solve_tensors_on_cpu": true,
+  "inactive_thermal_fno_modules_imported": [],
+  "grid": [
+    32,
+    32
+  ],
+  "patch_grid": [
+    2,
+    2
+  ],
+  "patch_size": [
+    18,
+    18
+  ],
+  "overlap": 4,
+  "maximum_schwarz_iterations": 100,
+  "interface_tolerance": 1e-08,
+  "schwarz_iterations": 64,
+  "converged": true,
+  "final_interface_rmse": 8.629332981592923e-09,
+  "numerical_solver_batch_calls": 65,
+  "numerical_patch_problems_including_monolithic": 257,
+  "neural_models_trained": 0,
+  "displacement_ddm_vs_monolithic_relative_L2": 2.780326024561735e-06,
+  "strain_ddm_vs_monolithic_relative_L2": 5.573447923883679e-06,
+  "stress_ddm_vs_monolithic_relative_L2": 6.589848782273366e-06,
+  "von_mises_ddm_vs_monolithic_relative_L2": 3.79882494643403e-06,
+  "diagnostics": {
+    "reference": {
+      "free_dof_force_residual_relative": 2.2555898934611112e-09,
+      "net_reaction_y_x": [
+        7.162675563776588e-09,
+        -2.1727466270604623e-08
+      ],
+      "net_reaction_relative": 3.4053006741410734e-08,
+      "strain_energy_from_official_internal_force": 0.03174355601803678,
+      "final_boundary_force_displacement_product": 0.06348711213393303,
+      "two_energy_vs_final_boundary_work_relative": 1.5414068657043163e-09
+    },
+    "ddm": {
+      "free_dof_force_residual_relative": 1.652532719841364e-05,
+      "net_reaction_y_x": [
+        9.737142044663472e-06,
+        -3.108206169089023e-05
+      ],
+      "net_reaction_relative": 4.8482237142770604e-05,
+      "strain_energy_from_official_internal_force": 0.03174355601937687,
+      "final_boundary_force_displacement_product": 0.06348738712292609,
+      "two_energy_vs_final_boundary_work_relative": 4.3328948445291635e-06
+    }
+  },
+  "units": "Consistent model length and stress units; official example declares no SI material units.",
+  "stress_strain_scope": "Derived small linear strain and plane-stress elastic Cauchy stress; not native nonlinear/contact/dynamic/plastic/fracture FEM labels.",
+  "timings_seconds": {
+    "imports": 8.889629299999797,
+    "official_full_ddm_recipe": 40.369112700005644,
+    "total": 49.46769779999886
+  },
+  "persisted_solver_stage_timings": [
+    {
+      "stage": "monolithic",
+      "solver_call": 1,
+      "duration_seconds": 1.4503772999960347
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 2,
+      "duration_seconds": 0.9048026000018581
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 3,
+      "duration_seconds": 0.8166710999939824
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 4,
+      "duration_seconds": 0.8307786000004853
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 5,
+      "duration_seconds": 0.7847851999977138
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 6,
+      "duration_seconds": 0.840171999996528
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 7,
+      "duration_seconds": 0.7986501999985194
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 8,
+      "duration_seconds": 0.801939000004495
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 9,
+      "duration_seconds": 0.809592599995085
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 10,
+      "duration_seconds": 0.754743999998027
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 11,
+      "duration_seconds": 0.8262080000058631
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 12,
+      "duration_seconds": 0.7300560000003316
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 13,
+      "duration_seconds": 0.8350499000007403
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 14,
+      "duration_seconds": 0.6563109999988228
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 15,
+      "duration_seconds": 0.6228034999949159
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 16,
+      "duration_seconds": 0.7428519000022789
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 17,
+      "duration_seconds": 0.8037241999991238
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 18,
+      "duration_seconds": 0.7014688999988721
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 19,
+      "duration_seconds": 0.7276586999942083
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 20,
+      "duration_seconds": 0.6913176000016392
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 21,
+      "duration_seconds": 0.7477961000040523
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 22,
+      "duration_seconds": 0.7204425000018091
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 23,
+      "duration_seconds": 0.7549425999968662
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 24,
+      "duration_seconds": 0.6877131999935955
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 25,
+      "duration_seconds": 0.6764689999981783
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 26,
+      "duration_seconds": 0.6988618000032147
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 27,
+      "duration_seconds": 0.7527980000013486
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 28,
+      "duration_seconds": 0.6320131000029505
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 29,
+      "duration_seconds": 0.6666120999943814
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 30,
+      "duration_seconds": 0.5839980999953696
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 31,
+      "duration_seconds": 0.6163820000001579
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 32,
+      "duration_seconds": 0.6596560000034515
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 33,
+      "duration_seconds": 0.6325463999964995
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 34,
+      "duration_seconds": 0.6321183000036399
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 35,
+      "duration_seconds": 0.6050407000002451
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 36,
+      "duration_seconds": 0.6239633000004687
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 37,
+      "duration_seconds": 0.6049817000020994
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 38,
+      "duration_seconds": 0.6243040000044857
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 39,
+      "duration_seconds": 0.6148411999965901
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 40,
+      "duration_seconds": 0.5955812000029255
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 41,
+      "duration_seconds": 0.567117500002496
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 42,
+      "duration_seconds": 0.5736917000031099
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 43,
+      "duration_seconds": 0.5632003999999142
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 44,
+      "duration_seconds": 0.5791662999981781
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 45,
+      "duration_seconds": 0.5476979999948526
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 46,
+      "duration_seconds": 0.5640497999993386
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 47,
+      "duration_seconds": 0.5512166999978945
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 48,
+      "duration_seconds": 0.5203714999952354
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 49,
+      "duration_seconds": 0.5548909999997704
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 50,
+      "duration_seconds": 0.5462377000003471
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 51,
+      "duration_seconds": 0.5537722000008216
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 52,
+      "duration_seconds": 0.4877298999999766
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 53,
+      "duration_seconds": 0.42754730000160635
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 54,
+      "duration_seconds": 0.31540880000102334
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 55,
+      "duration_seconds": 0.29697489999671234
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 56,
+      "duration_seconds": 0.28316220000124304
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 57,
+      "duration_seconds": 0.3317091999997501
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 58,
+      "duration_seconds": 0.3031306999982917
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 59,
+      "duration_seconds": 0.28176369999710005
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 60,
+      "duration_seconds": 0.2644159999981639
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 61,
+      "duration_seconds": 0.2598426999975345
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 62,
+      "duration_seconds": 0.22495360000175424
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 63,
+      "duration_seconds": 0.2324293999990914
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 64,
+      "duration_seconds": 0.22252650000154972
+    },
+    {
+      "stage": "patch_batch",
+      "solver_call": 65,
+      "duration_seconds": 0.2483263000031002
+    }
+  ],
+  "peak_working_set_bytes": 209883136,
+  "competing_workload_context": "A separate GPU/static-learning suite was active in this shared host; timings are concurrent execution evidence, not isolated performance comparisons."
+}

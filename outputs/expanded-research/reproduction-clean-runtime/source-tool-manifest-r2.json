@@ -1,0 +1,127 @@
+{
+  "status": "source_preservation_manifest",
+  "as_of_utc": "2026-10-15T08:55:12.985745+00:00",
+  "files": [
+    {
+      "source": "work/expanded-clean-runtime/audit_environment.py",
+      "bytes": 4305,
+      "sha256": "5c178d4698c43df45ca49add435d0794d2ecd9258f243a44df75f5752d44ef4f",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/audit_wheel_startup.py",
+      "bytes": 2465,
+      "sha256": "476a3d5ecfaed849d4784a2d0d19fd820b186a113f0f36154efa099bf3c4a9c3",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/check_guard_job.py",
+      "bytes": 4238,
+      "sha256": "9b2f87508af7a919aa660364741eedb611110f91d2d57fd7716eb89ba9a61d16",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/create_environment.py",
+      "bytes": 977,
+      "sha256": "ff87926bf094b6f1bc7df0fc84687c405735d70d1e49960e3621c2ba232d990c",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/download_wheels.py",
+      "bytes": 11684,
+      "sha256": "270800c9eaf1239b40cb3c3fe2269eb9fbdd8c7c4755d555da189220506f0d41",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/antlr-source-20261015T083522757407Z-6aca0b4e294e-prepare_antlr_source.py",
+      "bytes": 31881,
+      "sha256": "6aca0b4e294e1ef795709d34e1516f0acc00ce604cc468f4fc0ce3a6619ae4e1",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/antlr-source-20261015T083522757407Z-guard-4b43f288175c.py",
+      "bytes": 16796,
+      "sha256": "4b43f288175c4cfdb4a6688e5e11482a610db06b55330e0771088be121b86c33",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/download-20261015T074014937926Z-ad81af11cde0-download_wheels.py",
+      "bytes": 6664,
+      "sha256": "ad81af11cde020b107093a777b8d7c9fae8e6cdf91fe19226b1a0b9f2c436e4b",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/download-20261015T083044142375Z-2644f8cbc703-download_wheels.py",
+      "bytes": 10223,
+      "sha256": "2644f8cbc703e67701fca49b976cfc4e940c11344756efe3fea63acae7581833",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/wheel-startup-audit-20261015T084144369377Z-476a3d5ecfae-audit_wheel_startup.py",
+      "bytes": 2465,
+      "sha256": "476a3d5ecfaed849d4784a2d0d19fd820b186a113f0f36154efa099bf3c4a9c3",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/wheel-startup-audit-20261015T084144369377Z-guard-b7a953dadc13.py",
+      "bytes": 16874,
+      "sha256": "b7a953dadc13c33969defdbbfa264adb05eeeec4c10b95b256577c817c8091db",
+      "role": "actual_executed_source_snapshot"
+    },
+    {
+      "source": "work/expanded-clean-runtime/finalize_antlr_build.py",
+      "bytes": 37857,
+      "sha256": "ed40bf1d8388cc93e0f575dbc2517a237842e608a81ab96ffee31f59dedf13fe",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/inspect_runtime.py",
+      "bytes": 9117,
+      "sha256": "888f090fdc51d668c55eeda176d0c016806c0188d4a2ec759760ec423085c8e7",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/prepare_antlr_source.py",
+      "bytes": 38887,
+      "sha256": "716bb4d28836d178dc3cb6cebb3325d02ad0c0f1bf6486147527f3b7a6a927bc",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/prepare_plan.py",
+      "bytes": 10687,
+      "sha256": "4f01e26a6a69c8d38e73bf328fe2cf35b4722671fe8978f2f21b8eef8c0d53a3",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/resolve_build_tools.py",
+      "bytes": 3148,
+      "sha256": "574289aa4537a3a64a25e3a32f61515f7abae76f6e0f1ae0ee3f82e34740cbf2",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/resolve_wheels.py",
+      "bytes": 22158,
+      "sha256": "3d0e42d516f8fc641711904ceeec2c4c4d2173fed9254ca2833b0ff85a57c881",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/run_guarded.py",
+      "bytes": 12799,
+      "sha256": "d13d30e6f6005c9d68b457f984ab460a56bba9f5fb8b32e2925f82c13f62c3e8",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/run_guarded_r2.py",
+      "bytes": 21393,
+      "sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/selfcheck_tools.py",
+      "bytes": 5648,
+      "sha256": "586ac325a6270356e67c13c6657391bd906e409957639e3c95e29b87f1694c40",
+      "role": "current_prepared_source"
+    }
+  ],
+  "not_all_current_prepared_sources_executed": true
+}

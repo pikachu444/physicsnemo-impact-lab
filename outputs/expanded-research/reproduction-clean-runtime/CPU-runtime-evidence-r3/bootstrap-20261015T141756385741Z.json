@@ -1,0 +1,53 @@
+{
+  "stage": "bootstrap",
+  "attempt": "bootstrap-20261015T141756385741Z",
+  "started_utc": "2026-10-15T14:17:56.385741+00:00",
+  "CPU_threads": 1,
+  "priority": "BelowNormal",
+  "RSS_cap_bytes": 367001600,
+  "preflight_min_available_bytes": 1073741824,
+  "running_min_available_bytes": 536870912,
+  "preflight_min_disk_bytes": 16106127360,
+  "running_min_disk_bytes": 5368709120,
+  "framework_import_authorized": false,
+  "GPU_used": false,
+  "supervisor_source_sha256": "ff9737545332ad418f5b1ab654668c10d55c85d348ee3e1ad7fd9d22e5505541",
+  "supervisor_source_snapshot": "work/expanded-clean-runtime/executed-sources/bootstrap-20261015T141756385741Z-guard-ff9737545332.py",
+  "preflight_available_bytes": 1942114304,
+  "preflight_disk_free_bytes": 64920018944,
+  "stable_preflight_available_observations_bytes": [
+    1942114304,
+    1884815360
+  ],
+  "stdlib_or_clean_pip_stage": "bootstrap",
+  "command": [
+    "${WORKSPACE}\\work\\expanded-clean-runtime\\venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "-m",
+    "ensurepip",
+    "--default-pip"
+  ],
+  "status": "completed",
+  "child_started": true,
+  "pid": 21524,
+  "child_started_utc": "2026-10-15T14:18:06.408543+00:00",
+  "log": "work/expanded-clean-runtime/bootstrap-20261015T141756385741Z.log",
+  "peak_sampled_RSS_bytes": 4374528,
+  "peak_sampled_family_RSS_bytes": 94064640,
+  "observed_descendant_pids": [
+    4220,
+    38156,
+    40652
+  ],
+  "contained_before_resume": true,
+  "remaining_descendant_pids_before_cleanup": [],
+  "remaining_descendant_pids_at_end": [],
+  "descendants_reaped": true,
+  "exit_code": 0,
+  "finished_utc": "2026-10-15T14:18:14.501345+00:00",
+  "wall_seconds": 8.112767900005565,
+  "child_reaped": true,
+  "available_bytes_at_end": 1823297536,
+  "disk_free_bytes_at_end": 64905744384
+}

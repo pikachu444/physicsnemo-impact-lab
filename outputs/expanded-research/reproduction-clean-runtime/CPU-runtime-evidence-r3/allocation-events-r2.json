@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-15T08:55:12.985745+00:00",
+  "events": [
+    {
+      "authority": "root agent explicit allocation messages",
+      "event": "Plate GPU allocated; ANTLR build and pip child creation held until explicit root resume",
+      "GPU_allocation_actual_start_utc": null,
+      "historical_GPU_free_acquisition_receipts_modified": false,
+      "root_reported_Plate_first_step_RSS_bytes": 1668000000,
+      "root_reported_Plate_peak_RSS_bytes_approximate": 1678000000,
+      "root_reported_host_free_bytes_after_first_step": 866754560,
+      "new_build_or_install_children_authorized_now": false,
+      "bounded_source_review_and_tiny_owned_child_job_selfcheck_authorized": true
+    }
+  ],
+  "no_new_resource_poll_requested": true
+}

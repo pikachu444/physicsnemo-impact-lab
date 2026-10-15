@@ -1,0 +1,240 @@
+{
+  "file": "work\\expanded-drop\\100us-run\\Cell_Phone_DropA021",
+  "actual_time_s": 0.00010000866313930601,
+  "solid_elements": 130218,
+  "native_cell_vm_max_MPa": 73.50501251220703,
+  "native_cell_vm_min_MPa": 0.0,
+  "native_cell_epsp_max": 0.06257442384958267,
+  "native_cell_epsp_min": 0.0,
+  "plastic_cells": 240,
+  "all_solids_active": true,
+  "valid_IP_strain": {
+    "111": {
+      "min_6": [
+        -0.05388806760311127,
+        -0.06340819597244263,
+        -0.026399634778499603,
+        -0.03607448935508728,
+        -0.037410154938697815,
+        -0.042031340301036835
+      ],
+      "max_6": [
+        0.05341093987226486,
+        0.03244294971227646,
+        0.03211645036935806,
+        0.05405664071440697,
+        0.04401230067014694,
+        0.046581756323575974
+      ],
+      "max_frobenius": 0.10824114597562508,
+      "nonzero_cells": 125878
+    },
+    "112": {
+      "min_6": [
+        -0.053887300193309784,
+        -0.06340795010328293,
+        -0.02639944851398468,
+        -0.03607422858476639,
+        -0.03741003945469856,
+        -0.04203062877058983
+      ],
+      "max_6": [
+        0.053410567343235016,
+        0.0324430838227272,
+        0.03211643919348717,
+        0.05405721068382263,
+        0.04401186481118202,
+        0.04658174887299538
+      ],
+      "max_frobenius": 0.10824121791068735,
+      "nonzero_cells": 109598
+    },
+    "121": {
+      "min_6": [
+        -0.05388740077614784,
+        -0.06340723484754562,
+        -0.02639964409172535,
+        -0.03607437387108803,
+        -0.03741047531366348,
+        -0.04203113541007042
+      ],
+      "max_6": [
+        0.05341055989265442,
+        0.032442644238471985,
+        0.032115619629621506,
+        0.054057344794273376,
+        0.04401208460330963,
+        0.04658161848783493
+      ],
+      "max_frobenius": 0.10824087043062336,
+      "nonzero_cells": 109599
+    },
+    "211": {
+      "min_6": [
+        -0.05388706177473068,
+        -0.06340818107128143,
+        -0.02639932930469513,
+        -0.03607453778386116,
+        -0.037410441786050797,
+        -0.04203139245510101
+      ],
+      "max_6": [
+        0.05341080203652382,
+        0.03244243562221527,
+        0.03211606666445732,
+        0.05405664071440697,
+        0.04401182383298874,
+        0.04658174887299538
+      ],
+      "max_frobenius": 0.10824076907390769,
+      "nonzero_cells": 109600
+    }
+  },
+  "plastic_support": [
+    {
+      "part_id": 1,
+      "name": "lcd_screen",
+      "material": 5,
+      "cells": 34954,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 2,
+      "name": "cover_rear",
+      "material": 1,
+      "cells": 58462,
+      "plastic_cells": 240,
+      "epsp_max": 0.06257442384958267
+    },
+    {
+      "part_id": 5,
+      "name": "ic",
+      "material": 9,
+      "cells": 494,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 6,
+      "name": "ic_01",
+      "material": 9,
+      "cells": 81,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 7,
+      "name": "ct_01",
+      "material": 9,
+      "cells": 198,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 8,
+      "name": "ct_02",
+      "material": 9,
+      "cells": 215,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 9,
+      "name": "ic_02",
+      "material": 9,
+      "cells": 5458,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 10,
+      "name": "battery",
+      "material": 4,
+      "cells": 4340,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 11,
+      "name": "camera",
+      "material": 9,
+      "cells": 8045,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 12,
+      "name": "camera_conn",
+      "material": 9,
+      "cells": 2268,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 13,
+      "name": "top_pcb",
+      "material": 8,
+      "cells": 8041,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 17,
+      "name": "top_micro_chip_01",
+      "material": 9,
+      "cells": 200,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 19,
+      "name": "top_micro_chip_02",
+      "material": 9,
+      "cells": 200,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 23,
+      "name": "bottom_micro_chip_01",
+      "material": 9,
+      "cells": 200,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 25,
+      "name": "bottom_micro_chip_02",
+      "material": 9,
+      "cells": 200,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 27,
+      "name": "bottom_micro_chip_03",
+      "material": 9,
+      "cells": 200,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    },
+    {
+      "part_id": 28,
+      "name": "bottom_pcb",
+      "material": 8,
+      "cells": 6662,
+      "plastic_cells": 0,
+      "epsp_max": 0.0
+    }
+  ],
+  "total_strain_all_valid_IP_max_frobenius": 0.10824121791068735,
+  "total_strain_IP111_max_frobenius": 0.10824114597562508,
+  "file_bytes": 70780726,
+  "sha256": "a6f8b5b32356d62ce45a1db29bc2729d84507c978c500748faf14b2d09d9280a",
+  "resource": {
+    "available_bytes": 3505336320,
+    "working_set_bytes": 30961664,
+    "peak_working_set_bytes": 45858816
+  }
+}

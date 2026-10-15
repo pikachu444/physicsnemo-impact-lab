@@ -1,0 +1,20 @@
+{
+  "status": "USER_AUTHORIZED_EXACT_CHECKPOINT_RESUME",
+  "source_checkpoint_sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca",
+  "engine_binary_sha256": "13a9d6551fb9206b6c27c8af819e752edf3550e4725e446a2c3042c6c1a2b9d1",
+  "source_run": "500us-run",
+  "source_checkpoint_file": "Cell_Phone_Drop_0003_0001_I.rst",
+  "copied_checkpoint_file": "Cell_Phone_Drop_0003_0001.rst",
+  "invocation": "engine_win64_sp.exe -i CHECK_DATA -nt 2",
+  "engine_number": 3,
+  "restart_mode": "RERUN MCHECK=1 preserves TT DT NCYCLE output state",
+  "requested_final_time_s": 0.0005,
+  "threads": 2,
+  "priority": "BelowNormal",
+  "process_memory_cap_MiB": 600,
+  "system_free_memory_graceful_stop_MiB": 256,
+  "preflight_free_memory_MiB": 1280,
+  "wall_cap_seconds": 10800,
+  "changed_physics": "None",
+  "AI_targets_unchanged": true
+}

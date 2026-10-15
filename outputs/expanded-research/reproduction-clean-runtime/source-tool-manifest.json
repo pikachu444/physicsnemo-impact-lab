@@ -1,0 +1,73 @@
+{
+  "status": "source_preservation_manifest",
+  "as_of_utc": "2026-10-15T07:55:37.390613+00:00",
+  "files": [
+    {
+      "source": "work/expanded-clean-runtime/audit_environment.py",
+      "bytes": 4305,
+      "sha256": "5c178d4698c43df45ca49add435d0794d2ecd9258f243a44df75f5752d44ef4f",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/create_environment.py",
+      "bytes": 977,
+      "sha256": "ff87926bf094b6f1bc7df0fc84687c405735d70d1e49960e3621c2ba232d990c",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/download_wheels.py",
+      "bytes": 10223,
+      "sha256": "2644f8cbc703e67701fca49b976cfc4e940c11344756efe3fea63acae7581833",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/inspect_runtime.py",
+      "bytes": 9117,
+      "sha256": "888f090fdc51d668c55eeda176d0c016806c0188d4a2ec759760ec423085c8e7",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/prepare_antlr_source.py",
+      "bytes": 31881,
+      "sha256": "6aca0b4e294e1ef795709d34e1516f0acc00ce604cc468f4fc0ce3a6619ae4e1",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/prepare_plan.py",
+      "bytes": 10687,
+      "sha256": "4f01e26a6a69c8d38e73bf328fe2cf35b4722671fe8978f2f21b8eef8c0d53a3",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/resolve_build_tools.py",
+      "bytes": 3148,
+      "sha256": "574289aa4537a3a64a25e3a32f61515f7abae76f6e0f1ae0ee3f82e34740cbf2",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/resolve_wheels.py",
+      "bytes": 22158,
+      "sha256": "3d0e42d516f8fc641711904ceeec2c4c4d2173fed9254ca2833b0ff85a57c881",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/run_guarded.py",
+      "bytes": 12924,
+      "sha256": "b8d792f9e31c6b8c707c870e674f114c16435641b3fb62c92ca018d109d98388",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/selfcheck_tools.py",
+      "bytes": 4704,
+      "sha256": "c1b6e8e89049cd442291b3d5e36d39a7386475a4b229cee6874f034ea3c68722",
+      "role": "current_prepared_source"
+    },
+    {
+      "source": "work/expanded-clean-runtime/executed-sources/download-20261015T074014937926Z-ad81af11cde0-download_wheels.py",
+      "bytes": 6664,
+      "sha256": "ad81af11cde020b107093a777b8d7c9fae8e6cdf91fe19226b1a0b9f2c436e4b",
+      "role": "executed_snapshot"
+    }
+  ],
+  "code_imported_or_executed_for_build": false
+}

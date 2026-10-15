@@ -1,0 +1,2 @@
+{"phase": "approved_source_preparation_started", "pid": 29432, "build": false, "install": false}
+{"status": "static_audit_failed", "pid": 29432, "audit_path": "${WORKSPACE}/outputs/expanded-research/reproduction-clean-runtime/antlr-source-audit.json", "findings": ["Unexpected egg-info dependency/hook metadata: src/antlr4_python3_runtime.egg-info/requires.txt", "Unexpected root directory/import shadow: bin", "Unexpected root directory/import-shadowing member: bin/pygrun", "setup.py: Unexpected/dynamic setup keyword: scripts"]}

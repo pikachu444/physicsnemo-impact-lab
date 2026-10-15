@@ -1,0 +1,31 @@
+{
+  "status": "checkpoint_fixed_and_validation_roundtrip_passed",
+  "frozen_utc": "2026-10-15T07:00:41.352892+00:00",
+  "training_process_pid": 36920,
+  "training_process_created_epoch": 1792047044.7533903,
+  "checkpoint_sha256": "dd927643201dab20ded509252873c74ac3ad8618bb14e11eea98d54a16dbede1",
+  "validation_reference_sha256": "026ef275f752431887c7a266517547924f4b4c8276dfd4d957176f3067158473",
+  "validation_anchor_case": "phone_e090_rxm050",
+  "tolerance_scale_normalized": 1e-05,
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "training_protocol_sha256": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+  "best_model_config_sha256": "c37c976e5eb0e88eb3d8f0e1333251385183d677e88c6528c5cf2dc6702c63fd",
+  "normalization_sha256": "bc9395f15b1d037efa06ec387bf619da3b792445094213a5d472f0d7b1898572",
+  "contract_sha256": "5e0e8f54596b6b6956e4725783a636d59d5d6c785247149ecba1d311dad0cfe3",
+  "training_report_sha256": "549c976c74e3c0d0a760026ff9c2f5c2318adff573118bf99f5c547948ebee7e",
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "test_performance_passes_so_far": 0
+}

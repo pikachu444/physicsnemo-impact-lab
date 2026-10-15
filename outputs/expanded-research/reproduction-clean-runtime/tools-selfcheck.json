@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-15T07:52:50.329342+00:00",
+  "checks": [
+    "tiny_cached_wheel_copy",
+    "exact_hash_size",
+    "existing_verified_wheel_reuse",
+    "preserved_cached_partial_resume",
+    "legacy_HTTP_partial_retained_without_ETag",
+    "mocked_HTTP_Range_ETag_ContentRange_resume",
+    "unsafe_filename_refusals",
+    "conflicting_wheel_refusal"
+  ],
+  "network_used": false,
+  "framework_imported": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "deferred_insufficient_initial_available_memory_no_child_no_build",
+  "recorded_utc": "2026-10-15T09:28:22.270403+00:00",
+  "authority": "Root explicitly allocated only exact ANTLR pure build through lock-r2; one preflight decision, no automatic retry. Plate retains GPU ownership.",
+  "preflight_receipt": "antlr-source-20261015T092757735144Z.json",
+  "preflight_receipt_sha256": "2e5805b620a7dd21113eac3d80e8d934b92a89c3681c9ef529b5a3f34b08aa3e",
+  "observed_available_bytes": 1578786816,
+  "required_available_bytes": 1610612736,
+  "second_memory_observation_performed": false,
+  "disk_free_bytes": 65489625088,
+  "child_started": false,
+  "build_attempts_started": 0,
+  "one_build_sentinel_exists": false,
+  "build_environment_exists": false,
+  "runtime_environment_exists": false,
+  "build_or_install_or_ML_performed": false,
+  "new_capture_or_dry_run_performed": false,
+  "automatic_retry_planned": false,
+  "next_action": "Idle until explicit root allocation."
+}

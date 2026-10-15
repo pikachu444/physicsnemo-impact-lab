@@ -1,0 +1,37 @@
+{
+  "status": "approved_CPU_admission_revision_prepared_not_executed",
+  "created_utc": "2026-10-15T14:02:37.613097+00:00",
+  "authority": "Root explicitly authorized the one-constant CPU-only revision and subsequent exact build/install stages.",
+  "original_source": "work/expanded-clean-runtime/run_guarded_r2.py",
+  "original_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+  "revision_source": "work/expanded-clean-runtime/run_guarded_cpu_r3.py",
+  "revision_sha256": "ff9737545332ad418f5b1ab654668c10d55c85d348ee3e1ad7fd9d22e5505541",
+  "exact_change": "One preflight admission constant 1.5 GiB to 1.0 GiB; all other source bytes equal.",
+  "operating_admission_bytes": 1073741824,
+  "stable_observations": 2,
+  "spacing_seconds": 10,
+  "family_RSS_cap_bytes": 367001600,
+  "running_host_floor_bytes": 536870912,
+  "preflight_disk_bytes": 16106127360,
+  "running_disk_floor_bytes": 5368709120,
+  "admission_arithmetic_MiB": {
+    "child_ceiling": 350,
+    "host_floor": 512,
+    "parent_and_headroom": 162,
+    "total": 1024
+  },
+  "scope": "Existing CPU-only stage list, exact one-shot ANTLR source build and offline clean install through static checks.",
+  "unchanged": [
+    "Windows Job helper",
+    "one-build sentinel",
+    "runtime floors",
+    "familyRSS ceiling",
+    "disk bounds",
+    "CPU1 BelowNormal",
+    "GPU hidden",
+    "no overwrite or automatic retry"
+  ],
+  "model_minimum_RAM_claimed": false,
+  "framework_import_authorized": false,
+  "original_source_unchanged": true
+}

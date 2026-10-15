@@ -1,0 +1,32 @@
+{
+  "status": "NOT_EXECUTED_RESOURCE_ADMISSION_NOT_MET",
+  "frozen_utc": "2026-10-15T14:29:03.583386+00:00",
+  "planned_functional_checks": 6,
+  "planned_Adam_updates_per_check": 3,
+  "actual_functional_checks_completed": 0,
+  "failed_ML_checks": 0,
+  "additional_full_fits_or_completed_models": 0,
+  "operating_admission_bytes": 1610612736,
+  "observations_seconds_apart": 10,
+  "exact_observations_from_CPU_closure": [
+    {
+      "utc": "2026-10-15T14:24:59.353134+00:00",
+      "available_bytes": 1976545280
+    },
+    {
+      "utc": "2026-10-15T14:25:09.353616+00:00",
+      "available_bytes": 1553977344
+    }
+  ],
+  "functional_runtime_source_sha256": "cbff88dc4a884bbd803e01603113e850e723dc35bde28180bdba9cf447910379",
+  "functional_protocol_sha256": "575eef9fa611531f2f3c7d421968609ccdecfb14f628a27ef3d898c698aa47ef",
+  "CPU_closure_sha256": "7bcbd5a57cdfa53c4894ea15b9e9dee12667cb9a9c10398037ca03eabb5d23f5",
+  "GPU_currently_allocated": false,
+  "framework_or_GPU_execution_performed": false,
+  "data_arrays_or_checkpoints_read": false,
+  "new_memory_or_process_query_performed": false,
+  "automatic_retry_planned": false,
+  "model_intrinsic_minimum_RAM_claimed": false,
+  "authority": "Root explicitly closed the prepared checks using the two existing observations; no new probes.",
+  "next_step_requires_user_resource_path_choice_and_new_explicit_allocation": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "completed_and_owned_framework_process_released",
+  "allocation": "Root explicitly allocated one attempt02 in the GPU-free CPU window after static12 suite/test exit0 at2026-10-15T08:27:18Z and no owned train/eval/suite processes or GPU compute workload remained.",
+  "resource_protocol": 3,
+  "attempt_count_this_allocation": 1,
+  "automatic_retry": false,
+  "owned_framework_process": {
+    "pid": 26748,
+    "started_utc": "2026-10-15T08:28:27.3674913Z",
+    "ended_utc": "2026-10-15T08:29:17.7874967Z",
+    "exit_code": 0,
+    "reaped": true,
+    "present_at_2026_10_15T08_29_54_6231872Z": false
+  },
+  "plotting": "Separate short-lived CSV-only Matplotlib process completed exit0 after numerical child exit and1.5GiB available-memory check; no Torch solver was relaunched.",
+  "scientific_result": "Full numerical DDM converged64iterations; independent checks25/25 and final independent review found no critical issues.",
+  "unchanged_scope": "No user app was terminated, no global package/account/GPU state was changed, no new neural model was trained; earlier failed/partial evidence preserved."
+}

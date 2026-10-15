@@ -1,0 +1,23 @@
+{
+  "shell": "cmd.exe",
+  "login": false,
+  "cwd": "${WORKSPACE}",
+  "parent_python_no_site": true,
+  "commands": [
+    {
+      "attempt": "standard_preflight_only",
+      "exact_tool_cmd": "work\\expanded-ml\\venv\\Scripts\\python.exe -S work\\expanded-temporal\\run_multifield_guarded.py --domain phone_full --strategy time_conditional --mode probe --protocol outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json --protocol-sha256 7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326 --execution-lock outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json --execution-lock-sha256 9863c853fbf661afa4bec677820b24a8ab0e9bb8989a39759cfd5f50898218fd --allocation root-20261015T1324UTC-standard-preflight-only --allocated --preflight-only",
+      "tool_session": 98986,
+      "final_exit_code": 0
+    },
+    {
+      "attempt": "cold_calibration_once",
+      "exact_tool_cmd": "work\\expanded-ml\\venv\\Scripts\\python.exe -S work\\expanded-temporal\\run_multifield_guarded.py --domain phone_full --strategy time_conditional --mode probe --protocol outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json --protocol-sha256 7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326 --execution-lock outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r2.json --execution-lock-sha256 0e61aa302189aeae1e4ae2af84f1985a15408092a8d5ed0ef2f5db689a107f88 --allocation root-20261015T1324UTC-cold-calibration-one-attempt-only --allocated",
+      "tool_session": 65267,
+      "final_exit_code": 1
+    }
+  ],
+  "path_format": "Fixed workspace-relative paths with no spaces; no shell interpolation or credential output",
+  "stdout_stderr": "Exact child combined stdout/stderr logs are in raw/. The guard terminal stdout was delivered through the tool; its complete structured record is the exact external JSON receipt, not a separately saved byte-for-byte terminal stream. No terminal stream was fabricated.",
+  "original_stage_cli": "raw/work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.command.json"
+}

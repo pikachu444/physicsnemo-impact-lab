@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "status": "prepared_not_allocated_or_executed",
+  "authorization": "Root authorized preparation only; explicit root followup is required before framework import, solver execution or memory polling.",
+  "preflight_available_bytes": 1610612736,
+  "stable_preflight_observations": 2,
+  "stable_preflight_interval_seconds": 10,
+  "running_host_free_floor_bytes": 536870912,
+  "maximum_working_set_bytes": 367001600,
+  "maximum_wall_seconds": 300,
+  "cpu_threads": 1,
+  "process_priority": "BelowNormal",
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "device": "cpu",
+  "runtime": "C:/Program Files/Python313/python.exe; existing Torch2.13.0+cpu",
+  "numerical_conditions": {
+    "size": 32,
+    "patch_grid": [
+      2,
+      2
+    ],
+    "overlap": 4,
+    "max_iterations": 100,
+    "interface_tolerance": 1e-08
+  },
+  "observation_only_changes": "Standard-library stage journal times original solver and metric logger methods while forwarding identical arguments and return values. Every stage/metric event is flushed/fsynced immediately. Original methods are restored after run. Official source unchanged from adapter manifest.",
+  "default_output": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/attempt02",
+  "old_protocols": [
+    "resource-protocol-v1.json",
+    "resource-protocol-v2.json"
+  ],
+  "preserved_v2_scripts": [
+    "run-full-ddm-v2-1gib.py",
+    "run-supervised-v2-1gib.ps1"
+  ],
+  "safety_scope": "Kill only the owned child tree on guard; reap process and preserve partial logs/journal. No GPU/user-app changes.",
+  "performance_scope": "Shared-host execution evidence; no isolated performance comparison; no new learning model."
+}

@@ -1,0 +1,2849 @@
+{
+  "status": "PASS_SCOPED_SOURCE_AND_SAVED_FIELD_NUMERIC_AUDIT",
+  "started_utc": "2026-10-15T13:58:27.747934+00:00",
+  "cases": [
+    {
+      "case": "test_0002",
+      "nodes": 1292,
+      "free_nodes": 1017,
+      "audited_tetrahedra": 2977,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 5989.22703257408,
+          "truth_sum_square": 74.5738520077217,
+          "values": 1217349,
+          "max_abs_error": 0.26281920773908496,
+          "relative_l2": 8.961735045038422,
+          "component_rmse": 0.0701419501554984,
+          "truth_l2": 8.635615323051491
+        },
+        "rollout_free_stress": {
+          "sse": 127368949595691.05,
+          "truth_sum_square": 247343960826136.97,
+          "values": 405783,
+          "max_abs_error": 62008.330078125,
+          "relative_l2": 0.7175978487435937,
+          "component_rmse": 17716.782733182838,
+          "truth_l2": 15727172.690160714
+        },
+        "derived_GL_strain": {
+          "sse": 198017257.78158826,
+          "truth_sum_square": 2.2531649204458097,
+          "values": 375102,
+          "max_abs_error": 3846.7402343749995,
+          "relative_l2": 9374.649309136952,
+          "component_rmse": 22.976127421512775,
+          "truth_l2": 1.5010546027529477
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 74.5738520077217,
+          "truth_sum_square": 74.5738520077217,
+          "values": 1217349,
+          "max_abs_error": 0.05920116603374481,
+          "relative_l2": 1.0,
+          "component_rmse": 0.007826827037732144,
+          "truth_l2": 8.635615323051491
+        },
+        "zero_stress_baseline": {
+          "sse": 247343960826136.97,
+          "truth_sum_square": 247343960826136.97,
+          "values": 405783,
+          "max_abs_error": 89194.484375,
+          "relative_l2": 1.0,
+          "component_rmse": 24689.013162737694,
+          "truth_l2": 15727172.690160714
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 142150501550697.75,
+          "truth_sum_square": 247343960826136.97,
+          "values": 405783,
+          "max_abs_error": 58420.76171875,
+          "relative_l2": 0.7580948435633688,
+          "component_rmse": 18716.613571339585,
+          "truth_l2": 15727172.690160714
+        }
+      },
+      "predicted_inverted_frames": 385,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 2.6645352591003757e-15,
+      "GL_source_max_abs_difference": 5.820766091346741e-11
+    },
+    {
+      "case": "test_0003",
+      "nodes": 1118,
+      "free_nodes": 716,
+      "audited_tetrahedra": 2390,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 8319.404343094546,
+          "truth_sum_square": 1772.630677887898,
+          "values": 857052,
+          "max_abs_error": 0.29863226413726807,
+          "relative_l2": 2.1663917130271066,
+          "component_rmse": 0.09852411215373588,
+          "truth_l2": 42.102620795953996
+        },
+        "rollout_free_stress": {
+          "sse": 177197246903751.9,
+          "truth_sum_square": 379915152411465.5,
+          "values": 285684,
+          "max_abs_error": 89832.98046875,
+          "relative_l2": 0.6829441313658269,
+          "component_rmse": 24904.941503864862,
+          "truth_l2": 19491412.273395315
+        },
+        "derived_GL_strain": {
+          "sse": 29284.199332443437,
+          "truth_sum_square": 8.87635678211183,
+          "values": 301140,
+          "max_abs_error": 12.259119168156758,
+          "relative_l2": 57.43799904355045,
+          "component_rmse": 0.3118404540680964,
+          "truth_l2": 2.979321530501841
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 1772.630677887898,
+          "truth_sum_square": 1772.630677887898,
+          "values": 857052,
+          "max_abs_error": 0.23763756453990936,
+          "relative_l2": 1.0,
+          "component_rmse": 0.04547843843811044,
+          "truth_l2": 42.102620795953996
+        },
+        "zero_stress_baseline": {
+          "sse": 379915152411465.5,
+          "truth_sum_square": 379915152411465.5,
+          "values": 285684,
+          "max_abs_error": 119697.8984375,
+          "relative_l2": 1.0,
+          "component_rmse": 36467.026159310015,
+          "truth_l2": 19491412.273395315
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 173182664989916.9,
+          "truth_sum_square": 379915152411465.5,
+          "values": 285684,
+          "max_abs_error": 88924.17578125,
+          "relative_l2": 0.6751634156827568,
+          "component_rmse": 24621.201941512194,
+          "truth_l2": 19491412.273395315
+        }
+      },
+      "predicted_inverted_frames": 73,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 8.881784197001252e-16,
+      "GL_source_max_abs_difference": 1.8189894035458565e-12
+    },
+    {
+      "case": "test_0004",
+      "nodes": 825,
+      "free_nodes": 505,
+      "audited_tetrahedra": 1512,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 653.8416043727891,
+          "truth_sum_square": 114.00310177948072,
+          "values": 604485,
+          "max_abs_error": 0.1530324307095725,
+          "relative_l2": 2.3948479326653214,
+          "component_rmse": 0.0328884579836246,
+          "truth_l2": 10.677223505175899
+        },
+        "rollout_free_stress": {
+          "sse": 323651869280057.6,
+          "truth_sum_square": 735521152093117.1,
+          "values": 201495,
+          "max_abs_error": 230008.3671875,
+          "relative_l2": 0.6633480800732222,
+          "component_rmse": 40078.08139312977,
+          "truth_l2": 27120493.212571137
+        },
+        "derived_GL_strain": {
+          "sse": 4789.813786695275,
+          "truth_sum_square": 50.195846869058784,
+          "values": 190512,
+          "max_abs_error": 2.1822208664016216,
+          "relative_l2": 9.768444693537546,
+          "component_rmse": 0.15856164644249363,
+          "truth_l2": 7.084902742385303
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 114.00310177948072,
+          "truth_sum_square": 114.00310177948072,
+          "values": 604485,
+          "max_abs_error": 0.07394655048847198,
+          "relative_l2": 1.0,
+          "component_rmse": 0.013733004728622466,
+          "truth_l2": 10.677223505175899
+        },
+        "zero_stress_baseline": {
+          "sse": 735521152093117.1,
+          "truth_sum_square": 735521152093117.1,
+          "values": 201495,
+          "max_abs_error": 290617.1875,
+          "relative_l2": 1.0,
+          "component_rmse": 60417.87501473712,
+          "truth_l2": 27120493.212571137
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 380976426617481.2,
+          "truth_sum_square": 735521152093117.1,
+          "values": 201495,
+          "max_abs_error": 259843.46484375,
+          "relative_l2": 0.7196999436230501,
+          "component_rmse": 43482.74124193079,
+          "truth_l2": 27120493.212571137
+        }
+      },
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 5.551115123125783e-16,
+      "GL_source_max_abs_difference": 2.2737367544323206e-13
+    },
+    {
+      "case": "test_0005",
+      "nodes": 1100,
+      "free_nodes": 616,
+      "audited_tetrahedra": 1736,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 5980.177109800125,
+          "truth_sum_square": 1478.774552323733,
+          "values": 737352,
+          "max_abs_error": 0.3479525074362755,
+          "relative_l2": 2.0109720707850873,
+          "component_rmse": 0.0900574388495936,
+          "truth_l2": 38.45483782729727
+        },
+        "rollout_free_stress": {
+          "sse": 383260049104149.94,
+          "truth_sum_square": 913496170340307.8,
+          "values": 245784,
+          "max_abs_error": 163354.134765625,
+          "relative_l2": 0.6477291018902057,
+          "component_rmse": 39488.439486859985,
+          "truth_l2": 30224099.16507534
+        },
+        "derived_GL_strain": {
+          "sse": 33638.49658441652,
+          "truth_sum_square": 32.17518574115821,
+          "values": 218736,
+          "max_abs_error": 17.095303716429044,
+          "relative_l2": 32.333875176699536,
+          "component_rmse": 0.3921553603851559,
+          "truth_l2": 5.672317492979233
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 1478.774552323733,
+          "truth_sum_square": 1478.774552323733,
+          "values": 737352,
+          "max_abs_error": 0.2820295989513397,
+          "relative_l2": 1.0,
+          "component_rmse": 0.04478303809283388,
+          "truth_l2": 38.45483782729727
+        },
+        "zero_stress_baseline": {
+          "sse": 913496170340307.8,
+          "truth_sum_square": 913496170340307.8,
+          "values": 245784,
+          "max_abs_error": 192633.125,
+          "relative_l2": 1.0,
+          "component_rmse": 60964.4361688006,
+          "truth_l2": 30224099.16507534
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 401440866935730.4,
+          "truth_sum_square": 913496170340307.8,
+          "values": 245784,
+          "max_abs_error": 161859.40234375,
+          "relative_l2": 0.6629143579510107,
+          "component_rmse": 40414.200060685835,
+          "truth_l2": 30224099.16507534
+        }
+      },
+      "predicted_inverted_frames": 24,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 1.4210854715202004e-14,
+      "GL_source_max_abs_difference": 2.2737367544323206e-13
+    },
+    {
+      "case": "test_0006",
+      "nodes": 1126,
+      "free_nodes": 508,
+      "audited_tetrahedra": 1659,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 649.2277451162435,
+          "truth_sum_square": 0.21700643711683928,
+          "values": 608076,
+          "max_abs_error": 0.11120254546403885,
+          "relative_l2": 54.69683884198453,
+          "component_rmse": 0.032675301557799345,
+          "truth_l2": 0.4658394971627452
+        },
+        "rollout_free_stress": {
+          "sse": 129376997779912.61,
+          "truth_sum_square": 164263910110271.0,
+          "values": 202692,
+          "max_abs_error": 123489.2109375,
+          "relative_l2": 0.8874777144966334,
+          "component_rmse": 25264.472240956817,
+          "truth_l2": 12816548.29157488
+        },
+        "derived_GL_strain": {
+          "sse": 5010.166724316826,
+          "truth_sum_square": 5.073056123120431,
+          "values": 209034,
+          "max_abs_error": 1.8886821269989014,
+          "relative_l2": 31.426155538185494,
+          "component_rmse": 0.154816634954292,
+          "truth_l2": 2.252344583566296
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 0.21700643711683928,
+          "truth_sum_square": 0.21700643711683928,
+          "values": 608076,
+          "max_abs_error": 0.009400453418493271,
+          "relative_l2": 1.0,
+          "component_rmse": 0.0005973892138848477,
+          "truth_l2": 0.4658394971627452
+        },
+        "zero_stress_baseline": {
+          "sse": 164263910110271.0,
+          "truth_sum_square": 164263910110271.0,
+          "values": 202692,
+          "max_abs_error": 164648.53125,
+          "relative_l2": 1.0,
+          "component_rmse": 28467.72581245775,
+          "truth_l2": 12816548.29157488
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 133139385254941.75,
+          "truth_sum_square": 164263910110271.0,
+          "values": 202692,
+          "max_abs_error": 133874.80859375,
+          "relative_l2": 0.9002895215541169,
+          "component_rmse": 25629.19525143137,
+          "truth_l2": 12816548.29157488
+        }
+      },
+      "predicted_inverted_frames": 119,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 5.551115123125783e-16,
+      "GL_source_max_abs_difference": 1.8189894035458565e-12
+    },
+    {
+      "case": "test_0007",
+      "nodes": 1178,
+      "free_nodes": 582,
+      "audited_tetrahedra": 1941,
+      "frames": 399,
+      "GL_frames": 21,
+      "metrics": {
+        "rollout_free_displacement": {
+          "sse": 2295.7659210396123,
+          "truth_sum_square": 665.2038924706043,
+          "values": 696654,
+          "max_abs_error": 0.2555355206131935,
+          "relative_l2": 1.85774632768098,
+          "component_rmse": 0.05740572879148903,
+          "truth_l2": 25.791546918915202
+        },
+        "rollout_free_stress": {
+          "sse": 266481352463324.72,
+          "truth_sum_square": 581999288506699.2,
+          "values": 232218,
+          "max_abs_error": 132164.4453125,
+          "relative_l2": 0.676662618573876,
+          "component_rmse": 33875.481097960954,
+          "truth_l2": 24124661.417452045
+        },
+        "derived_GL_strain": {
+          "sse": 8467.57960571649,
+          "truth_sum_square": 19.833925497535386,
+          "values": 244566,
+          "max_abs_error": 4.443999263632577,
+          "relative_l2": 20.66214026096629,
+          "component_rmse": 0.18607224772215744,
+          "truth_l2": 4.4535295550310865
+        },
+        "zero_increment_baseline_free_displacement": {
+          "sse": 665.2038924706043,
+          "truth_sum_square": 665.2038924706043,
+          "values": 696654,
+          "max_abs_error": 0.198677197098732,
+          "relative_l2": 1.0,
+          "component_rmse": 0.03090073598107899,
+          "truth_l2": 25.791546918915202
+        },
+        "zero_stress_baseline": {
+          "sse": 581999288506699.2,
+          "truth_sum_square": 581999288506699.2,
+          "values": 232218,
+          "max_abs_error": 184274.0,
+          "relative_l2": 1.0,
+          "component_rmse": 50062.586831464716,
+          "truth_l2": 24124661.417452045
+        },
+        "training_mean_constant_stress_baseline": {
+          "sse": 281287985924400.94,
+          "truth_sum_square": 581999288506699.2,
+          "values": 232218,
+          "max_abs_error": 153500.27734375,
+          "relative_l2": 0.6952073657843605,
+          "component_rmse": 34803.8791154534,
+          "truth_l2": 24124661.417452045
+        }
+      },
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "predicted_negative_stress": 0,
+      "reference_negative_stress": 0,
+      "saved_truth_vs_source_max_abs_difference": 0.0,
+      "prescribed_boundary_max_abs_difference": 0.0,
+      "GL_prediction_max_abs_difference": 4.440892098500626e-16,
+      "GL_source_max_abs_difference": 9.094947017729282e-13
+    }
+  ],
+  "completed_case_count": 6,
+  "checks": [
+    {
+      "name": "synthetic identity",
+      "passed": true
+    },
+    {
+      "name": "synthetic translation",
+      "passed": true
+    },
+    {
+      "name": "synthetic rigid_rotation",
+      "passed": true
+    },
+    {
+      "name": "synthetic known_stretch",
+      "passed": true
+    },
+    {
+      "name": "synthetic negative_det_reflection",
+      "passed": true
+    },
+    {
+      "name": "source lock and checkpoint frozen",
+      "passed": true
+    },
+    {
+      "name": "source train_plate.py",
+      "passed": true
+    },
+    {
+      "name": "source plate_evaluation.py",
+      "passed": true
+    },
+    {
+      "name": "source plate_data.py",
+      "passed": true
+    },
+    {
+      "name": "source selection_policy.py",
+      "passed": true
+    },
+    {
+      "name": "source freeze_protocol.py",
+      "passed": true
+    },
+    {
+      "name": "source run_validation_training.py",
+      "passed": true
+    },
+    {
+      "name": "source run_frozen_final.py",
+      "passed": true
+    },
+    {
+      "name": "source summarize_plate_fields.py",
+      "passed": true
+    },
+    {
+      "name": "source plot_plate.py",
+      "passed": true
+    },
+    {
+      "name": "test_0002 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0002 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0002 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0002 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0002 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0002 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0002 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0002 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0002 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 24810.990234375,
+        "recorded": 24810.990234375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 89194.484375,
+        "recorded": 89194.484375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 2.6645352591003757e-15,
+        "source_max_abs_difference": 5.820766091346741e-11,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0002 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0002 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0002 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 8.961735045038422,
+        "recorded": 8.96173504503842,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.0701419501554984,
+        "recorded": 0.07014195015549843,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 8.635615323051491,
+        "recorded": 8.635615323051478,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.26281920773908496,
+        "recorded": 0.26281920773908496,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.7175978487435937,
+        "recorded": 0.7175978487435932,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 17716.782733182838,
+        "recorded": 17716.782733182838,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 15727172.690160714,
+        "recorded": 15727172.690160703,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 62008.330078125,
+        "recorded": 62008.330078125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 9374.649309136952,
+        "recorded": 9374.649309137098,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 22.976127421512775,
+        "recorded": 22.976127421512775,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.5010546027529477,
+        "recorded": 1.5010546027529246,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 3846.7402343749995,
+        "recorded": 3846.7402343749995,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.007826827037732144,
+        "recorded": 0.007826827037732142,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 8.635615323051491,
+        "recorded": 8.635615323051478,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.05920116603374481,
+        "recorded": 0.05920116603374481,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 24689.013162737694,
+        "recorded": 24689.013162737698,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 15727172.690160714,
+        "recorded": 15727172.690160703,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 89194.484375,
+        "recorded": 89194.484375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0002 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.7580948435633688,
+        "recorded": 0.7580948435633683,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 18716.613571339585,
+        "recorded": 18716.613571339585,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 15727172.690160714,
+        "recorded": 15727172.690160703,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0002 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 58420.76171875,
+        "recorded": 58420.76171875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0003 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0003 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0003 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0003 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0003 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0003 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0003 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0003 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 26779.740234375,
+        "recorded": 26779.740234375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 119697.8984375,
+        "recorded": 119697.8984375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 8.881784197001252e-16,
+        "source_max_abs_difference": 1.8189894035458565e-12,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0003 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0003 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0003 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.1663917130271066,
+        "recorded": 2.1663917130271075,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.09852411215373588,
+        "recorded": 0.09852411215373588,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 42.102620795953996,
+        "recorded": 42.10262079595392,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.29863226413726807,
+        "recorded": 0.29863226413726807,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6829441313658269,
+        "recorded": 0.6829441313658271,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 24904.941503864862,
+        "recorded": 24904.941503864855,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 19491412.273395315,
+        "recorded": 19491412.273395285,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 89832.98046875,
+        "recorded": 89832.98046875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 57.43799904355045,
+        "recorded": 57.43799904355043,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.3118404540680964,
+        "recorded": 0.31184045406809635,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.979321530501841,
+        "recorded": 2.9793215305018412,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 12.259119168156758,
+        "recorded": 12.259119168156758,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.04547843843811044,
+        "recorded": 0.04547843843811044,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 42.102620795953996,
+        "recorded": 42.10262079595392,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.23763756453990936,
+        "recorded": 0.23763756453990936,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 36467.026159310015,
+        "recorded": 36467.02615931,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 19491412.273395315,
+        "recorded": 19491412.273395285,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 119697.8984375,
+        "recorded": 119697.8984375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0003 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6751634156827568,
+        "recorded": 0.6751634156827565,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 24621.201941512194,
+        "recorded": 24621.20194151219,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 19491412.273395315,
+        "recorded": 19491412.273395285,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0003 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 88924.17578125,
+        "recorded": 88924.17578125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0004 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0004 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0004 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0004 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0004 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0004 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0004 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0004 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 25389.6875,
+        "recorded": 25389.6875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 290617.1875,
+        "recorded": 290617.1875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 5.551115123125783e-16,
+        "source_max_abs_difference": 2.2737367544323206e-13,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0004 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0004 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0004 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.3948479326653214,
+        "recorded": 2.3948479326653223,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.0328884579836246,
+        "recorded": 0.032888457983624594,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 10.677223505175899,
+        "recorded": 10.677223505175892,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.1530324307095725,
+        "recorded": 0.1530324307095725,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6633480800732222,
+        "recorded": 0.6633480800732225,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 40078.08139312977,
+        "recorded": 40078.08139312977,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 27120493.212571137,
+        "recorded": 27120493.212571118,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 230008.3671875,
+        "recorded": 230008.3671875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 9.768444693537546,
+        "recorded": 9.768444693537546,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.15856164644249363,
+        "recorded": 0.15856164644249363,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 7.084902742385303,
+        "recorded": 7.084902742385302,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 2.1822208664016216,
+        "recorded": 2.1822208664016216,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.013733004728622466,
+        "recorded": 0.013733004728622466,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 10.677223505175899,
+        "recorded": 10.677223505175892,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.07394655048847198,
+        "recorded": 0.07394655048847198,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 60417.87501473712,
+        "recorded": 60417.87501473712,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 27120493.212571137,
+        "recorded": 27120493.212571118,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 290617.1875,
+        "recorded": 290617.1875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0004 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.7196999436230501,
+        "recorded": 0.7196999436230502,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 43482.74124193079,
+        "recorded": 43482.74124193079,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 27120493.212571137,
+        "recorded": 27120493.212571118,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0004 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 259843.46484375,
+        "recorded": 259843.46484375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0005 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0005 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0005 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0005 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0005 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0005 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0005 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0005 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 25463.310546875,
+        "recorded": 25463.310546875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 192633.125,
+        "recorded": 192633.125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 1.4210854715202004e-14,
+        "source_max_abs_difference": 2.2737367544323206e-13,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0005 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0005 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0005 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.0109720707850873,
+        "recorded": 2.0109720707850878,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.0900574388495936,
+        "recorded": 0.09005743884959355,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 38.45483782729727,
+        "recorded": 38.4548378272972,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.3479525074362755,
+        "recorded": 0.3479525074362755,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6477291018902057,
+        "recorded": 0.647729101890206,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 39488.439486859985,
+        "recorded": 39488.43948685998,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 30224099.16507534,
+        "recorded": 30224099.165075302,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 163354.134765625,
+        "recorded": 163354.134765625,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 32.333875176699536,
+        "recorded": 32.333875176699536,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.3921553603851559,
+        "recorded": 0.3921553603851559,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 5.672317492979233,
+        "recorded": 5.672317492979233,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 17.095303716429044,
+        "recorded": 17.095303716429044,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.04478303809283388,
+        "recorded": 0.04478303809283389,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 38.45483782729727,
+        "recorded": 38.4548378272972,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.2820295989513397,
+        "recorded": 0.2820295989513397,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 60964.4361688006,
+        "recorded": 60964.4361688006,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 30224099.16507534,
+        "recorded": 30224099.165075302,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 192633.125,
+        "recorded": 192633.125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0005 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6629143579510107,
+        "recorded": 0.6629143579510113,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 40414.200060685835,
+        "recorded": 40414.20006068584,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 30224099.16507534,
+        "recorded": 30224099.165075302,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0005 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 161859.40234375,
+        "recorded": 161859.40234375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0006 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0006 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0006 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0006 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0006 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0006 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0006 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0006 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 27807.20703125,
+        "recorded": 27807.20703125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 164648.53125,
+        "recorded": 164648.53125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 5.551115123125783e-16,
+        "source_max_abs_difference": 1.8189894035458565e-12,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0006 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0006 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0006 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 54.69683884198453,
+        "recorded": 54.69683884198456,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.032675301557799345,
+        "recorded": 0.03267530155779935,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.4658394971627452,
+        "recorded": 0.465839497162745,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.11120254546403885,
+        "recorded": 0.11120254546403885,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.8874777144966334,
+        "recorded": 0.8874777144966336,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 25264.472240956817,
+        "recorded": 25264.47224095682,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 12816548.29157488,
+        "recorded": 12816548.291574871,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 123489.2109375,
+        "recorded": 123489.2109375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 31.426155538185494,
+        "recorded": 31.42615553818549,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.154816634954292,
+        "recorded": 0.15481663495429193,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.252344583566296,
+        "recorded": 2.252344583566296,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 1.8886821269989014,
+        "recorded": 1.8886821269989014,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.0005973892138848477,
+        "recorded": 0.0005973892138848479,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.4658394971627452,
+        "recorded": 0.465839497162745,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.009400453418493271,
+        "recorded": 0.009400453418493271,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 28467.72581245775,
+        "recorded": 28467.725812457753,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 12816548.29157488,
+        "recorded": 12816548.291574871,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 164648.53125,
+        "recorded": 164648.53125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0006 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.9002895215541169,
+        "recorded": 0.9002895215541172,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 25629.19525143137,
+        "recorded": 25629.195251431367,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 12816548.29157488,
+        "recorded": 12816548.291574871,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0006 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 133874.80859375,
+        "recorded": 133874.80859375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 source NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0007 saved NPZ hash",
+      "passed": true
+    },
+    {
+      "name": "test_0007 source mesh/cells finite and supported",
+      "passed": true
+    },
+    {
+      "name": "test_0007 exact node mask/cell mapping/reference",
+      "passed": true
+    },
+    {
+      "name": "test_0007 GL21 alignment",
+      "passed": true
+    },
+    {
+      "name": "test_0007 all399 saved truth vs source exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0007 prescribed boundary all399 exact",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "test_0007 negative scalar stress counts",
+      "passed": true
+    },
+    {
+      "name": "test_0007 minimum predicted stress",
+      "passed": true,
+      "details": {
+        "independent": 25308.69921875,
+        "recorded": 25308.69921875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 maximum reference stress",
+      "passed": true,
+      "details": {
+        "independent": 184274.0,
+        "recorded": 184274.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 GL tensor independent cofactor formula",
+      "passed": true,
+      "details": {
+        "prediction_max_abs_difference": 4.440892098500626e-16,
+        "source_max_abs_difference": 9.094947017729282e-13,
+        "rtol": 3e-06,
+        "atol": 1e-08
+      }
+    },
+    {
+      "name": "test_0007 inversion counts pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0007 minimum detF pred/reference all399",
+      "passed": true
+    },
+    {
+      "name": "test_0007 rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.85774632768098,
+        "recorded": 1.8577463276809825,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.05740572879148903,
+        "recorded": 0.057405728791489044,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 25.791546918915202,
+        "recorded": 25.79154691891517,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.2555355206131935,
+        "recorded": 0.2555355206131935,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.676662618573876,
+        "recorded": 0.6766626185738764,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 33875.481097960954,
+        "recorded": 33875.481097960954,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_stress truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 24124661.417452045,
+        "recorded": 24124661.417452022,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 132164.4453125,
+        "recorded": 132164.4453125,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 20.66214026096629,
+        "recorded": 20.6621402609663,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.18607224772215744,
+        "recorded": 0.1860722477221575,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 derived_GL_strain truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 4.4535295550310865,
+        "recorded": 4.453529555031086,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 4.443999263632577,
+        "recorded": 4.443999263632577,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.03090073598107899,
+        "recorded": 0.030900735981078988,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_increment_baseline_free_displacement truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 25.791546918915202,
+        "recorded": 25.79154691891517,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.198677197098732,
+        "recorded": 0.198677197098732,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 50062.586831464716,
+        "recorded": 50062.586831464716,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 24124661.417452045,
+        "recorded": 24124661.417452022,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 184274.0,
+        "recorded": 184274.0,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "test_0007 training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.6952073657843605,
+        "recorded": 0.6952073657843606,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 34803.8791154534,
+        "recorded": 34803.879115453405,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 training_mean_constant_stress_baseline truth_l2",
+      "passed": true,
+      "details": {
+        "independent": 24124661.417452045,
+        "recorded": 24124661.417452022,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "test_0007 training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 153500.27734375,
+        "recorded": 153500.27734375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "pooled rollout_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 2.4121746817022074,
+        "recorded": 2.4121746817022114,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.07113300053175815,
+        "recorded": 0.07113300053175815,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.3479525074362755,
+        "recorded": 0.3479525074362755,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_stress count",
+      "passed": true
+    },
+    {
+      "name": "pooled rollout_free_stress relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.682359069238388,
+        "recorded": 0.6823590692383884,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_stress component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 29905.018084088035,
+        "recorded": 29905.01808408803,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled rollout_free_stress max",
+      "passed": true,
+      "details": {
+        "independent": 230008.3671875,
+        "recorded": 230008.3671875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled derived_GL_strain count",
+      "passed": true
+    },
+    {
+      "name": "pooled derived_GL_strain relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1293.4536325024035,
+        "recorded": 1293.453632502404,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled derived_GL_strain component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 11.34510522703082,
+        "recorded": 11.34510522703082,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled derived_GL_strain max",
+      "passed": true,
+      "details": {
+        "independent": 3846.7402343749995,
+        "recorded": 3846.7402343749995,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_increment_baseline_free_displacement count",
+      "passed": true
+    },
+    {
+      "name": "pooled zero_increment_baseline_free_displacement relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0000000000000018,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_increment_baseline_free_displacement component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 0.029489158090972703,
+        "recorded": 0.029489158090972703,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_increment_baseline_free_displacement max",
+      "passed": true,
+      "details": {
+        "independent": 0.2820295989513397,
+        "recorded": 0.2820295989513397,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "pooled zero_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 1.0,
+        "recorded": 1.0000000000000009,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 43825.92601497389,
+        "recorded": 43825.92601497389,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled zero_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 290617.1875,
+        "recorded": 290617.1875,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled training_mean_constant_stress_baseline count",
+      "passed": true
+    },
+    {
+      "name": "pooled training_mean_constant_stress_baseline relative_l2",
+      "passed": true,
+      "details": {
+        "independent": 0.7073191742772397,
+        "recorded": 0.7073191742772402,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled training_mean_constant_stress_baseline component_rmse",
+      "passed": true,
+      "details": {
+        "independent": 30998.917800846728,
+        "recorded": 30998.917800846728,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    },
+    {
+      "name": "pooled training_mean_constant_stress_baseline max",
+      "passed": true,
+      "details": {
+        "independent": 259843.46484375,
+        "recorded": 259843.46484375,
+        "rtol": 3e-06,
+        "atol": 1e-09
+      }
+    }
+  ],
+  "failures": [],
+  "resource_limits": {
+    "preflight_host_available_bytes": 671088640,
+    "host_available_floor_bytes": 536870912,
+    "RSS_peak_cap_bytes": 134217728,
+    "wall_cap_seconds": 600
+  },
+  "maximum_io_chunk_bytes": 1048576,
+  "cell_chunk": 128,
+  "NN_inferences": 0,
+  "framework_imports": 0,
+  "source_files_modified": 0,
+  "CPU_affinity_single_core_applied": true,
+  "below_normal_priority_applied": true,
+  "auditor_source_sha256": "cee187bae3b24f4b78c655869a68bb422dd49b4e33fa6a8cf4ec714c34bbac8c",
+  "python_flags": {
+    "no_site": 1,
+    "isolated": 0
+  },
+  "preflight": {
+    "available_bytes": 1504989184,
+    "rss_bytes": 21340160,
+    "threshold_bytes": 671088640,
+    "passed": true
+  },
+  "numpy_version": "2.5.2",
+  "numpy_file": "${USER_HOME}\\AppData\\Roaming\\Python\\Python313\\site-packages\\numpy\\__init__.py",
+  "temporary_root": "work\\expanded-plate\\independent-stream-v1-tn26ifxq",
+  "pooled_metrics": {
+    "rollout_free_displacement": {
+      "sse": 23887.643755997397,
+      "truth_sum_square": 4105.403082906554,
+      "values": 4720968,
+      "max_abs_error": 0.3479525074362755,
+      "relative_l2": 2.4121746817022074,
+      "component_rmse": 0.07113300053175815,
+      "truth_l2": 64.0734194725594
+    },
+    "rollout_free_stress": {
+      "sse": 1407336465126887.8,
+      "truth_sum_square": 3022539634287997.0,
+      "values": 1573656,
+      "max_abs_error": 230008.3671875,
+      "relative_l2": 0.682359069238388,
+      "component_rmse": 29905.018084088035,
+      "truth_l2": 54977628.48912271
+    },
+    "derived_GL_strain": {
+      "sse": 198098448.03762186,
+      "truth_sum_square": 118.40753593343045,
+      "values": 1539090,
+      "max_abs_error": 3846.7402343749995,
+      "relative_l2": 1293.4536325024035,
+      "component_rmse": 11.34510522703082,
+      "truth_l2": 10.881522684506542
+    },
+    "zero_increment_baseline_free_displacement": {
+      "sse": 4105.403082906554,
+      "truth_sum_square": 4105.403082906554,
+      "values": 4720968,
+      "max_abs_error": 0.2820295989513397,
+      "relative_l2": 1.0,
+      "component_rmse": 0.029489158090972703,
+      "truth_l2": 64.0734194725594
+    },
+    "zero_stress_baseline": {
+      "sse": 3022539634287997.0,
+      "truth_sum_square": 3022539634287997.0,
+      "values": 1573656,
+      "max_abs_error": 290617.1875,
+      "relative_l2": 1.0,
+      "component_rmse": 43825.92601497389,
+      "truth_l2": 54977628.48912271
+    },
+    "training_mean_constant_stress_baseline": {
+      "sse": 1512177831273169.0,
+      "truth_sum_square": 3022539634287997.0,
+      "values": 1573656,
+      "max_abs_error": 259843.46484375,
+      "relative_l2": 0.7073191742772397,
+      "component_rmse": 30998.917800846728,
+      "truth_l2": 54977628.48912271
+    }
+  },
+  "completed_utc": "2026-10-15T13:58:35.375356+00:00",
+  "wall_seconds": 7.627395899995463,
+  "resources": {
+    "rss_peak_bytes": 63188992,
+    "os_peak_working_set_bytes": 63229952,
+    "host_available_min_bytes": 971800576,
+    "guard_observations": 43945
+  },
+  "source_and_array_hashes": {
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32-completion-source-lock-v2.json": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\checkpoint.pt": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_train_plate.py": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plate_evaluation.py": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plate_data.py": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_selection_policy.py": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_freeze_protocol.py": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_run_validation_training.py": "a249a9c9abb4b22e7ecb1dff6e8b5b8ddade3033dd89a6cf7f9509fdd845dc15",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_run_frozen_final.py": "aead9c09ea99c263a6158425f5e0cee6ac9287006f47e0c8e2370c7799b55bbc",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_summarize_plate_fields.py": "e5d82fc56c531b10375d7ee29dd4cea6ac489af9a2a4e8576edf8a85d1278e1b",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plot_plate.py": "a66b79c4aa66ff93123ba72c73c241f4e7bde4965a84ff6f797daccd7807ccba",
+    "work\\expanded-plate\\data\\test_0002.npz": "2e08ef7bc00d1f89695c8ab68c7fb579e66743041c372b2e57224f993d970198",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0002_evaluation.npz": "e367d212a143c11d940e7eab6d5232f136762738a856a30cf230ad1f583d4dc0",
+    "work\\expanded-plate\\data\\test_0003.npz": "379a1f5a3055e25576c64e6ecd4adac00f5c108825d997859d224518c571f2dc",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0003_evaluation.npz": "3eac1963637e097beef1fd222e8e341a46b97f9da2c89cc2e589e83923e7326b",
+    "work\\expanded-plate\\data\\test_0004.npz": "b294c3f18e301999e32ab195beff7ece967b397e9e334f2e624986abadfd848c",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0004_evaluation.npz": "b4d0dee4c0cc3148497ed9ad3c55ae487222c550a5490b0970be0ce83663b2a0",
+    "work\\expanded-plate\\data\\test_0005.npz": "9bd4de9f4cd13d635e462501f6d56a7115027e14759caecfbc949d1b4a4239be",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0005_evaluation.npz": "ed6bca4a76238f175bcef94cf6686df75b507069ec9a8aea221aed542fcab487",
+    "work\\expanded-plate\\data\\test_0006.npz": "a30139cbda76a5e6cad5916f2b2127b8ec8413d4e52bbf61fbf071aa44a34ede",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0006_evaluation.npz": "af9af8979b25b6419732ccc6dd8d81d9fcd00b07d3fffd9233b27d8d9bcb0138",
+    "work\\expanded-plate\\data\\test_0007.npz": "8767df58bee15ab3bfe5466072aef3fe4c20a3ed038e578e0ab45d5f8a4ba6e6",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\test_0007_evaluation.npz": "8b135e8cf9ae08675e9507a7aee3dc54e7eb6c203299b8a4fc61e83aa420dbb1"
+  },
+  "forbidden_modules_loaded": [],
+  "accuracy_qualified": false,
+  "limitations": [
+    "Original source means downloaded DeepMind trajectory NPZ, not a newly solved COMSOL model or reconversion of TFRecord.",
+    "Array/node/tetrahedron indices are not solver IDs. Boundary nodes follow prescribed next source positions; only free nodes are predicted.",
+    "Stress is source nodal scalar von Mises in unconfirmed dataset units; no MPa conversion.",
+    "GL strain is independently derived from source/predicted coordinates on21 sampled frames, not native COMSOL strain.",
+    "Inversion is tetra detF<=0 relative to mesh_pos; predicted and source counts are separate. It is not a rupture/failure law.",
+    "No new neural inference, framework loading, source editing, plot or visual review. Numeric correspondence does not qualify model accuracy.",
+    "Streaming accumulation and independent cofactor matrix algebra may differ by floating-point rounding; declared metric and tensor tolerances are recorded."
+  ]
+}

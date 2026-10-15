@@ -1,0 +1,27 @@
+{
+  "domain": "bumper",
+  "architecture": "meshgraphnet",
+  "stage": "validation",
+  "command": [
+    "${WORKSPACE}\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet",
+    "--cache",
+    "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+    "--expected-manifest-sha256",
+    "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "--mode",
+    "validation",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "${WORKSPACE}",
+  "started_utc": "2026-10-15T08:18:36.160154+00:00",
+  "log": "${WORKSPACE}\\work\\expanded-ml\\budgeted-suite-logs\\bumper-meshgraphnet-validation.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T08:19:02.352043+00:00",
+  "wall_seconds": 26.19030190000194,
+  "exit_code": 0
+}

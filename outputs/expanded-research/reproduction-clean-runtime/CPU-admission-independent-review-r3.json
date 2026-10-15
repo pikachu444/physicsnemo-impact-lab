@@ -1,0 +1,11 @@
+{
+  "status": "PASS_independent_read_only_one_constant_diff",
+  "reviewer": "addon_requirements independent subagent",
+  "original_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+  "revision_sha256": "ff9737545332ad418f5b1ab654668c10d55c85d348ee3e1ad7fd9d22e5505541",
+  "protocol_sha256": "930ba6bfbe8ffb298bc0f0a77f35820ec264da607074573584af467a3a5f2f86",
+  "exact_change": "The sole source replacement is preflight admission 1.5 to 1.0 GiB. All other bytes are identical.",
+  "helper_and_runtime_limits_unchanged": true,
+  "reviewer_executed_runtime_or_stages": false,
+  "model_minimum_RAM_claimed": false
+}

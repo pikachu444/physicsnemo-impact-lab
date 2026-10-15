@@ -1,0 +1,59 @@
+{
+  "status": "PASS_independent_static_review_prepared_only_runtime_pending",
+  "reviewed_utc": "2026-10-15T13:47:26.034188+00:00",
+  "reviewer": "addon_requirements independent read-only subagent",
+  "sources": [
+    {
+      "path": "work/expanded-clean-runtime/newfunctional_prepare.py",
+      "sha256": "5633cdf102792273ff8971dfca56721fc5d74a75f0740f8de8c9e6ee4f650788"
+    },
+    {
+      "path": "work/expanded-clean-runtime/newfunctional_runtime.py",
+      "sha256": "cbff88dc4a884bbd803e01603113e850e723dc35bde28180bdba9cf447910379"
+    }
+  ],
+  "protocol": {
+    "path": "outputs/expanded-research/reproduction-clean-runtime/newfunctional-protocol-v1.json",
+    "sha256": "575eef9fa611531f2f3c7d421968609ccdecfb14f628a27ef3d898c698aa47ef",
+    "status": "prepared_not_executed"
+  },
+  "mock_selfcheck": {
+    "path": "outputs/expanded-research/reproduction-clean-runtime/newfunctional-static-selfcheck-v1.json",
+    "sha256": "f070afc929d39ba3d9ac92a21a7c5d0685b18b10a185bea0ab08a4d47d37a831",
+    "negative_guard_cases_rejected": 7
+  },
+  "review_scope": [
+    "Exact historical six coupon constructors, source hashes, parameter counts, global_dim2 and output70.",
+    "Only common coordinates/edges/nodeIDs/thickness plus pilot_base target; validation01 input-only; reload denies training target; no test array access or hashing.",
+    "Frozen five-training-case normalization reused without recomputation; projected C7 support and units preserved.",
+    "Root protocol-bound GPU allocation and clean install/pip-check/core40 RECORD audit required before NumPy/Torch import; clean isolated interpreter and module file whitelist.",
+    "Three Adam updates with finite gradients, nonzero full70-head gradients and changed weights; new checkpoint and targetless fresh validation reload tolerance1e-5.",
+    "Exact core40 evidence copied only from the clean environment to scratch; evidence excluded from imports.",
+    "Sequential fresh children; Job containment, owned suspended child recovery, empty-job/reap checks and no automatic retry."
+  ],
+  "corrected_before_freeze": [
+    "Exact algorithm metadata schema integration.",
+    "Own checkpoint/anchor readback allowlist.",
+    "Owned suspended-child recovery on preassignment error.",
+    "Explicit clean core40 scratch source snapshots."
+  ],
+  "execution_counts": {
+    "functional_checks_completed": 0,
+    "future_functional_checks_planned": 6,
+    "future_Adam_updates_per_check": 3,
+    "additional_full_fits_or_completed_models": 0,
+    "framework_imports": 0,
+    "arrays_or_checkpoints_read": 0,
+    "source_core_snapshots_copied": 0,
+    "child_processes_started": 0,
+    "hardware_GPU_probes": 0,
+    "build_attempts_started": 0
+  },
+  "existing_0927_failed_preflight_receipt_unchanged": true,
+  "real_GPU_allocation_file_created": false,
+  "clean_venv_or_build_venv_created": false,
+  "actual_capture_or_dry_run_performed": false,
+  "reviewer_executed_tests_or_runtime": false,
+  "next_action": "Idle. Actual build/install/framework/functional execution needs a later explicit root allocation.",
+  "limitation": "Static preparation and pure mocks only; clean installation, CUDA functionality, loss/gradients, checkpoint serialization and reload have not been executed."
+}

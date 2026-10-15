@@ -1,0 +1,200 @@
+{
+  "status": "COMPLETED_SINGLE_FIXED_FIELD_FIGURE",
+  "layout_revision": 3,
+  "total_render_attempts_authorized": 3,
+  "started_utc": "2026-10-15T14:17:11.824248+00:00",
+  "case": "test_0002",
+  "source_loading_step": 399,
+  "selection": "First fresh split ID and last source frame, fixed by parent before seeing this plot; no error-based case/frame selection.",
+  "new_neural_inference": 0,
+  "source_data_or_metrics_modified": 0,
+  "CPU_install_overlap": {
+    "parent_advised_separate_CPU_install_may_start": true,
+    "actual_overlap_verified": false,
+    "qualification": "No process enumeration. This plot may overlap a separately authorized CPU-only installation; its actual interval is not established by this plotting receipt."
+  },
+  "resource_limits": {
+    "preflight_available_bytes": 1073741824,
+    "host_available_floor_bytes": 536870912,
+    "peak_RSS_cap_bytes": 262144000,
+    "wall_cap_seconds": 180
+  },
+  "CPU_affinity_single_core_applied": true,
+  "below_normal_priority_applied": true,
+  "preserved_v1": {
+    "PNG_sha256": "b383078b5a15af6ed58fb013503123748aa2200c6cf6de989ad27b604eb486a9",
+    "plot_source_sha256": "5b57b61dee0ce501971b5c1d313fb1782196a85d8dda504fb48132ec6904d716",
+    "metadata_sha256": "b53bfd3435e930d7a754ea3a79f29ac831ea3a84e1ea1f1450d38bb739f7758f",
+    "folder": "outputs\\expanded-research\\benchmarks\\deforming_plate\\review\\revisions\\v1"
+  },
+  "preserved_v2": {
+    "PNG_sha256": "8631439b5b91e94fc4add638cd5f8d36fbbab3911b1387b1b35d45356fef4882",
+    "plot_source_sha256": "051af7dc1aa4d76031625265066417a53d58f91c9c8056b0df7e0c92857778f8",
+    "metadata_sha256": "d368d1ea16ef07f676e910224358a2741cb72f32fdc656045a26f523bdb37a2e",
+    "folder": "outputs\\expanded-research\\benchmarks\\deforming_plate\\review\\revisions\\v2"
+  },
+  "v3_layout_only_change": "Tight save bounding box with 0.15-inch padding; axes positions, labels, ranges, data, and masks unchanged from v2.",
+  "plot_source_sha256": "3aed70dc1698348b0b301644feb6210ecfd23f0ac83c9fe17d3515955c36cca3",
+  "preflight": {
+    "available_bytes": 1839689728,
+    "rss_bytes": 19705856,
+    "passed": true
+  },
+  "temporary_root": "work\\expanded-plate\\plate-first-fresh-plot-89yn0md7",
+  "source_NPZ_sha256": "2e08ef7bc00d1f89695c8ab68c7fb579e66743041c372b2e57224f993d970198",
+  "saved_prediction_NPZ_sha256": "e367d212a143c11d940e7eab6d5232f136762738a856a30cf230ad1f583d4dc0",
+  "upstream_numeric_audit_sha256": "13bd04b5b69691cf8c76c04c8bed6bf4cdba95afe26d2202e078315b349ea376",
+  "fields": [
+    {
+      "field": "Displacement magnitude |u|",
+      "units": "unconfirmed coordinate units",
+      "support": "free nodes",
+      "support_count": 1017,
+      "reference_range": [
+        4.656612873077393e-10,
+        0.0006060240313663787
+      ],
+      "AI_range": [
+        0.008660919049028765,
+        0.3684750976424547
+      ],
+      "signed_error_range": [
+        0.00866058305784076,
+        0.36847420926873187
+      ],
+      "shared_reference_AI_color_range": [
+        4.656612873077393e-10,
+        0.3684750976424547
+      ],
+      "error_symmetric_color_range": [
+        -0.36847420926873187,
+        0.36847420926873187
+      ],
+      "XY_reference_bounds": [
+        [
+          0.0,
+          0.006499652750790119
+        ],
+        [
+          0.25,
+          0.4957089424133301
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    },
+    {
+      "field": "Native nodal von Mises stress",
+      "units": "unconfirmed stress units",
+      "support": "free nodes",
+      "support_count": 1017,
+      "reference_range": [
+        3.4764602184295654,
+        7249.236328125
+      ],
+      "AI_range": [
+        26691.849609375,
+        52095.4921875
+      ],
+      "signed_error_range": [
+        21660.69580078125,
+        46975.533203125
+      ],
+      "shared_reference_AI_color_range": [
+        3.4764602184295654,
+        52095.4921875
+      ],
+      "error_symmetric_color_range": [
+        -46975.533203125,
+        46975.533203125
+      ],
+      "XY_reference_bounds": [
+        [
+          0.0,
+          0.006499652750790119
+        ],
+        [
+          0.25,
+          0.4957089424133301
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    },
+    {
+      "field": "Coordinate-derived GL E_xx",
+      "units": "dimensionless; NOT native COMSOL strain",
+      "support": "plate tetrahedra excluding actuator cells",
+      "support_count": 2977,
+      "reference_range": [
+        -0.0001638311514398083,
+        0.00012186750245746225
+      ],
+      "AI_range": [
+        -0.3800395429134369,
+        1659.938232421875
+      ],
+      "signed_error_range": [
+        -0.380049381943536,
+        1659.9382326452294
+      ],
+      "shared_reference_AI_color_range": [
+        -0.3800395429134369,
+        1659.938232421875
+      ],
+      "error_symmetric_color_range": [
+        -1659.9382326452294,
+        1659.9382326452294
+      ],
+      "XY_reference_bounds": [
+        [
+          0.00011178160639246926,
+          0.0016249131876975298
+        ],
+        [
+          0.2485308200120926,
+          0.4989272356033325
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    }
+  ],
+  "v1_data_equivalence": {
+    "field_ranges_supports_XY_and_normalization_exactly_equal": true,
+    "source_and_saved_NPZ_hashes_equal": true,
+    "case_frame_checkpoint_unchanged": true,
+    "data_math_unchanged": true
+  },
+  "v2_data_equivalence": {
+    "field_ranges_supports_XY_and_normalization_exactly_equal": true,
+    "source_and_saved_NPZ_hashes_equal": true,
+    "case_frame_checkpoint_unchanged": true,
+    "data_math_and_axes_positions_unchanged": true
+  },
+  "numpy_version": "2.5.2",
+  "matplotlib_version": "3.10.1",
+  "PNG_sha256": "f71c14d741f56fedbfbd3fdf85d967ba7aa5b77f3308b3997692fc3ca78df262",
+  "PNG_pixels": [
+    1228,
+    1638
+  ],
+  "completed_utc": "2026-10-15T14:17:13.959425+00:00",
+  "wall_seconds": 2.13517999999749,
+  "resources": {
+    "guard_observations": 297,
+    "rss_peak_bytes": 85385216,
+    "os_peak_working_set_bytes": 101294080,
+    "host_available_min_bytes": 1723068416
+  },
+  "forbidden_modules_loaded": [],
+  "visual_QA": {
+    "status": "PASS_SCOPED_BOUNDS_READABILITY_AFTER_DIRECT_IMAGE_VIEW",
+    "method": "Opened the final v3 PNG at original resolution after the only v3 render. Visual layout QA only; no accuracy approval.",
+    "checked_utc": "2026-10-15T14:17:42.967303+00:00",
+    "rightmost_colorbar_ticks_complete": true,
+    "all_row_headers_and_units_readable": true,
+    "column_headers_readable": true,
+    "all_axis_labels_and_ticks_readable": true,
+    "full_footer_readable": true,
+    "no_visible_text_overlap_or_canvas_clipping": true,
+    "new_render_after_visual_QA": 0
+  }
+}

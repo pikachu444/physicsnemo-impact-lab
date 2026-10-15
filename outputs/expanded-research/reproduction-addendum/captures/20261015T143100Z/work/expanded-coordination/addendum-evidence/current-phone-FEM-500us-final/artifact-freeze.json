@@ -1,0 +1,169 @@
+{
+  "freeze_utc": "2026-10-15T07:01:27.383349+00:00",
+  "actual_FEM_completed_to_0_5ms": true,
+  "source_and_checkpoint_hash_checks": {
+    "work/expanded-drop/source/Cell_Phone_Drop_0000.rad": {
+      "sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+      "expected_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2"
+    },
+    "work/expanded-drop/100us-run/Cell_Phone_Drop_0002_0001.rst": {
+      "sha256": "e56c1f0764f5daa4946c313458d126f8df4230f19b7917b87de4843603de1dee",
+      "expected_sha256": "e56c1f0764f5daa4946c313458d126f8df4230f19b7917b87de4843603de1dee"
+    },
+    "work/expanded-drop/500us-run/Cell_Phone_Drop_0003_0001_I.rst": {
+      "sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca",
+      "expected_sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca"
+    },
+    "work/opencourant-experiment/solver/OpenCourant/exec/engine_win64_sp.exe": {
+      "sha256": "13a9d6551fb9206b6c27c8af819e752edf3550e4725e446a2c3042c6c1a2b9d1",
+      "expected_sha256": "13a9d6551fb9206b6c27c8af819e752edf3550e4725e446a2c3042c6c1a2b9d1"
+    }
+  },
+  "all_frozen20us_AI_files_unchanged": true,
+  "files": {
+    "100us-to-first500us-boundary-bitwise.json": {
+      "bytes": 1814,
+      "sha256": "ac5c2b2fd35714c7ed95172a4777d9c911854919c0901b60ad26f43487126dbc"
+    },
+    "500us-resume03-run-Cell_Phone_DropT04-converter.log": {
+      "bytes": 126,
+      "sha256": "336de2a65944e2b4f778d313f455e1635db3a1093415657fd386f0f427f578df"
+    },
+    "500us-run-Cell_Phone_DropT03-converter.log": {
+      "bytes": 126,
+      "sha256": "18ace11a841c2409e55d0222d6e7cda7b48b874950b26bf0c0f10cf68ff27a48"
+    },
+    "bounded-reader-selfcheck.json": {
+      "bytes": 5598,
+      "sha256": "c14de5c53d6869ee181cd155bdd8cc8a290205e8ee0d9065c66cd75735dd7c56"
+    },
+    "Cell_Phone_Drop_0004.out": {
+      "bytes": 24694,
+      "sha256": "8791f21163954732282b17b8ecdcb55fd027f70690ad0bcd0961e017e81c30cd"
+    },
+    "check-500us-final-boundary.py": {
+      "bytes": 2364,
+      "sha256": "35f6038c63d23ad34805be46643eed5a75221250822c747dc286197b57b31bcb"
+    },
+    "engine.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "engine.stdout.log": {
+      "bytes": 16948,
+      "sha256": "e2dfe286dda8cf7fcaa4b3dbb8d1852bf067ed650b0693182e7853d951e0615a"
+    },
+    "EPSP-monotonicity-check.json": {
+      "bytes": 6791,
+      "sha256": "d8c8fc222f82ec46e6227453b0f3326373e00eb9a7fcce746baa309cfa323f25"
+    },
+    "failed-final-boundary01-engine.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "failed-final-boundary01-engine.stdout.log": {
+      "bytes": 1522,
+      "sha256": "09a0ef0f6661013cb1cb618ffbe8bcedfec43bf49b6780d0e37d73036b815d79"
+    },
+    "failed-RERUN02-metrics.json": {
+      "bytes": 526,
+      "sha256": "cc0edf0dd884c777cabde9e472d4414567894bbc3d4b8c064b68459970f83e2c"
+    },
+    "field-trends.csv": {
+      "bytes": 6537,
+      "sha256": "eb732b77a2d8dc32249c12f3cabaa644df67c8b00d4be3382b5f7353744c3d76"
+    },
+    "final-boundary-engine-metrics.json": {
+      "bytes": 618,
+      "sha256": "078d5d6367bb42dbca1e37676644a5e79bb771871d2d760e67d8acfd9c95dbe3"
+    },
+    "final-boundary02-engine-metrics.json": {
+      "bytes": 276,
+      "sha256": "765a50e45337ee12e51cf4bccc932176cf76790d981a5bb77cbbf6b6d6ecaceb"
+    },
+    "final-checkpoint-boundary-bitwise.json": {
+      "bytes": 705,
+      "sha256": "7f378d400fa897c1f5097edb4e7a8f736dbebc108db4af701465085dabbd6a33"
+    },
+    "finalize-500us-evidence.py": {
+      "bytes": 5861,
+      "sha256": "1bdb12c0226170b6b86d6c2652609c93fcc2e727d325aa8ef72d76cee7ef9d08"
+    },
+    "first500us-guard-stop-metrics.json": {
+      "bytes": 582,
+      "sha256": "c216fc7dd6310e9567c77e6e48796413be0a2f20aa3982b99c3470cbf7b20d29"
+    },
+    "frame-field-statistics.json": {
+      "bytes": 386273,
+      "sha256": "ee0bb05aeffb6cb9cf5c5abca0c34d6b8afe0213a8fcdf893e0b64052a80833a"
+    },
+    "frozen20us-AI-cache-preservation.json": {
+      "bytes": 9608,
+      "sha256": "7f4b1c333972191f4c5c930f176beaf89200ad918257dcdeeceda55826d0c2fd"
+    },
+    "global-history-0-to500us.csv": {
+      "bytes": 1094465,
+      "sha256": "d279c1848c3e0bec1c5e0e806e4c91add7695a2bf2a21ab39cb8c075d1e4da7d"
+    },
+    "phone-500us-energy-momentum.png": {
+      "bytes": 91580,
+      "sha256": "76defe13ce6e70329813a7b73401c13f6a8b0d30cff4d10a70cbca9c4971ece9"
+    },
+    "phone-500us-field-trends.png": {
+      "bytes": 123507,
+      "sha256": "0201f9a12bf64d82ee2792d4999a434b6a1536f8fb8340ac9c063e8a8c35ea2e"
+    },
+    "phone-500us-native-fields.png": {
+      "bytes": 905846,
+      "sha256": "7df98e3ddfd24420692820281e7506b8938f0551169a38b6fb36feb6b2417bed"
+    },
+    "plot-500us-bounded.py": {
+      "bytes": 6656,
+      "sha256": "e8cfc08120018d04d4fed48a8f852758ad262762f6d561137e7e55c08d2b0683"
+    },
+    "plot-resource-measurement.json": {
+      "bytes": 162,
+      "sha256": "288b3aee485d71a9cd17129a831c0c9f6bc53f2eb7089950107ace50d3a0a8b8"
+    },
+    "resource_gate.py": {
+      "bytes": 2108,
+      "sha256": "c8253cd169a676dded482ade5a858b938481b1ea5fbd84a2440a4b7fa75818ed"
+    },
+    "resume03-execution-metrics.json": {
+      "bytes": 521,
+      "sha256": "aa03505b2b940c579fa00ccc8bc48eb85f0a10171e7622151ec066f21970f1fd"
+    },
+    "resume03-frozen-inputs-and-guards.json": {
+      "bytes": 1282,
+      "sha256": "9a27c6f7da10977b29d526eaa03191d34c99825effb877b8761772eb34fa6274"
+    },
+    "run-engine-500us-resume03.ps1": {
+      "bytes": 8058,
+      "sha256": "4249f422f6f1b5651d79dd9d317798bd74d6006f89c6f01db385a88595ff31e3"
+    },
+    "run-final-boundary-check.ps1": {
+      "bytes": 5034,
+      "sha256": "6b109f4eacd244b7f260587e951ecd9621f0fecfe711b9a29e2cd12dd4398dd8"
+    },
+    "run-final-boundary02-check.ps1": {
+      "bytes": 5524,
+      "sha256": "7686249413f539cee505d2a7914ca3dd0e9729cc224f4fa60562847e8ccc2396"
+    },
+    "source-control-and-restart-audit.json": {
+      "bytes": 2777,
+      "sha256": "7a4f78ce09145f834f727a15a2a3602219548e01b4acae3baf51bf86a1094658"
+    },
+    "summarize-500us-bounded.py": {
+      "bytes": 15474,
+      "sha256": "59fd4d5468cb1ac5982872aa1e2dc5a6fb62650b9a2617e95c421c0e7d3f0970"
+    },
+    "summary.json": {
+      "bytes": 15465,
+      "sha256": "e9156fa238f704e31782dfba1e5a9850dd00c819e6cefc5580901ad2296add9a"
+    }
+  },
+  "binary_policy": "Raw ANIM/RST/TH, model decks and weights remain local under work; compact code/log/json/csv/PNG evidence only in this directory.",
+  "restart_boundary_scope": "The100us boundary is bitwise verified. Guard-stop and next restart lack identical-time saved ANIM, so no new field-bitwise identity claim is made across unequal-time snapshots.",
+  "final_checkpoint_reload_same_time_all_native_fields_bitwise": false,
+  "final_checkpoint_reload_status": "NOT_VERIFIED_OPTIONAL_RELOAD"
+}

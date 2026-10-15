@@ -1,0 +1,33 @@
+{
+  "status": "one_ANTLR_build_completed_finalizer_path_spelling_check_failed_install_not_started",
+  "observed_utc": "2026-10-15T14:11:14.218310+00:00",
+  "build_attempts_started": 1,
+  "new_wheel_observed": {
+    "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+    "bytes": 144615,
+    "sha256": "815dd98f0ae9191076788662e065b7bf86a7e8c53dc241f4c1ac588197bae439",
+    "full_source_and_lock_finalization_passed": false
+  },
+  "build_receipt": "antlr-build-execution.json",
+  "build_pid": 29276,
+  "build_finished_utc": "2026-10-15T14:07:18.127040+00:00",
+  "build_descendants_reaped": true,
+  "finalizer_failure_receipt": "finalize-antlr-20261015T140744621390Z.json",
+  "finalizer_failure_log": "work/expanded-clean-runtime/finalize-antlr-20261015T140744621390Z.log",
+  "finalizer_pid": 7468,
+  "finalizer_exit_code": 1,
+  "finalizer_finished_utc": "2026-10-15T14:07:55.693443+00:00",
+  "finalizer_child_and_descendants_reaped": true,
+  "host_available_bytes_at_stop": 2017169408,
+  "cause_from_read_only_source_comparison": "Approval source_root uses forward separators; actual standard Windows argv uses backslashes. Strict source_root-in-command spelling check rejects the same path. Original receipt/sentinel argv equality passed.",
+  "runtime_lock_r2_created": false,
+  "build_venv_created": true,
+  "runtime_venv_created": false,
+  "original_R2_source_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+  "CPU_R3_source_sha256": "ff9737545332ad418f5b1ab654668c10d55c85d348ee3e1ad7fd9d22e5505541",
+  "framework_or_GPU_or_arrays_used": false,
+  "automatic_retry_planned": false,
+  "additional_ANTLR_build_forbidden": true,
+  "active_owned_children": 0,
+  "next_action": "Actual stages held after failure; preserve all outputs and await a bounded finalizer correction allocation."
+}

@@ -22,7 +22,7 @@ def scan(root):
     files = 0
     findings = []
     for path in sorted(root.rglob("*")):
-        if not path.is_file() or path.suffix.lower() not in text_extensions:
+        if not path.is_file() or (path.suffix.lower() not in text_extensions and path.suffix.lower() != ".pth" and path.name != "METADATA"):
             continue
         files += 1
         with path.open(encoding="utf-8-sig", errors="strict") as stream:

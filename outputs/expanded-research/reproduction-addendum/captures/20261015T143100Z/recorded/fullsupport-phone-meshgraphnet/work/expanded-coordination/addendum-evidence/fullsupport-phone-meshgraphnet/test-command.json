@@ -1,0 +1,27 @@
+{
+  "domain": "phone",
+  "architecture": "meshgraphnet",
+  "stage": "test",
+  "command": [
+    "${WORKSPACE}\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet",
+    "--cache",
+    "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--mode",
+    "test",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "${WORKSPACE}",
+  "started_utc": "2026-10-15T07:10:38.332265+00:00",
+  "log": "${WORKSPACE}\\work\\expanded-ml\\budgeted-suite-logs\\phone-meshgraphnet-test.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T07:11:20.969110+00:00",
+  "wall_seconds": 42.63554110000405,
+  "exit_code": 0
+}

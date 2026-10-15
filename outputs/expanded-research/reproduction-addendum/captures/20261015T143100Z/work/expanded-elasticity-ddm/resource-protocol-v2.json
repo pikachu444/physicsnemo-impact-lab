@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "authorization": "Root explicitly approved revised 1GiB launch gate based on prior CPU Q1 measured206MB footprint; retain all other guards.",
+  "preflight_available_bytes": 1073741824,
+  "running_host_free_floor_bytes": 536870912,
+  "maximum_working_set_bytes": 367001600,
+  "maximum_wall_seconds": 300,
+  "cpu_threads": 1,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "device": "cpu",
+  "runtime": "C:/Program Files/Python313/python.exe; existing Torch2.13.0+cpu",
+  "change": "Only launch-gate threshold changed from1.3GiB to1GiB in runner/supervisor. No scientific source or numerical condition changed.",
+  "old_protocol_evidence": [
+    "resource-protocol-v1.json",
+    "run-full-ddm-v1-1p3gib.py",
+    "run-supervised-v1-1p3gib.ps1",
+    "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/preflight-status.json"
+  ],
+  "safety_scope": "Kill only the owned child process tree on guard; reap process and preserve logs. Do not modify user apps, GPU workload, existing sources or results.",
+  "performance_scope": "Concurrent shared-host execution evidence; no isolated performance comparison."
+}

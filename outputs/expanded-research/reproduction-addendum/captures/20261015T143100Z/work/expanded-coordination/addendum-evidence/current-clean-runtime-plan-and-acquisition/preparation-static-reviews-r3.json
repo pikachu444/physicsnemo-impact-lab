@@ -1,0 +1,38 @@
+{
+  "as_of_utc": "2026-10-15T09:00:55.988601+00:00",
+  "nature": "Agent-reported independent static review and selfcheck receipts, not actual build/install execution",
+  "ANTLR_checker": {
+    "before_sha256": "6aca0b4e294e1ef795709d34e1516f0acc00ce604cc468f4fc0ce3a6619ae4e1",
+    "after_sha256": "716bb4d28836d178dc3cb6cebb3325d02ad0c0f1bf6486147527f3b7a6a927bc",
+    "prior_failed_audit_sha256": "b823af3c7133e146052fa6c9a9516f21bdbf35aa96e245bdcea960361569c896",
+    "independent_review_reported": "PASS",
+    "scope": "Only exact pinned 6111B pygrun CLI copy plus pinned setup scripts literal and exact 34B typing marker inactive on Python3.13. Source bytes unchanged; no generic process/network/native/build hook allowance.",
+    "actual_guarded_R2_source_extraction_performed": false
+  },
+  "ANTLR_finalizer": {
+    "sha256": "ed40bf1d8388cc93e0f575dbc2517a237842e608a81ab96ffee31f59dedf13fe",
+    "independent_review_reported": "PASS after fixed build tool pins and forbidden pyc correction",
+    "selfcheck_and_AST_reported_pass": true,
+    "actual_finalization_performed": false
+  },
+  "guard": {
+    "review_rejected_PID_cleanup_sha256": "c980741318a24517ab8969ce7df4f79813bb136dd1c8fd7fbc17a8a7940e2ead",
+    "job_guard_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+    "tiny_actual_selfcheck": "guard-job-selfcheck-r2.json",
+    "independent_corrected_review": "PASS: suspended owned child assigned before resume; job membership and cleanup retain surviving descendants; no numeric PID kill fallback",
+    "reviewed_tiny_selfcheck_receipt_sha256": "52f12501f6a2e7189cdf017f9cfc48f160292372452bed2a5eee155404e64591"
+  },
+  "download_portability": {
+    "read_only_review_reported": "PASS",
+    "tiny_actual_selfcheck": "tools-selfcheck-r2.json",
+    "only_exact_missing_historical_ANTLR_wheel_deferred": true
+  },
+  "exact_ANTLR_absent_cache_resolver": {
+    "sha256": "c4d2b5f1041b5011fe486fd7abb3200847f02aae180ab40876fc6f91a2be62df",
+    "selfcheck_and_AST_reported_pass": true,
+    "independent_review_reported": "PASS",
+    "scope": "Only exact ANTLR4.9.3 historical wheel SHA/144577B plus official source URL and f224 SHA, PyPI HTTP200, all caches absent. Invalid existing cache is not absence. Explicit unavailable/not locally verified/separately approved build pending. No generic sdist allowance.",
+    "actual_metadata_network_or_build_install_performed": false,
+    "historical_wheel_resolution_sha256_unchanged": "753762849c3b105f3518018cb58d39871885310e5752cc1eff90ebbbfe5ea29f"
+  }
+}

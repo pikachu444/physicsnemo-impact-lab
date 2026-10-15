@@ -1,0 +1,113 @@
+{
+  "process_identity": {
+    "pid": 42684,
+    "created_unix_seconds": 1792051226.5027437
+  },
+  "pid": 42684,
+  "architecture": "geotransolver",
+  "checkpoint_sha256": "8f5726a64ab56df336140e9cf04370c1f4d665647d9dbbb5312fd741ae764845",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 22.649105899996357,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\checkpoint-frozen.json": "8bfd18aa8f089c547242b9222e9182516642f507804ccf2225b6496ce347cde9",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\training_report.json": "29d11f8f7cc79ddb47de5b8ea4183ebb8db2d194aaeb0263706cfe68098d5533",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\best_checkpoint.pt": "8f5726a64ab56df336140e9cf04370c1f4d665647d9dbbb5312fd741ae764845",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\validation_reference.npy": "38838b340efe7302bdf754c0a39acc5384ad90ef29eeb66feb3ce676680d1619",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\validation_serialization_roundtrip.json": "60e0cbeacd0bf95df19ba7e72da5baeea9bafc8455767a26b507ecd8f432c189",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\normalization.json": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\training_mean_field.npy": "c43458747b232eecabd882d023b345013065473c7c41d2b8e59643a31a88ffaf",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\geotransolver\\geotransolver.py": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "geotransolver",
+    "module": "physicsnemo.models.geotransolver",
+    "class_name": "GeoTransolver",
+    "implementation_module": "physicsnemo.models.geotransolver.geotransolver",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\geotransolver\\geotransolver.py",
+    "source_sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "3_global_parameters"
+    ]
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-15T08:00:51.310293+00:00",
+  "validation_anchor_case": "Run219",
+  "max_scale_normalized_difference": 0.0,
+  "tolerance_scale_normalized": 1e-05,
+  "test_values_used": false,
+  "forward_seconds_cuda_synchronized": 0.45488990000012564,
+  "preparation": {
+    "read_normalize_seconds": 0.0027416000011726283,
+    "read_seconds": 0.0016963000016403385,
+    "normalize_seconds": 0.0010379999948781915,
+    "host_device_transfer_seconds": 0.000654199997370597
+  },
+  "data_value_access": {
+    "train": {
+      "Run192": 1
+    },
+    "validation": {},
+    "test": {}
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "total_wall_seconds": 24.565170599998964,
+  "definition": "Fresh executable process reconstructs model from fixed serialized checkpoint and compares its validation anchor with training's saved normalized reference; no test response values."
+}

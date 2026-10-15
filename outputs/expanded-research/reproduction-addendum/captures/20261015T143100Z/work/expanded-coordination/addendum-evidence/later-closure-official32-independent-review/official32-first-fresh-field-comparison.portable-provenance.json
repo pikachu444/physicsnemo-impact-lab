@@ -1,0 +1,32 @@
+{
+  "status": "UNEXECUTED_PORTABLE_PATH_ONLY_DERIVATIVE",
+  "created_utc": "2026-10-15T14:19:47.583719+00:00",
+  "original_v3_executed_source": "official32-first-fresh-field-comparison.plot.py",
+  "original_v3_executed_source_sha256": "3aed70dc1698348b0b301644feb6210ecfd23f0ac83c9fe17d3515955c36cca3",
+  "portable_derivative": "official32-first-fresh-field-comparison.portable.py",
+  "portable_derivative_sha256": "ea1c6b4c16892368702013f694f301b97652d22c157bf311f7b353e258d2e5e8",
+  "original_v3_PNG_sha256": "f71c14d741f56fedbfbd3fdf85d967ba7aa5b77f3308b3997692fc3ca78df262",
+  "original_v3_scoped_metadata_sha256_unchanged": "76efc7f2d6e85e0ee97c9156e2385c29be9218bd3a370926e68db70929f2dcc5",
+  "source_PNG_metadata_preserved_byte_identical": true,
+  "validation": "Static ast.parse and normalized AST comparison only. The portable derivative was not executed or imported.",
+  "AST_comparison": "Identical after normalizing only ROOT and sys.path assignments, removing the added sysconfig import and the explicit workspace sentinel assert.",
+  "path_only_changes": [
+    "Resolve ROOT from Path.cwd().resolve() instead of script-location parents.",
+    "Require the fixed source NPZ, saved prediction NPZ, and numeric-audit metadata at their original workspace-relative locations.",
+    "Discover user and global purelib locations through stdlib sysconfig, maintaining the original user-before-global order; no account-specific literals."
+  ],
+  "invocation": {
+    "working_directory": "Research workspace root containing work/expanded-plate and outputs/expanded-research",
+    "command": "python -S outputs/expanded-research/benchmarks/deforming_plate/review/official32-first-fresh-field-comparison.portable.py",
+    "prerequisites": "Original runtime dependencies plus unchanged source/saved data and audit artifacts. The preserved revisions/v1 and revisions/v2 triplets and their hashes remain required by the unchanged execution guards. The original current-metadata revision-2 admission guard remains unchanged; this derivative was not replayed against the current revision-3 output."
+  },
+  "limitations": [
+    "This unexecuted derivative is not the exact source that generated the v3 PNG.",
+    "The original account-bearing exact sources remain private locally. A public bundle omitting those private preserved sources cannot by itself satisfy the unchanged preservation guards without the missing original inputs.",
+    "No claim that dynamic dependency-path discovery has been runtime-tested."
+  ],
+  "new_neural_inference": 0,
+  "new_training": 0,
+  "new_render": 0,
+  "original_total_renders": 3
+}

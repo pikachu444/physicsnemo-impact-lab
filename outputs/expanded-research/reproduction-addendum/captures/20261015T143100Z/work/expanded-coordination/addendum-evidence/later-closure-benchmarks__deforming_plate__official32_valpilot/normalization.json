@@ -1,0 +1,63 @@
+{
+  "target_mean": [
+    1.2228057464443704e-07,
+    -1.5460074950558606e-09,
+    2.0920505898781625e-07,
+    30773.722336463186
+  ],
+  "target_std": [
+    0.0023793469998635098,
+    0.0023786911639326236,
+    0.0024161595378155206,
+    38945.0001637765
+  ],
+  "edge_mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.018359838386268403
+  ],
+  "edge_std": [
+    0.012087058950394941,
+    0.012466648279033283,
+    0.009598982924291894,
+    0.007521377582126771
+  ],
+  "fit_trajectories": [
+    "train_0000",
+    "train_0001",
+    "train_0002",
+    "train_0003",
+    "train_0004",
+    "train_0005",
+    "train_0006",
+    "train_0007",
+    "train_0008",
+    "train_0009",
+    "train_0010",
+    "train_0011",
+    "train_0012",
+    "train_0013",
+    "train_0014",
+    "train_0015",
+    "train_0016",
+    "train_0017",
+    "train_0018",
+    "train_0019",
+    "train_0020",
+    "train_0021",
+    "train_0022",
+    "train_0023",
+    "train_0024",
+    "train_0025",
+    "train_0026",
+    "train_0027",
+    "train_0028",
+    "train_0029",
+    "train_0030",
+    "train_0031"
+  ],
+  "weighting": "Equal trajectory weight; all 399 training increments; no validation/test statistics",
+  "strain_reference": "Per-tetra Green-Lagrange derived from mesh_pos and world_pos; not original COMSOL strain output",
+  "noise_normalization": "Analytic variance of fresh zero-mean independent noise; equal trajectory free-node fractions"
+}

@@ -1,0 +1,27 @@
+{
+  "domain": "bumper",
+  "architecture": "geoflare",
+  "stage": "test",
+  "command": [
+    "${WORKSPACE}\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare",
+    "--cache",
+    "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+    "--expected-manifest-sha256",
+    "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "--mode",
+    "test",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "${WORKSPACE}",
+  "started_utc": "2026-10-15T08:09:45.989406+00:00",
+  "log": "${WORKSPACE}\\work\\expanded-ml\\budgeted-suite-logs\\bumper-geoflare-test.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T08:10:18.176149+00:00",
+  "wall_seconds": 32.18440730000293,
+  "exit_code": 0
+}

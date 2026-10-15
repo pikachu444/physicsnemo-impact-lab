@@ -1,0 +1,60 @@
+{
+  "audit_utc": "2026-10-15T06:04:31.4567917Z",
+  "source_directory": "work/expanded-drop/control-source-review/OpenCourant",
+  "source_commit": "cb760c206e346eff12161a2268b134ef9d48a4ef",
+  "checkpoint_sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca",
+  "normal_general_restart": {
+    "cycle_counter_resets_only": "engine/resol_init.F:530",
+    "actual_result": "Successfully started engine4 with2HMPPthreads; NORMAL stepped progress after restart",
+    "previous_file": "Cell_Phone_Drop_0003_0001_I.rst",
+    "input": "/RUN/Cell_Phone_Drop/4/I",
+    "source": [
+      "input/freform.F:816-817 parses suffix I",
+      "engine/radioss2.F:823-842 selects run N-1 with suffix",
+      "output/restart/rdcomm.F:1972-1977 restores TT/DT/TSTOP",
+      "output/restart/rdresb.F:1111-1115 restores position/displacement/velocity"
+    ]
+  },
+  "rerun_failure": {
+    "exit_code": -1073741819,
+    "input": "/RERUN/Cell_Phone_Drop/3 via CHECK_DATA",
+    "original_files_preserved": true,
+    "attempt": "500us-resume02",
+    "reason": "Access violation during startup before HMPP banner; source support alone did not establish executable checkpoint compatibility",
+    "elapsed_seconds": 5.3987533
+  },
+  "controls": {
+    "source": "input/manctr.F",
+    "CHKPT": "259 sets WMCHECK; alone does not stop",
+    "ANIM": "249-251 request native animation",
+    "polling": "lines180-186, NCINP cycles",
+    "physical_checkpoint_write": "engine/resol.F:9457-9463 CHECK_DATA generation; wrrestp.F:442-449 MULTIREST rotating suffix",
+    "STOP": "238-242 sets MREST plus MSTOP",
+    "TIME": "204-213 and394-403: action threshold TT>=TMAN, does not change engine stop time"
+  },
+  "boundary_evidence": {
+    "new_guard_restart_identical_time_ANIM_available": false,
+    "bitwise_existing_fields": true,
+    "source100us_to_first500us": "../500us/restart-boundary-bitwise-check.json",
+    "guard_last_saved_time_s": 0.00011763644,
+    "first_regular_saved_frame_s": 0.00012001311,
+    "restart_stdout_initial_time_s_rounded": 0.00011765,
+    "claim": "No bitwise field equivalence claimed across unequal-time snapshots; input checkpoint and source physics hash preserved"
+  },
+  "physics": {
+    "unit_time": "s",
+    "source_deck_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+    "frozen20us_AI_targets_changed": false,
+    "engine_binary_sha256": "13a9d6551fb9206b6c27c8af819e752edf3550e4725e446a2c3042c6c1a2b9d1",
+    "energy_to_J": 0.001,
+    "unit_mass": "Mg",
+    "geometry_material_wall_velocity_gravity_changes": "None",
+    "stress": "MPa",
+    "unit_length": "mm",
+    "initial_velocity_mm_s": [
+      -3200.900476,
+      -3511.241739,
+      -2618.285239
+    ]
+  }
+}

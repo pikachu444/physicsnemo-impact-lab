@@ -1,0 +1,28 @@
+{
+  "status": "PASS_static_source_gate_not_actual_training",
+  "reviewed_at_utc": "2026-10-15T06:07:28.3905187Z",
+  "reviewer": "independent reviewer_terra_high subagent plate_source_audit",
+  "source_lock_path": "outputs/expanded-research/benchmarks/deforming_plate/official32-completion-source-lock-v2.json",
+  "source_lock_sha256": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+  "protocol_sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+  "checks": [
+    "All nine source hashes match source lock",
+    "Frozen protocol byte and canonical payload hashes match",
+    "Final contract SHA pinned to protocol frozen provenance",
+    "Validation wrapper external fixed command hash/source gates before optional imports",
+    "New PID final reload, checkpoint/config/norm/source/split gates",
+    "Exclusive one-attempt final marker before fresh array access",
+    "Only test_0002..0007 AR399 with no teacher forcing",
+    "Official 128/15 train32 anchor8 epoch5 noise.003 perupdateLR.9999917 unchanged",
+    "Selection epochs1/3/5 valid0000/0005 failure/inversion/minimax/earlier-epoch unchanged",
+    "Every AR graph edge count and geometry/timing retained; failures retain context",
+    "Native stress units unconfirmed; coordinate-derived GL strain caveat preserved",
+    "Text compile and stdlib selection selfcheck pass"
+  ],
+  "trust_anchor": "Parent fixed GPU command must contain the exact reviewed --source-lock-sha256. The lock pins all execution sources; embedding its digest inside a source which the lock hashes would be circular.",
+  "runtime_imports_or_GPU_used_by_preparation": false,
+  "actual_training_or_prediction_completed_by_preparation": false,
+  "fresh_test_NPZ_read_or_hashed_by_preparation": false,
+  "visual_review": "Not applicable to source packet; actual PNG must be inspected after execution",
+  "limits": "Static source gate only. Runtime outputs, numerical results and GPU process release must still be verified."
+}

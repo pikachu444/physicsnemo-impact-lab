@@ -1,0 +1,543 @@
+{
+  "completed_to_requested_time": true,
+  "requested_final_time_s": 0.0005,
+  "last_actual_frame_s": 0.0005000064265914261,
+  "last_history_time_s": 0.0004999078,
+  "saved_frames": 63,
+  "last_frame": {
+    "file": "work\\expanded-drop\\500us-resume03-run\\Cell_Phone_DropA063",
+    "actual_time_s": 0.0005000064265914261,
+    "solid_elements": 130218,
+    "native_cell_vm_max_MPa": 57.57325744628906,
+    "native_cell_vm_min_MPa": 0.0,
+    "native_cell_epsp_max": 0.0800299122929573,
+    "native_cell_epsp_min": 0.0,
+    "plastic_cells": 326,
+    "all_solids_active": true,
+    "valid_IP_strain": {
+      "111": {
+        "min_6": [
+          -0.03892144188284874,
+          -0.054456859827041626,
+          -0.0191400907933712,
+          -0.029221663251519203,
+          -0.025981714949011803,
+          -0.023105688393115997
+        ],
+        "max_6": [
+          0.050013218075037,
+          0.028514573350548744,
+          0.030253970995545387,
+          0.0499151237308979,
+          0.04112984985113144,
+          0.0383916012942791
+        ],
+        "max_frobenius": 0.09092691510806189,
+        "nonzero_cells": 125878
+      },
+      "112": {
+        "min_6": [
+          -0.03892127051949501,
+          -0.054456986486911774,
+          -0.01914002187550068,
+          -0.029221313074231148,
+          -0.025981733575463295,
+          -0.023105841130018234
+        ],
+        "max_6": [
+          0.05001292750239372,
+          0.02851434051990509,
+          0.030253617092967033,
+          0.0499156154692173,
+          0.04112963750958443,
+          0.03839151933789253
+        ],
+        "max_frobenius": 0.09092608193847652,
+        "nonzero_cells": 109598
+      },
+      "121": {
+        "min_6": [
+          -0.03892135992646217,
+          -0.05445690453052521,
+          -0.019140031188726425,
+          -0.02922147884964943,
+          -0.025981822982430458,
+          -0.023105885833501816
+        ],
+        "max_6": [
+          0.050012990832328796,
+          0.028514064848423004,
+          0.030253766104578972,
+          0.04991570860147476,
+          0.04112967848777771,
+          0.03839148208498955
+        ],
+        "max_frobenius": 0.09092700782865934,
+        "nonzero_cells": 109599
+      },
+      "211": {
+        "min_6": [
+          -0.038921039551496506,
+          -0.054455991834402084,
+          -0.01914006844162941,
+          -0.029221311211586,
+          -0.025981852784752846,
+          -0.023105742409825325
+        ],
+        "max_6": [
+          0.05001334100961685,
+          0.028514523059129715,
+          0.030253753066062927,
+          0.04991507530212402,
+          0.04112964868545532,
+          0.038391564041376114
+        ],
+        "max_frobenius": 0.09092701687522993,
+        "nonzero_cells": 109600
+      }
+    },
+    "plastic_support": [
+      {
+        "part_id": 1,
+        "name": "lcd_screen",
+        "material": 5,
+        "cells": 34954,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 2,
+        "name": "cover_rear",
+        "material": 1,
+        "cells": 58462,
+        "plastic_cells": 326,
+        "epsp_max": 0.0800299122929573
+      },
+      {
+        "part_id": 5,
+        "name": "ic",
+        "material": 9,
+        "cells": 494,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 6,
+        "name": "ic_01",
+        "material": 9,
+        "cells": 81,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 7,
+        "name": "ct_01",
+        "material": 9,
+        "cells": 198,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 8,
+        "name": "ct_02",
+        "material": 9,
+        "cells": 215,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 9,
+        "name": "ic_02",
+        "material": 9,
+        "cells": 5458,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 10,
+        "name": "battery",
+        "material": 4,
+        "cells": 4340,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 11,
+        "name": "camera",
+        "material": 9,
+        "cells": 8045,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 12,
+        "name": "camera_conn",
+        "material": 9,
+        "cells": 2268,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 13,
+        "name": "top_pcb",
+        "material": 8,
+        "cells": 8041,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 17,
+        "name": "top_micro_chip_01",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 19,
+        "name": "top_micro_chip_02",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 23,
+        "name": "bottom_micro_chip_01",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 25,
+        "name": "bottom_micro_chip_02",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 27,
+        "name": "bottom_micro_chip_03",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 28,
+        "name": "bottom_pcb",
+        "material": 8,
+        "cells": 6662,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      }
+    ],
+    "total_strain_all_valid_IP_max_frobenius": 0.09092701687522993,
+    "total_strain_IP111_max_frobenius": 0.09092691510806189,
+    "file_bytes": 45778222,
+    "sha256": "7b967ff690138e0403a1965e1ea59612aa373549a3b62fe8a0f70dd8b6ccccae",
+    "resource": {
+      "available_bytes": 1168220160,
+      "working_set_bytes": 31907840,
+      "peak_working_set_bytes": 46780416,
+      "configured_minimum_available_bytes": 805306368
+    }
+  },
+  "observed_maximum_cell_vm_frame": {
+    "file": "work\\expanded-drop\\500us-resume03-run\\Cell_Phone_DropA027",
+    "actual_time_s": 0.00015001605788711458,
+    "solid_elements": 130218,
+    "native_cell_vm_max_MPa": 84.76724243164062,
+    "native_cell_vm_min_MPa": 0.0,
+    "native_cell_epsp_max": 0.07907669991254807,
+    "native_cell_epsp_min": 0.0,
+    "plastic_cells": 321,
+    "all_solids_active": true,
+    "valid_IP_strain": {
+      "111": {
+        "min_6": [
+          -0.05967070907354355,
+          -0.0728178471326828,
+          -0.035333432257175446,
+          -0.04619315266609192,
+          -0.044774994254112244,
+          -0.05474705249071121
+        ],
+        "max_6": [
+          0.0666874423623085,
+          0.0394856259226799,
+          0.037602268159389496,
+          0.06744988262653351,
+          0.05624867230653763,
+          0.05516757071018219
+        ],
+        "max_frobenius": 0.12094656728305604,
+        "nonzero_cells": 125878
+      },
+      "112": {
+        "min_6": [
+          -0.05967097729444504,
+          -0.07281811535358429,
+          -0.035333167761564255,
+          -0.046192772686481476,
+          -0.04477487877011299,
+          -0.05474681034684181
+        ],
+        "max_6": [
+          0.06668692827224731,
+          0.03948579356074333,
+          0.03760213777422905,
+          0.06745050847530365,
+          0.05624867230653763,
+          0.05516756698489189
+        ],
+        "max_frobenius": 0.1209475901129662,
+        "nonzero_cells": 109598
+      },
+      "121": {
+        "min_6": [
+          -0.05967077612876892,
+          -0.07281795889139175,
+          -0.03533324599266052,
+          -0.0461929515004158,
+          -0.04477531462907791,
+          -0.05474730581045151
+        ],
+        "max_6": [
+          0.06668694317340851,
+          0.03948520869016647,
+          0.037602297961711884,
+          0.06745065003633499,
+          0.05624867603182793,
+          0.05516741797327995
+        ],
+        "max_frobenius": 0.1209478896644958,
+        "nonzero_cells": 109599
+      },
+      "211": {
+        "min_6": [
+          -0.059669770300388336,
+          -0.07281673699617386,
+          -0.035332996398210526,
+          -0.046193186193704605,
+          -0.04477532207965851,
+          -0.05474673956632614
+        ],
+        "max_6": [
+          0.06668727099895477,
+          0.03948499262332916,
+          0.03760213777422905,
+          0.0674498900771141,
+          0.056248582899570465,
+          0.05516757816076279
+        ],
+        "max_frobenius": 0.12094749330581132,
+        "nonzero_cells": 109600
+      }
+    },
+    "plastic_support": [
+      {
+        "part_id": 1,
+        "name": "lcd_screen",
+        "material": 5,
+        "cells": 34954,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 2,
+        "name": "cover_rear",
+        "material": 1,
+        "cells": 58462,
+        "plastic_cells": 321,
+        "epsp_max": 0.07907669991254807
+      },
+      {
+        "part_id": 5,
+        "name": "ic",
+        "material": 9,
+        "cells": 494,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 6,
+        "name": "ic_01",
+        "material": 9,
+        "cells": 81,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 7,
+        "name": "ct_01",
+        "material": 9,
+        "cells": 198,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 8,
+        "name": "ct_02",
+        "material": 9,
+        "cells": 215,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 9,
+        "name": "ic_02",
+        "material": 9,
+        "cells": 5458,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 10,
+        "name": "battery",
+        "material": 4,
+        "cells": 4340,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 11,
+        "name": "camera",
+        "material": 9,
+        "cells": 8045,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 12,
+        "name": "camera_conn",
+        "material": 9,
+        "cells": 2268,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 13,
+        "name": "top_pcb",
+        "material": 8,
+        "cells": 8041,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 17,
+        "name": "top_micro_chip_01",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 19,
+        "name": "top_micro_chip_02",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 23,
+        "name": "bottom_micro_chip_01",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 25,
+        "name": "bottom_micro_chip_02",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 27,
+        "name": "bottom_micro_chip_03",
+        "material": 9,
+        "cells": 200,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      },
+      {
+        "part_id": 28,
+        "name": "bottom_pcb",
+        "material": 8,
+        "cells": 6662,
+        "plastic_cells": 0,
+        "epsp_max": 0.0
+      }
+    ],
+    "total_strain_all_valid_IP_max_frobenius": 0.1209478896644958,
+    "total_strain_IP111_max_frobenius": 0.12094656728305604,
+    "file_bytes": 45778222,
+    "sha256": "0a4f0d131b11572a03a21d09db51b74af3660e5a6d26191ea00aad193e000927",
+    "resource": {
+      "available_bytes": 1198051328,
+      "working_set_bytes": 31518720,
+      "peak_working_set_bytes": 46391296,
+      "configured_minimum_available_bytes": 805306368
+    }
+  },
+  "observed_peak_is_last_saved_frame": false,
+  "observed_maximum_EPSP": 0.0800299122929573,
+  "observed_maximum_total_strain_all_valid_IP_frobenius": 0.12187607491718272,
+  "history_initial_normal_COM_velocity_m_per_s": -5.41160443566157,
+  "history_last_normal_COM_velocity_m_per_s": -3.440977806963475,
+  "source_initial_velocity_mm_per_s": [
+    -3200.900476,
+    -3511.241739,
+    -2618.285239
+  ],
+  "initial_momentum_note": "Actual saved global P/M differs slightly from nominal INIVEL speed. The original20us ANIM did not store t0 nodal velocity, and the cause was not independently isolated. Rebound uses actual P/M sign history.",
+  "any_outward_normal_COM_velocity": false,
+  "first_saved_outward_normal_COM_time_s": null,
+  "last_kinetic_energy_J": 0.2612209,
+  "last_internal_energy_J": 0.059295160000000006,
+  "last_plastic_work_J": 0.018449560000000004,
+  "last_external_work_J": -0.07630432999999999,
+  "initial_accounted_energy_J": 0.39751380000000003,
+  "last_accounted_energy_J": 0.39691345862,
+  "accounted_energy_drift_percent": -0.15102403488885807,
+  "last_added_mass_percent": 0.01625422,
+  "all_saved_cell_EPSP_monotone": true,
+  "topology_checks": {
+    "node_ids_bitwise_equal_original": true,
+    "solid_connectivity_bitwise_equal_original": true
+  },
+  "last_corner_normal_velocity": {
+    "support": "76065 physical solid corner nodes, excludes midsides and wall display",
+    "unit": "mm/s",
+    "min": -5670.061276740512,
+    "max": 872.476494945673,
+    "outward_positive_nodes": 4780,
+    "interpretation": "Local corner motion is distinct from global COM rebound."
+  },
+  "accounted_energy_definition": "KE+IE+rotation+spring+contact+hourglass-external work; plastic work is already in IE.",
+  "units": {
+    "source": "Mg-mm-s",
+    "native_stress": "MPa",
+    "native_strain": "dimensionless tensor strain, shear not engineering gamma",
+    "history_energy_to_J": 0.001,
+    "history_mass_to_kg": 1000,
+    "momentum_to_kg_m_per_s": 1
+  },
+  "strain_support": "All130218 active solids at IP111; TETRA10 additionally IP112/121/211; nonphysical BRICK extra IP zero outputs excluded from interpretation.",
+  "plasticity_check": "All nonzero native cell EPSP confined to original material1 PLAS_TAB. The four other materials are elastic.",
+  "AI_scope": "Frozen nine-condition2..20us labels unchanged. Single-center0.5ms FEM diagnostic only.",
+  "limits": "Snapshot maximum is not guaranteed continuous-time peak. COM sign reversal is a saved global momentum observation; no separation/contact-force criterion or product-failure validation.",
+  "resource": {
+    "available_bytes": 1132650496,
+    "working_set_bytes": 42467328,
+    "peak_working_set_bytes": 46833664,
+    "configured_minimum_available_bytes": 805306368
+  },
+  "model_scope": "Public CC BY-NC4.0 phone benchmark; not a commercial production model or a validated consumer product."
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "frozen_final_preaccess_serialization_correction",
+  "frozen_at_utc": "2026-10-15T09:30:23.9134465Z",
+  "corrected_driver_sha256": "66100ce77e92ce32d2e73620a06a27962439c2e94a581128f23d7063b274e0ba",
+  "mock_source_sha256": "196bef42f2584bf8f4b2f9a19d211198e920331abd1ed4402bfcbf866a6bfcaf",
+  "original_source_lock_sha256": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+  "selected_checkpoint_sha256": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+  "protocol_sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+  "preserved_failed_attempt_sha256": "d8a2d45d0356df31c6c07e70a3f0cd1030398d2fbe0366ce8f5e121c9977bc0e",
+  "correction": "Only normalize required selection_epochs/selection_trajectories string declarations to the already frozen protocol strict lists when comparing runtime config. Other keys, data/model/selection gates and one-pass access order unchanged.",
+  "fresh_content_access_by_failed_attempt": false,
+  "test_prediction_count_before_correction": 0,
+  "new_output": "outputs/expanded-research/benchmarks/deforming_plate/official32_fresh_final_corrected",
+  "science_configuration_changed": false
+}

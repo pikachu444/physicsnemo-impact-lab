@@ -8,7 +8,7 @@ from pathlib import Path
 root = Path(sys.argv[1]).resolve(strict=True)
 manifest = json.loads((root / "publication-byte-manifest.json").read_text(encoding="utf-8"))
 errors = []
-counts = {"files": 0, "json": 0, "python": 0}
+counts = {"files": 0, "json": 0, "jsonl": 0, "python": 0}
 for rel, entry in manifest["files"].items():
     path = root / rel
     data = path.read_bytes()
@@ -18,6 +18,11 @@ for rel, entry in manifest["files"].items():
         if path.suffix == ".json":
             json.loads(data.decode("utf-8-sig"))
             counts["json"] += 1
+        elif path.suffix == ".jsonl":
+            for line in data.decode("utf-8-sig").splitlines():
+                if line.strip():
+                    json.loads(line)
+            counts["jsonl"] += 1
         elif path.suffix == ".py":
             ast.parse(data.decode("utf-8-sig"), filename=rel)
             counts["python"] += 1

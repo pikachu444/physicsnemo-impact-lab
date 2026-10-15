@@ -1,0 +1,85 @@
+{
+  "status": "guard_stopped_partial_numerical_ddm",
+  "completed_full_ddm": false,
+  "framework_imported": true,
+  "official_monolithic_solve_completed": true,
+  "completed_schwarz_iterations": 11,
+  "final_persisted_interface_rmse": 0.00016185208906477046,
+  "minimum_completed_numerical_patch_problems_including_monolithic": 45,
+  "neural_models_trained": 0,
+  "partial_scope": "Official32x32 monolithic and4patch Schwarz solves were actually executed; final displacement/strain/stress/VM and independent checks absent because host-memory guard ended process.",
+  "supervisor": {
+    "host_free_memory_floor_bytes": 536870912,
+    "stage": "actual_official_numerical_2x2_ddm",
+    "cpu_threads": 1,
+    "process_reaped": true,
+    "minimum_observed_free_bytes": 523370496,
+    "started_utc": "2026-10-15T07:25:45.2599244Z",
+    "pid": 2548,
+    "elapsed_seconds": 20.6751994,
+    "available_before_launch_bytes": 1231073280,
+    "wall_cap_seconds": 300,
+    "sampled_peak_working_set_bytes": 208797696,
+    "working_set_cap_bytes": 367001600,
+    "required_available_bytes": 1073741824,
+    "terminated_by_guard": true,
+    "stop_reason": "host_free_memory_floor_512_MiB",
+    "concurrent_performance_only": true,
+    "python_path": "C:\\Program Files\\Python313\\python.exe",
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "ended_utc": "2026-10-15T07:26:05.9350072Z",
+    "observed_exit_code": -1
+  },
+  "files": [
+    {
+      "path": "work/expanded-elasticity-ddm/run-full-ddm.py",
+      "sha256": "30e0f5fbefbdc6d3afc021c54ff9402c2426b3095b984f40f67ccc8062d6fea3",
+      "bytes": 8148
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/run-supervised.ps1",
+      "sha256": "f210afbee374539481cdbf6a2fb3da8d8f310b17b3214ac0c287d4242e37a8fa",
+      "bytes": 3811
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/check-fields.py",
+      "sha256": "0df398e4645852ec4d961b0ec5e5868071ea38a0881c87f9d712f314b0ea560e",
+      "bytes": 7586
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/adapter-manifest.json",
+      "sha256": "ab8db664d4b436857b9247d3df05c81dc359ece7696227d599dbe91f14c1fa9b",
+      "bytes": 3645
+    },
+    {
+      "path": "work/expanded-elasticity-ddm/resource-protocol-v2.json",
+      "sha256": "dc400a9368bc91f83babbedd96558af62b60182b2cbbe0feceeb99fa6183313d",
+      "bytes": 1105
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/supervisor.json",
+      "sha256": "3180df14f60bf68f780e37c865549cf96acb6840fbff7794039eadffb2476c24",
+      "bytes": 795
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/driver.stdout.log",
+      "sha256": "a38a11a08ad1d5e01e510430950db51f9c0764ad7115e4232b715a902c1ae59f",
+      "bytes": 165
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/driver.stderr.log",
+      "sha256": "7ef501642d30c363267a000288bf5f3f5d5077bb9e7ce2861a507ea06f563942",
+      "bytes": 2645
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/elasticity_numerical/full-ddm/elasticity_metrics.csv",
+      "sha256": "4857860f483d727e1383876a6e92920290e2e26f8be12ba56a1a6248a66422ec",
+      "bytes": 515
+    }
+  ],
+  "next_action": "Keep all partial evidence; retry only in a new run directory under root allocation after host-memory contention resolves.",
+  "monolithic_elapsed_seconds": null,
+  "monolithic_timing_limitation": "Official monolithic solve completed before first persisted Schwarz metric, but separate stage timing was not persisted before guard termination. Do not infer it from overall wall time.",
+  "last_persisted_schwarz_elapsed_seconds": 10.063210500004061,
+  "wait_state": "Root instructed no retry or polling until static12/framework processes complete and root explicitly allocates stable memory for a new attempt02."
+}

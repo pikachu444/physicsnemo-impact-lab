@@ -1,0 +1,35 @@
+{
+  "status": "passed_pure_static_contract_mock_checks_only",
+  "checked_utc": "2026-10-15T13:45:59.117266+00:00",
+  "protocol_sha256": "575eef9fa611531f2f3c7d421968609ccdecfb14f628a27ef3d898c698aa47ef",
+  "runtime_source_sha256": "cbff88dc4a884bbd803e01603113e850e723dc35bde28180bdba9cf447910379",
+  "preparer_source_sha256": "5633cdf102792273ff8971dfca56721fc5d74a75f0740f8de8c9e6ee4f650788",
+  "valid_protocol_mock_allocation_contract_passed": true,
+  "mock_refusals": [
+    "no_GPU_allocation",
+    "stale_protocol_binding",
+    "test_target_added",
+    "train_target_in_reload",
+    "extra_updates",
+    "low_host_floor",
+    "false_execution_claim"
+  ],
+  "AST_sources_checked": 2,
+  "framework_imported": false,
+  "arrays_or_checkpoints_read": false,
+  "source_core_snapshots_copied": 0,
+  "child_processes_started": 0,
+  "hardware_or_GPU_probed": false,
+  "runtime_executed": false,
+  "real_allocation_file_created": false,
+  "installation_or_build_performed": false,
+  "new_capture_or_dry_run_performed": false,
+  "future_functional_checks_planned": 6,
+  "future_Adam_updates_per_check": 3,
+  "actual_functional_checks_completed": 0,
+  "fullfit_or_completed_model_counts_added": 0,
+  "limits": [
+    "Prepared code and small metadata only. GPU functionality, clean installation and reload have not been tested.",
+    "The authorized-allocation object existed only as an in-memory mock; no execution permission file was created."
+  ]
+}

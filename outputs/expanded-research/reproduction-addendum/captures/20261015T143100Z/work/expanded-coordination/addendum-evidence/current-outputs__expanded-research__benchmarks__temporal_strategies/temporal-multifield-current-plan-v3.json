@@ -1,0 +1,48 @@
+{
+  "status": "source_prepared_waiting_for_independent_gate_then_explicit_gpu_allocation",
+  "authoritative_current_plan": true,
+  "supersedes_planning_only": [
+    "budget-v2-execution-plan.json",
+    "native-scalar-head-feasibility.md proposal of four additional full fits"
+  ],
+  "planned_full_fit_count": 6,
+  "domains": [
+    "phone_full",
+    "bumper"
+  ],
+  "strategies": {
+    "time_conditional": {
+      "profile": "budget_v2_complete_epoch",
+      "fits": 2,
+      "kind": "original pinned wrapper full native C6/C7"
+    },
+    "ar_rollout_training": {
+      "profile": "multifield_v3_native_scalar_heads",
+      "fits": 2,
+      "kind": "separate native scalar response-head adaptation C6/C7"
+    },
+    "one_step_teacher_forcing": {
+      "profile": "multifield_v3_native_scalar_heads",
+      "fits": 2,
+      "kind": "separate native scalar response-head adaptation C6/C7; free rollout for validation/final"
+    }
+  },
+  "original_large_domain_C3_full_fits_scheduled": 0,
+  "original_C3_evidence": "Preserve original coupon C3 real training and official source/support/failure evidence. V3 train-only probe additionally evaluates a shared-state original C3 reference for positional equivalence; that is not a large-domain original C3 full fit.",
+  "protocol": "native-scalar-v3-protocol.json",
+  "protocol_sha256": "6b41e5f6369c682b3dda2c0c1a294218452d0f055a9f093b8ecffa28c212ed45",
+  "v3_driver_sha256": "d43b79c04fa3e86b26072d1de03070ac9000be9fbd4a6e3cac7cf0ee8f9f9ec6",
+  "v3_wrapper_sha256": "d9394b7fe601549a72c6a72285bf0b71dd16db112aec4574c0f263954d4591d0",
+  "frozen_v2_tc_driver_sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1",
+  "stage_launcher": "work/expanded-temporal/run_multifield_stage.py",
+  "posthoc": "work/expanded-temporal/summarize_multifield_budget.py",
+  "optimizer_budget_seconds_each": 180,
+  "six_fit_nominal_optimizer_cap_sum_seconds": 1080,
+  "wall_time": "Unmeasured; setup, train-only probes, full validation, reload/final and arithmetic add to the 18-minute sum of nominal training caps. Actual timing and memory must be reported after allocation. 180s is a bounded comparison, not convergence.",
+  "additional_large_domain_fit_count_relative_to_original_six_plan": 0,
+  "native_field_scope": "Phone: native GPS VM scalar, projected total-strain Frobenius and EPSP. Bumper: native upper/lower in-plane VM scalars and EPSP; no native total-strain label. Stress is not a three-component tensor, and displacement-derived strain does not replace native labels.",
+  "checkpoint_policy": "Complete sampled-case epoch selection on full free-rollout validation, source/config/norm/protocol/checkpoint/validation prediction SHA freeze, fresh-process validation reload, final held-out free rollout exactly once. Selected exposure and all executed partial work separated.",
+  "new_domain_actual_probe_fit_reload_final_completed": false,
+  "gpu_or_framework_execution_during_preparation": false,
+  "paid_resource_added": false
+}

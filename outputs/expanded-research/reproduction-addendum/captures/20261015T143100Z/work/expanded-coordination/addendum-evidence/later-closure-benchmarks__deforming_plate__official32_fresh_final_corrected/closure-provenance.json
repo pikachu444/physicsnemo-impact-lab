@@ -1,0 +1,110 @@
+{
+  "status": "PASS_stdlib_closure_provenance_and_pooled_JSON_consistency",
+  "recorded_at_utc": "2026-10-15T13:26:30.799049+00:00",
+  "source_lock_sha256": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+  "correction_lock_sha256": "84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70",
+  "checkpoint_sha256": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+  "metrics_sha256": "04eaa2a4c140b4da658da5b6c3a78a6bc948713b2429a95d95042cd4308eb8a8",
+  "fresh_ids": [
+    "test_0002",
+    "test_0003",
+    "test_0004",
+    "test_0005",
+    "test_0006",
+    "test_0007"
+  ],
+  "cases": [
+    {
+      "case": "test_0002",
+      "displacement_relative_l2": 8.96173504503842,
+      "stress_relative_l2": 0.7175978487435932,
+      "derived_GL_relative_l2": 9374.649309137098,
+      "derived_GL_component_rmse": 22.976127421512775,
+      "predicted_inverted_frames": 385,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 38.66181379999762
+    },
+    {
+      "case": "test_0003",
+      "displacement_relative_l2": 2.1663917130271075,
+      "stress_relative_l2": 0.6829441313658271,
+      "derived_GL_relative_l2": 57.43799904355043,
+      "derived_GL_component_rmse": 0.31184045406809635,
+      "predicted_inverted_frames": 73,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 27.451284199996735
+    },
+    {
+      "case": "test_0004",
+      "displacement_relative_l2": 2.3948479326653223,
+      "stress_relative_l2": 0.6633480800732225,
+      "derived_GL_relative_l2": 9.768444693537546,
+      "derived_GL_component_rmse": 0.15856164644249363,
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 33.3308113000021
+    },
+    {
+      "case": "test_0005",
+      "displacement_relative_l2": 2.0109720707850878,
+      "stress_relative_l2": 0.647729101890206,
+      "derived_GL_relative_l2": 32.333875176699536,
+      "derived_GL_component_rmse": 0.3921553603851559,
+      "predicted_inverted_frames": 24,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 42.43093450000015
+    },
+    {
+      "case": "test_0006",
+      "displacement_relative_l2": 54.69683884198456,
+      "stress_relative_l2": 0.8874777144966336,
+      "derived_GL_relative_l2": 31.42615553818549,
+      "derived_GL_component_rmse": 0.15481663495429193,
+      "predicted_inverted_frames": 119,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 47.14909280000575
+    },
+    {
+      "case": "test_0007",
+      "displacement_relative_l2": 1.8577463276809825,
+      "stress_relative_l2": 0.6766626185738764,
+      "derived_GL_relative_l2": 20.6621402609663,
+      "derived_GL_component_rmse": 0.1860722477221575,
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "negative_predicted_stress_values": 0,
+      "AR_seconds": 49.26686260000133
+    }
+  ],
+  "saved_prediction_NPZ_sha256": {
+    "test_0002_evaluation.npz": "e367d212a143c11d940e7eab6d5232f136762738a856a30cf230ad1f583d4dc0",
+    "test_0003_evaluation.npz": "3eac1963637e097beef1fd222e8e341a46b97f9da2c89cc2e589e83923e7326b",
+    "test_0004_evaluation.npz": "b4d0dee4c0cc3148497ed9ad3c55ae487222c550a5490b0970be0ce83663b2a0",
+    "test_0005_evaluation.npz": "ed6bca4a76238f175bcef94cf6686df75b507069ec9a8aea221aed542fcab487",
+    "test_0006_evaluation.npz": "af9af8979b25b6419732ccc6dd8d81d9fcd00b07d3fffd9233b27d8d9bcb0138",
+    "test_0007_evaluation.npz": "8b135e8cf9ae08675e9507a7aee3dc54e7eb6c203299b8a4fc61e83aa420dbb1"
+  },
+  "checks": [
+    "All original source9 current bytes and executed snapshots match v2 lock",
+    "Corrected driver snapshot/correction lock/selected checkpoint match pins",
+    "Config and normalization hash-match training receipt and frozen final gate",
+    "Source split and train-only normalization names match",
+    "One permanent access marker matches final attempt and pre-evaluation receipt",
+    "Failed original driver was pre-access; corrected six cases allAR399/noTF",
+    "Per-case JSON equals pooled results and all399 geometry/graph records exist",
+    "Pooled errors recomputed from case JSON agree"
+  ],
+  "limits": [
+    "No new neural inference or training",
+    "No checkpoint tensor deserialization",
+    "No fresh source NPZ re-opened or rehashed",
+    "Saved prediction NPZ only SHA256-hashed; metrics not independently recomputed from arrays",
+    "Derived strain covers21 sampled frames, not native COMSOL output",
+    "PNG/hotspot/raw-array numeric audit not completed in this closure scope"
+  ]
+}

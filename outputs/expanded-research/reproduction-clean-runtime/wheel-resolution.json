@@ -1,0 +1,3464 @@
+{
+  "status": "resolved",
+  "resolved_utc": "2026-10-15T07:38:34.403042+00:00",
+  "target": {
+    "implementation": "CPython",
+    "python": "3.13.5",
+    "platform": "win_amd64",
+    "free_threaded": false
+  },
+  "packages": [
+    {
+      "name": "aiobotocore",
+      "version": "3.9.2",
+      "filename": "aiobotocore-3.9.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/09/ab/c8f982c4dfaab49200e31820a4ffe6275356f7dcaaa1024735d8f8b4e048/aiobotocore-3.9.2-py3-none-any.whl",
+      "sha256": "363b4892423b272eb84afbb58000da0be6ccd0cf8a68b98438c957d05b841efc",
+      "published_sha256": "363b4892423b272eb84afbb58000da0be6ccd0cf8a68b98438c957d05b841efc",
+      "bytes": 102571,
+      "published_bytes": 102571,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/a/3/3/8/0a3383de8dc67e3ce49c93285eead829bcab66e0e96a00c5636aa875.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/a/3/3/8/0a3383de8dc67e3ce49c93285eead829bcab66e0e96a00c5636aa875.body",
+          "present_now": true,
+          "observed_bytes": 102571,
+          "observed_sha256": "363b4892423b272eb84afbb58000da0be6ccd0cf8a68b98438c957d05b841efc",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/aiobotocore/3.9.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/aiobotocore__3.9.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:10.212897+00:00",
+      "installed_metadata_sha256": "ee56fc5605a84a6aa0cfd475d018578437ca35122cf5f42b35337a027264f446"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "filename": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+      "published_sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+      "bytes": 15038,
+      "published_bytes": 15038,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/4/3/9/8/443989e76bfd4e0f9f84547685a2ec07eb4699a646841aa52d66132e.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/4/3/9/8/443989e76bfd4e0f9f84547685a2ec07eb4699a646841aa52d66132e.body",
+          "present_now": true,
+          "observed_bytes": 15038,
+          "observed_sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/aiohappyeyeballs/2.7.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/aiohappyeyeballs__2.7.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:10.447288+00:00",
+      "installed_metadata_sha256": "e68d1bf48aec9dcc2767343dedec25e12860085cba180e10bc3d3bdd031602ba"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5",
+      "filename": "aiohttp-3.14.5-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/8d/d0/8eca2c65aa467320990d78fb2005f38ed3588944280c39ff9deb6423fef1/aiohttp-3.14.5-cp313-cp313-win_amd64.whl",
+      "sha256": "d05e94cdfe0d15d0206f970722d2554780ce562787b21b218b275447f8751319",
+      "published_sha256": "d05e94cdfe0d15d0206f970722d2554780ce562787b21b218b275447f8751319",
+      "bytes": 505985,
+      "published_bytes": 505985,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/2/b/e/f/12befefea1e9097d9dafac1cae4412196aa24bab985970224065905e.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/2/b/e/f/12befefea1e9097d9dafac1cae4412196aa24bab985970224065905e.body",
+          "present_now": true,
+          "observed_bytes": 505985,
+          "observed_sha256": "d05e94cdfe0d15d0206f970722d2554780ce562787b21b218b275447f8751319",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/aiohttp/3.14.5/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/aiohttp__3.14.5.json",
+      "metadata_observed_utc": "2026-10-15T07:38:10.655085+00:00",
+      "installed_metadata_sha256": "063c418f586e6e668be019ff7b8cc98ee08e7f836ef205686275c7bd1a6099d7"
+    },
+    {
+      "name": "aioitertools",
+      "version": "0.13.0",
+      "filename": "aioitertools-0.13.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/10/a1/510b0a7fadc6f43a6ce50152e69dbd86415240835868bb0bd9b5b88b1e06/aioitertools-0.13.0-py3-none-any.whl",
+      "sha256": "0be0292b856f08dfac90e31f4739432f4cb6d7520ab9eb73e143f4f2fa5259be",
+      "published_sha256": "0be0292b856f08dfac90e31f4739432f4cb6d7520ab9eb73e143f4f2fa5259be",
+      "bytes": 24182,
+      "published_bytes": 24182,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/5/e/c/0/25ec00fac5039ec742210ab9b20fddfcc8a7c90c8168e8de8dc7fa43.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/5/e/c/0/25ec00fac5039ec742210ab9b20fddfcc8a7c90c8168e8de8dc7fa43.body",
+          "present_now": true,
+          "observed_bytes": 24182,
+          "observed_sha256": "0be0292b856f08dfac90e31f4739432f4cb6d7520ab9eb73e143f4f2fa5259be",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/aioitertools/0.13.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/aioitertools__0.13.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:10.986221+00:00",
+      "installed_metadata_sha256": "91cc60bedec3f5f9760a37747dc07830081560c7ef42c3f9a8eb75626b1be01d"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "filename": "aiosignal-1.4.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl",
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+      "published_sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+      "bytes": 7490,
+      "published_bytes": 7490,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/c/d/4/6/8cd46de09fab9942ca46d5db7df4d49166a3ba9ae11a8ad0ad906daa.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/c/d/4/6/8cd46de09fab9942ca46d5db7df4d49166a3ba9ae11a8ad0ad906daa.body",
+          "present_now": true,
+          "observed_bytes": 7490,
+          "observed_sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/aiosignal/1.4.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/aiosignal__1.4.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:11.100233+00:00",
+      "installed_metadata_sha256": "09247ef1da8bc696728d47130e702e4307f6f7d101d6c485bff9f3a71ce7008d"
+    },
+    {
+      "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "bytes": 144577,
+      "sha256": "9a700628218e270a26588ffc54233dc3d8799e82ae4194edf7a953e338812d7c",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/wheels/1a/97/32/461f837398029ad76911109f07047fde1d7b661a147c7c56d1/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "origin": {
+        "archive_info": {
+          "hash": "sha256=f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b",
+          "hashes": {
+            "sha256": "f224469b4168294902bb1efa80a8bf7855f24c99aef99cbefc1bcd3cce77881b"
+          }
+        },
+        "url": "https://files.pythonhosted.org/packages/3e/38/7859ff46355f76f8d19459005ca000b6e7012f2f1ca597746cbcd1fbfe5e/antlr4-python3-runtime-4.9.3.tar.gz"
+      },
+      "provenance_limit": "Previously cached pure-Python wheel built from the recorded source archive; not a publisher-distributed wheel. No source build occurs in this task.",
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "source_kind": "historically_cached_built_wheel",
+      "published_sha256": null,
+      "fresh_pypi_file_match": false,
+      "url": null,
+      "hash_source": "Current cached wheel hash; source archive publisher hash is separately recorded",
+      "publisher_wheel_available": false,
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/wheels/1a/97/32/461f837398029ad76911109f07047fde1d7b661a147c7c56d1/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+          "present_now": true,
+          "observed_bytes": 144577,
+          "observed_sha256": "9a700628218e270a26588ffc54233dc3d8799e82ae4194edf7a953e338812d7c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/antlr4-python3-runtime/4.9.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/antlr4-python3-runtime__4.9.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:11.395471+00:00",
+      "installed_metadata_sha256": "d1de5c7416841a56a3d73795e7f30587c2b8f3ba01fbbff68c094e308c629e7d"
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2",
+      "filename": "anyio-4.14.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl",
+      "sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494",
+      "published_sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494",
+      "bytes": 125813,
+      "published_bytes": 125813,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/3/3/c/1/733c122115609ab6009e0be7b1d5a055dd9fb7e47e93b13d9c75f624.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/3/3/c/1/733c122115609ab6009e0be7b1d5a055dd9fb7e47e93b13d9c75f624.body",
+          "present_now": true,
+          "observed_bytes": 125813,
+          "observed_sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/anyio/4.14.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/anyio__4.14.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:11.494826+00:00",
+      "installed_metadata_sha256": "c5e6fc4dfd833319913b287be7a30d9935e9208c7ef917630621855aaac4d419"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "published_sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "bytes": 67548,
+      "published_bytes": 67548,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4.body",
+          "present_now": true,
+          "observed_bytes": 67548,
+          "observed_sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/attrs/26.1.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/attrs__26.1.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:11.621477+00:00",
+      "installed_metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc"
+    },
+    {
+      "name": "botocore",
+      "version": "1.43.106",
+      "filename": "botocore-1.43.106-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a8/eb/c51d3b54dfaa9267a687359d946dc2a1ca6a27fb4d381773e59b7bd72bf4/botocore-1.43.106-py3-none-any.whl",
+      "sha256": "c1fb8818f9957cb5037f73db34ac1a12ba43562e31d6e7f9cb7e5fc64e1dba78",
+      "published_sha256": "c1fb8818f9957cb5037f73db34ac1a12ba43562e31d6e7f9cb7e5fc64e1dba78",
+      "bytes": 15965506,
+      "published_bytes": 15965506,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/b/b/5/0/9bb50fb6d1b4aa8645ba0966c47965c1eb382589db2c2d5cf356cf35.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/b/b/5/0/9bb50fb6d1b4aa8645ba0966c47965c1eb382589db2c2d5cf356cf35.body",
+          "present_now": true,
+          "observed_bytes": 15965506,
+          "observed_sha256": "c1fb8818f9957cb5037f73db34ac1a12ba43562e31d6e7f9cb7e5fc64e1dba78",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/botocore/1.43.106/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/botocore__1.43.106.json",
+      "metadata_observed_utc": "2026-10-15T07:38:11.931487+00:00",
+      "installed_metadata_sha256": "07c02d5a3b3a91247ad9a8136afce99a256ada8d3dae858f9e83840a5682c914"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "filename": "certifi-2026.7.22-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "published_sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "bytes": 136983,
+      "published_bytes": 136983,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/1/9/6/f/4196fb32cd5477509fa68e914f1472976a27100798a6d4a646f26472.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/1/9/6/f/4196fb32cd5477509fa68e914f1472976a27100798a6d4a646f26472.body",
+          "present_now": true,
+          "observed_bytes": 136983,
+          "observed_sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/certifi__2026.7.22.json",
+      "metadata_observed_utc": "2026-10-15T07:38:12.076677+00:00",
+      "installed_metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090"
+    },
+    {
+      "name": "cftime",
+      "version": "1.6.6.1",
+      "filename": "cftime-1.6.6.1-cp311-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/a8/3a/ad6e96204d85ea6abf3721393ec2e830e025854b51402cfc081a670b61f5/cftime-1.6.6.1-cp311-abi3-win_amd64.whl",
+      "sha256": "e4ed505118cbffec8ca6b59636f283d55df1675a3f092bc2d276f917a04af68a",
+      "published_sha256": "e4ed505118cbffec8ca6b59636f283d55df1675a3f092bc2d276f917a04af68a",
+      "bytes": 512994,
+      "published_bytes": 512994,
+      "wheel_tags": [
+        "cp311-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp311-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.11",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/7/a/9/4/b7a9461245a8fed474196095342a2d087756e4db8310c552c2f07ed9.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/7/a/9/4/b7a9461245a8fed474196095342a2d087756e4db8310c552c2f07ed9.body",
+          "present_now": true,
+          "observed_bytes": 512994,
+          "observed_sha256": "e4ed505118cbffec8ca6b59636f283d55df1675a3f092bc2d276f917a04af68a",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/cftime/1.6.6.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/cftime__1.6.6.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:12.389492+00:00",
+      "installed_metadata_sha256": "ea030e177bd39871a5c44196de2afb8adbb18b2482578bcc8eab98fffeac71fd"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.1",
+      "filename": "charset_normalizer-3.4.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/27/f2/4f9a69cc7712b9b5ad8fdb87039fd89abba997ad5cbe690d1835d40405b0/charset_normalizer-3.4.1-cp313-cp313-win_amd64.whl",
+      "sha256": "b1ac5992a838106edb89654e0aebfc24f5848ae2547d22c2c3f66454daa11971",
+      "published_sha256": "b1ac5992a838106edb89654e0aebfc24f5848ae2547d22c2c3f66454daa11971",
+      "bytes": 102702,
+      "published_bytes": 102702,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/8/9/7/d/f897d9d92295a79f80306e98a2af9e4fa716b0c4932ec9b793570e1a.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/8/9/7/d/f897d9d92295a79f80306e98a2af9e4fa716b0c4932ec9b793570e1a.body",
+          "present_now": true,
+          "observed_bytes": 102702,
+          "observed_sha256": "b1ac5992a838106edb89654e0aebfc24f5848ae2547d22c2c3f66454daa11971",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/charset-normalizer/3.4.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/charset-normalizer__3.4.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:12.733067+00:00",
+      "installed_metadata_sha256": "d3f7c00b70e49e299166eb26ea490fe3294f0f4255cc1ab998a1d62cd04933ac"
+    },
+    {
+      "name": "click",
+      "version": "8.4.2",
+      "filename": "click-8.4.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl",
+      "sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76",
+      "published_sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76",
+      "bytes": 119243,
+      "published_bytes": 119243,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/3/2/7/a/3327a46f678846be6cb46f3352e6fba668d9664c70a79484c770e358.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/3/2/7/a/3327a46f678846be6cb46f3352e6fba668d9664c70a79484c770e358.body",
+          "present_now": true,
+          "observed_bytes": 119243,
+          "observed_sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/click/8.4.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/click__8.4.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:13.040458+00:00",
+      "installed_metadata_sha256": "194c9dd81d567f9081f026c7e401060fbafa7bc147c8e0a58b3668b40a64c031"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "filename": "cloudpickle-3.1.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl",
+      "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+      "published_sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+      "bytes": 22228,
+      "published_bytes": 22228,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/0/e/1/0/20e10f4fc988909a746bf843c101fcfdd9ccd6c16c4cc28a5a0f489b.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/0/e/1/0/20e10f4fc988909a746bf843c101fcfdd9ccd6c16c4cc28a5a0f489b.body",
+          "present_now": true,
+          "observed_bytes": 22228,
+          "observed_sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/cloudpickle/3.1.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/cloudpickle__3.1.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:13.198392+00:00",
+      "installed_metadata_sha256": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "published_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335,
+      "published_bytes": 25335,
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/1/7/f/b/e17fbb43e51603036658fe03e225cfe5f672c0647477363082e598d4.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/1/7/f/b/e17fbb43e51603036658fe03e225cfe5f672c0647477363082e598d4.body",
+          "present_now": true,
+          "observed_bytes": 25335,
+          "observed_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/colorama/0.4.6/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/colorama__0.4.6.json",
+      "metadata_observed_utc": "2026-10-15T07:38:13.326582+00:00",
+      "installed_metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.1",
+      "filename": "contourpy-1.3.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/e3/d5/28bca491f65312b438fbf076589dcde7f6f966b196d900777f5811b9c4e2/contourpy-1.3.1-cp313-cp313-win_amd64.whl",
+      "sha256": "a7895f46d47671fa7ceec40f31fae721da51ad34bdca0bee83e38870b1f47ffd",
+      "published_sha256": "a7895f46d47671fa7ceec40f31fae721da51ad34bdca0bee83e38870b1f47ffd",
+      "bytes": 220987,
+      "published_bytes": 220987,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/f/6/6/a/7f66a3e42d8db0a0ba94edf5452f3ff0ef1da9924d71646ad6cf76a1.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/f/6/6/a/7f66a3e42d8db0a0ba94edf5452f3ff0ef1da9924d71646ad6cf76a1.body",
+          "present_now": true,
+          "observed_bytes": 220987,
+          "observed_sha256": "a7895f46d47671fa7ceec40f31fae721da51ad34bdca0bee83e38870b1f47ffd",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/contourpy/1.3.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/contourpy__1.3.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:13.656998+00:00",
+      "installed_metadata_sha256": "2d035a7b8abd315370a5f6f41659d30937b6b64c36d8688a1098e992cf67ee39"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "filename": "cycler-0.12.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl",
+      "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+      "published_sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+      "bytes": 8321,
+      "published_bytes": 8321,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/c/6/e/e/6c6eeaf6757edbde690577822daacaba826c2b12ce67b57b33e8021d.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/c/6/e/e/6c6eeaf6757edbde690577822daacaba826c2b12ce67b57b33e8021d.body",
+          "present_now": true,
+          "observed_bytes": 8321,
+          "observed_sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/cycler/0.12.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/cycler__0.12.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:13.818171+00:00",
+      "installed_metadata_sha256": "23289e19b76f1e01394227696e6af2b6cd1ce79e89731209bf9195148b18ed36"
+    },
+    {
+      "name": "donfig",
+      "version": "0.8.1.post1",
+      "filename": "donfig-0.8.1.post1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0c/d5/c5db1ea3394c6e1732fb3286b3bd878b59507a8f77d32a2cebda7d7b7cd4/donfig-0.8.1.post1-py3-none-any.whl",
+      "sha256": "2a3175ce74a06109ff9307d90a230f81215cbac9a751f4d1c6194644b8204f9d",
+      "published_sha256": "2a3175ce74a06109ff9307d90a230f81215cbac9a751f4d1c6194644b8204f9d",
+      "bytes": 21592,
+      "published_bytes": 21592,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/f/a/2/e/2fa2e4e3e97bf8bb8f82ceb73e73b44ec145184c61dac2b5f54a0be6.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/f/a/2/e/2fa2e4e3e97bf8bb8f82ceb73e73b44ec145184c61dac2b5f54a0be6.body",
+          "present_now": true,
+          "observed_bytes": 21592,
+          "observed_sha256": "2a3175ce74a06109ff9307d90a230f81215cbac9a751f4d1c6194644b8204f9d",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/donfig/0.8.1.post1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/donfig__0.8.1.post1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:14.125331+00:00",
+      "installed_metadata_sha256": "30bc9adc723f9e327a2d1aa8302b310365d5e96b7e4493c72c9a69cdecde7748"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2",
+      "filename": "einops-0.8.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+      "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+      "published_sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+      "bytes": 65638,
+      "published_bytes": 65638,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/9/5/9/2/495927c55304e393cc4dd571fb25e73359c69e8def70cb3c1ee30284.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/9/5/9/2/495927c55304e393cc4dd571fb25e73359c69e8def70cb3c1ee30284.body",
+          "present_now": true,
+          "observed_bytes": 65638,
+          "observed_sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/einops/0.8.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/einops__0.8.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:14.256097+00:00",
+      "installed_metadata_sha256": "0bd65db043688a44f4a29608c1cba521c932f7ff76f238bbd869441e15012653"
+    },
+    {
+      "name": "filelock",
+      "version": "3.29.7",
+      "filename": "filelock-3.29.7-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/60/02/be4a57b60c7149b55b9e3b3c13f609cd8eb5307c751f22bd8fb8d262e75b/filelock-3.29.7-py3-none-any.whl",
+      "sha256": "987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51",
+      "published_sha256": "987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51",
+      "bytes": 46036,
+      "published_bytes": 46036,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/f/0/a/f/7f0afe90c68832308a7e58c844580828d7bb4fa314fe770f99704849.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/f/0/a/f/7f0afe90c68832308a7e58c844580828d7bb4fa314fe770f99704849.body",
+          "present_now": true,
+          "observed_bytes": 46036,
+          "observed_sha256": "987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/filelock/3.29.7/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/filelock__3.29.7.json",
+      "metadata_observed_utc": "2026-10-15T07:38:14.556322+00:00",
+      "installed_metadata_sha256": "2750aa12167a970e8524d53cb3ae6670c9ae8894bec9aa8c216a6db15fe1d128"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.56.0",
+      "filename": "fonttools-4.56.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/27/6d/3edda54f98a550a0473f032d8050315fbc8f1b76a0d9f3879b72ebb2cdd6/fonttools-4.56.0-cp313-cp313-win_amd64.whl",
+      "sha256": "62cc1253827d1e500fde9dbe981219fea4eb000fd63402283472d38e7d8aa1c6",
+      "published_sha256": "62cc1253827d1e500fde9dbe981219fea4eb000fd63402283472d38e7d8aa1c6",
+      "bytes": 2186709,
+      "published_bytes": 2186709,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/b/1/e/4/bb1e412678d79219041f1bfdceaa969f2031ad36133cf73fdc6db9a9.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/b/1/e/4/bb1e412678d79219041f1bfdceaa969f2031ad36133cf73fdc6db9a9.body",
+          "present_now": true,
+          "observed_bytes": 2186709,
+          "observed_sha256": "62cc1253827d1e500fde9dbe981219fea4eb000fd63402283472d38e7d8aa1c6",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/fonttools/4.56.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/fonttools__4.56.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:14.910107+00:00",
+      "installed_metadata_sha256": "4d14607e38cc970cd744cbb74c27ff18c1695372a8ec6c93a4ddb3e92e37beef"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "filename": "frozenlist-1.8.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/d8/cf/174c91dbc9cc49bc7b7aab74d8b734e974d1faa8f191c74af9b7e80848e6/frozenlist-1.8.0-cp313-cp313-win_amd64.whl",
+      "sha256": "878be833caa6a3821caf85eb39c5ba92d28e85df26d57afb06b35b2efd937231",
+      "published_sha256": "878be833caa6a3821caf85eb39c5ba92d28e85df26d57afb06b35b2efd937231",
+      "bytes": 43882,
+      "published_bytes": 43882,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/0/5/b/a/505ba0fb2285d0154b33643cf04387f31a435860e6072f0c20e31c28.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/0/5/b/a/505ba0fb2285d0154b33643cf04387f31a435860e6072f0c20e31c28.body",
+          "present_now": true,
+          "observed_bytes": 43882,
+          "observed_sha256": "878be833caa6a3821caf85eb39c5ba92d28e85df26d57afb06b35b2efd937231",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/frozenlist/1.8.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/frozenlist__1.8.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:15.069315+00:00",
+      "installed_metadata_sha256": "4278aeb3d18f1f8b7e6af5b6771ba9a8f327012a42d64509f9d4087b55f71a94"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "filename": "fsspec-2026.9.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl",
+      "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+      "published_sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+      "bytes": 221738,
+      "published_bytes": 221738,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/f/e/4/e/efe4e1b5eb92732b04ca34dd66a4ffb8ad986d1ba410b612480cd718.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/f/e/4/e/efe4e1b5eb92732b04ca34dd66a4ffb8ad986d1ba410b612480cd718.body",
+          "present_now": true,
+          "observed_bytes": 221738,
+          "observed_sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/fsspec/2026.9.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/fsspec__2026.9.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:15.214418+00:00",
+      "installed_metadata_sha256": "68f5a262767510638e9b1933b1493f2baadc9616fe1e696f62aedd59c8c0a37c"
+    },
+    {
+      "name": "gitdb",
+      "version": "4.0.12",
+      "filename": "gitdb-4.0.12-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a0/61/5c78b91c3143ed5c14207f463aecfc8f9dbb5092fb2869baf37c273b2705/gitdb-4.0.12-py3-none-any.whl",
+      "sha256": "67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf",
+      "published_sha256": "67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf",
+      "bytes": 62794,
+      "published_bytes": 62794,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/c/a/3/b/d/ca3bdcf721b809a008d17825f06b6e2c28bd97b5e2bb8f3f91d9c1ab.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/c/a/3/b/d/ca3bdcf721b809a008d17825f06b6e2c28bd97b5e2bb8f3f91d9c1ab.body",
+          "present_now": true,
+          "observed_bytes": 62794,
+          "observed_sha256": "67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/gitdb/4.0.12/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/gitdb__4.0.12.json",
+      "metadata_observed_utc": "2026-10-15T07:38:15.337204+00:00",
+      "installed_metadata_sha256": "9670d2dc866039d6b7c91f52cd81c7f224cd7467f7685c7c29e6c4691d1bf3d9"
+    },
+    {
+      "name": "gitpython",
+      "version": "3.1.54",
+      "filename": "gitpython-3.1.54-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d1/b9/876f442a28df5c068ca69b0122d5c35e65fd2d2fa9992ea5cb5944ea00a6/gitpython-3.1.54-py3-none-any.whl",
+      "sha256": "b90d7b3d9bc0238681d24369130826f0dcdb0ceaa45db67cf1d4ffa4c302dedf",
+      "published_sha256": "b90d7b3d9bc0238681d24369130826f0dcdb0ceaa45db67cf1d4ffa4c302dedf",
+      "bytes": 216575,
+      "published_bytes": 216575,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/9/9/6/4/799646cb8422c6c66869a571dd20efb47741700c7acd70ca12348869.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/9/9/6/4/799646cb8422c6c66869a571dd20efb47741700c7acd70ca12348869.body",
+          "present_now": true,
+          "observed_bytes": 216575,
+          "observed_sha256": "b90d7b3d9bc0238681d24369130826f0dcdb0ceaa45db67cf1d4ffa4c302dedf",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/gitpython/3.1.54/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/gitpython__3.1.54.json",
+      "metadata_observed_utc": "2026-10-15T07:38:15.683089+00:00",
+      "installed_metadata_sha256": "db9d7bcc20e1462cb495e2dcd1dba35bae24983fa2d809f965aea331d12a1615"
+    },
+    {
+      "name": "google-crc32c",
+      "version": "1.9.0",
+      "filename": "google_crc32c-1.9.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/87/34/165542bfa99dfef91a76471cc48cce74b8ff4e295722896087ab2b8e8611/google_crc32c-1.9.0-cp313-cp313-win_amd64.whl",
+      "sha256": "8583ec21d56b565d68ab2963cc7e21b3b271247c29b04286068255ef65f221bd",
+      "published_sha256": "8583ec21d56b565d68ab2963cc7e21b3b271247c29b04286068255ef65f221bd",
+      "bytes": 35090,
+      "published_bytes": 35090,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/5/1/f/9/251f9c56355aa3ccc2b5fc58cc5ec6cf9fcde3c700dcf57c5b4e323d.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/5/1/f/9/251f9c56355aa3ccc2b5fc58cc5ec6cf9fcde3c700dcf57c5b4e323d.body",
+          "present_now": true,
+          "observed_bytes": 35090,
+          "observed_sha256": "8583ec21d56b565d68ab2963cc7e21b3b271247c29b04286068255ef65f221bd",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/google-crc32c/1.9.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/google-crc32c__1.9.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.023876+00:00",
+      "installed_metadata_sha256": "217ad5abb5f667431d57bf33e557fd665ba0ea4377f89ddccf10b86a1e37dcce"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "filename": "h11-0.16.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "published_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "bytes": 37515,
+      "published_bytes": 37515,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/0/e/f/1/30ef132248ab98ab0a92d2d15ee6957bdad5542ffbb630d3a32f7721.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/0/e/f/1/30ef132248ab98ab0a92d2d15ee6957bdad5542ffbb630d3a32f7721.body",
+          "present_now": true,
+          "observed_bytes": 37515,
+          "observed_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/h11/0.16.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/h11__0.16.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.197587+00:00",
+      "installed_metadata_sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64"
+    },
+    {
+      "name": "h5py",
+      "version": "3.16.0",
+      "filename": "h5py-3.16.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/c3/d9/a27997f84341fc0dfcdd1fe4179b6ba6c32a7aa880fdb8c514d4dad6fba3/h5py-3.16.0-cp313-cp313-win_amd64.whl",
+      "sha256": "18f2bbcd545e6991412253b98727374c356d67caa920e68dc79eab36bf5fedad",
+      "published_sha256": "18f2bbcd545e6991412253b98727374c356d67caa920e68dc79eab36bf5fedad",
+      "bytes": 3175509,
+      "published_bytes": 3175509,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/3/8/7/2/b387268c2660026f87efbba30c37ee5e058a563298ed6aa08cbb600c.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/3/8/7/2/b387268c2660026f87efbba30c37ee5e058a563298ed6aa08cbb600c.body",
+          "present_now": true,
+          "observed_bytes": 3175509,
+          "observed_sha256": "18f2bbcd545e6991412253b98727374c356d67caa920e68dc79eab36bf5fedad",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/h5py/3.16.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/h5py__3.16.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.326084+00:00",
+      "installed_metadata_sha256": "28e9000a32bbaab84498f77d04dd7690ac061459e2fb17e01509d0020672e0bc"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.5.1",
+      "filename": "hf_xet-1.5.1-cp37-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/6d/b6/20f99cfe97cc663a711f7b33cc21d4793e51968e9a26125b4afcd77315ba/hf_xet-1.5.1-cp37-abi3-win_amd64.whl",
+      "sha256": "f7b3002f95d1c13e24bcb4537baa8f0eb3838957067c91bb4959bc004a6435f5",
+      "published_sha256": "f7b3002f95d1c13e24bcb4537baa8f0eb3838957067c91bb4959bc004a6435f5",
+      "bytes": 4026419,
+      "published_bytes": 4026419,
+      "wheel_tags": [
+        "cp37-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp37-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/d/a/5/a/5/da5a5fa99aed45bb83778618f8579a95b516c21b03d298db2680f1d9.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/d/a/5/a/5/da5a5fa99aed45bb83778618f8579a95b516c21b03d298db2680f1d9.body",
+          "present_now": true,
+          "observed_bytes": 4026419,
+          "observed_sha256": "f7b3002f95d1c13e24bcb4537baa8f0eb3838957067c91bb4959bc004a6435f5",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/hf-xet/1.5.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/hf-xet__1.5.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.663749+00:00",
+      "installed_metadata_sha256": "b13d271d0b21bd03087e270c919923dd3dc7cef14147e960f4fd7228fc1e9b05"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "filename": "httpcore-1.0.9-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "published_sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "bytes": 78784,
+      "published_bytes": 78784,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/6/0/d/3/160d3e8f69a7eca4743b16bea3eecb80155f94e8435ce6481997004c.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/6/0/d/3/160d3e8f69a7eca4743b16bea3eecb80155f94e8435ce6481997004c.body",
+          "present_now": true,
+          "observed_bytes": 78784,
+          "observed_sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/httpcore/1.0.9/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/httpcore__1.0.9.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.827426+00:00",
+      "installed_metadata_sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "filename": "httpx-0.28.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "published_sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "bytes": 73517,
+      "published_bytes": 73517,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/4/a/a/f/14aaf7643dce3f389cfaa2f24beba9e2d02071e4624c02c288b2a440.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/4/a/a/f/14aaf7643dce3f389cfaa2f24beba9e2d02071e4624c02c288b2a440.body",
+          "present_now": true,
+          "observed_bytes": 73517,
+          "observed_sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/httpx/0.28.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/httpx__0.28.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:16.961732+00:00",
+      "installed_metadata_sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "1.23.0",
+      "filename": "huggingface_hub-1.23.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f1/ce/13b2ba57838b8db1e6bd033c1b21ce0b9f6153b87d4e4939f77074e41eb0/huggingface_hub-1.23.0-py3-none-any.whl",
+      "sha256": "b1d604788f5adc7f0eb246e03e0ec19011ca06e38400218c347dccc3dffa64a2",
+      "published_sha256": "b1d604788f5adc7f0eb246e03e0ec19011ca06e38400218c347dccc3dffa64a2",
+      "bytes": 770336,
+      "published_bytes": 770336,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10.0",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/0/b/2/2/60b2205c0408aff6d26173f5f77acfd20db9d1245962a6047f7709ed.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/0/b/2/2/60b2205c0408aff6d26173f5f77acfd20db9d1245962a6047f7709ed.body",
+          "present_now": true,
+          "observed_bytes": 770336,
+          "observed_sha256": "b1d604788f5adc7f0eb246e03e0ec19011ca06e38400218c347dccc3dffa64a2",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/huggingface-hub/1.23.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/huggingface-hub__1.23.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:17.282804+00:00",
+      "installed_metadata_sha256": "0f41e59f14feea57ba3ffb9ba7e9dfa03c50ea61e6af91f558cf6d2aeeaf3747"
+    },
+    {
+      "name": "hydra-core",
+      "version": "1.3.7",
+      "filename": "hydra_core-1.3.7-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/25/0c/21890c10cc94da917c8e47efc1c55cd3e56a1d25ab5947bdd35abaf9fdc1/hydra_core-1.3.7-py3-none-any.whl",
+      "sha256": "83606c4a05c770f1e026e0489875f28989829d151799eabd8cfa8cbe82164515",
+      "published_sha256": "83606c4a05c770f1e026e0489875f28989829d151799eabd8cfa8cbe82164515",
+      "bytes": 168790,
+      "published_bytes": 168790,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": null,
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/7/0/4/0/170409cf840629469a998a230ce7979853f7217fa0dd2bc322af88a3.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/7/0/4/0/170409cf840629469a998a230ce7979853f7217fa0dd2bc322af88a3.body",
+          "present_now": true,
+          "observed_bytes": 168790,
+          "observed_sha256": "83606c4a05c770f1e026e0489875f28989829d151799eabd8cfa8cbe82164515",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/hydra-core/1.3.7/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/hydra-core__1.3.7.json",
+      "metadata_observed_utc": "2026-10-15T07:38:17.613791+00:00",
+      "installed_metadata_sha256": "4cfccd8210edb3ae4cce8f88a9216bd2829f7e5b53db2fa6e5840cc5d1acf8a9"
+    },
+    {
+      "name": "idna",
+      "version": "3.18",
+      "filename": "idna-3.18-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
+      "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+      "published_sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+      "bytes": 65455,
+      "published_bytes": 65455,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/e/d/5/5/1ed556defd2a8ab2cc731547ac075b6d45780b497beca6fbad1e4b42.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/e/d/5/5/1ed556defd2a8ab2cc731547ac075b6d45780b497beca6fbad1e4b42.body",
+          "present_now": true,
+          "observed_bytes": 65455,
+          "observed_sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/idna/3.18/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/idna__3.18.json",
+      "metadata_observed_utc": "2026-10-15T07:38:17.762708+00:00",
+      "installed_metadata_sha256": "46dfe6e5ac462d0f680ecd9abcf66e829b6a2334824b4d9e3979b31135caf281"
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "9.0.1",
+      "filename": "importlib_metadata-9.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b3/55/ecca97ae19075f1fac62def77731e7f535e6c1fb8f92ff08160c5e6dade8/importlib_metadata-9.0.1-py3-none-any.whl",
+      "sha256": "bba5600596a7e21f3eef53281cf28d6a5195634d2f2b78ff9501a3272c6eaab0",
+      "published_sha256": "bba5600596a7e21f3eef53281cf28d6a5195634d2f2b78ff9501a3272c6eaab0",
+      "bytes": 27920,
+      "published_bytes": 27920,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/a/8/d/0/1a8d0b264fd3b1db3a362393d09540ca641daced3821d501de8f0939.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/a/8/d/0/1a8d0b264fd3b1db3a362393d09540ca641daced3821d501de8f0939.body",
+          "present_now": true,
+          "observed_bytes": 27920,
+          "observed_sha256": "bba5600596a7e21f3eef53281cf28d6a5195634d2f2b78ff9501a3272c6eaab0",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/importlib-metadata/9.0.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/importlib-metadata__9.0.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:17.899457+00:00",
+      "installed_metadata_sha256": "1a90ba399de022d3528ad996c7a8593422207ccb13d27f062ad005f509e11500"
+    },
+    {
+      "name": "jaxtyping",
+      "version": "0.3.11",
+      "filename": "jaxtyping-0.3.11-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/8b/38/c66bbdc5047f4776c2bd3e47e5295a350e3fa44d5b8942105e71c2a876a0/jaxtyping-0.3.11-py3-none-any.whl",
+      "sha256": "8a4bedc4e3f963fa82df41bd13c7ebc2bad925601eb48614c65798f21329d4e3",
+      "published_sha256": "8a4bedc4e3f963fa82df41bd13c7ebc2bad925601eb48614c65798f21329d4e3",
+      "bytes": 56593,
+      "published_bytes": 56593,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.11",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/b/4/a/3/6b4a3fde3fbad4cb602409334ba95a29ec5bfc69b85521fc7badef3d.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/b/4/a/3/6b4a3fde3fbad4cb602409334ba95a29ec5bfc69b85521fc7badef3d.body",
+          "present_now": true,
+          "observed_bytes": 56593,
+          "observed_sha256": "8a4bedc4e3f963fa82df41bd13c7ebc2bad925601eb48614c65798f21329d4e3",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/jaxtyping/0.3.11/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/jaxtyping__0.3.11.json",
+      "metadata_observed_utc": "2026-10-15T07:38:18.204824+00:00",
+      "installed_metadata_sha256": "204f677c3418d00fdab75a3fdd24400e52624f17e5f273e42fd3b81ac9348cc8"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "filename": "jinja2-3.1.6-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "published_sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "bytes": 134899,
+      "published_bytes": 134899,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body",
+          "present_now": true,
+          "observed_bytes": 134899,
+          "observed_sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/jinja2/3.1.6/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/jinja2__3.1.6.json",
+      "metadata_observed_utc": "2026-10-15T07:38:18.352982+00:00",
+      "installed_metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8"
+    },
+    {
+      "name": "jmespath",
+      "version": "1.1.0",
+      "filename": "jmespath-1.1.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+      "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+      "published_sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+      "bytes": 20419,
+      "published_bytes": 20419,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/6/5/1/3/765132f09b001a4943b610a08a7b561061b0fa75d9b14c6eceb02592.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/6/5/1/3/765132f09b001a4943b610a08a7b561061b0fa75d9b14c6eceb02592.body",
+          "present_now": true,
+          "observed_bytes": 20419,
+          "observed_sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/jmespath/1.1.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/jmespath__1.1.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:18.506615+00:00",
+      "installed_metadata_sha256": "81181e9a312f1b87e5be7c8376c57b0e8c962ba524a25a313d43dc2e2d3984f3"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.4.8",
+      "filename": "kiwisolver-1.4.8-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/d0/dc/c1abe38c37c071d0fc71c9a474fd0b9ede05d42f5a458d584619cfd2371a/kiwisolver-1.4.8-cp313-cp313-win_amd64.whl",
+      "sha256": "a17b7c4f5b2c51bb68ed379defd608a03954a1845dfed7cc0117f1cc8a9b7fd2",
+      "published_sha256": "a17b7c4f5b2c51bb68ed379defd608a03954a1845dfed7cc0117f1cc8a9b7fd2",
+      "bytes": 71855,
+      "published_bytes": 71855,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/b/4/f/6/7b4f6f842f7f2a546bd2069953f3593e7d3bc08a99df856b48bd71d6.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/b/4/f/6/7b4f6f842f7f2a546bd2069953f3593e7d3bc08a99df856b48bd71d6.body",
+          "present_now": true,
+          "observed_bytes": 71855,
+          "observed_sha256": "a17b7c4f5b2c51bb68ed379defd608a03954a1845dfed7cc0117f1cc8a9b7fd2",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/kiwisolver/1.4.8/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/kiwisolver__1.4.8.json",
+      "metadata_observed_utc": "2026-10-15T07:38:18.843134+00:00",
+      "installed_metadata_sha256": "04c83478af637733f38c719c93823c408b9c82cce7153a3a7d37ab514d0dfa78"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "filename": "markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/05/73/c4abe620b841b6b791f2edc248f556900667a5a1cf023a6646967ae98335/markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+      "sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5",
+      "published_sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5",
+      "bytes": 15113,
+      "published_bytes": 15113,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/c/8/e/5/9c8e526eb1d13ea5764d8042f5918709c3d27a639f1aad019b231c0a.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/c/8/e/5/9c8e526eb1d13ea5764d8042f5918709c3d27a639f1aad019b231c0a.body",
+          "present_now": true,
+          "observed_bytes": 15113,
+          "observed_sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/markupsafe/3.0.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/markupsafe__3.0.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:18.997647+00:00",
+      "installed_metadata_sha256": "f0ae5dbb09d50fb5f7632c3d53f0220995ef76019e5892e0a545740136a4e3cb"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.1",
+      "filename": "matplotlib-3.10.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/89/06/f570373d24d93503988ba8d04f213a372fa1ce48381c5eb15da985728498/matplotlib-3.10.1-cp313-cp313-win_amd64.whl",
+      "sha256": "8e8e25b1209161d20dfe93037c8a7f7ca796ec9aa326e6e4588d8c4a5dd1e473",
+      "published_sha256": "8e8e25b1209161d20dfe93037c8a7f7ca796ec9aa326e6e4588d8c4a5dd1e473",
+      "bytes": 8063812,
+      "published_bytes": 8063812,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/1/5/1/3/81513e85fbf63a9dea110a9d0a3d9f597a2df49505a78d14ea942d4a.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/1/5/1/3/81513e85fbf63a9dea110a9d0a3d9f597a2df49505a78d14ea942d4a.body",
+          "present_now": true,
+          "observed_bytes": 8063812,
+          "observed_sha256": "8e8e25b1209161d20dfe93037c8a7f7ca796ec9aa326e6e4588d8c4a5dd1e473",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/matplotlib/3.10.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/matplotlib__3.10.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:19.175193+00:00",
+      "installed_metadata_sha256": "9215a0d63794d5a50666253ebf9a953157e090abd2c4399f94677500b15283ba"
+    },
+    {
+      "name": "ml-dtypes",
+      "version": "0.6.0",
+      "filename": "ml_dtypes-0.6.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/e2/55/4561acefa00fa4bcbfb82ca6a48578b41f372cd7dd7cdd6eb4720abc2e5f/ml_dtypes-0.6.0-cp313-cp313-win_amd64.whl",
+      "sha256": "fb87f46b4f7ad7b5d3ad8f4b452b024bd4229d44c8ff934798c1fe656210387a",
+      "published_sha256": "fb87f46b4f7ad7b5d3ad8f4b452b024bd4229d44c8ff934798c1fe656210387a",
+      "bytes": 439357,
+      "published_bytes": 439357,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/7/0/4/0/e7040d7cf7124ceb5488b81d7bb3da6f246b0cdcac66a54cd9c7eaf7.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/7/0/4/0/e7040d7cf7124ceb5488b81d7bb3da6f246b0cdcac66a54cd9c7eaf7.body",
+          "present_now": true,
+          "observed_bytes": 439357,
+          "observed_sha256": "fb87f46b4f7ad7b5d3ad8f4b452b024bd4229d44c8ff934798c1fe656210387a",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/ml-dtypes/0.6.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/ml-dtypes__0.6.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:19.530389+00:00",
+      "installed_metadata_sha256": "363d582174259be78c619e314216fc8979e5a5ec245337ee236b244945df3f01"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "filename": "mpmath-1.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "published_sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "bytes": 536198,
+      "published_bytes": 536198,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": null,
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/d/2/3/a/3d23a5ad548471fdadffd54fe2363185ef4648db7c0bf11d16c83f16.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/d/2/3/a/3d23a5ad548471fdadffd54fe2363185ef4648db7c0bf11d16c83f16.body",
+          "present_now": true,
+          "observed_bytes": 536198,
+          "observed_sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/mpmath/1.3.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/mpmath__1.3.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:19.669378+00:00",
+      "installed_metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406"
+    },
+    {
+      "name": "msgspec",
+      "version": "0.22.0",
+      "filename": "msgspec-0.22.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/01/33/e591f9d3d8d6c9cfc02ae95f3e3c44920f2d18050f3f252c244e0f293a0e/msgspec-0.22.0-cp313-cp313-win_amd64.whl",
+      "sha256": "0739b068f31f2004a364f97679ba91f2f5ecd6ec2a5b4b890188ab5c57d20672",
+      "published_sha256": "0739b068f31f2004a364f97679ba91f2f5ecd6ec2a5b4b890188ab5c57d20672",
+      "bytes": 192829,
+      "published_bytes": 192829,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/9/2/6/e/f926e3fc2263d3d53bb9ab27e845d6dcc4bbc1a6e6b1aa9b15bf11e1.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/9/2/6/e/f926e3fc2263d3d53bb9ab27e845d6dcc4bbc1a6e6b1aa9b15bf11e1.body",
+          "present_now": true,
+          "observed_bytes": 192829,
+          "observed_sha256": "0739b068f31f2004a364f97679ba91f2f5ecd6ec2a5b4b890188ab5c57d20672",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/msgspec/0.22.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/msgspec__0.22.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:20.030508+00:00",
+      "installed_metadata_sha256": "81ef03a70570fbb607d1f9458df3d51baeaac3ef3fb597b027adbd343305e24e"
+    },
+    {
+      "name": "multidict",
+      "version": "6.9.1",
+      "filename": "multidict-6.9.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/be/78/1bac2987edac273a6b27fa50e9204bc3466c94a7b4f6a44828d730f8810f/multidict-6.9.1-cp313-cp313-win_amd64.whl",
+      "sha256": "ac51cd64bae51c462ea58ad2492c9b8209667a4ef60c45c4a304518b67598d5d",
+      "published_sha256": "ac51cd64bae51c462ea58ad2492c9b8209667a4ef60c45c4a304518b67598d5d",
+      "bytes": 59449,
+      "published_bytes": 59449,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/1/7/5/8/91758d767f406c636b2f3ff9f4966a6669a0762619549d1928fe7857.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/1/7/5/8/91758d767f406c636b2f3ff9f4966a6669a0762619549d1928fe7857.body",
+          "present_now": true,
+          "observed_bytes": 59449,
+          "observed_sha256": "ac51cd64bae51c462ea58ad2492c9b8209667a4ef60c45c4a304518b67598d5d",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/multidict/6.9.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/multidict__6.9.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:20.403116+00:00",
+      "installed_metadata_sha256": "2a63ea04eaf3fbf1e14b508dd89eb2c2abc6bc98c7d6468f6868864b3b4fee25"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "filename": "networkx-3.6.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+      "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+      "published_sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+      "bytes": 2068504,
+      "published_bytes": 2068504,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": "!=3.14.1,>=3.11",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/8/f/e/f/88fefe607c974c182ed7b0b3b2045547f93fed9af9d75d745b867a87.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/8/f/e/f/88fefe607c974c182ed7b0b3b2045547f93fed9af9d75d745b867a87.body",
+          "present_now": true,
+          "observed_bytes": 2068504,
+          "observed_sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/networkx/3.6.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/networkx__3.6.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:20.540149+00:00",
+      "installed_metadata_sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a"
+    },
+    {
+      "name": "numcodecs",
+      "version": "0.17.0",
+      "filename": "numcodecs-0.17.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/5c/ec/47515bea31725376aa6f061c335326cc7437f863ab704b8e167e80734bfd/numcodecs-0.17.0-cp313-cp313-win_amd64.whl",
+      "sha256": "a854e9c89f58eeeb2453f3c1637d1916797edb6eaff26bc186a6cdb09d187092",
+      "published_sha256": "a854e9c89f58eeeb2453f3c1637d1916797edb6eaff26bc186a6cdb09d187092",
+      "bytes": 1492769,
+      "published_bytes": 1492769,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.12",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/7/e/e/7/77ee72f59dd0f2af02d60e63e5a409e6f1b78d9fc079fa131d07a46c.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/7/e/e/7/77ee72f59dd0f2af02d60e63e5a409e6f1b78d9fc079fa131d07a46c.body",
+          "present_now": true,
+          "observed_bytes": 1492769,
+          "observed_sha256": "a854e9c89f58eeeb2453f3c1637d1916797edb6eaff26bc186a6cdb09d187092",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/numcodecs/0.17.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/numcodecs__0.17.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:20.888588+00:00",
+      "installed_metadata_sha256": "8fdb798d7f061980854b0b9b3c37342c055e34eb2e9ef066df8a0971d607c6ab"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.2",
+      "filename": "numpy-2.5.2-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/15/20/f3489f86d81ea460b2bcdceaed094142ca6579f6be0ec527b781d39afe68/numpy-2.5.2-cp313-cp313-win_amd64.whl",
+      "sha256": "85aaccb24182c25df891ad0ec333585967e115269d5f1b17f2c9ae005bc96657",
+      "published_sha256": "85aaccb24182c25df891ad0ec333585967e115269d5f1b17f2c9ae005bc96657",
+      "bytes": 12460532,
+      "published_bytes": 12460532,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.12",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/5/f/5/f/45f5f1f67a7d8749bad957ac850e2ffb04a9f5bba481e29d501aceeb.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/5/f/5/f/45f5f1f67a7d8749bad957ac850e2ffb04a9f5bba481e29d501aceeb.body",
+          "present_now": true,
+          "observed_bytes": 12460532,
+          "observed_sha256": "85aaccb24182c25df891ad0ec333585967e115269d5f1b17f2c9ae005bc96657",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/numpy/2.5.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/numpy__2.5.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:21.048113+00:00",
+      "installed_metadata_sha256": "9a895d801184d2176f926af84eb47f2db1af2756afac99d64a2bf482d5d5e024"
+    },
+    {
+      "filename": "nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "bytes": 2942045,
+      "sha256": "c447771384d92f5c31547e293f65b70e0947f8829981f34c7e8300daf1b8d2eb",
+      "url": "https://files.pythonhosted.org/packages/5d/22/1750a9651df15d81440f4a5ad7a7610c3f8cdbe7fd69245a9879b72da8b3/nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "url_evidence": "outputs/experiment/pip-physicsnemo.log:26,36",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/5/3/9/d/9539db41fd237aca378f99a587f85c4608c282b947f112399447f575.body",
+      "name": "nvidia-physicsnemo",
+      "version": "2.2.2",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "source_kind": "known_exact_official_source",
+      "published_sha256": "c447771384d92f5c31547e293f65b70e0947f8829981f34c7e8300daf1b8d2eb",
+      "fresh_pypi_file_match": true,
+      "published_bytes": 2942045,
+      "fresh_pypi_url": "https://files.pythonhosted.org/packages/5d/22/1750a9651df15d81440f4a5ad7a7610c3f8cdbe7fd69245a9879b72da8b3/nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "hash_source": "Exact-version official PyPI JSON digest agrees with recorded wheel",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/5/3/9/d/9539db41fd237aca378f99a587f85c4608c282b947f112399447f575.body",
+          "present_now": true,
+          "observed_bytes": 2942045,
+          "observed_sha256": "c447771384d92f5c31547e293f65b70e0947f8829981f34c7e8300daf1b8d2eb",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/nvidia-physicsnemo/2.2.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/nvidia-physicsnemo__2.2.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:21.412694+00:00",
+      "installed_metadata_sha256": "7abcccb6a5d3fd890eeba8c5e344b5a4343d3fb4e2f04b232651dd98860ae2a4"
+    },
+    {
+      "name": "nvtx",
+      "version": "0.2.16",
+      "filename": "nvtx-0.2.16-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/58/f7/ee312f604f8d2af81521b12be4a54125522f64ea587254ffc2ced28b5493/nvtx-0.2.16-cp313-cp313-win_amd64.whl",
+      "sha256": "92a6ba76504967d5686f3c02bb980af22567ad2d58f50c934fc49f0799f5193e",
+      "published_sha256": "92a6ba76504967d5686f3c02bb980af22567ad2d58f50c934fc49f0799f5193e",
+      "bytes": 397215,
+      "published_bytes": 397215,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/8/8/1/6/78816627aa8f0adb6af3ce8aea1ba0a89f7437fc90113e8264c754f8.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/8/8/1/6/78816627aa8f0adb6af3ce8aea1ba0a89f7437fc90113e8264c754f8.body",
+          "present_now": true,
+          "observed_bytes": 397215,
+          "observed_sha256": "92a6ba76504967d5686f3c02bb980af22567ad2d58f50c934fc49f0799f5193e",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/nvtx/0.2.16/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/nvtx__0.2.16.json",
+      "metadata_observed_utc": "2026-10-15T07:38:21.724235+00:00",
+      "installed_metadata_sha256": "ff188bec2949874563362f0d37b1f38013906569b30bb821d9178ce5ea2eaa31"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.1",
+      "filename": "omegaconf-2.3.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a4/0e/152509871bf30df6fc38569f52a2db9b55dd41aae957adae50a053ac7778/omegaconf-2.3.1-py3-none-any.whl",
+      "sha256": "3d701d14e9a8828f1edd28bb70b725908b34277cdd72cf7d6a83f94dadc6b6a0",
+      "published_sha256": "3d701d14e9a8828f1edd28bb70b725908b34277cdd72cf7d6a83f94dadc6b6a0",
+      "bytes": 79502,
+      "published_bytes": 79502,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.6",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/5/d/5/c/e5d5c716c9cb7852bf0492d5671ab5d268aec6ce07b8d48d4af45b22.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/5/d/5/c/e5d5c716c9cb7852bf0492d5671ab5d268aec6ce07b8d48d4af45b22.body",
+          "present_now": true,
+          "observed_bytes": 79502,
+          "observed_sha256": "3d701d14e9a8828f1edd28bb70b725908b34277cdd72cf7d6a83f94dadc6b6a0",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/omegaconf/2.3.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/omegaconf__2.3.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:22.050545+00:00",
+      "installed_metadata_sha256": "24dc07ea1b801810c63c386cc47376727a774cce4493bfddf6454fe8335eb84e"
+    },
+    {
+      "name": "onnx",
+      "version": "1.23.2",
+      "filename": "onnx-1.23.2-cp312-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/38/ce/102fd4a0b2a6d111a9c86745e084c4c68c0ee020eaa359a03a8d43e4646f/onnx-1.23.2-cp312-abi3-win_amd64.whl",
+      "sha256": "9b382ba898a7c142a0801d03cf04ecabced96c1543c7b643a86f0928143802de",
+      "published_sha256": "9b382ba898a7c142a0801d03cf04ecabced96c1543c7b643a86f0928143802de",
+      "bytes": 7872489,
+      "published_bytes": 7872489,
+      "wheel_tags": [
+        "cp312-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp312-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/d/c/6/1/6dc618fa7497bd0acf452b9dd76554c6ff0624236cb17cf11fcd1b63.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/d/c/6/1/6dc618fa7497bd0acf452b9dd76554c6ff0624236cb17cf11fcd1b63.body",
+          "present_now": true,
+          "observed_bytes": 7872489,
+          "observed_sha256": "9b382ba898a7c142a0801d03cf04ecabced96c1543c7b643a86f0928143802de",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/onnx/1.23.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/onnx__1.23.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:22.422413+00:00",
+      "installed_metadata_sha256": "65823abddbbfc93f52ed50f41a80f705eff466f3068d1709babdbb37303544b9"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "filename": "packaging-26.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "published_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "bytes": 129956,
+      "published_bytes": 129956,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/1/1/9/0/b11909f451f61fb29636217082b1c638b177c59eac335e0200a136e6.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/b/1/1/9/0/b11909f451f61fb29636217082b1c638b177c59eac335e0200a136e6.body",
+          "present_now": true,
+          "observed_bytes": 129956,
+          "observed_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/packaging/26.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/packaging__26.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:22.865087+00:00",
+      "installed_metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.3",
+      "filename": "pandas-2.2.3-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/3b/bc/4b18e2b8c002572c5a441a64826252ce5da2aa738855747247a971988043/pandas-2.2.3-cp313-cp313-win_amd64.whl",
+      "sha256": "61c5ad4043f791b61dd4752191d9f07f0ae412515d59ba8f005832a532f8736d",
+      "published_sha256": "61c5ad4043f791b61dd4752191d9f07f0ae412515d59ba8f005832a532f8736d",
+      "bytes": 11481175,
+      "published_bytes": 11481175,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/2/b/6/5/82b65a5edf0dd8b4a45b1a2d52865ceb2d8828d497bcfa736d34c5b5.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/2/b/6/5/82b65a5edf0dd8b4a45b1a2d52865ceb2d8828d497bcfa736d34c5b5.body",
+          "present_now": true,
+          "observed_bytes": 11481175,
+          "observed_sha256": "61c5ad4043f791b61dd4752191d9f07f0ae412515d59ba8f005832a532f8736d",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pandas/2.2.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pandas__2.2.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:23.243358+00:00",
+      "installed_metadata_sha256": "f7026b9d554dd54f0002d6888e2ffa8f54b0f98f6d14001cee05c95e38072af7"
+    },
+    {
+      "name": "pillow",
+      "version": "11.1.0",
+      "filename": "pillow-11.1.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/3b/ad/285c556747d34c399f332ba7c1a595ba245796ef3e22eae190f5364bb62b/pillow-11.1.0-cp313-cp313-win_amd64.whl",
+      "sha256": "593c5fd6be85da83656b93ffcccc2312d2d149d251e98588b14fbc288fd8909c",
+      "published_sha256": "593c5fd6be85da83656b93ffcccc2312d2d149d251e98588b14fbc288fd8909c",
+      "bytes": 2626304,
+      "published_bytes": 2626304,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/e/9/1/1/ee9111246f614007df94758866231249fc4e26327c7ecccaa681363e.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/e/9/1/1/ee9111246f614007df94758866231249fc4e26327c7ecccaa681363e.body",
+          "present_now": true,
+          "observed_bytes": 2626304,
+          "observed_sha256": "593c5fd6be85da83656b93ffcccc2312d2d149d251e98588b14fbc288fd8909c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pillow/11.1.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pillow__11.1.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:23.736547+00:00",
+      "installed_metadata_sha256": "b182b658b9602e3eee37d0cab224bddfe33d0ae3874a2a209a4567be0739e80c"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4",
+      "filename": "propcache-0.5.4-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/01/bc/e0a7b84af04ec02d73a48aa71f091e1e4a2107e3074b7ce12195b66901f4/propcache-0.5.4-cp313-cp313-win_amd64.whl",
+      "sha256": "0c889f6fa84957bc7e8b4eab71fd16a0455068d5045e3aa40c733071d2b2fd77",
+      "published_sha256": "0c889f6fa84957bc7e8b4eab71fd16a0455068d5045e3aa40c733071d2b2fd77",
+      "bytes": 45342,
+      "published_bytes": 45342,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/f/9/b/7/0f9b71cbdc0270f071d3508b3104d13275ebd72c7ee75c0f209ad993.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/f/9/b/7/0f9b71cbdc0270f071d3508b3104d13275ebd72c7ee75c0f209ad993.body",
+          "present_now": true,
+          "observed_bytes": 45342,
+          "observed_sha256": "0c889f6fa84957bc7e8b4eab71fd16a0455068d5045e3aa40c733071d2b2fd77",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/propcache/0.5.4/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/propcache__0.5.4.json",
+      "metadata_observed_utc": "2026-10-15T07:38:24.034063+00:00",
+      "installed_metadata_sha256": "30f8056d018d2771659b9389094ab2fbee28840e8ccf67ba2179effd2f588383"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.34.1",
+      "filename": "protobuf-7.34.1-cp310-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/4d/87/cb5e585192a22b8bd457df5a2c16a75ea0db9674c3a0a39fc9347d84e075/protobuf-7.34.1-cp310-abi3-win_amd64.whl",
+      "sha256": "e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c",
+      "published_sha256": "e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c",
+      "bytes": 437901,
+      "published_bytes": 437901,
+      "wheel_tags": [
+        "cp310-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp310-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/f/8/8/b/3f88b3da1e4e69a0e349741d88ea250b623ee18853e026c098850f60.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/f/8/8/b/3f88b3da1e4e69a0e349741d88ea250b623ee18853e026c098850f60.body",
+          "present_now": true,
+          "observed_bytes": 437901,
+          "observed_sha256": "e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/protobuf/7.34.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/protobuf__7.34.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:24.409010+00:00",
+      "installed_metadata_sha256": "39712f65d7f7998bd05e15b6cab69e7aa3f7b97ac192d94554565748d7f3315e"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "filename": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad92351a7/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+      "published_sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+      "bytes": 137737,
+      "published_bytes": 137737,
+      "wheel_tags": [
+        "cp37-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp37-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.6",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/e/b/b/3/febb3f4baa1e932bd4c408e5201aff694a4250bba77d4eae6554f924.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/e/b/b/3/febb3f4baa1e932bd4c408e5201aff694a4250bba77d4eae6554f924.body",
+          "present_now": true,
+          "observed_bytes": 137737,
+          "observed_sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/psutil/7.2.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/psutil__7.2.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:24.566470+00:00",
+      "installed_metadata_sha256": "a263a40220d921d9cb963fc636d34f817aa2eb72c2696e3e3465d088cdb1976b"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.2.1",
+      "filename": "pyparsing-3.2.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/1c/a7/c8a2d361bf89c0d9577c934ebb7421b25dc84bf3a8e3ac0a40aed9acc547/pyparsing-3.2.1-py3-none-any.whl",
+      "sha256": "506ff4f4386c4cec0590ec19e6302d3aedb992fdc02c761e90416f158dacf8e1",
+      "published_sha256": "506ff4f4386c4cec0590ec19e6302d3aedb992fdc02c761e90416f158dacf8e1",
+      "bytes": 107716,
+      "published_bytes": 107716,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/3/a/7/8/f3a7800f1d2ee2b7cd251c83e50499035a5e51cf1ffc09549b4f0091.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/f/3/a/7/8/f3a7800f1d2ee2b7cd251c83e50499035a5e51cf1ffc09549b4f0091.body",
+          "present_now": true,
+          "observed_bytes": 107716,
+          "observed_sha256": "506ff4f4386c4cec0590ec19e6302d3aedb992fdc02c761e90416f158dacf8e1",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pyparsing/3.2.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pyparsing__3.2.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:24.933774+00:00",
+      "installed_metadata_sha256": "0a7e69cbfb5e2c00af44cb16f59ad081bec71a2cb7a21a559f4c6583460d1b49"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "published_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "bytes": 229892,
+      "published_bytes": 229892,
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/d/0/6/d/7d06ddc2f8070ce09a5a2290e2020c460e8ab32b6a2c6b69fc06e979.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/d/0/6/d/7d06ddc2f8070ce09a5a2290e2020c460e8ab32b6a2c6b69fc06e979.body",
+          "present_now": true,
+          "observed_bytes": 229892,
+          "observed_sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/python-dateutil/2.9.0.post0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/python-dateutil__2.9.0.post0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:25.146798+00:00",
+      "installed_metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93"
+    },
+    {
+      "name": "pytz",
+      "version": "2025.2",
+      "filename": "pytz-2025.2-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl",
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "published_sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+      "bytes": 509225,
+      "published_bytes": 509225,
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": null,
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/e/c/1/e/7ec1ea97c2065f8b6999816ddac3bd43cdd4682fa7b66a2528f25b4a.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/e/c/1/e/7ec1ea97c2065f8b6999816ddac3bd43cdd4682fa7b66a2528f25b4a.body",
+          "present_now": true,
+          "observed_bytes": 509225,
+          "observed_sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pytz/2025.2/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pytz__2025.2.json",
+      "metadata_observed_utc": "2026-10-15T07:38:25.510069+00:00",
+      "installed_metadata_sha256": "e620e4e1f9f1c8019619388d4da496eb02119a13f35aaad55f022694a3c81f6c"
+    },
+    {
+      "name": "pyvers",
+      "version": "0.2.3",
+      "filename": "pyvers-0.2.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2d/8d/63787e8feda59d981ebc953b6581ccab3c97cf7bfe0a6a407c07b50fc86c/pyvers-0.2.3-py3-none-any.whl",
+      "sha256": "6f5b5612f2f4bd08caa49baa70fc5f875fc7da701a5385c13e244eea6b8114dd",
+      "published_sha256": "6f5b5612f2f4bd08caa49baa70fc5f875fc7da701a5385c13e244eea6b8114dd",
+      "bytes": 11757,
+      "published_bytes": 11757,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/b/0/3/d/0b03dd10eaadda6d4d1bc4d36e72bd3edd61ebdcae865f47776842f7.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/b/0/3/d/0b03dd10eaadda6d4d1bc4d36e72bd3edd61ebdcae865f47776842f7.body",
+          "present_now": true,
+          "observed_bytes": 11757,
+          "observed_sha256": "6f5b5612f2f4bd08caa49baa70fc5f875fc7da701a5385c13e244eea6b8114dd",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pyvers/0.2.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pyvers__0.2.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:25.890475+00:00",
+      "installed_metadata_sha256": "a4f168fda638d9f8439b2e97d170fb8bef5c31e7caab3152b2161df64b963a41"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "filename": "pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/97/c9/39d5b874e8b28845e4ec2202b5da735d0199dbe5b8fb85f91398814a9a46/pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+      "sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c",
+      "published_sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c",
+      "bytes": 154090,
+      "published_bytes": 154090,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/9/2/9/7/09297dc2a07ce78600b84e96f413c1f046f236f754232caee1a39a08.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/9/2/9/7/09297dc2a07ce78600b84e96f413c1f046f236f754232caee1a39a08.body",
+          "present_now": true,
+          "observed_bytes": 154090,
+          "observed_sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/pyyaml/6.0.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/pyyaml__6.0.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:26.106695+00:00",
+      "installed_metadata_sha256": "847a701020334386852b6e07bad1053cb0ce3da9ee1846e7e9d02b24e8bb3f8d"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.3",
+      "filename": "requests-2.32.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "published_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+      "bytes": 64928,
+      "published_bytes": 64928,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/5/8/9/6/0589682f53f4c502330bc0fa01138806ce0467c549c2af469b6afb31.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/5/8/9/6/0589682f53f4c502330bc0fa01138806ce0467c549c2af469b6afb31.body",
+          "present_now": true,
+          "observed_bytes": 64928,
+          "observed_sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/requests/2.32.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/requests__2.32.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:26.461272+00:00",
+      "installed_metadata_sha256": "658ee8454c1e2e76fb8c2127116f61156b3b22941b3559c00389dca70038581a"
+    },
+    {
+      "name": "s3fs",
+      "version": "2026.9.0",
+      "filename": "s3fs-2026.9.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/bc/9c/15fb18bd708949dc953fe120be8d3c7a1b1b140c2592a9c81ce7961e9ecf/s3fs-2026.9.0-py3-none-any.whl",
+      "sha256": "eb185fd98e20a1c9375087d9b2a6ef506f0cd01ae0c0c94efc79f88403fb81fe",
+      "published_sha256": "eb185fd98e20a1c9375087d9b2a6ef506f0cd01ae0c0c94efc79f88403fb81fe",
+      "bytes": 33126,
+      "published_bytes": 33126,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/b/d/c/1/ebdc1773ca06400f217448bd73663f3f40ef056262aa7fad8d6b87a8.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/e/b/d/c/1/ebdc1773ca06400f217448bd73663f3f40ef056262aa7fad8d6b87a8.body",
+          "present_now": true,
+          "observed_bytes": 33126,
+          "observed_sha256": "eb185fd98e20a1c9375087d9b2a6ef506f0cd01ae0c0c94efc79f88403fb81fe",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/s3fs/2026.9.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/s3fs__2026.9.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:26.829991+00:00",
+      "installed_metadata_sha256": "406b4b627d8ada5d1b783057b6c912fd74fd5bcdbbd3a2a01405e771c60967fc"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "filename": "safetensors-0.8.0-cp310-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/1b/6d/3fba214c1e5e0f69991677ec3bc17023f0421776975e1de0c682dca475e2/safetensors-0.8.0-cp310-abi3-win_amd64.whl",
+      "sha256": "096ec1a98435df7beb08853bb5aa9081a84f23d0adc67ed1a0a10550f608373f",
+      "published_sha256": "096ec1a98435df7beb08853bb5aa9081a84f23d0adc67ed1a0a10550f608373f",
+      "bytes": 355540,
+      "published_bytes": 355540,
+      "wheel_tags": [
+        "cp310-abi3-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp310-abi3-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/0/e/4/d/60e4d4be2582ee19394e13a35608a7fc1158bc3c1fe9dafc8ee96374.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/0/e/4/d/60e4d4be2582ee19394e13a35608a7fc1158bc3c1fe9dafc8ee96374.body",
+          "present_now": true,
+          "observed_bytes": 355540,
+          "observed_sha256": "096ec1a98435df7beb08853bb5aa9081a84f23d0adc67ed1a0a10550f608373f",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/safetensors/0.8.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/safetensors__0.8.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:27.054281+00:00",
+      "installed_metadata_sha256": "597731d1baf7a94219753fa0a74abd1a8a18562d50d98b2e25d91e11e3224d36"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.0",
+      "filename": "scipy-1.18.0-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/d2/ae881ee28d014f38e0ccbfd974a06a919ba9af34f1f74bf42b5301891d63/scipy-1.18.0-cp313-cp313-win_amd64.whl",
+      "sha256": "1afac4a847207c7ff8efd321734a50b06d0280b3b2a2c0fc2f413101747ad7c7",
+      "published_sha256": "1afac4a847207c7ff8efd321734a50b06d0280b3b2a2c0fc2f413101747ad7c7",
+      "bytes": 36554943,
+      "published_bytes": 36554943,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.12",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/1/b/b/3/91bb34b78a6b8811492846213b4e3f68698989d32200b690ee4408d6.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/1/b/b/3/91bb34b78a6b8811492846213b4e3f68698989d32200b690ee4408d6.body",
+          "present_now": true,
+          "observed_bytes": 36554943,
+          "observed_sha256": "1afac4a847207c7ff8efd321734a50b06d0280b3b2a2c0fc2f413101747ad7c7",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/scipy/1.18.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/scipy__1.18.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:27.443353+00:00",
+      "installed_metadata_sha256": "763cde904cd382a6194247f5aeac2bc03475759e676147608d5bc65c22a006a6"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "filename": "setuptools-80.9.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "published_sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "bytes": 1201486,
+      "published_bytes": 1201486,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/1/1/3/8/211383a5546ee4d362d965f4fb45a4287d52c1ef172f56f2bf67b3ce.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/1/1/3/8/211383a5546ee4d362d965f4fb45a4287d52c1ef172f56f2bf67b3ce.body",
+          "present_now": true,
+          "observed_bytes": 1201486,
+          "observed_sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/setuptools/80.9.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/setuptools__80.9.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:27.659393+00:00",
+      "installed_metadata_sha256": "7f890ca8dbc16b63b568c89312ed6a7f9f0a79d0b2b7f3c83bf796ac3d930615"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "published_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "bytes": 11050,
+      "published_bytes": 11050,
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/0/0/d/b/400db3c9a550719d76958c9c597bfbff6eb98533f684c02cc870de92.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/0/0/d/b/400db3c9a550719d76958c9c597bfbff6eb98533f684c02cc870de92.body",
+          "present_now": true,
+          "observed_bytes": 11050,
+          "observed_sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/six/1.17.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/six__1.17.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:27.792141+00:00",
+      "installed_metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468"
+    },
+    {
+      "name": "smmap",
+      "version": "5.0.3",
+      "filename": "smmap-5.0.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c1/d4/59e74daffcb57a07668852eeeb6035af9f32cbfd7a1d2511f17d2fe6a738/smmap-5.0.3-py3-none-any.whl",
+      "sha256": "c106e05d5a61449cf6ba9a1e650227ecfb141590d2a98412103ff35d89fc7b2f",
+      "published_sha256": "c106e05d5a61449cf6ba9a1e650227ecfb141590d2a98412103ff35d89fc7b2f",
+      "bytes": 24390,
+      "published_bytes": 24390,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/2/4/4/6/9244600f8e2b194d677e48b8b8b4b1b22a61d0b1cafabb3aa232bd86.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/2/4/4/6/9244600f8e2b194d677e48b8b8b4b1b22a61d0b1cafabb3aa232bd86.body",
+          "present_now": true,
+          "observed_bytes": 24390,
+          "observed_sha256": "c106e05d5a61449cf6ba9a1e650227ecfb141590d2a98412103ff35d89fc7b2f",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/smmap/5.0.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/smmap__5.0.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:27.931313+00:00",
+      "installed_metadata_sha256": "761d62d78dbca38efb80f17b95a5aef5224d8288aedf980ca99c453db95047b9"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "filename": "sympy-1.14.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "published_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "bytes": 6299353,
+      "published_bytes": 6299353,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/a/7/0/9/4/a7094ed5a4cc16f47a5321a9f38285921c17bacfd72d0b4f42bc4cf5.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/a/7/0/9/4/a7094ed5a4cc16f47a5321a9f38285921c17bacfd72d0b4f42bc4cf5.body",
+          "present_now": true,
+          "observed_bytes": 6299353,
+          "observed_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/sympy/1.14.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/sympy__1.14.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:28.076389+00:00",
+      "installed_metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+    },
+    {
+      "name": "tensordict",
+      "version": "0.14.3",
+      "filename": "tensordict-0.14.3-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/8b/49/16ca821dd68f83f72c269262048d5c6f85fc5bdae0ed12697d1a1ae3322c/tensordict-0.14.3-cp313-cp313-win_amd64.whl",
+      "sha256": "f41a16c5e60dca5352507ed4d55b298ac09e16cf8bb080f4c17e462ae680eab2",
+      "published_sha256": "f41a16c5e60dca5352507ed4d55b298ac09e16cf8bb080f4c17e462ae680eab2",
+      "bytes": 651490,
+      "published_bytes": 651490,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/c/9/1/f/5c91f5f6b6508bf2947f12eafc39edccb90de9cfae70b25011b246db.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/c/9/1/f/5c91f5f6b6508bf2947f12eafc39edccb90de9cfae70b25011b246db.body",
+          "present_now": true,
+          "observed_bytes": 651490,
+          "observed_sha256": "f41a16c5e60dca5352507ed4d55b298ac09e16cf8bb080f4c17e462ae680eab2",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/tensordict/0.14.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/tensordict__0.14.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:28.418930+00:00",
+      "installed_metadata_sha256": "4712e88a92cff0ea01aa055bca745875fd5a8dd471fd859876d077e65cb37f2e"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0",
+      "filename": "termcolor-3.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/33/d1/8bb87d21e9aeb323cc03034f5eaf2c8f69841e40e4853c2627edf8111ed3/termcolor-3.3.0-py3-none-any.whl",
+      "sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5",
+      "published_sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5",
+      "bytes": 7734,
+      "published_bytes": 7734,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/2/a/d/9/92ad9eec2021a5ab312adeb07ac8d9bc468578bf91a2a9fbc3e02e75.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/9/2/a/d/9/92ad9eec2021a5ab312adeb07ac8d9bc468578bf91a2a9fbc3e02e75.body",
+          "present_now": true,
+          "observed_bytes": 7734,
+          "observed_sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/termcolor/3.3.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/termcolor__3.3.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:28.747381+00:00",
+      "installed_metadata_sha256": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196"
+    },
+    {
+      "name": "timm",
+      "version": "1.0.30",
+      "filename": "timm-1.0.30-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f5/85/b897716d0fa016af23b11e6526f5ef76d2013e8bc36b9c7ce15d9200e456/timm-1.0.30-py3-none-any.whl",
+      "sha256": "c8e27adf6801a2fdfb570dbbdd171f2f084756eefc673df8cfaab06bd14864f3",
+      "published_sha256": "c8e27adf6801a2fdfb570dbbdd171f2f084756eefc673df8cfaab06bd14864f3",
+      "bytes": 2668917,
+      "published_bytes": 2668917,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.8",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/2/5/7/0/6257001e00cdeb7808138a73b9284c778ed22915a7f3e12dcbbf389f.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/6/2/5/7/0/6257001e00cdeb7808138a73b9284c778ed22915a7f3e12dcbbf389f.body",
+          "present_now": true,
+          "observed_bytes": 2668917,
+          "observed_sha256": "c8e27adf6801a2fdfb570dbbdd171f2f084756eefc673df8cfaab06bd14864f3",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/timm/1.0.30/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/timm__1.0.30.json",
+      "metadata_observed_utc": "2026-10-15T07:38:29.092351+00:00",
+      "installed_metadata_sha256": "385c77b58e59de4193487c5056e92ac0f3c8422df103880f5a5e521afef1b815"
+    },
+    {
+      "filename": "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 2589881709,
+      "sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "official_expected_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.10.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "name": "torch",
+      "version": "2.10.0+cu126",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "source_kind": "known_exact_official_source",
+      "fresh_pypi_file_match": false,
+      "present_now": false,
+      "cache_checks": [
+        {
+          "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+          "present_now": false,
+          "validation": "absent_not_opened"
+        },
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/5/2/f/1/552f134b2a3d27c7dc11f2f7124984df9e18364253953f272a6c2045.body",
+          "present_now": false,
+          "validation": "absent_not_opened"
+        }
+      ],
+      "local_hash_status": "not_locally_verified",
+      "metadata_url": "https://pypi.org/pypi/torch/2.10.0%2Bcu126/json",
+      "metadata_http_status": 404,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/torch__2.10.0+cu126.json",
+      "metadata_observed_utc": "2026-10-15T07:38:29.483428+00:00",
+      "installed_metadata_sha256": "5212dc7e67178bf42b2af8e4e859a05c2684de4a8749abb95e0af00f60b1ec0d"
+    },
+    {
+      "filename": "torch_geometric-2.8.1-py3-none-any.whl",
+      "bytes": 1325471,
+      "sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/torch-geometric/2.8.1/json",
+      "published_sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "published_bytes": 1325471,
+      "hash_source": "Exact-version official PyPI JSON digest agrees with recorded wheel",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_geometric-2.8.1-py3-none-any.whl",
+      "name": "torch-geometric",
+      "version": "2.8.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "source_kind": "known_exact_official_source",
+      "fresh_pypi_file_match": true,
+      "fresh_pypi_url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_geometric-2.8.1-py3-none-any.whl",
+          "present_now": true,
+          "observed_bytes": 1325471,
+          "observed_sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/torch-geometric__2.8.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:29.794221+00:00",
+      "installed_metadata_sha256": "3ac29f6efe0593786c23e72c545713b164d6ba7aee0c5c558829cc528daee495"
+    },
+    {
+      "filename": "torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 3953267,
+      "sha256": "060587be83a7815a274d608d3b9921bd63942b59d2055140b6f426ee9004fb27",
+      "official_expected_sha256": null,
+      "url": "https://data.pyg.org/whl/torch-2.10.0%2Bcu126/torch_scatter-2.1.2%2Bpt210cu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+      "published_sha256": null,
+      "hash_source": "Official index does not publish a hash fragment; record downloaded-file SHA256 without independent published-hash verification",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "name": "torch-scatter",
+      "version": "2.1.2+pt210cu126",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "source_kind": "known_exact_official_source",
+      "fresh_pypi_file_match": false,
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+          "present_now": true,
+          "observed_bytes": 3953267,
+          "observed_sha256": "060587be83a7815a274d608d3b9921bd63942b59d2055140b6f426ee9004fb27",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/torch-scatter/2.1.2%2Bpt210cu126/json",
+      "metadata_http_status": 404,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/torch-scatter__2.1.2+pt210cu126.json",
+      "metadata_observed_utc": "2026-10-15T07:38:30.162517+00:00",
+      "installed_metadata_sha256": "9c4709f953316614aa773736e67497a9d9448e7027ea18df99dd0a4de3689439"
+    },
+    {
+      "filename": "torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 8811635,
+      "sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "official_expected_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torchvision-0.25.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "name": "torchvision",
+      "version": "0.25.0+cu126",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "source_kind": "known_exact_official_source",
+      "fresh_pypi_file_match": false,
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${WORKSPACE}/work/expanded-ml/wheels/torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+          "present_now": true,
+          "observed_bytes": 8811635,
+          "observed_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/torchvision/0.25.0%2Bcu126/json",
+      "metadata_http_status": 404,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/torchvision__0.25.0+cu126.json",
+      "metadata_observed_utc": "2026-10-15T07:38:30.548410+00:00",
+      "installed_metadata_sha256": "52233418ab7d994609af7b202bb4799c3c2b415cf38afc996ea53abd331a4436"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.3",
+      "filename": "tqdm-4.67.3-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl",
+      "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf",
+      "published_sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf",
+      "bytes": 78374,
+      "published_bytes": 78374,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/7/c/5/1/37c518ffee828550acec5a0fd158a5f1d852928eea13df9d077b428b.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/7/c/5/1/37c518ffee828550acec5a0fd158a5f1d852928eea13df9d077b428b.body",
+          "present_now": true,
+          "observed_bytes": 78374,
+          "observed_sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/tqdm/4.67.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/tqdm__4.67.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:30.898023+00:00",
+      "installed_metadata_sha256": "7c0e9a662c19095f339a4b761201eb06cff9c61fb9581535b2f96f44e718ed29"
+    },
+    {
+      "name": "treelib",
+      "version": "1.8.0",
+      "filename": "treelib-1.8.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2e/24/32361f5d0e2eff7ff1881ac6833b6b090cfe34515b1ee9082636cbe69442/treelib-1.8.0-py3-none-any.whl",
+      "sha256": "5235d1ebf988c5026f26ce6e5e0cd470007f16d4978185f5c9b3eee8a25aef81",
+      "published_sha256": "5235d1ebf988c5026f26ce6e5e0cd470007f16d4978185f5c9b3eee8a25aef81",
+      "bytes": 30728,
+      "published_bytes": 30728,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": "<4.0,>=3.7",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/e/b/4/b/4eb4b0f6b4f30415bef34db5a8cff94347a0b49a845b33377de41cc4.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/4/e/b/4/b/4eb4b0f6b4f30415bef34db5a8cff94347a0b49a845b33377de41cc4.body",
+          "present_now": true,
+          "observed_bytes": 30728,
+          "observed_sha256": "5235d1ebf988c5026f26ce6e5e0cd470007f16d4978185f5c9b3eee8a25aef81",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/treelib/1.8.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/treelib__1.8.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:31.210683+00:00",
+      "installed_metadata_sha256": "2beb1ad7ca24ba82b739b576e1127e55072c5d8bc4c96efd54bd797136e008bf"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "published_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "bytes": 45571,
+      "published_bytes": 45571,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/d/e/7/4/5de74aa606aaf8588141cbe765382839ecb0982f091a947770ca6fa8.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/d/e/7/4/5de74aa606aaf8588141cbe765382839ecb0982f091a947770ca6fa8.body",
+          "present_now": true,
+          "observed_bytes": 45571,
+          "observed_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/typing-extensions__4.16.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:31.339188+00:00",
+      "installed_metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.3",
+      "filename": "tzdata-2026.3-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl",
+      "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931",
+      "published_sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931",
+      "bytes": 348168,
+      "published_bytes": 348168,
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=2",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/b/7/e/c/0b7ec41d2553b078375fae99e7ee5dda26a9fdff403707d556b09b59.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/b/7/e/c/0b7ec41d2553b078375fae99e7ee5dda26a9fdff403707d556b09b59.body",
+          "present_now": true,
+          "observed_bytes": 348168,
+          "observed_sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/tzdata/2026.3/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/tzdata__2026.3.json",
+      "metadata_observed_utc": "2026-10-15T07:38:31.649011+00:00",
+      "installed_metadata_sha256": "511c019df477939fe7f4c38e32ad74a570c4ebb05b13fd2fffd0f0f2dbe6f7b1"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "filename": "urllib3-2.8.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+      "published_sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+      "bytes": 135717,
+      "published_bytes": 135717,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/e/0/b/1/2e0b104156b59fc95cf18a269ffed21374c7d170902fa4d96c00004d.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/2/e/0/b/1/2e0b104156b59fc95cf18a269ffed21374c7d170902fa4d96c00004d.body",
+          "present_now": true,
+          "observed_bytes": 135717,
+          "observed_sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/urllib3/2.8.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/urllib3__2.8.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:31.773771+00:00",
+      "installed_metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4"
+    },
+    {
+      "name": "wadler-lindig",
+      "version": "0.1.7",
+      "filename": "wadler_lindig-0.1.7-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/8d/96/04e7b441807b26b794da5b11e59ed7f83b2cf8af202bd7eba8ad2fa6046e/wadler_lindig-0.1.7-py3-none-any.whl",
+      "sha256": "e3ec83835570fd0a9509f969162aeb9c65618f998b1f42918cfc8d45122fe953",
+      "published_sha256": "e3ec83835570fd0a9509f969162aeb9c65618f998b1f42918cfc8d45122fe953",
+      "bytes": 20516,
+      "published_bytes": 20516,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/1/0/6/1/71061f2fa27cbd8dddda7ea4e3f4331a61659877ac1553bf98643ad8.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/7/1/0/6/1/71061f2fa27cbd8dddda7ea4e3f4331a61659877ac1553bf98643ad8.body",
+          "present_now": true,
+          "observed_bytes": 20516,
+          "observed_sha256": "e3ec83835570fd0a9509f969162aeb9c65618f998b1f42918cfc8d45122fe953",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/wadler-lindig/0.1.7/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/wadler-lindig__0.1.7.json",
+      "metadata_observed_utc": "2026-10-15T07:38:32.079851+00:00",
+      "installed_metadata_sha256": "83659a4fe5e6a3a96abda2af32163a27769bb6e807e8babcd1fe37c54b87fa16"
+    },
+    {
+      "name": "warp-lang",
+      "version": "1.18.0",
+      "filename": "warp_lang-1.18.0-py3-none-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/3e/75/888dfe20326fea1a3b46b68a239ccd5db717bb039d511ab6fca7c77e6fea/warp_lang-1.18.0-py3-none-win_amd64.whl",
+      "sha256": "1769e55746739f2e244a2b412123003c462ec3d977dfb5f420f924a8553d30aa",
+      "published_sha256": "1769e55746739f2e244a2b412123003c462ec3d977dfb5f420f924a8553d30aa",
+      "bytes": 134607061,
+      "published_bytes": 134607061,
+      "wheel_tags": [
+        "py3-none-win_amd64"
+      ],
+      "compatible_tags": [
+        "py3-none-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/e/0/8/6/5e086c32a8726d28d5be46bd1a9dc7abc166c2e948e73752386f3fb9.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/5/e/0/8/6/5e086c32a8726d28d5be46bd1a9dc7abc166c2e948e73752386f3fb9.body",
+          "present_now": true,
+          "observed_bytes": 134607061,
+          "observed_sha256": "1769e55746739f2e244a2b412123003c462ec3d977dfb5f420f924a8553d30aa",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/warp-lang/1.18.0/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/warp-lang__1.18.0.json",
+      "metadata_observed_utc": "2026-10-15T07:38:32.396202+00:00",
+      "installed_metadata_sha256": "caa8cc026c50cc98551646b23b408892b66f35704ba7fb8b6beeca5f8cfc089a"
+    },
+    {
+      "name": "wrapt",
+      "version": "2.5.1",
+      "filename": "wrapt-2.5.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/7b/dc/6a5735874ea79816f85c1ec9d92139d7073c20d1881c15ff2108c211354b/wrapt-2.5.1-cp313-cp313-win_amd64.whl",
+      "sha256": "09b1893ee4063706574c1813abf479b8b51926633fbdb6f96aab8dc7b0976668",
+      "published_sha256": "09b1893ee4063706574c1813abf479b8b51926633fbdb6f96aab8dc7b0976668",
+      "bytes": 105870,
+      "published_bytes": 105870,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.9",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/0/1/2/a/3012aaafbfb0c6bb1263b2adf5d37dc70bf83c20d651232914342ef0.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/3/0/1/2/a/3012aaafbfb0c6bb1263b2adf5d37dc70bf83c20d651232914342ef0.body",
+          "present_now": true,
+          "observed_bytes": 105870,
+          "observed_sha256": "09b1893ee4063706574c1813abf479b8b51926633fbdb6f96aab8dc7b0976668",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/wrapt/2.5.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/wrapt__2.5.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:33.084933+00:00",
+      "installed_metadata_sha256": "08a8f7c73b33cb47350ed0140041873eaf1a3f29db899fe0cdef690214364389"
+    },
+    {
+      "filename": "xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "bytes": 36520,
+      "sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/xxhash/4.0.1/json",
+      "published_sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "published_bytes": 36520,
+      "hash_source": "Exact-version official PyPI JSON digest agrees with recorded wheel",
+      "local_path": "${WORKSPACE}/work/expanded-ml/wheels/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "name": "xxhash",
+      "version": "4.0.1",
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "source_kind": "known_exact_official_source",
+      "fresh_pypi_file_match": true,
+      "fresh_pypi_url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${WORKSPACE}/work/expanded-ml/wheels/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+          "present_now": true,
+          "observed_bytes": 36520,
+          "observed_sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/xxhash__4.0.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:33.497802+00:00",
+      "installed_metadata_sha256": "6bd45a2b485477d1bd7e321d03a7593ca44c50f2b5ee96b36918c19a2f5dfa88"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1",
+      "filename": "yarl-1.25.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/3a/8f/4db01cef62caff0d7a4593ed694fb8a41a27a11158cab80d290221f13e57/yarl-1.25.1-cp313-cp313-win_amd64.whl",
+      "sha256": "1f51020b2eb8a003c84925638ec63c21a750a4bddd3a22ec8eac6a742dadf1b9",
+      "published_sha256": "1f51020b2eb8a003c84925638ec63c21a750a4bddd3a22ec8eac6a742dadf1b9",
+      "bytes": 101945,
+      "published_bytes": 101945,
+      "wheel_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "compatible_tags": [
+        "cp313-cp313-win_amd64"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/4/1/4/4/841443197d8562a539af34869bf45623608dd6ee987964abea5a5d32.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/8/4/1/4/4/841443197d8562a539af34869bf45623608dd6ee987964abea5a5d32.body",
+          "present_now": true,
+          "observed_bytes": 101945,
+          "observed_sha256": "1f51020b2eb8a003c84925638ec63c21a750a4bddd3a22ec8eac6a742dadf1b9",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/yarl/1.25.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/yarl__1.25.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:33.792110+00:00",
+      "installed_metadata_sha256": "a6e8eb9810e93ee04f3159904ccec9d0780f4a9ed5181a59859b47d1b1e7afeb"
+    },
+    {
+      "name": "zarr",
+      "version": "3.4.1",
+      "filename": "zarr-3.4.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a6/82/0dbc9bc77b49cfb9268dc2b2b1dcd04346c8c7ed52e272b76a628a941656/zarr-3.4.1-py3-none-any.whl",
+      "sha256": "38b540578a119352bdce02a720d7bfd99846e77f0728c58b1bab3d1f547526a0",
+      "published_sha256": "38b540578a119352bdce02a720d7bfd99846e77f0728c58b1bab3d1f547526a0",
+      "bytes": 405257,
+      "published_bytes": 405257,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.12",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/3/8/4/6/03846637b18671d00341935155e2803e6f96c5d454116cb03d549328.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/0/3/8/4/6/03846637b18671d00341935155e2803e6f96c5d454116cb03d549328.body",
+          "present_now": true,
+          "observed_bytes": 405257,
+          "observed_sha256": "38b540578a119352bdce02a720d7bfd99846e77f0728c58b1bab3d1f547526a0",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/zarr/3.4.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/zarr__3.4.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:34.220800+00:00",
+      "installed_metadata_sha256": "4a5c625b2f3a71e13cdb46d62861e185b6ad137245c5b7af85f61b63ab7eef4f"
+    },
+    {
+      "name": "zipp",
+      "version": "4.1.1",
+      "filename": "zipp-4.1.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b5/98/df615823cd9419131ce19fba00de53a663794369e198aade064a244b385d/zipp-4.1.1-py3-none-any.whl",
+      "sha256": "8979f52d874162f485ff2981e3891f3a3317b7a3dd43ff1e1775b9304f307a9c",
+      "published_sha256": "8979f52d874162f485ff2981e3891f3a3317b7a3dd43ff1e1775b9304f307a9c",
+      "bytes": 10582,
+      "published_bytes": 10582,
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "compatible_tags": [
+        "py3-none-any"
+      ],
+      "requires_python": ">=3.10",
+      "source_kind": "publisher_pypi_wheel",
+      "yanked": false,
+      "yanked_reason": null,
+      "hash_source": "Exact-version official PyPI JSON file digests",
+      "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/9/0/4/0/190400c2da184fb2852f4cada4f531133564a46e6da33510f66d9de1.body",
+      "present_now": true,
+      "cache_checks": [
+        {
+          "local_path": "${USER_HOME}/AppData/Local/pip/Cache/http-v2/1/9/0/4/0/190400c2da184fb2852f4cada4f531133564a46e6da33510f66d9de1.body",
+          "present_now": true,
+          "observed_bytes": 10582,
+          "observed_sha256": "8979f52d874162f485ff2981e3891f3a3317b7a3dd43ff1e1775b9304f307a9c",
+          "validation": "verified"
+        }
+      ],
+      "local_hash_status": "current_streaming_sha256_verified",
+      "metadata_url": "https://pypi.org/pypi/zipp/4.1.1/json",
+      "metadata_http_status": 200,
+      "metadata_cache": "${WORKSPACE}/work/expanded-clean-runtime/metadata/zipp__4.1.1.json",
+      "metadata_observed_utc": "2026-10-15T07:38:34.380668+00:00",
+      "installed_metadata_sha256": "3080f93de17d4bd784cd33afc0933db91c28cbec1cb444e1ffdfec5c7e0f5d90"
+    }
+  ],
+  "errors": [],
+  "expected_package_count": 90,
+  "metadata_attempt": "${WORKSPACE}/work/expanded-clean-runtime/metadata/attempt-20261015T073809-14924-b18b0241",
+  "site_initialization_disabled": true,
+  "actions": {
+    "metadata_network_permitted": true,
+    "wheel_downloads": false,
+    "pip": false,
+    "builds": false,
+    "framework_imports": false
+  },
+  "limitations": [
+    "Known non-PyPI CUDA build URLs and publisher hashes retain their recorded provenance; HTTP 404 is not a PyPI verification of those files",
+    "Absent cached wheels are not opened or locally hash-verified",
+    "ANTLR historical built-wheel hash is not a publisher-distributed wheel hash",
+    "Resolution records availability only; no wheel copying, download, build or installation occurs"
+  ]
+}

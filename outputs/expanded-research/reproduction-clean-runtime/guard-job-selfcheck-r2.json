@@ -1,0 +1,19 @@
+{
+  "status": "passed_tiny_owned_child_job_check",
+  "started_utc": "2026-10-15T08:53:59.780573+00:00",
+  "finished_utc": "2026-10-15T08:53:59.978496+00:00",
+  "wall_seconds": 0.19792420000158018,
+  "root_child_pid": 21128,
+  "grandchild_pid": 20120,
+  "root_exit_code": 0,
+  "surviving_grandchild_observed_after_parent_exit": true,
+  "family_sample_RSS_bytes": 5410816,
+  "job_empty_after_termination": true,
+  "assignment_failure_owned_handle_termination_checked_with_mock": true,
+  "host_available_bytes_before": 726777856,
+  "host_available_bytes_after": 715988992,
+  "guard_source_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+  "framework_imported": false,
+  "network_used": false,
+  "build_or_install_performed": false
+}

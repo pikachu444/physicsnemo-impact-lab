@@ -1,0 +1,13 @@
+{
+  "status": "supplement_to_preserved_raw_execution",
+  "raw_execution_json_sha256": "a748650b8789bb3862c8e6ecdaf93c3a2c6a462e8e66a65d51ec2cf3b8dc7a57",
+  "corrected_field": "competing_workload_context",
+  "reason": "Driver retained a context string from the earlier overlapping attempt01. That template string is inaccurate for attempt02. Raw execution.json and stage-journal hash remain preserved; no numerical result changed.",
+  "actual_context": "Root confirmed static12 suite/test exit0 at2026-10-15T08:27:18Z, owned train/eval/suite processes0 and GPU compute empty, then explicitly allocated the CPU window. Attempt02 ran after this release, not alongside the owned GPU training suite. Other user apps were preserved.",
+  "performance_limit": "Stage timing includes observation overhead and ordinary shared-host variability; this is execution evidence, not an isolated speed benchmark.",
+  "framework_exit": {
+    "owned_pid": 26748,
+    "present": false,
+    "confirmed_utc": "2026-10-15T08:29:54.6231872Z"
+  }
+}

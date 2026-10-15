@@ -1,0 +1,1105 @@
+{
+  "schema": "clean-functional6-v1",
+  "status": "prepared_not_executed",
+  "prepared_utc": "2026-10-15T13:45:13.433798+00:00",
+  "models": {
+    "transolver": {
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 3,
+        "embedding_dim": 3,
+        "out_dim": 70,
+        "unified_pos": false,
+        "structured_shape": null,
+        "plus": false
+      },
+      "expected_parameters": 43150,
+      "model_source": {
+        "module": "physicsnemo.models.transolver",
+        "class_name": "Transolver",
+        "implementation_module": "physicsnemo.models.transolver.transolver",
+        "source_sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/transolver/metrics.json",
+      "metrics_sha256": "43988bfcc7454dbba615eaeb4aa1d8921f09d9df82b14565efa50578101a4a08"
+    },
+    "flare": {
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 3,
+        "embedding_dim": 3,
+        "out_dim": 70,
+        "unified_pos": false,
+        "structured_shape": null
+      },
+      "expected_parameters": 38758,
+      "model_source": {
+        "module": "physicsnemo.models.flare",
+        "class_name": "FLARE",
+        "implementation_module": "physicsnemo.models.flare.flare",
+        "source_sha256": "b3b9d9136f71c5df9f0870a5e5bc9bced2190509113e1a74fa078aa150fd8aa9"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/flare/metrics.json",
+      "metrics_sha256": "165b338f5989f3f39b231e89a86e2ead96650f01bcbbeeb7c700934b1e0946f2"
+    },
+    "geotransolver": {
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 4,
+        "out_dim": 70,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE"
+      },
+      "expected_parameters": 45360,
+      "model_source": {
+        "module": "physicsnemo.models.geotransolver",
+        "class_name": "GeoTransolver",
+        "implementation_module": "physicsnemo.models.geotransolver.geotransolver",
+        "source_sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/geotransolver/metrics.json",
+      "metrics_sha256": "41112dcb39cf47b4816847de34a061d728bd90a057277a4ecf38e7a1df2ad460"
+    },
+    "geoflare": {
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 4,
+        "out_dim": 70,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE_FA"
+      },
+      "expected_parameters": 40968,
+      "model_source": {
+        "module": "physicsnemo.models.geotransolver",
+        "class_name": "GeoTransolver",
+        "implementation_module": "physicsnemo.models.geotransolver.geotransolver",
+        "source_sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/geoflare/metrics.json",
+      "metrics_sha256": "4c576fe51a253f187e3b8e138492b0f33095985b80d8da8748d8bc5a7a9533f1"
+    },
+    "meshgraphnet": {
+      "config": {
+        "input_dim_nodes": 6,
+        "input_dim_edges": 4,
+        "output_dim": 70,
+        "processor_size": 3,
+        "hidden_dim_processor": 48,
+        "hidden_dim_node_encoder": 48,
+        "hidden_dim_edge_encoder": 48,
+        "hidden_dim_node_decoder": 48,
+        "num_layers_node_encoder": 2,
+        "num_layers_edge_encoder": 2,
+        "num_layers_node_decoder": 2,
+        "num_layers_node_processor": 2,
+        "num_layers_edge_processor": 2,
+        "mlp_activation_fn": "relu",
+        "aggregation": "sum",
+        "do_concat_trick": false,
+        "num_processor_checkpoint_segments": 0,
+        "checkpoint_offloading": false,
+        "recompute_activation": false,
+        "norm_type": "LayerNorm"
+      },
+      "expected_parameters": 81958,
+      "model_source": {
+        "module": "physicsnemo.models.meshgraphnet",
+        "class_name": "MeshGraphNet",
+        "implementation_module": "physicsnemo.models.meshgraphnet.meshgraphnet",
+        "source_sha256": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/meshgraphnet/metrics.json",
+      "metrics_sha256": "001f67d580d0a6b6191860677c1462592288c9767e746fde52278644aa544533"
+    },
+    "figconvunet": {
+      "config": {
+        "in_channels": 6,
+        "out_channels": 70,
+        "kernel_size": 3,
+        "hidden_channels": [
+          16,
+          24,
+          32
+        ],
+        "num_levels": 2,
+        "num_down_blocks": 1,
+        "num_up_blocks": 1,
+        "aabb_min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "aabb_max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "voxel_size": null,
+        "resolution_memory_format_pairs": [
+          [
+            "b_xc_y_z",
+            [
+              2,
+              16,
+              16
+            ]
+          ],
+          [
+            "b_yc_x_z",
+            [
+              16,
+              2,
+              16
+            ]
+          ],
+          [
+            "b_zc_x_y",
+            [
+              16,
+              16,
+              2
+            ]
+          ]
+        ],
+        "use_rel_pos": true,
+        "use_rel_pos_embed": true,
+        "pos_encode_dim": 8,
+        "communication_types": [
+          "sum"
+        ],
+        "to_point_sample_method": "graphconv",
+        "neighbor_search_type": "knn",
+        "knn_k": 8,
+        "reductions": [
+          "mean"
+        ],
+        "use_scalar_output": false,
+        "has_input_features": true
+      },
+      "expected_parameters": 587494,
+      "model_source": {
+        "module": "physicsnemo.models.figconvnet",
+        "class_name": "FIGConvUNet",
+        "implementation_module": "physicsnemo.models.figconvnet.figconvunet",
+        "source_sha256": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042"
+      },
+      "metrics_origin": "outputs/expanded-research/benchmarks/structural_coupon/models/figconvunet/metrics.json",
+      "metrics_sha256": "be3ecfba67853eaf94b30179b1ebd1bb2316f6e6a34eb99481f18fbd1eb2a76a"
+    }
+  },
+  "source_files": [
+    {
+      "origin": "outputs/expanded-research/benchmarks/structural_coupon/models/transolver/source/model_adapters.py",
+      "scratch": "source/model_adapters.py",
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "bytes": 11146,
+      "role": "constructor_and_forward_only"
+    },
+    {
+      "origin": "outputs/expanded-research/benchmarks/structural_coupon/models/transolver/source/benchmark_data.py",
+      "scratch": "reference/benchmark_data.py",
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "bytes": 12831,
+      "role": "historical_reference_never_imported"
+    },
+    {
+      "origin": "outputs/expanded-research/benchmarks/structural_coupon/models/transolver/source/run_benchmark.py",
+      "scratch": "reference/run_benchmark.py",
+      "sha256": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab",
+      "bytes": 17933,
+      "role": "historical_reference_never_imported"
+    },
+    {
+      "origin": "work/expanded-ml/coupon13-normalization.json",
+      "scratch": "reference/normalization.json",
+      "sha256": "fc9574c541d0b3571abe995b5463c7ecdda3b1a007a24e4b36673383aa9b18b7",
+      "bytes": 1195,
+      "role": "frozen_five_train_statistics"
+    },
+    {
+      "origin": "outputs/expanded-research/reproduction-clean-runtime/core-source-contract.json",
+      "scratch": "reference/core-source-contract.json",
+      "sha256": "fca03b395b84cdf23c875361c8a4dc3193cb6964ce009e809dbb7f7f480a5974",
+      "bytes": 20214,
+      "role": "clean_installed_core_contract"
+    },
+    {
+      "origin": "work/expanded-clean-runtime/newfunctional_runtime.py",
+      "scratch": "driver/newfunctional_runtime.py",
+      "sha256": "cbff88dc4a884bbd803e01603113e850e723dc35bde28180bdba9cf447910379",
+      "bytes": 43355,
+      "role": "prepared_future_runtime"
+    },
+    {
+      "origin": "work/expanded-clean-runtime/run_guarded_r2.py",
+      "scratch": "driver/run_guarded_r2.py",
+      "sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+      "bytes": 21393,
+      "role": "stdlib_job_supervisor_only"
+    }
+  ],
+  "runtime_source": "driver/newfunctional_runtime.py",
+  "adapter_source": "source/model_adapters.py",
+  "normalization_source": "reference/normalization.json",
+  "core_contract": {
+    "origin": "outputs/expanded-research/reproduction-clean-runtime/core-source-contract.json",
+    "sha256": "fca03b395b84cdf23c875361c8a4dc3193cb6964ce009e809dbb7f7f480a5974",
+    "files": [
+      {
+        "path": "physicsnemo/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/__init__.py",
+        "bytes": 1231,
+        "sha256": "c7168d53b42cd4bf86f8ed33055e2334acade69f9dce43bc727e471b7dc4dded",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "os",
+          "warp"
+        ]
+      },
+      {
+        "path": "physicsnemo/compat/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/compat/__init__.py",
+        "bytes": 11336,
+        "sha256": "0f5df93bcb0840f499f023382d34d7a8a6cc7a1e0fc11d09d788aab35ab29d4f",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "importlib",
+          "sys",
+          "types",
+          "warnings"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/__init__.py",
+        "bytes": 1047,
+        "sha256": "6835035f7a8c416583ac061482d2baa180ab5024cba907307fae97c891831bd0",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/core/filesystem.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/filesystem.py",
+        "bytes": 12871,
+        "sha256": "491f637f4517ac9dd899172f76c7ac61abad9d519de5246b830982f704228da4",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "collections",
+          "fsspec",
+          "hashlib",
+          "json",
+          "logging",
+          "os",
+          "pathlib",
+          "re",
+          "requests",
+          "s3fs",
+          "tempfile",
+          "tqdm",
+          "urllib",
+          "warnings",
+          "zipfile"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/function_spec.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/function_spec.py",
+        "bytes": 29897,
+        "sha256": "8c3c1b5ae91ac7a80eb45affd82d1c547407ed3d59e3c3c2542fb0474b13fddc",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "contextlib",
+          "dataclasses",
+          "importlib",
+          "inspect",
+          "packaging",
+          "physicsnemo",
+          "re",
+          "torch",
+          "typing",
+          "warnings",
+          "warp"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/meta.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/meta.py",
+        "bytes": 2360,
+        "sha256": "9919eb63718769547631191aa1479e6c9d22387084f5feae08b5cf6c83babcce",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "warnings"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/module.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/module.py",
+        "bytes": 53911,
+        "sha256": "ea84418a57fc6b0d3289582acd0be623de695ac27d85f35a88fb4c9f5085da88",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "importlib",
+          "inspect",
+          "io",
+          "json",
+          "keyword",
+          "logging",
+          "os",
+          "pathlib",
+          "physicsnemo",
+          "re",
+          "tarfile",
+          "tempfile",
+          "torch",
+          "typing",
+          "warnings",
+          "zipfile"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/registry.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/registry.py",
+        "bytes": 7462,
+        "sha256": "a774759f363fbd56a1e57ba1034efe1f9ed1590f6e0cefb1e8eae68e63794f03",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "importlib",
+          "importlib_metadata",
+          "physicsnemo",
+          "typing",
+          "warnings"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/version_check.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/version_check.py",
+        "bytes": 26454,
+        "sha256": "86d32fb3c64fd2ad9a9af0d2a6137f2192957c720b05b76c51c476054166f5d8",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "functools",
+          "git",
+          "importlib",
+          "os",
+          "packaging",
+          "sys",
+          "types",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/core/warnings.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/core/warnings.py",
+        "bytes": 1145,
+        "sha256": "f4b9337f5c45c98ed153d68bdfe93270f8ff0d38349fcf317a8df2d07ff63548",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/distributed/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/__init__.py",
+        "bytes": 1298,
+        "sha256": "97cb5ae6c85db17860c11f8ba8c6c28da7ff193ac1631dc614b789f8a22c64a3",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/autograd.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/autograd.py",
+        "bytes": 15152,
+        "sha256": "c0070cb0c5eddc691f7e5a18b9cd647b2a1d812d96bb31a20cfbe371cbaa0a4f",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/config.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/config.py",
+        "bytes": 8160,
+        "sha256": "1a196afd3de50106cde890d7e95c26689c604c26091507eb081c9b693e86e4a5",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "treelib",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/fft.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/fft.py",
+        "bytes": 7472,
+        "sha256": "459dcb40f29409eddbfaa6b1c3cbe40f99099f0a8c0c5dd68081389fee525d43",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "physicsnemo",
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/fused_all_reduce.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/fused_all_reduce.py",
+        "bytes": 21507,
+        "sha256": "0552cbac5b5e65b2296e13b5d5cf8716473beb71b29c727e4695fcc37979c253",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "collections",
+          "functools",
+          "tensordict",
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/manager.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/manager.py",
+        "bytes": 29511,
+        "sha256": "0c395f292b4b786ba43171c2e752e1167f9b133f254f530a50cc0136457d8a50",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "atexit",
+          "numpy",
+          "os",
+          "physicsnemo",
+          "queue",
+          "torch",
+          "typing",
+          "warnings"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/mappings.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/mappings.py",
+        "bytes": 4591,
+        "sha256": "ec0b4fdaabe41832ec3251d515b443fe8680e84f3f2011a8522865b001526ab6",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "physicsnemo",
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/distributed/utils.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/distributed/utils.py",
+        "bytes": 26705,
+        "sha256": "8528da04fe29fdcfc0b51246ef677d564812c9a635eb4932374db86738513726",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/__init__.py",
+        "bytes": 781,
+        "sha256": "464210a1251943c08c7dfc3396755b50e1bf7c1f9c6a08123d324728311aa661",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/base_model.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/base_model.py",
+        "bytes": 5921,
+        "sha256": "1f2f4179f5cf5fcfe9dc3ace5920faad99f58e5e6942493617ac2d3495dd27a3",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/figconvunet.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/figconvunet.py",
+        "bytes": 26729,
+        "sha256": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "jaxtyping",
+          "numpy",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/geometries.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/geometries.py",
+        "bytes": 31344,
+        "sha256": "a598166f31eb332a4d9d6defe1de56b40c1460fd9bf76e049265a9fb0517a882",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "enum",
+          "jaxtyping",
+          "numpy",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/grid_feature_group.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/grid_feature_group.py",
+        "bytes": 37475,
+        "sha256": "80cf860cfc453d63c129d73621fd8ed1c70df01731159acb03dfc6f3e5237ed5",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/neighbor_ops.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/neighbor_ops.py",
+        "bytes": 16593,
+        "sha256": "0bdf6224c1d2bb37d56a58147b2c6ba6fc61e5b1d7246749d1e3b6d7670f56f7",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/point_feature_conv.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/point_feature_conv.py",
+        "bytes": 27916,
+        "sha256": "8f1b374e1a341bb34f8d2f24c0c5763bd47c7b122ff937eb89e730eca89d8b41",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/point_feature_grid_conv.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/point_feature_grid_conv.py",
+        "bytes": 19823,
+        "sha256": "9e9682036ac28541bb7f21a8bd49d248c8fc14a95fed69d22bd06a1d1913a18b",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/point_feature_grid_ops.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/point_feature_grid_ops.py",
+        "bytes": 22531,
+        "sha256": "67bf97db9ef9e1eac513c53f08e7404dbcc69ebf14f5086b22fb3203d82e5a45",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "jaxtyping",
+          "numpy",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/figconvnet/warp_neighbor_search.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/figconvnet/warp_neighbor_search.py",
+        "bytes": 8051,
+        "sha256": "6cb4b37961edf663cee6e1311cbf0a8782ce947d9cedfe580ba369c0af2266f8",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "jaxtyping",
+          "torch",
+          "typing",
+          "warp"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/flare/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/flare/__init__.py",
+        "bytes": 941,
+        "sha256": "9c9821ecb71801a026cb88d5f85440cb875094df25edb5397524f6797e487625",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/models/flare/flare.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/flare/flare.py",
+        "bytes": 7130,
+        "sha256": "b3b9d9136f71c5df9f0870a5e5bc9bced2190509113e1a74fa078aa150fd8aa9",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "jaxtyping",
+          "physicsnemo",
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/geotransolver/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/__init__.py",
+        "bytes": 3358,
+        "sha256": "fe0a9efc6c0e9ffa2aae68960055758ce2755520e1e4b52c2febdc21f3f57833",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "physicsnemo"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/geotransolver/context_projector.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/context_projector.py",
+        "bytes": 39516,
+        "sha256": "a111137e6a76c18ea5f34310a5931d7d73860fa112cc6b8694b1575a9d905f63",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "einops",
+          "jaxtyping",
+          "physicsnemo",
+          "torch"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/geotransolver/geotransolver.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/geotransolver.py",
+        "bytes": 30927,
+        "sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "__future__",
+          "collections",
+          "dataclasses",
+          "jaxtyping",
+          "math",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/meshgraphnet/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/meshgraphnet/__init__.py",
+        "bytes": 932,
+        "sha256": "292ec58dc9bc63c4ada56d99ceddb6a56398aa376ae2af88fd93105ba006f329",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/models/meshgraphnet/bsms_mgn.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/meshgraphnet/bsms_mgn.py",
+        "bytes": 11993,
+        "sha256": "9c96d6d4c7395bff550f1627ff85e431acf0a69d62e2293121f10151d467e948",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/meshgraphnet/hybrid_meshgraphnet.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/meshgraphnet/hybrid_meshgraphnet.py",
+        "bytes": 23085,
+        "sha256": "6eef3212aea15bd138af012d610b40f511e803ef227ac21f6e7c77b5b970bcaf",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "itertools",
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/meshgraphnet/meshgraphkan.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/meshgraphnet/meshgraphkan.py",
+        "bytes": 9067,
+        "sha256": "d3313727769b9844cff7348da3f30a9724c4c73df9c6dc66bf04497637ab4ccf",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/meshgraphnet/meshgraphnet.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/meshgraphnet/meshgraphnet.py",
+        "bytes": 21031,
+        "sha256": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "contextlib",
+          "dataclasses",
+          "itertools",
+          "jaxtyping",
+          "physicsnemo",
+          "torch",
+          "typing",
+          "warnings"
+        ]
+      },
+      {
+        "path": "physicsnemo/models/transolver/__init__.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/transolver/__init__.py",
+        "bytes": 1714,
+        "sha256": "17d15f073cc1bb5b1cdca343617f83e326e542e947a0fb8efc4346e688c22dd7",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": []
+      },
+      {
+        "path": "physicsnemo/models/transolver/transolver.py",
+        "installed_origin": "${WORKSPACE}/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/transolver/transolver.py",
+        "bytes": 26210,
+        "sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+        "cached_wheel_bytes_equal": true,
+        "static_import_roots_overapproximation": [
+          "dataclasses",
+          "importlib",
+          "jaxtyping",
+          "numpy",
+          "physicsnemo",
+          "torch"
+        ]
+      }
+    ]
+  },
+  "environment": {
+    "relative_venv": "work/expanded-clean-runtime/venv",
+    "python": "3.13.5",
+    "versions": {
+      "aiobotocore": "3.9.2",
+      "aiohappyeyeballs": "2.7.1",
+      "aiohttp": "3.14.5",
+      "aioitertools": "0.13.0",
+      "aiosignal": "1.4.0",
+      "antlr4-python3-runtime": "4.9.3",
+      "anyio": "4.14.2",
+      "attrs": "26.1.0",
+      "botocore": "1.43.106",
+      "certifi": "2026.7.22",
+      "cftime": "1.6.6.1",
+      "charset-normalizer": "3.4.1",
+      "click": "8.4.2",
+      "cloudpickle": "3.1.2",
+      "colorama": "0.4.6",
+      "contourpy": "1.3.1",
+      "cycler": "0.12.1",
+      "donfig": "0.8.1.post1",
+      "einops": "0.8.2",
+      "filelock": "3.29.7",
+      "fonttools": "4.56.0",
+      "frozenlist": "1.8.0",
+      "fsspec": "2026.9.0",
+      "gitdb": "4.0.12",
+      "gitpython": "3.1.54",
+      "google-crc32c": "1.9.0",
+      "h11": "0.16.0",
+      "h5py": "3.16.0",
+      "hf-xet": "1.5.1",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "huggingface-hub": "1.23.0",
+      "hydra-core": "1.3.7",
+      "idna": "3.18",
+      "importlib-metadata": "9.0.1",
+      "jaxtyping": "0.3.11",
+      "jinja2": "3.1.6",
+      "jmespath": "1.1.0",
+      "kiwisolver": "1.4.8",
+      "markupsafe": "3.0.3",
+      "matplotlib": "3.10.1",
+      "ml-dtypes": "0.6.0",
+      "mpmath": "1.3.0",
+      "msgspec": "0.22.0",
+      "multidict": "6.9.1",
+      "networkx": "3.6.1",
+      "numcodecs": "0.17.0",
+      "numpy": "2.5.2",
+      "nvidia-physicsnemo": "2.2.2",
+      "nvtx": "0.2.16",
+      "omegaconf": "2.3.1",
+      "onnx": "1.23.2",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "11.1.0",
+      "propcache": "0.5.4",
+      "protobuf": "7.34.1",
+      "psutil": "7.2.2",
+      "pyparsing": "3.2.1",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2025.2",
+      "pyvers": "0.2.3",
+      "pyyaml": "6.0.3",
+      "requests": "2.32.3",
+      "s3fs": "2026.9.0",
+      "safetensors": "0.8.0",
+      "scipy": "1.18.0",
+      "setuptools": "80.9.0",
+      "six": "1.17.0",
+      "smmap": "5.0.3",
+      "sympy": "1.14.0",
+      "tensordict": "0.14.3",
+      "termcolor": "3.3.0",
+      "timm": "1.0.30",
+      "torch": "2.10.0+cu126",
+      "torch-geometric": "2.8.1",
+      "torch-scatter": "2.1.2+pt210cu126",
+      "torchvision": "0.25.0+cu126",
+      "tqdm": "4.67.3",
+      "treelib": "1.8.0",
+      "typing-extensions": "4.16.0",
+      "tzdata": "2026.3",
+      "urllib3": "2.8.0",
+      "wadler-lindig": "0.1.7",
+      "warp-lang": "1.18.0",
+      "wrapt": "2.5.1",
+      "xxhash": "4.0.1",
+      "yarl": "1.25.1",
+      "zarr": "3.4.1",
+      "zipp": "4.1.1"
+    },
+    "historical_metadata_inventory_sha256": "d7f3439eefa57cb7d2be4511d58a1e0b27a4f06d148efcc6ecda35b53e56e4f6"
+  },
+  "data": {
+    "cache_root": "work/expanded-structural-coupon/cache-initial13-nodal7",
+    "manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+    "ready_sha256": "ac1df2f0c5d08f73d4bc9c0c4793b6cf7e2afd2d4fe73183b856e1050c73db59",
+    "metadata_only_provenance_no_runtime_inventory_scan": true,
+    "shape": [
+      919,
+      10,
+      7
+    ],
+    "fields": [
+      "displacement_x",
+      "displacement_y",
+      "displacement_z",
+      "von_mises_shell_scalar_projected",
+      "equivalent_plastic_strain_projected",
+      "total_strain_principal_major_inplane_projected",
+      "total_strain_principal_minor_inplane_projected"
+    ],
+    "units": [
+      "mm",
+      "mm",
+      "mm",
+      "MPa",
+      "1",
+      "1",
+      "1"
+    ],
+    "times": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "coordinate_units": "mm",
+    "thickness_units": "mm",
+    "time_units": "ms",
+    "support": "919 original nodes connected to physical shell elements; auxiliary RBODY master990 excluded. Real original shell-edge node adjacency.",
+    "location": "Channels0:3 raw physical-node ANIM displacement. Channels3:7 are projected cell invariants: native shell von Mises scalar, IP3 EPSP, eigenvalues of IP3 in-plane native total strain. Projected invariants are not raw solver nodal outputs.",
+    "basis": "Displacement in global coordinates verified against physical-node current minus initial geometry. Four invariant scalars computed before projection; no average of local tensor components.",
+    "C7_scope": "Raw physical-node displacement3 plus four native-cell invariants area-projected to the same physical919nodes; not wholly raw native nodal C7.",
+    "train_case": "pilot_base",
+    "validation_case": "holdout_validation_01",
+    "train_globals": [
+      1.0,
+      1.0
+    ],
+    "validation_globals": [
+      1.0585278080776335,
+      1.2389714643359184
+    ],
+    "arrays": {
+      "coordinates.npy": {
+        "bytes": 11156,
+        "sha256": "460a3e5b285574b84711b96fc2ddaa2777865a6493bee4303d298e2b39616afc",
+        "phases": [
+          "train",
+          "reload"
+        ]
+      },
+      "edge_index.npy": {
+        "bytes": 55360,
+        "sha256": "6fdac49b05ee2210c235fc9c6cf11cde1a163fe42b0e64d02e2636541f61b050",
+        "phases": [
+          "train",
+          "reload"
+        ]
+      },
+      "node_ids.npy": {
+        "bytes": 7480,
+        "sha256": "dbb515719346544aa7153b4d9834491672ac21a2c0ebcaf21418ddabaf2fdb01",
+        "phases": [
+          "train",
+          "reload"
+        ]
+      },
+      "thickness.npy": {
+        "bytes": 3804,
+        "sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "phases": [
+          "train",
+          "reload"
+        ]
+      },
+      "runs/pilot_base.npy": {
+        "bytes": 257448,
+        "sha256": "da90cedd113bfd6bc30cfb3785c7d88c7ba0b547dbfb405bf8eceadd7ed4e0a5",
+        "phases": [
+          "train"
+        ]
+      }
+    },
+    "normalization_training_case_count": 5,
+    "statistics_recomputed": false,
+    "validation_targets_allowed": false,
+    "test_payloads_or_array_hash_reads_allowed": false
+  },
+  "statistics": {
+    "field_mean": [
+      2.7502403098489263,
+      2.1176213526358674e-06,
+      1.3334536714925743e-15,
+      449.3280553101715,
+      0.018463773186395614,
+      0.020601543118924884,
+      -0.00981575517755815
+    ],
+    "field_std": [
+      1.772874610127677,
+      1.772874610127677,
+      1.772874610127677,
+      254.71853486797752,
+      0.025152260415945444,
+      0.026019210977930238,
+      0.012818308615789429
+    ],
+    "constant_training_fields": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "normalization_groups": [
+      {
+        "fields": [
+          "displacement_x",
+          "displacement_y",
+          "displacement_z"
+        ],
+        "scale": 1.772874610127677,
+        "definition": "sqrt(trace(training displacement covariance)/3), shared by all three vector components"
+      }
+    ],
+    "thickness_mean": 2.5,
+    "thickness_std": 1.0,
+    "global_mean": [
+      1.0,
+      1.0
+    ],
+    "global_std": [
+      0.08944274042479759,
+      0.22360679774997896
+    ],
+    "coordinate_min": [
+      -2.0000000000000013,
+      -11.22,
+      -0.01
+    ],
+    "coordinate_span": [
+      204.0,
+      22.44,
+      1.02
+    ],
+    "coordinate_margin_fraction": 0.01
+  },
+  "algorithm": {
+    "updates": 3,
+    "lr": 0.001,
+    "seed": 20261015,
+    "tolerance": 1e-05,
+    "optimizer": "Adam",
+    "loss": "unweighted mean normalized squared error",
+    "batch_size": 1
+  },
+  "allocation_required": {
+    "status": "authorized_clean_functional6",
+    "protocol_sha256": "external exact byte hash",
+    "explicit_gpu_slot": true,
+    "clean_install_pip_check_and_core40_audit_pass": true,
+    "resource_caps": "Future root allocation supplies bounded ML familyRSS/wall caps; installer350MiB is not silently reused."
+  },
+  "claims": {
+    "actual_executed": false,
+    "functional_checks_planned": 6,
+    "updates_per_check": 3,
+    "additional_full_fits_or_completed_models": 0,
+    "fullfit_claimed": false,
+    "accuracy_comparison": false,
+    "fresh_validation_reload_targetless": true,
+    "prepared_only_until_explicit_root_GPU_allocation": true
+  }
+}

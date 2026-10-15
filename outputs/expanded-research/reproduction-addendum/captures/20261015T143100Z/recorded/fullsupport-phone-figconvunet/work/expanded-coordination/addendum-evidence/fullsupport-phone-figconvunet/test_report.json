@@ -1,0 +1,1231 @@
+{
+  "process_identity": {
+    "pid": 30996,
+    "created_unix_seconds": 1792048824.02184
+  },
+  "pid": 30996,
+  "architecture": "figconvunet",
+  "checkpoint_sha256": "2e63c2223cb405a34a9b5e93c1fd9d9ffb2f91a471574fc4649a01a2b7931483",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 20.38643089999823,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\checkpoint-frozen.json": "0ddb1f0284cc14088505b7ecc3afde01d2907e5e38234b11cffd3cefeb1171e4",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\training_report.json": "a54eae5412aa75fe6e70dca7384213edf932010e5157460e15ae0d8961d39b78",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\best_checkpoint.pt": "2e63c2223cb405a34a9b5e93c1fd9d9ffb2f91a471574fc4649a01a2b7931483",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\validation_reference.npy": "ac39c0314a499354061f6669708b05bc6aaea95708ae92f5ba15f7db52273d95",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\validation_serialization_roundtrip.json": "ce2d594bf3caf19c47f0b19666c7af163020dd8ace590842b1f7f322f73ddc81",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\normalization.json": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\training_mean_field.npy": "b2596285b96916c8856e96dc13617680ef61e82c89fb7ae1ae0f6308dfa39085",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\figconvnet\\figconvunet.py": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\data-provenance-clarification.json": "120de8550a38cd46074efe780464dfa39a132881813ac392234663a0abae202b",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet\\validation_fresh_process.json": "9be40d424f45624aa03e02f949eb23580fa563092a888ea3479230f9f14cce7d"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "figconvunet",
+    "module": "physicsnemo.models.figconvnet",
+    "class_name": "FIGConvUNet",
+    "implementation_module": "physicsnemo.models.figconvnet.figconvunet",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\figconvnet\\figconvunet.py",
+    "source_sha256": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "reference_mean_incident_corner_cell_volume_cuberoot",
+      "2_global_parameters"
+    ],
+    "dependencies": [
+      "warp-lang (import)",
+      "torch_scatter (CSR reduction)"
+    ],
+    "neighbor_backend": "installed torch.cdist/topk KNN; no radius-Warp execution"
+  },
+  "status": "completed",
+  "started_utc": "2026-10-15T07:20:44.684263+00:00",
+  "test_performance_passes": 1,
+  "completed_utc": "2026-10-15T07:21:07.809060+00:00",
+  "cases": [
+    "phone_e090_rxp050",
+    "phone_e110_rxm050"
+  ],
+  "shape": [
+    2,
+    76065,
+    10,
+    6
+  ],
+  "field_names": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "time_unit": "s",
+  "physical_metrics": {
+    "displacement_x": {
+      "unit": "mm",
+      "relative_l2": 0.025471452079076962,
+      "sum_squared_error": 1.5541163908842244,
+      "truth_sum_square": 2395.389452522641,
+      "truth_l2_norm": 48.94271603132218,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.0010107280948516068,
+      "absolute_error_p95": 0.0010920183733105675,
+      "absolute_error_max": 0.054389432072639465,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.07176772505044937,
+      "prediction_max": 0.009740810841321945,
+      "per_timestep_rmse": [
+        0.001729124432761099,
+        0.00035160091049569466,
+        0.0006439601254562669,
+        0.0009768132617561155,
+        0.00043160402279026667,
+        0.0006570725944598625,
+        0.0006938588348089196,
+        0.0014574600100151294,
+        0.000819236456210554,
+        0.0013559369306740663
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.7259301234134654,
+          "truth_sum_square": 1197.7751169015876,
+          "count": 760650,
+          "truth_absolute_peak": 0.06716892868280411,
+          "prediction_absolute_peak": 0.07176772505044937,
+          "absolute_peak_error": 0.004598796367645264,
+          "truth_peak_node_index": 73400,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.06896580755710602,
+          "absolute_error_at_truth_peak": 0.0017968788743019104,
+          "predicted_peak_node_index": 75525,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.8281862674707587,
+          "truth_sum_square": 1197.6143356210532,
+          "count": 760650,
+          "truth_absolute_peak": 0.06625418365001678,
+          "prediction_absolute_peak": 0.07144036889076233,
+          "absolute_peak_error": 0.005186185240745544,
+          "truth_peak_node_index": 73004,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.06807950139045715,
+          "absolute_error_at_truth_peak": 0.0018253177404403687,
+          "predicted_peak_node_index": 75525,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "relative_l2": 0.021809135071123854,
+      "sum_squared_error": 1.37090808475772,
+      "truth_sum_square": 2882.248707997368,
+      "truth_l2_norm": 53.6865784716941,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.0009492852572732857,
+      "absolute_error_p95": 0.0010303827002644548,
+      "absolute_error_max": 0.061854470521211624,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.0757288932800293,
+      "prediction_max": -0.00411885604262352,
+      "per_timestep_rmse": [
+        0.0016276434749823935,
+        0.000734137768977504,
+        0.0005031205299162031,
+        0.0007110288742966889,
+        0.0005048409518444738,
+        0.0005900635279230113,
+        0.0006929396793428533,
+        0.0010060401241683314,
+        0.0013205305013301296,
+        0.001106990891711436
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.6665765267652054,
+          "truth_sum_square": 1441.226163781957,
+          "count": 760650,
+          "truth_absolute_peak": 0.0728565901517868,
+          "prediction_absolute_peak": 0.07542461156845093,
+          "absolute_peak_error": 0.0025680214166641235,
+          "truth_peak_node_index": 74546,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.07326295971870422,
+          "absolute_error_at_truth_peak": 0.00040636956691741943,
+          "predicted_peak_node_index": 74392,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.7043315579925146,
+          "truth_sum_square": 1441.022544215411,
+          "count": 760650,
+          "truth_absolute_peak": 0.07207823544740677,
+          "prediction_absolute_peak": 0.0757288932800293,
+          "absolute_peak_error": 0.003650657832622528,
+          "truth_peak_node_index": 74547,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.073261559009552,
+          "absolute_error_at_truth_peak": 0.0011833235621452332,
+          "predicted_peak_node_index": 73777,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "relative_l2": 0.027844066043565742,
+      "sum_squared_error": 1.2423721993094916,
+      "truth_sum_square": 1602.4571092362203,
+      "truth_l2_norm": 40.030702082729206,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.0009036878216678355,
+      "absolute_error_p95": 0.0010091965552419429,
+      "absolute_error_max": 0.041803712490946054,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.054352790117263794,
+      "prediction_max": 0.0033998340368270874,
+      "per_timestep_rmse": [
+        0.001113433181877037,
+        0.0012428213988887793,
+        0.0006902411490407026,
+        0.0004079431045111167,
+        0.0005168308912925693,
+        0.0005814682770314377,
+        0.0008611909132516404,
+        0.0011249035097803742,
+        0.0009372506225270183,
+        0.0011174130559993395
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.5799578457132958,
+          "truth_sum_square": 801.317712454397,
+          "count": 760650,
+          "truth_absolute_peak": 0.05924070253968239,
+          "prediction_absolute_peak": 0.054144103080034256,
+          "absolute_peak_error": 0.005096599459648132,
+          "truth_peak_node_index": 73222,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.04926803708076477,
+          "absolute_error_at_truth_peak": 0.009972665458917618,
+          "predicted_peak_node_index": 72803,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.6624143535961959,
+          "truth_sum_square": 801.1393967818232,
+          "count": 760650,
+          "truth_absolute_peak": 0.05767599493265152,
+          "prediction_absolute_peak": 0.054352790117263794,
+          "absolute_peak_error": 0.003323204815387726,
+          "truth_peak_node_index": 73214,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.052274420857429504,
+          "absolute_error_at_truth_peak": 0.005401574075222015,
+          "predicted_peak_node_index": 74915,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "von_mises_GPS": {
+      "unit": "MPa",
+      "relative_l2": 0.5308421636611805,
+      "sum_squared_error": 85185.94922811368,
+      "truth_sum_square": 302299.3029847874,
+      "truth_l2_norm": 549.8175178955172,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.23663367631147503,
+      "absolute_error_p95": 0.08286149054765701,
+      "absolute_error_max": 24.122334003448486,
+      "truth_exact_nonzero_count": 1354540,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 445194,
+      "prediction_min": -0.19349075853824615,
+      "prediction_max": 4.197666168212891,
+      "per_timestep_rmse": [
+        0.05839927291464256,
+        0.0975974219599433,
+        0.12785337847881545,
+        0.15299203302884393,
+        0.18974619865434553,
+        0.2171122191923369,
+        0.24997981955217155,
+        0.3201224659554803,
+        0.33162505689005023,
+        0.3862400417634542
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 33532.79236613741,
+          "truth_sum_square": 127191.57535890809,
+          "count": 760650,
+          "truth_absolute_peak": 23.436975479125977,
+          "prediction_absolute_peak": 4.182492733001709,
+          "absolute_peak_error": 19.254482746124268,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 4.001952171325684,
+          "absolute_error_at_truth_peak": 19.435023307800293,
+          "predicted_peak_node_index": 75502,
+          "predicted_peak_time_index": 8
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 51653.1568619763,
+          "truth_sum_square": 175107.72762587934,
+          "count": 760650,
+          "truth_absolute_peak": 28.126007080078125,
+          "prediction_absolute_peak": 4.197666168212891,
+          "absolute_peak_error": 23.928340911865234,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 4.003673076629639,
+          "absolute_error_at_truth_peak": 24.122334003448486,
+          "predicted_peak_node_index": 75502,
+          "predicted_peak_time_index": 8
+        }
+      ]
+    },
+    "total_strain_frobenius": {
+      "unit": "1",
+      "relative_l2": 0.6316443579274491,
+      "sum_squared_error": 0.028897456640086937,
+      "truth_sum_square": 0.0724293150725937,
+      "truth_l2_norm": 0.26912694973300927,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.00013782321540218602,
+      "absolute_error_p95": 1.9862668159476024e-05,
+      "absolute_error_max": 0.013596636010333896,
+      "truth_exact_nonzero_count": 1354412,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 344739,
+      "prediction_min": -6.480103184003383e-05,
+      "prediction_max": 0.002174380933865905,
+      "per_timestep_rmse": [
+        3.404430728761994e-05,
+        6.0573117692196433e-05,
+        7.563308018534227e-05,
+        9.400443926671057e-05,
+        0.00012738887626370323,
+        0.00013103514946664722,
+        0.00015532311299580755,
+        0.00017431780289260885,
+        0.00018883187868825002,
+        0.0002167936616594966
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.01550495305483978,
+          "truth_sum_square": 0.038349515384056676,
+          "count": 760650,
+          "truth_absolute_peak": 0.015156315639615059,
+          "prediction_absolute_peak": 0.002174380933865905,
+          "absolute_peak_error": 0.012981934705749154,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 0.002151025226339698,
+          "absolute_error_at_truth_peak": 0.013005290413275361,
+          "predicted_peak_node_index": 75137,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.013392503585247156,
+          "truth_sum_square": 0.03407979968853702,
+          "count": 760650,
+          "truth_absolute_peak": 0.015736473724246025,
+          "prediction_absolute_peak": 0.002170775318518281,
+          "absolute_peak_error": 0.013565698405727744,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 0.0021398377139121294,
+          "absolute_error_at_truth_peak": 0.013596636010333896,
+          "predicted_peak_node_index": 75137,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "epsp": {
+      "unit": "1",
+      "relative_l2": 0.9952727212880994,
+      "sum_squared_error": 1.7992079582339877e-05,
+      "truth_sum_square": 1.816340059579202e-05,
+      "truth_l2_norm": 0.004261854126526625,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 3.4390084985825106e-06,
+      "absolute_error_p95": 1.6246385143858792e-07,
+      "absolute_error_max": 0.002708060431359627,
+      "truth_exact_nonzero_count": 27,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 761186,
+      "prediction_min": -1.7588383798283758e-06,
+      "prediction_max": 1.0856197150133085e-05,
+      "per_timestep_rmse": [
+        7.150469583776569e-08,
+        9.464084742645909e-08,
+        6.476459240621388e-08,
+        1.0958492844882125e-07,
+        5.577254129549478e-08,
+        6.982857411131421e-08,
+        1.352681878040235e-07,
+        1.0960641065710967e-06,
+        4.546598724477942e-06,
+        9.815208649683988e-06
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 4.604067169572319e-08,
+          "truth_sum_square": 0.0,
+          "count": 760650,
+          "truth_absolute_peak": 0.0,
+          "prediction_absolute_peak": 1.0435444892209489e-05,
+          "absolute_peak_error": 1.0435444892209489e-05,
+          "truth_peak_node_index": 0,
+          "truth_peak_time_index": 0,
+          "truth_peak_time": 2e-06,
+          "prediction_at_truth_peak": -5.4831684082046195e-08,
+          "absolute_error_at_truth_peak": 5.4831684082046195e-08,
+          "predicted_peak_node_index": 74942,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 1.794603891064415e-05,
+          "truth_sum_square": 1.816340059579202e-05,
+          "count": 760650,
+          "truth_absolute_peak": 0.00271891662850976,
+          "prediction_absolute_peak": 1.0856197150133085e-05,
+          "absolute_peak_error": 0.002708060431359627,
+          "truth_peak_node_index": 74942,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 1.0856197150133085e-05,
+          "absolute_error_at_truth_peak": 0.002708060431359627,
+          "predicted_peak_node_index": 74942,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_vector": {
+      "unit": "mm",
+      "relative_l2": 0.024611336276353372,
+      "sum_squared_error": 4.167396674951435,
+      "truth_sum_square": 6880.095269756229,
+      "component_rmse": 0.0009555740788359502,
+      "vector_rmse": 0.0016551028549396936,
+      "vector_error_p95": 0.002169063326384719,
+      "vector_error_max": 0.09023962931936373,
+      "centroid_removed_relative_l2": 1.2704630204589837
+    }
+  },
+  "epsp_diagnostics": {
+    "epsp": {
+      "support_definition": "Raw EPSP strictly greater than the exact dimensionless zero threshold; no fitted threshold or clipping. Projected nodal support is not a raw-cell damage criterion.",
+      "truth_exact_nonzero_count": 27,
+      "truth_exact_positive_count": 27,
+      "truth_exact_zero_count": 1521273,
+      "truth_negative_count": 0,
+      "prediction_exact_nonzero_count": 1521300,
+      "prediction_negative_count": 761186,
+      "prediction_min": -1.7588383798283758e-06,
+      "prediction_max": 1.0856197150133085e-05,
+      "count": 1521300,
+      "support": [
+        {
+          "threshold": 0.0,
+          "reference_count": 27,
+          "prediction_count": 760114,
+          "true_positive": 27,
+          "false_positive": 760087,
+          "false_negative": 0,
+          "true_negative": 761186,
+          "precision": 3.5520987641327485e-05,
+          "recall": 1.0,
+          "iou": 3.5520987641327485e-05
+        }
+      ],
+      "truth_positive_support_per_timestep": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        9,
+        11
+      ],
+      "prediction_positive_support_per_timestep": [
+        89459,
+        61897,
+        99231,
+        67091,
+        99679,
+        83111,
+        65128,
+        86795,
+        34895,
+        72828
+      ],
+      "rmse_on_reference_positive_support": 0.0008141515764924643,
+      "rmse_on_reference_exact_zero_support": 2.503215017377265e-07,
+      "prediction_absolute_peak_on_reference_exact_zero_support": 1.08146532511455e-05,
+      "history": {
+        "definition": "Strict time increments at fixed support; raw cumulative EPSP is expected not to decrease. Counts include roundoff. Reference increments are reported separately without corrections.",
+        "prediction": {
+          "minimum_delta": -1.9243792053202924e-06,
+          "maximum_delta": 4.675604031945113e-06,
+          "negative_count": 682393,
+          "zero_count": 0,
+          "count": 1369170,
+          "maximum_decrease": 1.9243792053202924e-06,
+          "decrease_magnitude_quantiles": {
+            "0.5": 3.9532579876322416e-08,
+            "0.9": 1.616946590843327e-07,
+            "0.95": 2.493300314654336e-07,
+            "0.99": 5.729509993912525e-07,
+            "1.0": 1.9243792053202924e-06
+          }
+        },
+        "truth": {
+          "minimum_delta": 0.0,
+          "maximum_delta": 0.001464584842324257,
+          "negative_count": 0,
+          "zero_count": 1369143,
+          "count": 1369170,
+          "maximum_decrease": 0.0,
+          "decrease_magnitude_quantiles": null
+        },
+        "stored_prediction_dtype": "float32",
+        "stored_truth_dtype": "float32",
+        "float32_machine_epsilon": 1.1920928955078125e-07
+      },
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "truth_positive_count": 0,
+          "truth_exact_zero_count": 760650,
+          "prediction_negative_count": 363876,
+          "truth_peak": 0.0,
+          "prediction_peak": 1.0435444892209489e-05
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "truth_positive_count": 27,
+          "truth_exact_zero_count": 760623,
+          "prediction_negative_count": 397310,
+          "truth_peak": 0.00271891662850976,
+          "prediction_peak": 1.0856197150133085e-05
+        }
+      ]
+    }
+  },
+  "principal_order_diagnostics": null,
+  "phone_ballistic_reference": {
+    "definition": "Uniform contact-free displacement v0*t + 0.5*a*t^2 = v0*t - 0.5*g*t^2 with signed g=-a from each hash-verified source deck. Actual source cards and nominal stored times are used; contact, deformation and constraints are intentionally absent from this analytic comparator.",
+    "coordinate_unit": "mm",
+    "source_time_unit": "s",
+    "time_conversion_to_seconds": 1.0,
+    "case_initial_condition_evidence": [
+      {
+        "case": "phone_e090_rxp050",
+        "starter_sha256": "5952227ce9e8ebc4ff7683d887ca650708d63b5672a0218c74b8b462abb38360",
+        "starter_path": "${WORKSPACE}\\work\\expanded-drop\\doe\\phone_e090_rxp050\\Cell_Phone_Drop_0000.rad",
+        "initial_speed_mm_per_s": 5424.942395981551,
+        "velocity_mm_per_s": [
+          -3200.900476,
+          -3511.241739,
+          -2618.285239
+        ],
+        "acceleration_mm_per_s_squared": [
+          -5788.233566,
+          -6349.428058,
+          -4734.6822
+        ],
+        "velocity_node_group": 1,
+        "gravity_node_group": 2,
+        "constant_gravity_function_domain_s": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "case": "phone_e110_rxm050",
+        "starter_sha256": "b34c8e92993ebc5391210aa1e9d632418cc510415d09105fc8112a87c01de082",
+        "starter_path": "${WORKSPACE}\\work\\expanded-drop\\doe\\phone_e110_rxm050\\Cell_Phone_Drop_0000.rad",
+        "initial_speed_mm_per_s": 5424.942395981551,
+        "velocity_mm_per_s": [
+          -3200.900476,
+          -3511.241739,
+          -2618.285239
+        ],
+        "acceleration_mm_per_s_squared": [
+          -5788.233566,
+          -6349.428058,
+          -4734.6822
+        ],
+        "velocity_node_group": 1,
+        "gravity_node_group": 2,
+        "constant_gravity_function_domain_s": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "ballistic_physical_metrics": {
+      "displacement_x": {
+        "unit": "mm",
+        "relative_l2": 0.01622851332241806,
+        "sum_squared_error": 0.6308608919761173,
+        "truth_sum_square": 2395.389452522641,
+        "truth_l2_norm": 48.94271603132218,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0006439607094923002,
+        "absolute_error_p95": 1.569098927277357e-05,
+        "absolute_error_max": 0.06401916716671319,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.06401916716671319,
+        "prediction_max": -0.006401812528467132,
+        "per_timestep_rmse": [
+          3.939360393312108e-05,
+          0.00011630500636966558,
+          0.00021576025279911056,
+          0.0003285333311273729,
+          0.0004524432311434258,
+          0.0005829619882571648,
+          0.0007144571558408872,
+          0.0008466430281510144,
+          0.0009797882541931525,
+          0.0011160199738120971
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.339308019420812,
+            "truth_sum_square": 1197.7751169015876,
+            "count": 760650,
+            "truth_absolute_peak": 0.06716892868280411,
+            "prediction_absolute_peak": 0.06401916716671319,
+            "absolute_peak_error": 0.003149761516090921,
+            "truth_peak_node_index": 73400,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.06401916716671319,
+            "absolute_error_at_truth_peak": 0.003149761516090921,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.29155287255530526,
+            "truth_sum_square": 1197.6143356210532,
+            "count": 760650,
+            "truth_absolute_peak": 0.06625418365001678,
+            "prediction_absolute_peak": 0.06401916716671319,
+            "absolute_peak_error": 0.002235016483303598,
+            "truth_peak_node_index": 73004,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.06401916716671319,
+            "absolute_error_at_truth_peak": 0.002235016483303598,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "relative_l2": 0.01661708813251064,
+        "sum_squared_error": 0.7958684702333416,
+        "truth_sum_square": 2882.248707997368,
+        "truth_l2_norm": 53.6865784716941,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0007232912599037038,
+        "absolute_error_p95": 1.773398003419857e-05,
+        "absolute_error_max": 0.07022610466561159,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.07022610466561159,
+        "prediction_max": -0.007022496176856116,
+        "per_timestep_rmse": [
+          4.350038737223181e-05,
+          0.0001304847005182506,
+          0.00024350477691411487,
+          0.0003726954019975059,
+          0.0005133458721475818,
+          0.0006605245656675698,
+          0.0008072965951000472,
+          0.0009526662448279056,
+          0.0010975536076840303,
+          0.0012452494176560455
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.4204501153093316,
+            "truth_sum_square": 1441.226163781957,
+            "count": 760650,
+            "truth_absolute_peak": 0.0728565901517868,
+            "prediction_absolute_peak": 0.07022610466561159,
+            "absolute_peak_error": 0.002630485486175213,
+            "truth_peak_node_index": 74546,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.07022610466561159,
+            "absolute_error_at_truth_peak": 0.002630485486175213,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.37541835492401004,
+            "truth_sum_square": 1441.022544215411,
+            "count": 760650,
+            "truth_absolute_peak": 0.07207823544740677,
+            "prediction_absolute_peak": 0.07022610466561159,
+            "absolute_peak_error": 0.0018521307817951776,
+            "truth_peak_node_index": 74547,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.07022610466561159,
+            "absolute_error_at_truth_peak": 0.0018521307817951776,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "relative_l2": 0.02678619728416587,
+        "sum_squared_error": 1.1497635606877088,
+        "truth_sum_square": 1602.4571092362203,
+        "truth_l2_norm": 40.030702082729206,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0008693543621329829,
+        "absolute_error_p95": 9.98499601154168e-07,
+        "absolute_error_max": 0.05741772300636676,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.05236665171643999,
+        "prediction_max": -0.0052365799473643995,
+        "per_timestep_rmse": [
+          3.285271404197185e-05,
+          9.993705259159342e-05,
+          0.00020630659310604007,
+          0.0003507158343654189,
+          0.0005262365792660416,
+          0.0007220071964198492,
+          0.0009283424995768274,
+          0.0011425309652791846,
+          0.0013647569432056852,
+          0.0015978616026582988
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.5807961003701665,
+            "truth_sum_square": 801.317712454397,
+            "count": 760650,
+            "truth_absolute_peak": 0.05924070253968239,
+            "prediction_absolute_peak": 0.05236665171643999,
+            "absolute_peak_error": 0.0068740508232423975,
+            "truth_peak_node_index": 73222,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.05236665171643999,
+            "absolute_error_at_truth_peak": 0.0068740508232423975,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.5689674603175419,
+            "truth_sum_square": 801.1393967818232,
+            "count": 760650,
+            "truth_absolute_peak": 0.05767599493265152,
+            "prediction_absolute_peak": 0.05236665171643999,
+            "absolute_peak_error": 0.005309343216211529,
+            "truth_peak_node_index": 73214,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.05236665171643999,
+            "absolute_error_at_truth_peak": 0.005309343216211529,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_vector": {
+        "unit": "mm",
+        "relative_l2": 0.01935161659386571,
+        "sum_squared_error": 2.5764929228971676,
+        "truth_sum_square": 6880.095269756229,
+        "component_rmse": 0.0007513571385571931,
+        "vector_rmse": 0.0013013887386106272,
+        "vector_error_p95": 3.688056402491696e-05,
+        "vector_error_max": 0.10850080991963115,
+        "centroid_removed_relative_l2": 0.9999999999999999
+      }
+    },
+    "gravity_only_physical_metrics": {
+      "displacement_x": {
+        "unit": "mm",
+        "relative_l2": 0.999985780246099,
+        "sum_squared_error": 2395.321329309968,
+        "truth_sum_square": 2395.389452522641,
+        "truth_l2_norm": 48.94271603132218,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.03968025534661483,
+        "absolute_error_p95": 0.06401677894062048,
+        "absolute_error_max": 0.06716777103609091,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -1.1576467131999998e-06,
+        "prediction_max": -1.1576467131999999e-08,
+        "per_timestep_rmse": [
+          0.006401550640074362,
+          0.012801809376824853,
+          0.01920004934257466,
+          0.025596719611485724,
+          0.031991374722420175,
+          0.03838359791795494,
+          0.044773287860116626,
+          0.051160342877655744,
+          0.05754425046558534,
+          0.06392502736505427
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 1197.7410544469567,
+            "truth_sum_square": 1197.7751169015876,
+            "count": 760650,
+            "truth_absolute_peak": 0.06716892868280411,
+            "prediction_absolute_peak": 1.1576467131999998e-06,
+            "absolute_peak_error": 0.06716777103609091,
+            "truth_peak_node_index": 73400,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.1576467131999998e-06,
+            "absolute_error_at_truth_peak": 0.06716777103609091,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 1197.5802748630108,
+            "truth_sum_square": 1197.6143356210532,
+            "count": 760650,
+            "truth_absolute_peak": 0.06625418365001678,
+            "prediction_absolute_peak": 1.1576467131999998e-06,
+            "absolute_peak_error": 0.06625302600330359,
+            "truth_peak_node_index": 73004,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.1576467131999998e-06,
+            "absolute_error_at_truth_peak": 0.06625302600330359,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "relative_l2": 0.9999857799707506,
+        "sum_squared_error": 2882.1667372583215,
+        "truth_sum_square": 2882.248707997368,
+        "truth_l2_norm": 53.6865784716941,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.04352633679939165,
+        "absolute_error_p95": 0.07022347717611784,
+        "absolute_error_max": 0.07285532026617521,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -1.2698856115999997e-06,
+        "prediction_max": -1.2698856116000001e-08,
+        "per_timestep_rmse": [
+          0.007022150953040762,
+          0.014042751505760214,
+          0.02106151183070416,
+          0.028077959185163943,
+          0.03509184695110404,
+          0.04210346090161282,
+          0.04911273995820809,
+          0.056118950368826886,
+          0.06312192005273073,
+          0.07012159193217028
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 1441.18517720997,
+            "truth_sum_square": 1441.226163781957,
+            "count": 760650,
+            "truth_absolute_peak": 0.0728565901517868,
+            "prediction_absolute_peak": 1.2698856115999997e-06,
+            "absolute_peak_error": 0.07285532026617521,
+            "truth_peak_node_index": 74546,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.2698856115999997e-06,
+            "absolute_error_at_truth_peak": 0.07285532026617521,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 1440.9815600483514,
+            "truth_sum_square": 1441.022544215411,
+            "count": 760650,
+            "truth_absolute_peak": 0.07207823544740677,
+            "prediction_absolute_peak": 1.2698856115999997e-06,
+            "absolute_peak_error": 0.07207696556179517,
+            "truth_peak_node_index": 74547,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.2698856115999997e-06,
+            "absolute_error_at_truth_peak": 0.07207696556179517,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "relative_l2": 0.9999857825315628,
+        "sum_squared_error": 1602.4115437933901,
+        "truth_sum_square": 1602.4571092362203,
+        "truth_l2_norm": 40.030702082729206,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.03245484952164796,
+        "absolute_error_p95": 0.05236478078620481,
+        "absolute_error_max": 0.05923975560324239,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -9.469364399999998e-07,
+        "prediction_max": -9.4693644e-09,
+        "per_timestep_rmse": [
+          0.0052362340347053915,
+          0.010471346637060942,
+          0.015704876551127626,
+          0.020936682246819504,
+          0.026166599052544134,
+          0.03139453408484358,
+          0.03662039910386903,
+          0.04184405934609225,
+          0.04706545935174229,
+          0.05228454306019168
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 801.2949284775499,
+            "truth_sum_square": 801.317712454397,
+            "count": 760650,
+            "truth_absolute_peak": 0.05924070253968239,
+            "prediction_absolute_peak": 9.469364399999998e-07,
+            "absolute_peak_error": 0.05923975560324239,
+            "truth_peak_node_index": 73222,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -9.469364399999998e-07,
+            "absolute_error_at_truth_peak": 0.05923975560324239,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 801.1166153158404,
+            "truth_sum_square": 801.1393967818232,
+            "count": 760650,
+            "truth_absolute_peak": 0.05767599493265152,
+            "prediction_absolute_peak": 9.469364399999998e-07,
+            "absolute_peak_error": 0.05767504799621152,
+            "truth_peak_node_index": 73214,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -9.469364399999998e-07,
+            "absolute_error_at_truth_peak": 0.05767504799621152,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_vector": {
+        "unit": "mm",
+        "relative_l2": 0.9999857806630605,
+        "sum_squared_error": 6879.899610361679,
+        "truth_sum_square": 6880.095269756229,
+        "component_rmse": 0.0388260304307108,
+        "vector_rmse": 0.06724865736220645,
+        "vector_error_p95": 0.10849679718509804,
+        "vector_error_max": 0.10882715054578972,
+        "centroid_removed_relative_l2": 1.0
+      }
+    },
+    "model_displacement_sse_over_ballistic_sse": 1.6174687063628173
+  },
+  "figures": {
+    "case_selection": "First held-out case in frozen split order, final stored time; no error-based selection",
+    "geometry": "All support points at reference XY; overlapping assembly parts can hide each other. No response clipping, nodal subsampling or deformed-geometry exaggeration.",
+    "figures": [
+      {
+        "path": "displacement_magnitude_final_FEM_prediction_error.png",
+        "sha256": "5de60959805df926416b0476bb5e6cb35e09956e480f0e194fb4c859619103fb",
+        "case": "phone_e090_rxp050",
+        "field": "displacement_magnitude",
+        "fem_prediction_common_color_bounds": [
+          0.0,
+          0.11643846200473931
+        ],
+        "error_symmetric_bounds": [
+          -0.09023962931936373,
+          0.09023962931936373
+        ]
+      },
+      {
+        "path": "von_mises_GPS_final_FEM_prediction_error.png",
+        "sha256": "8d4547801b0715df032b7da7de22d653b493c8dfb50ea1bea284fb0d3c40ada2",
+        "case": "phone_e090_rxp050",
+        "field": "von_mises_GPS",
+        "fem_prediction_common_color_bounds": [
+          -0.010171569883823395,
+          23.436975479125977
+        ],
+        "error_symmetric_bounds": [
+          -19.435023307800293,
+          19.435023307800293
+        ]
+      },
+      {
+        "path": "total_strain_frobenius_final_FEM_prediction_error.png",
+        "sha256": "94013f434a8dfb640762ef90508faf7417617c97948144fbc777d4963cfe303b",
+        "case": "phone_e090_rxp050",
+        "field": "total_strain_frobenius",
+        "fem_prediction_common_color_bounds": [
+          -8.133025403367355e-06,
+          0.015156315639615059
+        ],
+        "error_symmetric_bounds": [
+          -0.013005290413275361,
+          0.013005290413275361
+        ]
+      },
+      {
+        "path": "epsp_final_FEM_prediction_error.png",
+        "sha256": "9eefbe21fe17c5c4dc9758d484a7a78198a562652a844b56b24e2786988ff71a",
+        "case": "phone_e090_rxp050",
+        "field": "epsp",
+        "fem_prediction_common_color_bounds": [
+          -1.0269908443660825e-06,
+          1.0435444892209489e-05
+        ],
+        "error_symmetric_bounds": [
+          -1.0435444892209489e-05,
+          1.0435444892209489e-05
+        ]
+      }
+    ]
+  },
+  "per_case": [
+    {
+      "case": "phone_e090_rxp050",
+      "forward_seconds_cuda_synchronized": 0.9294308000025922,
+      "preparation": {
+        "read_normalize_seconds": 0.007194800004072022,
+        "read_seconds": 0.0019688999964273535,
+        "normalize_seconds": 0.005216899990045931,
+        "host_device_transfer_seconds": 0.000916299999516923
+      },
+      "device_to_host_unscale_save_truth_read_seconds": 0.14880680000351276,
+      "normalized_prediction": "phone_e090_rxp050.normalized.npy",
+      "physical_prediction": "phone_e090_rxp050.physical.npy"
+    },
+    {
+      "case": "phone_e110_rxm050",
+      "forward_seconds_cuda_synchronized": 0.22653080000600312,
+      "preparation": {
+        "read_normalize_seconds": 0.007993200000782963,
+        "read_seconds": 0.0022775999968871474,
+        "normalize_seconds": 0.0057098000033875,
+        "host_device_transfer_seconds": 0.0008769999985815957
+      },
+      "device_to_host_unscale_save_truth_read_seconds": 0.13338539999676868,
+      "normalized_prediction": "phone_e110_rxm050.normalized.npy",
+      "physical_prediction": "phone_e110_rxm050.physical.npy"
+    }
+  ],
+  "forward_seconds_cuda_synchronized_total": 1.1559616000085953,
+  "metrics_and_figures_seconds": 20.523847199998272,
+  "output_sha256": {
+    "displacement_magnitude_final_FEM_prediction_error.png": "5de60959805df926416b0476bb5e6cb35e09956e480f0e194fb4c859619103fb",
+    "epsp_final_FEM_prediction_error.png": "9eefbe21fe17c5c4dc9758d484a7a78198a562652a844b56b24e2786988ff71a",
+    "phone_e090_rxp050.normalized.npy": "16e4bd3f6c41b24eb29f6a6584084f302c912e5a71315049e82c38e5d9cf7f47",
+    "phone_e090_rxp050.physical.npy": "969784e4384b3a56da2350a657e43d75b2565dfc7f1d378a5a619f0f7af29ed5",
+    "phone_e110_rxm050.normalized.npy": "5b4fa1bd3574c94811541d70d1a2211ef8b0467ff81dc8a920d2bc2720c8b917",
+    "phone_e110_rxm050.physical.npy": "96e20b9b3c3978eafc267604c0244c1a660367258c15ad43e28707fe623505aa",
+    "predictions.npy": "e2270b60df00b6b95444974be383f29e21755fafdc30dd6fa263eb59aefd6284",
+    "total_strain_frobenius_final_FEM_prediction_error.png": "94013f434a8dfb640762ef90508faf7417617c97948144fbc777d4963cfe303b",
+    "truth.npy": "f9fe7d81281e734e23e251d01682bdf3dfd47ff1dc168d8f2c2f43af9afdb38b",
+    "von_mises_GPS_final_FEM_prediction_error.png": "8d4547801b0715df032b7da7de22d653b493c8dfb50ea1bea284fb0d3c40ada2"
+  },
+  "baseline_source_sha256": {
+    "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\source_metadata\\frozen-case-manifest.json": "2995581f60626a0edbf9e48aa50fac56417760c39fc9b8717a1222a1102f74fd",
+    "${WORKSPACE}\\work\\expanded-drop\\doe\\phone_e090_rxp050\\Cell_Phone_Drop_0000.rad": "5952227ce9e8ebc4ff7683d887ca650708d63b5672a0218c74b8b462abb38360",
+    "${WORKSPACE}\\work\\expanded-drop\\doe\\phone_e110_rxm050\\Cell_Phone_Drop_0000.rad": "b34c8e92993ebc5391210aa1e9d632418cc510415d09105fc8112a87c01de082"
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "raw_predictions_clipped": false,
+  "data_access_disclosure": "READY/contract hashing covers every split. Each held-out FEM target is opened once after sentinel creation; metrics/figures then reuse saved memory-mapped truth and predictions. One B1 forward per held-out case, with no warm-up or repeated performance pass.",
+  "metric_memory_scope": "Disk-backed aggregate float32 arrays; physical_metrics temporarily allocates channel-wise float64 fields and displacement vectors.",
+  "peak_sampled_rss_bytes_lower_bound": 1722486784,
+  "data_value_access": {
+    "train": {
+      "phone_e100_rx000": 1
+    },
+    "validation": {},
+    "test": {
+      "phone_e090_rxp050": 1,
+      "phone_e110_rxm050": 1
+    }
+  },
+  "cuda_allocator_peak_bytes": 392402432,
+  "cuda_reserved_peak_bytes": 551550976,
+  "total_wall_seconds": 43.53925680000248
+}

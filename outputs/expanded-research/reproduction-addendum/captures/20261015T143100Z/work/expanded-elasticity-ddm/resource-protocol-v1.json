@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "preflight_available_bytes": 1395864371,
+  "executed": false,
+  "original_scripts": [
+    {
+      "path": "run-full-ddm.py",
+      "sha256": "ccecf6028becfb9a348d6b6c894d769ffc0f582521d7a75a00db06f85b441b09"
+    },
+    {
+      "path": "run-supervised.ps1",
+      "sha256": "e9a3606081c29f3fabe5e5866fc8f99279e05be9b3d66723a3f2e2f0568a2385"
+    }
+  ],
+  "review": "Independent read-only reviewer found no critical issues; exact2unused-import source change verified."
+}

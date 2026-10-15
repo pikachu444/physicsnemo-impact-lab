@@ -1,0 +1,183 @@
+{
+  "status": "additive_provenance_clarification; no numerical artifact modified",
+  "checked_date": "2026-10-15",
+  "correction": {
+    "issue": "The frozen common V2 label_source used 'public phone OpenRadioss20us canonical fields', which can be read as a ready-made public OpenRadioss result dataset.",
+    "correct_description": "Nine new local OpenCourant FEM executions of the public phone deck obtained from an independently documented public mirror; labels are the resulting first-20-us canonical fields, interpolated from actual saved frame times onto nominal 2..20 us target times without extrapolation. These are not pre-existing public OpenRadioss FEM results.",
+    "unchanged": "V2 manifests, READY inventories, label arrays, normalized statistics, mean fields, and any completed model checkpoint remain frozen. This document corrects the interpretation of text provenance only."
+  },
+  "solver": {
+    "product": "OpenCourant Starter and Engine Win64 Extended Single Precision",
+    "threads": 2,
+    "domains": 1,
+    "binary_sha256": [
+      {
+        "Path": "${WORKSPACE}\\work\\opencourant-experiment\\solver\\OpenCourant\\exec\\starter_win64_sp.exe",
+        "Hash": "50AEB10AF83AD7F5C8AF5521B8B60AAD666673A3B027DAB7E5A1DD10901690E4"
+      },
+      {
+        "Path": "${WORKSPACE}\\work\\opencourant-experiment\\solver\\OpenCourant\\exec\\engine_win64_sp.exe",
+        "Hash": "13A9D6551FB9206B6C27C8AF819E752EDF3550E4725E446A2C3042C6C1A2B9D1"
+      },
+      {
+        "Path": "${WORKSPACE}\\work\\opencourant-experiment\\solver\\OpenCourant\\exec\\anim_to_vtk_win64.exe",
+        "Hash": "238278B91341168F517EB1547EFDB249705AF8080CD1F0BECA0BA61D3BC65E12"
+      }
+    ],
+    "binary_provenance_limit": "The actual executed binaries are pinned by SHA256. No independently verified equivalence to a particular source-code build commit is claimed.",
+    "evidence": [
+      "outputs/expanded-research/benchmarks/drop_test/environment.json",
+      "outputs/expanded-research/benchmarks/drop_test/20us/execution-metrics.json",
+      "outputs/expanded-research/benchmarks/drop_test/doe/*/execution-metrics.json"
+    ]
+  },
+  "public_input_deck": {
+    "mirror_repository": "https://github.com/rogerjdeangelis/altair-slc-openradioss-python-script-for-cell-phone-drop-simulation-no-gui",
+    "mirror_commit": "274a4d71a845534fa27a927d7595c16a17c874fa",
+    "official_byte_identity_verified": false,
+    "source_provenance_file_sha256": "c187b3a24c0258a0b807cd6df12f35a8d420a83e76fbb732451ad8ba47dd5606",
+    "license_in_deck": "CC-BY-NC-4.0"
+  },
+  "static_feature_clarification": {
+    "name": "reference_mean_incident_corner_cell_volume_cuberoot",
+    "unit": "mm",
+    "meaning": "Cube root of the mean reference volume of incident corner-node cells; a local reference mesh-length scalar.",
+    "legacy_internal_key": "thickness",
+    "legacy_key_is_not_physical_definition": true,
+    "new_nn_metadata": "run_benchmark.py explicitly substitutes cache.static_feature_name into model_source.input_information and the metrics input description."
+  },
+  "frozen_cache_evidence": [
+    {
+      "support": "full",
+      "frozen_manifest": "work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "frozen_manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "frozen_ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+      "normalization_sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+      "training_mean_field_sha256": "b2596285b96916c8856e96dc13617680ef61e82c89fb7ae1ae0f6308dfa39085",
+      "original_label_source_text": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+      "target_proofs": [
+        {
+          "case": "phone_e100_rx000",
+          "common_target_sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf",
+          "canonical_target_sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e080_rxm100",
+          "common_target_sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa",
+          "canonical_target_sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e080_rxp100",
+          "common_target_sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f",
+          "canonical_target_sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e120_rxm100",
+          "common_target_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+          "canonical_target_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e120_rxp100",
+          "common_target_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+          "canonical_target_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e090_rxm050",
+          "common_target_sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c",
+          "canonical_target_sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e110_rxp050",
+          "common_target_sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da",
+          "canonical_target_sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e090_rxp050",
+          "common_target_sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51",
+          "canonical_target_sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "common_target_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+          "canonical_target_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+          "byte_identity_verified": true
+        }
+      ],
+      "manifest_unchanged_after_verification": true
+    },
+    {
+      "support": "rear",
+      "frozen_manifest": "work\\expanded-ml\\phone-rear-cache-v2\\manifest.json",
+      "frozen_manifest_sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48",
+      "frozen_ready_sha256": "1d01921d9c13ec8c121662a4e69665e632cec7dd933e0b176c006278582df371",
+      "normalization_sha256": "34408da4f962d89c80761bf8271c4171cfaed6152affff67c63d3f182c8ea768",
+      "training_mean_field_sha256": "b6926c5d90d9c620710fc46fe13fceff8c90a28cd4443548ffb35ce77fbaeef7",
+      "original_label_source_text": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+      "target_proofs": [
+        {
+          "case": "phone_e100_rx000",
+          "common_target_sha256": "cd2bfebdd7bf02290a6ff82fa800e9cfeebb0a203f274736a618f7d2b890ffc8",
+          "canonical_target_sha256": "cd2bfebdd7bf02290a6ff82fa800e9cfeebb0a203f274736a618f7d2b890ffc8",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e080_rxm100",
+          "common_target_sha256": "773042b5cdb43e315554d43bfa0edcdbe7694586b3a66b721ecde16ed2df548a",
+          "canonical_target_sha256": "773042b5cdb43e315554d43bfa0edcdbe7694586b3a66b721ecde16ed2df548a",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e080_rxp100",
+          "common_target_sha256": "c68a8981b384459fc9adbc21f5f1ea89099ffee0ef902d9e11ab0bb9d45057a9",
+          "canonical_target_sha256": "c68a8981b384459fc9adbc21f5f1ea89099ffee0ef902d9e11ab0bb9d45057a9",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e120_rxm100",
+          "common_target_sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c",
+          "canonical_target_sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e120_rxp100",
+          "common_target_sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b",
+          "canonical_target_sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e090_rxm050",
+          "common_target_sha256": "256dd323aafda9ad5cbadd4280283a4e432b25d7e2bc84d83ce64ae897daa0da",
+          "canonical_target_sha256": "256dd323aafda9ad5cbadd4280283a4e432b25d7e2bc84d83ce64ae897daa0da",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e110_rxp050",
+          "common_target_sha256": "7f05d6ba3a9eade4b51e2fc0be4fb872095185a603a9822ed95f0d4931cf2b5b",
+          "canonical_target_sha256": "7f05d6ba3a9eade4b51e2fc0be4fb872095185a603a9822ed95f0d4931cf2b5b",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e090_rxp050",
+          "common_target_sha256": "247f6f6a434e7f4b61474318d1384841e63e725f396f05fbf9a59f43718c9d3c",
+          "canonical_target_sha256": "247f6f6a434e7f4b61474318d1384841e63e725f396f05fbf9a59f43718c9d3c",
+          "byte_identity_verified": true
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "common_target_sha256": "a20adfa869a7d248001fd3d76b424b4332c5408b62065ccfc88ef2ef600ab71f",
+          "canonical_target_sha256": "a20adfa869a7d248001fd3d76b424b4332c5408b62065ccfc88ef2ef600ab71f",
+          "byte_identity_verified": true
+        }
+      ],
+      "manifest_unchanged_after_verification": true
+    }
+  ]
+}

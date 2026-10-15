@@ -1,0 +1,19 @@
+{
+  "status": "deferred_operating_memory_preflight_no_child_no_retry",
+  "recorded_utc": "2026-10-15T13:51:13.045352+00:00",
+  "preflight_receipt": "antlr-source-20261015T135035520165Z.json",
+  "preflight_receipt_sha256": "24d764807e586a95d7590cb8af52a50e0c94aab3a611a6cdee391a0855a84d30",
+  "observed_available_bytes": 786493440,
+  "required_operating_available_bytes": 1610612736,
+  "memory_threshold_interpretation": "Operational headroom for this stage; not an intrinsic minimum RAM claim for any model.",
+  "second_memory_observation_performed": false,
+  "disk_free_bytes": 65233510400,
+  "child_started": false,
+  "build_attempts_started": 0,
+  "build_sentinel_exists": false,
+  "build_venv_exists": false,
+  "runtime_venv_exists": false,
+  "install_or_framework_or_array_or_GPU_performed": false,
+  "automatic_retry_planned": false,
+  "next_action": "Idle until explicit root reallocation."
+}

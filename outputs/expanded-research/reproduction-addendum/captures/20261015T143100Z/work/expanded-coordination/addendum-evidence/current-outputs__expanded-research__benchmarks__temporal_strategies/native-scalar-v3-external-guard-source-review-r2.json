@@ -1,0 +1,36 @@
+{
+  "status": "external_guard_r2_bounded_source_gate_approved",
+  "reviewer": "/root/complete_temporal_training/audit_multifield_v3",
+  "disposition": "approve",
+  "scope": "Exact R2 cross-policy retry correction, unchanged source pins and two resource policies",
+  "guard": {
+    "path": "work/expanded-temporal/run_multifield_guarded.py",
+    "sha256": "4ba5c2953fcdc6b242ed59ddd85ad34010a1d8f8394a1e4ab8578023231df9e0"
+  },
+  "stdlib_selfcheck": {
+    "path": "work/expanded-temporal/guarded_resource_selfcheck.py",
+    "sha256": "027929f188195bb15049ad3c55011c2d2b53e2c770fcb2c46dd8d3e0e6c01c18",
+    "cases_passed": 20,
+    "framework_imports": 0,
+    "hardware_queried": false
+  },
+  "standard_lock": {
+    "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json",
+    "sha256": "9863c853fbf661afa4bec677820b24a8ab0e9bb8989a39759cfd5f50898218fd"
+  },
+  "calibration_lock": {
+    "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r2.json",
+    "sha256": "0e61aa302189aeae1e4ae2af84f1985a15408092a8d5ed0ef2f5db689a107f88"
+  },
+  "approved_current_execution": {
+    "standard_preflight_only": 1,
+    "cold_phone_tc_functional_attempt": 1,
+    "other_resource_stages": "Not executed; reserved for a later explicit root decision",
+    "full_fits": 0,
+    "heldout_evaluations": 0
+  },
+  "correction": "Standard policy rejects actual phone_full/time_conditional/probe in both verify_lock and run_attempt; standard child-zero preflight remains allowed; actual calibration uses the exclusive one-shot sentinel.",
+  "unchanged_r4_source_count": 20,
+  "source_inventory_per_lock": 24,
+  "prior_unexecuted_revision_preserved": true
+}

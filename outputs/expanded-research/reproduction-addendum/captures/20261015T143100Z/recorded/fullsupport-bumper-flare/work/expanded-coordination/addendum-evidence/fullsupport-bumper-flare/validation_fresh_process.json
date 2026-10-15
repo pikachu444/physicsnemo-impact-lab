@@ -1,0 +1,113 @@
+{
+  "process_identity": {
+    "pid": 33216,
+    "created_unix_seconds": 1792050373.9095173
+  },
+  "pid": 33216,
+  "architecture": "flare",
+  "checkpoint_sha256": "4b599fafad7a02728086dca0af212ff42afdddae7d0468476b855b3720c69336",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 24.296361199994863,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\checkpoint-frozen.json": "1ae16724a933d09d78205ec163bf897e6c12f19e0314223c1271a3c6f454735a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\training_report.json": "eda8865d75a9d54d45bb11f4497bac88df0dcd601723b5d7423650051eb8548a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\best_checkpoint.pt": "4b599fafad7a02728086dca0af212ff42afdddae7d0468476b855b3720c69336",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\validation_reference.npy": "b44e158e4f004870e78b8cadb1731f7f7d2366deacd6109c0d42590f9d388210",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\validation_serialization_roundtrip.json": "60e0cbeacd0bf95df19ba7e72da5baeea9bafc8455767a26b507ecd8f432c189",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\normalization.json": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\training_mean_field.npy": "c43458747b232eecabd882d023b345013065473c7c41d2b8e59643a31a88ffaf",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\flare\\flare.py": "b3b9d9136f71c5df9f0870a5e5bc9bced2190509113e1a74fa078aa150fd8aa9"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "flare",
+    "module": "physicsnemo.models.flare",
+    "class_name": "FLARE",
+    "implementation_module": "physicsnemo.models.flare.flare",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "${WORKSPACE}\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\flare\\flare.py",
+    "source_sha256": "b3b9d9136f71c5df9f0870a5e5bc9bced2190509113e1a74fa078aa150fd8aa9",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "3_global_parameters"
+    ]
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-15T07:46:40.114897+00:00",
+  "validation_anchor_case": "Run219",
+  "max_scale_normalized_difference": 0.0,
+  "tolerance_scale_normalized": 1e-05,
+  "test_values_used": false,
+  "forward_seconds_cuda_synchronized": 0.21953650000068592,
+  "preparation": {
+    "read_normalize_seconds": 0.0019350000002305023,
+    "read_seconds": 0.0012361000044620596,
+    "normalize_seconds": 0.0006931999960215762,
+    "host_device_transfer_seconds": 0.0005336999965948053
+  },
+  "data_value_access": {
+    "train": {
+      "Run192": 1
+    },
+    "validation": {},
+    "test": {}
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "total_wall_seconds": 25.96772979999514,
+  "definition": "Fresh executable process reconstructs model from fixed serialized checkpoint and compares its validation anchor with training's saved normalized reference; no test response values."
+}

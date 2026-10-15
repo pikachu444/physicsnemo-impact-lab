@@ -1,0 +1,10 @@
+Processing ${WORKSPACE}\work\expanded-clean-runtime\antlr-source\extracted-r2\antlr4-python3-runtime-4.9.3
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: antlr4-python3-runtime
+  DEPRECATION: Building 'antlr4-python3-runtime' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'antlr4-python3-runtime'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for antlr4-python3-runtime (setup.py): started
+  Building wheel for antlr4-python3-runtime (setup.py): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144615 sha256=815dd98f0ae9191076788662e065b7bf86a7e8c53dc241f4c1ac588197bae439
+  Stored in directory: ${WORKSPACE}\work\expanded-clean-runtime\tmp\pip-ephem-wheel-cache-in5hvh0k\wheels\37\1a\89\445de9894f03df8b90785b13f9d892f01f4f1df97add2181c6
+Successfully built antlr4-python3-runtime

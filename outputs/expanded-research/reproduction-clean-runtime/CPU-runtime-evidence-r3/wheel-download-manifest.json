@@ -1,0 +1,558 @@
+{
+  "status": "complete_exact_wheels_verified",
+  "started_utc": "2026-10-15T08:30:54.286144+00:00",
+  "files": [
+    {
+      "filename": "aiosignal-1.4.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 7490,
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e"
+    },
+    {
+      "filename": "termcolor-3.3.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 7734,
+      "sha256": "cf642efadaf0a8ebbbf4bc7a31cec2f9b5f21a9f726f4ccbb08192c9c26f43a5"
+    },
+    {
+      "filename": "cycler-0.12.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 8321,
+      "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"
+    },
+    {
+      "filename": "zipp-4.1.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 10582,
+      "sha256": "8979f52d874162f485ff2981e3891f3a3317b7a3dd43ff1e1775b9304f307a9c"
+    },
+    {
+      "filename": "six-1.17.0-py2.py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 11050,
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "filename": "pyvers-0.2.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 11757,
+      "sha256": "6f5b5612f2f4bd08caa49baa70fc5f875fc7da701a5385c13e244eea6b8114dd"
+    },
+    {
+      "filename": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 15038,
+      "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472"
+    },
+    {
+      "filename": "markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 15113,
+      "sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5"
+    },
+    {
+      "filename": "jmespath-1.1.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 20419,
+      "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64"
+    },
+    {
+      "filename": "wadler_lindig-0.1.7-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 20516,
+      "sha256": "e3ec83835570fd0a9509f969162aeb9c65618f998b1f42918cfc8d45122fe953"
+    },
+    {
+      "filename": "donfig-0.8.1.post1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 21592,
+      "sha256": "2a3175ce74a06109ff9307d90a230f81215cbac9a751f4d1c6194644b8204f9d"
+    },
+    {
+      "filename": "cloudpickle-3.1.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 22228,
+      "sha256": "9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a"
+    },
+    {
+      "filename": "aioitertools-0.13.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 24182,
+      "sha256": "0be0292b856f08dfac90e31f4739432f4cb6d7520ab9eb73e143f4f2fa5259be"
+    },
+    {
+      "filename": "smmap-5.0.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 24390,
+      "sha256": "c106e05d5a61449cf6ba9a1e650227ecfb141590d2a98412103ff35d89fc7b2f"
+    },
+    {
+      "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 25335,
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "filename": "importlib_metadata-9.0.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 27920,
+      "sha256": "bba5600596a7e21f3eef53281cf28d6a5195634d2f2b78ff9501a3272c6eaab0"
+    },
+    {
+      "filename": "treelib-1.8.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 30728,
+      "sha256": "5235d1ebf988c5026f26ce6e5e0cd470007f16d4978185f5c9b3eee8a25aef81"
+    },
+    {
+      "filename": "s3fs-2026.9.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 33126,
+      "sha256": "eb185fd98e20a1c9375087d9b2a6ef506f0cd01ae0c0c94efc79f88403fb81fe"
+    },
+    {
+      "filename": "google_crc32c-1.9.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 35090,
+      "sha256": "8583ec21d56b565d68ab2963cc7e21b3b271247c29b04286068255ef65f221bd"
+    },
+    {
+      "filename": "xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 36520,
+      "sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375"
+    },
+    {
+      "filename": "h11-0.16.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 37515,
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "filename": "frozenlist-1.8.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 43882,
+      "sha256": "878be833caa6a3821caf85eb39c5ba92d28e85df26d57afb06b35b2efd937231"
+    },
+    {
+      "filename": "propcache-0.5.4-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 45342,
+      "sha256": "0c889f6fa84957bc7e8b4eab71fd16a0455068d5045e3aa40c733071d2b2fd77"
+    },
+    {
+      "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "filename": "filelock-3.29.7-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 46036,
+      "sha256": "987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51"
+    },
+    {
+      "filename": "jaxtyping-0.3.11-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 56593,
+      "sha256": "8a4bedc4e3f963fa82df41bd13c7ebc2bad925601eb48614c65798f21329d4e3"
+    },
+    {
+      "filename": "multidict-6.9.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 59449,
+      "sha256": "ac51cd64bae51c462ea58ad2492c9b8209667a4ef60c45c4a304518b67598d5d"
+    },
+    {
+      "filename": "gitdb-4.0.12-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 62794,
+      "sha256": "67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf"
+    },
+    {
+      "filename": "requests-2.32.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 64928,
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
+    },
+    {
+      "filename": "idna-3.18-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 65455,
+      "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
+    },
+    {
+      "filename": "einops-0.8.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 65638,
+      "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193"
+    },
+    {
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "filename": "kiwisolver-1.4.8-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 71855,
+      "sha256": "a17b7c4f5b2c51bb68ed379defd608a03954a1845dfed7cc0117f1cc8a9b7fd2"
+    },
+    {
+      "filename": "httpx-0.28.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 73517,
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+    },
+    {
+      "filename": "tqdm-4.67.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 78374,
+      "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf"
+    },
+    {
+      "filename": "httpcore-1.0.9-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 78784,
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55"
+    },
+    {
+      "filename": "omegaconf-2.3.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 79502,
+      "sha256": "3d701d14e9a8828f1edd28bb70b725908b34277cdd72cf7d6a83f94dadc6b6a0"
+    },
+    {
+      "filename": "yarl-1.25.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 101945,
+      "sha256": "1f51020b2eb8a003c84925638ec63c21a750a4bddd3a22ec8eac6a742dadf1b9"
+    },
+    {
+      "filename": "aiobotocore-3.9.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 102571,
+      "sha256": "363b4892423b272eb84afbb58000da0be6ccd0cf8a68b98438c957d05b841efc"
+    },
+    {
+      "filename": "charset_normalizer-3.4.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 102702,
+      "sha256": "b1ac5992a838106edb89654e0aebfc24f5848ae2547d22c2c3f66454daa11971"
+    },
+    {
+      "filename": "wrapt-2.5.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 105870,
+      "sha256": "09b1893ee4063706574c1813abf479b8b51926633fbdb6f96aab8dc7b0976668"
+    },
+    {
+      "filename": "pyparsing-3.2.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 107716,
+      "sha256": "506ff4f4386c4cec0590ec19e6302d3aedb992fdc02c761e90416f158dacf8e1"
+    },
+    {
+      "filename": "click-8.4.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 119243,
+      "sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76"
+    },
+    {
+      "filename": "anyio-4.14.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 125813,
+      "sha256": "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494"
+    },
+    {
+      "filename": "packaging-26.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "filename": "jinja2-3.1.6-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 134899,
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+    },
+    {
+      "filename": "urllib3-2.8.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 135717,
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+    },
+    {
+      "filename": "certifi-2026.7.22-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 136983,
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "filename": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 137737,
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988"
+    },
+    {
+      "filename": "antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 144577,
+      "sha256": "9a700628218e270a26588ffc54233dc3d8799e82ae4194edf7a953e338812d7c"
+    },
+    {
+      "filename": "pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 154090,
+      "sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c"
+    },
+    {
+      "filename": "hydra_core-1.3.7-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 168790,
+      "sha256": "83606c4a05c770f1e026e0489875f28989829d151799eabd8cfa8cbe82164515"
+    },
+    {
+      "filename": "msgspec-0.22.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 192829,
+      "sha256": "0739b068f31f2004a364f97679ba91f2f5ecd6ec2a5b4b890188ab5c57d20672"
+    },
+    {
+      "filename": "gitpython-3.1.54-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 216575,
+      "sha256": "b90d7b3d9bc0238681d24369130826f0dcdb0ceaa45db67cf1d4ffa4c302dedf"
+    },
+    {
+      "filename": "contourpy-1.3.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 220987,
+      "sha256": "a7895f46d47671fa7ceec40f31fae721da51ad34bdca0bee83e38870b1f47ffd"
+    },
+    {
+      "filename": "fsspec-2026.9.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 221738,
+      "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+    },
+    {
+      "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+    },
+    {
+      "filename": "tzdata-2026.3-py2.py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 348168,
+      "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931"
+    },
+    {
+      "filename": "safetensors-0.8.0-cp310-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 355540,
+      "sha256": "096ec1a98435df7beb08853bb5aa9081a84f23d0adc67ed1a0a10550f608373f"
+    },
+    {
+      "filename": "nvtx-0.2.16-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 397215,
+      "sha256": "92a6ba76504967d5686f3c02bb980af22567ad2d58f50c934fc49f0799f5193e"
+    },
+    {
+      "filename": "zarr-3.4.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 405257,
+      "sha256": "38b540578a119352bdce02a720d7bfd99846e77f0728c58b1bab3d1f547526a0"
+    },
+    {
+      "filename": "protobuf-7.34.1-cp310-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 437901,
+      "sha256": "e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c"
+    },
+    {
+      "filename": "ml_dtypes-0.6.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 439357,
+      "sha256": "fb87f46b4f7ad7b5d3ad8f4b452b024bd4229d44c8ff934798c1fe656210387a"
+    },
+    {
+      "filename": "aiohttp-3.14.5-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 505985,
+      "sha256": "d05e94cdfe0d15d0206f970722d2554780ce562787b21b218b275447f8751319"
+    },
+    {
+      "filename": "pytz-2025.2-py2.py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 509225,
+      "sha256": "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00"
+    },
+    {
+      "filename": "cftime-1.6.6.1-cp311-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 512994,
+      "sha256": "e4ed505118cbffec8ca6b59636f283d55df1675a3f092bc2d276f917a04af68a"
+    },
+    {
+      "filename": "mpmath-1.3.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    {
+      "filename": "tensordict-0.14.3-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 651490,
+      "sha256": "f41a16c5e60dca5352507ed4d55b298ac09e16cf8bb080f4c17e462ae680eab2"
+    },
+    {
+      "filename": "huggingface_hub-1.23.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 770336,
+      "sha256": "b1d604788f5adc7f0eb246e03e0ec19011ca06e38400218c347dccc3dffa64a2"
+    },
+    {
+      "filename": "setuptools-80.9.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
+    },
+    {
+      "filename": "torch_geometric-2.8.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 1325471,
+      "sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0"
+    },
+    {
+      "filename": "numcodecs-0.17.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 1492769,
+      "sha256": "a854e9c89f58eeeb2453f3c1637d1916797edb6eaff26bc186a6cdb09d187092"
+    },
+    {
+      "filename": "networkx-3.6.1-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 2068504,
+      "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762"
+    },
+    {
+      "filename": "fonttools-4.56.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 2186709,
+      "sha256": "62cc1253827d1e500fde9dbe981219fea4eb000fd63402283472d38e7d8aa1c6"
+    },
+    {
+      "filename": "pillow-11.1.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 2626304,
+      "sha256": "593c5fd6be85da83656b93ffcccc2312d2d149d251e98588b14fbc288fd8909c"
+    },
+    {
+      "filename": "timm-1.0.30-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 2668917,
+      "sha256": "c8e27adf6801a2fdfb570dbbdd171f2f084756eefc673df8cfaab06bd14864f3"
+    },
+    {
+      "filename": "nvidia_physicsnemo-2.2.2-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 2942045,
+      "sha256": "c447771384d92f5c31547e293f65b70e0947f8829981f34c7e8300daf1b8d2eb"
+    },
+    {
+      "filename": "h5py-3.16.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 3175509,
+      "sha256": "18f2bbcd545e6991412253b98727374c356d67caa920e68dc79eab36bf5fedad"
+    },
+    {
+      "filename": "torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 3953267,
+      "sha256": "060587be83a7815a274d608d3b9921bd63942b59d2055140b6f426ee9004fb27"
+    },
+    {
+      "filename": "hf_xet-1.5.1-cp37-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 4026419,
+      "sha256": "f7b3002f95d1c13e24bcb4537baa8f0eb3838957067c91bb4959bc004a6435f5"
+    },
+    {
+      "filename": "sympy-1.14.0-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 6299353,
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+    },
+    {
+      "filename": "onnx-1.23.2-cp312-abi3-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 7872489,
+      "sha256": "9b382ba898a7c142a0801d03cf04ecabced96c1543c7b643a86f0928143802de"
+    },
+    {
+      "filename": "matplotlib-3.10.1-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 8063812,
+      "sha256": "8e8e25b1209161d20dfe93037c8a7f7ca796ec9aa326e6e4588d8c4a5dd1e473"
+    },
+    {
+      "filename": "torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 8811635,
+      "sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a"
+    },
+    {
+      "filename": "pandas-2.2.3-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 11481175,
+      "sha256": "61c5ad4043f791b61dd4752191d9f07f0ae412515d59ba8f005832a532f8736d"
+    },
+    {
+      "filename": "numpy-2.5.2-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 12460532,
+      "sha256": "85aaccb24182c25df891ad0ec333585967e115269d5f1b17f2c9ae005bc96657"
+    },
+    {
+      "filename": "botocore-1.43.106-py3-none-any.whl",
+      "status": "already_verified",
+      "bytes": 15965506,
+      "sha256": "c1fb8818f9957cb5037f73db34ac1a12ba43562e31d6e7f9cb7e5fc64e1dba78"
+    },
+    {
+      "filename": "scipy-1.18.0-cp313-cp313-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 36554943,
+      "sha256": "1afac4a847207c7ff8efd321734a50b06d0280b3b2a2c0fc2f413101747ad7c7"
+    },
+    {
+      "filename": "warp_lang-1.18.0-py3-none-win_amd64.whl",
+      "status": "already_verified",
+      "bytes": 134607061,
+      "sha256": "1769e55746739f2e244a2b412123003c462ec3d977dfb5f420f924a8553d30aa"
+    },
+    {
+      "filename": "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "status": "verified",
+      "bytes": 2589881709,
+      "sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "source": "official_https",
+      "resumed_bytes": 0,
+      "previous_partials_retained": [
+        {
+          "file": "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl.partial",
+          "bytes": 1150287872,
+          "reason": "No previously recorded matching strong ETag"
+        }
+      ]
+    }
+  ],
+  "installation_performed": false,
+  "finished_utc": "2026-10-15T08:34:45.640239+00:00",
+  "bytes": 2869977825
+}

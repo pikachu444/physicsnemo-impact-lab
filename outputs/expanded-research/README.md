@@ -2,7 +2,7 @@
 
 2026-10-15에 실제 생성·학습·추론한 증거를 모은 후속 연구 기록이다. **구조역학만** 다루며 유체 예제는 포함하지 않는다. 진행 중인 실험을 완료로 세지 않는다. 아래 수치의 원본은 개별 실행의 JSON·로그·독립 검산이다.
 
-완료된 후속 신경망 학습·평가 산출물은24개다. 시편9개(정적6·시간 전략3), 휴대폰6개, 범퍼6개, 판재3개이며 알고리즘24종이라는 뜻은 아니다. 휴대폰·범퍼의 후속 다물리량 시간 전개6설정은 본학습0으로 남아 있다. 설치·3업데이트 기능 검사·재검산·그림 생성은 이24개에 더하지 않는다. 단순 기준·회귀·축약 모델도 별도로 비교했다.
+완료된 후속 신경망 학습·평가 산출물은24개다. 시편9개(정적6·시간 전략3), 휴대폰6개, 범퍼6개, 판재3개이며 알고리즘24종이라는 뜻은 아니다. 휴대폰·범퍼의 후속 다물리량 시간 전개6설정은 본학습0으로 남아 있다. 설치·3업데이트 기능 검사·재검산·그림 생성은 이24개에 더하지 않는다. 단순 기준·회귀·축약 모델도 별도로 비교했다. [14:13 UTC 기준 범위 감사](coverage-audit/coverage-audit-20261015T141754Z.md)는30개 불변조건·추가6개 출처 검사를 통과했으며 이후 설치 작업의 실시간 상태를 대신하지 않는다.
 
 ## 실제 정답 확보
 
@@ -140,7 +140,9 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 
 실제 실행 장소는 사용자 PC의 RTX3060 Laptop 6GiB다. Codex Cloud는 별도 컨테이너에서 CPU·RAM·네트워크·GPU 장치를 검사했지만 NVIDIA GPU가 노출되지 않았다. 이 로컬 GPU 결과를 Cloud GPU 실행으로 기록하지 않는다. 유료 GPU나 추가 결제는 사용하지 않았다.
 
-PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 전용 학습 환경에 설치했다. 이 환경은 기존 system/user site 의존 경로를 포함하며 완전히 독립된 clean 설치와 구분한다. 별도 독립 환경 재설치는 진행 중이고 완료를 주장하지 않는다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 정적 설정은 시편·휴대폰·범퍼에서 다물리량 학습·평가를 마쳤으며 결과를 위 표로 구분했다. 휴대폰·범퍼의 다물리량 시간 전개6설정은 이 정적12실행과 별도인 후속 실험이다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
+PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 전용 학습 환경에 설치했다. 이 학습 환경은 기존 system/user site 의존 경로를 포함한다. 별도로90개 고정 runtime package를 새 독립 venv에 실제 offline 설치하고 pip dependency 검사와90개 version·새 환경 spec 경로·40개 core의 wheel/RECORD 바이트 검사를 통과했다. 설치254.25초·sampled familyRSS 최대144,863,232byte였다. 별도 source ANTLR4.9.3의 단1회 빌드에서 얻은 새 wheel을 새 lock에 고정했고, Windows 경로 표기 검증 오류의 원 실패·최소 교정·재검증 기록도 보존했다. 이 CPU 설치·정적 감사에서는 Torch/NumPy를 import하지 않았다. 설치 후 가용 RAM 두 관측 중 두 번째1,553,977,344byte가 작은 GPU 기능 검사의 운영 입장 기준1.5GiB보다 낮아 기능6개는 미실행이다. 독립 설치 성공을 GPU 학습 재현이나24개 전체 재학습으로 바꾸지 않는다. [새 환경 설치와 검사 기록](reproduction-clean-runtime/CPU-clean-runtime-closure-r3.json)
+
+실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 정적 설정은 기존 학습 환경에서 시편·휴대폰·범퍼 다물리량 학습·평가를 마쳤으며 결과를 위 표로 구분했다. 휴대폰·범퍼의 다물리량 시간 전개6설정은 이 정적12실행과 별도인 후속 실험이다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
 
 공식 Q1 `Elasticity2DSolver`도 CPU에서 실제 실행해 독립 해·힘·모멘트·에너지 등13개 검사를 통과했다. 변위 상대 L2는2.324e-10, 두 solve 합계0.592초, import 포함10.898초, 최대 메모리196.68MiB였다. 이는 수치 FEM baseline이며 구조 FNO·DDM 전체 실행이나 AI 학습으로 세지 않는다. [실행·독립 검산](benchmarks/elasticity_numerical/execution-report.md)
 
@@ -177,5 +179,7 @@ Graph의 단절을 모든 backbone에서 부품 간 영향이 전혀 전달되�
 원본 URL·commit·license·입력/결과 hash, solver/framework 버전, 분할, 정규화, 실제 실행 소스, 실패 로그, 시간·메모리, 물리 단위 오차와 그림을 기록한다. 로컬에는 체크포인트와 예측·FEM 원 배열도 보존한다. 이번 후속 공개 묶음은 원본 deck·대용량 데이터·타사 실행 파일·모델 가중치를 제외하고 재획득/생성 코드와 증거를 제공한다. 공개 경로를 지운 사본은 `publication-byte-manifest.json`에 원본/공개본 hash를 모두 기록해 구별한다.
 
 [재현 패키지](reproduction/README.md)는169개 소스·설정과22개 실행 버전 profile을 보존한다. 새 work 경로에115개 파일의 실제 복원·기록 버전 복원·덮어쓰기 거부를 검증했으며, 신규 환경 설치부터 전체 학습까지의 재현과 구분한다. [자동 비교 CSV](comparison-fields.csv)는 완료된 공통 field 지표만 모으고, 분할·물리량·시점·정규화가 다른 실험을 한 순위로 섞지 않는다. 새 프로세스 재추론을 추가 학습으로 중복 집계하지 않는다.
+
+추가로 [14:31 UTC 소스 capture](reproduction-addendum/captures/20261015T143100Z/README.md)에676개 소스·설정과 완료된 휴대폰·범퍼12개 실행 profile을 보존했다. Source hash와301개 Python AST를 확인하고 current와12개 profile을 서로 다른 빈 임시 폴더에 실제 복원했으며 덮어쓰기·경로 이탈·목적지 충돌 거부를 검사했다. [복원 검사 결과](reproduction-addendum/captures/20261015T143100Z/bootstrap-acceptance.json)는 학습·추론을 실행하지 않은 검사다. 판재 종료·원 배열 감사, 시간 모델의 메모리 중단, 새 환경 설치 기록도 별도 provenance로 포함하지만 이 capture가24개 전체의 신규 학습 재현을 입증하는 것은 아니다. 기존 capture는 수정하지 않았다.
 
 공개 FEM deck의 CC BY-NC4.0, solver AGPL, NVIDIA 코드 Apache-2.0, 라이선스 미확인 데이터는 서로 다른 권리 범위다. 회사 모델·데이터는 사용하지 않았다. 개인 공개 연구의 재현 경로를 회사 상용 데이터 사용 허가로 해석하지 않는다.

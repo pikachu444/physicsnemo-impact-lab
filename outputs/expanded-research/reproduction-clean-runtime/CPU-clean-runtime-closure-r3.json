@@ -1,0 +1,607 @@
+{
+  "status": "passed_independent_installation_and_static_audit_only",
+  "closed_utc": "2026-10-15T14:25:09.353669+00:00",
+  "runtime_environment": "${WORKSPACE}/work/expanded-clean-runtime/venv",
+  "system_or_user_site_inherited": false,
+  "locked_runtime_packages": 90,
+  "installed_metadata_including_bootstrap_tools": [
+    {
+      "name": "aiobotocore",
+      "version": "3.9.2"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5"
+    },
+    {
+      "name": "aioitertools",
+      "version": "0.13.0"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3"
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "botocore",
+      "version": "1.43.106"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "cftime",
+      "version": "1.6.6.1"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.1"
+    },
+    {
+      "name": "click",
+      "version": "8.4.2"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.1"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "donfig",
+      "version": "0.8.1.post1"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2"
+    },
+    {
+      "name": "filelock",
+      "version": "3.29.7"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.56.0"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "gitdb",
+      "version": "4.0.12"
+    },
+    {
+      "name": "GitPython",
+      "version": "3.1.54"
+    },
+    {
+      "name": "google-crc32c",
+      "version": "1.9.0"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "h5py",
+      "version": "3.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.5.1"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.23.0"
+    },
+    {
+      "name": "hydra-core",
+      "version": "1.3.7"
+    },
+    {
+      "name": "idna",
+      "version": "3.18"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "9.0.1"
+    },
+    {
+      "name": "jaxtyping",
+      "version": "0.3.11"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "jmespath",
+      "version": "1.1.0"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.4.8"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.1"
+    },
+    {
+      "name": "ml_dtypes",
+      "version": "0.6.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "msgspec",
+      "version": "0.22.0"
+    },
+    {
+      "name": "multidict",
+      "version": "6.9.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numcodecs",
+      "version": "0.17.0"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.2"
+    },
+    {
+      "name": "nvidia-physicsnemo",
+      "version": "2.2.2"
+    },
+    {
+      "name": "nvtx",
+      "version": "0.2.16"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.1"
+    },
+    {
+      "name": "onnx",
+      "version": "1.23.2"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.3"
+    },
+    {
+      "name": "pillow",
+      "version": "11.1.0"
+    },
+    {
+      "name": "pip",
+      "version": "25.1.1"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.34.1"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.2.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "pytz",
+      "version": "2025.2"
+    },
+    {
+      "name": "pyvers",
+      "version": "0.2.3"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.3"
+    },
+    {
+      "name": "s3fs",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "smmap",
+      "version": "5.0.3"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tensordict",
+      "version": "0.14.3"
+    },
+    {
+      "name": "termcolor",
+      "version": "3.3.0"
+    },
+    {
+      "name": "timm",
+      "version": "1.0.30"
+    },
+    {
+      "name": "torch",
+      "version": "2.10.0+cu126"
+    },
+    {
+      "name": "torch-geometric",
+      "version": "2.8.1"
+    },
+    {
+      "name": "torch_scatter",
+      "version": "2.1.2+pt210cu126"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.25.0+cu126"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.3"
+    },
+    {
+      "name": "treelib",
+      "version": "1.8.0"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.3"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "wadler_lindig",
+      "version": "0.1.7"
+    },
+    {
+      "name": "warp-lang",
+      "version": "1.18.0"
+    },
+    {
+      "name": "wrapt",
+      "version": "2.5.1"
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.1"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1"
+    },
+    {
+      "name": "zarr",
+      "version": "3.4.1"
+    },
+    {
+      "name": "zipp",
+      "version": "4.1.1"
+    }
+  ],
+  "pip_check_conflicts": 0,
+  "core40_wheel_and_RECORD_byte_matches": 40,
+  "requirements_lock": "requirements-lock-r2.txt",
+  "requirements_lock_sha256": "17a8154e15b4c823e73eaa897dd6840f7d1b2cfec7a72734ca1a9c2744b7e6b4",
+  "new_ANTLR_wheel_sha256": "815dd98f0ae9191076788662e065b7bf86a7e8c53dc241f4c1ac588197bae439",
+  "ANTLR_build_attempts": 1,
+  "full_repeated_build_determinism_tested": false,
+  "source_and_build_receipts": [
+    "antlr-source-audit-r2.json",
+    "antlr-build-execution.json",
+    "antlr-build-verification.json"
+  ],
+  "stages": [
+    {
+      "stage": "antlr-source",
+      "attempt": "antlr-source-20261015T140341328478Z",
+      "pid": 46688,
+      "child_started_utc": "2026-10-15T14:03:51.354891+00:00",
+      "finished_utc": "2026-10-15T14:03:52.414619+00:00",
+      "wall_seconds": 1.0687706000026083,
+      "peak_sampled_family_RSS_bytes": 2539520,
+      "available_bytes_at_end": 2216321024,
+      "disk_free_bytes_at_end": 65068269568,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "antlr-source-20261015T140341328478Z.json",
+      "receipt_sha256": "499feec610fce7d73cc259dadfc0be46f5194a75b22c5b60edf50a56ef6ca4fd"
+    },
+    {
+      "stage": "build-tools-download",
+      "attempt": "build-tools-download-20261015T140413386323Z",
+      "pid": 9304,
+      "child_started_utc": "2026-10-15T14:04:23.407607+00:00",
+      "finished_utc": "2026-10-15T14:04:24.491334+00:00",
+      "wall_seconds": 1.090047500001674,
+      "peak_sampled_family_RSS_bytes": 2539520,
+      "available_bytes_at_end": 1369817088,
+      "disk_free_bytes_at_end": 65048068096,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "build-tools-download-20261015T140413386323Z.json",
+      "receipt_sha256": "25d7b07b4cb3ce80f50731d320f51c2b84354b98e6a1f7344495845d7b050616"
+    },
+    {
+      "stage": "build-create",
+      "attempt": "build-create-20261015T140545020453Z",
+      "pid": 19144,
+      "child_started_utc": "2026-10-15T14:05:55.042130+00:00",
+      "finished_utc": "2026-10-15T14:05:56.091021+00:00",
+      "wall_seconds": 1.056164700006775,
+      "peak_sampled_family_RSS_bytes": 2363392,
+      "available_bytes_at_end": 1967521792,
+      "disk_free_bytes_at_end": 65029517312,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "build-create-20261015T140545020453Z.json",
+      "receipt_sha256": "822eb6553084fc2eab1ea0efaa0ab4264eca8b5a7c187464f714a549ec201a7c"
+    },
+    {
+      "stage": "build-bootstrap",
+      "attempt": "build-bootstrap-20261015T140602803163Z",
+      "pid": 44540,
+      "child_started_utc": "2026-10-15T14:06:12.825147+00:00",
+      "finished_utc": "2026-10-15T14:06:20.895408+00:00",
+      "wall_seconds": 8.088621999995667,
+      "peak_sampled_family_RSS_bytes": 94314496,
+      "available_bytes_at_end": 2108084224,
+      "disk_free_bytes_at_end": 65011482624,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "build-bootstrap-20261015T140602803163Z.json",
+      "receipt_sha256": "57f9cb032c1cc9382dc7683a4543764969c04252b531b0d57673910a181b6b86"
+    },
+    {
+      "stage": "build-tools-install",
+      "attempt": "build-tools-install-20261015T140633801206Z",
+      "pid": 36252,
+      "child_started_utc": "2026-10-15T14:06:43.817350+00:00",
+      "finished_utc": "2026-10-15T14:06:50.890390+00:00",
+      "wall_seconds": 7.084949299998698,
+      "peak_sampled_family_RSS_bytes": 69230592,
+      "available_bytes_at_end": 2088071168,
+      "disk_free_bytes_at_end": 64997842944,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "build-tools-install-20261015T140633801206Z.json",
+      "receipt_sha256": "052e77900aa683e293bbc117336e4ec8a295e9fb2c16e19656c8b244a90c462d"
+    },
+    {
+      "stage": "build-wheel",
+      "attempt": "build-wheel-20261015T140704511224Z",
+      "pid": 29276,
+      "child_started_utc": "2026-10-15T14:07:15.067373+00:00",
+      "finished_utc": "2026-10-15T14:07:18.127040+00:00",
+      "wall_seconds": 3.06748470000457,
+      "peak_sampled_family_RSS_bytes": 94363648,
+      "available_bytes_at_end": 2016264192,
+      "disk_free_bytes_at_end": 64999620608,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "build-wheel-20261015T140704511224Z.json",
+      "receipt_sha256": "c33beeb288cd2b4e44416fed6130a545298199871ff72b289aaa5d5733e2fc6b"
+    },
+    {
+      "stage": "finalize-antlr",
+      "attempt": "finalize-antlr-20261015T141702533085Z",
+      "pid": 47388,
+      "child_started_utc": "2026-10-15T14:17:12.548789+00:00",
+      "finished_utc": "2026-10-15T14:17:17.630127+00:00",
+      "wall_seconds": 5.0939705000055255,
+      "peak_sampled_family_RSS_bytes": 25894912,
+      "available_bytes_at_end": 1928994816,
+      "disk_free_bytes_at_end": 64944848896,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "finalize-antlr-20261015T141702533085Z.json",
+      "receipt_sha256": "21796133658286a37271c88b374073c2528a7d09cdc2cc56a06bc1d90cef8edf"
+    },
+    {
+      "stage": "create",
+      "attempt": "create-20261015T141738556934Z",
+      "pid": 10024,
+      "child_started_utc": "2026-10-15T14:17:48.574859+00:00",
+      "finished_utc": "2026-10-15T14:17:49.628919+00:00",
+      "wall_seconds": 1.0660385000010137,
+      "peak_sampled_family_RSS_bytes": 2265088,
+      "available_bytes_at_end": 1921175552,
+      "disk_free_bytes_at_end": 64925126656,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "create-20261015T141738556934Z.json",
+      "receipt_sha256": "aeb362f715a9cf86cee21d88d3c31ef1a4f0dd44978ab822065a48b6051511d3"
+    },
+    {
+      "stage": "bootstrap",
+      "attempt": "bootstrap-20261015T141756385741Z",
+      "pid": 21524,
+      "child_started_utc": "2026-10-15T14:18:06.408543+00:00",
+      "finished_utc": "2026-10-15T14:18:14.501345+00:00",
+      "wall_seconds": 8.112767900005565,
+      "peak_sampled_family_RSS_bytes": 94064640,
+      "available_bytes_at_end": 1823297536,
+      "disk_free_bytes_at_end": 64905744384,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "bootstrap-20261015T141756385741Z.json",
+      "receipt_sha256": "4cc29f22e007af7095de490fcbeb5896dcc313cd81a543c2effa4c32a65384b1"
+    },
+    {
+      "stage": "resolve-local",
+      "attempt": "resolve-local-20261015T141826406470Z",
+      "pid": 25720,
+      "child_started_utc": "2026-10-15T14:18:36.424007+00:00",
+      "finished_utc": "2026-10-15T14:18:46.482986+00:00",
+      "wall_seconds": 10.071788600005675,
+      "peak_sampled_family_RSS_bytes": 81989632,
+      "available_bytes_at_end": 2104233984,
+      "disk_free_bytes_at_end": 64895623168,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "resolve-local-20261015T141826406470Z.json",
+      "receipt_sha256": "26a93daa9d441a8ecd5b715a5cd154c32ed4dc7e19dcf765f5f5785779f96bd2"
+    },
+    {
+      "stage": "install",
+      "attempt": "install-20261015T141918972946Z",
+      "pid": 43572,
+      "child_started_utc": "2026-10-15T14:19:28.989923+00:00",
+      "finished_utc": "2026-10-15T14:23:43.232304+00:00",
+      "wall_seconds": 254.2534883000044,
+      "peak_sampled_family_RSS_bytes": 144863232,
+      "available_bytes_at_end": 1878777856,
+      "disk_free_bytes_at_end": 59110047744,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "install-20261015T141918972946Z.json",
+      "receipt_sha256": "6d142bafd3d5336a18d58840db1eef048f184c36ca8bb41363b58550f81f671a"
+    },
+    {
+      "stage": "check",
+      "attempt": "check-20261015T142408729433Z",
+      "pid": 38596,
+      "child_started_utc": "2026-10-15T14:24:18.738304+00:00",
+      "finished_utc": "2026-10-15T14:24:21.818270+00:00",
+      "wall_seconds": 3.086396099999547,
+      "peak_sampled_family_RSS_bytes": 53440512,
+      "available_bytes_at_end": 1937506304,
+      "disk_free_bytes_at_end": 59106238464,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "check-20261015T142408729433Z.json",
+      "receipt_sha256": "109290b8c3bba79390c83265d31de0c760ebcc6794c12aabb073c6ea1f05a196"
+    },
+    {
+      "stage": "audit",
+      "attempt": "audit-20261015T142428456731Z",
+      "pid": 34260,
+      "child_started_utc": "2026-10-15T14:24:38.468955+00:00",
+      "finished_utc": "2026-10-15T14:24:39.532408+00:00",
+      "wall_seconds": 1.0713417000006302,
+      "peak_sampled_family_RSS_bytes": 2392064,
+      "available_bytes_at_end": 2055503872,
+      "disk_free_bytes_at_end": 59105447936,
+      "child_reaped": true,
+      "descendants_reaped": true,
+      "receipt": "audit-20261015T142428456731Z.json",
+      "receipt_sha256": "0356ebbb200ea20545ec8cc2d37965e81917e98ad192a9502a17d53b904db84a"
+    }
+  ],
+  "active_owned_children_after_all_stages": 0,
+  "peak_sampled_CPU_stage_family_RSS_bytes": 144863232,
+  "memory_sampling_limit": "One-second process-family samples are lower bounds on instantaneous peak RSS.",
+  "post_CPU_no_child_memory_observations": [
+    {
+      "utc": "2026-10-15T14:24:59.353134+00:00",
+      "available_bytes": 1976545280
+    },
+    {
+      "utc": "2026-10-15T14:25:09.353616+00:00",
+      "available_bytes": 1553977344
+    }
+  ],
+  "future_functional_1p5GiB_operating_admission_observations_pass": false,
+  "functional_runtime_source_sha256": "cbff88dc4a884bbd803e01603113e850e723dc35bde28180bdba9cf447910379",
+  "functional_protocol_sha256": "575eef9fa611531f2f3c7d421968609ccdecfb14f628a27ef3d898c698aa47ef",
+  "actual_functional_checks_completed": 0,
+  "framework_imported": false,
+  "GPU_probed_or_used": false,
+  "data_arrays_or_modelweights_read": false,
+  "whole_fit_reproduction_claimed": false,
+  "original_R2_guard_unchanged": true,
+  "previous_failed_receipts_preserved": true,
+  "current_GPU_execution_authorized_by_this_record": false,
+  "next_action": "Report closure and await explicit root GPU allocation before six prepared functional checks."
+}

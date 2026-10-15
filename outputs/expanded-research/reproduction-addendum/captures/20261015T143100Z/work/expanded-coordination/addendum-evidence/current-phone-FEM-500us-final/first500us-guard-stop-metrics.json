@@ -1,0 +1,14 @@
+{
+  "stage": "100_to500us_center_continuation",
+  "exit_code": 0,
+  "stopped_reason": "system_free_below256MiB",
+  "elapsed_seconds": 183.92502589999998,
+  "sampled_peak_working_set_bytes": 396357632,
+  "minimum_sampled_system_free_memory_KiB": 98932,
+  "minimum_sampled_system_free_virtual_memory_KiB": 4344440,
+  "omp_threads": 2,
+  "priority": "BelowNormal",
+  "requested_final_time_s": 0.0005,
+  "source_checkpoint_sha256": "e56c1f0764f5daa4946c313458d126f8df4230f19b7917b87de4843603de1dee",
+  "AI_targets_unchanged": true
+}

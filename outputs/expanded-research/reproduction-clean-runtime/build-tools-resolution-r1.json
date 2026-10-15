@@ -1,0 +1,33 @@
+{
+  "status": "exact_build_tools_wheels_verified",
+  "packages": [
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "filename": "setuptools-80.9.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl",
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "metadata_url": "https://pypi.org/pypi/setuptools/80.9.0/json",
+      "metadata_sha256": "e56bbccd90d9251cbdebab83dbf16c5520501483faf37a08a2dcb2e7b5a1f891",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.45.1",
+      "filename": "wheel-0.45.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/0b/2c/87f3254fd8ffd29e4c02732eee68a83a1d3c346ae39bc6822dcbcb697f2b/wheel-0.45.1-py3-none-any.whl",
+      "bytes": 72494,
+      "sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248",
+      "metadata_url": "https://pypi.org/pypi/wheel/0.45.1/json",
+      "metadata_sha256": "617c2b62cc17caeef3fc1e10144bd3d5b8dc2fb93bb67a87f2802c2d0a856c32",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    }
+  ],
+  "runtime_dependency_closure_changed": false,
+  "tools_installed": false
+}

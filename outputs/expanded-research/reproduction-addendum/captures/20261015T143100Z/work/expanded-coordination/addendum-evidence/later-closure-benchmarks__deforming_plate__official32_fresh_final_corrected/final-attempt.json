@@ -1,0 +1,38 @@
+{
+  "status": "completed_fixed_checkpoint_fresh_test",
+  "started_at_utc": "2026-10-15T09:31:50.708570+00:00",
+  "process_id": 33220,
+  "command_arguments": [
+    "--training-run",
+    "outputs/expanded-research/benchmarks/deforming_plate/official32_valpilot",
+    "--output",
+    "outputs/expanded-research/benchmarks/deforming_plate/official32_fresh_final_corrected",
+    "--contract",
+    "outputs/expanded-research/benchmarks/deforming_plate/final-split-contract.json",
+    "--correction-lock",
+    "outputs/expanded-research/benchmarks/deforming_plate/official32-final-correction-lock-v1.json",
+    "--correction-lock-sha256",
+    "84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70"
+  ],
+  "fresh_test_content_access_started": true,
+  "prediction_attempt_count_per_case": 1,
+  "teacher_forcing_computed": false,
+  "correction_lock_sha256": "84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70",
+  "correction_lock_path": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\deforming_plate\\official32-final-correction-lock-v1.json",
+  "correction_purpose": "Serialization-only: compare runtime selection_epochs and selection_trajectories lists to the frozen protocol lists; preserve architecture, epochs, data, and selection.",
+  "pre_evaluation_lock_sha256": "5c116e373cc645f2e48322c03ff12cb1e4f61908a98adc21c42657935f880fec",
+  "checkpoint_sha256": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+  "selected_epoch": 5,
+  "metrics_sha256": "04eaa2a4c140b4da658da5b6c3a78a6bc948713b2429a95d95042cd4308eb8a8",
+  "evaluation_completed_all_cases": true,
+  "finished_at_utc": "2026-10-15T09:36:42.078322+00:00",
+  "elapsed_wall_seconds_including_imports_gates_io": 291.36975520000124,
+  "memory": {
+    "sampled_rss_peak_bytes": 1329582080,
+    "sampled_host_available_minimum_bytes": 193302528,
+    "sampling_interval_seconds": 0.2,
+    "samples": 1404,
+    "windows_peak_working_set_bytes": 1329582080,
+    "windows_peak_commit_bytes_not_physical_rss": 3085295616
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "deferred_until_explicit_root_CPU_window_after_static12",
+  "metadata_resolution": "90_exact_versions_resolved_errors0",
+  "verified_complete_small_wheels": 89,
+  "Torch_partial_bytes_preserved": 1150287872,
+  "Torch_complete_SHA256_verified": false,
+  "Torch_partial_strong_ETag_recorded": false,
+  "resume_policy": "Strong prior ETag + If-Range/Range + response ETag/Content-Range required. Existing legacy partial retained; a new whole-download path may be needed. No real server range check performed.",
+  "resource_stop_receipt": "download-20261015T074014937926Z.json",
+  "no_active_learning_auto_retry": true,
+  "new_runtime_venv_created": false,
+  "build_venv_created": false,
+  "ANTLR_source_acquired_or_built": false,
+  "framework_imported": false,
+  "GPU_used": false,
+  "validation_anchor_reload_passed": false,
+  "full_training_reproduction_claimed": false,
+  "public_binary_policy": "No wheel/archive/environment/modelweights/arrays are included in public output.",
+  "approved_one_dependency_source_exception": "Only official antlr4-python3-runtime4.9.3 pure source after static packaging audit; fixed setuptools80.9.0/wheel0.45.1 in a separate build env, fixed SOURCE_DATE_EPOCH/PYTHONHASHSEED, one no-index/no-build-isolation build, new wheel hash and lock-r2; no native compile or general sdist permission.",
+  "actual_metadata_source_snapshot_limit": "First successful metadata query preceded execution-source snapshot support; current resolver adds atomic cache publication. The numerical/model core byte contract is independent and exact."
+}
