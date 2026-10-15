@@ -1,0 +1,48 @@
+{
+  "status": "prepared_static_checks_only_gpu_slot_pending",
+  "created_at_utc": "2026-10-15T04:37:54.245915+00:00",
+  "sources": {
+    "train_plate.py": {
+      "sha256": "170f42ccbe2984ab20ecd40ee1cec92fba5153bf3731f47998de214f89a886e6",
+      "syntax": "passed",
+      "model_executed": false
+    },
+    "plate_data.py": {
+      "sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+      "syntax": "passed",
+      "model_executed": false
+    },
+    "plate_evaluation.py": {
+      "sha256": "de1cba7b047392d62171dc799fe7c5cfa571f1c5e7c9bc3262e194c48d65d6c2",
+      "syntax": "passed",
+      "model_executed": false
+    },
+    "selection_policy.py": {
+      "sha256": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278",
+      "syntax": "passed",
+      "model_executed": false
+    },
+    "run_validation_training.py": {
+      "sha256": "847829a2a9145bb4010de6f0ea4eb2220cf0382ec030280a52db9c671a899243",
+      "syntax": "passed",
+      "model_executed": false
+    },
+    "freeze_protocol.py": {
+      "sha256": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68",
+      "syntax": "passed",
+      "model_executed": false
+    }
+  },
+  "protocol_sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+  "test_npz_opened_or_hashed_in_preparation": false,
+  "prior_model_count_unchanged": 2,
+  "proxy_seconds": {
+    "training_updates": 532.2997333326688,
+    "teacher_validation_anchors": 57.749735999823315,
+    "three_two_case_ar_diagnostics": 384.03574439882505,
+    "final_validation_six_ar": 384.03574439882505
+  },
+  "total_proxy_minutes": 22.63534930216904,
+  "proxy_caveat": "One measured high-edge training geometry; excludes IO, setup, checkpointing, every-frame determinants, derived strain and paging. Different or collapsed AR geometries can be slower or OOM; this is not a bound.",
+  "fresh_final_test": "Withheld; no source-test NPZ opened, hashed or predicted by this preparation."
+}

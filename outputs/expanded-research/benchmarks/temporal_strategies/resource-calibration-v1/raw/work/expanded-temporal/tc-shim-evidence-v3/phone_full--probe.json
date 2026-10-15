@@ -1,0 +1,14 @@
+{
+  "domain": "phone_full",
+  "mode": "probe",
+  "profile": "budget_v2_complete_epoch",
+  "protocol_path": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\temporal_strategies\\native-scalar-v3-resource-protocol-r4.json",
+  "protocol_sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+  "active_core_path": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\geotransolver\\geotransolver.py",
+  "active_core_sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+  "shim_sha256": "599a0fd2a168718ca0cc9843814343ffe5350a32eb66b1f0a3bee15a022136f8",
+  "frozen_v2_sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1",
+  "pid": 25348,
+  "started_utc": "2026-10-15T13:44:16.646804+00:00",
+  "actual_core_bound_before_v2_model_use": true
+}

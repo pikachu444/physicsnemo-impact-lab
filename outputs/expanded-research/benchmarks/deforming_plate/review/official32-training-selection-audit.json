@@ -1,0 +1,49 @@
+{
+  "status": "PASS_completed_training_and_selection_receipt",
+  "reviewer": "independent reviewer_terra_high plate_source_audit",
+  "recorded_at_utc": "2026-10-15T09:23:52.394476+00:00",
+  "source_lock_sha256": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+  "protocol_sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+  "completed_training_updates": 1280,
+  "selected_epoch": 5,
+  "selected_checkpoint_sha256": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+  "candidate_epochs_and_keys": [
+    {
+      "epoch": 1,
+      "key": [
+        0,
+        1,
+        6.218379850281202
+      ],
+      "candidate_sha256": "a8c246e18359d8963dfd6cb865ed21f33ba0dbbd696b28fe6d3afd9fa96a4985"
+    },
+    {
+      "epoch": 3,
+      "key": [
+        0,
+        1,
+        6.124215917779033
+      ],
+      "candidate_sha256": "64917e42379a4b8f5dad6588efb19f836eb8e452295609d5a42a82fa9a17bcb9"
+    },
+    {
+      "epoch": 5,
+      "key": [
+        0,
+        0,
+        4.0884963368211995
+      ],
+      "candidate_sha256": "01d6e8ba06ce75e3283f0ee0fc14d53970fb3f1cd947ddb9f953761539dde5a6"
+    }
+  ],
+  "checks": [
+    "All nine source hashes/config/protocol/train-only normalization match",
+    "Exactly three candidates and six complete AR399 diagnostics, teacher forcing false",
+    "Failure/inversion/minimax/earlier-epoch rule recomputes exactly",
+    "Candidate files hash-match history; selected checkpoint receipt hash matches",
+    "e5 predicted inversion frames zero in both diagnostics; valid5 reference inversion frames74 separate",
+    "Raw negative stress diagnostics preserved; no clipping",
+    "Fresh marker/results absent at review time"
+  ],
+  "limits": "Independent stdlib metadata/provenance review; did not deserialize checkpoint tensors or inspect fresh NPZ content. Full-valid6 still running at review; this receipt is not final test accuracy evidence."
+}

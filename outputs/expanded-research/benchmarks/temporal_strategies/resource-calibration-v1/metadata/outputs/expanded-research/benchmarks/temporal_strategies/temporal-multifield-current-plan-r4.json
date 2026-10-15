@@ -1,0 +1,68 @@
+{
+  "status": "source_prepared_waiting_for_independent_R4_gate_and_explicit_gpu_allocation",
+  "revision": 4,
+  "authoritative_current_plan": true,
+  "supersedes_planning_only": [
+    "budget-v2-execution-plan.json",
+    "temporal-multifield-current-plan-v3.json",
+    "native-scalar-head-feasibility.md additional-fit proposal",
+    "temporal-multifield-current-plan-r2.json",
+    "native-scalar-v3-resource-protocol-r3.json"
+  ],
+  "planned_full_fit_count": 6,
+  "domains": [
+    "phone_full",
+    "bumper"
+  ],
+  "strategies": {
+    "time_conditional": {
+      "profile": "budget_v2_complete_epoch",
+      "fits": 2,
+      "kind": "frozen original V2 full native C6/C7, actual core bound by separate TC shim"
+    },
+    "ar_rollout_training": {
+      "profile": "multifield_v3_native_scalar_heads",
+      "fits": 2,
+      "kind": "separate native scalar response-head adaptation C6/C7"
+    },
+    "one_step_teacher_forcing": {
+      "profile": "multifield_v3_native_scalar_heads",
+      "fits": 2,
+      "kind": "separate native scalar response-head adaptation C6/C7; validation/final free rollout"
+    }
+  },
+  "original_large_domain_C3_full_fits_scheduled": 0,
+  "original_C3_evidence": "Original coupon C3 training, support/failure probes and source bytes remain immutable. V3 train-only functional probes use original C3 shared-state references for position equivalence; these are not large-domain C3 full fits.",
+  "resource_protocol": "native-scalar-v3-resource-protocol-r4.json",
+  "resource_protocol_sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+  "training_budget_seconds": null,
+  "budget_decision": "After all six train-only functional probes and all six distinct-case stream profiles, root selects one common bounded cap. A separate fit protocol hashes all 12 JSON receipts and the resource protocol before any fit can start. Neither 180 nor 300 seconds is a target in itself.",
+  "resource_measurement": "Functional probes verify model behavior and three joint updates. Separate profiles execute five distinct train cases with batch1, bitwise input comparison outside measured phases, separate CPU preparation/H2D/synchronized compute timings and recorded cold/warm samples. Whole-epoch and minimum-work projections are labeled estimates.",
+  "minimum_actual_training_exposure": {
+    "optimizer_updates": 100,
+    "complete_case_epochs": 2,
+    "scope": "all executed run work; selected validation checkpoint exposure is separately reported and can be earlier",
+    "not_accuracy_or_convergence_PASS": true
+  },
+  "v3_driver_sha256": "3510516d26e5253d6d503c47bd469841555a370050b4ee7a29cc118cb5e3fc6a",
+  "v3_wrapper_sha256": "d9394b7fe601549a72c6a72285bf0b71dd16db112aec4574c0f263954d4591d0",
+  "tc_shim_sha256": "599a0fd2a168718ca0cc9843814343ffe5350a32eb66b1f0a3bee15a022136f8",
+  "stage_launcher_sha256": "86680d5e3411734efd7d44ac58bf12439635c2e3158a6271cc3646df5bc81ef2",
+  "posthoc_sha256": "4a7dcc5bc8fa6e7de9639ca961538efe469703af4b097272ec4e7958fed359ac",
+  "stage_launcher": "work/expanded-temporal/run_multifield_stage.py",
+  "fit_protocol_generator": "work/expanded-temporal/freeze_temporal_fit_decision.py",
+  "posthoc": "work/expanded-temporal/summarize_multifield_budget.py",
+  "native_field_scope": "Phone: native GPS VM scalar, projected total-strain Frobenius and EPSP. Bumper: native upper/lower in-plane VM scalars and EPSP; no native total-strain label. Stress is not tensor3 and displacement-derived strain is not substituted.",
+  "final_gate": "Only after minimum executed exposure, fixed complete-epoch validation selection, SHA freeze, fresh-process validation reload. Final held-out free rollout exactly once; subsequent metrics only saved final NPZ. Selected and all-executed/partial exposure separated and bound to selection freeze.",
+  "new_domain_actual_probe_fit_reload_final_completed": false,
+  "gpu_or_framework_execution_during_preparation": false,
+  "paid_resource_added": false,
+  "selected_checkpoint_policy": {
+    "minimum_complete_updated_epoch": 1,
+    "minimum_optimizer_updates_strictly_positive": true,
+    "force_selection_after_terminal_minimum": false,
+    "earlier_selected_exposure": "Report separately as a quality/convergence limitation; it does not block a single final if terminal executed minimum is met.",
+    "epoch0_zero_update_policy": "Untrained attempt/failure or training-validation baseline only; no held-out final test and no learned-predictor claim."
+  },
+  "failed_fit_recovery": "If actual terminal work misses 100 updates or two complete case epochs, preserve the attempt as a failed training-exposure gate and do not evaluate held-out test. No automatic retry or extra fit is authorized by this protocol. Root may explicitly direct a separately versioned profile/protocol using training-resource/validation evidence only; any additional actual fit count/cost must be disclosed. Existing artifacts are never overwritten and a functional probe does not complete the failed full-training objective."
+}

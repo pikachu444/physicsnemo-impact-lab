@@ -259,6 +259,8 @@ def main():
                    "dataset_npz_sha256": {p.stem: hashlib.sha256(p.read_bytes()).hexdigest() for ps in paths.values() for p in ps},
                    "physicsnemo": importlib.metadata.version("nvidia-physicsnemo"), "torch": torch.__version__,
                    "torch_geometric": importlib.metadata.version("torch-geometric"),
+                   "torch_scatter": importlib.metadata.version("torch-scatter"),
+                   "cuda_runtime": torch.version.cuda, "device": torch.cuda.get_device_name(device),
                    "training_contract": "Official node_type onehot, bidirectional tetra mesh edges, radius .03 world edges excluding mesh edges; increments xyz + next nodal von Mises stress",
                    "world_edge_backend": "scipy.spatial.cKDTree on CPU, complete radius graph with no neighbor cap; same geometric criterion as the official helper",
                    "code_sha256": hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest(),
@@ -287,10 +289,34 @@ def main():
             torch.cuda.synchronize()
             times.append(time.perf_counter() - started)
             peak_rss = max(peak_rss, process.memory_info().rss)
+        model.eval()
+        inference_times = []
+        forward_times = []
+        probe_positions = record["world_pos"][min(args.probe_frame + args.probe + 1, 398)]
+        with torch.inference_mode():
+            for step in range(5):
+                torch.cuda.synchronize()
+                started = time.perf_counter()
+                inputs = prepare_graph(record, probe_positions, stats, device)
+                model(*inputs).cpu().numpy()
+                torch.cuda.synchronize()
+                inference_times.append(time.perf_counter() - started)
+            for step in range(5):
+                torch.cuda.synchronize()
+                started = time.perf_counter()
+                model(*inputs)
+                torch.cuda.synchronize()
+                forward_times.append(time.perf_counter() - started)
+        peak_rss = max(peak_rss, process.memory_info().rss)
         result = {"measured_steps": args.probe, "warmup_steps": 2, "mean_step_seconds": float(np.mean(times[2:])),
                   "allocated_peak_bytes": torch.cuda.max_memory_allocated(), "rss_sampled_peak_bytes": peak_rss,
                   "loss": float(loss.detach()), "parameters": config["parameters"], "host_available_bytes": psutil.virtual_memory().available,
                   "timing_scope": "CPU geometry graph preparation + CUDA forward/backward/Adam, synchronized; excludes imports and data loading"}
+        result.update({"timed_inference_steps": 3, "inference_warmup_steps": 2,
+                       "inference_graph_forward_output_mean_seconds": float(np.mean(inference_times[2:])),
+                       "forward_only_mean_seconds": float(np.mean(forward_times[2:])),
+                       "inference_scope": "Training-geometry resource timing only: graph preparation/H2D + CUDA forward + output transfer; excludes file I/O and accuracy/strain evaluation. Pure forward uses prebuilt GPU inputs.",
+                       "resource_model_not_accuracy_trained": True})
         result.update({"trajectory": record["name"], "starting_frame": args.probe_frame,
                        "nodes": len(record["mesh_pos"]), "mesh_edges": record["mesh_edges"].shape[1],
                        "world_edges_at_start": world_edges(record["world_pos"][args.probe_frame], record["mesh_edges"]).shape[1]})

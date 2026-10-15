@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "protocol_id": "deforming_plate_official128_15_train32_anchor8_epoch5_validation_only",
+  "frozen_at_utc": "2026-10-15T04:36:50.699014+00:00",
+  "status": "frozen_pre_execution_protocol_not_training_result",
+  "training": [
+    "train_0000",
+    "train_0001",
+    "train_0002",
+    "train_0003",
+    "train_0004",
+    "train_0005",
+    "train_0006",
+    "train_0007",
+    "train_0008",
+    "train_0009",
+    "train_0010",
+    "train_0011",
+    "train_0012",
+    "train_0013",
+    "train_0014",
+    "train_0015",
+    "train_0016",
+    "train_0017",
+    "train_0018",
+    "train_0019",
+    "train_0020",
+    "train_0021",
+    "train_0022",
+    "train_0023",
+    "train_0024",
+    "train_0025",
+    "train_0026",
+    "train_0027",
+    "train_0028",
+    "train_0029",
+    "train_0030",
+    "train_0031"
+  ],
+  "validation": [
+    "valid_0000",
+    "valid_0001",
+    "valid_0002",
+    "valid_0003",
+    "valid_0004",
+    "valid_0005"
+  ],
+  "dataset_npz_sha256": {
+    "train_0000": "b6ff0a47e9cbe9fcc97b0a1fbd6b9d97180e75c1c09f0832ae638ba663c91086",
+    "train_0001": "003b3131c748a780a295b972a3158f11ecfb3dde5de70e1fba05691483a5279d",
+    "train_0002": "75080377f70e98dfc3afee079fef911c438f0e053173ccfaaa182780d911a416",
+    "train_0003": "12766b79396872d6054e028f0a0ae515ed5ce15aaeb7e57e7ead9dd8b866bcb4",
+    "train_0004": "929b66e1786a9bd0e7120274b1585d45eafbfd97c50ecb3b784025747f43d2d8",
+    "train_0005": "becd113ef87e4975be0a770c6ab66465c16da398578a2e7bca826a38d0150e63",
+    "train_0006": "048ef69bf2b3e38361dfe1c10e048d2512e5c4e80eee233b23072363f0688e51",
+    "train_0007": "b6900644a69f3b9e96e62e7a2d298ef845bbfb432106abd134e05371c03560d4",
+    "train_0008": "217cf6bdab0d0cbee3cee2cfcf04fba72342fee74b8f55cc21dfe07071bda711",
+    "train_0009": "57571a8de66e160477e3ed488b1d50ecaf18df3ea8768096c8465c3aa6d71470",
+    "train_0010": "3b7c19ebd297b339c0a2c9d8a53b1682f0b9dc9d245683ac057443d1bf0dd2e2",
+    "train_0011": "731a34575acac5afc32208035daa3bc1566d42e83d0ef4f2a6232515f5e2a28b",
+    "train_0012": "a9594cef272118a4396ffce3a4331b65cf27f184d879808e93c75fc850eac625",
+    "train_0013": "7e33219cc3b7faf6f8c92d8d4133a122a0f4f939253022d276f5f087efea6b0c",
+    "train_0014": "7ec6f2efc312170bd24ff5c502e229e57ca96cb70d9e38c0fe9937490b85feaa",
+    "train_0015": "5d26b62db352843c988e426062ee840f6819eac271980299dc6b27a927803b04",
+    "train_0016": "08e5c7887274ed2c7f1471d2ce0c4ed6ae973279dd0caa17cb7a41a7f014f4f1",
+    "train_0017": "54eaf7f4c46287ae0bdc7e45c94ac195187589375141d51efedd0b8b9f411c6f",
+    "train_0018": "a6ac3130e631f2baeda70b7e021db721d02d7f7fef31ec863f0658784c659cdc",
+    "train_0019": "95ab2b1a6df2391c667ac6fead1a68cf98bfd63c74eca3e846872d4da075665c",
+    "train_0020": "4bd23108b65649d73d846e8740809de1719a1bcb3478410516ed4598c10df2e1",
+    "train_0021": "59d7893816cae4481064b832d60d4f6fb4e2a33214250cff493b4b8f46dc9a85",
+    "train_0022": "bced4cbafdc061395228800e60420dabd85e03493f716ecea8aaed26cecd1ff5",
+    "train_0023": "04ebd0235baa510a9f9e0f7628a98d45099d5e02a1fd0cd8aac2d4781ac3a5be",
+    "train_0024": "d35a401fecd5088191408ca958685cfe2b05d25c19d444a9b558f7f913699612",
+    "train_0025": "bf47ba8a30a986ae4c4910c91b41dcc1fdf3cb8da7fd3609be9bee2eb15f0e9f",
+    "train_0026": "adc1eb07096635d7bce2880b04508580fa8cd57a326565d85d236ca9172d0a5d",
+    "train_0027": "351f26de090ac31f6b536854d7dff1b8fb7f153c705157688393f7b4acaa8ac7",
+    "train_0028": "62c5f1f2f03d3bb8c33388a0292462e7a33645439e7273e6245c69fe1ee25da4",
+    "train_0029": "8e5243f06b09f3f0aff604139c2723634146fe1a9776398fd02c4a63661b667e",
+    "train_0030": "fb39d126ffd9cb92db49728334634b9bbfe7446033849937ddc81eb597a2c345",
+    "train_0031": "2813ee92626f1ef96c21b9dc5cab35163375b5680371f284e6750c3eecd6b5d4",
+    "valid_0000": "e386c82a7a15af1c4497511319d477c4930cbb735d368867bfe279bf0a7befce",
+    "valid_0001": "f8a4d10f326793a65345fe6092f63ab710595b23e50d6cb58a0202b0f4b80775",
+    "valid_0002": "82beb86694b8d2bfd8d54d5456570c6b5918a405a7aa92055dfc9bfaa9d67d75",
+    "valid_0003": "40f50b1ac45a56ebc1e6cff024774dbb9b061d0ce28fb29b30bcf02ca6300233",
+    "valid_0004": "99ccd5bfbfc75293de642c156cadcb461d58b356b5bc70947ac30912617ce356",
+    "valid_0005": "caa47b9fa144c7b5927f394abeb71320d0b717124c7ba9b2fc364cee1dc8d788"
+  },
+  "dataset_hash_provenance": "Copied from the existing split contract and cross-checked against JSON manifest; no NPZ opened or rehashed by this script.",
+  "selection_epochs": [
+    1,
+    3,
+    5
+  ],
+  "selection_trajectories": [
+    "valid_0000",
+    "valid_0005"
+  ],
+  "required_options": {
+    "hidden": 128,
+    "processor": 15,
+    "checkpoint_segments": 0,
+    "epochs": 5,
+    "frames_per_trajectory": 8,
+    "noise": 0.003,
+    "seed": 20261015,
+    "lr": 0.0001,
+    "lr_decay_per_update": 0.9999917,
+    "rollout_steps": 399,
+    "train_count": 32,
+    "valid_count": 6,
+    "validation_only": true,
+    "checkpoint_selection": "rollout",
+    "evaluation_mode": "ar_only",
+    "selection_epochs": "1,3,5",
+    "selection_trajectories": "valid_0000,valid_0005",
+    "evaluation_label": "exploratory"
+  },
+  "diagnostic_selection_basis": {
+    "scope": "All six validation metadata records; never final-test accuracy.",
+    "maximum_nodes": {
+      "trajectory": "valid_0000",
+      "nodes": 1645,
+      "unique_maximum": true
+    },
+    "maximum_source_scalar_stress": {
+      "trajectory": "valid_0005",
+      "value": 3531090.75,
+      "unique_maximum": true
+    },
+    "validation_metadata": [
+      {
+        "trajectory": "valid_0000",
+        "nodes": 1645,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 274825.65625,
+        "npz_sha256_from_existing_contract": "e386c82a7a15af1c4497511319d477c4930cbb735d368867bfe279bf0a7befce"
+      },
+      {
+        "trajectory": "valid_0001",
+        "nodes": 1382,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 55224.984375,
+        "npz_sha256_from_existing_contract": "f8a4d10f326793a65345fe6092f63ab710595b23e50d6cb58a0202b0f4b80775"
+      },
+      {
+        "trajectory": "valid_0002",
+        "nodes": 1189,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 55525.98828125,
+        "npz_sha256_from_existing_contract": "82beb86694b8d2bfd8d54d5456570c6b5918a405a7aa92055dfc9bfaa9d67d75"
+      },
+      {
+        "trajectory": "valid_0003",
+        "nodes": 954,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 56803.83984375,
+        "npz_sha256_from_existing_contract": "40f50b1ac45a56ebc1e6cff024774dbb9b061d0ce28fb29b30bcf02ca6300233"
+      },
+      {
+        "trajectory": "valid_0004",
+        "nodes": 1262,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 143849.8125,
+        "npz_sha256_from_existing_contract": "99ccd5bfbfc75293de642c156cadcb461d58b356b5bc70947ac30912617ce356"
+      },
+      {
+        "trajectory": "valid_0005",
+        "nodes": 1227,
+        "frames": 400,
+        "source_scalar_stress_min": 0.0,
+        "source_scalar_stress_max": 3531090.75,
+        "npz_sha256_from_existing_contract": "caa47b9fa144c7b5927f394abeb71320d0b717124c7ba9b2fc364cee1dc8d788"
+      }
+    ],
+    "validation_metadata_canonical_sha256": "08dfb3f35b7bd495d3554c50798b1f410b2461e99c2238d37f57ff65a0267756",
+    "stress_units": "Dataset scalar stress units; not independently confirmed Pa or MPa."
+  },
+  "selection_rule": {
+    "lexicographic_order": [
+      "failure_flag",
+      "any_frame_predicted_inversion_or_nonfinite_geometry_flag",
+      "maximum_relative_l2_over_two_cases_and_displacement_scalar_stress",
+      "epoch"
+    ],
+    "completed_candidate_requirements": "Both fixed 399-step AR diagnostics must complete, displacement/stress relative L2 must be finite and defined, and prediction/reference inversion counts must cover all 399 frames.",
+    "geometry_scope": "Plate tetrahedra excluding actuator-body cells; any predicted inverted tetrahedron in any frame flags the candidate. Reference inversions are separately recorded.",
+    "tie_break": "Earlier epoch wins exact ties after the three ranking keys.",
+    "if_every_completed_candidate_has_inversions": "Use the same predeclared worst-case/worst-field relative-L2 minimax among those candidates; preserve inversion counts and do not change the rule after observing results.",
+    "zero_truth_norm": "Assign relative L2 zero only when truth norm, component RMSE, and maximum absolute error are all exactly zero. Otherwise mark relative L2 undefined, fail that candidate, and preserve absolute errors separately.",
+    "failed_candidate_serialization": "Public JSON uses null with an explicit reason; infinity is permitted only in internal comparison keys, never serialized.",
+    "baseline_diagnostics": "Report zero-motion displacement and train-mean constant-stress baselines separately; they do not change the frozen ranking key.",
+    "negative_scalar_stress": "Preserve raw predicted negative scalar-stress count and minimum; do not clip predictions.",
+    "qualification": "Checkpoint selection diagnostics are not an accuracy qualification or a final-test result."
+  },
+  "recipe_limits": {
+    "original_paper_recipe_reproduced": false,
+    "scope": "A bounded validation-only pilot of the official 128-width/15-block architecture, not the original paper's complete training recipe.",
+    "differences": [
+      "Only the fixed first 32 training trajectories, not the full training corpus.",
+      "Eight deterministic training frame anchors per trajectory and five epochs, not full-recipe sampling or convergence.",
+      "Analytic noise-normalization treatment with fresh training noise, not a claim to reproduce the original framework's online statistics/noise implementation exactly.",
+      "Normalization is computed from training data only; validation/final-test data do not enter normalization.",
+      "Local PhysicsNeMo/PyTorch with torch_geometric graph backend, not the original paper's hardware/framework/distributed execution."
+    ],
+    "strain_label_caveat": "Reference and predicted Green-Lagrange strain are kinematically derived from source FEM/AI nodal arrays; no original COMSOL strain tensor label is available."
+  },
+  "fresh_final_test": [
+    "test_0002",
+    "test_0003",
+    "test_0004",
+    "test_0005",
+    "test_0006",
+    "test_0007"
+  ],
+  "fresh_final_test_policy": {
+    "content_accessed_by_protocol_script": false,
+    "npz_hashes_read_or_recomputed_by_protocol_script": false,
+    "npz_hashes_copied_into_protocol": false,
+    "evaluation_permitted_for_this_pilot": false,
+    "note": "Only six IDs are copied from the authorized JSON contract. No final-test NPZ is opened, hashed, or used for selection."
+  },
+  "provenance": {
+    "nvidia_reference_source_commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+    "metadata_inputs": [
+      {
+        "path": "outputs/expanded-research/benchmarks/deforming_plate/meta.json",
+        "sha256": "41be3cd0a9f2ac587ccaba7f4ef4d0830a0323b3dc6ecc1fd389b42d06513ab1"
+      },
+      {
+        "path": "outputs/expanded-research/benchmarks/deforming_plate/data-manifest.json",
+        "sha256": "ffb84c33edecc7afcaa98deccba021d3a5e78965b4b31134164c3ae5513fae8f"
+      },
+      {
+        "path": "outputs/expanded-research/benchmarks/deforming_plate/final-split-contract.json",
+        "sha256": "64a535d886538c3efb6a50d4e23131d48cc0d266d8cc039cd64904d017e9f1a5"
+      }
+    ],
+    "creator_script": {
+      "path": "work/expanded-plate/freeze_protocol.py",
+      "sha256": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68"
+    },
+    "input_access_scope": "Three JSON metadata files and this script only. No array or trajectory file is accessed."
+  },
+  "hash_metadata": {
+    "algorithm": "SHA256",
+    "canonical_payload_sha256": "b113c2a8f432f29b1e2229d6415ca49eacdbcc9f31983d6acafadafcfe6fdecf",
+    "canonicalization": "UTF-8 json.dumps(sort_keys=True,separators=(',', ':'),ensure_ascii=False,allow_nan=False), excluding hash_metadata"
+  }
+}

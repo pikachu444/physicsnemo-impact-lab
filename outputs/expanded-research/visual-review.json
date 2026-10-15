@@ -1,7 +1,13 @@
 {
   "scope": "Root visual inspection of saved scientific figures, distinct from numeric source-array audits.",
-  "last_updated_utc": "2026-10-15T09:03:21Z",
+  "last_updated_utc": "2026-10-15T14:20:00Z",
   "reviewed": [
+    {
+      "path": "benchmarks/deforming_plate/review/official32-first-fresh-field-comparison.png",
+      "sha256": "f71c14d741f56fedbfbd3fdf85d967ba7aa5b77f3308b3997692fc3ca78df262",
+      "status": "readable_after_two_layout_corrections",
+      "checks": "Root actually viewed all three renders. Final v3 resolves left-label/title overlaps and rightmost tick clipping. First fixed fresh test_0002, source loading step399, epoch5: u magnitude, native nodal VM, coordinate-derived cell GL E_xx; reference/prediction shared full ranges, signed scalar-error separate symmetric scale, initial-reference XY. Unit uncertainty and derived-vs-native strain caveat are legible. Extreme GL full range compresses ordinary colors; no clipping/winsorization claimed. This E_xx view is not the six-component GL L2 metric, and u-magnitude error is not vector L2. Layout review only; accuracy failed. Total3 renders, NN0. Exact historical plot sources remain local when they contain the workstation account path; a separately labeled portable derivative is not an executed source."
+    },
     {
       "path": "coupon-algorithm-comparison.png",
       "status": "readable",

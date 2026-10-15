@@ -1,0 +1,30 @@
+{
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_tc_frozen_v2.py",
+    "--domain",
+    "phone_full",
+    "--manifest",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+    "--normalization",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-normalization.json",
+    "--strategy",
+    "time_conditional",
+    "--mode",
+    "probe",
+    "--train-budget-seconds",
+    "180.0",
+    "--allocated",
+    "--protocol",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\temporal_strategies\\native-scalar-v3-resource-protocol-r4.json",
+    "--protocol-sha256",
+    "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326"
+  ],
+  "cwd": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T13:43:34.361969+00:00",
+  "driver_sha256": "599a0fd2a168718ca0cc9843814343ffe5350a32eb66b1f0a3bee15a022136f8",
+  "runner_sha256": "86680d5e3411734efd7d44ac58bf12439635c2e3158a6271cc3646df5bc81ef2",
+  "protocol_sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+  "seed": 20261015,
+  "root_allocation_required": true
+}

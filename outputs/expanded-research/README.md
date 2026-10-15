@@ -2,6 +2,8 @@
 
 2026-10-15에 실제 생성·학습·추론한 증거를 모은 후속 연구 기록이다. **구조역학만** 다루며 유체 예제는 포함하지 않는다. 진행 중인 실험을 완료로 세지 않는다. 아래 수치의 원본은 개별 실행의 JSON·로그·독립 검산이다.
 
+완료된 후속 신경망 학습·평가 산출물은24개다. 시편9개(정적6·시간 전략3), 휴대폰6개, 범퍼6개, 판재3개이며 알고리즘24종이라는 뜻은 아니다. 휴대폰·범퍼의 후속 다물리량 시간 전개6설정은 본학습0으로 남아 있다. 설치·3업데이트 기능 검사·재검산·그림 생성은 이24개에 더하지 않는다. 단순 기준·회귀·축약 모델도 별도로 비교했다.
+
 ## 실제 정답 확보
 
 | 구조 예제 | 실제 정답과 규모 | 응력·변형률의 의미 |
@@ -72,7 +74,15 @@ MGN은3,387업데이트·6,774관측·60완료 epoch 중 best48이며 부분 epo
 
 DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 실제 학습했다. 각각 12epoch·1,920업데이트이며 399단계 자기회귀를 평가했다. noise 제거와 loss 정규화 변경을 묶은 설정은 drift를 줄였지만 내부 검증 응력을 악화했고, 두 설정 모두 정확도 실패였다. 원 COMSOL strain이 없는 이 예제의 유도 strain 비교를 native FEM strain 검증이라고 부르지 않는다. [판 실행 기록](benchmarks/deforming_plate/README.md)
 
+추가로 공식 크기 hidden128·processor15·3,605,636parameter 모델을32궤적×8시점×5epoch, 총1,280 Adam update로 실제 학습하고, validation의 고정 AR 규약으로 epoch5를 선택했다. 새 test0002..0007 여섯 궤적의399단계 자유 예측은 모두 실행 완료했지만, pooled 변위 L2는241.217%로 영변위 기준100%보다 나빴고 native scalar stress L2는68.236%였다. 예측 tetrahedron 역전은4/6조건에서 발생했으며 이 여섯 원 좌표의 reference 역전은0이었다. 좌표에서 유도한 GL tensor의21표본시점 상대 L2는1,293.454배로 매우 컸고, 이를 native COMSOL strain 검증으로 해석하지 않는다. 공식 architecture의 제한된 subset 학습이며 전체 corpus·원논문 수렴 재현이나 이 계열의 보편적 실패를 입증한 실험은 아니다. [최종 평가·실패·프로세스 종료](benchmarks/deforming_plate/official32_fresh_final_corrected/README.md)
+
+판의 train+전체validation cold wall은2,319.975초, 별도 fresh6 과정은291.370초였다. 평가 전 설정의 문자열/list 비교에서 한 번 실패했으나 데이터 접근 전이었으며, 원본을 보존하고 최소 교정·독립 검토 후 같은 checkpoint로 fresh를 한 번 수행했다. Fresh는2026-10-15 09:36:42 UTC에 끝났고 대화 중단 후13:25 UTC에 종료 세션과 GPU 반환을 확인했다. 그 사이에 다음 실험이 실행된 것으로 기록하지 않는다. 독립68개 metadata·출처·JSON 합산 검사에 이어, 여섯 원 source NPZ와 저장 예측 NPZ를 재독해한297개 검사를 모두 통과했다. 실제399시점 source 정답·처방 경계 일치, 변위·응력 집계, 독립 cofactor 식의21시점 GL tensor 및399시점 detF 역전 수가 저장 지표와 일치했다. 이 후속 검산은7.627초·OS peakRSS60.30MiB였고 추가 NN 추론은0회다. [메타데이터 감사](benchmarks/deforming_plate/review/official32-final-metadata-audit.md), [독립 원 배열 검산](benchmarks/deforming_plate/review/official32-streaming-numeric-audit-v1.md)
+
 판 loader만으로 stress invariant를 확정할 수는 없었으나, [원논문 Section4의 DeformingPlate 설명](https://ar5iv.labs.arxiv.org/html/2010.03409#S4)과 [저자 프로젝트](https://sites.google.com/view/meshgraphnets/home)가 nodal von Mises stress로 정의함을 추가 확인했다. 이 근거가 물리 단위까지 확정하는 것은 아니므로 MPa로 임의 환산하지 않는다.
+
+![공식 크기 판 모델의 첫 fresh 사례: 변위·응력·좌표 유도 변형률과 오차](benchmarks/deforming_plate/review/official32-first-fresh-field-comparison.png)
+
+첫 fresh test0002·최종 source step399를 오차를 보기 전에 고정했다. 행은 변위 크기, native VM, 좌표 유도 GL E_xx이며 마지막 행은 원 COMSOL strain이 아니다. 각 행의 원본·예측은 전체 공통 색 범위를 사용한다. GL의 극값 때문에 보통 값의 색 차이가 작아 보이며 범위를 잘라 정확하게 보이게 하지 않았다. 초기 좌표 XY 투영으로, 변형 형상이나 전체6성분 변형률 L2 그림과 구분한다. 배치 교정2회를 포함한 실제 렌더3회·추가 NN0회이며 최종 그림을 직접 확인했다. 계정 경로를 포함한 원 plot 실행 소스는 로컬에 그대로 보존하고 공개용 portable 사본은 미실행 파생본으로 구분한다.
 
 ## 휴대폰 전체 조립체의 실제 예측과 범위
 
@@ -154,9 +164,13 @@ Graph의 단절을 모든 backbone에서 부품 간 영향이 전혀 전달되�
 
 상용 환경 확장은 승인된 HyperMesh/Radioss 모델의 해석 자동화, 원 ANIM/TH/H3D 보존, node/element/part ID·단위·좌표계·적분점/층 정의의 고정, 학습 schema와 HyperView/ParaView 비교로 이어질 수 있다. 지금 실제 실행한 solver는 OpenCourant이며 회사의 상용 모델을 실행하거나 외부로 전송하지 않았다. 공개 solver와 상용 solver의 keyword·재료·접촉·수치 결과 호환성은 같은 deck으로 따로 확인해야 한다.
 
-6GiB GPU에서 실제 전체 출력 지원점의 작은 신경망은 학습할 수 있었지만, 휴대폰 MGN B5는 VRAM 부족, FIG B5는 host RAM 부족을 실제 겪었다. 공식 크기 판의 단일 update 성공도 장기 rollout 정확도나 임의 조립체 수용량을 보장하지 않는다. 자원 증설 여부는 각 모델의 실측 VRAM·RAM·처리량과 검증 곡선으로 정한다. [기존 비용 시나리오와 공식 가격 출처](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/resource-options.md)는 GPU 점유 시간에 따른 참고치이며 이번 연구에서 유료 자원은 사용하지 않았다.
+6GiB GPU에서 실제 전체 출력 지원점의 작은 신경망은 학습할 수 있었지만, 휴대폰 MGN B5는 VRAM 부족, FIG B5는 host RAM 부족을 실제 겪었다. 공식 크기 판도 실제 학습과399단계 평가를 완료했으나 정확도 실패였다. 판의 train+validation OS peakRSS는1,732,485,120byte, CUDA allocator peak allocated3,187,859,968byte/reserved3,953,131,520byte였다. Fresh 과정은 별도 프로세스라 OS peakRSS1,329,582,080byte, allocated195,064,320byte/reserved274,726,912byte로 다르다. 공유 PC의 가용 RAM 최저값은 각각214,568,960/193,302,528byte였으며 이를 모델의 고유 최소 RAM 요구량으로 바꾸지 않는다. 자원 증설 여부는 각 모델의 실측 VRAM·RAM·처리량과 검증 곡선으로 정한다. [기존 비용 시나리오와 공식 가격 출처](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/resource-options.md)는 GPU 점유 시간에 따른 참고치이며 이번 연구에서 유료 자원은 사용하지 않았다.
 
 후속 실행 중 [공식 GPU·host RAM·저장 가격 재확인](resources-pricing-recheck-20261015.md)도 기록했다. RTX A5000 24GB/host25GB는 표시0.27USD/h, A6000 48GB/host50GB는0.59USD/h였다. 실제 필요한 점유 시간을 측정하기 전에는 이를 수렴 학습 비용으로 확정하지 않는다. 별도 GPU 지출은0이며 전기·기존 장비·구독 비용을 측정한 결과와 구분한다.
+
+휴대폰·범퍼 시간 전개의 후속6설정은 본학습 완료0이다. 13:42 UTC에 가용 RAM2,063,556,608→2,037,444,608byte의 사전 검사를 통과하고, 별도 phone/time-conditional 자원 검사 한 건을 실제 실행했다. Runtime58.64초에 familyRSS1,462,505,472byte·host 가용512,454,656byte(488.7MiB)를 관측해 운영 하한512MiB에서 자기 프로세스만 중단·회수했다. 실제 GeoTransolver core import/path/hash는 확인했지만3update 성공 receipt가 없어 업데이트 수는 미인증이며, 이를 CUDA OOM이나 기능 검사 성공으로 바꾸지 않는다. 후속11개 자원 검사·공통 fit 예산 선정·6개 본학습은 미실행이다. [실측·부분 로그·실행 소스52파일](benchmarks/temporal_strategies/resource-calibration-v1/SUMMARY.json)
+
+이 실행의 RAM 여유는 공유 PC의 시시각각 상태이므로 모델 자체의 최소 사양으로 일반화하지 않는다. 더 넉넉한 현재 PC의 RAM 또는 별도 환경으로 추가 실측이 필요하다. 13:49 UTC에 [Runpod 공식 가격](https://www.runpod.io/pricing)과 [Lambda 공식 가격](https://lambda.ai/pricing)을 다시 열어 확인했다. Runpod A5000/A6000의 단순4시간 사용료는 각각1.08/2.36USD, Lambda 단일A6000 48GB·host100GiB는1.09USD/h였다. 저장·세금·계정 선결제 조건은 별도이며,4시간은 비용 예시로 수렴 시간을 뜻하지 않는다. 인스턴스 가용성·실제 대여·결제는 확인/집행하지 않았다.
 
 ## 보존과 재현
 

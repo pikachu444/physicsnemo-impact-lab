@@ -1,0 +1,138 @@
+{
+  "status": "measurement_based_candidate_time_guide_not_selected_training_configuration",
+  "resource_attempt_sha256": "34e24e33f873b3818c5ca0efbdcc06ff2ecf2fb5072a57afe046f06bb2fb280c",
+  "config_sha256": "02b521f8bb9c0f69f99f3dc588cf0a5d3000cb1189f67f137a5c8ff6d475e29e",
+  "probe_sha256": "6495c520758b975ce5d9ab9b1dc675e09ca8b9a4b4714414e6bf08c04faec4fb",
+  "time_guide_source_sha256": "2bc9e44fae3ed4d826f7103760ccbf39c39b527d4f11c4b429bc3d79c7ec029a",
+  "split_contract_sha256": "64a535d886538c3efb6a50d4e23131d48cc0d266d8cc039cd64904d017e9f1a5",
+  "architecture": {
+    "input_dim_nodes": 3,
+    "input_dim_edges": 8,
+    "output_dim": 4,
+    "processor_size": 15,
+    "hidden_dim_processor": 128,
+    "hidden_dim_node_encoder": 128,
+    "hidden_dim_edge_encoder": 128,
+    "hidden_dim_node_decoder": 128,
+    "num_processor_checkpoint_segments": 0
+  },
+  "parameters": 3605636,
+  "measured_update_seconds": 0.4158591666661475,
+  "measured_graph_forward_output_seconds": 0.16041593333284254,
+  "measured_forward_only_seconds": 0.1363730666671472,
+  "measured_resource_geometry": {
+    "trajectory": "train_0011",
+    "starting_frame": 319,
+    "nodes": 1488,
+    "mesh_edges": 14464,
+    "world_edges_at_start": 45834
+  },
+  "actual_resource_memory": {
+    "memory": {
+      "sampled_rss_peak_bytes": 1644982272,
+      "sampling_interval_seconds": 0.02,
+      "sample_count": 1315,
+      "sampled_host_available_minimum_bytes": 268742656,
+      "sampling_errors": [],
+      "note": "The sampled RSS peak is a lower bound, not a continuous OS high-water measurement.",
+      "windows_peak_working_set_bytes": 1644982272,
+      "windows_peak_pagefile_bytes": 6714429440
+    },
+    "cuda": {
+      "max_tensor_allocated_bytes": 3176932864,
+      "max_allocator_reserved_bytes": 3498049536,
+      "note": "PyTorch allocator values exclude unrelated processes and some CUDA driver/library allocations."
+    }
+  },
+  "checkpoint_segments": 0,
+  "candidates": [
+    {
+      "candidate_training_step_anchors_per_trajectory": 8,
+      "candidate_epochs": 5,
+      "optimizer_updates": 1280,
+      "training_proxy_seconds": 532.2997333326688,
+      "teacher_validation_proxy_seconds": 57.749735999823315,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 35.436540782129875
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 8,
+      "candidate_epochs": 10,
+      "optimizer_updates": 2560,
+      "training_proxy_seconds": 1064.5994666653376,
+      "teacher_validation_proxy_seconds": 115.49947199964663,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 45.27069860433808
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 8,
+      "candidate_epochs": 20,
+      "optimizer_updates": 5120,
+      "training_proxy_seconds": 2129.198933330675,
+      "teacher_validation_proxy_seconds": 230.99894399929326,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 64.93901424875448
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 16,
+      "candidate_epochs": 5,
+      "optimizer_updates": 2560,
+      "training_proxy_seconds": 1064.5994666653376,
+      "teacher_validation_proxy_seconds": 57.749735999823315,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 44.308203004341024
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 16,
+      "candidate_epochs": 10,
+      "optimizer_updates": 5120,
+      "training_proxy_seconds": 2129.198933330675,
+      "teacher_validation_proxy_seconds": 115.49947199964663,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 63.014023048760365
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 16,
+      "candidate_epochs": 20,
+      "optimizer_updates": 10240,
+      "training_proxy_seconds": 4258.39786666135,
+      "teacher_validation_proxy_seconds": 230.99894399929326,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 100.42566313759906
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 32,
+      "candidate_epochs": 5,
+      "optimizer_updates": 5120,
+      "training_proxy_seconds": 2129.198933330675,
+      "teacher_validation_proxy_seconds": 57.749735999823315,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 62.05152744876331
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 32,
+      "candidate_epochs": 10,
+      "optimizer_updates": 10240,
+      "training_proxy_seconds": 4258.39786666135,
+      "teacher_validation_proxy_seconds": 115.49947199964663,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 98.50067193760495
+    },
+    {
+      "candidate_training_step_anchors_per_trajectory": 32,
+      "candidate_epochs": 20,
+      "optimizer_updates": 20480,
+      "training_proxy_seconds": 8516.7957333227,
+      "teacher_validation_proxy_seconds": 230.99894399929326,
+      "post_training_validation_and_fresh_test_proxy_seconds": 1536.1429775953002,
+      "combined_proxy_minutes": 171.39896091528823
+    }
+  ],
+  "limitations": [
+    "Projections use one sampled high-edge training geometry; they are not guaranteed upper bounds or wall-clock forecasts.",
+    "File I/O, repeated trajectory decompression, model checkpoint serialization, strain calculations, plots and OS paging are not measured by these proxies.",
+    "Per-epoch validation uses 12 teacher-forced anchors per validation trajectory. Post-training evaluation models 399 AR steps and 399 separate teacher-forced calls per validation/final-test trajectory.",
+    "The final fresh-test inference must run only after architecture, training cap and checkpoint selection have been locked using training/validation information.",
+    "No candidate is selected by this script. Actual first-epoch duration and validation learning curves must update the cap decision."
+  ]
+}

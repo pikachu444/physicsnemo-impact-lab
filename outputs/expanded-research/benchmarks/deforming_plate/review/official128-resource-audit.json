@@ -1,0 +1,119 @@
+{
+  "status": "passed_independent_saved_resource_evidence_and_timeguide_arithmetic_audit",
+  "checks": {
+    "completed_attempt_and_probe_identical": true,
+    "preserved_wrapper_driver_helper_hashes_match": true,
+    "guide_all_input_and_source_hashes_match": true,
+    "all_hidden128_depth15_official_default_checkpoint0": true,
+    "independent_static_parameter_algebra_matches": true,
+    "three_timed_plus_two_warmups_recorded": true,
+    "training_geometry_1488nodes_60298_start_directed_edges": true,
+    "allocator_and_memory_records_consistent": true,
+    "32_6_6_split_matches_contract_normalization_trainonly": true,
+    "probe_returns_before_accuracy_training_and_evaluation": true,
+    "recorded_probe_process_exit": true,
+    "wall_duration_matches_UTC_timestamps": true,
+    "all_nine_candidate_equations_recomputed": true
+  },
+  "parameters_static_total": 3605636,
+  "static_parameter_components": {
+    "node_encoder_3_to128": 33792,
+    "mesh_edge_encoder_8_to128": 34432,
+    "world_edge_encoder_8_to128": 34432,
+    "node_decoder_128_to4": 33540,
+    "mesh_edge_processor_per_block_384_to128": 82560,
+    "world_edge_processor_per_block_384_to128": 82560,
+    "node_processor_per_block_256_to128": 66176
+  },
+  "parameter_check_scope": "Pure integer algebra from installed PhysicsNeMo2.2.2 constructor source; no model instantiated or runtime parameter counter re-executed.",
+  "parameter_reference_source_hashes": {
+    "work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\hybrid_meshgraphnet.py": "6eef3212aea15bd138af012d610b40f511e803ef227ac21f6e7c77b5b970bcaf",
+    "work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\meshgraphnet\\meshgraphnet.py": "c8441215c219ba7bddf180fa2bf782bd072bf511139cc383ca6f0b50c37928ee",
+    "work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\nn\\module\\gnn_layers\\mesh_graph_mlp.py": "843df42cdc6b1c8017da0ffeb630ed0437880baa406dc1e0951948683bfb89a6",
+    "work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\nn\\module\\gnn_layers\\mesh_node_block.py": "c0e732d857b0ccce9c34c316b1815f31580a462014afb572a11c53cf9e43449b"
+  },
+  "measured": {
+    "updates_timed": 3,
+    "warmup_updates": 2,
+    "mean_update_seconds": 0.4158591666661475,
+    "graph_forward_output_seconds": 0.16041593333284254,
+    "pure_forward_seconds": 0.1363730666671472,
+    "cold_wall_including_imports_setup_seconds": 45.4038443999998,
+    "training_geometry_nodes": 1488,
+    "directed_edges_at_start": 60298,
+    "cuda_tensor_peak_bytes": 3176932864,
+    "cuda_allocator_reserved_peak_bytes": 3498049536,
+    "sampled_RSS_peak_bytes": 1644982272,
+    "windows_peak_working_set_bytes": 1644982272,
+    "windows_peak_pagefile_bytes": 6714429440,
+    "sampled_host_available_minimum_bytes": 268742656
+  },
+  "candidate_equations": [
+    {
+      "anchors": 8,
+      "epochs": 5,
+      "updates": 1280,
+      "combined_proxy_minutes": 35.436540782129875
+    },
+    {
+      "anchors": 8,
+      "epochs": 10,
+      "updates": 2560,
+      "combined_proxy_minutes": 45.27069860433808
+    },
+    {
+      "anchors": 8,
+      "epochs": 20,
+      "updates": 5120,
+      "combined_proxy_minutes": 64.93901424875448
+    },
+    {
+      "anchors": 16,
+      "epochs": 5,
+      "updates": 2560,
+      "combined_proxy_minutes": 44.308203004341024
+    },
+    {
+      "anchors": 16,
+      "epochs": 10,
+      "updates": 5120,
+      "combined_proxy_minutes": 63.014023048760365
+    },
+    {
+      "anchors": 16,
+      "epochs": 20,
+      "updates": 10240,
+      "combined_proxy_minutes": 100.42566313759906
+    },
+    {
+      "anchors": 32,
+      "epochs": 5,
+      "updates": 5120,
+      "combined_proxy_minutes": 62.05152744876331
+    },
+    {
+      "anchors": 32,
+      "epochs": 10,
+      "updates": 10240,
+      "combined_proxy_minutes": 98.50067193760495
+    },
+    {
+      "anchors": 32,
+      "epochs": 20,
+      "updates": 20480,
+      "combined_proxy_minutes": 171.39896091528823
+    }
+  ],
+  "posttraining_validation_plus_fresh_test_calls_proxy": 9576,
+  "posttraining_evaluation_proxy_seconds": 1536.1429775953002,
+  "limitations": [
+    "One selected high-edge training graph, three timed updates, not a repeated distribution or guaranteed worst case.",
+    "Individual update times, especially the first cold update, were not preserved. Cold wall includes imports/setup and is not cold-update latency.",
+    "Probe updates use consecutive frames beginning319; starting edge count60298 is not an all-steps edge-count guarantee. Inference timing uses a later training frame, not a fresh-test graph.",
+    "Torch allocated/reserved peaks exclude unrelated processes and some driver/library allocations.",
+    "Windows peak_pagefile measures private committed/virtual usage, not physical RSS and not evidence of6.7GB swapped to disk.",
+    "Resource process completed and exited; the actual measurement did not run full accuracy training or fresh-final-test predictions. Raw file hashes for split identity do not constitute evaluating prediction accuracy.",
+    "Time-guide values are arithmetic proxies, excluding I/O, decompression, model saving, derived strain, visualization, paging, and geometry variability; no cap is selected by this audit."
+  ],
+  "execution_scope": "Standard-library read-only audit only. No NumPy/Torch/framework import, model construction, GPU use, or execution of the resource wrapper/time guide."
+}

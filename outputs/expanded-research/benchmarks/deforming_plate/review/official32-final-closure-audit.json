@@ -1,0 +1,22 @@
+{
+  "status": "PASS_independent_stdlib_final_closure_audit",
+  "reviewer": "reviewer_terra_high plate_source_audit",
+  "recorded_at_utc": "2026-10-15T13:28:50.468434+00:00",
+  "metrics_sha256": "04eaa2a4c140b4da658da5b6c3a78a6bc948713b2429a95d95042cd4308eb8a8",
+  "closure_provenance_sha256": "a87dcff3539abab11704939d6b20a803403143c9319b2a5259b2db69e7b074aa",
+  "gpu_release_sha256": "478a8b493d25fd03b17b9b4020d294113e21c290a519a4c168aedf7728deff6b",
+  "conclusion": "Execution complete; accuracy and geometry failure. Fresh6 onepass and source/model/split provenance intact. Pooled JSON arithmetic consistent.",
+  "verified_fresh_cases": 6,
+  "AR_steps_per_case": 399,
+  "teacher_forcing_computed": false,
+  "predicted_inversion_case_count": 4,
+  "completion_receipt_utc": "2026-10-15T09:36:42.078322+00:00",
+  "release_observed_utc": "2026-10-15T13:25:03.6730147Z",
+  "limits": [
+    "No checkpoint tensor deserialization",
+    "No source/prediction NPZ arrays reopened",
+    "No independent field-level metric recomputation from arrays",
+    "21 sampled coordinate-derived GL frames, not native COMSOL strain",
+    "Stress units unconfirmed, no MPa conversion"
+  ]
+}

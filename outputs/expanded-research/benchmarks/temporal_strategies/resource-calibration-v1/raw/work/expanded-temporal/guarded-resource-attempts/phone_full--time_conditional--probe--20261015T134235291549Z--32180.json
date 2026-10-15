@@ -1,0 +1,155 @@
+{
+  "attempt": "phone_full--time_conditional--probe--20261015T134235291549Z--32180",
+  "started_utc": "2026-10-15T13:42:35.291541+00:00",
+  "domain": "phone_full",
+  "strategy": "time_conditional",
+  "mode": "probe",
+  "root_allocation_note": "root-20261015T1324UTC-standard-preflight-only",
+  "allocated": true,
+  "preflight_only": true,
+  "policy_id": "standard-resource-v1",
+  "policy": {
+    "preflight_min_available_bytes": 1610612736,
+    "preflight_observations": 2,
+    "preflight_interval_seconds": 10,
+    "running_min_available_bytes": 536870912,
+    "family_rss_cap_bytes": 2147483648,
+    "wall_cap_seconds": 600,
+    "monitor_interval_seconds": 1,
+    "cleanup_timeout_seconds": 30,
+    "no_automatic_retry": true
+  },
+  "verified_contract": {
+    "execution_lock": {
+      "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json",
+      "sha256": "9863c853fbf661afa4bec677820b24a8ab0e9bb8989a39759cfd5f50898218fd"
+    },
+    "protocol": {
+      "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+      "sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326"
+    },
+    "plan": {
+      "path": "outputs/expanded-research/benchmarks/temporal_strategies/temporal-multifield-current-plan-r4.json",
+      "sha256": "951655f0f99947870ddebe4a3254c4f6f6ce35449e19233a523da2da66a852c0"
+    },
+    "guard_sha256": "4ba5c2953fcdc6b242ed59ddd85ad34010a1d8f8394a1e4ab8578023231df9e0",
+    "shared_guard_sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+    "verified_source_count": 24,
+    "metadata": [
+      {
+        "domain": "phone_full",
+        "kind": "manifest",
+        "path": "work/expanded-ml/phone-full-cache-v2/manifest.json",
+        "sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca"
+      },
+      {
+        "domain": "phone_full",
+        "kind": "normalization",
+        "path": "work/expanded-ml/phone-full-normalization.json",
+        "sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d"
+      },
+      {
+        "domain": "phone_full",
+        "kind": "ready",
+        "path": "work/expanded-ml/phone-full-cache-v2/READY.json",
+        "sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274"
+      },
+      {
+        "domain": "bumper",
+        "kind": "manifest",
+        "path": "work/expanded-ml/multifield7-cache/manifest.json",
+        "sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41"
+      },
+      {
+        "domain": "bumper",
+        "kind": "normalization",
+        "path": "work/expanded-ml/bumper7-normalization.json",
+        "sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3"
+      },
+      {
+        "domain": "bumper",
+        "kind": "ready",
+        "path": "work/expanded-ml/multifield7-cache/READY.json",
+        "sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8"
+      }
+    ],
+    "policy_id": "standard-resource-v1",
+    "policy": {
+      "preflight_min_available_bytes": 1610612736,
+      "preflight_observations": 2,
+      "preflight_interval_seconds": 10,
+      "running_min_available_bytes": 536870912,
+      "family_rss_cap_bytes": 2147483648,
+      "wall_cap_seconds": 600,
+      "monitor_interval_seconds": 1,
+      "cleanup_timeout_seconds": 30,
+      "no_automatic_retry": true
+    },
+    "reason": "Standard retained 1.5GiB operational margin for train-only resource probes.",
+    "invocation_context": {
+      "shell": "cmd.exe",
+      "login": false,
+      "parent_python_no_site": true,
+      "reason": "Reduce extra resident shell memory during cold resource calibration"
+    }
+  },
+  "invocation_context": {
+    "shell": "cmd.exe",
+    "login": false,
+    "parent_python_no_site": true,
+    "reason": "Reduce extra resident shell memory during cold resource calibration"
+  },
+  "actual_sys_argv": [
+    "work\\expanded-temporal\\run_multifield_guarded.py",
+    "--domain",
+    "phone_full",
+    "--strategy",
+    "time_conditional",
+    "--mode",
+    "probe",
+    "--protocol",
+    "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+    "--protocol-sha256",
+    "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+    "--execution-lock",
+    "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json",
+    "--execution-lock-sha256",
+    "9863c853fbf661afa4bec677820b24a8ab0e9bb8989a39759cfd5f50898218fd",
+    "--allocation",
+    "root-20261015T1324UTC-standard-preflight-only",
+    "--allocated",
+    "--preflight-only"
+  ],
+  "actual_sys_executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "actual_parent_no_site": true,
+  "invocation_context_limit": "The lock records the expected host shell/login context; this child process cannot independently attest the host tool shell.",
+  "no_test": true,
+  "no_fit": true,
+  "training_budget_seconds": null,
+  "parent_numpy_framework_imports": 0,
+  "automatic_retries": 0,
+  "job_created": false,
+  "child_started": false,
+  "contained_before_resume": false,
+  "child_reaped": false,
+  "preflight_samples": [
+    {
+      "utc": "2026-10-15T13:42:35.292057+00:00",
+      "available_bytes": 2063556608
+    },
+    {
+      "utc": "2026-10-15T13:42:45.292385+00:00",
+      "available_bytes": 2037444608
+    }
+  ],
+  "runtime_samples": [],
+  "observed_own_job_pids": [],
+  "peak_sampled_family_rss_bytes": 0,
+  "minimum_sampled_available_bytes": 2037444608,
+  "status": "preflight_passed_no_child_requested",
+  "measurement_limit": "Nominal periodic samples of own-job working-set sums can miss transient peaks. The 2GiB RSS policy is a sampled stop threshold, not an OS memory hard limit.",
+  "finished_utc": "2026-10-15T13:42:45.292431+00:00",
+  "wall_seconds": 10.000394499998947,
+  "guard_exit_code": 0,
+  "receipt_path": "<LOCAL_WORKSPACE>\\work\\expanded-temporal\\guarded-resource-attempts\\phone_full--time_conditional--probe--20261015T134235291549Z--32180.json"
+}

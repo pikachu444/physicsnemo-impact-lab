@@ -2,6 +2,12 @@
 
 This folder contains a bounded execution of NVIDIA PhysicsNeMo's structural DeformingPlate example, not a reproduction of the published 8-H100 experiment.
 
+## 최신 확대 실행 종료 — 2026-10-15
+
+공식 128폭·15블록 모델의 train32×anchor8×5epoch 학습, validation6 AR399, 고정 checkpoint의 fresh test6 AR399 단 1회 실행을 모두 마쳤다. 최종 시험 완료 receipt는 09:36:42 UTC이며, 중단 후 13:25 UTC에 원 세션 exit0·프로세스 부재·GPU 반환을 확인했다. 추가 추론은 하지 않았다.
+
+최종 시험 합산 변위 상대 L2는 2.4122(영변위 기준 1.0), 원 응력 상대 L2는 0.68236, 21개 표본 단계의 좌표 유도 GL strain 상대 L2는 1293.45다. 6건 중 4건에서 예측 요소 역전이 나와 **정확도·기하학 안정성 실패**로 기록한다. 원 응력 단위는 미확정이며 GL strain은 원 COMSOL strain 정답이 아니다. 사전 gate 형식 비교 실패와 최소 교정, 낮은 가용 RAM, 남은 그림·raw-array 수치 감사 범위까지 [최종 실행 종료 기록](official32_fresh_final_corrected/README.md)에 보존했다. 아래의 이전 작은 모델·자원 probe 기록은 이력으로 유지한다.
+
 ## Sources and data
 
 - NVIDIA example revision: `11685edb3ec1fb6f25665e96cf7a8c4d11a23f16`, `examples/structural_mechanics/deforming_plate/`.
@@ -84,7 +90,7 @@ Zero-motion validation displacement RMSE is 0.0317465; constant training-mean st
 
 The internal validation reference and both models' full fields are preserved locally in `pilot8_validation/` and `noise0_pilot8/`. New runs also retain teacher-forced prediction arrays, allowing independent numerical audits of those values. The first pilot did not retain teacher-forced arrays, and its teacher-forced individual numbers are checked from source/formula rather than independently regenerated from an output file.
 
-The message-passing depth is deliberately reduced to three blocks for resource calibration. Limited graph reach is one possible cause of poor whole-plate coupling; this has **not** been established as the cause by a depth comparison. A width-128 / 15-block official-architecture resource probe is prepared but has not run. The failed reduced-capacity pilots are not proof that the official full training recipe fails.
+The message-passing depth is deliberately reduced to three blocks for resource calibration. Limited graph reach is one possible cause of poor whole-plate coupling; this has **not** been established as the cause by a depth comparison. A width-128 / 15-block official-architecture resource probe has now completed, as recorded in official128-resource-summary.md. It is a resource measurement, not accuracy training. The failed reduced-capacity pilots are not proof that the official full training recipe fails.
 
 ## Expanded data acquired; fresh final test remains unused
 
@@ -98,6 +104,16 @@ At this point, two actual HybridMeshGraphNet models are trained; no model has be
 
 The actual Plate entry point is the new lazy driver `train_plate.py`, which instantiates the installed, unmodified `physicsnemo.models.meshgraphnet.HybridMeshGraphNet`. The stock NVIDIA `train.py`/`inference.py` files were inspected and preserved, not directly launched for these Plate runs. The stock all-loading-step `.pt` preprocessing is replaced with on-demand CPU radius graphs and per-trajectory reads to bound RAM and storage. This preserves the documented graph/target mathematics but is not an unmodified stock-entry-point reproduction. Library implementation is PyPI PhysicsNeMo 2.2.2; example feature/target specification is pinned to the cited NVIDIA commit. Both versions are recorded rather than pretending the installed package is the Git commit.
 
-Future resource commands can select the largest observed training graph: `--hidden 128 --processor 15 --probe 3 --probe-trajectory train_0011 --probe-frame 319 --train-count 32 --valid-count 6 --test-start 2 --test-stop 8`. This command is **prepared, not executed**. At the sampled state it has 1,488 nodes and 60,298 directed edges. Optional `--checkpoint-segments 15` selects activation checkpointing; any such resource test must be logged as a separate measurement. Training geometry sampling is recorded in `training-resource-geometries.json` and does not inspect fresh test accuracy.
+Future resource commands can select the largest observed training graph: `--hidden 128 --processor 15 --probe 3 --probe-trajectory train_0011 --probe-frame 319 --train-count 32 --valid-count 6 --test-start 2 --test-stop 8`. The wrapped default-capacity resource attempt has now completed; see official128-resource-summary.md and probe128_default/. At the sampled state it has 1,488 nodes and 60,298 directed edges. Optional `--checkpoint-segments 15` selects activation checkpointing; any such resource test must be logged as a separate measurement. Training geometry sampling is recorded in `training-resource-geometries.json` and does not inspect fresh test accuracy.
 
 The development stress hotspot check also fails: in source trajectory test0001, FEM peak von Mises stress is 494,882.47 at loading step 360. At that same point and step the noise-0.003 model predicts 27,162.76 (94.51% local error), and the noise-zero model predicts 31,294.06 (93.68% local error), all in unconfirmed dataset stress units. The file `development-stress-hotspots.json` identifies array indices, not solver node IDs. These actual localized misses matter for design decisions; a global average error alone would conceal them. No fresh-final-test hotspot has been inspected.
+
+## Actual official-capacity resource probe completed
+
+The default width128 / processor15 / activation-checkpoint-segments0 configuration completed on the real RTX 3060 Laptop GPU. Its 3,605,636 parameters were also independently counted from the source without constructing a model. Five real Adam updates were performed (two warm-up plus three timed), with mean timed update 415.859ms. Pure warmed forward was 136.373ms; graph preparation + forward + output transfer was 160.416ms. These calls used one training trajectory and are not complete 399-step case predictions. The update frames advanced from 319 through 323; the separately timed forward used the subsequent selected training frame, while the 60,298 edge count describes the starting frame319.
+
+Peak Torch tensor allocation was 3,176,932,864 bytes, peak reserved memory 3,498,049,536 bytes, and Windows peak working set 1,644,982,272 bytes. The process completed without OOM and exited. The cold wall including imports/setup was 45.404s; an individual first cold update latency was not saved. No activation-checkpointing retry was necessary or performed.
+
+At the measured high-edge geometry, a 32-training-trajectory candidate with 8 training anchors and 5 epochs projects 8.87 minutes of Adam work, 0.96 minutes of per-epoch teacher validation, and 25.60 minutes for full 399-step AR plus separate teacher evaluation on six validation and six fresh test trajectories, totaling 35.44 minutes before unmeasured I/O/checkpoint/strain/plot/paging costs. The earlier small-model 10–12 minute expectation cannot be transferred to the official architecture. These are resource proxies, not selected caps or guaranteed times. The actual guide lists nine candidates and validates its measurement/config hashes.
+
+See [Korean resource summary](official128-resource-summary.md), `probe128_default/` and `review/official128-resource-audit.md`. The full-capacity model has **not** completed accuracy training, and fresh final test2..7 remains unevaluated. The two reduced-capacity accuracy failures are preserved; the larger model fitting in memory is not evidence that its accuracy problem is solved.

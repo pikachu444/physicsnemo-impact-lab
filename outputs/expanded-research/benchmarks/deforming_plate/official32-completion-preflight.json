@@ -1,0 +1,15 @@
+{
+  "source_and_protocol_gate": "PASS",
+  "official_resource_probe_hashes": "PASS",
+  "versions": {
+    "nvidia-physicsnemo": "2.2.2",
+    "torch": "2.10.0+cu126",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126"
+  },
+  "framework_imported": false,
+  "numeric_frozen_RAM_threshold_present": false,
+  "observed_free_physical_bytes_before_import": 2440101888,
+  "prior_probe_peak_RSS_bytes": 1644982272,
+  "root_holds_extra_builds_and_apps_unchanged": true
+}

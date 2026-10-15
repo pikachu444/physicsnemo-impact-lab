@@ -1,0 +1,182 @@
+{
+  "status": "COMPLETED_SINGLE_FIXED_FIELD_FIGURE",
+  "started_utc": "2026-10-15T14:05:52.577769+00:00",
+  "case": "test_0002",
+  "source_loading_step": 399,
+  "selection": "First fresh split ID and last source frame, fixed by parent before seeing this plot; no error-based case/frame selection.",
+  "new_neural_inference": 0,
+  "source_data_or_metrics_modified": 0,
+  "CPU_install_overlap": {
+    "parent_advised_separate_CPU_install_may_start": true,
+    "actual_overlap_verified": false,
+    "qualification": "No process enumeration. This plot may overlap a separately authorized CPU-only installation; its actual interval is not established by this plotting receipt."
+  },
+  "resource_limits": {
+    "preflight_available_bytes": 1073741824,
+    "host_available_floor_bytes": 536870912,
+    "peak_RSS_cap_bytes": 230686720,
+    "wall_cap_seconds": 180
+  },
+  "CPU_affinity_single_core_applied": true,
+  "below_normal_priority_applied": true,
+  "plot_source_sha256": "5b57b61dee0ce501971b5c1d313fb1782196a85d8dda504fb48132ec6904d716",
+  "preflight": {
+    "available_bytes": 1957974016,
+    "rss_bytes": 19877888,
+    "passed": true
+  },
+  "temporary_root": "work\\expanded-plate\\plate-first-fresh-plot-3e2usvnu",
+  "source_NPZ_sha256": "2e08ef7bc00d1f89695c8ab68c7fb579e66743041c372b2e57224f993d970198",
+  "saved_prediction_NPZ_sha256": "e367d212a143c11d940e7eab6d5232f136762738a856a30cf230ad1f583d4dc0",
+  "upstream_numeric_audit_sha256": "13bd04b5b69691cf8c76c04c8bed6bf4cdba95afe26d2202e078315b349ea376",
+  "fields": [
+    {
+      "field": "Displacement magnitude |u|",
+      "units": "unconfirmed coordinate units",
+      "support": "free nodes",
+      "support_count": 1017,
+      "reference_range": [
+        4.656612873077393e-10,
+        0.0006060240313663787
+      ],
+      "AI_range": [
+        0.008660919049028765,
+        0.3684750976424547
+      ],
+      "signed_error_range": [
+        0.00866058305784076,
+        0.36847420926873187
+      ],
+      "shared_reference_AI_color_range": [
+        4.656612873077393e-10,
+        0.3684750976424547
+      ],
+      "error_symmetric_color_range": [
+        -0.36847420926873187,
+        0.36847420926873187
+      ],
+      "XY_reference_bounds": [
+        [
+          0.0,
+          0.006499652750790119
+        ],
+        [
+          0.25,
+          0.4957089424133301
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    },
+    {
+      "field": "Native nodal von Mises stress",
+      "units": "unconfirmed stress units",
+      "support": "free nodes",
+      "support_count": 1017,
+      "reference_range": [
+        3.4764602184295654,
+        7249.236328125
+      ],
+      "AI_range": [
+        26691.849609375,
+        52095.4921875
+      ],
+      "signed_error_range": [
+        21660.69580078125,
+        46975.533203125
+      ],
+      "shared_reference_AI_color_range": [
+        3.4764602184295654,
+        52095.4921875
+      ],
+      "error_symmetric_color_range": [
+        -46975.533203125,
+        46975.533203125
+      ],
+      "XY_reference_bounds": [
+        [
+          0.0,
+          0.006499652750790119
+        ],
+        [
+          0.25,
+          0.4957089424133301
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    },
+    {
+      "field": "Coordinate-derived GL E_xx",
+      "units": "dimensionless; NOT native COMSOL strain",
+      "support": "plate tetrahedra excluding actuator cells",
+      "support_count": 2977,
+      "reference_range": [
+        -0.0001638311514398083,
+        0.00012186750245746225
+      ],
+      "AI_range": [
+        -0.3800395429134369,
+        1659.938232421875
+      ],
+      "signed_error_range": [
+        -0.380049381943536,
+        1659.9382326452294
+      ],
+      "shared_reference_AI_color_range": [
+        -0.3800395429134369,
+        1659.938232421875
+      ],
+      "error_symmetric_color_range": [
+        -1659.9382326452294,
+        1659.9382326452294
+      ],
+      "XY_reference_bounds": [
+        [
+          0.00011178160639246926,
+          0.0016249131876975298
+        ],
+        [
+          0.2485308200120926,
+          0.4989272356033325
+        ]
+      ],
+      "color_normalization": "linear, full actual range; no clipping or data subsampling"
+    }
+  ],
+  "numpy_version": "2.5.2",
+  "matplotlib_version": "3.10.1",
+  "PNG_sha256": "b383078b5a15af6ed58fb013503123748aa2200c6cf6de989ad27b604eb486a9",
+  "PNG_pixels": [
+    1680,
+    1260
+  ],
+  "completed_utc": "2026-10-15T14:05:55.113142+00:00",
+  "wall_seconds": 2.535376299994823,
+  "resources": {
+    "guard_observations": 297,
+    "rss_peak_bytes": 86552576,
+    "os_peak_working_set_bytes": 94547968,
+    "host_available_min_bytes": 1862062080
+  },
+  "forbidden_modules_loaded": [],
+  "visual_QA": {
+    "status": "READABILITY_ISSUES_FOUND_AFTER_SINGLE_RENDER",
+    "opened_native_PNG": true,
+    "reviewer": "audit_root_reporting",
+    "PNG_pixels": [
+      1680,
+      1260
+    ],
+    "verified": [
+      "3 rows and3 columns present with source/AI/signed-error semantics",
+      "Fixed test_0002/frame399, epoch5 and referenceXY stated",
+      "Shared source/AI ranges and symmetric error bars visible",
+      "Footnote distinguishes scalar magnitude error/vector L2 and GL E_xx/six-component norm, unconfirmed units/noMPa/nativeCOMSOL caveat"
+    ],
+    "issues": [
+      "First-column vertical field/unit descriptions overlap referenceY labels/ticks",
+      "Scientific-notation colorbar offsets are too close to second/third-row column titles"
+    ],
+    "rerender_performed": false,
+    "qualification": "Numerical ranges are recorded; this layout needs a bounded follow-up correction before polished publication."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": "passed_stdlib_metadata_coverage_invariants",
+  "as_of_utc": "2026-10-15T14:13:00+00:00",
+  "recorded_utc": "2026-10-15T14:20:12.147985+00:00",
+  "scope": "Sums, identifiers, selected metadata/JSON claims and small-file byte hashes only; no array, ML, hardware/process inspection or new execution.",
+  "invariant_count": 30,
+  "invariants": {
+    "NN24sum9plus6plus6plus3": true,
+    "NN24unique_ids": true,
+    "all24training_and_FEM_evaluation_complete": true,
+    "coupon9_count": true,
+    "phone6_count": true,
+    "bumper6_count": true,
+    "plate3_count": true,
+    "static18_and_temporal3_and_plate3": true,
+    "sixsettings_fivefamilies_not24algorithms": true,
+    "selected20inventory_decomposition": true,
+    "ROM12unique_separate": true,
+    "ROM4sharedPODgroups": true,
+    "fullsupport12audit_and_budget": true,
+    "plate1280updates_selected5": true,
+    "plate6fresh_AR399": true,
+    "plate_metadata68zero_failures": true,
+    "plate_numeric297_zero_mismatches_recorded": true,
+    "plate_geometry4of6and_reference0": true,
+    "plate_pooled_uL2": true,
+    "plate_pooled_VM_L2": true,
+    "plate_pooled_derived_GL": true,
+    "temporal_zero_fullfits_and_formalprobes_unknown_updates": true,
+    "temporal_no_remaining_stage_calls_or_heldout": true,
+    "clean6prepared_actual0_no_fit": true,
+    "clean_protocol_expected_hash": true,
+    "DDM64checks25allpass": true,
+    "DDMprior11kept_separate": true,
+    "metadata_only_no_new_execution": true,
+    "all_evidence_read_under1MiB_JSON_MD": true,
+    "evidence_unchanged_during_snapshot": true
+  },
+  "report_files": {
+    "outputs/expanded-research/coverage-audit/coverage-audit-20261015T141754Z.json": {
+      "bytes": 73689,
+      "sha256": "444b4d7a986783241792b50aa82d946e6dd98d3ce21c2086f01b870ea7cda628"
+    },
+    "outputs/expanded-research/coverage-audit/coverage-audit-20261015T141754Z.md": {
+      "bytes": 6383,
+      "sha256": "0970bd5671287b1e4e4f685457227c9e1a6209492d96aa90af9cdb043cf5f835"
+    }
+  },
+  "prior_snapshot_unchanged": {
+    "outputs/expanded-research/coverage-audit/coverage-audit-2026-10-15.json": {
+      "bytes": 87384,
+      "sha256": "15cc8239b0804b688fc37b17afa7dfab04f3d085a76c8f06e07e77b49b00fee8",
+      "read_utc": "2026-10-15T14:17:54.692278+00:00",
+      "scope": "small JSON/Markdown bytes only; no referenced payload opened"
+    },
+    "outputs/expanded-research/coverage-audit/coverage-audit-2026-10-15.md": {
+      "bytes": 15967,
+      "sha256": "6cff4b7536f44470c90a1086855be8a6f9de2cc63076b3971f1536a6bfab3a05",
+      "read_utc": "2026-10-15T14:17:54.693700+00:00",
+      "scope": "small JSON/Markdown bytes only; no referenced payload opened"
+    }
+  },
+  "all_evidence_hashes_stable": true,
+  "evidence_file_count": 23,
+  "post_review_metadata_attribution_checks": {
+    "NN24andROM12unchanged": true,
+    "fixed14:13cutoff_unchanged": true,
+    "temporal_seed_proof_attributed_to_prior": true,
+    "no_unsupported_main_directory_guesses": true,
+    "reduced_Plate_original_evidence_retained_no_official32_confirmation": true,
+    "all23small_evidence_hashes_stable": true
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "status": "closed_exact_byte_evidence_bundle",
+  "bundle_path": "outputs/expanded-research/benchmarks/temporal_strategies/resource-calibration-v1",
+  "files": [
+    {
+      "original_path": "work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134235291549Z--32180.json",
+      "bundle_path": "raw/work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134235291549Z--32180.json",
+      "bytes": 6487,
+      "sha256": "22dfe45f0b621f1a94439dd94cd4ce89cdf51aaaf5f03958a07ecb344b0f7b7a",
+      "copy_bytes_unchanged": true,
+      "role": "Exact external attempt receipt, combined child stdout/stderr log or one-shot sentinel",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.json",
+      "bundle_path": "raw/work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.json",
+      "bytes": 212739,
+      "sha256": "6ec577d2f399c23896e6c2e67ba091b1b15cc409777212f268af4f05057d701b",
+      "copy_bytes_unchanged": true,
+      "role": "Exact external attempt receipt, combined child stdout/stderr log or one-shot sentinel",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.log",
+      "bundle_path": "raw/work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_bytes_unchanged": true,
+      "role": "Exact external attempt receipt, combined child stdout/stderr log or one-shot sentinel",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/guarded-resource-attempts/cold-calibration-v1-attempt-started.json",
+      "bundle_path": "raw/work/expanded-temporal/guarded-resource-attempts/cold-calibration-v1-attempt-started.json",
+      "bytes": 533,
+      "sha256": "2bec826e89cf096d37891f6e5d4d73b3ab8421114af31d80290298200e2e9cc1",
+      "copy_bytes_unchanged": true,
+      "role": "Exact external attempt receipt, combined child stdout/stderr log or one-shot sentinel",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.command.json",
+      "bundle_path": "raw/work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.command.json",
+      "bytes": 1734,
+      "sha256": "e662f3828bea3d590f9242d4b5296aa24e71bccdce756974b1ec3127275edc2b",
+      "copy_bytes_unchanged": true,
+      "role": "Interrupted original R4 stage partial: exact CLI, combined TC stdout/stderr or seven telemetry observations",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.log",
+      "bundle_path": "raw/work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.log",
+      "bytes": 425,
+      "sha256": "fac80840cb085af88ec6a88d85cb2343f1c74dceacff5f9ca97f00c8cab57346",
+      "copy_bytes_unchanged": true,
+      "role": "Interrupted original R4 stage partial: exact CLI, combined TC stdout/stderr or seven telemetry observations",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.resources.jsonl",
+      "bundle_path": "raw/work/expanded-temporal/multifield-execution-v3/phone_full--time_conditional--probe.resources.jsonl",
+      "bytes": 7297,
+      "sha256": "e7ab4cf4669de75250a3aa0bb5b1050d2f7a16507799aa8d0dabb7f70de4c87b",
+      "copy_bytes_unchanged": true,
+      "role": "Interrupted original R4 stage partial: exact CLI, combined TC stdout/stderr or seven telemetry observations",
+      "execution_status": "actual_attempt_evidence"
+    },
+    {
+      "original_path": "work/expanded-temporal/tc-shim-evidence-v3/phone_full--probe.json",
+      "bundle_path": "raw/work/expanded-temporal/tc-shim-evidence-v3/phone_full--probe.json",
+      "bytes": 1043,
+      "sha256": "5928e0d25097d78682fe54bdab7e8936cb2e886fbaa0c980cc668300f68715f8",
+      "copy_bytes_unchanged": true,
+      "role": "Active GeoTransolver import return, class path and SHA binding receipt at13:44:16UTC",
+      "execution_status": "execution_confirmed"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_budget_temporal_v3.py",
+      "bundle_path": "sources/work/expanded-temporal/run_budget_temporal_v3.py",
+      "bytes": 41432,
+      "sha256": "3510516d26e5253d6d503c47bd469841555a370050b4ee7a29cc118cb5e3fc6a",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/native_scalar_rollout_v3.py",
+      "bundle_path": "sources/work/expanded-temporal/native_scalar_rollout_v3.py",
+      "bytes": 6900,
+      "sha256": "d9394b7fe601549a72c6a72285bf0b71dd16db112aec4574c0f263954d4591d0",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/profile_temporal_case_stream.py",
+      "bundle_path": "sources/work/expanded-temporal/profile_temporal_case_stream.py",
+      "bytes": 18850,
+      "sha256": "b57cc5a7dbdc1ed1435546ac9162732ffa523791d72578e3def6133cc0927132",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/multifield_protocol_guard.py",
+      "bundle_path": "sources/work/expanded-temporal/multifield_protocol_guard.py",
+      "bytes": 34658,
+      "sha256": "795935d8af56d2e9e0c6207c02242a0f8daac106a9a4c52648300044fffc7398",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/freeze_temporal_fit_decision.py",
+      "bundle_path": "sources/work/expanded-temporal/freeze_temporal_fit_decision.py",
+      "bytes": 4234,
+      "sha256": "bf5f097c084f7eedd87b83995f74dcd9475b2a9bc3ba2996cd75c3bea6f60557",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_tc_frozen_v2.py",
+      "bundle_path": "sources/work/expanded-temporal/run_tc_frozen_v2.py",
+      "bytes": 10318,
+      "sha256": "599a0fd2a168718ca0cc9843814343ffe5350a32eb66b1f0a3bee15a022136f8",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "execution_confirmed_by_active_core_shim_receipt"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_multifield_stage.py",
+      "bundle_path": "sources/work/expanded-temporal/run_multifield_stage.py",
+      "bytes": 9349,
+      "sha256": "86680d5e3411734efd7d44ac58bf12439635c2e3158a6271cc3646df5bc81ef2",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "execution_confirmed_by_command_receipt_and_seven_runtime_observations"
+    },
+    {
+      "original_path": "work/expanded-temporal/summarize_multifield_budget.py",
+      "bundle_path": "sources/work/expanded-temporal/summarize_multifield_budget.py",
+      "bytes": 13050,
+      "sha256": "4a7dcc5bc8fa6e7de9639ca961538efe469703af4b097272ec4e7958fed359ac",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/freeze_native_scalar_resource_protocol.py",
+      "bundle_path": "sources/work/expanded-temporal/freeze_native_scalar_resource_protocol.py",
+      "bytes": 10891,
+      "sha256": "bd56d7f7c5a3c0384d9d360a6e6fe107004224ff7c2e340029663d1993372f7e",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_budget_temporal_v2.py",
+      "bundle_path": "sources/work/expanded-temporal/run_budget_temporal_v2.py",
+      "bytes": 20067,
+      "sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "downstream_runpy_entry_is_static_next_path_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_domain_temporal.py",
+      "bundle_path": "sources/work/expanded-temporal/run_domain_temporal.py",
+      "bytes": 20931,
+      "sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "possible_downstream_import_or_execution_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_temporal.py",
+      "bundle_path": "sources/work/expanded-temporal/run_temporal.py",
+      "bytes": 21275,
+      "sha256": "baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "possible_downstream_import_or_execution_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-ml/benchmark_data.py",
+      "bundle_path": "sources/work/expanded-ml/benchmark_data.py",
+      "bytes": 12831,
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "possible_downstream_import_or_execution_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-temporal/sources/crash/rollout.py",
+      "bundle_path": "sources/work/expanded-temporal/sources/crash/rollout.py",
+      "bytes": 16103,
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/sources/crash/datapipe.py",
+      "bundle_path": "sources/work/expanded-temporal/sources/crash/datapipe.py",
+      "bytes": 30248,
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "hash_verified_prepared_only_not_requested_by_this_stage"
+    },
+    {
+      "original_path": "work/expanded-temporal/sources/drop_test/rollout.py",
+      "bundle_path": "sources/work/expanded-temporal/sources/drop_test/rollout.py",
+      "bytes": 16531,
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "possible_downstream_import_or_execution_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-temporal/sources/drop_test/datapipe.py",
+      "bundle_path": "sources/work/expanded-temporal/sources/drop_test/datapipe.py",
+      "bytes": 31913,
+      "sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "possible_downstream_import_or_execution_not_individually_traced"
+    },
+    {
+      "original_path": "work/expanded-ml/venv/Lib/site-packages/zz_reuse_physicsnemo.pth",
+      "bundle_path": "metadata/work/expanded-ml/venv/Lib/site-packages/zz_reuse_physicsnemo.pth",
+      "bytes": 145,
+      "sha256": "a3e015cf7eede9950a8708c3549ae64fc88cf7cd976153a5a1ee6871d0fd7050",
+      "copy_bytes_unchanged": true,
+      "role": "Local account-path environment configuration, not portable executable research source or a clean environment",
+      "execution_status": "hash_verified_configuration_only_site_processing_not_individually_traced"
+    },
+    {
+      "original_path": "work/gpu-experiment/venv/Lib/site-packages/nvidia_physicsnemo-2.2.2.dist-info/METADATA",
+      "bundle_path": "metadata/work/gpu-experiment/venv/Lib/site-packages/nvidia_physicsnemo-2.2.2.dist-info/METADATA",
+      "bytes": 32124,
+      "sha256": "7abcccb6a5d3fd890eeba8c5e344b5a4343d3fb4e2f04b232651dd98860ae2a4",
+      "copy_bytes_unchanged": true,
+      "role": "Installed PhysicsNeMo package metadata, not executable model source or fresh-install proof",
+      "execution_status": "hash_verified_package_metadata_only"
+    },
+    {
+      "original_path": "work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/geotransolver.py",
+      "bundle_path": "sources/work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/geotransolver.py",
+      "bytes": 30927,
+      "sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+      "copy_bytes_unchanged": true,
+      "role": "Frozen R4 Python source; exact bytes; no completed new-domain training claim",
+      "execution_status": "import_return_and_class_resolution_confirmed_model_forward_not_confirmed"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_multifield_guarded.py",
+      "bundle_path": "sources/work/expanded-temporal/run_multifield_guarded.py",
+      "bytes": 26685,
+      "sha256": "4ba5c2953fcdc6b242ed59ddd85ad34010a1d8f8394a1e4ab8578023231df9e0",
+      "copy_bytes_unchanged": true,
+      "role": "Actual R2 external stdlib guard; original executable bytes unchanged",
+      "execution_status": "execution_confirmed_two_actual_attempts"
+    },
+    {
+      "original_path": "work/expanded-clean-runtime/run_guarded_r2.py",
+      "bundle_path": "sources/work/expanded-clean-runtime/run_guarded_r2.py",
+      "bytes": 21393,
+      "sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned shared ProcessJob, available_memory and rss helper; its main was not called",
+      "execution_status": "API_execution_confirmed_by_own_job_samples_and_cleanup"
+    },
+    {
+      "original_path": "work/expanded-temporal/guarded_resource_selfcheck.py",
+      "bundle_path": "verification/work/expanded-temporal/guarded_resource_selfcheck.py",
+      "bytes": 14229,
+      "sha256": "027929f188195bb15049ad3c55011c2d2b53e2c770fcb2c46dd8d3e0e6c01c18",
+      "copy_bytes_unchanged": true,
+      "role": "R2 bounded20-scenario stdlib mock; fake processes and fake memory only",
+      "execution_status": "mock_execution_only_no_hardware_or_ML"
+    },
+    {
+      "original_path": "work/expanded-temporal/run_multifield_guarded_r1.py",
+      "bundle_path": "unexecuted-preparation/work/expanded-temporal/run_multifield_guarded_r1.py",
+      "bytes": 26162,
+      "sha256": "5bdf48aa5e88aa974ef7f196b5319949b927cb0f03e0970005c395b53e1a0f14",
+      "copy_bytes_unchanged": true,
+      "role": "Preserved R1 guard bytes; resource execution never occurred under R1",
+      "execution_status": "unexecuted_resource_preparation_mock_only"
+    },
+    {
+      "original_path": "work/expanded-temporal/guarded_resource_selfcheck_r1.py",
+      "bundle_path": "unexecuted-preparation/work/expanded-temporal/guarded_resource_selfcheck_r1.py",
+      "bytes": 13987,
+      "sha256": "abcbafe1e97c6a442ee9a33a6322350fef809a3634758cf7aa8e2ca3d1d53308",
+      "copy_bytes_unchanged": true,
+      "role": "Preserved R1 nineteen-scenario stdlib mock source",
+      "execution_status": "mock_only_no_actual_resource_attempt"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r2.json",
+      "bytes": 6364,
+      "sha256": "9863c853fbf661afa4bec677820b24a8ab0e9bb8989a39759cfd5f50898218fd",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r2.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r2.json",
+      "bytes": 5911,
+      "sha256": "0e61aa302189aeae1e4ae2af84f1985a15408092a8d5ed0ef2f5db689a107f88",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+      "bytes": 15007,
+      "sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/temporal-multifield-current-plan-r4.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/temporal-multifield-current-plan-r4.json",
+      "bytes": 5081,
+      "sha256": "951655f0f99947870ddebe4a3254c4f6f6ce35449e19233a523da2da66a852c0",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-source-review-r4.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-source-review-r4.json",
+      "bytes": 2225,
+      "sha256": "09758508915a7d3e0acc7776393afc61f1db0e204c2fc89b3c8c5e0e961a7d04",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-guard-source-review-r2.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-guard-source-review-r2.json",
+      "bytes": 1790,
+      "sha256": "d411df1db2fb707ed62ba3ea3bbcec5fb1c7856a07ddba61361f6704bb328691",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-result.json",
+      "bundle_path": "metadata/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-result.json",
+      "bytes": 4144,
+      "sha256": "60f7f03738d11fca036a5f799ddd47d4db91b71c000fef0eb6e29e389d6983e8",
+      "copy_bytes_unchanged": true,
+      "role": "Pinned R2 execution policy, R4 scientific preparation, source review or original interruption summary",
+      "execution_status": "metadata_provenance_not_a_completed_probe"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r1.json",
+      "bundle_path": "unexecuted-preparation/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-external-resource-lock-standard-r1.json",
+      "bytes": 6364,
+      "sha256": "a6e7e07d61a1466598882074d5e38cc3b2244311a4380d232324b85cbbfb6aa7",
+      "copy_bytes_unchanged": true,
+      "role": "Unexecuted R1 lock preserved; old referenced main-path bytes were superseded before actual execution",
+      "execution_status": "unexecuted_resource_preparation"
+    },
+    {
+      "original_path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r1.json",
+      "bundle_path": "unexecuted-preparation/outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-cold-calibration-v1-lock-r1.json",
+      "bytes": 5911,
+      "sha256": "6ab2cf388f20e6c429d9714960a9da807eacc59e54ac5008ca0733284526667c",
+      "copy_bytes_unchanged": true,
+      "role": "Unexecuted R1 lock preserved; old referenced main-path bytes were superseded before actual execution",
+      "execution_status": "unexecuted_resource_preparation"
+    },
+    {
+      "original_path": "work/expanded-ml/phone-full-cache-v2/manifest.json",
+      "bundle_path": "metadata/work/expanded-ml/phone-full-cache-v2/manifest.json",
+      "bytes": 34054,
+      "sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "original_path": "work/expanded-ml/phone-full-normalization.json",
+      "bundle_path": "metadata/work/expanded-ml/phone-full-normalization.json",
+      "bytes": 1257,
+      "sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "original_path": "work/expanded-ml/phone-full-cache-v2/READY.json",
+      "bundle_path": "metadata/work/expanded-ml/phone-full-cache-v2/READY.json",
+      "bytes": 5040,
+      "sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "original_path": "work/expanded-ml/multifield7-cache/manifest.json",
+      "bundle_path": "metadata/work/expanded-ml/multifield7-cache/manifest.json",
+      "bytes": 84751,
+      "sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "original_path": "work/expanded-ml/bumper7-normalization.json",
+      "bundle_path": "metadata/work/expanded-ml/bumper7-normalization.json",
+      "bytes": 1329,
+      "sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "original_path": "work/expanded-ml/multifield7-cache/READY.json",
+      "bundle_path": "metadata/work/expanded-ml/multifield7-cache/READY.json",
+      "bytes": 65948,
+      "sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+      "copy_bytes_unchanged": true,
+      "role": "Small frozen data metadata only; no cache arrays or labels are copied or read here",
+      "execution_status": "hash_verified_metadata_only"
+    },
+    {
+      "bundle_path": "executed-shell-commands.json",
+      "bytes": 2353,
+      "sha256": "266eb2da51da6719f287bf26274e16795e9cf77e0fbcbf3c7a14428cfcec3ecc",
+      "role": "Derived bundle documentation, not executed model source",
+      "execution_status": "archive_metadata_only"
+    },
+    {
+      "bundle_path": "source-map.json",
+      "bytes": 13414,
+      "sha256": "f2f82a20650b66b8a0614f4ee0e0b548aa79221a60ca0e3c9a189bdb196a465b",
+      "role": "Derived bundle documentation, not executed model source",
+      "execution_status": "archive_metadata_only"
+    },
+    {
+      "bundle_path": "SUMMARY.json",
+      "bytes": 1945,
+      "sha256": "f542c85c069ea71bb82b160d862482f7a3528578744965c911ebcfe69a1398ea",
+      "role": "Derived bundle documentation, not executed model source",
+      "execution_status": "archive_metadata_only"
+    }
+  ],
+  "file_count": 51,
+  "original_copy_hashes_verified": true,
+  "index_excludes_itself": true
+}

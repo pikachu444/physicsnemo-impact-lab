@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<LOCAL_WORKSPACE>\work\expanded-plate\run_frozen_final.py", line 89, in main
+    assert config[key] == value, f"Frozen configuration differs: {key}"
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Frozen configuration differs: selection_epochs

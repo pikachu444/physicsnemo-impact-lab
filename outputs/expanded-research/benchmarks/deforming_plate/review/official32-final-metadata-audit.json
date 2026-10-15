@@ -1,0 +1,559 @@
+{
+  "status": "PASS_SCOPED_METADATA_AND_JSON_AGGREGATE_AUDIT",
+  "completed_utc": "2026-10-15T13:31:04.977484+00:00",
+  "auditor_source_sha256": "f09077e189afa6def26e9b7323e5bb0af1a7d3cfdb3fa515e2957115570bcfa5",
+  "executed_source": "outputs\\expanded-research\\benchmarks\\deforming_plate\\review\\official32-final-metadata-audit.executed.py",
+  "CPU_affinity_single_core_applied": true,
+  "below_normal_priority_applied": true,
+  "framework_imports": false,
+  "array_payload_files_opened_or_hashed": 0,
+  "checkpoint_deserialized": false,
+  "new_training_or_inference": 0,
+  "maximum_hash_chunk_bytes": 1048576,
+  "wall_seconds": 0.2559303000016371,
+  "checks": [
+    {
+      "name": "v2/protocol pins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training and final source lock receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training protocol receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 train_plate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 plate_evaluation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 plate_data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 selection_policy.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 freeze_protocol.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 run_validation_training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 run_frozen_final.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 summarize_plate_fields.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source9 plot_plate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "correction driver and lock pins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selected checkpoint c29 hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "config.json stable receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normalization.json stable receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training/final metrics receipts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "split/train-only normalization",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "split contract pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "train recipe actual config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all frozen required options",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "five completed epoch records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1280 updates from final progress each epoch",
+      "passed": true,
+      "detail": {
+        "1": 256,
+        "2": 256,
+        "3": 256,
+        "4": 256,
+        "5": 256
+      }
+    },
+    {
+      "name": "per-update LR corroborates1280",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selection epoch1 independently recomputed key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate epoch1 file pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selection epoch3 independently recomputed key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate epoch3 file pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selection epoch5 independently recomputed key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate epoch5 file pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selection frozen epochs and chosen5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training validation completed/exact6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "permanent marker matches gate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marker ordering source contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new PID completed final exact6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "failed pregate preserved/data0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exit0/release recorded not repolled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0002 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0002 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0002 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0002 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0003 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0003 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0003 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0003 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0004 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0004 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0004 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0004 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0005 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0005 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0005 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0005 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0006 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0006 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0006 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0006 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0007 percase equals aggregate JSON",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0007 completed399 noTF all geometry/graphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0007 GL21/native-unit caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_0007 saved field exists metadata only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction rollout_free_displacement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction rollout_free_stress",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction zero_increment_baseline_free_displacement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction zero_stress_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction training_mean_constant_stress_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pooled JSON reconstruction derived_GL_strain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "accuracy not prequalified",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "source_and_receipt_hashes": {
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\review\\official32-final-metadata-audit.executed.py": "f09077e189afa6def26e9b7323e5bb0af1a7d3cfdb3fa515e2957115570bcfa5",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32-completion-source-lock-v2.json": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32-validation-protocol.json": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32-final-correction-lock-v1.json": "84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\preexecution_source_lock.json": "5992ae6deed73d0b6fc4476de35db6b8483d070400597cf9f0a350de5d7af640",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\pretraining_protocol.json": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+    "work\\expanded-plate\\train_plate.py": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_train_plate.py": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61",
+    "work\\expanded-plate\\plate_evaluation.py": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plate_evaluation.py": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d",
+    "work\\expanded-plate\\plate_data.py": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plate_data.py": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+    "work\\expanded-plate\\selection_policy.py": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_selection_policy.py": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278",
+    "work\\expanded-plate\\freeze_protocol.py": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_freeze_protocol.py": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68",
+    "work\\expanded-plate\\run_validation_training.py": "a249a9c9abb4b22e7ecb1dff6e8b5b8ddade3033dd89a6cf7f9509fdd845dc15",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_run_validation_training.py": "a249a9c9abb4b22e7ecb1dff6e8b5b8ddade3033dd89a6cf7f9509fdd845dc15",
+    "work\\expanded-plate\\run_frozen_final.py": "aead9c09ea99c263a6158425f5e0cee6ac9287006f47e0c8e2370c7799b55bbc",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_run_frozen_final.py": "aead9c09ea99c263a6158425f5e0cee6ac9287006f47e0c8e2370c7799b55bbc",
+    "work\\expanded-plate\\summarize_plate_fields.py": "e5d82fc56c531b10375d7ee29dd4cea6ac489af9a2a4e8576edf8a85d1278e1b",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_summarize_plate_fields.py": "e5d82fc56c531b10375d7ee29dd4cea6ac489af9a2a4e8576edf8a85d1278e1b",
+    "work\\expanded-plate\\plot_plate.py": "a66b79c4aa66ff93123ba72c73c241f4e7bde4965a84ff6f797daccd7807ccba",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_plot_plate.py": "a66b79c4aa66ff93123ba72c73c241f4e7bde4965a84ff6f797daccd7807ccba",
+    "work\\expanded-plate\\run_frozen_final_corrected.py": "66100ce77e92ce32d2e73620a06a27962439c2e94a581128f23d7063b274e0ba",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\executed_run_frozen_final_corrected.py": "66100ce77e92ce32d2e73620a06a27962439c2e94a581128f23d7063b274e0ba",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\preexecution_correction_lock.json": "84d27a69606a245ac5a78957b9bbca010daf05497aa0d80a05f266623c3afb70",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\checkpoint.pt": "c29e4ecd258553622ecee13fc054a58854950e667b3a838610ab52f799339429",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\config.json": "687b6044c7702494f44f904768c52b499471dc25d7cb75d3d661623c01360b4c",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\normalization.json": "c7fdcd7656c63f1a15cd51f2ec4c178adb418431927020012b26e1f5f61744ef",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\metrics.json": "95904c1e7cb9db70486b0dfa9c69c8d51dcd25445d0c09a1b7b94a95d06b91f7",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\metrics.json": "04eaa2a4c140b4da658da5b6c3a78a6bc948713b2429a95d95042cd4308eb8a8",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\final-split-contract.json": "64a535d886538c3efb6a50d4e23131d48cc0d266d8cc039cd64904d017e9f1a5",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\candidate_epoch_001.pt": "a8c246e18359d8963dfd6cb865ed21f33ba0dbbd696b28fe6d3afd9fa96a4985",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\candidate_epoch_003.pt": "64917e42379a4b8f5dad6588efb19f836eb8e452295609d5a42a82fa9a17bcb9",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\candidate_epoch_005.pt": "01d6e8ba06ce75e3283f0ee0fc14d53970fb3f1cd947ddb9f953761539dde5a6",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_valpilot\\fresh-final-access.json": "5c116e373cc645f2e48322c03ff12cb1e4f61908a98adc21c42657935f880fec",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final_corrected\\pre-evaluation-lock.json": "5c116e373cc645f2e48322c03ff12cb1e4f61908a98adc21c42657935f880fec",
+    "outputs\\expanded-research\\benchmarks\\deforming_plate\\official32_fresh_final\\final-attempt.json": "d8a2d45d0356df31c6c07e70a3f0cd1030398d2fbe0366ce8f5e121c9977bc0e"
+  },
+  "completed_updates_log_corroborated": 1280,
+  "selected_epoch": 5,
+  "fresh_cases": [
+    {
+      "case": "test_0002",
+      "u_relative_l2": 8.96173504503842,
+      "stress_relative_l2": 0.7175978487435932,
+      "derived_GL_relative_l2": 9374.649309137098,
+      "predicted_inverted_frames": 385,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 38.66181379999762
+    },
+    {
+      "case": "test_0003",
+      "u_relative_l2": 2.1663917130271075,
+      "stress_relative_l2": 0.6829441313658271,
+      "derived_GL_relative_l2": 57.43799904355043,
+      "predicted_inverted_frames": 73,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 27.451284199996735
+    },
+    {
+      "case": "test_0004",
+      "u_relative_l2": 2.3948479326653223,
+      "stress_relative_l2": 0.6633480800732225,
+      "derived_GL_relative_l2": 9.768444693537546,
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 33.3308113000021
+    },
+    {
+      "case": "test_0005",
+      "u_relative_l2": 2.0109720707850878,
+      "stress_relative_l2": 0.647729101890206,
+      "derived_GL_relative_l2": 32.333875176699536,
+      "predicted_inverted_frames": 24,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 42.43093450000015
+    },
+    {
+      "case": "test_0006",
+      "u_relative_l2": 54.69683884198456,
+      "stress_relative_l2": 0.8874777144966336,
+      "derived_GL_relative_l2": 31.42615553818549,
+      "predicted_inverted_frames": 119,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 47.14909280000575
+    },
+    {
+      "case": "test_0007",
+      "u_relative_l2": 1.8577463276809825,
+      "stress_relative_l2": 0.6766626185738764,
+      "derived_GL_relative_l2": 20.6621402609663,
+      "predicted_inverted_frames": 0,
+      "reference_inverted_frames": 0,
+      "negative_stress_count": 0,
+      "AR_wall_seconds": 49.26686260000133
+    }
+  ],
+  "pooled_reconstructed_from_rounded_case_metrics": {
+    "rollout_free_displacement": {
+      "sse": 23887.643755997397,
+      "truth_sum_square": 4105.40308290654,
+      "values": 4720968,
+      "max": 0.3479525074362755,
+      "relative_l2": 2.412174681702212,
+      "component_rmse": 0.07113300053175815
+    },
+    "rollout_free_stress": {
+      "sse": 1407336465126887.8,
+      "truth_sum_square": 3022539634287991.0,
+      "values": 1573656,
+      "max": 230008.3671875,
+      "relative_l2": 0.6823590692383886,
+      "component_rmse": 29905.018084088035
+    },
+    "zero_increment_baseline_free_displacement": {
+      "sse": 4105.403082906555,
+      "truth_sum_square": 4105.40308290654,
+      "values": 4720968,
+      "max": 0.2820295989513397,
+      "relative_l2": 1.0000000000000018,
+      "component_rmse": 0.029489158090972703
+    },
+    "zero_stress_baseline": {
+      "sse": 3022539634287997.5,
+      "truth_sum_square": 3022539634287991.0,
+      "values": 1573656,
+      "max": 290617.1875,
+      "relative_l2": 1.000000000000001,
+      "component_rmse": 43825.92601497389
+    },
+    "training_mean_constant_stress_baseline": {
+      "sse": 1512177831273169.0,
+      "truth_sum_square": 3022539634287991.0,
+      "values": 1573656,
+      "max": 259843.46484375,
+      "relative_l2": 0.7073191742772403,
+      "component_rmse": 30998.917800846728
+    },
+    "derived_GL_strain": {
+      "sse": 198098448.03762186,
+      "truth_sum_square": 118.40753593343038,
+      "values": 1539090,
+      "max": 3846.7402343749995,
+      "relative_l2": 1293.453632502404,
+      "component_rmse": 11.34510522703082
+    }
+  },
+  "resources_recorded_not_remeasured": {
+    "training_wall_including_imports_setup_io": 2319.9749075,
+    "training_metrics_timer": 1613.3270282999947,
+    "training_timer_scope": "Training, per-epoch teacher validation, scheduled AR checkpoint diagnostics and checkpoint I/O; excludes final full-validation rollout",
+    "training_memory": {
+      "sampled_rss_peak_bytes": 1706831872,
+      "sampled_host_available_minimum_bytes": 214568960,
+      "requested_sampling_interval_seconds": 0.2,
+      "samples": 11325,
+      "sampling_errors": [],
+      "windows_peak_working_set_bytes": 1732485120,
+      "windows_peak_commit_bytes_not_physical_rss": 7316815872
+    },
+    "training_allocator": {
+      "peak_tensor_allocated_bytes": 3187859968,
+      "peak_allocator_reserved_bytes": 3953131520
+    },
+    "final_wall_including_imports_gates_io": 291.36975520000124,
+    "final_memory": {
+      "sampled_rss_peak_bytes": 1329582080,
+      "sampled_host_available_minimum_bytes": 193302528,
+      "sampling_interval_seconds": 0.2,
+      "samples": 1404,
+      "windows_peak_working_set_bytes": 1329582080,
+      "windows_peak_commit_bytes_not_physical_rss": 3085295616
+    },
+    "final_allocated_bytes": 195064320,
+    "final_reserved_bytes": 274726912,
+    "device_usage_observations_present": true
+  },
+  "limits": [
+    "JSON arithmetic checks reuse producer per-case metrics; not independent raw/FEM/prediction-array recomputation.",
+    "Source and checkpoint byte hashes verified; checkpoint tensors not loaded.",
+    "Fresh array hashes in gate are recorded claims, not reverified in this audit.",
+    "Marker/access order is source plus matching receipts, not OS file-open tracing.",
+    "One attempt and no extra inference supported by exclusive marker/source/receipts; no global syscall proof.",
+    "New-PID strict checkpoint load is supported; no same-validation numerical reload equality check performed.",
+    "Allocator allocated/reserved differ from total device usage; host RSS differs from commit. External device observation samples were not numerically re-audited.",
+    "Derived GL covers21 sampled frames; not native COMSOL strain.",
+    "Runtime completed but errors/inversions do not qualify engineering accuracy; no visual review."
+  ]
+}

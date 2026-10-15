@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-10-15T09:25:47.162405+00:00",
+  "process_id": 39388,
+  "command_arguments": [
+    "--training-run",
+    "outputs/expanded-research/benchmarks/deforming_plate/official32_valpilot",
+    "--output",
+    "outputs/expanded-research/benchmarks/deforming_plate/official32_fresh_final",
+    "--contract",
+    "outputs/expanded-research/benchmarks/deforming_plate/final-split-contract.json"
+  ],
+  "fresh_test_content_access_started": false,
+  "prediction_attempt_count_per_case": 1,
+  "teacher_forcing_computed": false,
+  "exception_type": "AssertionError",
+  "exception": "Frozen configuration differs: selection_epochs",
+  "is_cuda_out_of_memory": false,
+  "finished_at_utc": "2026-10-15T09:25:47.226710+00:00",
+  "elapsed_wall_seconds_including_imports_gates_io": 0.06428020000021206,
+  "memory": {
+    "sampled_rss_peak_bytes": 0,
+    "sampled_host_available_minimum_bytes": null,
+    "sampling_interval_seconds": 0.2,
+    "samples": 0
+  }
+}

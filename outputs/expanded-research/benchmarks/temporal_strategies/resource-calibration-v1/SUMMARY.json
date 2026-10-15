@@ -1,0 +1,39 @@
+{
+  "status": "actual_cold_calibration_stopped_by_host_floor_preserved",
+  "standard_attempt": "Two1.5GiB observations passed; no Job and no child were requested",
+  "cold_attempt": "One real phone_full/time_conditional/probe attempt; stopped58.64s after child start by retained512MiB host floor",
+  "peak_sampled_family_rss_bytes": 1462505472,
+  "minimum_sampled_host_available_bytes": 512454656,
+  "host_floor_bytes": 536870912,
+  "runtime_job_samples": 293,
+  "runtime_job_samples_location": "raw/work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.json#/runtime_samples",
+  "original_stage_telemetry_rows": 7,
+  "active_core_import_return_confirmed": true,
+  "active_core_receipt": "raw/work/expanded-temporal/tc-shim-evidence-v3/phone_full--probe.json",
+  "optimizer_updates": null,
+  "optimizer_update_limit": "Unknown and not certified; do not report0 actual updates or0 array accesses",
+  "successful_functional_probes": 0,
+  "successful_stream_profiles": 0,
+  "full_fits": 0,
+  "heldout_evaluations": 0,
+  "training_budget_seconds": null,
+  "child_reaped": true,
+  "own_job_empty_confirmed": true,
+  "gpu_returned_to_root": true,
+  "no_retry_or_following_stage_executed": true,
+  "absent_partial_artifacts": [
+    "Original stage .exit.json",
+    "Legacy functional probe.json",
+    "Canonical functional probe/probe.json",
+    "Fit protocol"
+  ],
+  "r1_status": "Unexecuted resource preparation, preserved with original bytes and locks; R1 mocks used fake resources only",
+  "excluded": [
+    "Cache arrays",
+    "NPY/NPZ",
+    "Weights/checkpoints",
+    "Wheels",
+    "Environment trees/binaries"
+  ],
+  "scope": "Only tiny file copies and JSON parsing were used to make this archive. No ML/framework imports, hardware queries, arrays, experiments, retries, README, Git, Page or coverage changes were performed during bundling."
+}

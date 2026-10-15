@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "status": "root_authorized_train_only_multifield_resource_guard",
+  "root_authorized": true,
+  "protocol": {
+    "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+    "sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326"
+  },
+  "plan": {
+    "path": "outputs/expanded-research/benchmarks/temporal_strategies/temporal-multifield-current-plan-r4.json",
+    "sha256": "951655f0f99947870ddebe4a3254c4f6f6ce35449e19233a523da2da66a852c0"
+  },
+  "sources": [
+    {
+      "path": "work/expanded-temporal/run_budget_temporal_v3.py",
+      "sha256": "3510516d26e5253d6d503c47bd469841555a370050b4ee7a29cc118cb5e3fc6a"
+    },
+    {
+      "path": "work/expanded-temporal/native_scalar_rollout_v3.py",
+      "sha256": "d9394b7fe601549a72c6a72285bf0b71dd16db112aec4574c0f263954d4591d0"
+    },
+    {
+      "path": "work/expanded-temporal/profile_temporal_case_stream.py",
+      "sha256": "b57cc5a7dbdc1ed1435546ac9162732ffa523791d72578e3def6133cc0927132"
+    },
+    {
+      "path": "work/expanded-temporal/multifield_protocol_guard.py",
+      "sha256": "795935d8af56d2e9e0c6207c02242a0f8daac106a9a4c52648300044fffc7398"
+    },
+    {
+      "path": "work/expanded-temporal/freeze_temporal_fit_decision.py",
+      "sha256": "bf5f097c084f7eedd87b83995f74dcd9475b2a9bc3ba2996cd75c3bea6f60557"
+    },
+    {
+      "path": "work/expanded-temporal/run_tc_frozen_v2.py",
+      "sha256": "599a0fd2a168718ca0cc9843814343ffe5350a32eb66b1f0a3bee15a022136f8"
+    },
+    {
+      "path": "work/expanded-temporal/run_multifield_stage.py",
+      "sha256": "86680d5e3411734efd7d44ac58bf12439635c2e3158a6271cc3646df5bc81ef2"
+    },
+    {
+      "path": "work/expanded-temporal/summarize_multifield_budget.py",
+      "sha256": "4a7dcc5bc8fa6e7de9639ca961538efe469703af4b097272ec4e7958fed359ac"
+    },
+    {
+      "path": "work/expanded-temporal/freeze_native_scalar_resource_protocol.py",
+      "sha256": "bd56d7f7c5a3c0384d9d360a6e6fe107004224ff7c2e340029663d1993372f7e"
+    },
+    {
+      "path": "work/expanded-temporal/run_budget_temporal_v2.py",
+      "sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1"
+    },
+    {
+      "path": "work/expanded-temporal/run_domain_temporal.py",
+      "sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013"
+    },
+    {
+      "path": "work/expanded-temporal/run_temporal.py",
+      "sha256": "baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af"
+    },
+    {
+      "path": "work/expanded-ml/benchmark_data.py",
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/rollout.py",
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/datapipe.py",
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/rollout.py",
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/datapipe.py",
+      "sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239"
+    },
+    {
+      "path": "work/expanded-ml/venv/Lib/site-packages/zz_reuse_physicsnemo.pth",
+      "sha256": "a3e015cf7eede9950a8708c3549ae64fc88cf7cd976153a5a1ee6871d0fd7050"
+    },
+    {
+      "path": "work/gpu-experiment/venv/Lib/site-packages/nvidia_physicsnemo-2.2.2.dist-info/METADATA",
+      "sha256": "7abcccb6a5d3fd890eeba8c5e344b5a4343d3fb4e2f04b232651dd98860ae2a4"
+    },
+    {
+      "path": "work/gpu-experiment/venv/Lib/site-packages/physicsnemo/models/geotransolver/geotransolver.py",
+      "sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc"
+    },
+    {
+      "path": "work/expanded-temporal/run_multifield_guarded.py",
+      "sha256": "5bdf48aa5e88aa974ef7f196b5319949b927cb0f03e0970005c395b53e1a0f14"
+    },
+    {
+      "path": "work/expanded-clean-runtime/run_guarded_r2.py",
+      "sha256": "45d6bfb697b95f8df6721d2d42146c53095dc81e062e885f9fa91d17b5fdda1a"
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+      "sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326"
+    },
+    {
+      "path": "outputs/expanded-research/benchmarks/temporal_strategies/temporal-multifield-current-plan-r4.json",
+      "sha256": "951655f0f99947870ddebe4a3254c4f6f6ce35449e19233a523da2da66a852c0"
+    }
+  ],
+  "policy": {
+    "preflight_min_available_bytes": 536870912,
+    "preflight_observations": 2,
+    "preflight_interval_seconds": 10,
+    "running_min_available_bytes": 536870912,
+    "family_rss_cap_bytes": 2147483648,
+    "wall_cap_seconds": 120,
+    "monitor_interval_seconds": 0.2,
+    "cleanup_timeout_seconds": 30,
+    "no_automatic_retry": true
+  },
+  "policy_id": "cold-calibration-v1",
+  "allowed_domains": [
+    "phone_full"
+  ],
+  "allowed_strategies": [
+    "time_conditional"
+  ],
+  "allowed_modes": [
+    "probe"
+  ],
+  "allowed_pairs": [
+    {
+      "domain": "phone_full",
+      "strategy": "time_conditional"
+    }
+  ],
+  "maximum_actual_attempts": 1,
+  "reason": "1.5GiB is root operational margin borrowed from clean install, not measured small-probe minimum; one cold resource calibration under retained512MiBfloor",
+  "invocation_context": {
+    "shell": "cmd.exe",
+    "login": false,
+    "parent_python_no_site": true,
+    "reason": "Reduce extra resident shell memory during cold resource calibration"
+  },
+  "no_fit": true,
+  "no_test": true,
+  "training_budget_seconds": null
+}

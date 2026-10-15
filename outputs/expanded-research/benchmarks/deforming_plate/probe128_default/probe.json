@@ -1,0 +1,22 @@
+{
+  "measured_steps": 3,
+  "warmup_steps": 2,
+  "mean_step_seconds": 0.4158591666661475,
+  "allocated_peak_bytes": 3176932864,
+  "rss_sampled_peak_bytes": 1642815488,
+  "loss": 0.9675150513648987,
+  "parameters": 3605636,
+  "host_available_bytes": 530485248,
+  "timing_scope": "CPU geometry graph preparation + CUDA forward/backward/Adam, synchronized; excludes imports and data loading",
+  "timed_inference_steps": 3,
+  "inference_warmup_steps": 2,
+  "inference_graph_forward_output_mean_seconds": 0.16041593333284254,
+  "forward_only_mean_seconds": 0.1363730666671472,
+  "inference_scope": "Training-geometry resource timing only: graph preparation/H2D + CUDA forward + output transfer; excludes file I/O and accuracy/strain evaluation. Pure forward uses prebuilt GPU inputs.",
+  "resource_model_not_accuracy_trained": true,
+  "trajectory": "train_0011",
+  "starting_frame": 319,
+  "nodes": 1488,
+  "mesh_edges": 14464,
+  "world_edges_at_start": 45834
+}

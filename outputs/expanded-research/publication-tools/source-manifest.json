@@ -1,0 +1,30 @@
+{
+  "scope": "Exact publication helper sources, not additional model runs.",
+  "files": [
+    {
+      "path": "package_evidence.py",
+      "sha256": "b21fff2f36b6650f7a11b59bbae3012e6104b5e1cfe66a42570ed419947edde9",
+      "bytes": 5231
+    },
+    {
+      "path": "verify_publication.py",
+      "sha256": "41a4736a33b3dbb72251cc8c7a426818bb3801070a2c4522a44d86a8861e0902",
+      "bytes": 1013
+    },
+    {
+      "path": "check_publication_redaction.py",
+      "sha256": "7b05cda0d260c243775c33e1c0dd43d300295986ebff734a3d8636069fd04b77",
+      "bytes": 1370
+    },
+    {
+      "path": "archive_publication_tools.py",
+      "sha256": "d099a4760bb1b96c82309cf47e75f93db994ff1ef55a089f1f4354c50cea2b1e",
+      "bytes": 1192
+    },
+    {
+      "path": "scan_publication.py",
+      "sha256": "4111bb82c3680787bbf770cf3af9f98dcc1d41ae69728cc403496d6d9a3384e4",
+      "bytes": 1835
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 | 문제 | 실제 수행 | 해석할 때의 범위 |
 |---|---|---|
 | OpenCourant DP600 인장 시편 | 13조건 FEM, 신경망6설정과 회귀/축약 fit·별도 평가·저장 모델 재추론 | native 응력·총변형률·EPSP 비교. 고정 형상·작은 조건 공간이며 접촉 충돌 검증이 아님 |
-| 공식 DeformingPlate | 공개400시점 궤적으로 축소 HybridMeshGraphNet2설정 학습·399단계 AR 평가 | 비선형 판 변형. 현재 두 설정은 정확도 실패. 공식 크기128/15 모델의 후속 실행은 별도 진행 상태로 기록 |
+| 공식 DeformingPlate | 공개400시점 궤적으로 축소 HybridMeshGraphNet2설정, 공식 크기128/15의32궤적×8시점×5epoch 학습과 fresh6 AR399 평가 완료 | 세 설정 모두 현재 정확도 실패. 공식 크기 fresh 변위 L2 241.217%, stress 68.236%, 예측 역전4/6조건. 유도 GL strain은 원 COMSOL strain이 아님 |
 | 공식 Q1 선형 탄성 | CPU 실제 solve와 독립13검사, 후속 전체DDM64반복 수렴·독립25검사 통과 | 수치 FEM 기준선이며 AI 학습이 아님. 첫 시도11반복 뒤 메모리 가드 중단과 후속 정상 완료를 함께 보존 |
 | BOX1BL crash section | 앞선 단계에서 공개 MiniQA의 실제 Starter/Engine 실행 성공 | 작은 구조 충돌 회귀시험. 응력·변형률 surrogate 학습 완료가 아님 |
 

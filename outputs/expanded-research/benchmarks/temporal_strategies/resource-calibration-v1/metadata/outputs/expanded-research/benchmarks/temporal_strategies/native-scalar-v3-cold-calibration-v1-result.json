@@ -1,0 +1,96 @@
+{
+  "status": "cold_calibration_attempt_stopped_by_retained_host_floor",
+  "policy_id": "cold-calibration-v1",
+  "purpose": "One cold train-only resource measurement on the current PC; no convergence or accuracy claim",
+  "scientific_protocol": {
+    "path": "outputs/expanded-research/benchmarks/temporal_strategies/native-scalar-v3-resource-protocol-r4.json",
+    "sha256": "7a3ea4d8c4d96b611a05797bd446856fe28de3f059534ef7359f6f9032352326",
+    "source20_unchanged": true
+  },
+  "standard_preflight": {
+    "receipt": "work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134235291549Z--32180.json",
+    "observations_available_bytes": [
+      2063556608,
+      2037444608
+    ],
+    "threshold_bytes": 1610612736,
+    "status": "passed_no_child_requested",
+    "child_started": false,
+    "job_created": false
+  },
+  "calibration": {
+    "receipt": "work/expanded-temporal/guarded-resource-attempts/phone_full--time_conditional--probe--20261015T134324145486Z--43692.json",
+    "receipt_sha256": "6ec577d2f399c23896e6c2e67ba091b1b15cc409777212f268af4f05057d701b",
+    "sentinel": "work/expanded-temporal/guarded-resource-attempts/cold-calibration-v1-attempt-started.json",
+    "started_utc": "2026-10-15T13:43:24.145477Z",
+    "child_started_utc": "2026-10-15T13:43:34.164184Z",
+    "finished_utc": "2026-10-15T13:44:32.819042Z",
+    "guard_pid": 43692,
+    "stage_pid": 43156,
+    "model_child_pid_observed": 25348,
+    "preflight_available_bytes": [
+      1896914944,
+      1979985920
+    ],
+    "runtime_seconds_at_stop": 58.64381439999852,
+    "total_wall_seconds": 68.67293459999928,
+    "host_floor_bytes": 536870912,
+    "minimum_sampled_host_available_bytes": 512454656,
+    "peak_sampled_family_rss_bytes": 1462505472,
+    "runtime_sample_count": 293,
+    "nominal_runtime_sample_interval_seconds": 0.2,
+    "family_rss_ceiling_bytes": 2147483648,
+    "wall_cap_seconds": 120,
+    "guard_reason": "host_available_memory_floor",
+    "guard_exit_code": 1,
+    "contained_before_resume": true,
+    "child_reaped": true,
+    "job_empty_confirmed": true,
+    "cleanup_errors": [],
+    "owned_descendants_observed": [
+      19916,
+      23328,
+      25348,
+      35520,
+      41048,
+      43156,
+      45996,
+      47392
+    ],
+    "completed_optimizer_updates": null,
+    "optimizer_update_interpretation": "Unknown: no per-update completion receipt was produced; three joint updates are not certified.",
+    "functional_probe_success": false,
+    "canonical_probe_receipt_present": false,
+    "legacy_probe_receipt_present": false,
+    "original_stage_exit_receipt_present": false,
+    "sampled_gpu_used_MiB_maximum": 109,
+    "sampled_gpu_utilization_percent_maximum": 0,
+    "gpu_peak_interpretation": "Seven original stage telemetry observations only; no exact framework allocation peak was returned."
+  },
+  "completion": {
+    "successful_functional_probes": 0,
+    "successful_distinct_case_stream_profiles": 0,
+    "other_resource_stages_executed": 0,
+    "full_fits": 0,
+    "validation_evaluations": 0,
+    "heldout_evaluations": 0,
+    "training_budget_seconds": null,
+    "fit_protocol_exists": false,
+    "automatic_retries": 0
+  },
+  "gpu_return": {
+    "compute_apps_query": "nvidia-smi --query-compute-apps=pid,process_name,used_gpu_memory --format=csv,noheader",
+    "query_exit_code": 0,
+    "compute_apps": [],
+    "owner": "returned to root"
+  },
+  "invocation_context": {
+    "shell": "cmd.exe",
+    "login": false,
+    "parent_python_no_site": true,
+    "fixed_workspace_relative_paths_without_spaces": true,
+    "reason": "The tool rejected first-token quote escaping; fixed no-space paths and enum arguments were used without interpolation."
+  },
+  "limitation": "This interrupted cold attempt does not establish the RAM minimum of the model or satisfy the required six fits. No common fit cap can be chosen from the missing 12 successful resource receipts.",
+  "next_step": "Idle. No retry, remaining eleven resource stages or full fit without an explicit root decision."
+}
