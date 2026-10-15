@@ -1,0 +1,973 @@
+{
+  "status": "passed_numeric_audit; neither model reaches useful long-rollout accuracy",
+  "runs": {
+    "noise0_pilot8": {
+      "status": "passed_independent_numeric_recalculation_of_preserved_AR_teacher_stress_and_derived_strain",
+      "evaluation_role": "development",
+      "evaluation_split": "test",
+      "checks": [
+        "Source/helper snapshot hashes",
+        "Original source NPZ hashes",
+        "Disjoint trajectory splits",
+        "Training-only normalization names",
+        "Checkpoint hash and scalar metadata via pickletools without tensor loading",
+        "Best-validation history consistency",
+        "Source label/mask and prescribed boundary identity",
+        "Independent linear-solve strain and sampled inversion counts",
+        "AR/teacher metrics and pooled physical-unit RMSE"
+      ],
+      "executed_source_sha256": "361c8e8c61fab106960acb23ba20cfebeab70d9845c62cb6b4d67bd59f2a0909",
+      "helper_sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+      "checkpoint_sha256": "18f3504a288035df7639c2bc08e6f537e8e65fc569fc0c12fb67e10239a0f171",
+      "best_epoch": 5,
+      "checkpoint_validation_mse": 5.224707175977528,
+      "normalization_target_std": [
+        4.735147977855165e-05,
+        0.0001232870581085327,
+        0.0005063576872822573,
+        40853.46967568761
+      ],
+      "trajectories": {
+        "test_0000": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 0.9852867948766911,
+              "component_rmse": 0.03697633421046804,
+              "max_abs_component_error": 0.20595767814666033,
+              "values": 1067724,
+              "squared_error": 1459.8448826715428,
+              "squared_truth": 1503.7698989246062
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.037528498709957475,
+              "max_abs_component_error": 0.20747002959251404,
+              "values": 1067724,
+              "squared_error": 1503.7698989246062,
+              "squared_truth": 1503.7698989246062
+            },
+            "derived_GL_strain": {
+              "relative_l2": 22.716995354137886,
+              "component_rmse": 0.06971809963469507,
+              "max_abs_component_error": 1.5817932010720597,
+              "values": 337554,
+              "squared_error": 1640.7195012517286,
+              "squared_truth": 3.179307698264665
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.000080472999965,
+              "component_rmse": 0.0005338785113174099,
+              "max_abs_component_error": 0.005625493824481964,
+              "values": 1067724,
+              "squared_error": 0.3043293836069577,
+              "squared_truth": 0.3042804089217941
+            },
+            "rollout_free_stress": {
+              "relative_l2": 0.7761477126973473,
+              "component_rmse": 21604.264280324383,
+              "max_abs_component_error": 50346.013671875,
+              "values": 355908,
+              "squared_error": 166118007223870.97,
+              "squared_truth": 275757890851366.03
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 27835.24827412433,
+              "max_abs_component_error": 81267.0859375,
+              "values": 355908,
+              "squared_error": 275757890851366.03,
+              "squared_truth": 275757890851366.03
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 0.7208094208310669,
+              "component_rmse": 20063.909187160512,
+              "max_abs_component_error": 50308.2421875,
+              "values": 355908,
+              "squared_error": 143274485304370.06,
+              "squared_truth": 275757890851366.03
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 0.7492695770140084,
+              "component_rmse": 20856.104700433047,
+              "max_abs_component_error": 50644.060546875,
+              "values": 355908,
+              "squared_error": 154811830872550.1,
+              "squared_truth": 275757890851366.03
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        },
+        "test_0001": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 0.94960314405214,
+              "component_rmse": 0.006891688913261496,
+              "max_abs_component_error": 0.055935884127393365,
+              "values": 921690,
+              "squared_error": 43.77601317656812,
+              "squared_truth": 48.54582865647399
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.007257441128357398,
+              "max_abs_component_error": 0.0545908659696579,
+              "values": 921690,
+              "squared_error": 48.54582865647399,
+              "squared_truth": 48.54582865647399
+            },
+            "derived_GL_strain": {
+              "relative_l2": 3.4948877591818817,
+              "component_rmse": 0.07706509658655201,
+              "max_abs_component_error": 1.59114053265057,
+              "values": 313740,
+              "squared_error": 1863.3109935658088,
+              "squared_truth": 152.55234259578907
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.0020603349038302,
+              "component_rmse": 0.0001154867588984426,
+              "max_abs_component_error": 0.005163267254829407,
+              "values": 921690,
+              "squared_error": 0.012292756016000314,
+              "squared_truth": 0.012242257745990559
+            },
+            "rollout_free_stress": {
+              "relative_l2": 0.7272660012777189,
+              "component_rmse": 54703.06604723889,
+              "max_abs_component_error": 463588.404296875,
+              "values": 307230,
+              "squared_error": 919362866385396.9,
+              "squared_truth": 1738202569751193.5
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 75217.4114438626,
+              "max_abs_component_error": 494882.46875,
+              "values": 307230,
+              "squared_error": 1738202569751193.5,
+              "squared_truth": 1738202569751193.5
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 0.7402387201543974,
+              "component_rmse": 55678.840380531576,
+              "max_abs_component_error": 463923.625,
+              "values": 307230,
+              "squared_error": 952453943350266.9,
+              "squared_truth": 1738202569751193.5
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 0.7319368034048788,
+              "component_rmse": 55054.391692610334,
+              "max_abs_component_error": 462032.49609375,
+              "values": 307230,
+              "squared_error": 931209842495780.1,
+              "squared_truth": 1738202569751193.5
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        },
+        "valid_0000": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 0.9783966579952046,
+              "component_rmse": 0.037910819577811325,
+              "max_abs_component_error": 0.2578470769803971,
+              "values": 937251,
+              "squared_error": 1347.045480665003,
+              "squared_truth": 1407.188696897254
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.03874790379547386,
+              "max_abs_component_error": 0.26136139035224915,
+              "values": 937251,
+              "squared_error": 1407.188696897254,
+              "squared_truth": 1407.188696897254
+            },
+            "derived_GL_strain": {
+              "relative_l2": 6.863057133362428,
+              "component_rmse": 0.07434111073894965,
+              "max_abs_component_error": 1.4787593117965336,
+              "values": 284634,
+              "squared_error": 1573.0584767087216,
+              "squared_truth": 33.39716780679643
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.0000466333581304,
+              "component_rmse": 0.0006945908472623335,
+              "max_abs_component_error": 0.008437424898147583,
+              "values": 937251,
+              "squared_error": 0.45218278562698827,
+              "squared_truth": 0.45214061497328495
+            },
+            "rollout_free_stress": {
+              "relative_l2": 0.7793973154355776,
+              "component_rmse": 37993.049809334,
+              "max_abs_component_error": 235309.28515625,
+              "values": 312417,
+              "squared_error": 450965139904835.3,
+              "squared_truth": 742378115036175.6
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 48746.703455221716,
+              "max_abs_component_error": 265503.96875,
+              "values": 312417,
+              "squared_error": 742378115036175.6,
+              "squared_truth": 742378115036175.6
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 0.7822396090540705,
+              "component_rmse": 38131.60225348735,
+              "max_abs_component_error": 234545.125,
+              "values": 312417,
+              "squared_error": 454260282171170.6,
+              "squared_truth": 742378115036175.6
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 0.7822475293192169,
+              "component_rmse": 38131.988340303724,
+              "max_abs_component_error": 235197.107421875,
+              "values": 312417,
+              "squared_error": 454269481091943.75,
+              "squared_truth": 742378115036175.6
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        },
+        "valid_0001": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 1.0253991099558868,
+              "component_rmse": 0.02614290579340168,
+              "max_abs_component_error": 0.15102923661470413,
+              "values": 1292760,
+              "squared_error": 883.5387912906212,
+              "squared_truth": 840.3104210500529
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.02549534667972001,
+              "max_abs_component_error": 0.1483788788318634,
+              "values": 1292760,
+              "squared_error": 840.3104210500529,
+              "squared_truth": 840.3104210500529
+            },
+            "derived_GL_strain": {
+              "relative_l2": 66.0847459594029,
+              "component_rmse": 0.10419097438482526,
+              "max_abs_component_error": 2.7662719173650316,
+              "values": 404460,
+              "squared_error": 4390.720343082662,
+              "squared_truth": 1.005387142512406
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.0002907665918208,
+              "component_rmse": 0.00036566456618014376,
+              "max_abs_component_error": 0.0038896342739462852,
+              "values": 1292760,
+              "squared_error": 0.1728556828849182,
+              "squared_truth": 0.17275520539470907
+            },
+            "rollout_free_stress": {
+              "relative_l2": 1.0827537168243544,
+              "component_rmse": 21124.364756730254,
+              "max_abs_component_error": 49191.625,
+              "values": 430920,
+              "squared_error": 192293217824881.9,
+              "squared_truth": 164022943185431.28
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 19509.851989875067,
+              "max_abs_component_error": 55224.984375,
+              "values": 430920,
+              "squared_error": 164022943185431.28,
+              "squared_truth": 164022943185431.28
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 1.0192116499478017,
+              "component_rmse": 19884.66843683797,
+              "max_abs_component_error": 30958.84375,
+              "values": 430920,
+              "squared_error": 170385784738217.0,
+              "squared_truth": 164022943185431.28
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 1.059288363093404,
+              "component_rmse": 20666.55917854935,
+              "max_abs_component_error": 49191.6328125,
+              "values": 430920,
+              "squared_error": 184048805495425.47,
+              "squared_truth": 164022943185431.28
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            6,
+            6
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        }
+      },
+      "pools": {
+        "pooled_metrics": {
+          "rollout_free_displacement": {
+            "relative_l2": 0.9841904518953523,
+            "component_rmse": 0.02749201621035667,
+            "max_abs_component_error": 0.20595767814666033,
+            "values": 1989414
+          },
+          "zero_increment_baseline_free_displacement": {
+            "relative_l2": 1.0,
+            "component_rmse": 0.027933634346292015,
+            "max_abs_component_error": 0.20747002959251404,
+            "values": 1989414
+          },
+          "derived_GL_strain": {
+            "relative_l2": 4.7434627626640085,
+            "component_rmse": 0.07334920311218081,
+            "max_abs_component_error": 1.59114053265057,
+            "values": 651294
+          },
+          "teacher_forced_free_displacement_increment": {
+            "relative_l2": 1.0001571216718157,
+            "component_rmse": 0.0003989404330517903,
+            "max_abs_component_error": 0.005625493824481964,
+            "values": 1989414
+          },
+          "rollout_free_stress": {
+            "relative_l2": 0.7341513771222064,
+            "component_rmse": 40458.43971957601,
+            "max_abs_component_error": 463588.404296875,
+            "values": 663138
+          },
+          "zero_stress_baseline": {
+            "relative_l2": 1.0,
+            "component_rmse": 55109.124603387245,
+            "max_abs_component_error": 494882.46875,
+            "values": 663138
+          },
+          "training_mean_constant_stress_baseline": {
+            "relative_l2": 0.737608639336899,
+            "component_rmse": 40648.96641375209,
+            "max_abs_component_error": 463923.625,
+            "values": 663138
+          },
+          "teacher_forced_free_stress": {
+            "relative_l2": 0.7343342359171771,
+            "component_rmse": 40468.51690769287,
+            "max_abs_component_error": 462032.49609375,
+            "values": 663138
+          }
+        },
+        "validation_pooled_metrics": {
+          "rollout_free_displacement": {
+            "relative_l2": 0.9962298557134649,
+            "component_rmse": 0.03162684099554958,
+            "max_abs_component_error": 0.2578470769803971,
+            "values": 2230011
+          },
+          "zero_increment_baseline_free_displacement": {
+            "relative_l2": 1.0,
+            "component_rmse": 0.031746529994224615,
+            "max_abs_component_error": 0.26136139035224915,
+            "values": 2230011
+          },
+          "derived_GL_strain": {
+            "relative_l2": 13.166350600887773,
+            "component_rmse": 0.09302968060151523,
+            "max_abs_component_error": 2.7662719173650316,
+            "values": 689094
+          },
+          "teacher_forced_free_displacement_increment": {
+            "relative_l2": 1.0001141310274755,
+            "component_rmse": 0.0005294194236882032,
+            "max_abs_component_error": 0.008437424898147583,
+            "values": 2230011
+          },
+          "rollout_free_stress": {
+            "relative_l2": 0.8424274640196227,
+            "component_rmse": 29417.099098263545,
+            "max_abs_component_error": 235309.28515625,
+            "values": 743337
+          },
+          "zero_stress_baseline": {
+            "relative_l2": 1.0,
+            "component_rmse": 34919.444527485546,
+            "max_abs_component_error": 265503.96875,
+            "values": 743337
+          },
+          "training_mean_constant_stress_baseline": {
+            "relative_l2": 0.8301504409886702,
+            "component_rmse": 28988.39227357154,
+            "max_abs_component_error": 234545.125,
+            "values": 743337
+          },
+          "teacher_forced_free_stress": {
+            "relative_l2": 0.8391864081459222,
+            "component_rmse": 29303.923227471376,
+            "max_abs_component_error": 235197.107421875,
+            "values": 743337
+          }
+        }
+      }
+    },
+    "pilot8_validation": {
+      "status": "passed_independent_numeric_recalculation_of_preserved_AR_teacher_stress_and_derived_strain",
+      "evaluation_role": "development",
+      "evaluation_split": "valid",
+      "checks": [
+        "Source/helper snapshot hashes",
+        "Original source NPZ hashes",
+        "Disjoint trajectory splits",
+        "Training-only normalization names",
+        "Checkpoint hash and scalar metadata via pickletools without tensor loading",
+        "Best-validation history consistency",
+        "Source label/mask and prescribed boundary identity",
+        "Independent linear-solve strain and sampled inversion counts",
+        "AR/teacher metrics and pooled physical-unit RMSE"
+      ],
+      "executed_source_sha256": "201b5976e6a9f73efbd6acd2719e37c60435b20e7064fd0222c5f838000ccfd5",
+      "helper_sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+      "checkpoint_sha256": "439f8b620714ae7737934e6be8aad4eeaf5c9e07d0bf432f3faaaa94d1cd4107",
+      "best_epoch": 5,
+      "checkpoint_validation_mse": 0.17023217072710395,
+      "normalization_target_std": [
+        0.002437679552869454,
+        0.002440335865928635,
+        0.0024892644590943807,
+        40853.46967568761
+      ],
+      "trajectories": {
+        "valid_0000": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 1.4694338481571243,
+              "component_rmse": 0.05693748138220519,
+              "max_abs_component_error": 0.32354501262307167,
+              "values": 937251,
+              "squared_error": 3038.4522596949014,
+              "squared_truth": 1407.188696897254
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.03874790379547386,
+              "max_abs_component_error": 0.26136139035224915,
+              "values": 937251,
+              "squared_error": 1407.188696897254,
+              "squared_truth": 1407.188696897254
+            },
+            "derived_GL_strain": {
+              "relative_l2": 9.04523847388699,
+              "component_rmse": 0.09797865032751003,
+              "max_abs_component_error": 2.654892601647589,
+              "values": 284634,
+              "squared_error": 2732.434004573417,
+              "squared_truth": 33.39716780679643
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.9145224486492596,
+              "component_rmse": 0.001329747759106573,
+              "max_abs_component_error": 0.009782031178474426,
+              "values": 937251,
+              "squared_error": 1.6572744948742837,
+              "squared_truth": 0.45214061497328495
+            },
+            "rollout_free_stress": {
+              "relative_l2": 0.7947640265123408,
+              "component_rmse": 38742.12631727505,
+              "max_abs_component_error": 240174.47265625,
+              "values": 312417,
+              "squared_error": 468923030824723.5,
+              "squared_truth": 742378115036175.6
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 48746.703455221716,
+              "max_abs_component_error": 265503.96875,
+              "values": 312417,
+              "squared_error": 742378115036175.6,
+              "squared_truth": 742378115036175.6
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 0.7822396090540705,
+              "component_rmse": 38131.60225348735,
+              "max_abs_component_error": 234545.125,
+              "values": 312417,
+              "squared_error": 454260282171170.6,
+              "squared_truth": 742378115036175.6
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 0.7907510112473689,
+              "component_rmse": 38546.50505219218,
+              "max_abs_component_error": 241124.271484375,
+              "values": 312417,
+              "squared_error": 464199504525042.44,
+              "squared_truth": 742378115036175.6
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        },
+        "valid_0001": {
+          "source_labels_reference_masks_and_prescribed_boundaries": "matched original source",
+          "metrics": {
+            "rollout_free_displacement": {
+              "relative_l2": 1.0899381031057425,
+              "component_rmse": 0.027788349798117316,
+              "max_abs_component_error": 0.15818622498773038,
+              "values": 1292760,
+              "squared_error": 998.2594269894864,
+              "squared_truth": 840.3104210500529
+            },
+            "zero_increment_baseline_free_displacement": {
+              "relative_l2": 1.0,
+              "component_rmse": 0.02549534667972001,
+              "max_abs_component_error": 0.1483788788318634,
+              "values": 1292760,
+              "squared_error": 840.3104210500529,
+              "squared_truth": 840.3104210500529
+            },
+            "derived_GL_strain": {
+              "relative_l2": 75.81200647996224,
+              "component_rmse": 0.11952723295733651,
+              "max_abs_component_error": 4.977113984743482,
+              "values": 404460,
+              "squared_error": 5778.422714381187,
+              "squared_truth": 1.005387142512406
+            },
+            "teacher_forced_free_displacement_increment": {
+              "relative_l2": 1.8328907528709433,
+              "component_rmse": 0.0006700283801356352,
+              "max_abs_component_error": 0.0055522455368191,
+              "values": 1292760,
+              "squared_error": 0.580369127904783,
+              "squared_truth": 0.17275520539470907
+            },
+            "rollout_free_stress": {
+              "relative_l2": 0.8660484380927369,
+              "component_rmse": 16896.476843251774,
+              "max_abs_component_error": 54206.4375,
+              "values": 430920,
+              "squared_error": 123023751432591.08,
+              "squared_truth": 164022943185431.28
+            },
+            "zero_stress_baseline": {
+              "relative_l2": 1.0,
+              "component_rmse": 19509.851989875067,
+              "max_abs_component_error": 55224.984375,
+              "values": 430920,
+              "squared_error": 164022943185431.28,
+              "squared_truth": 164022943185431.28
+            },
+            "training_mean_constant_stress_baseline": {
+              "relative_l2": 1.0192116499478017,
+              "component_rmse": 19884.66843683797,
+              "max_abs_component_error": 30958.84375,
+              "values": 430920,
+              "squared_error": 170385784738217.0,
+              "squared_truth": 164022943185431.28
+            },
+            "teacher_forced_free_stress": {
+              "relative_l2": 0.8805794819181767,
+              "component_rmse": 17179.975357544492,
+              "max_abs_component_error": 54416.23165893555,
+              "values": 430920,
+              "squared_error": 127186707341932.47,
+              "squared_truth": 164022943185431.28
+            }
+          },
+          "predicted_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            9,
+            27,
+            47,
+            76,
+            109
+          ],
+          "truth_inversions_per_sampled_frame": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "negative_predicted_stress_values": 0
+        }
+      },
+      "pools": {
+        "pooled_metrics": {
+          "rollout_free_displacement": {
+            "relative_l2": 1.3401829886729186,
+            "component_rmse": 0.0425461594476544,
+            "max_abs_component_error": 0.32354501262307167,
+            "values": 2230011
+          },
+          "zero_increment_baseline_free_displacement": {
+            "relative_l2": 1.0,
+            "component_rmse": 0.031746529994224615,
+            "max_abs_component_error": 0.26136139035224915,
+            "values": 2230011
+          },
+          "derived_GL_strain": {
+            "relative_l2": 15.728644297463294,
+            "component_rmse": 0.11113411754272988,
+            "max_abs_component_error": 4.977113984743482,
+            "values": 689094
+          },
+          "teacher_forced_free_displacement_increment": {
+            "relative_l2": 1.8923072359357986,
+            "component_rmse": 0.0010017098801122976,
+            "max_abs_component_error": 0.009782031178474426,
+            "values": 2230011
+          },
+          "rollout_free_stress": {
+            "relative_l2": 0.8081298155128138,
+            "component_rmse": 28219.444263806832,
+            "max_abs_component_error": 240174.47265625,
+            "values": 743337
+          },
+          "zero_stress_baseline": {
+            "relative_l2": 1.0,
+            "component_rmse": 34919.444527485546,
+            "max_abs_component_error": 265503.96875,
+            "values": 743337
+          },
+          "training_mean_constant_stress_baseline": {
+            "relative_l2": 0.8301504409886702,
+            "component_rmse": 28988.39227357154,
+            "max_abs_component_error": 234545.125,
+            "values": 743337
+          },
+          "teacher_forced_free_stress": {
+            "relative_l2": 0.80774707760386,
+            "component_rmse": 28206.079268626556,
+            "max_abs_component_error": 241124.271484375,
+            "values": 743337
+          }
+        },
+        "validation_pooled_metrics": {
+          "rollout_free_displacement": {
+            "relative_l2": 1.3401829886729186,
+            "component_rmse": 0.0425461594476544,
+            "max_abs_component_error": 0.32354501262307167,
+            "values": 2230011
+          },
+          "zero_increment_baseline_free_displacement": {
+            "relative_l2": 1.0,
+            "component_rmse": 0.031746529994224615,
+            "max_abs_component_error": 0.26136139035224915,
+            "values": 2230011
+          },
+          "derived_GL_strain": {
+            "relative_l2": 15.728644297463294,
+            "component_rmse": 0.11113411754272988,
+            "max_abs_component_error": 4.977113984743482,
+            "values": 689094
+          },
+          "teacher_forced_free_displacement_increment": {
+            "relative_l2": 1.8923072359357986,
+            "component_rmse": 0.0010017098801122976,
+            "max_abs_component_error": 0.009782031178474426,
+            "values": 2230011
+          },
+          "rollout_free_stress": {
+            "relative_l2": 0.8081298155128138,
+            "component_rmse": 28219.444263806832,
+            "max_abs_component_error": 240174.47265625,
+            "values": 743337
+          },
+          "zero_stress_baseline": {
+            "relative_l2": 1.0,
+            "component_rmse": 34919.444527485546,
+            "max_abs_component_error": 265503.96875,
+            "values": 743337
+          },
+          "training_mean_constant_stress_baseline": {
+            "relative_l2": 0.8301504409886702,
+            "component_rmse": 28988.39227357154,
+            "max_abs_component_error": 234545.125,
+            "values": 743337
+          },
+          "teacher_forced_free_stress": {
+            "relative_l2": 0.80774707760386,
+            "component_rmse": 28206.079268626556,
+            "max_abs_component_error": 241124.271484375,
+            "values": 743337
+          }
+        }
+      }
+    }
+  },
+  "common_model_feature_loss_routines_identical_AST": false,
+  "method_caveat": "Noise setting and target normalization both change. This is a coupled training-recipe comparison, not a strict isolated noise-only causal experiment. Validation scores are normalized by different target scales and must not be compared directly. Physical-unit errors are compared instead.",
+  "evaluation_caveat": "Original source test0/1 were used during development; do not call them fresh blind final test cases. The compared validation trajectories also selected checkpoints.",
+  "strain_caveat": "Derived elementwise Green-Lagrange strain, not original COMSOL strain export; 21 selected frames; tensor shear; unweighted tetrahedron/component aggregation.",
+  "memory_scope": "One NPZ/source trajectory at a time; staged array loading with <=20-frame metric chunks; RSS sampled after each stage/chunk, not continuous OS peak.",
+  "sampled_peak_rss_bytes": 61894656,
+  "elapsed_seconds": 5.660743899999943,
+  "execution_scope": "CPU NumPy/standard-library metadata inspection only, no Torch or GPU.",
+  "graph_loss_validation_functions_identical_AST": true,
+  "architecture_constructor_difference": "pilot8_validation explicitly passes num_processor_checkpoint_segments=0; other snapshots omit it. Installed HybridMeshGraphNet constructor defaults to 0 (hybrid_meshgraphnet.py:192). No architecture size change in configs."
+}

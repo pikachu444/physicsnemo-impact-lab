@@ -1,0 +1,86 @@
+{
+  "captured_utc": "2026-10-15T03:19:04.387191+00:00",
+  "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "logical_cpus": 16,
+  "physical_memory_bytes": 16841400320,
+  "package_versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "vtk": "9.4.2",
+    "psutil": "7.2.2",
+    "matplotlib": "3.10.1"
+  },
+  "binaries": {
+    "starter_win64.exe": {
+      "bytes": 52339712,
+      "sha256": "606b8d9785bb79305ede5e1467fff6e07331678ae619fe9d4e118df6c5c1309e"
+    },
+    "engine_win64.exe": {
+      "bytes": 138835968,
+      "sha256": "7530cba04c5e73fa93167496d5e11476318084c84fff9c6b0dfccc35267a81a9"
+    },
+    "anim_to_vtk_win64.exe": {
+      "bytes": 328192,
+      "sha256": "238278b91341168f517eb1547efdb249705af8080cd1f0beca0ba61d3bc65e12"
+    },
+    "th_to_csv_win64.exe": {
+      "bytes": 183808,
+      "sha256": "ad5b8a76b5a13aa695616f15af400ad1ea344a1afb37a2480f17aaa0ec758d01"
+    }
+  },
+  "current_reproduction_source": {
+    "build_cache.py": {
+      "bytes": 6595,
+      "sha256": "2a97c54fdb19b84911f68a42cee841345c7e754b2c57123b1f2da81afb5751ab"
+    },
+    "build_nodal_cache.py": {
+      "bytes": 8211,
+      "sha256": "10f1a24fa6cdbf70ed7e10a1317c4ff1057fa9dae51db11a2b3f7abe70d80697"
+    },
+    "capture_environment.py": {
+      "bytes": 2493,
+      "sha256": "35471cb8a58c5f735145f9329c573b1999f74de313de088b0ab28623ab70a335"
+    },
+    "extract_coupon.py": {
+      "bytes": 13320,
+      "sha256": "f89e9f9c17b539017650e9af1b2d05891a7f13d6e1c3964c530c2c2944bb3059"
+    },
+    "extract_nodal_displacement.py": {
+      "bytes": 2733,
+      "sha256": "4ddf86ca2c7c94352d703909e9979a84f962f074377be7c3694faf01f28427a4"
+    },
+    "finalize_cache.py": {
+      "bytes": 2727,
+      "sha256": "0c21dd9b56a2d08e13333791f71ef9f7aa9d2812ae94d543b79c3930148ad1de"
+    },
+    "freeze_holdouts.py": {
+      "bytes": 2562,
+      "sha256": "e8a262f8b7bded03874b56465b56ce5ab5b8a0dae88fa858e31b791c14feb202"
+    },
+    "plan_training_increment.py": {
+      "bytes": 3330,
+      "sha256": "a1932b957fc7e82b3747718bc35527ebc25f0651290f4d5e1a34d86362ee3057"
+    },
+    "prepare_coupon.py": {
+      "bytes": 5473,
+      "sha256": "d33bc59bb6b3f865d459b1c93fe01ddeea846c0073f5890cf93f3c9eed227bee"
+    },
+    "run_coupon.py": {
+      "bytes": 3319,
+      "sha256": "c66fb5903ac329b2d249adc3f4c54a405ae70dbf5195cfc8ffa38e2018673a01"
+    },
+    "run_design.py": {
+      "bytes": 3929,
+      "sha256": "68389da6d7db24496234d64fa415e06de7a9ee06311ec69e8de038a1293d016a"
+    },
+    "summarize_results.py": {
+      "bytes": 6396,
+      "sha256": "3ce96bd455faade1a6aeaa8aa0e50f2ef2c681e9afdab5745270a035c99af156"
+    }
+  },
+  "scope": "Existing local Windows runtime and solver used; no paid resource provisioned. Per-process FEM wall/RSS logs are separate.",
+  "source_provenance_limit": "Current reproduction scripts hashed after original pilot execution. Initial incremental pilot scripts were not snapshotted at process launch; prepared solver input hashes, solver binaries, native outputs and independent label reconstruction preserve the executed FEM/label evidence. Future run_design.py executions snapshot sources before launching.",
+  "solver_header": "OpenCourant Starter/Engine Windows64 double precision; bundled release binaries, exact binary hashes above. Original distribution license remains with solver."
+}

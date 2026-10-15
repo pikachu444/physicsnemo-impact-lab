@@ -1,0 +1,66 @@
+{
+  "output": "outputs\\expanded-research\\benchmarks\\deforming_plate\\pilot8",
+  "hidden": 48,
+  "processor": 3,
+  "epochs": 12,
+  "frames_per_trajectory": 20,
+  "noise": 0.003,
+  "probe": 0,
+  "seed": 20261015,
+  "lr": 0.0001,
+  "rollout_steps": 399,
+  "checkpoint": null,
+  "architecture": {
+    "input_dim_nodes": 3,
+    "input_dim_edges": 8,
+    "output_dim": 4,
+    "processor_size": 3,
+    "hidden_dim_processor": 48,
+    "hidden_dim_node_encoder": 48,
+    "hidden_dim_edge_encoder": 48,
+    "hidden_dim_node_decoder": 48
+  },
+  "parameters": 119284,
+  "splits": {
+    "train": [
+      "train_0000",
+      "train_0001",
+      "train_0002",
+      "train_0003",
+      "train_0004",
+      "train_0005",
+      "train_0006",
+      "train_0007"
+    ],
+    "valid": [
+      "valid_0000",
+      "valid_0001"
+    ],
+    "test": [
+      "test_0000",
+      "test_0001"
+    ]
+  },
+  "dataset_npz_sha256": {
+    "train_0000": "b6ff0a47e9cbe9fcc97b0a1fbd6b9d97180e75c1c09f0832ae638ba663c91086",
+    "train_0001": "003b3131c748a780a295b972a3158f11ecfb3dde5de70e1fba05691483a5279d",
+    "train_0002": "75080377f70e98dfc3afee079fef911c438f0e053173ccfaaa182780d911a416",
+    "train_0003": "12766b79396872d6054e028f0a0ae515ed5ce15aaeb7e57e7ead9dd8b866bcb4",
+    "train_0004": "929b66e1786a9bd0e7120274b1585d45eafbfd97c50ecb3b784025747f43d2d8",
+    "train_0005": "becd113ef87e4975be0a770c6ab66465c16da398578a2e7bca826a38d0150e63",
+    "train_0006": "048ef69bf2b3e38361dfe1c10e048d2512e5c4e80eee233b23072363f0688e51",
+    "train_0007": "b6900644a69f3b9e96e62e7a2d298ef845bbfb432106abd134e05371c03560d4",
+    "valid_0000": "e386c82a7a15af1c4497511319d477c4930cbb735d368867bfe279bf0a7befce",
+    "valid_0001": "f8a4d10f326793a65345fe6092f63ab710595b23e50d6cb58a0202b0f4b80775",
+    "test_0000": "02ebc74fb301d46117c978d0976e6a79ba170d77bc4938b175052cfdafb33701",
+    "test_0001": "35c0399f8e076e74ccea7d25b57bc4024c8a228616a52867dc1aed0208774b79"
+  },
+  "physicsnemo": "2.2.2",
+  "torch": "2.10.0+cu126",
+  "torch_geometric": "2.8.1",
+  "training_contract": "Official node_type onehot, bidirectional tetra mesh edges, radius .03 world edges excluding mesh edges; increments xyz + next nodal von Mises stress",
+  "world_edge_backend": "scipy.spatial.cKDTree on CPU, complete radius graph with no neighbor cap; same geometric criterion as the official helper",
+  "code_sha256": "996482aed9cc61042b2263c4d4754ab8030d82ddc6791fdb591430b2291b84ea",
+  "helper_sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+  "checkpoint_selection": "Minimum teacher-forced validation normalized MSE; not a long-rollout convergence selection"
+}

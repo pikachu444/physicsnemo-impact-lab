@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-15T02:45:19.041434+00:00",
+  "core_repository": "NVIDIA/physicsnemo",
+  "core_commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "core_commit_date": "2026-10-14T21:35:45Z",
+  "main_head_equals_existing_pin": true,
+  "main_head_evidence": "physicsnemo-current-commit.json",
+  "interpretation": "This is a finite official-support inventory. Presence of code/config is distinct from runtime success, public-data availability, accuracy, and appliance generalization. Entries are not an exhaustive cross-product of all neural architectures and every dataset.",
+  "environment_at_source_audit": {
+    "os": "Windows",
+    "gpu": "RTX3060 Laptop6GB",
+    "physicsnemo_installed": "2.2.2",
+    "torch_installed": "2.13.0+cu126",
+    "cuda_runtime": "12.6",
+    "note": "prior Transolver CUDA training successful; other classes/kernel backends require their own runtime evidence; installed package differs from pinned main examples"
+  },
+  "dataset_definitions": {
+    "crash_bumper": {
+      "physics": "OpenRadioss bumper beam/pole impact; shell thickness scale and wall offset variation",
+      "input_fields": {
+        "local": [
+          "reference_xyz"
+        ],
+        "global": [
+          "velocity_x",
+          "thickness_scale",
+          "rwall_origin_y"
+        ]
+      },
+      "official_target_fields": [
+        "position_xyz",
+        "effective_plastic_strain",
+        "stress_vm"
+      ],
+      "public_curated_actual_fields": [
+        "reference_xyz",
+        "thickness",
+        "displacement_xyz_at_11_times"
+      ],
+      "public_curated_missing_fields": [
+        "effective_plastic_strain",
+        "stress_vm"
+      ],
+      "target_semantics": "official target xyz is normalized absolute position; one-shot adds reference xyz to predicted residual; displacement is position minus reference",
+      "data_ref": "bumper_hf",
+      "normalization": "positions and local features train statistics; global scalars and dynamic targets unnormalized in pinned recipe; per-field scaling needed for balanced multi-quantity experiment",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/datapipe.py#L298-L342",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/README.md#L708-L711"
+      ]
+    },
+    "crash_biw": {
+      "physics": "body-in-white crash; per-node shell thickness design conditioning",
+      "input_fields": {
+        "local": [
+          "reference_xyz",
+          "thickness"
+        ],
+        "global": []
+      },
+      "official_target_fields": [
+        "position_xyz"
+      ],
+      "data_ref": "biw_missing",
+      "normalization": "positions and local features train statistics",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml"
+      ]
+    },
+    "drop_phone": {
+      "physics": "OpenRadioss cell phone drop, modulus scales and rigid-wall orientation",
+      "input_fields": {
+        "local": [
+          "reference_xyz"
+        ],
+        "global": [
+          "e_scale_mat1",
+          "e_scale_mat4",
+          "e_scale_mat5",
+          "e_scale_mat8",
+          "e_scale_mat9",
+          "rwall_orientation_rx",
+          "rwall_orientation_ry",
+          "rwall_orientation_rz"
+        ]
+      },
+      "official_target_fields": [
+        "position_xyz",
+        "Von_Mises"
+      ],
+      "direct_strain_target": false,
+      "data_ref": "phone_deck_not_doe",
+      "normalization": "position train mean/std; nonnegative dynamic target log1p(clamp(min=0)) then train mean/std; globals unnormalized; this transform cannot preserve signed strain",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/datapipe.py#L311-L395"
+      ]
+    },
+    "plate": {
+      "physics": "COMSOL quasi-static hyperelastic deforming plate/contact, not explicit impact demonstration",
+      "input_fields": {
+        "nodes": [
+          "node_type one_hot_3"
+        ],
+        "mesh_edges": [
+          "reference_relative_xyz",
+          "reference_distance",
+          "current_world_relative_xyz",
+          "current_world_distance"
+        ],
+        "world_edges": [
+          "nonmesh close-neighbor relative_xyz+distance repeated to edge8"
+        ],
+        "boundary": [
+          "next-step prescribed positions for type1/type3 at inference"
+        ]
+      },
+      "official_target_fields": [
+        "world_pos_next_minus_current_xyz",
+        "stress_scalar_next"
+      ],
+      "target_semantics": "variable named velocity is per-step coordinate difference, without division by dt; stress channel invariant and units not established by loader alone",
+      "direct_strain_target": false,
+      "data_ref": "deepmind_plate",
+      "normalization": "coordinate increment and scalar stress use train statistics; position noise on movable nodes",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/deforming_plate_dataset.py#L144-L200",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/helpers.py#L23-L97",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/inference.py#L133-L181"
+      ]
+    },
+    "sinter": {
+      "physics": "HP Virtual Foundry metal sintering deformation driven by temperature context",
+      "input_fields": {
+        "nodes": [
+          "position history",
+          "particle_type"
+        ],
+        "edges": [
+          "senders",
+          "receivers",
+          "relative_xyz",
+          "relative_distance"
+        ],
+        "global": [
+          "temperature context"
+        ]
+      },
+      "official_target_fields": [
+        "normalized_acceleration_derived_from_next_position"
+      ],
+      "inference_fields": [
+        "next_position_xyz"
+      ],
+      "direct_stress_target": false,
+      "direct_strain_target": false,
+      "data_ref": "sinter_missing",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/train.py#L114-L121",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/physicsnemo/models/vfgn/graph_network_modules.py#L1051-L1132"
+      ]
+    },
+    "crash_generic": {
+      "physics": "generic crash reader/graph or point-cloud pipeline; user must choose actual bumper/BIW data and construct an experiment configuration",
+      "input_fields": {
+        "local": [
+          "reference_xyz",
+          "configured_static_features"
+        ],
+        "global": [
+          "configured per-run scalars, concat for Transolver/MGN/FIGConv"
+        ]
+      },
+      "official_target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "data_ref": "select_bumper_hf_or_biw_missing",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/point_cloud.yaml",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/graph.yaml"
+      ]
+    }
+  },
+  "public_data": {
+    "bumper_hf": {
+      "repository": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample",
+      "revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+      "public_raw": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/tree/78f1302fba4d75926c6fdd22d01d5133efc14742/RAW_DATA",
+      "public_curated": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/tree/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP",
+      "actual_local_curated": "131 VTP cases, 11 time points, 13675 retained deformable nodes; displacement only; prior experiments verified",
+      "raw_tree_observed": {
+        "raw_file_count": 3934,
+        "Run100_files": 30,
+        "Run100_d3plot_family_files": 12,
+        "Run100_animation_files": 11
+      },
+      "engine_requested_output": [
+        "/ANIM/SHELL/TENS/STRESS/ALL",
+        "/ANIM/SHELL/EPSP/ALL",
+        "/ANIM/VECT/DISP",
+        "/ANIM/VECT/PCONT"
+      ],
+      "stress_strain_status": "binary files publicly listed and engine output cards confirmed; extracting/analyzing actual channels assigned to FEM worker, not performed by source auditor",
+      "reported_archive_size": "about15.8GB total, raw15.3GB, curated540MB (repository listing; not memory requirement)",
+      "license": "starter and engine contain Altair CC BY-NC4.0; HF card lacks dataset-specific license metadata; do not infer unrestricted commercial reuse from community code MIT license",
+      "source_inventory": "bumper-raw-file-inventory.json",
+      "units": {
+        "starter_base": "kg/mm/ms",
+        "displacement": "mm",
+        "time": "ms",
+        "stress_base_unit": "GPa by dimensional analysis; check converter transformation before labeling exported values",
+        "plastic_strain": "dimensionless equivalent plastic strain, not total strain tensor"
+      }
+    },
+    "biw_missing": {
+      "status": "official recipe/paper described; public full FEM deck and 150-case result dataset download not located in checked sources",
+      "paper": "https://arxiv.org/abs/2510.15201",
+      "license": "not verified"
+    },
+    "phone_deck_not_doe": {
+      "status": "official generator code public, ready DoE result dataset and pretrained download not located; public input deck recovered separately by drop worker",
+      "official_model_page": "https://openradioss.atlassian.net/wiki/spaces/OPENRADIOSS/pages/11141156/Cell+Phone+Drop+Test",
+      "official_page_status": "current official page locked; old download404, observed by drop worker",
+      "mirror": "https://github.com/rogerjdeangelis/altair-slc-openradioss-python-script-for-cell-phone-drop-simulation-no-gui/tree/274a4d71a845534fa27a927d7595c16a17c874fa",
+      "mirror_commit": "274a4d71a845534fa27a927d7595c16a17c874fa",
+      "starter_bytes": 42378237,
+      "starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+      "mesh_from_drop_worker": {
+        "nodes": 257099,
+        "solid_elements": 130218,
+        "parts": 17
+      },
+      "license": "internal CC BY-NC4.0; mirror availability does not change deck license",
+      "engine_warning": "mirror engine is modified stress/strain plus short-end-time version, not proven original official engine",
+      "generator_evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/openradioss_dataset_gen/README.md#L101-L111"
+      ],
+      "direct_stress": "official ML target Von_Mises",
+      "direct_strain": "not default ML target; raw output and mapping require explicit validation"
+    },
+    "deepmind_plate": {
+      "public_files": [
+        "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/meta.json",
+        "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/train.tfrecord",
+        "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/valid.tfrecord",
+        "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/test.tfrecord"
+      ],
+      "upstream_downloader": "https://github.com/google-deepmind/deepmind-research/blob/master/meshgraphnets/download_dataset.sh",
+      "original_simulator": "COMSOL, as described by NVIDIA README",
+      "author_dataset_scale": "1000train/100valid/100test trajectories,400steps,average1271nodes; not measurements from this source audit",
+      "fem_generation_reproducibility": "result records public; original COMSOL input decks and generation pipeline not located in checked recipe",
+      "size": "not measured by source auditor; execution worker owns download measurements",
+      "license": "upstream code is Apache-2.0; dataset-specific terms not established by this audit; do not substitute code license",
+      "pretrained": "no official downloadable checkpoint located in checked recipe, local ./checkpoints loading only"
+    },
+    "sinter_missing": {
+      "status": "README says sample/checkpoint provided, but no actual download URL found in pinned example or official docs; config only local paths",
+      "required_files": [
+        "train.tfrecord",
+        "test.tfrecord",
+        "metadata.json"
+      ],
+      "required_metadata": [
+        "dim",
+        "bounds",
+        "vel_mean/std",
+        "acc_mean/std",
+        "context_mean/std",
+        "sequence_length"
+      ],
+      "original_simulator": "HP Virtual Foundry; raw code consumes volume-deformation PVTU series and params.prm",
+      "raw_preprocessor": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/rawdata2tfrecord_large_ts.py",
+      "pretrained": "two different local model_loss filenames in README/config, neither a verified URL",
+      "license": "external simulation data/checkpoint license not established; NVIDIA code Apache-2.0"
+    }
+  },
+  "dependency_definitions": {
+    "crash_point": {
+      "required_recipe": [
+        "nvidia-physicsnemo",
+        "torch",
+        "hydra/omegaconf",
+        "pyvista>=0.43",
+        "tabulate>=0.9",
+        "tensorboard>=2.20",
+        "torchinfo>=1.8"
+      ],
+      "optional": "Zarr reading requires zarr; Muon config requires PyTorch>=2.9; use_te=false does not require Transformer Engine",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/requirements.txt",
+      "api_caution": "Pinned main examples and installed2.2.2 differ. Prior Transolver run required separate compatibility handling for activation_checkpointing/checkpointing_ratio; compare every selected model signature rather than declaring configuration-level compatibility from class import."
+    },
+    "geo": {
+      "base": "crash_point",
+      "geometry": "GeoTransolver local ball-query geometry features; validate actual GPU neighborhood backend",
+      "api_blocker": "main checkpointing kwargs absent from installed2.2.2 GeoTransolver signature; remove only in distinct compatibility config and preserve original source",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_shot.yaml"
+    },
+    "geoflare": {
+      "base": "geo",
+      "implementation": "GeoTransolver attention_type=GALE_FA, not standalone GeoFLARE class",
+      "installed2_2_2_source": "attention_type GALE_FA exists in local installed signature; runtime not tested by auditor",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml"
+    },
+    "mgn": {
+      "base": "crash_point",
+      "graph": "PyG Data/edge_attr plus torch_geometric and appropriate optional extension backend; official README recommends [gnns] extra",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/graph.yaml"
+    },
+    "figconv": {
+      "base": "crash_point",
+      "geometry": "kNN16 and FIG factorized-grid backend; actual neighbor/grid backend compatibility must be exercised",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml"
+    },
+    "plate": {
+      "required_recipe": [
+        "hydra-core>=1.3",
+        "matplotlib>=3.10",
+        "omegaconf>=2.3",
+        "tfrecord",
+        "torch_geometric>=2.6.1",
+        "torch_scatter>=2.1.2",
+        "vtk>=9.2.6",
+        "wandb>=0.13.7",
+        "tensorboard"
+      ],
+      "note": "tfrecord package is the dataset reader; TensorFlow not a direct plate loader requirement; Windows lambda collate warrants workers0 initial run",
+      "evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/requirements.txt"
+    },
+    "sinter": {
+      "required_runtime": [
+        "torch",
+        "tensorflow-cpu>=2.15,<3",
+        "torch_scatter",
+        "dm-tree",
+        "hydra-core",
+        "omegaconf",
+        "tqdm",
+        "numpy",
+        "pyvista",
+        "vtk",
+        "matplotlib",
+        "natsort",
+        "scikit-learn",
+        "tensorboard"
+      ],
+      "not_required_in_current_path": [
+        "DGL",
+        "Apex"
+      ],
+      "note": "torch_scatter forward genuinely invoked, not merely optional import; local matching wheel/runtime unverified",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/requirements.txt",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/physicsnemo/models/vfgn/graph_network_modules.py#L331-L364"
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "crash-bumper-geotransolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot",
+      "target_fields": [
+        "position_xyz",
+        "effective_plastic_strain",
+        "stress_vm"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 51,
+      "out_dim": 250,
+      "local_dim": 3,
+      "global_dim": 3
+    },
+    {
+      "id": "crash-bumper-geotransolver-time-conditional",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoTransolver",
+      "strategy": "independent-time-conditional",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "implementation_class": "rollout.GeoTransolverTimeConditional",
+      "target_fields": [
+        "position_xyz",
+        "effective_plastic_strain",
+        "stress_vm"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 51,
+      "out_dim": 5,
+      "local_dim": 4,
+      "global_dim": 3,
+      "sample_type": "one_time_step"
+    },
+    {
+      "id": "crash-biw-geotransolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_biw",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot",
+      "target_fields": [
+        "position_xyz"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 26,
+      "out_dim": 75,
+      "local_dim": 4,
+      "global_dim": null
+    },
+    {
+      "id": "crash-bumper-geoflare-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoFLARE (GeoTransolver GALE_FA)",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot",
+      "target_fields": [
+        "position_xyz",
+        "effective_plastic_strain",
+        "stress_vm"
+      ],
+      "dependency_definition": "geoflare",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 51,
+      "out_dim": 250,
+      "local_dim": 3,
+      "global_dim": 3,
+      "attention_type": "GALE_FA"
+    },
+    {
+      "id": "crash-biw-geoflare-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_biw",
+      "model": "GeoFLARE (GeoTransolver GALE_FA)",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot",
+      "target_fields": [
+        "position_xyz"
+      ],
+      "dependency_definition": "geoflare",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 26,
+      "out_dim": 75,
+      "local_dim": 4,
+      "global_dim": null,
+      "attention_type": "GALE_FA"
+    },
+    {
+      "id": "drop-phone-geotransolver-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "only_premade_drop_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot",
+      "target_fields": [
+        "position_xyz",
+        "Von_Mises"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "time_steps": 100,
+      "out_dim": 396,
+      "local_dim": 3,
+      "global_dim": 8,
+      "direct_strain": false
+    },
+    {
+      "id": "plate-hybrid-meshgraphnet",
+      "example": "deforming_plate",
+      "dataset_definition": "plate",
+      "model": "HybridMeshGraphNet",
+      "strategy": "one-step-supervised; autoregressive-position-rollout",
+      "official_support": "premade_recipe",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/conf/config.yaml",
+      "implementation_class": "physicsnemo.models.meshgraphnet.HybridMeshGraphNet",
+      "target_fields": [
+        "world_pos_increment_xyz",
+        "stress_scalar"
+      ],
+      "dependency_definition": "plate",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "node_input_dim": 3,
+      "mesh_edge_dim": 8,
+      "world_edge_dim": 8,
+      "output_dim": 4,
+      "default_processor_layers": 15,
+      "default_hidden": 128,
+      "inference_limitation": "stock inference discards stress output; stock disp_mag is norm(world_pos) rather than norm(world_pos-reference); moving boundary uses GT prescribed positions"
+    },
+    {
+      "id": "sinter-vfgn",
+      "example": "sintering_physics",
+      "dataset_definition": "sinter",
+      "model": "VFGNLearnedSimulator",
+      "strategy": "acceleration-supervision; coordinate-integration-rollout",
+      "official_support": "premade_recipe_data_not_located",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/conf/config.yaml",
+      "implementation_class": "physicsnemo.models.vfgn.graph_network_modules.VFGNLearnedSimulator",
+      "target_fields": [
+        "normalized_acceleration_xyz"
+      ],
+      "dependency_definition": "sinter",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "inference_output": [
+        "position_xyz"
+      ],
+      "blocking_observations": [
+        "no verified public training sample/checkpoint URL",
+        "dataset target3D vs model expected2D validation mismatch from source",
+        "ExponentialLR verbose=True unsupported in installed Torch2.13 signature",
+        "default general.mode=rollout rejected by train.py dispatcher; set mode=train"
+      ]
+    },
+    {
+      "id": "crash-transolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "Transolver",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+      "implementation_class": "rollout.TransolverOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "crash_point",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py"
+    },
+    {
+      "id": "crash-mgn-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "MeshGraphNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+      "implementation_class": "rollout.MeshGraphNetOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "mgn",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py"
+    },
+    {
+      "id": "crash-figconvunet-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "FIGConvUNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+      "implementation_class": "rollout.FIGConvUNetOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "figconv",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py"
+    },
+    {
+      "id": "crash-geotransolver-ar-rollout",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "GeoTransolver",
+      "strategy": "autoregressive-rollout-training",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "implementation_class": "rollout.GeoTransolverAutoregressiveRolloutTraining",
+      "target_fields": [
+        "position_xyz_only"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": false,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+      "restrictions": "acceleration3 integration to position3; no direct stress/strain head; default scalar initial_vel/dt must not be reused without real units/direction verification"
+    },
+    {
+      "id": "crash-geotransolver-one-step",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "GeoTransolver",
+      "strategy": "teacher-forced-training/autoregressive-inference",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "implementation_class": "rollout.GeoTransolverOneStepRollout",
+      "target_fields": [
+        "position_xyz_only"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": false,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+      "restrictions": "acceleration3 integration to position3; no direct stress/strain head; default scalar initial_vel/dt must not be reused without real units/direction verification"
+    },
+    {
+      "id": "drop_test-transolver-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "Transolver",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/transolver_one_shot.yaml",
+      "implementation_class": "rollout.TransolverOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "crash_point",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py"
+    },
+    {
+      "id": "drop_test-mgn-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "MeshGraphNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/mgn_one_shot.yaml",
+      "implementation_class": "rollout.MeshGraphNetOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "mgn",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py"
+    },
+    {
+      "id": "drop_test-figconvunet-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "FIGConvUNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/figconvunet_one_shot.yaml",
+      "implementation_class": "rollout.FIGConvUNetOneShot",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "figconv",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py"
+    },
+    {
+      "id": "drop_test-geotransolver-ar-rollout",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "autoregressive-rollout-training",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "implementation_class": "rollout.GeoTransolverAutoregressiveRolloutTraining",
+      "target_fields": [
+        "position_xyz_only"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": false,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py",
+      "restrictions": "acceleration3 integration to position3; no direct stress/strain head; default scalar initial_vel/dt must not be reused without real units/direction verification"
+    },
+    {
+      "id": "drop_test-geotransolver-one-step",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "teacher-forced-training/autoregressive-inference",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "implementation_class": "rollout.GeoTransolverOneStepRollout",
+      "target_fields": [
+        "position_xyz_only"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": false,
+      "required_changes": "match input/output dimensions, sampling and graph datapipe as applicable; construct separate experiment config",
+      "wrapper_evidence": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py",
+      "restrictions": "acceleration3 integration to position3; no direct stress/strain head; default scalar initial_vel/dt must not be reused without real units/direction verification"
+    },
+    {
+      "id": "drop_test-geotransolver-time-conditional",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "independent-time-conditional",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "implementation_class": "rollout.GeoTransolverTimeConditional",
+      "target_fields": [
+        "position_xyz",
+        "configured_dynamic_targets"
+      ],
+      "dependency_definition": "geo",
+      "execution_status": "source_verified_only_by_this_auditor; actual runs recorded separately by execution workers",
+      "measured_resource_requirement": null,
+      "extra_target_channels_code_supported": true,
+      "required_changes": "one_time_step datapipe, functional_dim4, global_dim8, out_dim matching Fo; distinct experiment config"
+    },
+    {
+      "id": "tcad-elasticity-numerical",
+      "example": "tcad/fp_ddm",
+      "model": "Q1-FEM matrix-free BiCGSTAB + domain decomposition",
+      "strategy": "numerical-plane-stress-static-solve",
+      "official_support": "current_numerical_baseline; no elasticity FNO",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_elasticity.py",
+      "input_fields": [
+        "E",
+        "Poisson ratio",
+        "body force",
+        "Dirichlet displacement/mask"
+      ],
+      "output_fields": [
+        "displacement",
+        "derived_small_strain_tensor",
+        "derived_plane_stress_tensor",
+        "derived_von_Mises"
+      ],
+      "data_source": "internally generated manufactured bending solution",
+      "direct_nn_stress_or_strain": false,
+      "execution_status": "not executed by source auditor; may be used as structural label generation reference",
+      "evidence": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/README.md#L121-L141",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity.py#L121-L184"
+      ]
+    }
+  ],
+  "legacy_context_not_current_rows": [
+    {
+      "example": "bracket",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/bracket/bracket.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "output_fields": [
+        "u",
+        "v",
+        "w",
+        "six independent stress components"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    },
+    {
+      "example": "fuselage_panel",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/fuselage_panel/panel.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y",
+        "sigma_hoop"
+      ],
+      "output_fields": [
+        "u",
+        "v",
+        "sigma_xx",
+        "sigma_yy",
+        "sigma_xy"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    },
+    {
+      "example": "plane_displacement",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/plane_displacement/plane_displacement.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y"
+      ],
+      "output_fields": [
+        "u",
+        "v; stress derived through variational displacement gradients"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    }
+  ],
+  "counts": {
+    "premade_neural_rows": 8,
+    "additional_config_rows": 11,
+    "current_numerical_rows": 1,
+    "legacy_context_rows": 3,
+    "total_current_rows": 20
+  },
+  "critical_cautions": [
+    "Only bumper default directly includes equivalent plastic strain. Equivalent plastic strain is not total strain tensor.",
+    "Drop Von_Mises, plate scalar stress, and sinter coordinate targets must not be described as the same output.",
+    "AR and teacher-forcing Geo wrappers are position-only even if generic datapipe can load extra target fields.",
+    "Main crash VTP regex must be checked for integer time names; earlier compatibility fix preserved separately.",
+    "Model comparisons require identical split, physical units, output fields, support points, normalization and validation-based selection.",
+    "Source audit ran no training/FEM; actual execution matrices should link worker logs and metrics.",
+    "No prohibition on FEM exists in user scope; this subtask was source-only."
+  ],
+  "curation_caution": {
+    "old_recipe_links": "pinned README points to Curator examples/structural_mechanics/crash and drop_test; prior current-tree audit found examples/cae/crashsim and examples/cae/drop instead",
+    "status": "do not claim old ETL command is currently executable without matching Curator revision; actual conversion owned by execution workers"
+  }
+}

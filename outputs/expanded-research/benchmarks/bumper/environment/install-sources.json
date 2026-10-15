@@ -1,0 +1,36 @@
+{
+  "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl": {
+    "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.10.0%2Bcu126-cp313-cp313-win_amd64.whl",
+    "index_url": "https://download.pytorch.org/whl/cu126",
+    "published_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+    "hash_source": "Official PyTorch wheel-index anchor SHA256"
+  },
+  "torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl": {
+    "url": "https://download-r2.pytorch.org/whl/cu126/torchvision-0.25.0%2Bcu126-cp313-cp313-win_amd64.whl",
+    "index_url": "https://download.pytorch.org/whl/cu126",
+    "published_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+    "hash_source": "Official PyTorch wheel-index anchor SHA256"
+  },
+  "torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl": {
+    "url": "https://data.pyg.org/whl/torch-2.10.0%2Bcu126/torch_scatter-2.1.2%2Bpt210cu126-cp313-cp313-win_amd64.whl",
+    "index_url": "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+    "published_sha256": null,
+    "hash_source": "Official index does not publish a hash fragment; record downloaded-file SHA256 without independent published-hash verification"
+  },
+  "torch_geometric-2.8.1-py3-none-any.whl": {
+    "url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+    "index_url": "https://pypi.org/simple",
+    "metadata_url": "https://pypi.org/pypi/torch-geometric/json",
+    "published_sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+    "published_bytes": 1325471,
+    "hash_source": "Live official PyPI JSON file digests"
+  },
+  "xxhash-4.0.1-cp313-cp313-win_amd64.whl": {
+    "url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+    "index_url": "https://pypi.org/simple",
+    "metadata_url": "https://pypi.org/pypi/xxhash/json",
+    "published_sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+    "published_bytes": 36520,
+    "hash_source": "Live official PyPI JSON file digests"
+  }
+}

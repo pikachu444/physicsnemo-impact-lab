@@ -1,0 +1,121 @@
+{
+  "status": "proposed_not_executed",
+  "solver_runs_performed": 0,
+  "scope": "Only an eight-point proposal; parent must decide generation after initial fair validation learning curves. No present cache/split/label file is modified.",
+  "current_training_cases": 5,
+  "proposed_training_cases_after_increment": 13,
+  "fixed_validation_cases": 4,
+  "fixed_test_cases": 4,
+  "current_total_fem_conditions": 13,
+  "proposed_total_fem_conditions_after_increment": 21,
+  "frozen_holdout_design_sha256": "179f86766e39ce6ef5187309924eb7e6dd33f506d324c18826c903a4d8269410",
+  "parameter_bounds": {
+    "yield_UTS_scale": [
+      0.9,
+      1.1
+    ],
+    "velocity_scale": [
+      0.75,
+      1.25
+    ]
+  },
+  "parameter_bounds_scope": "Algorithm sensitivity assumptions; same fixed geometry and first10ms source interval, not material scatter/product tolerance.",
+  "generator": {
+    "method": "scipy.stats.qmc.Sobol",
+    "scramble": true,
+    "dimension": 2,
+    "seed": 20261016,
+    "power": 3,
+    "scipy_version": "1.18.0",
+    "script_sha256": "a1932b957fc7e82b3747718bc35527ebc25f0651290f4d5e1a34d86362ee3057"
+  },
+  "duplicate_check": {
+    "metric": "maximum absolute difference between parameter coordinates",
+    "tolerance": 1e-10,
+    "minimum_distance_to_existing13": 0.039908808469772517,
+    "minimum_pair_distance_among_new8": 0.0628183470107615
+  },
+  "execution_policy": "No FEM commands are issued by this script. Preserve existing val/test points. If authorized, run serial one-thread cases and rebuild a new immutable cache/version, with train-only normalization shared by every algorithm. Test must not select training N or settings.",
+  "runs": [
+    {
+      "case": "proposed_train_interior_01",
+      "split": "train",
+      "unit_square_point": [
+        0.09048997703939676,
+        0.5464258324354887
+      ],
+      "strength_scale": 0.9180979954078794,
+      "velocity_scale": 1.0232129162177444
+    },
+    {
+      "case": "proposed_train_interior_02",
+      "split": "train",
+      "unit_square_point": [
+        0.5991637147963047,
+        0.34476299677044153
+      ],
+      "strength_scale": 1.0198327429592609,
+      "velocity_scale": 0.9223814983852208
+    },
+    {
+      "case": "proposed_train_interior_03",
+      "split": "train",
+      "unit_square_point": [
+        0.9438162920996547,
+        0.8354151388630271
+      ],
+      "strength_scale": 1.088763258419931,
+      "velocity_scale": 1.1677075694315135
+    },
+    {
+      "case": "proposed_train_interior_04",
+      "split": "train",
+      "unit_square_point": [
+        0.4993497859686613,
+        0.02534814178943634
+      ],
+      "strength_scale": 0.9998699571937323,
+      "velocity_scale": 0.7626740708947182
+    },
+    {
+      "case": "proposed_train_interior_05",
+      "split": "train",
+      "unit_square_point": [
+        0.36659454740583897,
+        0.9207817418500781
+      ],
+      "strength_scale": 0.9733189094811678,
+      "velocity_scale": 1.210390870925039
+    },
+    {
+      "case": "proposed_train_interior_06",
+      "split": "train",
+      "unit_square_point": [
+        0.8264418309554458,
+        0.21912630274891853
+      ],
+      "strength_scale": 1.0652883661910892,
+      "velocity_scale": 0.8595631513744593
+    },
+    {
+      "case": "proposed_train_interior_07",
+      "split": "train",
+      "unit_square_point": [
+        0.7321555465459824,
+        0.7090920303016901
+      ],
+      "strength_scale": 1.0464311093091965,
+      "velocity_scale": 1.104546015150845
+    },
+    {
+      "case": "proposed_train_interior_08",
+      "split": "train",
+      "unit_square_point": [
+        0.20761258620768785,
+        0.39904769230633974
+      ],
+      "strength_scale": 0.9415225172415376,
+      "velocity_scale": 0.9495238461531699
+    }
+  ]
+}

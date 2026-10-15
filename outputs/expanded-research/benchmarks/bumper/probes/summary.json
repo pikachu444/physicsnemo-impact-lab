@@ -1,0 +1,92 @@
+{
+  "evidence_level": "forward_backward_optimizer_smoke_only",
+  "target": "Original FEM displacement XYZ,10times,full13675nodes",
+  "same_mesh": "13626shellpolygons/54596directededges/noisolatednodes",
+  "resource_note": "Three steps only;step1 is cold and step2 can retain initialization overhead;60epoch estimates are coarse and exclude validation,streaming data I/O and concurrent workloads.",
+  "models": [
+    {
+      "architecture": "transolver",
+      "parameters": 41286,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1415872512,
+      "cuda_peak_allocated_bytes": 120645120,
+      "cuda_peak_reserved_bytes": 132120576,
+      "estimated_60_epoch_training_seconds_excluding_validation": 741.5896319987951,
+      "step_seconds": [
+        1.2310147999996843,
+        0.1337945999985095,
+        0.08691660000113188
+      ]
+    },
+    {
+      "architecture": "flare",
+      "parameters": 36894,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1319731200,
+      "cuda_peak_allocated_bytes": 119411712,
+      "cuda_peak_reserved_bytes": 146800640,
+      "estimated_60_epoch_training_seconds_excluding_validation": 498.16804800590035,
+      "step_seconds": [
+        1.1002929000023869,
+        0.07453280000117957,
+        0.07373150000057649
+      ]
+    },
+    {
+      "architecture": "geotransolver",
+      "parameters": 43496,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1562255360,
+      "cuda_peak_allocated_bytes": 131365376,
+      "cuda_peak_reserved_bytes": 153092096,
+      "estimated_60_epoch_training_seconds_excluding_validation": 1005.3392160037765,
+      "step_seconds": [
+        1.0726574000000255,
+        0.16653840000071796,
+        0.132669700000406
+      ]
+    },
+    {
+      "architecture": "geoflare",
+      "parameters": 39104,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1455046656,
+      "cuda_peak_allocated_bytes": 153767936,
+      "cuda_peak_reserved_bytes": 174063616,
+      "estimated_60_epoch_training_seconds_excluding_validation": 1048.4732159989653,
+      "step_seconds": [
+        1.2057851999998093,
+        0.17403419999754988,
+        0.13801140000214218
+      ]
+    },
+    {
+      "architecture": "meshgraphnet",
+      "parameters": 80046,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1673248768,
+      "cuda_peak_allocated_bytes": 330505728,
+      "cuda_peak_reserved_bytes": 387973120,
+      "estimated_60_epoch_training_seconds_excluding_validation": 1137.464160004165,
+      "step_seconds": [
+        1.5296038999986195,
+        0.28163580000182264,
+        0.056895199999416946
+      ]
+    },
+    {
+      "architecture": "figconvunet",
+      "parameters": 586462,
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "peak_sampled_rss_bytes": 1814908928,
+      "cuda_peak_allocated_bytes": 338270720,
+      "cuda_peak_reserved_bytes": 396361728,
+      "estimated_60_epoch_training_seconds_excluding_validation": 1215.8865600032732,
+      "step_seconds": [
+        7.76423110000178,
+        0.18899600000077044,
+        0.17287500000020373
+      ]
+    }
+  ]
+}

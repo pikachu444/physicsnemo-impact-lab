@@ -1,0 +1,666 @@
+{
+  "created_at_utc": "2026-10-15T02:52:38.581941+00:00",
+  "python_executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "python_version": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "system_site_packages": true,
+  "sys_path": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml",
+    "C:\\Program Files\\Python313\\python313.zip",
+    "C:\\Program Files\\Python313\\DLLs",
+    "C:\\Program Files\\Python313\\Lib",
+    "C:\\Program Files\\Python313",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages",
+    "<LOCAL_ACCOUNT>\\AppData\\Roaming\\Python\\Python313\\site-packages",
+    "C:\\Program Files\\Python313\\Lib\\site-packages"
+  ],
+  "module_locations_without_import": {
+    "torch": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\__init__.py",
+    "torchvision": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torchvision\\__init__.py",
+    "torch_scatter": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch_scatter\\__init__.py",
+    "torch_geometric": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch_geometric\\__init__.py",
+    "physicsnemo": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\__init__.py",
+    "xxhash": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\xxhash\\__init__.py"
+  },
+  "shared_torch_metadata": [
+    {
+      "metadata_directory": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\torch-2.13.0+cu126.dist-info",
+      "version": "2.13.0+cu126"
+    }
+  ],
+  "packages": [
+    {
+      "name": "torch",
+      "version": "2.10.0+cu126",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+      "own_site": true,
+      "requires_python": ">=3.10",
+      "active_dependencies": [
+        {
+          "requirement": "filelock",
+          "installed_version": "3.29.7",
+          "satisfied": true
+        },
+        {
+          "requirement": "typing-extensions>=4.10.0",
+          "installed_version": "4.16.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "sympy>=1.13.3",
+          "installed_version": "1.14.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "networkx>=2.5.1",
+          "installed_version": "3.6.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "jinja2",
+          "installed_version": "3.1.6",
+          "satisfied": true
+        },
+        {
+          "requirement": "fsspec>=0.8.5",
+          "installed_version": "2026.9.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "setuptools; python_version >= \"3.12\"",
+          "installed_version": "80.9.0",
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "name": "torchvision",
+      "version": "0.25.0+cu126",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+      "own_site": true,
+      "requires_python": ">=3.10",
+      "active_dependencies": [
+        {
+          "requirement": "numpy",
+          "installed_version": "2.5.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "torch (==2.10.0)",
+          "installed_version": "2.10.0+cu126",
+          "satisfied": true
+        },
+        {
+          "requirement": "pillow (!=8.3.*,>=5.3.0)",
+          "installed_version": "11.1.0",
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "name": "torch_scatter",
+      "version": "2.1.2+pt210cu126",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+      "own_site": true,
+      "requires_python": ">=3.8",
+      "active_dependencies": []
+    },
+    {
+      "name": "torch-geometric",
+      "version": "2.8.1",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+      "own_site": true,
+      "requires_python": ">=3.10",
+      "active_dependencies": [
+        {
+          "requirement": "aiohttp",
+          "installed_version": "3.14.5",
+          "satisfied": true
+        },
+        {
+          "requirement": "fsspec",
+          "installed_version": "2026.9.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "jinja2",
+          "installed_version": "3.1.6",
+          "satisfied": true
+        },
+        {
+          "requirement": "numpy",
+          "installed_version": "2.5.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "psutil>=5.8.0",
+          "installed_version": "7.2.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "pyparsing",
+          "installed_version": "3.2.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "requests",
+          "installed_version": "2.32.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "tqdm",
+          "installed_version": "4.67.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "xxhash",
+          "installed_version": "4.0.1",
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "name": "nvidia-physicsnemo",
+      "version": "2.2.2",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages",
+      "own_site": false,
+      "requires_python": "<3.15,>=3.11",
+      "active_dependencies": [
+        {
+          "requirement": "cftime>=1.6.5",
+          "installed_version": "1.6.6.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "einops>=0.8.1",
+          "installed_version": "0.8.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "fsspec>=2026.4.0",
+          "installed_version": "2026.9.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "gitpython>=3.1.49",
+          "installed_version": "3.1.54",
+          "satisfied": true
+        },
+        {
+          "requirement": "h5py>=3.15.1",
+          "installed_version": "3.16.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "hydra-core>=1.3.2",
+          "installed_version": "1.3.7",
+          "satisfied": true
+        },
+        {
+          "requirement": "importlib-metadata>=8.7.1",
+          "installed_version": "9.0.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "jaxtyping>=0.3.3",
+          "installed_version": "0.3.11",
+          "satisfied": true
+        },
+        {
+          "requirement": "numpy>=1.22.4",
+          "installed_version": "2.5.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "nvtx>=0.2.10",
+          "installed_version": "0.2.16",
+          "satisfied": true
+        },
+        {
+          "requirement": "omegaconf>=2.3.0",
+          "installed_version": "2.3.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "onnx>=1.14.0",
+          "installed_version": "1.23.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "packaging>=24.2",
+          "installed_version": "26.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "pandas>=2.2.0",
+          "installed_version": "2.2.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "psutil>=6.0.0",
+          "installed_version": "7.2.2",
+          "satisfied": true
+        },
+        {
+          "requirement": "requests>=2.32.2",
+          "installed_version": "2.32.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "s3fs>=2023.5.0",
+          "installed_version": "2026.9.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "tensordict[zarr]>=0.14.0",
+          "installed_version": "0.14.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "termcolor>=3.2.0",
+          "installed_version": "3.3.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "timm>=1.0.22",
+          "installed_version": "1.0.30",
+          "satisfied": true
+        },
+        {
+          "requirement": "torch>=2.10.0",
+          "installed_version": "2.10.0+cu126",
+          "satisfied": true
+        },
+        {
+          "requirement": "torchvision>=0.25.0a0",
+          "installed_version": "0.25.0+cu126",
+          "satisfied": true
+        },
+        {
+          "requirement": "tqdm>=4.60.0",
+          "installed_version": "4.67.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "treelib>=1.2.5",
+          "installed_version": "1.8.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "urllib3>=2.7.0",
+          "installed_version": "2.8.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "warp-lang>=1.14.0",
+          "installed_version": "1.18.0",
+          "satisfied": true
+        }
+      ]
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.1",
+      "site_packages": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages",
+      "own_site": true,
+      "requires_python": ">=3.9",
+      "active_dependencies": []
+    }
+  ],
+  "wheel_files": [
+    {
+      "filename": "torch_geometric-2.8.1-py3-none-any.whl",
+      "bytes": 1325471,
+      "sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/torch-geometric/json",
+      "published_sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0",
+      "published_bytes": 1325471,
+      "hash_source": "Live official PyPI JSON file digests",
+      "tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "filename": "torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 3953267,
+      "sha256": "060587be83a7815a274d608d3b9921bd63942b59d2055140b6f426ee9004fb27",
+      "official_expected_sha256": null,
+      "url": "https://data.pyg.org/whl/torch-2.10.0%2Bcu126/torch_scatter-2.1.2%2Bpt210cu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+      "published_sha256": null,
+      "hash_source": "Official index does not publish a hash fragment; record downloaded-file SHA256 without independent published-hash verification",
+      "tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 2589881709,
+      "sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "official_expected_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torch-2.10.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "91e21e7ad572bf0136e5b7f192714f120c8abde8e128f1a0759f158951643822",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+      "bytes": 8811635,
+      "sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "official_expected_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "url": "https://download-r2.pytorch.org/whl/cu126/torchvision-0.25.0%2Bcu126-cp313-cp313-win_amd64.whl",
+      "index_url": "https://download.pytorch.org/whl/cu126",
+      "published_sha256": "6f7994a27b7fe26f6b4828df20421af004986d01091b98ddbc9e763e384ce60a",
+      "hash_source": "Official PyTorch wheel-index anchor SHA256",
+      "tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    },
+    {
+      "filename": "xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "bytes": 36520,
+      "sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "official_expected_sha256": null,
+      "url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+      "index_url": "https://pypi.org/simple",
+      "metadata_url": "https://pypi.org/pypi/xxhash/json",
+      "published_sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375",
+      "published_bytes": 36520,
+      "hash_source": "Live official PyPI JSON file digests",
+      "tags": [
+        "cp313-cp313-win_amd64"
+      ]
+    }
+  ],
+  "pypi_release_metadata": [
+    {
+      "name": "torch-geometric",
+      "version": "2.8.1",
+      "metadata_url": "https://pypi.org/pypi/torch-geometric/json",
+      "checked_utc": "2026-10-15T02:47:42.8695238Z",
+      "requested_2_9_0_exists": false,
+      "files": [
+        {
+          "filename": "torch_geometric-2.8.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/7c/24/486ae77b41d129b6a5035dd9f028141ec8d520c210a0c3fb803434f18b5f/torch_geometric-2.8.1-py3-none-any.whl",
+          "bytes": 1325471,
+          "sha256": "b628de243c0893f3435b6eca9a7bbc07f3219293ed27c974b8929aaae42e65d0"
+        }
+      ]
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.1",
+      "metadata_url": "https://pypi.org/pypi/xxhash/json",
+      "checked_utc": "2026-10-15T02:47:43.6647063Z",
+      "requested_2_9_0_exists": false,
+      "files": [
+        {
+          "filename": "xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/ea/61/8a5aeb811de093bab3434e77eff0e9461624a1a56a6a93d315d080aab2aa/xxhash-4.0.1-cp313-cp313-win_amd64.whl",
+          "bytes": 36520,
+          "sha256": "97b94fb29abf21f5f0bde15f7dbdd3a4aa2dc59f37026adc7b4bee8563b84375"
+        }
+      ]
+    }
+  ],
+  "pyg_version_selection": "Requested 2.9.0 is absent from the live official PyPI releases response. Selected the latest released 2.8.1 wheel instead; no source checkout or unpublished package was installed.",
+  "commands": [
+    {
+      "step": "create_venv_completed_before_script",
+      "executable": "C:\\Program Files\\Python313\\python.exe",
+      "arguments": [
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv"
+      ],
+      "exit_code": 0,
+      "log": "install-venv.log"
+    },
+    {
+      "step": "download-pytorch",
+      "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+      "arguments": [
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "download",
+        "--no-deps",
+        "--only-binary=:all:",
+        "--dest",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+        "--index-url",
+        "https://download.pytorch.org/whl/cu126",
+        "torch==2.10.0+cu126",
+        "torchvision==0.25.0+cu126"
+      ],
+      "started_at_utc": "2026-10-15T02:49:28.012408Z",
+      "log": "install-download-pytorch.log",
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-15T02:49:41.6874538Z"
+    },
+    {
+      "step": "download-scatter",
+      "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+      "arguments": [
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "download",
+        "--no-deps",
+        "--only-binary=:all:",
+        "--dest",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+        "--no-index",
+        "--find-links",
+        "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+        "torch_scatter==2.1.2+pt210cu126"
+      ],
+      "started_at_utc": "2026-10-15T02:49:41.785718Z",
+      "log": "install-download-scatter.log",
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-15T02:49:45.1244806Z"
+    },
+    {
+      "step": "download-pyg",
+      "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+      "arguments": [
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "download",
+        "--no-deps",
+        "--only-binary=:all:",
+        "--dest",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+        "--index-url",
+        "https://pypi.org/simple",
+        "torch_geometric==2.8.1",
+        "xxhash==4.0.1"
+      ],
+      "started_at_utc": "2026-10-15T02:49:45.1454196Z",
+      "log": "install-download-pyg.log",
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-15T02:49:49.1580605Z"
+    },
+    {
+      "step": "packages",
+      "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+      "arguments": [
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--ignore-installed",
+        "--report",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\install-report.json",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels\\torch_geometric-2.8.1-py3-none-any.whl",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels\\torch_scatter-2.1.2+pt210cu126-cp313-cp313-win_amd64.whl",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels\\torch-2.10.0+cu126-cp313-cp313-win_amd64.whl",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels\\torchvision-0.25.0+cu126-cp313-cp313-win_amd64.whl",
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels\\xxhash-4.0.1-cp313-cp313-win_amd64.whl"
+      ],
+      "started_at_utc": "2026-10-15T02:49:57.0038405Z",
+      "log": "install-packages.log",
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-15T02:52:05.8859836Z"
+    },
+    {
+      "step": "dependency-check",
+      "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+      "arguments": [
+        "-B",
+        "-m",
+        "pip",
+        "--disable-pip-version-check",
+        "check"
+      ],
+      "started_at_utc": "2026-10-15T02:52:31.3963774Z",
+      "finished_at_utc": "2026-10-15T02:52:36.7321299Z",
+      "exit_code": 1,
+      "log": "install-check.log"
+    }
+  ],
+  "prior_attempt_command_records": {
+    "install-commands.failed-pyg29.json": [
+      {
+        "step": "create_venv_completed_before_script",
+        "executable": "C:\\Program Files\\Python313\\python.exe",
+        "arguments": [
+          "-m",
+          "venv",
+          "--system-site-packages",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv"
+        ],
+        "exit_code": 0,
+        "log": "install-venv.log"
+      },
+      {
+        "step": "download-pytorch",
+        "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "arguments": [
+          "-m",
+          "pip",
+          "--disable-pip-version-check",
+          "--no-cache-dir",
+          "download",
+          "--no-deps",
+          "--only-binary=:all:",
+          "--dest",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+          "--index-url",
+          "https://download.pytorch.org/whl/cu126",
+          "torch==2.10.0+cu126",
+          "torchvision==0.25.0+cu126"
+        ],
+        "started_at_utc": "2026-10-15T02:44:11.0387193Z",
+        "log": "install-download-pytorch.log",
+        "exit_code": 0,
+        "finished_at_utc": "2026-10-15T02:48:34.2575402Z"
+      },
+      {
+        "step": "download-scatter",
+        "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "arguments": [
+          "-m",
+          "pip",
+          "--disable-pip-version-check",
+          "--no-cache-dir",
+          "download",
+          "--no-deps",
+          "--only-binary=:all:",
+          "--dest",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+          "--no-index",
+          "--find-links",
+          "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+          "torch_scatter==2.1.2+pt210cu126"
+        ],
+        "started_at_utc": "2026-10-15T02:48:34.3555678Z",
+        "log": "install-download-scatter.log",
+        "exit_code": 0,
+        "finished_at_utc": "2026-10-15T02:48:38.4081220Z"
+      },
+      {
+        "step": "download-pyg",
+        "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "arguments": [
+          "-m",
+          "pip",
+          "--disable-pip-version-check",
+          "--no-cache-dir",
+          "download",
+          "--no-deps",
+          "--only-binary=:all:",
+          "--dest",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+          "--index-url",
+          "https://pypi.org/simple",
+          "torch_geometric==2.9.0",
+          "xxhash"
+        ],
+        "started_at_utc": "2026-10-15T02:48:38.4328310Z",
+        "log": "install-download-pyg.log",
+        "exit_code": 1,
+        "finished_at_utc": "2026-10-15T02:48:40.5547829Z"
+      }
+    ],
+    "install-commands.failed-sandbox-dns.json": [
+      {
+        "step": "create_venv_completed_before_script",
+        "executable": "C:\\Program Files\\Python313\\python.exe",
+        "arguments": [
+          "-m",
+          "venv",
+          "--system-site-packages",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv"
+        ],
+        "exit_code": 0,
+        "log": "install-venv.log"
+      },
+      {
+        "step": "download-pytorch",
+        "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "arguments": [
+          "-m",
+          "pip",
+          "--disable-pip-version-check",
+          "--no-cache-dir",
+          "download",
+          "--no-deps",
+          "--only-binary=:all:",
+          "--dest",
+          "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+          "--index-url",
+          "https://download.pytorch.org/whl/cu126",
+          "torch==2.10.0+cu126",
+          "torchvision==0.25.0+cu126"
+        ],
+        "started_at_utc": "2026-10-15T02:43:17.4901478Z",
+        "log": "install-download-pytorch.log",
+        "exit_code": 1,
+        "finished_at_utc": "2026-10-15T02:43:27.8788781Z"
+      }
+    ]
+  },
+  "dependency_findings": [],
+  "framework_import_performed": false,
+  "gpu_execution_performed": false,
+  "shared_environment_modified": false,
+  "validation_limit": "Metadata, wheel hashes, package paths and dependency checks only. Model imports, CUDA/extension loading and model execution belong to the exclusive execution worker."
+}

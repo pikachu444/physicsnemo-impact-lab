@@ -1,0 +1,13 @@
+{
+  "driver_sha256": "69a04209926754f076888bb077b4aa6c18aed10a98c376de9f3bfc04afc6dcde",
+  "syntax": "passed; no program imports executed",
+  "metric_perfect_and_zero_baseline": "passed",
+  "independent_train_only_normalization": "passed",
+  "equal_trajectory_free_fraction": 0.6600043822045114,
+  "noise_0p003_increment_std": [
+    0.002437679552869454,
+    0.002440335865928635,
+    0.0024892644590943807
+  ],
+  "scope": "No Torch import or GPU execution"
+}

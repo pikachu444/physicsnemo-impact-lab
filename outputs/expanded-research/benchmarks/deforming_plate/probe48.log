@@ -1,0 +1,9 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+W1015 12:01:44.615000 37876 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+<LOCAL_WORKSPACE>\work\expanded-plate\train_plate.py:267: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  "loss": float(loss), "parameters": config["parameters"], "host_available_bytes": psutil.virtual_memory().available}
+{"measured_steps": 10, "warmup_steps": 2, "mean_step_seconds": 0.047439390000363346, "allocated_peak_bytes": 173526016, "rss_sampled_peak_bytes": 1596301312, "loss": 0.6615031361579895, "parameters": 119284, "host_available_bytes": 647147520}

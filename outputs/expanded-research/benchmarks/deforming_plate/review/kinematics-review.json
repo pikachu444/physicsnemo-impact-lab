@@ -1,0 +1,165 @@
+{
+  "plate_data_sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+  "kinematic_checks": {
+    "arbitrary_affine": {
+      "max_abs_error": 6.318092354851146e-09,
+      "reference_volume": 0.5099999999999999
+    },
+    "superposed_rigid_rotation": {
+      "max_abs_error": 6.318092354851146e-09,
+      "reference_volume": 0.5099999999999999
+    },
+    "consistent_node_permutation": {
+      "max_abs_error": 6.318092354851146e-09
+    },
+    "degenerate_reference_refused": true,
+    "worker_self_check": "passed"
+  },
+  "actual_data_geometry_checks": [
+    {
+      "file": "test_0000.npz",
+      "nodes": 1305,
+      "tetrahedra": 4018,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 18.996149406162807,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 6.661338147750939e-16,
+      "plate_tetrahedra_excluding_type1": 2679,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9992830175257197
+    },
+    {
+      "file": "test_0001.npz",
+      "nodes": 1341,
+      "tetrahedra": 4193,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 8.89928974497723,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 4.440892098500626e-16,
+      "plate_tetrahedra_excluding_type1": 2490,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9892064405237657
+    },
+    {
+      "file": "train_0000.npz",
+      "nodes": 840,
+      "tetrahedra": 2564,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 9.157029623780424,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 6.661338147750939e-16,
+      "plate_tetrahedra_excluding_type1": 1457,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.995504834844727
+    },
+    {
+      "file": "train_0001.npz",
+      "nodes": 1001,
+      "tetrahedra": 3017,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 8.871661699068433,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 5.551115123125783e-16,
+      "plate_tetrahedra_excluding_type1": 1936,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9952186403973335
+    },
+    {
+      "file": "train_0002.npz",
+      "nodes": 1011,
+      "tetrahedra": 3351,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 8.357237619519722,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 4.440892098500626e-16,
+      "plate_tetrahedra_excluding_type1": 2166,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9997354400018089
+    },
+    {
+      "file": "train_0003.npz",
+      "nodes": 999,
+      "tetrahedra": 3117,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 10.218898665037637,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 4.440892098500626e-16,
+      "plate_tetrahedra_excluding_type1": 2213,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9983713686336425
+    },
+    {
+      "file": "train_0004.npz",
+      "nodes": 1151,
+      "tetrahedra": 3788,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 12.777377357474846,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 4.81554959414778e-16,
+      "plate_tetrahedra_excluding_type1": 2614,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9958895634812169
+    },
+    {
+      "file": "train_0005.npz",
+      "nodes": 1142,
+      "tetrahedra": 3340,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 10.421077668511456,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 4.46656725531868e-16,
+      "plate_tetrahedra_excluding_type1": 2655,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9999999999202409
+    },
+    {
+      "file": "train_0006.npz",
+      "nodes": 1431,
+      "tetrahedra": 4122,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 20.844938726744083,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 9.987695823924884e-16,
+      "plate_tetrahedra_excluding_type1": 3047,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9969283185675072
+    },
+    {
+      "file": "train_0007.npz",
+      "nodes": 900,
+      "tetrahedra": 2693,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 8.61346226602493,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 6.661338147750939e-16,
+      "plate_tetrahedra_excluding_type1": 1809,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9924138263296186
+    },
+    {
+      "file": "valid_0000.npz",
+      "nodes": 1645,
+      "tetrahedra": 5721,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 13.13264072578409,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 5.551115123125783e-16,
+      "plate_tetrahedra_excluding_type1": 2259,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9986832653015655
+    },
+    {
+      "file": "valid_0001.npz",
+      "nodes": 1382,
+      "tetrahedra": 4128,
+      "all_reference_determinants_positive": true,
+      "max_reference_condition": 18.59914942243113,
+      "initial_world_equals_mesh": true,
+      "initial_strain_abs_max": 6.661338147750939e-16,
+      "plate_tetrahedra_excluding_type1": 3210,
+      "final_inverted_plate_tetrahedra": 0,
+      "final_plate_detF_min": 0.9993827696055542
+    }
+  ],
+  "scope": "No Torch import, GPU, training, or claim of original COMSOL strain-label validation."
+}

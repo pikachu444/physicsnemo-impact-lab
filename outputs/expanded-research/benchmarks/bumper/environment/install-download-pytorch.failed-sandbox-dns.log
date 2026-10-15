@@ -1,0 +1,8 @@
+Looking in indexes: https://download.pytorch.org/whl/cu126
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000203040423C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /whl/cu126/torch/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000020304068050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /whl/cu126/torch/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000203040682D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /whl/cu126/torch/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000020304068550>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /whl/cu126/torch/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000203040687D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /whl/cu126/torch/
+ERROR: Could not find a version that satisfies the requirement torch==2.10.0+cu126 (from versions: none)
+ERROR: No matching distribution found for torch==2.10.0+cu126

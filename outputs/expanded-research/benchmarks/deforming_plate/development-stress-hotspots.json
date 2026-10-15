@@ -1,0 +1,46 @@
+[
+  {
+    "run": "pilot8",
+    "development_trajectory": "test_0000",
+    "source_loading_step": 360,
+    "array_node_index_not_solver_id": 911,
+    "FEM_von_mises_at_peak": 81267.0859375,
+    "AI_von_mises_at_same_point_and_step": 24456.220703125,
+    "same_point_relative_error": 0.6990636587142944,
+    "units": "Unconfirmed dataset stress units",
+    "predicted_maximum_over_development_trajectory": 57826.46875
+  },
+  {
+    "run": "pilot8",
+    "development_trajectory": "test_0001",
+    "source_loading_step": 360,
+    "array_node_index_not_solver_id": 712,
+    "FEM_von_mises_at_peak": 494882.46875,
+    "AI_von_mises_at_same_point_and_step": 27162.755859375,
+    "same_point_relative_error": 0.9451127052307129,
+    "units": "Unconfirmed dataset stress units",
+    "predicted_maximum_over_development_trajectory": 49645.5390625
+  },
+  {
+    "run": "noise0_pilot8",
+    "development_trajectory": "test_0000",
+    "source_loading_step": 360,
+    "array_node_index_not_solver_id": 911,
+    "FEM_von_mises_at_peak": 81267.0859375,
+    "AI_von_mises_at_same_point_and_step": 30921.072265625,
+    "same_point_relative_error": 0.6195129752159119,
+    "units": "Unconfirmed dataset stress units",
+    "predicted_maximum_over_development_trajectory": 51295.33203125
+  },
+  {
+    "run": "noise0_pilot8",
+    "development_trajectory": "test_0001",
+    "source_loading_step": 360,
+    "array_node_index_not_solver_id": 712,
+    "FEM_von_mises_at_peak": 494882.46875,
+    "AI_von_mises_at_same_point_and_step": 31294.064453125,
+    "same_point_relative_error": 0.936764657497406,
+    "units": "Unconfirmed dataset stress units",
+    "predicted_maximum_over_development_trajectory": 46016.6484375
+  }
+]

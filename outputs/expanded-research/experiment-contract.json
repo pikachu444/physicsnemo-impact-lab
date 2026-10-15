@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "scope": "Structural mechanics only: impact, drop, deformation, and elastic/plastic structural response. No fluid benchmarks.",
+  "official_source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "official_inventory": "source-matrix/official-execution-matrix.json",
+  "requested_completion": {
+    "algorithms": "Attempt every applicable official structural example/model/strategy combination in the finite source inventory, recording genuine runtime or data blockers separately.",
+    "missing_truth": "Generate and execute an identified OpenCourant structural case when required reference data are unavailable. A newly generated case is not relabeled as the original unavailable benchmark.",
+    "quantities": ["displacement", "stress", "strain"],
+    "strain_definitions": "Total strain, equivalent plastic strain, and kinematics-derived Green-Lagrange strain must be separate named quantities. A derived quantity is never described as an original solver-exported label."
+  },
+  "truth_contract": {
+    "provenance": ["original input and solver revision", "input and result SHA256", "unit system", "nominal and actual saved time", "element/node/part correspondence"],
+    "shell_fields": "Record local/global basis, integration location, tensor and engineering shear conventions, invariant calculation, and exact cell-to-node reduction. No averaging local tensor components across incompatible bases.",
+    "zero_fields": "A present all-zero plastic-strain field is not evidence of learning plasticity. Record nonzero support and interpret according to material response.",
+    "projection": "Retain the original solver field and the deterministic supervised projection contract. Report projection and numerical-rerun differences separately from model error."
+  },
+  "learning_contract": {
+    "split": "Split independent simulations, not adjacent frames. Use the same split within a comparable example.",
+    "bumper_split": "Existing train112/internal_validation12/evaluation7 split is retained where source identities agree.",
+    "normalization": "Fit training-only statistics. Treat displacement xyz as one vector field: separate component means and one common scale sqrt((variance_x + variance_y + variance_z) / 3). Fit each other scalar field's own training standard deviation. Final comparable neural, RBF, and POD models use the same statistics and channel weights. Do not whiten a numerically zero displacement axis or reuse a 1 mm scale floor for stress/strain. Earlier displacement-only development baselines retain their own normalization and are not a final multi-field ranking.",
+    "selection": "Use internal validation for checkpoints, POD rank, and regression hyperparameters. Evaluation labels are for reporting only.",
+    "coverage": "Record geometry, material, boundary, contact, and loading coverage. Parameter interpolation is distinct from new-topology or product generalization.",
+    "compute": "Determine experiment scale from measured memory/throughput and internal-validation learning curves. Initial coupon N=13 and phone N=9 are bounded starting datasets, not claims that those data counts suffice. A finite training cap alone does not prove convergence.",
+    "reuse": "Reload a saved predictor in a fresh instance and check inference, geometry/node order, and serialization provenance."
+  },
+  "reporting_contract": {
+    "per_field": ["physical-unit component RMSE", "displacement/field relative L2 with explicit denominator", "vector or scalar P95 and maximum error", "case peak and hotspot error where meaningful", "nonfinite and physically invalid output counts"],
+    "zero_denominator": "When reference field norm is zero, report absolute error and label relative error undefined rather than manufacturing a percentage.",
+    "support": "Direct rankings require identical evaluation cases, nodes/elements, times, field definitions, and units.",
+    "timing": "Separate FEM/data generation, preprocessing, training, warm forward, and complete inference. Record competing local workloads and sampled versus true peak memory.",
+    "evidence_levels": ["source verified", "installed", "forward/backward smoke", "trained", "held-out evaluated", "independently recalculated", "validated against physical experiment"],
+    "failure": "Preserve the exact attempted configuration and concrete error. Do not count a shim or another algorithm under the requested model's name."
+  },
+  "resource_contract": {
+    "actual_local_gpu": "RTX3060 Laptop 6GiB",
+    "actual_host_ram_bytes": 16841400320,
+    "observed_available_ram_bytes_at_start": 614490112,
+    "observed_free_disk_bytes_at_start": 85155950592,
+    "gpu_coordination": "One worker owns GPU/framework-heavy execution at a time, assigned by root.",
+    "memory": "Prefer streaming and memory-mapped caches. Preserve unrelated applications and the established working runtime.",
+    "cost": "No additional paid resources, account purchases, or subscriptions without user agreement."
+  },
+  "preservation": "Record source/configuration, versions, commands, failures, logs, elapsed time, memory, checkpoints, and predictions. Public packaging excludes original datasets, third-party executables, credentials, and raw data-derived prediction archives where redistribution is unverified."
+}

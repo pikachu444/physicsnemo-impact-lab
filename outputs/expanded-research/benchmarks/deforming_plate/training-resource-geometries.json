@@ -1,0 +1,86 @@
+{
+  "scope": "Training data only, six sampled loading states per trajectory, no fresh test access",
+  "top10": [
+    {
+      "trajectory": "train_0011",
+      "frame": 319,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45834,
+      "total_edges": 60298
+    },
+    {
+      "trajectory": "train_0011",
+      "frame": 239,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45600,
+      "total_edges": 60064
+    },
+    {
+      "trajectory": "train_0011",
+      "frame": 159,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45380,
+      "total_edges": 59844
+    },
+    {
+      "trajectory": "train_0011",
+      "frame": 398,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45378,
+      "total_edges": 59842
+    },
+    {
+      "trajectory": "train_0011",
+      "frame": 79,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45326,
+      "total_edges": 59790
+    },
+    {
+      "trajectory": "train_0011",
+      "frame": 0,
+      "nodes": 1488,
+      "mesh_edges": 14464,
+      "world_edges": 45284,
+      "total_edges": 59748
+    },
+    {
+      "trajectory": "train_0023",
+      "frame": 319,
+      "nodes": 1398,
+      "mesh_edges": 14420,
+      "world_edges": 39532,
+      "total_edges": 53952
+    },
+    {
+      "trajectory": "train_0023",
+      "frame": 239,
+      "nodes": 1398,
+      "mesh_edges": 14420,
+      "world_edges": 39458,
+      "total_edges": 53878
+    },
+    {
+      "trajectory": "train_0023",
+      "frame": 159,
+      "nodes": 1398,
+      "mesh_edges": 14420,
+      "world_edges": 39374,
+      "total_edges": 53794
+    },
+    {
+      "trajectory": "train_0023",
+      "frame": 79,
+      "nodes": 1398,
+      "mesh_edges": 14420,
+      "world_edges": 39342,
+      "total_edges": 53762
+    }
+  ],
+  "samples": 192
+}

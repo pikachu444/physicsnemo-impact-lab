@@ -1,0 +1,99 @@
+{
+  "meta.json": {
+    "url": "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/meta.json",
+    "status": 200,
+    "headers": {
+      "X-GUploader-UploadID": "AP6rU81_cvJulQFHiXwknxJAQnSUrm6bzTgc9KtQ7E4FJvY98p-mxnbhRcHajx07oLRGDBsC",
+      "x-goog-generation": "1622065139913840",
+      "x-goog-metageneration": "1",
+      "x-goog-stored-content-encoding": "identity",
+      "x-goog-stored-content-length": "878",
+      "x-goog-hash": "crc32c=3yHKiQ==",
+      "x-goog-storage-class": "STANDARD",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "878",
+      "Server": "UploadServer",
+      "Date": "Thu, 15 Oct 2026 02:37:15 GMT",
+      "Expires": "Thu, 15 Oct 2026 03:37:15 GMT",
+      "Cache-Control": "public, max-age=3600",
+      "Last-Modified": "Wed, 26 May 2021 21:38:59 GMT",
+      "ETag": "\"8fbdc49ab414ff13f39694a3e1d104dc\"",
+      "Content-Type": "application/octet-stream",
+      "Age": "0",
+      "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "Connection": "close"
+    }
+  },
+  "train.tfrecord": {
+    "url": "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/train.tfrecord",
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "X-GUploader-UploadID": "AP6rU83GET9vtGF5DDg8WaInIN-SbUeweUu3u-lqkQGbBysdl2VTz8ySCReWC8M3VzMrAtaX",
+      "Expires": "Thu, 15 Oct 2026 03:37:15 GMT",
+      "Date": "Thu, 15 Oct 2026 02:37:15 GMT",
+      "Cache-Control": "public, max-age=3600",
+      "Last-Modified": "Wed, 26 May 2021 22:04:00 GMT",
+      "ETag": "\"88a2ad464ca1e9b40c8b0efe9ab6f9bf\"",
+      "x-goog-generation": "1622066639889942",
+      "x-goog-metageneration": "1",
+      "x-goog-stored-content-encoding": "identity",
+      "x-goog-stored-content-length": "9906860823",
+      "x-goog-hash": "crc32c=QhWxfQ==",
+      "x-goog-storage-class": "STANDARD",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "9906860823",
+      "Server": "UploadServer",
+      "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "Connection": "close"
+    }
+  },
+  "valid.tfrecord": {
+    "url": "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/valid.tfrecord",
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "X-GUploader-UploadID": "AP6rU82hzwaQkzhKwj98sObmhzOrmiSiQ_yWOnF2XNaQywynIe3Qz7Kox3fgc0Ha2ydZy9rFrzQbtJ4",
+      "Expires": "Thu, 15 Oct 2026 03:37:15 GMT",
+      "Date": "Thu, 15 Oct 2026 02:37:15 GMT",
+      "Cache-Control": "public, max-age=3600",
+      "Last-Modified": "Wed, 26 May 2021 21:41:03 GMT",
+      "ETag": "\"d5114a1d813c211cd19dcdd89be9dbdc\"",
+      "x-goog-generation": "1622065263950040",
+      "x-goog-metageneration": "1",
+      "x-goog-stored-content-encoding": "identity",
+      "x-goog-stored-content-length": "793258168",
+      "x-goog-hash": "crc32c=1w7tbA==",
+      "x-goog-storage-class": "STANDARD",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "793258168",
+      "Server": "UploadServer",
+      "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "Connection": "close"
+    }
+  },
+  "test.tfrecord": {
+    "url": "https://storage.googleapis.com/dm-meshgraphnets/deforming_plate/test.tfrecord",
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "X-GUploader-UploadID": "AP6rU81KbQBVEDRFD1AGftOrQzUL10DdcAtlP9S4E7DqFyXVfhr4vk6Yr0f_HT1A9QcdgmmKoc3jciU",
+      "Expires": "Thu, 15 Oct 2026 03:37:16 GMT",
+      "Date": "Thu, 15 Oct 2026 02:37:16 GMT",
+      "Cache-Control": "public, max-age=3600",
+      "Last-Modified": "Wed, 26 May 2021 21:41:11 GMT",
+      "ETag": "\"ae0fc2c0af9a785a5d21f3809f738190\"",
+      "x-goog-generation": "1622065270971019",
+      "x-goog-metageneration": "1",
+      "x-goog-stored-content-encoding": "identity",
+      "x-goog-stored-content-length": "805682868",
+      "x-goog-hash": "crc32c=jVgGFA==",
+      "x-goog-storage-class": "STANDARD",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "805682868",
+      "Server": "UploadServer",
+      "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "Connection": "close"
+    }
+  }
+}

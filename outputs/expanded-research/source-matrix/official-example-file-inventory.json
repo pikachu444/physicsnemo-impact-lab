@@ -1,0 +1,482 @@
+[
+  {
+    "path": "examples/additive_manufacturing/sintering_physics",
+    "size": null
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/README.md",
+    "size": 7681
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/conf",
+    "size": null
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/conf/config.yaml",
+    "size": 2229
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process",
+    "size": null
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/acceleration_profile.py",
+    "size": 3840
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/conf",
+    "size": null
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/conf/config.yaml",
+    "size": 1535
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/deform_analyze.py",
+    "size": 7867
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/out2pvtu.py",
+    "size": 12758
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/rawdata2tfrecord_large_ts.py",
+    "size": 28170
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/data_process/utils.py",
+    "size": 6535
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/graph_dataset.py",
+    "size": 9408
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/inference.py",
+    "size": 11634
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/reading_utils.py",
+    "size": 7382
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/render_rollout.py",
+    "size": 18102
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/requirements.txt",
+    "size": 182
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/train.py",
+    "size": 28875
+  },
+  {
+    "path": "examples/additive_manufacturing/sintering_physics/utils.py",
+    "size": 4556
+  },
+  {
+    "path": "examples/structural_mechanics/crash",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/README.md",
+    "size": 34858
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/README.md",
+    "size": 1207
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+    "size": 3465
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+    "size": 3549
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+    "size": 3376
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+    "size": 3456
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+    "size": 3394
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/datapipe",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/datapipe/graph.yaml",
+    "size": 1325
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/datapipe/point_cloud.yaml",
+    "size": 1271
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/inference",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/inference/default.yaml",
+    "size": 877
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+    "size": 1646
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+    "size": 1506
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/geotransolver_one_shot.yaml",
+    "size": 1098
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+    "size": 1490
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+    "size": 1115
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+    "size": 1133
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+    "size": 1192
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/reader",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/reader/vtp.yaml",
+    "size": 759
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/reader/zarr.yaml",
+    "size": 760
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/training",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/conf/training/default.yaml",
+    "size": 2905
+  },
+  {
+    "path": "examples/structural_mechanics/crash/datapipe.py",
+    "size": 30248
+  },
+  {
+    "path": "examples/structural_mechanics/crash/inference.py",
+    "size": 15385
+  },
+  {
+    "path": "examples/structural_mechanics/crash/post_processing",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/post_processing/compute_l2_error.py",
+    "size": 7538
+  },
+  {
+    "path": "examples/structural_mechanics/crash/post_processing/compute_probe_kinematics.py",
+    "size": 11310
+  },
+  {
+    "path": "examples/structural_mechanics/crash/post_processing/plot_cross_section.py",
+    "size": 8448
+  },
+  {
+    "path": "examples/structural_mechanics/crash/post_processing/run_post_processing.sh",
+    "size": 810
+  },
+  {
+    "path": "examples/structural_mechanics/crash/requirements.txt",
+    "size": 67
+  },
+  {
+    "path": "examples/structural_mechanics/crash/rollout.py",
+    "size": 16103
+  },
+  {
+    "path": "examples/structural_mechanics/crash/tests",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/crash/tests/test_rollout.py",
+    "size": 8011
+  },
+  {
+    "path": "examples/structural_mechanics/crash/tests/test_vtp_reader.py",
+    "size": 6898
+  },
+  {
+    "path": "examples/structural_mechanics/crash/tests/test_zarr_reader.py",
+    "size": 14350
+  },
+  {
+    "path": "examples/structural_mechanics/crash/train.py",
+    "size": 15670
+  },
+  {
+    "path": "examples/structural_mechanics/crash/utils.py",
+    "size": 3712
+  },
+  {
+    "path": "examples/structural_mechanics/crash/vtp_reader.py",
+    "size": 9730
+  },
+  {
+    "path": "examples/structural_mechanics/crash/zarr_reader.py",
+    "size": 7817
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/README.md",
+    "size": 5300
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/conf",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/conf/config.yaml",
+    "size": 1478
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/deforming_plate_dataset.py",
+    "size": 14876
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/helpers.py",
+    "size": 3655
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/inference.py",
+    "size": 11723
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/preprocessor.py",
+    "size": 2845
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/raw_dataset",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/raw_dataset/download_dataset.sh",
+    "size": 423
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/requirements.txt",
+    "size": 143
+  },
+  {
+    "path": "examples/structural_mechanics/deforming_plate/train.py",
+    "size": 10221
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/README.md",
+    "size": 16735
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/datapipe",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/datapipe/graph.yaml",
+    "size": 1195
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/datapipe/point_cloud.yaml",
+    "size": 1147
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml",
+    "size": 2111
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/inference",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/inference/default.yaml",
+    "size": 875
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/figconvunet_one_shot.yaml",
+    "size": 1646
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+    "size": 1506
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_one_shot.yaml",
+    "size": 1101
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+    "size": 1490
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+    "size": 1115
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/mgn_one_shot.yaml",
+    "size": 1133
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/model/transolver_one_shot.yaml",
+    "size": 1192
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/reader",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/reader/vtu.yaml",
+    "size": 778
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/training",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/conf/training/default.yaml",
+    "size": 1205
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/datapipe.py",
+    "size": 31913
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/inference.py",
+    "size": 13609
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/requirements.txt",
+    "size": 67
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/rollout.py",
+    "size": 16531
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/train.py",
+    "size": 18078
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/utils.py",
+    "size": 3712
+  },
+  {
+    "path": "examples/structural_mechanics/drop_test/vtu_reader.py",
+    "size": 10492
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/README.md",
+    "size": 10988
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/bumper_beam",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/bumper_beam/__init__.py",
+    "size": 716
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/bumper_beam/generate_dataset.py",
+    "size": 12644
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/bumper_beam/restructure_global_features.py",
+    "size": 3460
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/bumper_beam/run_simulations.py",
+    "size": 1778
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/common",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/common/__init__.py",
+    "size": 784
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/common/radioss_runner.py",
+    "size": 6811
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/common/rename_d3plot.py",
+    "size": 3120
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/common/summary_utils.py",
+    "size": 1776
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/drop_test",
+    "size": null
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/drop_test/__init__.py",
+    "size": 716
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/drop_test/generate_dataset.py",
+    "size": 10723
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/drop_test/restructure_global_features.py",
+    "size": 3322
+  },
+  {
+    "path": "examples/structural_mechanics/openradioss_dataset_gen/drop_test/run_simulations.py",
+    "size": 1770
+  }
+]

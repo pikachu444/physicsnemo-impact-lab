@@ -1,0 +1,234 @@
+{
+  "selected": {
+    "method": "pod_rbf",
+    "gamma": 0.1,
+    "alpha": 0.1,
+    "rank": 2,
+    "training_energy_retained": 0.9999374093306379,
+    "validation_normalized_mse": 0.00012163755428360206,
+    "validation_projection_lower_bound_mse": 1.3757382211203685e-05
+  },
+  "contract": {
+    "manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+    "coordinate_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+    "edge_sha256": "22614fb5afb7b03811d511c9ac8f067f0629f044bde005ad67157c0b074edd21",
+    "shape": [
+      919,
+      10,
+      7
+    ],
+    "fields": [
+      "displacement_x",
+      "displacement_y",
+      "displacement_z",
+      "von_mises_shell_scalar_projected",
+      "equivalent_plastic_strain_projected",
+      "total_strain_principal_major_inplane_projected",
+      "total_strain_principal_minor_inplane_projected"
+    ],
+    "units": [
+      "mm",
+      "mm",
+      "mm",
+      "MPa",
+      "1",
+      "1",
+      "1"
+    ],
+    "times": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "split": {
+      "train": [
+        "pilot_base",
+        "corner_s090_v075",
+        "corner_s090_v125",
+        "corner_s110_v075",
+        "corner_s110_v125"
+      ],
+      "validation": [
+        "holdout_validation_01",
+        "holdout_validation_02",
+        "holdout_validation_03",
+        "holdout_validation_04"
+      ],
+      "test": [
+        "holdout_test_01",
+        "holdout_test_02",
+        "holdout_test_03",
+        "holdout_test_04"
+      ]
+    },
+    "source_ready_sha256": null,
+    "label_source": null,
+    "static_feature_name": "thickness",
+    "case_inputs_and_labels": {
+      "pilot_base": {
+        "target_sha256": "da90cedd113bfd6bc30cfb3785c7d88c7ba0b547dbfb405bf8eceadd7ed4e0a5",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.0,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "corner_s090_v075": {
+        "target_sha256": "7a1783de94355d7a0afc40a21c521fc0821f7d6734e233acced2c7a2e6f292be",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9,
+          0.75
+        ],
+        "actual_time_values": null
+      },
+      "corner_s090_v125": {
+        "target_sha256": "fbca739f44ea28b1a93477d6a3914cc4c95d82d5c5441b6e2840e9eb2cdd0e76",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9,
+          1.25
+        ],
+        "actual_time_values": null
+      },
+      "corner_s110_v075": {
+        "target_sha256": "0c61e70c88f28e254d0e4f22a3a24962e35969e7a41f63a44997bc27e9e451d7",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.1,
+          0.75
+        ],
+        "actual_time_values": null
+      },
+      "corner_s110_v125": {
+        "target_sha256": "cefefe1d5affbfc1204a7ad329440dab5a6b9ee3d02eefe2a33a280e66004734",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.1,
+          1.25
+        ],
+        "actual_time_values": null
+      },
+      "holdout_validation_01": {
+        "target_sha256": "52e36be2762a0d376cb0a38f9db12e8af5fe5c17120dfaa776c3874d16c13a1e",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.0585278080776335,
+          1.2389714643359184
+        ],
+        "actual_time_values": null
+      },
+      "holdout_validation_02": {
+        "target_sha256": "ff2866d6bb5e5888eb03def4cf11bd976d83d8224ef5ee37f8a5861ea4370b72",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9158756857737899,
+          0.9078528033569455
+        ],
+        "actual_time_values": null
+      },
+      "holdout_validation_03": {
+        "target_sha256": "99524f211153094a69f145c0692c856b6bb47f5bcbbec646db9bedc8aba85704",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9990360135212542,
+          1.027771738357842
+        ],
+        "actual_time_values": null
+      },
+      "holdout_validation_04": {
+        "target_sha256": "e71b96de66d896cb3a59bc46b6d42bec7789a90722a9467586e1bebd01f93ef8",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.0253795577213167,
+          0.8216589093208313
+        ],
+        "actual_time_values": null
+      },
+      "holdout_test_01": {
+        "target_sha256": "38ca8ba247f8f89c1c5582ef5292b7614d37a4b9161a98c93e70c981abde7103",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.0030043395236135,
+          1.108270118944347
+        ],
+        "actual_time_values": null
+      },
+      "holdout_test_02": {
+        "target_sha256": "c42539ecbb9f5888b9267986712be2d3c07c00d9e1cec362584733906bf7e4fb",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9729498764500022,
+          0.8084053006023169
+        ],
+        "actual_time_values": null
+      },
+      "holdout_test_03": {
+        "target_sha256": "e21da1975e68f39f0b06903afa4dd0109a780702b5ed4c46a928fc36023585c7",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          0.9437196353450418,
+          1.1309605073183775
+        ],
+        "actual_time_values": null
+      },
+      "holdout_test_04": {
+        "target_sha256": "828c35a2ae5a0b2c549ba8eef031361c7a0a02b2fab3193d695f949d8f0b7a26",
+        "thickness_sha256": "c51ecf5fb217062a0106b733a5a2279351903d47a29cc5b9cad7a1f65258c694",
+        "coordinates_sha256": "254fca17311c6d4ced32ee3fed509a26ef514b809fe25a654cc72c52acee58be",
+        "globals": [
+          1.0822702137753368,
+          0.9560938952490687
+        ],
+        "actual_time_values": null
+      }
+    }
+  },
+  "cache_manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+  "snapshot_sha256": "38bd1bf4b1ebafa098f4de7cbfd80852a0c8862928a969367217d8e09b23386d",
+  "snapshots": "<LOCAL_WORKSPACE>\\work\\expanded-rom\\coupon13\\normalized_centered_training_snapshots.npy",
+  "mean_field": "<LOCAL_WORKSPACE>\\work\\expanded-rom\\coupon13\\training_mean_field.npy",
+  "mean_field_sha256": "f84286117b13e3a39166f7086ae00b6b4e0c26448281137ebf69551c5bbff846",
+  "field_std": [
+    1.772874610127677,
+    1.772874610127677,
+    1.772874610127677,
+    254.71853486797752,
+    0.025152260415945444,
+    0.026019210977930238,
+    0.012818308615789429
+  ],
+  "global_mean": [
+    1.0,
+    1.0
+  ],
+  "global_std": [
+    0.08944274042479759,
+    0.22360679774997896
+  ],
+  "active_global_indices": [
+    0,
+    1
+  ],
+  "note": "Dual POD basis reconstructs from local training snapshots; checkpoint depends on this local cache. Basis and source FEM-derived arrays are not cleared for redistribution."
+}

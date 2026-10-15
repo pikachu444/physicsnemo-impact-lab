@@ -1,0 +1,17 @@
+{
+  "run": "Run224",
+  "dataset_revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "solver_commit": "cb760c206e346eff12161a2268b134ef9d48a4ef",
+  "starter_sha256": "fad6cf13a8b214506b48b0d36dd30dc4b6d315c76a1aba4810e5ee5db3da0f62",
+  "original_engine_sha256": "d6bbdac8460c8731b5fba6ecc268f40d01ec963099c5a296db163f753836ec5a",
+  "prepared_engine_sha256": "89b1d29d23ad64c8a5ed63596bef0950fde32eac9430e56599a021164fd18862",
+  "starter_byte_identical": true,
+  "original_engine_prefix_byte_identical": true,
+  "only_added_output_cards": [
+    "/ANIM/SHELL/TENS/STRAIN/ALL",
+    "/ANIM/SHELL/VONM"
+  ],
+  "changed_material_contact_mesh_boundary_initial_or_time_step_cards": false,
+  "istrain_property_modified": false,
+  "output_semantics_caution": "Raw total-strain output is requested separately from EPSP. Successful nonzero strain output and paired kinematic/energy comparison will be verified after actual execution."
+}

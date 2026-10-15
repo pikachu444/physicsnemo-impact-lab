@@ -1,0 +1,70 @@
+{
+  "status": "ready",
+  "expected_cases": 131,
+  "writer_exit_code": 0,
+  "dataset_revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "extractor_sha256": "7da287cb5c546b48c7de16a85573f484005fa588209871ff48da401ddc689f37",
+  "direct_reader_sha256": "c2a0fa62a281c429fb374df8b35462c84746f3524a46f1649736916f2c5a08e8",
+  "selected_source_manifest_sha256": "e48f36214ca109cfe2962cd4cd79ca86d5423389337cd1afb391d16941b0d1b3",
+  "selected_source_bytes": 3799370861,
+  "nodal_target_shape_per_case": [
+    13675,
+    11,
+    7
+  ],
+  "channels": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "inplane_vm_upper",
+    "inplane_vm_lower",
+    "EPSP_upper",
+    "EPSP_lower"
+  ],
+  "units": [
+    "mm",
+    "mm",
+    "mm",
+    "GPa",
+    "GPa",
+    "dimensionless",
+    "dimensionless"
+  ],
+  "validation": {
+    "artifact_bytes": 2920925078,
+    "all_artifact_sha256_verified": true,
+    "all_arrays_finite": true,
+    "same_reference_node_ids_coordinates_across_cases": true,
+    "max_source_anim_vs_curated_displacement_component_rmse_mm": 9.000893584659774e-06,
+    "max_actual_vs_nominal_time_delta_ms": 0.00098419189453125,
+    "status_zero_shell_frame_entries": 23,
+    "target_min": [
+      -340.41937255859375,
+      -75.20915985107422,
+      -31.739730834960938,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "target_max": [
+      40.64455795288086,
+      74.84817504882812,
+      32.867271423339844,
+      0.8313056826591492,
+      0.8627554178237915,
+      0.5958960056304932,
+      0.5381134748458862
+    ],
+    "max_reported_extractor_working_set_bytes": 132673536,
+    "freeze_verification_seconds": 36.34179850000146
+  },
+  "frozen_utc": "2026-10-15T03:18:59.262858+00:00",
+  "reader_contract": "Treat cache immutable after READY. Verify READY hash, case manifest hashes and required NPY hashes before training. Preserve nominal-frame matching and per-case actual times.",
+  "split_counts": {
+    "train": 112,
+    "validation": 12,
+    "test": 7
+  },
+  "READY_sha256": "b0c6bdb62b677d123c5020f941e7498273909ae8b7c773f237c8477bef909694"
+}

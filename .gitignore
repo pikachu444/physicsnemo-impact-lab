@@ -10,3 +10,11 @@ third_party/
 *.vtp
 *.vtu
 *.d3plot
+# Expanded study: retain large arrays and weights locally; publish reproduction
+# code, provenance, numerical summaries, logs and figures.
+outputs/expanded-research/**/*.npz
+outputs/expanded-research/**/*.npy
+outputs/expanded-research/**/*.pt
+outputs/expanded-research/**/*.pth
+outputs/expanded-research/**/*.rad
+outputs/expanded-research/**/*.rst

@@ -1,0 +1,128 @@
+{
+  "scope": "Frozen heldout predictions only. No refitting, rank changes, test selection or response clipping.",
+  "case": "holdout_test_01",
+  "time": 10,
+  "time_unit": "ms",
+  "postprocess_source_sha256": "1eb53890ac95bff502766a8aa0b84b481437e3c5eb34e76cd53beadbb67dacdb",
+  "geometry": "Reference XY, nodal projected scalars. Hotspot/peak is a nodal projection result, not original element/integration-point maximum.",
+  "figure_fields": {
+    "von_mises_shell_scalar_projected": {
+      "shared_fem_prediction_color_range": [
+        0.0,
+        746.23291015625
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        1.29638671875
+      ],
+      "unit": "MPa"
+    },
+    "equivalent_plastic_strain_projected": {
+      "shared_fem_prediction_color_range": [
+        0.0,
+        0.08662723004817963
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.0009751990437507629
+      ],
+      "unit": "1"
+    },
+    "total_strain_principal_major_inplane_projected": {
+      "shared_fem_prediction_color_range": [
+        0.0,
+        0.0901784598827362
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.0009813085198402405
+      ],
+      "unit": "1"
+    },
+    "total_strain_principal_minor_inplane_projected": {
+      "shared_fem_prediction_color_range": [
+        -0.044201403856277466,
+        0.0
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.0004792734980583191
+      ],
+      "unit": "1"
+    }
+  },
+  "physical_diagnostics": {
+    "displacement_x": {
+      "unit": "mm",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": 0.0,
+      "maximum": 11.311164855957031,
+      "unclipped": true
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -0.2605535089969635,
+      "maximum": 0.260570764541626,
+      "unclipped": true
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -5.61640577795286e-14,
+      "maximum": 4.3747273056719826e-14,
+      "unclipped": true
+    },
+    "von_mises_shell_scalar_projected": {
+      "unit": "MPa",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": 0,
+      "negative_fraction_if_nonnegative_field": 0.0,
+      "minimum": 0.0,
+      "maximum": 786.5367431640625,
+      "unclipped": true
+    },
+    "equivalent_plastic_strain_projected": {
+      "unit": "1",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": 11,
+      "negative_fraction_if_nonnegative_field": 0.00029923830250272037,
+      "minimum": -6.4406129318683725e-09,
+      "maximum": 0.0884377658367157,
+      "unclipped": true
+    },
+    "total_strain_principal_major_inplane_projected": {
+      "unit": "1",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": 0.0,
+      "maximum": 0.09178836643695831,
+      "unclipped": true
+    },
+    "total_strain_principal_minor_inplane_projected": {
+      "unit": "1",
+      "total_values": 36760,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -0.04504324495792389,
+      "maximum": 0.0,
+      "unclipped": true
+    }
+  },
+  "horizontal_reference_axis": "X",
+  "vertical_reference_axis": "Y"
+}

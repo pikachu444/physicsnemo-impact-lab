@@ -1,0 +1,83 @@
+[
+  {
+    "step": "create_venv_completed_before_script",
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "arguments": [
+      "-m",
+      "venv",
+      "--system-site-packages",
+      "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv"
+    ],
+    "exit_code": 0,
+    "log": "install-venv.log"
+  },
+  {
+    "step": "download-pytorch",
+    "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "arguments": [
+      "-m",
+      "pip",
+      "--disable-pip-version-check",
+      "--no-cache-dir",
+      "download",
+      "--no-deps",
+      "--only-binary=:all:",
+      "--dest",
+      "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+      "--index-url",
+      "https://download.pytorch.org/whl/cu126",
+      "torch==2.10.0+cu126",
+      "torchvision==0.25.0+cu126"
+    ],
+    "started_at_utc": "2026-10-15T02:44:11.0387193Z",
+    "log": "install-download-pytorch.log",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-15T02:48:34.2575402Z"
+  },
+  {
+    "step": "download-scatter",
+    "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "arguments": [
+      "-m",
+      "pip",
+      "--disable-pip-version-check",
+      "--no-cache-dir",
+      "download",
+      "--no-deps",
+      "--only-binary=:all:",
+      "--dest",
+      "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+      "--no-index",
+      "--find-links",
+      "https://data.pyg.org/whl/torch-2.10.0+cu126.html",
+      "torch_scatter==2.1.2+pt210cu126"
+    ],
+    "started_at_utc": "2026-10-15T02:48:34.3555678Z",
+    "log": "install-download-scatter.log",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-15T02:48:38.4081220Z"
+  },
+  {
+    "step": "download-pyg",
+    "executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "arguments": [
+      "-m",
+      "pip",
+      "--disable-pip-version-check",
+      "--no-cache-dir",
+      "download",
+      "--no-deps",
+      "--only-binary=:all:",
+      "--dest",
+      "<LOCAL_WORKSPACE>\\work\\expanded-ml\\wheels",
+      "--index-url",
+      "https://pypi.org/simple",
+      "torch_geometric==2.9.0",
+      "xxhash"
+    ],
+    "started_at_utc": "2026-10-15T02:48:38.4328310Z",
+    "log": "install-download-pyg.log",
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-15T02:48:40.5547829Z"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "python": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "selected_versions": [
+    "torch==2.10.0+cu126",
+    "torchvision==0.25.0+cu126",
+    "torch_scatter==2.1.2+pt210cu126",
+    "torch-geometric==2.8.1",
+    "nvidia-physicsnemo==2.2.2",
+    "xxhash==4.0.1"
+  ],
+  "wheel_count": 5,
+  "dependency_findings": [],
+  "manifest": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\environment\\installation-manifest.json",
+  "framework_import_performed": false,
+  "gpu_execution_performed": false
+}

@@ -1,0 +1,127 @@
+{
+  "scope": "Initial train anchor envelope plus frozen disjoint interior validation/test FEM cases. These eight cases are not training data; test labels must not select N, hyperparameters or stopping epochs. Total future training DOE size remains undetermined.",
+  "parameter_bounds": {
+    "yield_UTS_scale": [
+      0.9,
+      1.1
+    ],
+    "velocity_scale": [
+      0.75,
+      1.25
+    ]
+  },
+  "parameter_bounds_scope": "Parent-authorized algorithm sensitivity assumptions, not measured material scatter or product tolerance.",
+  "generator": {
+    "method": "scipy.stats.qmc.Sobol",
+    "dimension": 2,
+    "scramble": true,
+    "seed": 20261015,
+    "power": 3,
+    "scipy_version": "1.18.0",
+    "script_sha256": "e8a262f8b7bded03874b56465b56ce5ab5b8a0dae88fa858e31b791c14feb202",
+    "allocation": "First four points validation, last four test; all are distinct interior FEM conditions. A future training sequence requires a different seed and duplicate checks."
+  },
+  "split": {
+    "train": [
+      "pilot_base",
+      "corner_s090_v075",
+      "corner_s090_v125",
+      "corner_s110_v075",
+      "corner_s110_v125"
+    ],
+    "validation": [
+      "holdout_validation_01",
+      "holdout_validation_02",
+      "holdout_validation_03",
+      "holdout_validation_04"
+    ],
+    "test": [
+      "holdout_test_01",
+      "holdout_test_02",
+      "holdout_test_03",
+      "holdout_test_04"
+    ]
+  },
+  "holdout_runs": [
+    {
+      "case": "holdout_validation_01",
+      "split": "validation",
+      "unit_square_point": [
+        0.7926390403881669,
+        0.9779429286718369
+      ],
+      "strength_scale": 1.0585278080776335,
+      "velocity_scale": 1.2389714643359184
+    },
+    {
+      "case": "holdout_validation_02",
+      "split": "validation",
+      "unit_square_point": [
+        0.07937842886894941,
+        0.31570560671389103
+      ],
+      "strength_scale": 0.9158756857737899,
+      "velocity_scale": 0.9078528033569455
+    },
+    {
+      "case": "holdout_validation_03",
+      "split": "validation",
+      "unit_square_point": [
+        0.4951800676062703,
+        0.5555434767156839
+      ],
+      "strength_scale": 0.9990360135212542,
+      "velocity_scale": 1.027771738357842
+    },
+    {
+      "case": "holdout_validation_04",
+      "split": "validation",
+      "unit_square_point": [
+        0.6268977886065841,
+        0.1433178186416626
+      ],
+      "strength_scale": 1.0253795577213167,
+      "velocity_scale": 0.8216589093208313
+    },
+    {
+      "case": "holdout_test_01",
+      "split": "test",
+      "unit_square_point": [
+        0.5150216976180673,
+        0.7165402378886938
+      ],
+      "strength_scale": 1.0030043395236135,
+      "velocity_scale": 1.108270118944347
+    },
+    {
+      "case": "holdout_test_02",
+      "split": "test",
+      "unit_square_point": [
+        0.36474938225001097,
+        0.11681060120463371
+      ],
+      "strength_scale": 0.9729498764500022,
+      "velocity_scale": 0.8084053006023169
+    },
+    {
+      "case": "holdout_test_03",
+      "split": "test",
+      "unit_square_point": [
+        0.21859817672520876,
+        0.761921014636755
+      ],
+      "strength_scale": 0.9437196353450418,
+      "velocity_scale": 1.1309605073183775
+    },
+    {
+      "case": "holdout_test_04",
+      "split": "test",
+      "unit_square_point": [
+        0.9113510688766837,
+        0.4121877904981375
+      ],
+      "strength_scale": 1.0822702137753368,
+      "velocity_scale": 0.9560938952490687
+    }
+  ]
+}

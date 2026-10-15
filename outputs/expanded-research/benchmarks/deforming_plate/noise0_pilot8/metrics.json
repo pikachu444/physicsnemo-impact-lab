@@ -1,0 +1,720 @@
+{
+  "status": "completed_actual_gpu_training_and_heldout_evaluation",
+  "checkpoint_sha256": "18f3504a288035df7639c2bc08e6f537e8e65fc569fc0c12fb67e10239a0f171",
+  "train_seconds": 141.61416619999727,
+  "best_epoch": 5,
+  "best_validation_mse": 5.224707175977528,
+  "cuda_peak_allocated_bytes": 256977920,
+  "sampled_peak_rss_bytes": 1670418432,
+  "results": [
+    {
+      "trajectory": "test_0000",
+      "nodes": 1305,
+      "free_nodes": 892,
+      "steps": 399,
+      "boundary": "type 1 actuator and type 3 clamp follow prescribed FEM boundary positions at each step",
+      "rollout_free_displacement": {
+        "relative_l2": 0.9852867948766925,
+        "component_rmse": 0.03697633421046804,
+        "max_abs_component_error": 0.20595767814666033,
+        "truth_l2": 38.77847210662895,
+        "values": 1067724
+      },
+      "rollout_free_stress": {
+        "relative_l2": 0.7761477126973478,
+        "component_rmse": 21604.264280324383,
+        "max_abs_component_error": 50346.013671875,
+        "truth_l2": 16605959.498064704,
+        "values": 355908
+      },
+      "predicted_negative_von_mises_values": 0,
+      "predicted_von_mises_minimum": 28295.228515625,
+      "truth_von_mises_maximum": 81267.0859375,
+      "teacher_forced_free_displacement_increment": {
+        "relative_l2": 1.0000804729999646,
+        "component_rmse": 0.0005338785113174099,
+        "max_abs_component_error": 0.005625493824481964,
+        "truth_l2": 0.5516161789884285,
+        "values": 1067724
+      },
+      "teacher_forced_free_stress": {
+        "relative_l2": 0.7492695770140088,
+        "component_rmse": 20856.104700433047,
+        "max_abs_component_error": 50644.060546875,
+        "truth_l2": 16605959.498064704,
+        "values": 355908
+      },
+      "zero_increment_baseline_free_displacement": {
+        "relative_l2": 1.0,
+        "component_rmse": 0.037528498709957475,
+        "max_abs_component_error": 0.20747002959251404,
+        "truth_l2": 38.77847210662895,
+        "values": 1067724
+      },
+      "zero_stress_baseline": {
+        "relative_l2": 1.0,
+        "component_rmse": 27835.24827412433,
+        "max_abs_component_error": 81267.0859375,
+        "truth_l2": 16605959.498064704,
+        "values": 355908
+      },
+      "training_mean_constant_stress_baseline": {
+        "relative_l2": 0.7208094208310672,
+        "component_rmse": 20063.909187160512,
+        "max_abs_component_error": 50308.2421875,
+        "truth_l2": 16605959.498064704,
+        "values": 355908
+      },
+      "derived_GL_strain": {
+        "relative_l2": 22.716995354137772,
+        "component_rmse": 0.06971809963469472,
+        "max_abs_component_error": 1.5817932010720597,
+        "truth_l2": 1.7830613276790752,
+        "values": 337554
+      },
+      "derived_GL_strain_frames": [
+        1,
+        21,
+        41,
+        61,
+        81,
+        101,
+        121,
+        141,
+        161,
+        181,
+        201,
+        221,
+        241,
+        261,
+        281,
+        301,
+        321,
+        341,
+        361,
+        381,
+        399
+      ],
+      "derived_GL_strain_tetrahedra": 2679,
+      "derived_GL_strain_component_order": [
+        "xx",
+        "yy",
+        "zz",
+        "xy",
+        "yz",
+        "xz"
+      ],
+      "derived_GL_strain_weighting": "Unweighted per sampled tetrahedron/component; tensor shear; selected frames only",
+      "predicted_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "truth_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strain_label_caveat": "Both reference and prediction are kinematically derived from FEM/AI nodal positions; no original COMSOL strain tensor is available.",
+      "coordinate_units": "dataset coordinate units (not confirmed SI)",
+      "stress_units": "dataset stress units (not confirmed Pa/MPa)",
+      "evaluation_seconds": 26.921719400001166,
+      "evaluation_timing_scope": "Combined autoregressive + teacher-forced forward, CPU graph preparation and output transfer; excludes strain calculation and file writing"
+    },
+    {
+      "trajectory": "test_0001",
+      "nodes": 1341,
+      "free_nodes": 770,
+      "steps": 399,
+      "boundary": "type 1 actuator and type 3 clamp follow prescribed FEM boundary positions at each step",
+      "rollout_free_displacement": {
+        "relative_l2": 0.949603144052141,
+        "component_rmse": 0.006891688913261496,
+        "max_abs_component_error": 0.055935884127393365,
+        "truth_l2": 6.967483667470911,
+        "values": 921690
+      },
+      "rollout_free_stress": {
+        "relative_l2": 0.7272660012777199,
+        "component_rmse": 54703.06604723889,
+        "max_abs_component_error": 463588.404296875,
+        "truth_l2": 41691756.61628075,
+        "values": 307230
+      },
+      "predicted_negative_von_mises_values": 0,
+      "predicted_von_mises_minimum": 28384.806640625,
+      "truth_von_mises_maximum": 494882.46875,
+      "teacher_forced_free_displacement_increment": {
+        "relative_l2": 1.00206033490383,
+        "component_rmse": 0.0001154867588984426,
+        "max_abs_component_error": 0.005163267254829407,
+        "truth_l2": 0.11064473663934746,
+        "values": 921690
+      },
+      "teacher_forced_free_stress": {
+        "relative_l2": 0.7319368034048798,
+        "component_rmse": 55054.391692610334,
+        "max_abs_component_error": 462032.49609375,
+        "truth_l2": 41691756.61628075,
+        "values": 307230
+      },
+      "zero_increment_baseline_free_displacement": {
+        "relative_l2": 1.0,
+        "component_rmse": 0.007257441128357398,
+        "max_abs_component_error": 0.0545908659696579,
+        "truth_l2": 6.967483667470911,
+        "values": 921690
+      },
+      "zero_stress_baseline": {
+        "relative_l2": 1.0,
+        "component_rmse": 75217.4114438626,
+        "max_abs_component_error": 494882.46875,
+        "truth_l2": 41691756.61628075,
+        "values": 307230
+      },
+      "training_mean_constant_stress_baseline": {
+        "relative_l2": 0.7402387201543971,
+        "component_rmse": 55678.840380531576,
+        "max_abs_component_error": 463923.625,
+        "truth_l2": 41691756.61628075,
+        "values": 307230
+      },
+      "derived_GL_strain": {
+        "relative_l2": 3.4948877591818825,
+        "component_rmse": 0.07706509658655201,
+        "max_abs_component_error": 1.59114053265057,
+        "truth_l2": 12.351208143165149,
+        "values": 313740
+      },
+      "derived_GL_strain_frames": [
+        1,
+        21,
+        41,
+        61,
+        81,
+        101,
+        121,
+        141,
+        161,
+        181,
+        201,
+        221,
+        241,
+        261,
+        281,
+        301,
+        321,
+        341,
+        361,
+        381,
+        399
+      ],
+      "derived_GL_strain_tetrahedra": 2490,
+      "derived_GL_strain_component_order": [
+        "xx",
+        "yy",
+        "zz",
+        "xy",
+        "yz",
+        "xz"
+      ],
+      "derived_GL_strain_weighting": "Unweighted per sampled tetrahedron/component; tensor shear; selected frames only",
+      "predicted_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "truth_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strain_label_caveat": "Both reference and prediction are kinematically derived from FEM/AI nodal positions; no original COMSOL strain tensor is available.",
+      "coordinate_units": "dataset coordinate units (not confirmed SI)",
+      "stress_units": "dataset stress units (not confirmed Pa/MPa)",
+      "evaluation_seconds": 27.400544100000843,
+      "evaluation_timing_scope": "Combined autoregressive + teacher-forced forward, CPU graph preparation and output transfer; excludes strain calculation and file writing"
+    }
+  ],
+  "pooled_metrics": {
+    "rollout_free_displacement": {
+      "relative_l2": 0.9841904518953543,
+      "component_rmse": 0.02749201621035667,
+      "max_abs_component_error": 0.20595767814666033,
+      "values": 1989414
+    },
+    "rollout_free_stress": {
+      "relative_l2": 0.7341513771222072,
+      "component_rmse": 40458.43971957601,
+      "max_abs_component_error": 463588.404296875,
+      "values": 663138
+    },
+    "teacher_forced_free_displacement_increment": {
+      "relative_l2": 1.0001571216718157,
+      "component_rmse": 0.00039894043305179025,
+      "max_abs_component_error": 0.005625493824481964,
+      "values": 1989414
+    },
+    "teacher_forced_free_stress": {
+      "relative_l2": 0.7343342359171778,
+      "component_rmse": 40468.51690769287,
+      "max_abs_component_error": 462032.49609375,
+      "values": 663138
+    },
+    "zero_increment_baseline_free_displacement": {
+      "relative_l2": 1.000000000000002,
+      "component_rmse": 0.027933634346292015,
+      "max_abs_component_error": 0.20747002959251404,
+      "values": 1989414
+    },
+    "zero_stress_baseline": {
+      "relative_l2": 1.000000000000001,
+      "component_rmse": 55109.124603387245,
+      "max_abs_component_error": 494882.46875,
+      "values": 663138
+    },
+    "training_mean_constant_stress_baseline": {
+      "relative_l2": 0.7376086393368999,
+      "component_rmse": 40648.96641375209,
+      "max_abs_component_error": 463923.625,
+      "values": 663138
+    },
+    "derived_GL_strain": {
+      "relative_l2": 4.743462762663998,
+      "component_rmse": 0.07334920311218064,
+      "max_abs_component_error": 1.59114053265057,
+      "values": 651294
+    }
+  },
+  "evaluation_split": "test",
+  "evaluation_role": "development",
+  "validation_results": [
+    {
+      "trajectory": "valid_0000",
+      "nodes": 1645,
+      "free_nodes": 783,
+      "steps": 399,
+      "boundary": "type 1 actuator and type 3 clamp follow prescribed FEM boundary positions at each step",
+      "rollout_free_displacement": {
+        "relative_l2": 0.9783966579952054,
+        "component_rmse": 0.037910819577811325,
+        "max_abs_component_error": 0.2578470769803971,
+        "truth_l2": 37.51251387067057,
+        "values": 937251
+      },
+      "rollout_free_stress": {
+        "relative_l2": 0.7793973154355786,
+        "component_rmse": 37993.049809334,
+        "max_abs_component_error": 235309.28515625,
+        "truth_l2": 27246616.579608086,
+        "values": 312417
+      },
+      "predicted_negative_von_mises_values": 0,
+      "predicted_von_mises_minimum": 28429.7421875,
+      "truth_von_mises_maximum": 265503.96875,
+      "teacher_forced_free_displacement_increment": {
+        "relative_l2": 1.0000466333581302,
+        "component_rmse": 0.0006945908472623333,
+        "max_abs_component_error": 0.008437424898147583,
+        "truth_l2": 0.6724140205061796,
+        "values": 937251
+      },
+      "teacher_forced_free_stress": {
+        "relative_l2": 0.7822475293192178,
+        "component_rmse": 38131.98834030372,
+        "max_abs_component_error": 235197.107421875,
+        "truth_l2": 27246616.579608086,
+        "values": 312417
+      },
+      "zero_increment_baseline_free_displacement": {
+        "relative_l2": 1.0,
+        "component_rmse": 0.038747903795473854,
+        "max_abs_component_error": 0.26136139035224915,
+        "truth_l2": 37.51251387067057,
+        "values": 937251
+      },
+      "zero_stress_baseline": {
+        "relative_l2": 1.0,
+        "component_rmse": 48746.70345522172,
+        "max_abs_component_error": 265503.96875,
+        "truth_l2": 27246616.579608086,
+        "values": 312417
+      },
+      "training_mean_constant_stress_baseline": {
+        "relative_l2": 0.7822396090540703,
+        "component_rmse": 38131.60225348735,
+        "max_abs_component_error": 234545.125,
+        "truth_l2": 27246616.579608086,
+        "values": 312417
+      },
+      "derived_GL_strain": {
+        "relative_l2": 6.86305713336243,
+        "component_rmse": 0.07434111073894967,
+        "max_abs_component_error": 1.4787593117965336,
+        "truth_l2": 5.779028275306882,
+        "values": 284634
+      },
+      "derived_GL_strain_frames": [
+        1,
+        21,
+        41,
+        61,
+        81,
+        101,
+        121,
+        141,
+        161,
+        181,
+        201,
+        221,
+        241,
+        261,
+        281,
+        301,
+        321,
+        341,
+        361,
+        381,
+        399
+      ],
+      "derived_GL_strain_tetrahedra": 2259,
+      "derived_GL_strain_component_order": [
+        "xx",
+        "yy",
+        "zz",
+        "xy",
+        "yz",
+        "xz"
+      ],
+      "derived_GL_strain_weighting": "Unweighted per sampled tetrahedron/component; tensor shear; selected frames only",
+      "predicted_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "truth_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strain_label_caveat": "Both reference and prediction are kinematically derived from FEM/AI nodal positions; no original COMSOL strain tensor is available.",
+      "coordinate_units": "dataset coordinate units (not confirmed SI)",
+      "stress_units": "dataset stress units (not confirmed Pa/MPa)",
+      "evaluation_seconds": 30.010227800001303,
+      "evaluation_timing_scope": "Combined autoregressive + teacher-forced forward, CPU graph preparation and output transfer; excludes strain calculation and file writing"
+    },
+    {
+      "trajectory": "valid_0001",
+      "nodes": 1382,
+      "free_nodes": 1080,
+      "steps": 399,
+      "boundary": "type 1 actuator and type 3 clamp follow prescribed FEM boundary positions at each step",
+      "rollout_free_displacement": {
+        "relative_l2": 1.0253991099558895,
+        "component_rmse": 0.02614290579340168,
+        "max_abs_component_error": 0.15102923661470413,
+        "truth_l2": 28.988108269599934,
+        "values": 1292760
+      },
+      "rollout_free_stress": {
+        "relative_l2": 1.0827537168243555,
+        "component_rmse": 21124.364756730254,
+        "max_abs_component_error": 49191.625,
+        "truth_l2": 12807144.224433132,
+        "values": 430920
+      },
+      "predicted_negative_von_mises_values": 0,
+      "predicted_von_mises_minimum": 28442.27734375,
+      "truth_von_mises_maximum": 55224.984375,
+      "teacher_forced_free_displacement_increment": {
+        "relative_l2": 1.000290766591821,
+        "component_rmse": 0.0003656645661801437,
+        "max_abs_component_error": 0.0038896342739462852,
+        "truth_l2": 0.4156383107880082,
+        "values": 1292760
+      },
+      "teacher_forced_free_stress": {
+        "relative_l2": 1.0592883630934051,
+        "component_rmse": 20666.559178549353,
+        "max_abs_component_error": 49191.6328125,
+        "truth_l2": 12807144.224433132,
+        "values": 430920
+      },
+      "zero_increment_baseline_free_displacement": {
+        "relative_l2": 1.0,
+        "component_rmse": 0.02549534667972001,
+        "max_abs_component_error": 0.1483788788318634,
+        "truth_l2": 28.988108269599934,
+        "values": 1292760
+      },
+      "zero_stress_baseline": {
+        "relative_l2": 1.0,
+        "component_rmse": 19509.851989875064,
+        "max_abs_component_error": 55224.984375,
+        "truth_l2": 12807144.224433132,
+        "values": 430920
+      },
+      "training_mean_constant_stress_baseline": {
+        "relative_l2": 1.0192116499478028,
+        "component_rmse": 19884.66843683797,
+        "max_abs_component_error": 30958.84375,
+        "truth_l2": 12807144.224433132,
+        "values": 430920
+      },
+      "derived_GL_strain": {
+        "relative_l2": 66.08474595940284,
+        "component_rmse": 0.10419097438482526,
+        "max_abs_component_error": 2.7662719173650316,
+        "truth_l2": 1.0026899533317402,
+        "values": 404460
+      },
+      "derived_GL_strain_frames": [
+        1,
+        21,
+        41,
+        61,
+        81,
+        101,
+        121,
+        141,
+        161,
+        181,
+        201,
+        221,
+        241,
+        261,
+        281,
+        301,
+        321,
+        341,
+        361,
+        381,
+        399
+      ],
+      "derived_GL_strain_tetrahedra": 3210,
+      "derived_GL_strain_component_order": [
+        "xx",
+        "yy",
+        "zz",
+        "xy",
+        "yz",
+        "xz"
+      ],
+      "derived_GL_strain_weighting": "Unweighted per sampled tetrahedron/component; tensor shear; selected frames only",
+      "predicted_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        5,
+        6,
+        6
+      ],
+      "truth_inverted_tetrahedra_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "strain_label_caveat": "Both reference and prediction are kinematically derived from FEM/AI nodal positions; no original COMSOL strain tensor is available.",
+      "coordinate_units": "dataset coordinate units (not confirmed SI)",
+      "stress_units": "dataset stress units (not confirmed Pa/MPa)",
+      "evaluation_seconds": 27.089842999997927,
+      "evaluation_timing_scope": "Combined autoregressive + teacher-forced forward, CPU graph preparation and output transfer; excludes strain calculation and file writing"
+    }
+  ],
+  "validation_pooled_metrics": {
+    "rollout_free_displacement": {
+      "relative_l2": 0.9962298557134666,
+      "component_rmse": 0.031626840995549584,
+      "max_abs_component_error": 0.2578470769803971,
+      "values": 2230011
+    },
+    "rollout_free_stress": {
+      "relative_l2": 0.8424274640196234,
+      "component_rmse": 29417.099098263545,
+      "max_abs_component_error": 235309.28515625,
+      "values": 743337
+    },
+    "teacher_forced_free_displacement_increment": {
+      "relative_l2": 1.0001141310274755,
+      "component_rmse": 0.0005294194236882031,
+      "max_abs_component_error": 0.008437424898147583,
+      "values": 2230011
+    },
+    "teacher_forced_free_stress": {
+      "relative_l2": 0.8391864081459228,
+      "component_rmse": 29303.923227471372,
+      "max_abs_component_error": 235197.107421875,
+      "values": 743337
+    },
+    "zero_increment_baseline_free_displacement": {
+      "relative_l2": 1.0000000000000016,
+      "component_rmse": 0.031746529994224615,
+      "max_abs_component_error": 0.26136139035224915,
+      "values": 2230011
+    },
+    "zero_stress_baseline": {
+      "relative_l2": 1.000000000000001,
+      "component_rmse": 34919.44452748555,
+      "max_abs_component_error": 265503.96875,
+      "values": 743337
+    },
+    "training_mean_constant_stress_baseline": {
+      "relative_l2": 0.8301504409886711,
+      "component_rmse": 28988.39227357154,
+      "max_abs_component_error": 234545.125,
+      "values": 743337
+    },
+    "derived_GL_strain": {
+      "relative_l2": 13.166350600887775,
+      "component_rmse": 0.09302968060151524,
+      "max_abs_component_error": 2.7662719173650316,
+      "values": 689094
+    }
+  },
+  "limitations": [
+    "Bounded subset of independent official trajectories, not the full paper recipe.",
+    "Boundary future motion is prescribed, as in the official autoregressive inference.",
+    "No original COMSOL strain label exists; GL strain is derived from coordinates."
+  ]
+}

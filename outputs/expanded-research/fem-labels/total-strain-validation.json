@@ -1,0 +1,891 @@
+{
+  "status": "actual_total_strain_FEM_labels_generated_and_validated",
+  "claim_scope": "Same Run224 deck, only two Engine output cards added; actual FEM total strain and EPSP are separate quantities. One condition, no family generalization claim.",
+  "units": {
+    "displacement": "mm",
+    "time": "ms",
+    "stress": "GPa",
+    "strain": "dimensionless",
+    "energy": "J"
+  },
+  "baseline": {
+    "printed_final_cycle_row": "100000   100.0      0.1000E-02 NODE       14050  -0.4%   6037.       215.2      0.1605      -186.0      0.2315E-03   517.0      0.1196",
+    "normal_termination": true,
+    "cycles": 100001
+  },
+  "output_added_run": {
+    "printed_final_cycle_row": "100000   100.0      0.1000E-02 NODE       14050  -0.4%   6037.       215.2      0.1605      -186.0      0.2315E-03   517.0      0.1196",
+    "normal_termination": true,
+    "cycles": 100001
+  },
+  "paired_frames": [
+    {
+      "frame": "Bumper_Beam_AP_meshedA001",
+      "actual_time_ms": 0.0,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA002",
+      "actual_time_ms": 10.000067710876465,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA003",
+      "actual_time_ms": 20.000131607055664,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA004",
+      "actual_time_ms": 30.000154495239258,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA005",
+      "actual_time_ms": 40.00017547607422,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA006",
+      "actual_time_ms": 50.00020217895508,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA007",
+      "actual_time_ms": 60.00022506713867,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA008",
+      "actual_time_ms": 70.00025177001953,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA009",
+      "actual_time_ms": 80.00032806396484,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA010",
+      "actual_time_ms": 90.0004653930664,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    },
+    {
+      "frame": "Bumper_Beam_AP_meshedA011",
+      "actual_time_ms": 100.00089263916016,
+      "displacement_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "coordinates_mm": {
+        "max_abs_difference": 0.0,
+        "component_rmse": 0.0
+      },
+      "existing_stress_fields_GPa": {
+        "Stress (upper)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (lower)": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  1) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  2) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  3) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  4) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Stress (layer  5) ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      },
+      "existing_epsp_fields_dimensionless": {
+        "Plastic Strain Upper": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plastic Strain Lower": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   1 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   2 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   3 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   4 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        },
+        "Plast Strn Layer   5 ": {
+          "max_abs_difference": 0.0,
+          "component_rmse": 0.0
+        }
+      }
+    }
+  ],
+  "total_strain": {
+    "shape": [
+      11,
+      13626,
+      7,
+      3
+    ],
+    "locations": [
+      "upper",
+      "lower",
+      "layer_1",
+      "layer_2",
+      "layer_3",
+      "layer_4",
+      "layer_5"
+    ],
+    "components": [
+      "element_local_xx",
+      "element_local_yy",
+      "element_local_xy_tensor_shear"
+    ],
+    "initial_max_abs": 0.0,
+    "min": -0.48899129033088684,
+    "max": 0.32096725702285767,
+    "nonzero_values": 2861460,
+    "finite_strain_measure": "Not established; preserve actual solver output without renaming it Hencky/Almansi/Green-Lagrange."
+  },
+  "nodal_inplane_principal_strain": {
+    "shape": [
+      13675,
+      11,
+      4
+    ],
+    "channels": [
+      "upper_inplane_major",
+      "upper_inplane_minor",
+      "lower_inplane_major",
+      "lower_inplane_minor"
+    ],
+    "min": -0.38518476486206055,
+    "max": 0.2142576426267624,
+    "scope": "Eigenvalues of in-plane 2x2 actual FEM total strain, scalar area-weighted projection, not 3D principal strain."
+  },
+  "energy_error_percent": -0.4,
+  "mass_error_fraction_last_printed": 0.0002315,
+  "added_mass_kg_last_printed": 0.1196,
+  "internal_energy_J_last_printed": 6037,
+  "kinetic_energy_J_last_printed": 215.2,
+  "initial_contact_warning": "The unchanged source deck also has initial penetration warning 343; warning count alone is not a model-invalidity verdict.",
+  "execution_metrics": [
+    {
+      "sampled_peak_working_set_bytes": 220459008,
+      "executable": "starter_win64_sp.exe",
+      "threads": 2,
+      "elapsed_seconds": 10.7200507,
+      "exit_code": 0,
+      "stage": "starter",
+      "memory_cap_bytes": 600000000,
+      "arguments": "-i Bumper_Beam_AP_meshed_0000.rad -np 1 -nt 2",
+      "wall_time_cap_seconds_per_stage": 1200,
+      "terminated_by_cap": false
+    },
+    {
+      "sampled_peak_working_set_bytes": 93966336,
+      "executable": "engine_win64_sp.exe",
+      "threads": 2,
+      "elapsed_seconds": 502.6909128,
+      "exit_code": 0,
+      "stage": "engine",
+      "memory_cap_bytes": 600000000,
+      "arguments": "-i Bumper_Beam_AP_meshed_0001.rad -nt 2",
+      "wall_time_cap_seconds_per_stage": 1200,
+      "terminated_by_cap": false
+    }
+  ],
+  "cache_manifest_sha256": "12646c2e5c886c9caf38a4775f4b35028272ad3dd866538d060af3a28039d6ae"
+}

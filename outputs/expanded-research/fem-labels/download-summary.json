@@ -1,0 +1,77 @@
+{
+  "status": "131_public_cases_all_selected_ANIM_frames_downloaded_and_verified",
+  "created_utc": "2026-10-15T03:18:14.678384+00:00",
+  "dataset": "AIRBORNEPANDA/BumperBeamCrashExample",
+  "dataset_revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "source_global_manifest_sha256": "e48f36214ca109cfe2962cd4cd79ca86d5423389337cd1afb391d16941b0d1b3",
+  "published_selected_manifest_sha256": "e48f36214ca109cfe2962cd4cd79ca86d5423389337cd1afb391d16941b0d1b3",
+  "completed_download_report_sha256": "5689a3a1115af3e4ec14be728eb4a52cffaf42030cd8ac7eeff7fbe8a9e1e8f8",
+  "executed_downloader_sha256": "8169ebc6267e68674522d4b44746c2757942b152903364015798434fcc5348eb",
+  "selection": {
+    "case_count": 131,
+    "file_count": 1441,
+    "frame_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "split_counts": {
+      "train": 112,
+      "validation": 12,
+      "test": 7
+    },
+    "selected_bytes": 3799370861,
+    "approved_byte_ceiling": 6000000000,
+    "excluded_extra_ANIM_paths": [
+      "RAW_DATA/TRAINING_DATA/Run194/Bumper_Beam_AP_meshedA012",
+      "RAW_DATA/TRAINING_DATA/Run203/Bumper_Beam_AP_meshedA012"
+    ]
+  },
+  "download_execution": {
+    "exit_code": 0,
+    "finished_utc": "2026-10-15T03:18:01.317829+00:00",
+    "elapsed_seconds": 1593.4146761999982,
+    "download_workers": 2,
+    "stream_chunk_bytes_per_worker": 1048576,
+    "newly_downloaded_file_count": 1430,
+    "newly_downloaded_bytes": 3770368030,
+    "verified_cache_hit_file_count": 11,
+    "verified_cache_hit_bytes": 29002831,
+    "new_download_average_bytes_per_second": 2366218.967551897,
+    "average_speed_scope": "New bytes divided by whole batch elapsed time, including per-file metadata/redirect/size/hash work and cache checks; not an isolated network transfer benchmark.",
+    "live_HTTP_range_resume_count": null,
+    "resume_note": "Existing Run224 files were size/SHA256 reverified as cache hits. Partial HTTP206 resume and HTTP200 range fallback passed bounded offline self-checks; actual network range-resume events were not instrumented."
+  },
+  "downloader_memory_observation": {
+    "observed_utc": "2026-10-15T03:16:41.9045334Z",
+    "observed_process_cpu_seconds": 68.65625,
+    "working_set_bytes": 26435584,
+    "os_peak_working_set_observed_bytes": 40419328,
+    "measurement_note": "OS high-water working set observed while downloader remained running; not a post-exit peak measurement"
+  },
+  "verification": {
+    "all_131_completion_receipts_checked": true,
+    "all_1441_recorded_LFS_SHA256_values_match_pinned_inventory": true,
+    "all_1441_source_sizes_rechecked_on_disk": true,
+    "remaining_partial_files": 0,
+    "source_hash_method": "Downloader streamed each file then computed SHA256 and compared with pinned Hugging Face LFS SHA256 before atomic final rename; completion audit checked every receipt against the pinned manifest."
+  },
+  "log_hashes": {
+    "download-all.stdout.log": {
+      "bytes": 9743,
+      "sha256": "9bcf6acec8152709d588360439bce78df807b8906080cdf7c7a489cb1f622b5c"
+    },
+    "download-all.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

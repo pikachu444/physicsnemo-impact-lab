@@ -1,0 +1,209 @@
+{
+  "target_mean": [
+    1.1622142274643528e-09,
+    -5.829886503282221e-09,
+    5.482204251209693e-07,
+    30958.843949912323
+  ],
+  "target_std": [
+    4.735147977855165e-05,
+    0.0001232870581085327,
+    0.0005063576872822573,
+    40853.46967568761
+  ],
+  "edge_mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.01808447148550027
+  ],
+  "edge_std": [
+    0.011977266763369339,
+    0.012363230688996382,
+    0.009199941573136222,
+    0.007341335569632183
+  ],
+  "fit_trajectories": [
+    "train_0000",
+    "train_0001",
+    "train_0002",
+    "train_0003",
+    "train_0004",
+    "train_0005",
+    "train_0006",
+    "train_0007"
+  ],
+  "weighting": "Equal trajectory weight; all 399 training increments; no validation/test statistics",
+  "strain_reference": "Per-tetra Green-Lagrange derived from mesh_pos and world_pos; not original COMSOL strain output",
+  "kinematic_self_checks": "translation, rigid rotation, 20% axial stretch, tetra mesh edges: passed"
+}
+[
+  {
+    "name": "test_0000",
+    "nodes": 1305,
+    "mesh_directed_edges": 12934,
+    "world_directed_edges_t0": 18924,
+    "cells": 4018,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.0007714657112956047,
+    "node_types": {
+      "0": 892,
+      "1": 383,
+      "3": 30
+    }
+  },
+  {
+    "name": "test_0001",
+    "nodes": 1341,
+    "mesh_directed_edges": 13332,
+    "world_directed_edges_t0": 19656,
+    "cells": 4193,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.013701358810067177,
+    "node_types": {
+      "0": 770,
+      "1": 471,
+      "3": 100
+    }
+  },
+  {
+    "name": "train_0000",
+    "nodes": 840,
+    "mesh_directed_edges": 8210,
+    "world_directed_edges_t0": 22538,
+    "cells": 2564,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.004846412222832441,
+    "node_types": {
+      "0": 485,
+      "1": 301,
+      "3": 54
+    }
+  },
+  {
+    "name": "train_0001",
+    "nodes": 1001,
+    "mesh_directed_edges": 9766,
+    "world_directed_edges_t0": 15916,
+    "cells": 3017,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.006284105125814676,
+    "node_types": {
+      "0": 604,
+      "1": 309,
+      "3": 88
+    }
+  },
+  {
+    "name": "train_0002",
+    "nodes": 1011,
+    "mesh_directed_edges": 10318,
+    "world_directed_edges_t0": 28756,
+    "cells": 3351,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.00026637883274815977,
+    "node_types": {
+      "0": 674,
+      "1": 312,
+      "3": 25
+    }
+  },
+  {
+    "name": "train_0003",
+    "nodes": 999,
+    "mesh_directed_edges": 9940,
+    "world_directed_edges_t0": 13934,
+    "cells": 3117,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.001621335744857788,
+    "node_types": {
+      "0": 709,
+      "1": 263,
+      "3": 27
+    }
+  },
+  {
+    "name": "train_0004",
+    "nodes": 1151,
+    "mesh_directed_edges": 11668,
+    "world_directed_edges_t0": 29138,
+    "cells": 3788,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.0038501606322824955,
+    "node_types": {
+      "0": 719,
+      "1": 315,
+      "3": 117
+    }
+  },
+  {
+    "name": "train_0005",
+    "nodes": 1142,
+    "mesh_directed_edges": 11030,
+    "world_directed_edges_t0": 21456,
+    "cells": 3340,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 1.6350987834812258e-06,
+    "node_types": {
+      "0": 866,
+      "1": 195,
+      "3": 81
+    }
+  },
+  {
+    "name": "train_0006",
+    "nodes": 1431,
+    "mesh_directed_edges": 13716,
+    "world_directed_edges_t0": 33956,
+    "cells": 4122,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.0023590761702507734,
+    "node_types": {
+      "0": 992,
+      "1": 311,
+      "3": 128
+    }
+  },
+  {
+    "name": "train_0007",
+    "nodes": 900,
+    "mesh_directed_edges": 8728,
+    "world_directed_edges_t0": 11530,
+    "cells": 2693,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.007504472509026527,
+    "node_types": {
+      "0": 582,
+      "1": 266,
+      "3": 52
+    }
+  },
+  {
+    "name": "valid_0000",
+    "nodes": 1645,
+    "mesh_directed_edges": 17160,
+    "world_directed_edges_t0": 18946,
+    "cells": 5721,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.0016349724028259516,
+    "node_types": {
+      "0": 783,
+      "1": 831,
+      "3": 31
+    }
+  },
+  {
+    "name": "valid_0001",
+    "nodes": 1382,
+    "mesh_directed_edges": 13534,
+    "world_directed_edges_t0": 18904,
+    "cells": 4128,
+    "strain_finite": true,
+    "max_abs_derived_green_lagrange_component_final": 0.00043972849380224943,
+    "node_types": {
+      "0": 1080,
+      "1": 267,
+      "3": 35
+    }
+  }
+]

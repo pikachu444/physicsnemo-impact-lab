@@ -1,0 +1,704 @@
+{
+  "commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "files": [
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/README.md",
+      "git_blob_sha": "b2c9ff3ef269d3acb05a0a542f03653471ef6804",
+      "bytes": 7681,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/README.md"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/conf/config.yaml",
+      "git_blob_sha": "453b60312d696e8c3002b00550821ae1685be7da",
+      "bytes": 2229,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/conf/config.yaml"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/acceleration_profile.py",
+      "git_blob_sha": "4cf8d87f4c0b5f5196abe9f435cd50cf337ecdea",
+      "bytes": 3840,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/acceleration_profile.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/conf/config.yaml",
+      "git_blob_sha": "2fc04ff3565b22eceff11b8acb1b2453e3b2fb33",
+      "bytes": 1535,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/conf/config.yaml"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/deform_analyze.py",
+      "git_blob_sha": "b77f91638de4dc3e91b13b2cbb14503d7f05a33f",
+      "bytes": 7867,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/deform_analyze.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/out2pvtu.py",
+      "git_blob_sha": "da38d98458c957b4819673bb1fbfd9c498f3256f",
+      "bytes": 12758,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/out2pvtu.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/rawdata2tfrecord_large_ts.py",
+      "git_blob_sha": "1fa2b9fba5261ca003320eac27ca51b4a1100825",
+      "bytes": 28170,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/rawdata2tfrecord_large_ts.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/data_process/utils.py",
+      "git_blob_sha": "fd307d99e56d34fa5629c24ed2f7f2f5e9859aef",
+      "bytes": 6535,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/data_process/utils.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/graph_dataset.py",
+      "git_blob_sha": "5814662c9cb7818a291f582c941bc936bc8c4c01",
+      "bytes": 9408,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/graph_dataset.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/inference.py",
+      "git_blob_sha": "fbb5a3df481032a2d924472f7a266e05c578fc29",
+      "bytes": 11634,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/inference.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/reading_utils.py",
+      "git_blob_sha": "e748d104d382b3607b8b2ed3dc57664c8da37c5b",
+      "bytes": 7382,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/reading_utils.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/render_rollout.py",
+      "git_blob_sha": "6520f0e62cd6d29ac022a0441e61df0fc9326ce7",
+      "bytes": 18102,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/render_rollout.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/requirements.txt",
+      "git_blob_sha": "c138f8096e7746db828c428377d33ef82f8f77fb",
+      "bytes": 182,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/requirements.txt"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/train.py",
+      "git_blob_sha": "2a2a59c7ddca91ed715d68cd497a227d9a2a9865",
+      "bytes": 28875,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/train.py"
+    },
+    {
+      "path": "examples/additive_manufacturing/sintering_physics/utils.py",
+      "git_blob_sha": "eab96f85ba443257b71fc7843b4b8ec0671f5451",
+      "bytes": 4556,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/utils.py"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/README.md",
+      "git_blob_sha": "a06f6cc1f7532019c85356e618726fb325504fd0",
+      "bytes": 34858,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/README.md",
+      "local_sha256": "dd7c774c3651b2aaea08f6f113e98f5e32c07e1d6d516d95531ae7ff93d74e7e",
+      "local_git_blob_sha": "a06f6cc1f7532019c85356e618726fb325504fd0",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/README.md",
+      "git_blob_sha": "9e2f4f95af6a8d6d20d98bf884f3c2eb7761ff38",
+      "bytes": 1207,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/README.md",
+      "local_sha256": "94c9df65066bd885ae4c71b56d4ee59434f5160286904726960f1bc40a6f30dc",
+      "local_git_blob_sha": "9e2f4f95af6a8d6d20d98bf884f3c2eb7761ff38",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+      "git_blob_sha": "2c810d82a93223b1606c2683bec1ed07e1085a93",
+      "bytes": 3465,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+      "local_sha256": "d1cec7e05eacb68c616c66bd4cc0d24ef50e9f9d81ce9715a9d03d71bb8831d7",
+      "local_git_blob_sha": "2c810d82a93223b1606c2683bec1ed07e1085a93",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+      "git_blob_sha": "60d15f82bc2f705f1c46be00f8adba5cbc8f21bf",
+      "bytes": 3549,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+      "local_sha256": "01f78f7241cbeb49207d02f69193ec54374463ca2833ed97f65a34e89d899df1",
+      "local_git_blob_sha": "60d15f82bc2f705f1c46be00f8adba5cbc8f21bf",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "git_blob_sha": "55bb09d8c22cd89f760189722ce47c9e49968ed4",
+      "bytes": 3376,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "local_sha256": "72e6e193ca37b27794f41420681d023f9a4b788122753e3ef4555838713a5c13",
+      "local_git_blob_sha": "55bb09d8c22cd89f760189722ce47c9e49968ed4",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+      "git_blob_sha": "51df3052417a959659afc71127334940b866e46f",
+      "bytes": 3456,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+      "local_sha256": "649fd8f069b3237a7a252aaa6182d14df17a94c8b7f674e581645b804c322742",
+      "local_git_blob_sha": "51df3052417a959659afc71127334940b866e46f",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+      "git_blob_sha": "ade4a9018e4cd243e3a32fdecddda1508bf120b4",
+      "bytes": 3394,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+      "local_sha256": "44f526283a45bf596955a2de781396d8bc5929c62a00dc2b84e7017c0c1a37db",
+      "local_git_blob_sha": "ade4a9018e4cd243e3a32fdecddda1508bf120b4",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/datapipe/graph.yaml",
+      "git_blob_sha": "3dc6ed65f96a27769073e4c531086980133a29f3",
+      "bytes": 1325,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/graph.yaml",
+      "local_sha256": "30a6699b69762277414ad1ae961a500f6af0b7abe36107433b956fc3e7377a5a",
+      "local_git_blob_sha": "3dc6ed65f96a27769073e4c531086980133a29f3",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/datapipe/point_cloud.yaml",
+      "git_blob_sha": "0df526492566f7ca0f7280eaf83d97c4358cb06b",
+      "bytes": 1271,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/point_cloud.yaml",
+      "local_sha256": "0bdf2c5ee82527b92fa4f21cc341397e1989b1bb540b728264a30914dae8fa32",
+      "local_git_blob_sha": "0df526492566f7ca0f7280eaf83d97c4358cb06b",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/inference/default.yaml",
+      "git_blob_sha": "3601c6501e79acae7fd78ca09b16f706e4e786ac",
+      "bytes": 877,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/inference/default.yaml",
+      "local_sha256": "5be8135a889e6af99f2215eed65c7c5dc26ff524e85a6abbba0b1e12d31caee0",
+      "local_git_blob_sha": "3601c6501e79acae7fd78ca09b16f706e4e786ac",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+      "git_blob_sha": "6e37985efacf1a44f57406aaa843ed3e98bf522f",
+      "bytes": 1646,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+      "local_sha256": "a671e7ef304c5f7215a5f26edc30f975f53a104661c4d4aec4f3888f6c75bae5",
+      "local_git_blob_sha": "6e37985efacf1a44f57406aaa843ed3e98bf522f",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "git_blob_sha": "dddca73bf4d0aeac93e1ebc178dfa90e74f91b02",
+      "bytes": 1506,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "local_sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca",
+      "local_git_blob_sha": "dddca73bf4d0aeac93e1ebc178dfa90e74f91b02",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_one_shot.yaml",
+      "git_blob_sha": "53c9e8ad67ae2393e4d5a1e9560cdc439bcab586",
+      "bytes": 1098,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_shot.yaml",
+      "local_sha256": "8c965d7def164d68c550aab5d68ceb7acf2e283ac84ee105832953c7fcd4e8c2",
+      "local_git_blob_sha": "53c9e8ad67ae2393e4d5a1e9560cdc439bcab586",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "git_blob_sha": "247b262ac557e33c0f33edea35ca3bf0e1cb38d4",
+      "bytes": 1490,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "local_sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72",
+      "local_git_blob_sha": "247b262ac557e33c0f33edea35ca3bf0e1cb38d4",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+      "git_blob_sha": "16ce765afdfdae6476dd0163f74ea8cd6a870412",
+      "bytes": 1115,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+      "local_sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d",
+      "local_git_blob_sha": "16ce765afdfdae6476dd0163f74ea8cd6a870412",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+      "git_blob_sha": "4eeb528ae456c095d0586b5dfbefcd2aaaf66234",
+      "bytes": 1133,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+      "local_sha256": "58a084f724018a006f97884af418b32daa2c20d146d0326776e1bf8f198adcc3",
+      "local_git_blob_sha": "4eeb528ae456c095d0586b5dfbefcd2aaaf66234",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+      "git_blob_sha": "aba854895954f8d42302845d105e7e953a1086a7",
+      "bytes": 1192,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+      "local_sha256": "d53585ded8a8960d748d46095d334f8853ed0a6448902065e7db878ddb2ed109",
+      "local_git_blob_sha": "aba854895954f8d42302845d105e7e953a1086a7",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/reader/vtp.yaml",
+      "git_blob_sha": "13d0666365b1b31c69758e0e8e79d45df86aac74",
+      "bytes": 759,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/reader/vtp.yaml",
+      "local_sha256": "ff3d2938d2ae5848e64e8c221c11c0d68e2233d4a97a4ccdcb3642748ec8501c",
+      "local_git_blob_sha": "13d0666365b1b31c69758e0e8e79d45df86aac74",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/reader/zarr.yaml",
+      "git_blob_sha": "c4b178f482cbb86560370880df4858be81df7896",
+      "bytes": 760,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/reader/zarr.yaml",
+      "local_sha256": "05fb6578cc542182198b05f395a366efb0c1ab468a9a6a92db80dc750d8f5899",
+      "local_git_blob_sha": "c4b178f482cbb86560370880df4858be81df7896",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/training/default.yaml",
+      "git_blob_sha": "02ad515d484af5c3efeb62c73674752ba99c6b5f",
+      "bytes": 2905,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/training/default.yaml",
+      "local_sha256": "94db8f2d3a435f4ed26d7a998b49fe86e2922d799a7dc7fb669c01fd9a2bd558",
+      "local_git_blob_sha": "02ad515d484af5c3efeb62c73674752ba99c6b5f",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/datapipe.py",
+      "git_blob_sha": "6409156e61bafee2b66afafba825f847fe877e05",
+      "bytes": 30248,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/datapipe.py",
+      "local_sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a",
+      "local_git_blob_sha": "6409156e61bafee2b66afafba825f847fe877e05",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/inference.py",
+      "git_blob_sha": "0444337e799b530eb0a09812d189882b03040c38",
+      "bytes": 15385,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/inference.py",
+      "local_sha256": "8fd78ab4561753d219b54487b53d239a77e636eae9d726da0b9196908300cdcf",
+      "local_git_blob_sha": "0444337e799b530eb0a09812d189882b03040c38",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/post_processing/compute_l2_error.py",
+      "git_blob_sha": "5d62cf77fd7b66f1e30f11dca47441b83f10625a",
+      "bytes": 7538,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/compute_l2_error.py",
+      "local_sha256": "c445b1787c6630ef8839e66a7385dbb653c5677caa0aa72cf6d33a817ef5f2be",
+      "local_git_blob_sha": "5d62cf77fd7b66f1e30f11dca47441b83f10625a",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/post_processing/compute_probe_kinematics.py",
+      "git_blob_sha": "576a8e85162fc6fd79600b7ae7a7ef291ba35dc7",
+      "bytes": 11310,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/compute_probe_kinematics.py",
+      "local_sha256": "ab68e1d3354b2d0dd4edd3fea5b406f32bc327a2f6b569f89020f167ede247f1",
+      "local_git_blob_sha": "576a8e85162fc6fd79600b7ae7a7ef291ba35dc7",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/post_processing/plot_cross_section.py",
+      "git_blob_sha": "862930d0aefae1d7f5f4925b1cadbca5c7fe5788",
+      "bytes": 8448,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/plot_cross_section.py",
+      "local_sha256": "6ca08cb7d9a6ee8b94b079d0ac50cf1635952748953fb24e3b11d23981522389",
+      "local_git_blob_sha": "862930d0aefae1d7f5f4925b1cadbca5c7fe5788",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/post_processing/run_post_processing.sh",
+      "git_blob_sha": "e4e65e1f6168c3d8bcd03af6ca17be4a0524362a",
+      "bytes": 810,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/run_post_processing.sh",
+      "local_sha256": "ffe447974c9b04bacc461cd31e575d4cd7e947f3e54ea872738f15e1a702e12a",
+      "local_git_blob_sha": "e4e65e1f6168c3d8bcd03af6ca17be4a0524362a",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/requirements.txt",
+      "git_blob_sha": "e84206861bab403389576f651ee2eab7aff6a538",
+      "bytes": 67,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/requirements.txt",
+      "local_sha256": "844e388afd517280c1c738668978c49e2a5baa23a80ec061286bcfa1af8c6827",
+      "local_git_blob_sha": "e84206861bab403389576f651ee2eab7aff6a538",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/rollout.py",
+      "git_blob_sha": "d107d4c84b13923a9edcb155227cea54cef76453",
+      "bytes": 16103,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+      "local_sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb",
+      "local_git_blob_sha": "d107d4c84b13923a9edcb155227cea54cef76453",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/tests/test_rollout.py",
+      "git_blob_sha": "171616df85e31782437ae6772c1f0b448cede311",
+      "bytes": 8011,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_rollout.py",
+      "local_sha256": "767772a6e7d2eb5e36bba9f8b35eb70a5e758c090acb296d8a58581b1be230d1",
+      "local_git_blob_sha": "171616df85e31782437ae6772c1f0b448cede311",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/tests/test_vtp_reader.py",
+      "git_blob_sha": "e8d0ce175ce0e4d6338a10d99427d8f5914bbcb7",
+      "bytes": 6898,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_vtp_reader.py",
+      "local_sha256": "abd79ce3f9455eee8402db1ff41872e8c810f69ab234891509f6fb289bba945a",
+      "local_git_blob_sha": "e8d0ce175ce0e4d6338a10d99427d8f5914bbcb7",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/tests/test_zarr_reader.py",
+      "git_blob_sha": "0646e58fcbb3c8d0d71eb66757397ebb302799f3",
+      "bytes": 14350,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_zarr_reader.py",
+      "local_sha256": "db4e43a5918fa0859c18a4cec1e7362b823bbb93d0f9cea2bb714b22e32205a0",
+      "local_git_blob_sha": "0646e58fcbb3c8d0d71eb66757397ebb302799f3",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/train.py",
+      "git_blob_sha": "d322d4e6137a23aa6ac5cc481e5f7a5a3033c59e",
+      "bytes": 15670,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/train.py",
+      "local_sha256": "1d9f7831ee22e2721b4656816932bc8c8f9a0071d9acdc89d4c4e02d935ca72b",
+      "local_git_blob_sha": "d322d4e6137a23aa6ac5cc481e5f7a5a3033c59e",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/utils.py",
+      "git_blob_sha": "029d97af80867c05716d5c47aef35d5fbd612cc2",
+      "bytes": 3712,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/utils.py",
+      "local_sha256": "9d38c5ca47423779f2ddb9e04ab7174ad3a0d8ee29900ffe6ad4211ea727618b",
+      "local_git_blob_sha": "029d97af80867c05716d5c47aef35d5fbd612cc2",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/vtp_reader.py",
+      "git_blob_sha": "7d8045f092de14a73a6b14bc3449d9b4a85bd963",
+      "bytes": 9730,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/vtp_reader.py",
+      "local_sha256": "b1bdc9ea4d60a5b6e4d23f3f2613f7badeda34db7222943692b85b884cb6c842",
+      "local_git_blob_sha": "7d8045f092de14a73a6b14bc3449d9b4a85bd963",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/crash/zarr_reader.py",
+      "git_blob_sha": "2eb66a2189165080e7b62e34df914893e28261ab",
+      "bytes": 7817,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/zarr_reader.py",
+      "local_sha256": "501e4cfd0b852a6e891a7376bff6a063ce4e851bd24385ec09d374f6f37af10f",
+      "local_git_blob_sha": "2eb66a2189165080e7b62e34df914893e28261ab",
+      "local_matches_pinned_blob": true
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/README.md",
+      "git_blob_sha": "09b3e9e07619919a55f802400c955484cfdbd0a2",
+      "bytes": 5300,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/README.md"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/conf/config.yaml",
+      "git_blob_sha": "5de9486227cb7754465c22399eb100d572fb08e1",
+      "bytes": 1478,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/conf/config.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/deforming_plate_dataset.py",
+      "git_blob_sha": "fc0c592d7ca7060c91c61e8d47e3021697bbbced",
+      "bytes": 14876,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/deforming_plate_dataset.py"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/helpers.py",
+      "git_blob_sha": "4ad0e8bef68b78ec21a6716d12811f4cef71accc",
+      "bytes": 3655,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/helpers.py"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/inference.py",
+      "git_blob_sha": "d81b7840fd1d0b2e706e9b64258bf524fa8c9d6a",
+      "bytes": 11723,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/inference.py"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/preprocessor.py",
+      "git_blob_sha": "d2cde56c308ffad125bb4a6e7c5f74ee7ba7716d",
+      "bytes": 2845,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/preprocessor.py"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/raw_dataset/download_dataset.sh",
+      "git_blob_sha": "776fbe6ed6104f6e2459c14db689793627ab034f",
+      "bytes": 423,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/raw_dataset/download_dataset.sh"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/requirements.txt",
+      "git_blob_sha": "487369afe8dfc441c4cebe664fb4c5ca4972349d",
+      "bytes": 143,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/requirements.txt"
+    },
+    {
+      "path": "examples/structural_mechanics/deforming_plate/train.py",
+      "git_blob_sha": "9538725e31c6e855a4c2da63e53f864077f833e7",
+      "bytes": 10221,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/train.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/README.md",
+      "git_blob_sha": "d375ea71816c28b1e84f16f075ff94a2e3f9a0d4",
+      "bytes": 16735,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/README.md"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/datapipe/graph.yaml",
+      "git_blob_sha": "95610b8cd70bc9d360f5645797a48d5e5882235e",
+      "bytes": 1195,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/datapipe/graph.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/datapipe/point_cloud.yaml",
+      "git_blob_sha": "696a1508449925ea7e6777078aae6ad5f66bd855",
+      "bytes": 1147,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/datapipe/point_cloud.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml",
+      "git_blob_sha": "9b3383f258ce92df9ec3a9669ae93b8ccd74809a",
+      "bytes": 2111,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/inference/default.yaml",
+      "git_blob_sha": "9ddaa26892e62541fe395c007c593f750a9fbfe5",
+      "bytes": 875,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/inference/default.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/figconvunet_one_shot.yaml",
+      "git_blob_sha": "6e37985efacf1a44f57406aaa843ed3e98bf522f",
+      "bytes": 1646,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/figconvunet_one_shot.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "git_blob_sha": "dddca73bf4d0aeac93e1ebc178dfa90e74f91b02",
+      "bytes": 1506,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_one_shot.yaml",
+      "git_blob_sha": "ff1746c1214a4709e661052721bc2904a6fc3bff",
+      "bytes": 1101,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_one_shot.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "git_blob_sha": "247b262ac557e33c0f33edea35ca3bf0e1cb38d4",
+      "bytes": 1490,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "git_blob_sha": "16ce765afdfdae6476dd0163f74ea8cd6a870412",
+      "bytes": 1115,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/mgn_one_shot.yaml",
+      "git_blob_sha": "4eeb528ae456c095d0586b5dfbefcd2aaaf66234",
+      "bytes": 1133,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/mgn_one_shot.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/transolver_one_shot.yaml",
+      "git_blob_sha": "aba854895954f8d42302845d105e7e953a1086a7",
+      "bytes": 1192,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/transolver_one_shot.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/reader/vtu.yaml",
+      "git_blob_sha": "a7bfd3f4edeafe6a1f39084df310f4309c395012",
+      "bytes": 778,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/reader/vtu.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/training/default.yaml",
+      "git_blob_sha": "79500ab7f9e294209648598e9e229649892394d6",
+      "bytes": 1205,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/training/default.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/datapipe.py",
+      "git_blob_sha": "3072cc74902c4aa580c82b92cab22253f9e4d7e2",
+      "bytes": 31913,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/datapipe.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/inference.py",
+      "git_blob_sha": "24183e88741b797ad52acb1ead0077a39939df36",
+      "bytes": 13609,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/inference.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/requirements.txt",
+      "git_blob_sha": "e84206861bab403389576f651ee2eab7aff6a538",
+      "bytes": 67,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/requirements.txt"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/rollout.py",
+      "git_blob_sha": "7691d10ecd3e1f861996cac1ba8c0f7390d895e0",
+      "bytes": 16531,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/train.py",
+      "git_blob_sha": "85062c6b1829e74abc15690edaff6c76e7abcac9",
+      "bytes": 18078,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/train.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/utils.py",
+      "git_blob_sha": "029d97af80867c05716d5c47aef35d5fbd612cc2",
+      "bytes": 3712,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/utils.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/vtu_reader.py",
+      "git_blob_sha": "c5a3008d98e2a2586ff1ce6b4f62270d67a2cdb4",
+      "bytes": 10492,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/vtu_reader.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/README.md",
+      "git_blob_sha": "4f5805f05d5bdf714ea73696d5a6b729fc90480f",
+      "bytes": 7658,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/README.md"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/config.yaml",
+      "git_blob_sha": "fe674fb4e60c03f5d231ac65f413267bd88be0a2",
+      "bytes": 2810,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/config.yaml"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/__init__.py",
+      "git_blob_sha": "09ad55b6c0f5ea37ff9216a18eea270b1ed2889a",
+      "bytes": 794,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/__init__.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/data.py",
+      "git_blob_sha": "8ef6b023514b6210182cd558579bfe71e70c274b",
+      "bytes": 11390,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/data.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/domain.py",
+      "git_blob_sha": "a5f34c73e5e5b3f49bd6b0d3d72c470870feafb8",
+      "bytes": 11346,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/domain.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/elasticity.py",
+      "git_blob_sha": "3f81f368fcbd44522863146e55153c2d99a99a23",
+      "bytes": 17600,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/elasticity_example.py",
+      "git_blob_sha": "7cfa7f9ca8648c3f78f4dcf72dacaf436b2c9d60",
+      "bytes": 9551,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity_example.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/interfaces.py",
+      "git_blob_sha": "65cba4344ac9f51b742284f434a75a0fb2e9c62d",
+      "bytes": 10775,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/interfaces.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/model.py",
+      "git_blob_sha": "a9c64401f3218ac492a576fa1d2bee89962f65ed",
+      "bytes": 7587,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/model.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/observers.py",
+      "git_blob_sha": "da0b6f1bb37e6069e23b03f228a553ce3d7d84e5",
+      "bytes": 9678,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/observers.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/pipeline.py",
+      "git_blob_sha": "5f0e83af01c57d9b2170237c18ac2557c3698960",
+      "bytes": 10046,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/pipeline.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/schwarz.py",
+      "git_blob_sha": "0d4fe77e59079c9d435f79e3d3cc2b67542a63a3",
+      "bytes": 9338,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/schwarz.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/solvers.py",
+      "git_blob_sha": "4a1638d733b645c41c91e9b11aac213fc1acfdb1",
+      "bytes": 9166,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/solvers.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/thermal.py",
+      "git_blob_sha": "88236839e23eb7cbd6c94a1b73ebdf3dd267b6ba",
+      "bytes": 8292,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/thermal.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/training.py",
+      "git_blob_sha": "180ceb6cc9861cb771475df5c61f4f82a26849ef",
+      "bytes": 9234,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/training.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/requirements.txt",
+      "git_blob_sha": "1902c6b2d3c96cd4fd370c8bfd09fca6239c3761",
+      "bytes": 56,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/requirements.txt"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/run_elasticity.py",
+      "git_blob_sha": "1486b02047fcae6107e4083b7d56acd5ad07b687",
+      "bytes": 1823,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_elasticity.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/run_fpddm.py",
+      "git_blob_sha": "f781d8a2ceb58a12402389d7cac00b30257661c1",
+      "bytes": 2071,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_fpddm.py"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/train.py",
+      "git_blob_sha": "63bdb59e764e2841a851563490589452156e49e0",
+      "bytes": 2024,
+      "pinned_url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/train.py"
+    }
+  ]
+}

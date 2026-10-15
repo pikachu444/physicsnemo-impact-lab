@@ -1,0 +1,920 @@
+{
+  "scope": "Original public FEM data only; no AI predictions or training execution. One trajectory at a time.",
+  "strain_definition": "Elementwise Green-Lagrange E=0.5*(F.T@F-I), F=Ds@inv(Dm), reference mesh_pos. Tensor shear; dimensionless.",
+  "plate_mask": "Exclude actuator type1 nodes/elements touching type1; retain clamped type3.",
+  "stress_definition": "Public scalar nodal stress; original paper identifies von Mises. Units are unconfirmed dataset stress units.",
+  "coordinate_units": "Unconfirmed dataset coordinate units; no physical time step inferred.",
+  "sampled_frame_indices_zero_based": [
+    0,
+    100,
+    199,
+    299,
+    359,
+    399
+  ],
+  "sampled_peak_rss_bytes": 46964736,
+  "rss_sampled_after_each_frame_not_continuous_peak": true,
+  "elapsed_seconds": 1.2717120000015711,
+  "trajectories": [
+    {
+      "trajectory": "test_0000",
+      "npz_sha256": "02ebc74fb301d46117c978d0976e6a79ba170d77bc4938b175052cfdafb33701",
+      "nodes": 1305,
+      "plate_nodes_excluding_type1": 922,
+      "plate_tetrahedra_excluding_type1": 2679,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 6.661338147750939e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.010160432731862623,
+          "plate_nodal_stress_max": 41948.40625,
+          "plate_nodal_stress_min": 679.7781372070312,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9904850575341475,
+          "plate_detF_max": 1.0109413767808817
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.020157144482091494,
+          "plate_nodal_stress_max": 60420.34375,
+          "plate_nodal_stress_min": 959.673095703125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9808854129479917,
+          "plate_detF_max": 1.0214814495973972
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.029295242362767593,
+          "plate_nodal_stress_max": 74448.5546875,
+          "plate_nodal_stress_min": 1156.3319091796875,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9717582720419413,
+          "plate_detF_max": 1.0309697540651994
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.03423820781396836,
+          "plate_nodal_stress_max": 81167.5234375,
+          "plate_nodal_stress_min": 1279.9390869140625,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9667611051174007,
+          "plate_detF_max": 1.035952855467325
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.000771465739223931,
+          "plate_nodal_stress_max": 11373.568359375,
+          "plate_nodal_stress_min": 192.548583984375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9992830175257197,
+          "plate_detF_max": 1.0008395352390251
+        }
+      ]
+    },
+    {
+      "trajectory": "test_0001",
+      "npz_sha256": "35c0399f8e076e74ccea7d25b57bc4024c8a228616a52867dc1aed0208774b79",
+      "nodes": 1341,
+      "plate_nodes_excluding_type1": 870,
+      "plate_tetrahedra_excluding_type1": 2490,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.440892098500626e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999994,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.22454670343824884,
+          "plate_nodal_stress_max": 232280.625,
+          "plate_nodal_stress_min": 2185.362548828125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7633317250959454,
+          "plate_detF_max": 1.1552640970521428
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.40711003040369076,
+          "plate_nodal_stress_max": 407003.96875,
+          "plate_nodal_stress_min": 6686.9052734375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.6667250441466421,
+          "plate_detF_max": 1.334770460527326
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.5744414604961612,
+          "plate_nodal_stress_max": 541818.5,
+          "plate_nodal_stress_min": 9382.3447265625,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.5006944814266002,
+          "plate_detF_max": 1.4481699648095072
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.6665218425543677,
+          "plate_nodal_stress_max": 620109.0625,
+          "plate_nodal_stress_min": 10940.333984375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.4005089279959188,
+          "plate_detF_max": 1.5009901549116484
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.013701358631287852,
+          "plate_nodal_stress_max": 47450.859375,
+          "plate_nodal_stress_min": 491.09307861328125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9892064405237657,
+          "plate_detF_max": 1.0020517101040824
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0000",
+      "npz_sha256": "b6ff0a47e9cbe9fcc97b0a1fbd6b9d97180e75c1c09f0832ae638ba663c91086",
+      "nodes": 840,
+      "plate_nodes_excluding_type1": 539,
+      "plate_tetrahedra_excluding_type1": 1457,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 6.661338147750939e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999994,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.08084527756393911,
+          "plate_nodal_stress_max": 136472.546875,
+          "plate_nodal_stress_min": 503.162353515625,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9185914367259994,
+          "plate_detF_max": 1.0722558213331355
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.16767077373741301,
+          "plate_nodal_stress_max": 214517.484375,
+          "plate_nodal_stress_min": 704.0078125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.820972913988085,
+          "plate_detF_max": 1.1390210448517093
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.24505605613359704,
+          "plate_nodal_stress_max": 274250.71875,
+          "plate_nodal_stress_min": 888.1328125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7192304468375238,
+          "plate_detF_max": 1.191487961804367
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.2826840278580922,
+          "plate_nodal_stress_max": 300797.4375,
+          "plate_nodal_stress_min": 989.8997802734375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.6576036835590292,
+          "plate_detF_max": 1.2158864989588394
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0048464121066861265,
+          "plate_nodal_stress_max": 30395.830078125,
+          "plate_nodal_stress_min": 134.6262664794922,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.995504834844727,
+          "plate_detF_max": 1.0046473122600246
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0001",
+      "npz_sha256": "003b3131c748a780a295b972a3158f11ecfb3dde5de70e1fba05691483a5279d",
+      "nodes": 1001,
+      "plate_nodes_excluding_type1": 692,
+      "plate_tetrahedra_excluding_type1": 1936,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.440892098500626e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999994,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.10028308079839254,
+          "plate_nodal_stress_max": 137639.015625,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9264631066208678,
+          "plate_detF_max": 1.090350668746016
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.23139148550388666,
+          "plate_nodal_stress_max": 255026.3125,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.8464253391113795,
+          "plate_detF_max": 1.1934464868207133
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.3957059731094672,
+          "plate_nodal_stress_max": 415939.53125,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.77305924324433,
+          "plate_detF_max": 1.2975578758442736
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.5233361093906885,
+          "plate_nodal_stress_max": 528946.1875,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7322055670438331,
+          "plate_detF_max": 1.3523771782595968
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.00628410514375477,
+          "plate_nodal_stress_max": 30916.201171875,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9952186403973335,
+          "plate_detF_max": 1.00630032878053
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0002",
+      "npz_sha256": "75080377f70e98dfc3afee079fef911c438f0e053173ccfaaa182780d911a416",
+      "nodes": 1011,
+      "plate_nodes_excluding_type1": 699,
+      "plate_tetrahedra_excluding_type1": 2166,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.440892098500626e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0038532040247633015,
+          "plate_nodal_stress_max": 25018.46484375,
+          "plate_nodal_stress_min": 851.95361328125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9961933384841224,
+          "plate_detF_max": 1.0043957226355165
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.007775545541175433,
+          "plate_nodal_stress_max": 35810.734375,
+          "plate_nodal_stress_min": 1213.6776123046875,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9922769393868788,
+          "plate_detF_max": 1.0088747130121751
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.011668006387160923,
+          "plate_nodal_stress_max": 44226.5234375,
+          "plate_nodal_stress_min": 1492.7774658203125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9883233433339478,
+          "plate_detF_max": 1.0133387289273188
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.013949974167692725,
+          "plate_nodal_stress_max": 48605.71875,
+          "plate_nodal_stress_min": 1663.716796875,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9859445540123758,
+          "plate_detF_max": 1.0159732762953766
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0002663788367910369,
+          "plate_nodal_stress_max": 6554.11083984375,
+          "plate_nodal_stress_min": 235.9800567626953,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9997354400018089,
+          "plate_detF_max": 1.0003059832945864
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0003",
+      "npz_sha256": "12766b79396872d6054e028f0a0ae515ed5ce15aaeb7e57e7ead9dd8b866bcb4",
+      "nodes": 999,
+      "plate_nodes_excluding_type1": 736,
+      "plate_tetrahedra_excluding_type1": 2213,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.440892098500626e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.02310245565853053,
+          "plate_nodal_stress_max": 55156.5703125,
+          "plate_nodal_stress_min": 774.4430541992188,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9761223543881006,
+          "plate_detF_max": 1.020572128427142
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.046080496230465395,
+          "plate_nodal_stress_max": 80404.65625,
+          "plate_nodal_stress_min": 1076.2032470703125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9511435475216874,
+          "plate_detF_max": 1.0409006449155376
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.06679839947995492,
+          "plate_nodal_stress_max": 99499.5078125,
+          "plate_nodal_stress_min": 1318.3822021484375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9276069294416862,
+          "plate_detF_max": 1.0589335984207227
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.07734931553121854,
+          "plate_nodal_stress_max": 109295.046875,
+          "plate_nodal_stress_min": 1416.60205078125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9151319629206417,
+          "plate_detF_max": 1.0686348831018324
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0016213357975759513,
+          "plate_nodal_stress_max": 14204.5322265625,
+          "plate_nodal_stress_min": 231.4617462158203,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9983713686336425,
+          "plate_detF_max": 1.0014226753503654
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0004",
+      "npz_sha256": "929b66e1786a9bd0e7120274b1585d45eafbfd97c50ecb3b784025747f43d2d8",
+      "nodes": 1151,
+      "plate_nodes_excluding_type1": 836,
+      "plate_tetrahedra_excluding_type1": 2614,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.81554959414778e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000004
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.059802077546345755,
+          "plate_nodal_stress_max": 119053.2265625,
+          "plate_nodal_stress_min": 0.9612537622451782,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9223105177194799,
+          "plate_detF_max": 1.0523738810431928
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.12726689936065105,
+          "plate_nodal_stress_max": 187601.359375,
+          "plate_nodal_stress_min": 1.7613497972488403,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.8353749775724112,
+          "plate_detF_max": 1.1089142811531085
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.2178662949950736,
+          "plate_nodal_stress_max": 271777.65625,
+          "plate_nodal_stress_min": 2.605045795440674,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7896941020502426,
+          "plate_detF_max": 1.1698755677008879
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.2803157329447341,
+          "plate_nodal_stress_max": 327708.4375,
+          "plate_nodal_stress_min": 3.1457197666168213,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7895108401129474,
+          "plate_detF_max": 1.205412607000821
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0038501605510279924,
+          "plate_nodal_stress_max": 29122.580078125,
+          "plate_nodal_stress_min": 0.21210680902004242,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9958895634812169,
+          "plate_detF_max": 1.0041927775904944
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0005",
+      "npz_sha256": "becd113ef87e4975be0a770c6ab66465c16da398578a2e7bca826a38d0150e63",
+      "nodes": 1142,
+      "plate_nodes_excluding_type1": 947,
+      "plate_tetrahedra_excluding_type1": 2655,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.466567098154364e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.007238999109838051,
+          "plate_nodal_stress_max": 37570.4140625,
+          "plate_nodal_stress_min": 377.1427307128906,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.994882369227086,
+          "plate_detF_max": 1.0076900341291384
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.015870065779238884,
+          "plate_nodal_stress_max": 56009.94140625,
+          "plate_nodal_stress_min": 553.4280395507812,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9893009514838964,
+          "plate_detF_max": 1.0168975440913632
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.02478308999133616,
+          "plate_nodal_stress_max": 70497.203125,
+          "plate_nodal_stress_min": 687.4642944335938,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9833477320998208,
+          "plate_detF_max": 1.0263514977147987
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.030158475735868828,
+          "plate_nodal_stress_max": 78096.2109375,
+          "plate_nodal_stress_min": 756.5054321289062,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9796304342599778,
+          "plate_detF_max": 1.0320251900011066
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 8.215450542081726e-11,
+          "plate_nodal_stress_max": 0.3122735023498535,
+          "plate_nodal_stress_min": 0.00436445465311408,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999202409,
+          "plate_detF_max": 1.0000000000066602
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0006",
+      "npz_sha256": "048ef69bf2b3e38361dfe1c10e048d2512e5c4e80eee233b23072363f0688e51",
+      "nodes": 1431,
+      "plate_nodes_excluding_type1": 1120,
+      "plate_tetrahedra_excluding_type1": 3047,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 9.987695823924884e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999988,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.02946449263598261,
+          "plate_nodal_stress_max": 83276.8984375,
+          "plate_nodal_stress_min": 210.07443237304688,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9651445637719238,
+          "plate_detF_max": 1.0374200013509027
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0980930325519096,
+          "plate_nodal_stress_max": 158868.515625,
+          "plate_nodal_stress_min": 416.2867126464844,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.950561936434818,
+          "plate_detF_max": 1.0646776207235207
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.20544824953696983,
+          "plate_nodal_stress_max": 253187.6875,
+          "plate_nodal_stress_min": 626.925048828125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9116942531182094,
+          "plate_detF_max": 1.1271493672569788
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.2868748483253516,
+          "plate_nodal_stress_max": 327461.9375,
+          "plate_nodal_stress_min": 750.9801635742188,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.8735592571319164,
+          "plate_detF_max": 1.1697514973077745
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.002359076152882056,
+          "plate_nodal_stress_max": 15964.7587890625,
+          "plate_nodal_stress_min": 39.27172088623047,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9969283185675072,
+          "plate_detF_max": 1.0028226516291714
+        }
+      ]
+    },
+    {
+      "trajectory": "train_0007",
+      "npz_sha256": "b6900644a69f3b9e96e62e7a2d298ef845bbfb432106abd134e05371c03560d4",
+      "nodes": 900,
+      "plate_nodes_excluding_type1": 634,
+      "plate_tetrahedra_excluding_type1": 1809,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 4.440892098500626e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999994,
+          "plate_detF_max": 1.0000000000000004
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.1093410567310768,
+          "plate_nodal_stress_max": 171284.796875,
+          "plate_nodal_stress_min": 13.537723541259766,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.8722123916441272,
+          "plate_detF_max": 1.0957882897749036
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.21978174118057736,
+          "plate_nodal_stress_max": 268989.65625,
+          "plate_nodal_stress_min": 18.019927978515625,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7094201257233685,
+          "plate_detF_max": 1.1985985058218773
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.37039745858682804,
+          "plate_nodal_stress_max": 376430.40625,
+          "plate_nodal_stress_min": 21.347631454467773,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.561113105914953,
+          "plate_detF_max": 1.2648104112663239
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.48287398468370935,
+          "plate_nodal_stress_max": 480276.71875,
+          "plate_nodal_stress_min": 23.455257415771484,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.474268080117327,
+          "plate_detF_max": 1.29276223681298
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0075044724976868205,
+          "plate_nodal_stress_max": 39694.83984375,
+          "plate_nodal_stress_min": 10.35621452331543,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9924138263296186,
+          "plate_detF_max": 1.0073853458279145
+        }
+      ]
+    },
+    {
+      "trajectory": "valid_0000",
+      "npz_sha256": "e386c82a7a15af1c4497511319d477c4930cbb735d368867bfe279bf0a7befce",
+      "nodes": 1645,
+      "plate_nodes_excluding_type1": 814,
+      "plate_tetrahedra_excluding_type1": 2259,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 5.551115123125783e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999994,
+          "plate_detF_max": 1.0000000000000007
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.11428012800044912,
+          "plate_nodal_stress_max": 131087.609375,
+          "plate_nodal_stress_min": 16.943462371826172,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9013590710334024,
+          "plate_detF_max": 1.0693206630172711
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.16799752761313602,
+          "plate_nodal_stress_max": 216157.1875,
+          "plate_nodal_stress_min": 2.9300665855407715,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.890854638648,
+          "plate_detF_max": 1.1436885464145814
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.2208886168909041,
+          "plate_nodal_stress_max": 258822.546875,
+          "plate_nodal_stress_min": 2.116579294204712,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.8249775015596108,
+          "plate_detF_max": 1.177339433847209
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.24216754057227408,
+          "plate_nodal_stress_max": 274600.5,
+          "plate_nodal_stress_min": 2.2742137908935547,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.7910223319413923,
+          "plate_detF_max": 1.1890890291914196
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0016349724232015972,
+          "plate_nodal_stress_max": 18513.8203125,
+          "plate_nodal_stress_min": 0.38054969906806946,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9986832653015655,
+          "plate_detF_max": 1.000158595563399
+        }
+      ]
+    },
+    {
+      "trajectory": "valid_0001",
+      "npz_sha256": "f8a4d10f326793a65345fe6092f63ab710595b23e50d6cb58a0202b0f4b80775",
+      "nodes": 1382,
+      "plate_nodes_excluding_type1": 1115,
+      "plate_tetrahedra_excluding_type1": 3210,
+      "samples": [
+        {
+          "frame_index_zero_based": 0,
+          "plate_green_lagrange_max_abs_tensor_component": 6.661338147750939e-16,
+          "plate_nodal_stress_max": 0.0,
+          "plate_nodal_stress_min": 0.0,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9999999999999993,
+          "plate_detF_max": 1.0000000000000009
+        },
+        {
+          "frame_index_zero_based": 100,
+          "plate_green_lagrange_max_abs_tensor_component": 0.006147840165886043,
+          "plate_nodal_stress_max": 28188.8203125,
+          "plate_nodal_stress_min": 298.2134094238281,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9913266710062318,
+          "plate_detF_max": 1.0058200592708728
+        },
+        {
+          "frame_index_zero_based": 199,
+          "plate_green_lagrange_max_abs_tensor_component": 0.012367014774864793,
+          "plate_nodal_stress_max": 40659.82421875,
+          "plate_nodal_stress_min": 403.7061767578125,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.982411184128246,
+          "plate_detF_max": 1.0117340476166987
+        },
+        {
+          "frame_index_zero_based": 299,
+          "plate_green_lagrange_max_abs_tensor_component": 0.018507046664578475,
+          "plate_nodal_stress_max": 50211.8046875,
+          "plate_nodal_stress_min": 484.71429443359375,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9734185225716182,
+          "plate_detF_max": 1.0174424711803092
+        },
+        {
+          "frame_index_zero_based": 359,
+          "plate_green_lagrange_max_abs_tensor_component": 0.02195677446312594,
+          "plate_nodal_stress_max": 55148.93359375,
+          "plate_nodal_stress_min": 511.6850280761719,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9682794960326234,
+          "plate_detF_max": 1.0207622325263617
+        },
+        {
+          "frame_index_zero_based": 399,
+          "plate_green_lagrange_max_abs_tensor_component": 0.0004397285003034379,
+          "plate_nodal_stress_max": 7369.01171875,
+          "plate_nodal_stress_min": 87.71636199951172,
+          "negative_stress_count_all_nodes": 0,
+          "negative_stress_count_plate_nodes": 0,
+          "plate_inverted_or_zero_detF_tetrahedra": 0,
+          "plate_detF_min": 0.9993827696055542,
+          "plate_detF_max": 1.0004116036569075
+        }
+      ]
+    }
+  ]
+}

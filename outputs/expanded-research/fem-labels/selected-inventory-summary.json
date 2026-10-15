@@ -1,0 +1,50 @@
+{
+  "dataset": "AIRBORNEPANDA/BumperBeamCrashExample",
+  "revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "created_utc": "2026-10-15T02:46:51.894676+00:00",
+  "tree_complete_against_metadata_siblings": true,
+  "raw_files_count": 3934,
+  "raw_total_bytes": 15272439272,
+  "selected_run_count": 131,
+  "selected_file_count": 1441,
+  "selected_bytes": 3799370861,
+  "selected_decimal_GB": 3.799370861,
+  "selected_GiB": 3.5384398521855474,
+  "approved_byte_ceiling": 6000000000,
+  "selected_frame_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "source_extra_frames_excluded": [
+    {
+      "path": "RAW_DATA/TRAINING_DATA/Run194/Bumper_Beam_AP_meshedA012",
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/RAW_DATA/TRAINING_DATA/Run194/Bumper_Beam_AP_meshedA012",
+      "run": "Run194",
+      "source_split": "TRAINING_DATA",
+      "frame": 12,
+      "bytes": 2636621,
+      "lfs_sha256": "31ec5e24b9c9f8781bd64503cd1b95c2dbcaec71f27c4fd0859fef2184a6551d",
+      "git_blob_oid": "7c7c8756c908ecccfde3360121c4ff104a8b1963"
+    },
+    {
+      "path": "RAW_DATA/TRAINING_DATA/Run203/Bumper_Beam_AP_meshedA012",
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/RAW_DATA/TRAINING_DATA/Run203/Bumper_Beam_AP_meshedA012",
+      "run": "Run203",
+      "source_split": "TRAINING_DATA",
+      "frame": 12,
+      "bytes": 2636621,
+      "lfs_sha256": "925ae458aa2ea4fdaa0740c4f2cc801a5c28dc50246d932d501de658a74bd2bd",
+      "git_blob_oid": "82d0795f0a4a21b6940c7315e8cf961d11f672cf"
+    }
+  ],
+  "experiment_split_metrics_sha256": "ed5663539cfc16947359dc196f402eb8c2725c47243f0d32cfbba39a206f6741"
+}

@@ -1,0 +1,1636 @@
+{
+  "cases": 13,
+  "split_counts": {
+    "train": 5,
+    "validation": 4,
+    "test": 4
+  },
+  "all_solver_exit_codes_zero": true,
+  "total_solver_wall_seconds": 765.537977299995,
+  "engine_wall_seconds_range": [
+    32.814985900000465,
+    72.1740987000012
+  ],
+  "maximum_sampled_starter_rss_bytes": 173195264,
+  "maximum_sampled_engine_rss_bytes": 52912128,
+  "maximum_KE_over_IE_after1ms": 0.0012193608734725383,
+  "maximum_frame_jitter_ms": 0.00019999999999953388,
+  "memory_measurement": "Per solver process RSS sampled every .05s; lower bound on instantaneous maximum; not total system/ML-process memory.",
+  "timing_measurement": "Actual local sequential one-thread stages, with other research processes sharing host; not isolated performance guarantees.",
+  "native_cell_shape": [
+    808,
+    10,
+    8
+  ],
+  "primary_nodal_shape": [
+    919,
+    10,
+    7
+  ],
+  "cache_array_bytes": 3445288,
+  "fem_private_work_bytes": 115475218,
+  "cost": "No paid resource created; existing local computer used. Electricity and hardware ownership cost not measured.",
+  "canonical_cell_manifest_sha256": "4eba6a30cd741f3c22fd33b708ff6d14ee6ef2c98df4a4a0d1dd87dec77a1792",
+  "primary_nodal_manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+  "details": {
+    "pilot_base": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.016808509826660156,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005031228065490723,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47580869559368466,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.014066696166992188,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005073261260974959,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47569878462871884,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.013947486877441406,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004976654052768481,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47574861411175107,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.012159347534179688,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005042743682963646,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47577889327129697,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00013,
+          "von_mises_crosscheck_max_abs_MPa": 0.013232231140136719,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005071830749443507,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47578890685161923,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.012755393981933594,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004995727539096606,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757989204319415,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00013,
+          "von_mises_crosscheck_max_abs_MPa": 0.012993812561035156,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005056190490790868,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47578890685161923,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.012278556823730469,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005143165588492593,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47577889327129697,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005044937133789062,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.011742115020751953,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005078124999897682,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 20.30323481373489,
+        "final_engineering_strain": 0.08125805,
+        "final_engineering_stress_MPa": 676.774493791163
+      },
+      "energy": {
+        "final_internal_J": 185.3408,
+        "final_kinetic_J": 0.01251675,
+        "max_kinetic_over_internal_after1ms": 0.0010663911585817162,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "8b03fe68a4025ccfe23632b77e4129e1a6db08d1582c23adbbb76c3ef2d73697",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "fc9c6b6e64afec98e0efc8a384cd92fa8a7034a02c44ff5e9930a4777f5eda97",
+      "primary_nodal_target_sha256": "da90cedd113bfd6bc30cfb3785c7d88c7ba0b547dbfb405bf8eceadd7ed4e0a5"
+    },
+    "corner_s090_v075": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00018,
+          "von_mises_crosscheck_max_abs_MPa": 0.013679265975952148,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005106210708731851,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47579075459560727,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.012695789337158203,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005069971084594727,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47573871974071835,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.009059906005859375,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005022764205904195,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47566874388775204,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.011444091796875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004999017715476839,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47571881178936337,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.010728836059570312,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005046749114967497,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757686412723956,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.010013580322265625,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005070114135605763,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47566874388775204,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.010192394256591797,
+          "coordinate_minus_displacement_max_abs_mm": 0.000505676269540345,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47569878462871884,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.010013580322265625,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005069541931277399,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47572882536968564,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00011,
+          "von_mises_crosscheck_max_abs_MPa": 0.00959634780883789,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005151557922431493,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757388389500079,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.009834766387939453,
+          "coordinate_minus_displacement_max_abs_mm": 0.00050777435302507,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 18.0016817667929,
+        "final_engineering_strain": 0.060287049999999995,
+        "final_engineering_stress_MPa": 600.0560588930966
+      },
+      "energy": {
+        "final_internal_J": 121.9551,
+        "final_kinetic_J": 0.006682521,
+        "max_kinetic_over_internal_after1ms": 0.001024355726479285,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "dba855a3e33bad6cc6564bd429aad38bb3aa9e400f0b4e772cc0401a19ce99ec",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "3368bdebdb963311e56cbf27024da9a890139b4dad305bca1259581312587a9d",
+      "primary_nodal_target_sha256": "7a1783de94355d7a0afc40a21c521fc0821f7d6734e233acced2c7a2e6f292be"
+    },
+    "corner_s090_v125": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.019848346710205078,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005072927474998323,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47583873633465146,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00006,
+          "von_mises_crosscheck_max_abs_MPa": 0.015676021575927734,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004972028732197487,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47572882536968564,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.01627206802368164,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005042934417645029,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47580869559368466,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.016868114471435547,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004973506927541393,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758585250767169,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00002,
+          "von_mises_crosscheck_max_abs_MPa": 0.016510486602783203,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005039024352981869,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756787574680743,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.014603137969970703,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004965209960943184,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757087982090411,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.01531839370727539,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005064010620117188,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47571881178936337,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00006,
+          "von_mises_crosscheck_max_abs_MPa": 0.014424324035644531,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005141830444301831,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00006,
+          "von_mises_crosscheck_max_abs_MPa": 0.015556812286376953,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005063247680539007,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.015020370483398438,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005064010620117188,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 18.43115679098264,
+        "final_engineering_strain": 0.10317055,
+        "final_engineering_stress_MPa": 614.3718930327547
+      },
+      "energy": {
+        "final_internal_J": 213.1811,
+        "final_kinetic_J": 0.01945566,
+        "max_kinetic_over_internal_after1ms": 0.0012193608734725383,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "6561a1bb13b2af77c69762af9101bd1a027be1061a66e2515068297afa465252",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "f5bd361bb6daabc1b7ea0dcd3b4789ad2fd2accf45cc36bfd0349ac2f0452087",
+      "primary_nodal_target_sha256": "fbca739f44ea28b1a93477d6a3914cc4c95d82d5c5441b6e2840e9eb2cdd0e76"
+    },
+    "corner_s110_v075": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.012278556823730469,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004948234558241893,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47577573422512387,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.010371208190917969,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004941701889151773,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756887710483966,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.012278556823730469,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004974842071590047,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757087982090411,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.01150369644165039,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005061626434326172,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47572882536968564,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.009894371032714844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004988479614382868,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47572882536968564,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.00947713851928711,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005010986328102263,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47572882536968564,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.010132789611816406,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005066299438567512,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757087982090411,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.009119510650634766,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005058479308956976,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47569878462871884,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.009298324584960938,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005000877380325619,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47566874388775204,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0002,
+          "von_mises_crosscheck_max_abs_MPa": 0.010251998901367188,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005076789855991137,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757688796909747,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 21.986054483331827,
+        "final_engineering_strain": 0.06008361250000001,
+        "final_engineering_stress_MPa": 732.8684827777275
+      },
+      "energy": {
+        "final_internal_J": 147.8748,
+        "final_kinetic_J": 0.007324006,
+        "max_kinetic_over_internal_after1ms": 0.0008155599275473259,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "cb4acea863fd4f35bf0190d5fccadb855997b441361ed60517e820e10f48bd0b",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "76a20a017a3b47887647a6c03363d0d6e48605b5090cc80999df5b9a15309b13",
+      "primary_nodal_target_sha256": "0c61e70c88f28e254d0e4f22a3a24962e35969e7a41f63a44997bc27e9e451d7"
+    },
+    "corner_s110_v125": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.021219253540039062,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005063247680539007,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47580869559368466,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.016629695892333984,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005037784576416016,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758487499149737,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.017523765563964844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005136108398460237,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475858763495296,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.016510486602783203,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004972076416152049,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758485114963946,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.016391277313232422,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005052757263115382,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47581894759258603,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.015854835510253906,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005076789855991137,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757688796909747,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.014901161193847656,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005053520202693562,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757083213718829,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.01436471939086914,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005160140991335993,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758590019138751,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.015079975128173828,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005064010620117188,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47575886611065243,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.015556812286376953,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005048751831111531,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 22.51118988424787,
+        "final_engineering_strain": 0.10289917500000001,
+        "final_engineering_stress_MPa": 750.3729961415956
+      },
+      "energy": {
+        "final_internal_J": 259.2679,
+        "final_kinetic_J": 0.01997028,
+        "max_kinetic_over_internal_after1ms": 0.0011019853762310697,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "74002cbbe4e647b50b8c149ec7404f80d9882b30e8841a40c77dcbfdb0914579",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "73b799ee7c70ea9f621e0648e7dd360ce580724e1dd87e3b3b281cb9094c5981",
+      "primary_nodal_target_sha256": "cefefe1d5affbfc1204a7ad329440dab5a6b9ee3d02eefe2a33a280e66004734"
+    },
+    "holdout_validation_01": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.017821788787841797,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005068111419745946,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47579033736309384,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00017,
+          "von_mises_crosscheck_max_abs_MPa": 0.017821788787841797,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005061626434326172,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475811795035213,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.01609325408935547,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005039978027241432,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47559340361675595,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.014841556549072266,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004974555969283756,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47556527022442197,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00018,
+          "von_mises_crosscheck_max_abs_MPa": 0.015556812286376953,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005059242248535156,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47574646834453915,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.015079975128173828,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004965782165413657,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47567303542217587,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.015139579772949219,
+          "coordinate_minus_displacement_max_abs_mm": 0.00050693511963118,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756043708713946,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.01519918441772461,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005049896240336693,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4755261695774493,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00003,
+          "von_mises_crosscheck_max_abs_MPa": 0.014185905456542969,
+          "coordinate_minus_displacement_max_abs_mm": 0.000507431030285943,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47545750502666806,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0002,
+          "von_mises_crosscheck_max_abs_MPa": 0.015497207641601562,
+          "coordinate_minus_displacement_max_abs_mm": 0.000507354736328125,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47555954817852353,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 21.645817598349822,
+        "final_engineering_strain": 0.10197563750000001,
+        "final_engineering_stress_MPa": 721.5272532783274
+      },
+      "energy": {
+        "final_internal_J": 247.3608,
+        "final_kinetic_J": 0.01856195,
+        "max_kinetic_over_internal_after1ms": 0.0010632808326626923,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "159f4277894648bd271952f3cf6606ba1dfc1e488b2d3a596ed7644aa0bfbfb8",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "8941392dd6ac0281c3200ebdaa6a52ce975b63eb8097b957df85a5177d7c1bb7",
+      "primary_nodal_target_sha256": "52e36be2762a0d376cb0a38f9db12e8af5fe5c17120dfaa776c3874d16c13a1e"
+    },
+    "holdout_validation_02": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.015497207641601562,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005100917816207584,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565497521480893,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.012755393981933594,
+          "coordinate_minus_displacement_max_abs_mm": 0.000498886108402985,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475444511214107,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.01233816146850586,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005041122436466594,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753597534092364,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00003,
+          "von_mises_crosscheck_max_abs_MPa": 0.011622905731201172,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004995155334484025,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4750948703678546,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.011980533599853516,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005067443847792674,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4750054634006915,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00011,
+          "von_mises_crosscheck_max_abs_MPa": 0.011444091796875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004915428161496038,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758723533543048,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.011801719665527344,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005059242248535156,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475753144064754,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.011205673217773438,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004940032958984375,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756181991489825,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00017,
+          "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005135345458882057,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47548325423321103,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0002,
+          "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005060577392441701,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753535545261798,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 18.51871327763365,
+        "final_engineering_strain": 0.07350290000000001,
+        "final_engineering_stress_MPa": 617.2904425877883
+      },
+      "energy": {
+        "final_internal_J": 153.092,
+        "final_kinetic_J": 0.009794858,
+        "max_kinetic_over_internal_after1ms": 0.001068128588101697,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "3cb1caba491f92dd6c572f0968030fd8669a943f7e5c34941f8dd1d98fd52cee",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "ed5d1cea0880ae688163a7a11bc280469c8d93fc6f279cb6236399bb33ea5c95",
+      "primary_nodal_target_sha256": "ff2866d6bb5e5888eb03def4cf11bd976d83d8224ef5ee37f8a5861ea4370b72"
+    },
+    "holdout_validation_03": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.016450881958007812,
+          "coordinate_minus_displacement_max_abs_mm": 0.000505266189577469,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47557886008343075,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.014781951904296875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005026578903226664,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4752388751896319,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.014185905456542969,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005040168762207031,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47505910758098935,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00011,
+          "von_mises_crosscheck_max_abs_MPa": 0.013768672943115234,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005013275146552587,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47586615447124814,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.012755393981933594,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005040168762207031,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565634612163876,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00013,
+          "von_mises_crosscheck_max_abs_MPa": 0.012099742889404297,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005146026611271282,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47542651061138486,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00012,
+          "von_mises_crosscheck_max_abs_MPa": 0.012934207916259766,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005043220519951319,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47519667510113095,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00011,
+          "von_mises_crosscheck_max_abs_MPa": 0.011920928955078125,
+          "coordinate_minus_displacement_max_abs_mm": 0.000514144897465485,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4759381568821368,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.01233816146850586,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004973220825092994,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47569878462871884,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.011861324310302734,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005072402954056088,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47545845870098447,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 20.313044795093447,
+        "final_engineering_strain": 0.0836248125,
+        "final_engineering_stress_MPa": 677.1014931697815
+      },
+      "energy": {
+        "final_internal_J": 190.7984,
+        "final_kinetic_J": 0.01297352,
+        "max_kinetic_over_internal_after1ms": 0.0011848810132066277,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "643a443caf8cdcea9d6c002910e8565122c3302ef40bff6b429cd02a6a01251e",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "4d605c182d86baf75e6bca7d6ab3f828e974f98c12fc616af29636160acf0df7",
+      "primary_nodal_target_sha256": "99524f211153094a69f145c0692c856b6bb47f5bcbbec646db9bedc8aba85704"
+    },
+    "holdout_validation_04": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.015735626220703125,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005017900466839365,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4754395044239459,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.012934207916259766,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005006074905367086,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47502155665478085,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.009894371032714844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005002021789550781,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757223880680499,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00013,
+          "von_mises_crosscheck_max_abs_MPa": 0.011563301086425781,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004982948303222656,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4754062450321612,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.011026859283447266,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005002021789550781,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4750850952061114,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.011742115020751953,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005057144165050431,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757560050877032,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.011324882507324219,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005049705505371094,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47540982131084775,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.011026859283447266,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005041313171432193,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47505362395367,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.010251998901367188,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004994010925258863,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475694493094295,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.010669231414794922,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005065727233954931,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753430641086993,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 20.611494275231962,
+        "final_engineering_strain": 0.066138425,
+        "final_engineering_stress_MPa": 687.0498091743988
+      },
+      "energy": {
+        "final_internal_J": 152.9713,
+        "final_kinetic_J": 0.00881474,
+        "max_kinetic_over_internal_after1ms": 0.0008929964635276402,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "58047dffa414565431647046225833ffd904359f6670bfc133731d2dd6cec0bb",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "fd7509a2e28ddfaa6cdf0925b174d4a77e76e0cdb5c4fab8b755c01ff9a5b312",
+      "primary_nodal_target_sha256": "e71b96de66d896cb3a59bc46b6d42bec7789a90722a9467586e1bebd01f93ef8"
+    },
+    "holdout_test_01": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.02014636993408203,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004950761795043945,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47508521441540097,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00003,
+          "von_mises_crosscheck_max_abs_MPa": 0.015795230865478516,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004962682723999023,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4752333915623126,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.014901161193847656,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005045413971060952,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4755416667850909,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.013649463653564453,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005139446258510816,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47583992842754697,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.014126300811767578,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005054473876953125,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4751265800388751,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.013887882232666016,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005046272277695607,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47539503935894345,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.013887882232666016,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005076789855991137,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565300826153134,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.012814998626708984,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005049514770405494,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758914268406329,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.012993812561035156,
+          "coordinate_minus_displacement_max_abs_mm": 0.000500183105472729,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47513230208477353,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.013709068298339844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005057525634697413,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47536595229229306,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 20.455397114641528,
+        "final_engineering_strain": 0.090564075,
+        "final_engineering_stress_MPa": 681.8465704880509
+      },
+      "energy": {
+        "final_internal_J": 207.9568,
+        "final_kinetic_J": 0.01475367,
+        "max_kinetic_over_internal_after1ms": 0.0011212912135156515,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "03db2f3e3ee770c34fd87193d63c4f6eb73de305745f4c3dc6539f8ae8555e91",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "d057cfaee4235fe500325bb69a779423f32b0f60c3a071c09e5148a778a2f138",
+      "primary_nodal_target_sha256": "38ca8ba247f8f89c1c5582ef5292b7614d37a4b9161a98c93e70c981abde7103"
+    },
+    "holdout_test_02": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00016,
+          "von_mises_crosscheck_max_abs_MPa": 0.012159347534179688,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004988884925865023,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4751899993809161,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.013530254364013672,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005045795440707934,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47552438143810605,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00013,
+          "von_mises_crosscheck_max_abs_MPa": 0.011980533599853516,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004947090149016731,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47498376730999325,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.010609626770019531,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005000400543195838,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4752951419742999,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.01049041748046875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005062866210892025,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4757264411838946,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00007,
+          "von_mises_crosscheck_max_abs_MPa": 0.011444091796875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005037117004462743,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4751408851536212,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00008,
+          "von_mises_crosscheck_max_abs_MPa": 0.010967254638671875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004973411560058594,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47556193236431454,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.011086463928222656,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004901123046749944,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47597344283184384,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00009,
+          "von_mises_crosscheck_max_abs_MPa": 0.0095367431640625,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005068397522052237,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47537787322124814,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.010609626770019531,
+          "coordinate_minus_displacement_max_abs_mm": 0.000498027801512535,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47577889327129697,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 19.538695052488038,
+        "final_engineering_strain": 0.065082575,
+        "final_engineering_stress_MPa": 651.2898350829346
+      },
+      "energy": {
+        "final_internal_J": 142.841,
+        "final_kinetic_J": 0.007734513,
+        "max_kinetic_over_internal_after1ms": 0.0009728840228587109,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "99d353d469c3436950289d4bbcb9e8cbcd079ac438695a41aabc007c2f9d7191",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "ceabc6206bf20d130a50106ac31006e9de01b44122ceabcfa7f5e6f558e1bcd9",
+      "primary_nodal_target_sha256": "c42539ecbb9f5888b9267986712be2d3c07c00d9e1cec362584733906bf7e4fb"
+    },
+    "holdout_test_03": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.016450881958007812,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005046749114967497,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47579200629314755,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.015079975128173828,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005075263977118993,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756353652866778,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.01615285873413086,
+          "coordinate_minus_displacement_max_abs_mm": 0.000507278442370307,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565324668011044,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.014841556549072266,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005076599121025538,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565682295879697,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00017,
+          "von_mises_crosscheck_max_abs_MPa": 0.014781951904296875,
+          "coordinate_minus_displacement_max_abs_mm": 0.000505657196043785,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756501472385821,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.014185905456542969,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005011940002503934,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4754331863315997,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.01424551010131836,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004964065551718022,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47539646987041806,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.013709068298339844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004978942871218806,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753449714573321,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00017,
+          "von_mises_crosscheck_max_abs_MPa": 0.013947486877441406,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005057525634697413,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47545750502666806,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0002,
+          "von_mises_crosscheck_max_abs_MPa": 0.013768672943115234,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005070114135605763,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4754613197239337,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 19.26696841669036,
+        "final_engineering_strain": 0.09258446249999999,
+        "final_engineering_stress_MPa": 642.2322805563454
+      },
+      "energy": {
+        "final_internal_J": 200.35,
+        "final_kinetic_J": 0.01550515,
+        "max_kinetic_over_internal_after1ms": 0.0011439735749508577,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "07127da076f4f892d61056d8f2a9ce357a6cd83095aa377dd6a53d2a839e0c1a",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "88324b0e2e52d51fd2ea9381a47cc4d9239e5dd2b61402be0a92345329c2fcae",
+      "primary_nodal_target_sha256": "e21da1975e68f39f0b06903afa4dd0109a780702b5ed4c46a928fc36023585c7"
+    },
+    "holdout_test_04": {
+      "physical_checks": [
+        {
+          "time_ms": 0.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.0,
+          "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 1.00014,
+          "von_mises_crosscheck_max_abs_MPa": 0.017642974853515625,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005103778838986273,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47589208249172543,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 2.00001,
+          "von_mises_crosscheck_max_abs_MPa": 0.013053417205810547,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005059051513569557,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47585614089092587,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 3.00004,
+          "von_mises_crosscheck_max_abs_MPa": 0.01436471939086914,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004973602295024193,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4749754226597247,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 4.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.012934207916259766,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004957485199099665,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475081757346004,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 5.00005,
+          "von_mises_crosscheck_max_abs_MPa": 0.013709068298339844,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005050277709983675,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47516281966289853,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 6.00003,
+          "von_mises_crosscheck_max_abs_MPa": 0.01150369644165039,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005062294006279444,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4752491271885333,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 7.0,
+          "von_mises_crosscheck_max_abs_MPa": 0.011801719665527344,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005054473876953125,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753254211338458,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 8.00015,
+          "von_mises_crosscheck_max_abs_MPa": 0.012874603271484375,
+          "coordinate_minus_displacement_max_abs_mm": 0.000505676269540345,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47554667357525204,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 9.00011,
+          "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+          "coordinate_minus_displacement_max_abs_mm": 0.0005148124694756007,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756129539402423,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        },
+        {
+          "time_ms": 10.0001,
+          "von_mises_crosscheck_max_abs_MPa": 0.010967254638671875,
+          "coordinate_minus_displacement_max_abs_mm": 0.0004973602294882085,
+          "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565396193584775,
+          "vtk_cells": 899,
+          "kept_physical_shell_cells": 808,
+          "excluded_rigid_body_auxiliary_cells": 91
+        }
+      ],
+      "force_diagnostic": {
+        "source": "negative derivative of RBODY T01 impulse, no filter",
+        "gauge_length_mm": 80.0,
+        "area_initial_mm2": 30,
+        "final_force_kN": 21.917508695903962,
+        "final_engineering_strain": 0.0774140625,
+        "final_engineering_stress_MPa": 730.5836231967987
+      },
+      "energy": {
+        "final_internal_J": 190.4586,
+        "final_kinetic_J": 0.01136514,
+        "max_kinetic_over_internal_after1ms": 0.0010664102262150001,
+        "final_hourglass_over_internal": 0.0
+      },
+      "prepared_input_hashes": {
+        "tensile_LAW2_0000.rad": "1b89c83b690349db70e4223dc0cfa3aca3653ec44381f6549754fa2aeaa4a862",
+        "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+      },
+      "canonical_cell_target_sha256": "8e4e7b0569a3ed1c5f200a4d07f631c4be5d99414d63260457472cf341b01b03",
+      "primary_nodal_target_sha256": "828c35a2ae5a0b2c549ba8eef031361c7a0a02b2fab3193d695f949d8f0b7a26"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "target_mean": [
+    1.1622142274643528e-09,
+    -5.829886503282221e-09,
+    5.482204251209693e-07,
+    30958.843949912323
+  ],
+  "target_std": [
+    0.002437679552869454,
+    0.002440335865928635,
+    0.0024892644590943807,
+    40853.46967568761
+  ],
+  "edge_mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.01808447148550027
+  ],
+  "edge_std": [
+    0.011977266763369339,
+    0.012363230688996382,
+    0.009199941573136222,
+    0.007341335569632183
+  ],
+  "fit_trajectories": [
+    "train_0000",
+    "train_0001",
+    "train_0002",
+    "train_0003",
+    "train_0004",
+    "train_0005",
+    "train_0006",
+    "train_0007"
+  ],
+  "weighting": "Equal trajectory weight; all 399 training increments; no validation/test statistics",
+  "strain_reference": "Per-tetra Green-Lagrange derived from mesh_pos and world_pos; not original COMSOL strain output",
+  "noise_normalization": "Analytic variance of fresh zero-mean independent noise; equal trajectory free-node fractions"
+}

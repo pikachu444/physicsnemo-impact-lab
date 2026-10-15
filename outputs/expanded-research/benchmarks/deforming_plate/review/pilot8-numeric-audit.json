@@ -1,0 +1,268 @@
+{
+  "status": "passed_for_preserved_AR_predictions_and_derived_strain; accuracy_failed_bounded_pilot",
+  "checks": {
+    "disjoint_trajectory_names": true,
+    "all_12_source_npz_hashes_match_and_are_distinct": true,
+    "normalization_lists_training_only": true,
+    "driver_and_helper_snapshot_hashes_match": true,
+    "checkpoint_sha256_matches": true,
+    "checkpoint_scalar_epoch_and_validation_score_match_history": true,
+    "checkpoint_metadata_read_without_unpickling": "Used zipfile+pickletools scalar opcodes only; no tensor deserialization, Torch import or GPU."
+  },
+  "checkpoint_sha256": "439f8b620714ae7737934e6be8aad4eeaf5c9e07d0bf432f3faaaa94d1cd4107",
+  "best_epoch": 5,
+  "best_validation_mse": 0.17023217072710395,
+  "trajectories": [
+    {
+      "trajectory": "test_0000",
+      "source_truth_and_node_cell_masks": "exactly matched original NPZ",
+      "prescribed_boundary_positions": "exact match at all399steps",
+      "metrics": {
+        "rollout_free_displacement": {
+          "relative_l2": 1.7126783146388869,
+          "component_rmse": 0.06427424592149761,
+          "max_abs_component_error": 0.2981441840529442,
+          "values": 1067724,
+          "squared_error": 4410.958634295896,
+          "squared_truth": 1503.7698989246064
+        },
+        "rollout_free_stress": {
+          "relative_l2": 0.7084149850727262,
+          "component_rmse": 19718.906990609412,
+          "max_abs_component_error": 59099.294921875,
+          "values": 355908,
+          "squared_error": 138389591426985.3,
+          "squared_truth": 275757890851366.0
+        },
+        "zero_increment_baseline_free_displacement": {
+          "relative_l2": 1.0,
+          "component_rmse": 0.037528498709957475,
+          "max_abs_component_error": 0.20747002959251404,
+          "values": 1067724,
+          "squared_error": 1503.7698989246064,
+          "squared_truth": 1503.7698989246064
+        },
+        "zero_stress_baseline": {
+          "relative_l2": 1.0,
+          "component_rmse": 27835.24827412433,
+          "max_abs_component_error": 81267.0859375,
+          "values": 355908,
+          "squared_error": 275757890851366.0,
+          "squared_truth": 275757890851366.0
+        },
+        "training_mean_constant_stress_baseline": {
+          "relative_l2": 0.7208094208310669,
+          "component_rmse": 20063.909187160512,
+          "max_abs_component_error": 50308.2421875,
+          "values": 355908,
+          "squared_error": 143274485304370.06,
+          "squared_truth": 275757890851366.0
+        },
+        "derived_GL_strain": {
+          "relative_l2": 27.660990729438247,
+          "component_rmse": 0.08489114328748949,
+          "max_abs_component_error": 1.0473109211343399,
+          "values": 337554,
+          "squared_error": 2432.58499675703,
+          "squared_truth": 3.179307698264665
+        }
+      },
+      "predicted_inversions_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        12,
+        16,
+        25,
+        32,
+        59,
+        75
+      ],
+      "truth_inversions_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "independent_derived_prediction_absmax_difference": 4.440892098500626e-16,
+      "independent_derived_truth_absmax_difference": 7.275957614183426e-12
+    },
+    {
+      "trajectory": "test_0001",
+      "source_truth_and_node_cell_masks": "exactly matched original NPZ",
+      "prescribed_boundary_positions": "exact match at all399steps",
+      "metrics": {
+        "rollout_free_displacement": {
+          "relative_l2": 2.721320738523592,
+          "component_rmse": 0.019749825051213046,
+          "max_abs_component_error": 0.08935879170894623,
+          "values": 921690,
+          "squared_error": 359.5103363355861,
+          "squared_truth": 48.54582865647399
+        },
+        "rollout_free_stress": {
+          "relative_l2": 0.7635479468775824,
+          "component_rmse": 57432.10007740767,
+          "max_abs_component_error": 467719.712890625,
+          "values": 307230,
+          "squared_error": 1013381601232959.8,
+          "squared_truth": 1738202569751193.5
+        },
+        "zero_increment_baseline_free_displacement": {
+          "relative_l2": 1.0,
+          "component_rmse": 0.007257441128357398,
+          "max_abs_component_error": 0.0545908659696579,
+          "values": 921690,
+          "squared_error": 48.54582865647399,
+          "squared_truth": 48.54582865647399
+        },
+        "zero_stress_baseline": {
+          "relative_l2": 1.0,
+          "component_rmse": 75217.4114438626,
+          "max_abs_component_error": 494882.46875,
+          "values": 307230,
+          "squared_error": 1738202569751193.5,
+          "squared_truth": 1738202569751193.5
+        },
+        "training_mean_constant_stress_baseline": {
+          "relative_l2": 0.7402387201543974,
+          "component_rmse": 55678.840380531576,
+          "max_abs_component_error": 463923.625,
+          "values": 307230,
+          "squared_error": 952453943350266.8,
+          "squared_truth": 1738202569751193.5
+        },
+        "derived_GL_strain": {
+          "relative_l2": 3.7418906636896754,
+          "component_rmse": 0.08251171004160271,
+          "max_abs_component_error": 0.800740972161293,
+          "values": 313740,
+          "squared_error": 2135.999112916272,
+          "squared_truth": 152.55234259578907
+        }
+      },
+      "predicted_inversions_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "truth_inversions_per_sampled_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "independent_derived_prediction_absmax_difference": 1.4210854715202004e-14,
+      "independent_derived_truth_absmax_difference": 3.637978807091713e-12
+    }
+  ],
+  "independently_recomputed_pooled_metrics": {
+    "rollout_free_displacement": {
+      "relative_l2": 1.7530346844055695,
+      "component_rmse": 0.0489686298705526,
+      "max_abs_component_error": 0.2981441840529442,
+      "values": 1989414
+    },
+    "rollout_free_stress": {
+      "relative_l2": 0.7562365020060251,
+      "component_rmse": 41675.53161867975,
+      "max_abs_component_error": 467719.712890625,
+      "values": 663138
+    },
+    "zero_increment_baseline_free_displacement": {
+      "relative_l2": 1.0,
+      "component_rmse": 0.027933634346292018,
+      "max_abs_component_error": 0.20747002959251404,
+      "values": 1989414
+    },
+    "zero_stress_baseline": {
+      "relative_l2": 1.0,
+      "component_rmse": 55109.124603387245,
+      "max_abs_component_error": 494882.46875,
+      "values": 663138
+    },
+    "training_mean_constant_stress_baseline": {
+      "relative_l2": 0.737608639336899,
+      "component_rmse": 40648.96641375209,
+      "max_abs_component_error": 463923.625,
+      "values": 663138
+    },
+    "derived_GL_strain": {
+      "relative_l2": 5.416295738556645,
+      "component_rmse": 0.0837533667113497,
+      "max_abs_component_error": 1.0473109211343399,
+      "values": 651294
+    }
+  },
+  "teacher_forced_audit_scope": "Pool arithmetic and reviewed source only; predictions not saved.",
+  "warnings": [
+    "Teacher-forced predictions are not preserved in evaluation NPZ, so their numeric per-trajectory errors could not be independently recalculated. Their pooling arithmetic and source formulas were reviewed only."
+  ],
+  "judgment": "399-step displacement is worse than zero-increment baseline; scalar stress is worse than training-mean baseline when pooled; derived strain and predicted inversions show invalid deformations. Training completion is not accuracy success.",
+  "elapsed_seconds": 0.94762400000036,
+  "execution_scope": "CPU NumPy, zipfile and pickletools only; no Torch import/GPU or checkpoint tensor execution."
+}
