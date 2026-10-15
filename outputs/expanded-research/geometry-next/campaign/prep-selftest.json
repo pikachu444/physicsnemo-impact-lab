@@ -1,0 +1,94 @@
+{
+  "status": "STDLIB_PREPARATION_SELFTEST_PASS",
+  "record_origin": "SYNTHETIC_FIXTURES_ONLY",
+  "checks_passed": 16,
+  "checks": [
+    "more-than-28-digit geometry values stay distinct while fractional trailing-zero variants match",
+    "exact decimal matching and deterministic geometry split",
+    "case input order does not affect assignments",
+    "same shape across nuisance materials stays in one fold and outside fixed-stratum fit",
+    "fixtures require explicit flag",
+    "unpinned revision rejected",
+    "missing access approval rejected",
+    "unverified raw/canonical mapping rejected",
+    "non-allowlisted/traversal file path rejected",
+    "duplicate case IDs rejected",
+    "nonfinite geometry rejected",
+    "mixed impact conditions rejected",
+    "insufficient matched shape groups rejected",
+    "fixture download plan rejected",
+    "explicit byte cap enforced without network",
+    "allowlist plan uses exact pinned revision, exact file paths and measured-size contract"
+  ],
+  "fixture_split": {
+    "status": "METADATA_CANDIDATE_SPLIT_ONLY",
+    "record_origin": "synthetic_fixture",
+    "source_manifest_digest": "fc47e71df3646462be0911ef713935e09999124c562c87a502ddab652b866d6d",
+    "dataset_id": "luminary-shift/SHIFT-Crash",
+    "revision": "6faa776f7e363ce39d43eb8dc8b0d9c7d0c83049",
+    "geometry_parameters_mm": [
+      "front_rails",
+      "cabin_length",
+      "car_width",
+      "roof_height"
+    ],
+    "fixed_material": {
+      "rail_thickness_mm": "1.2",
+      "rail_yield_strength_mpa": "300"
+    },
+    "fixed_condition": {
+      "impact_speed_kmh": "56",
+      "barrier_id": "FIXTURE_RIGID_WALL",
+      "duration_ms": "120"
+    },
+    "seed": "fixture-seed",
+    "geometry_counts": {
+      "train": 2,
+      "validation": 1,
+      "test": 1
+    },
+    "geometry_assignments": {
+      "f0a68bff78cfe592f68a17570cb321d43c17519f8dd77dc215ea8f19a124ebca": "train",
+      "2e811b51c4a85b10b4d4543c17f1a4e6db92f1f06d274905128443ddbd37fdbe": "train",
+      "b67afdc12dc48f59b3ce95455ab13fa304175f3e3b443d3f7cf16bb19cd1ce4d": "validation",
+      "777380ba2f8b04a928dcd170041fec7ef215f63a8eb8359871ed92ff8da6db35": "test"
+    },
+    "selected_cases_by_split": {
+      "train": [
+        "yaris_x00003",
+        "yaris_x00004"
+      ],
+      "validation": [
+        "yaris_x00001"
+      ],
+      "test": [
+        "yaris_x00005"
+      ]
+    },
+    "all_manifest_nuisance_variants_by_fold": {
+      "train": [
+        "yaris_x00003",
+        "yaris_x00004"
+      ],
+      "validation": [
+        "yaris_x00001",
+        "yaris_x00002"
+      ],
+      "test": [
+        "yaris_x00005"
+      ]
+    },
+    "unused_geometry_groups_in_fixed_stratum": 0,
+    "grouping_rule": "All known nuisance variants of each selected initial geometry have one fold; only fixed-stratum cases enter the primary comparison",
+    "training_ready": false,
+    "fields_inspected": false,
+    "training_executed": false,
+    "claim_limit": "A metadata split does not establish geometry extrapolation, verified FEM labels, remesh convergence, or prediction accuracy"
+  },
+  "network_requests": 0,
+  "protected_data_acquired": false,
+  "ml_imports": false,
+  "fem_runs": 0,
+  "training_runs": 0,
+  "accuracy_validated": false
+}

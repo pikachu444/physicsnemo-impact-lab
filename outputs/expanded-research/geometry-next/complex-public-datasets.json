@@ -1,0 +1,114 @@
+{
+  "checked_date": "2026-10-16",
+  "status": "no_immediately_accessible_complex_controlled_shape_response_candidate_verified",
+  "selected_acquirable_candidate": null,
+  "best_conditional_candidate": "luminary-shift/SHIFT-Crash",
+  "scope": "Variable initial complex 3D structural geometry with displacement/stress/strain response, staged disk budget <=60GB",
+  "architecture_selected": false,
+  "training_or_fem_executed": false,
+  "full_dataset_acquired": false,
+  "candidates": [
+    {
+      "id": "luminary-shift/SHIFT-Crash",
+      "decision": "best_fit_but_user_access_approval_required",
+      "url": "https://huggingface.co/datasets/luminary-shift/SHIFT-Crash",
+      "metadata_url": "https://huggingface.co/api/datasets/luminary-shift/SHIFT-Crash",
+      "revision": "6faa776f7e363ce39d43eb8dc8b0d9c7d0c83049",
+      "gated": "manual",
+      "license": "cc-by-nc-4.0",
+      "api_used_storage_bytes": 1515784528128,
+      "verified_file_counts": {"params_json": 5183, "vtp": 5183, "stl": 5183},
+      "initial_geometry_varies": true,
+      "geometry_variation": ["front_rails", "cabin_length", "car_width", "roof_height"],
+      "other_varying_inputs": ["rail_thickness", "rail_yield_strength"],
+      "card_surface_nodes": 376593,
+      "card_frames": 13,
+      "card_fields": ["displacement", "von_mises_stress", "effective_plastic_strain", "specific_energy", "upper_lower_shell_stress_components", "thickness", "ELEMENT_ID", "PART_ID", "EROSION_STATUS"],
+      "verified_case_inventory": {
+        "case": "yaris_x00001",
+        "tree_url": "https://huggingface.co/api/datasets/luminary-shift/SHIFT-Crash/tree/main/yaris_x00001?recursive=false&expand=false",
+        "vtp_bytes": 257016764,
+        "stl_bytes": 36260484,
+        "params_bytes": 283,
+        "total_bytes": 293277531
+      },
+      "protected_probe": {
+        "method": "HEAD",
+        "url": "https://huggingface.co/datasets/luminary-shift/SHIFT-Crash/resolve/main/yaris_x00001/params.json",
+        "http_status": 401,
+        "stopped_after_denial": true,
+        "protected_files_acquired": false,
+        "access_conditions_submitted": false
+      },
+      "conditional_subset_budget": {"cases": 32, "estimated_bytes": 9384880992, "estimated_gib": 8.74, "selection_verified": false},
+      "grouping_plan": "After approved access, inspect params to find identical rail_thickness and rail_yield_strength with varied geometric offsets; keep all frames of each case together and split by geometric tuple. No official split or matched group verified.",
+      "remesh_support": "Morphed baseline surface topology; no paired independently remeshed labels verified.",
+      "required_user_action": "Log in to Hugging Face, review and accept contact-sharing/access terms, request access, then receive approval; assistant did not submit consent."
+    },
+    {
+      "id": "cmudrc/SFEM",
+      "decision": "accessible_but_rejected_for_complex_controlled_response_scope",
+      "url": "https://huggingface.co/datasets/cmudrc/SFEM",
+      "revision": "ab8239a2d9c2c2125402ea68c557c2c8b022ac86",
+      "gated": false,
+      "license": "mit",
+      "step_file_count": 39894,
+      "simulated_geometry_count_verified": false,
+      "initial_geometry_varies": true,
+      "producer_main_max_nodes": 2000,
+      "raw_archives": [
+        {"split": "train", "bytes": 3208130929, "url": "https://huggingface.co/datasets/cmudrc/SFEM/resolve/main/Pytorch_Geometric_Files/raw_train_data.tar.gz"},
+        {"split": "val", "bytes": 569857731, "url": "https://huggingface.co/datasets/cmudrc/SFEM/resolve/main/Pytorch_Geometric_Files/raw_val_data.tar.gz"}
+      ],
+      "raw_archives_total_bytes": 3777988660,
+      "processed_files": {"train_bytes": 10074233409, "val_bytes": 1788466635},
+      "range_inspection": {
+        "http_status": 206,
+        "compressed_bytes_read": 262144,
+        "decompressed_prefix_bytes": 523530,
+        "retained_as_local_dataset": false,
+        "members": [
+          {"path": "raw/val/02530_001_final_medium_Load.h5", "bytes": 105215, "nodes": 382, "tetrahedra": 1037},
+          {"path": "raw/val/12430_001_final_small_Load.h5", "bytes": 153130, "nodes": 544, "tetrahedra": 1604},
+          {"path": "raw/val/00034_003_final_large_Load.h5", "bytes": 190138, "nodes": 712, "tetrahedra": 1874}
+        ]
+      },
+      "verified_h5_fields": {
+        "Vertices": "(N,3) float64", "u": "(N,3) float64", "VonMises": "(N,1) float64", "StressTensor": "(N,3,3) float64; producer source writes deviatoric stress", "Fixed_Facet": "(N,2) int64", "Cell_Faces": "(F,3) int32", "Facets": "(T,4) int32", "Load_Class": "(1,) byte string"
+      },
+      "labels": "Nodewise/componentwise medians over 50 stochastic realizations; per-realization load zones not saved; no strain field verified.",
+      "split_source": "85/15 by first three underscore-separated filename tokens; all load classes grouped; no frozen seed/test split; actual archive disjointness not audited",
+      "remesh_support": "STEP and Gmsh source allow future regeneration, but no paired remesh response labels verified.",
+      "source_urls": ["https://github.com/cmudrc/SFEM/blob/main/simulation.py", "https://github.com/cmudrc/SFEM/blob/main/dataloader.py", "https://github.com/cmudrc/SFEM/blob/main/mesh_generation.py"],
+      "critical_caveats": ["coarse meshes", "stochastic median not deterministic realized forcing", "StressTensor is deviatoric", "processed loader excludes displacement", "target-derived per-sample normalization should not be used for deployable unknown-target prediction", "README geometry-count estimates conflict"]
+    },
+    {
+      "id": "LatticeGraphNet",
+      "decision": "public_dataset_acquisition_unverified",
+      "url": "https://arxiv.org/html/2402.01045v1",
+      "initial_geometry_varies": true,
+      "variation": ["cell type", "strut diameter", "cell size"],
+      "paper_cases": {"total": 116, "train": 108, "test": 8},
+      "fields": ["displacement increments", "reduced first-Piola stress invariants I1 and J2"],
+      "physics": "Nonlinear Neo-Hookean IPC lattice compression",
+      "download_url_verified": false,
+      "file_manifest_verified": false,
+      "license_verified": false,
+      "download_bytes": null,
+      "remesh_support": "Not established from an available data archive."
+    },
+    {
+      "id": "PhysicsNeMo sintering",
+      "decision": "public_dataset_acquisition_unverified_and_narrow_manufacturing_task",
+      "initial_geometry_varies": true,
+      "paper_training_geometry_count": 7,
+      "paper_test_parts": ["USB", "busbar", "extrusion screw", "pushing grip"],
+      "current_reader_fields": ["positions", "particle type", "graph edges", "temperature context"],
+      "stress_strain_fields_in_reader": false,
+      "dataset_download_url_verified": false,
+      "download_bytes": null,
+      "checked_ngc_manifest": {"files": 9, "bytes": 267208860, "contains_sintering_data": false},
+      "source_urls": ["https://arxiv.org/html/2404.11753v1", "https://github.com/NVIDIA/physicsnemo/blob/main/examples/additive_manufacturing/sintering_physics/README.md", "https://github.com/NVIDIA/physicsnemo/blob/main/examples/additive_manufacturing/sintering_physics/reading_utils.py", "https://api.ngc.nvidia.com/v2/resources/nvidia/physicsnemo/physicsnemo_examples_supplemental_materials/versions/0.0.1/files"]
+    }
+  ]
+}

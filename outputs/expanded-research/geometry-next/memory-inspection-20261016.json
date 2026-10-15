@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-15T23:40:40.1272698Z",
+  "method": "Win32_PerfFormattedData_PerfProc_Process.WorkingSetPrivate grouped by process image; excludes shared pages; not commit/private virtual bytes",
+  "total_ram_gib": 15.685,
+  "available_ram_gib": 0.933,
+  "apps": [
+    {
+      "app": "ChatGPT.exe",
+      "process_count": 22,
+      "private_resident_mib": 4590.0
+    },
+    {
+      "app": "codex.exe",
+      "process_count": 4,
+      "private_resident_mib": 1591.7
+    },
+    {
+      "app": "vmmemWSL",
+      "process_count": 1,
+      "private_resident_mib": 628.6
+    },
+    {
+      "app": "node.exe",
+      "process_count": 67,
+      "private_resident_mib": 526.6
+    },
+    {
+      "app": "svchost.exe",
+      "process_count": 98,
+      "private_resident_mib": 343.0
+    },
+    {
+      "app": "MsMpEng.exe",
+      "process_count": 1,
+      "private_resident_mib": 295.6
+    },
+    {
+      "app": "msedgewebview2.exe",
+      "process_count": 12,
+      "private_resident_mib": 96.2
+    },
+    {
+      "app": "node_repl.exe",
+      "process_count": 39,
+      "private_resident_mib": 87.5
+    },
+    {
+      "app": "moai.exe",
+      "process_count": 6,
+      "private_resident_mib": 66.8
+    },
+    {
+      "app": "Secure System",
+      "process_count": 1,
+      "private_resident_mib": 65.6
+    },
+    {
+      "app": "cmd.exe",
+      "process_count": 39,
+      "private_resident_mib": 58.7
+    },
+    {
+      "app": "WmiPrvSE.exe",
+      "process_count": 3,
+      "private_resident_mib": 57.8
+    },
+    {
+      "app": "conhost.exe",
+      "process_count": 103,
+      "private_resident_mib": 55.1
+    },
+    {
+      "app": "explorer.exe",
+      "process_count": 1,
+      "private_resident_mib": 53.7
+    },
+    {
+      "app": "OpenClaw.Tray.WinUI.exe",
+      "process_count": 1,
+      "private_resident_mib": 41.4
+    }
+  ],
+  "scope_notes": [
+    "Read-only inspection. No apps, processes, tasks or WSL distributions were terminated.",
+    "Memory cannot be attributed to an individual chat or task from this process counter.",
+    "One additional local task was active; no cross-task message or interruption was sent.",
+    "No current research-owned training or solver process was found in the bounded workspace process inspection."
+  ],
+  "sensitive_details_omitted": [
+    "Command lines",
+    "Window titles",
+    "Other task identifiers and project details"
+  ]
+}

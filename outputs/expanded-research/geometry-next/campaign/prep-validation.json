@@ -1,0 +1,93 @@
+{
+  "started_utc": "2026-10-15 23:47:00 UTC",
+  "completed_utc": "2026-10-15 23:47:00 UTC",
+  "status": "CORRECTED_STDLIB_PREPARATION_CHECKS_EXECUTED",
+  "scope": "stdlib metadata/synthetic fixtures only",
+  "campaign_sha256": "e8f4f9ccf6fd072224387511f638e290384c773c5cb31daa040b8635342825b3",
+  "correction": "Exact Decimal fixed-point formatting without Decimal.normalize(); fractional trailing zeros only removed.",
+  "records": [
+    {
+      "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py validate --manifest manifest.template.json",
+      "exit_code": 0,
+      "output": "{\r\n  \"status\": \"PREPARATION_SCHEMA_VALID\",\r\n  \"five_families_six_settings\": true,\r\n  \"training_executed\": false,\r\n  \"accuracy_validated\": false,\r\n  \"manifest\": {\r\n    \"status\": \"MANIFEST_SCHEMA_VALID\",\r\n    \"case_metadata_records\": 0,\r\n    \"record_origin\": \"actual_metadata\",\r\n    \"training_ready\": false\r\n  }\r\n}\r\n"
+    },
+    {
+      "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py selftest --out prep-selftest.json",
+      "exit_code": 0,
+      "output": "{\r\n  \"status\": \"STDLIB_PREPARATION_SELFTEST_PASS\",\r\n  \"record_origin\": \"SYNTHETIC_FIXTURES_ONLY\",\r\n  \"checks_passed\": 16,\r\n  \"checks\": [\r\n    \"more-than-28-digit geometry values stay distinct while fractional trailing-zero variants match\",\r\n    \"exact decimal matching and deterministic geometry split\",\r\n    \"case input order does not affect assignments\",\r\n    \"same shape across nuisance materials stays in one fold and outside fixed-stratum fit\",\r\n    \"fixtures require explicit flag\",\r\n    \"unpinned revision rejected\",\r\n    \"missing access approval rejected\",\r\n    \"unverified raw/canonical mapping rejected\",\r\n    \"non-allowlisted/traversal file path rejected\",\r\n    \"duplicate case IDs rejected\",\r\n    \"nonfinite geometry rejected\",\r\n    \"mixed impact conditions rejected\",\r\n    \"insufficient matched shape groups rejected\",\r\n    \"fixture download plan rejected\",\r\n    \"explicit byte cap enforced without network\",\r\n    \"allowlist plan uses exact pinned revision, exact file paths and measured-size contract\"\r\n  ],\r\n  \"fixture_split\": {\r\n    \"status\": \"METADATA_CANDIDATE_SPLIT_ONLY\",\r\n    \"record_origin\": \"synthetic_fixture\",\r\n    \"source_manifest_digest\": \"fc47e71df3646462be0911ef713935e09999124c562c87a502ddab652b866d6d\",\r\n    \"dataset_id\": \"luminary-shift/SHIFT-Crash\",\r\n    \"revision\": \"6faa776f7e363ce39d43eb8dc8b0d9c7d0c83049\",\r\n    \"geometry_parameters_mm\": [\r\n      \"front_rails\",\r\n      \"cabin_length\",\r\n      \"car_width\",\r\n      \"roof_height\"\r\n    ],\r\n    \"fixed_material\": {\r\n      \"rail_thickness_mm\": \"1.2\",\r\n      \"rail_yield_strength_mpa\": \"300\"\r\n    },\r\n    \"fixed_condition\": {\r\n      \"impact_speed_kmh\": \"56\",\r\n      \"barrier_id\": \"FIXTURE_RIGID_WALL\",\r\n      \"duration_ms\": \"120\"\r\n    },\r\n    \"seed\": \"fixture-seed\",\r\n    \"geometry_counts\": {\r\n      \"train\": 2,\r\n      \"validation\": 1,\r\n      \"test\": 1\r\n    },\r\n    \"geometry_assignments\": {\r\n      \"f0a68bff78cfe592f68a17570cb321d43c17519f8dd77dc215ea8f19a124ebca\": \"train\",\r\n      \"2e811b51c4a85b10b4d4543c17f1a4e6db92f1f06d274905128443ddbd37fdbe\": \"train\",\r\n      \"b67afdc12dc48f59b3ce95455ab13fa304175f3e3b443d3f7cf16bb19cd1ce4d\": \"validation\",\r\n      \"777380ba2f8b04a928dcd170041fec7ef215f63a8eb8359871ed92ff8da6db35\": \"test\"\r\n    },\r\n    \"selected_cases_by_split\": {\r\n      \"train\": [\r\n        \"yaris_x00003\",\r\n        \"yaris_x00004\"\r\n      ],\r\n      \"validation\": [\r\n        \"yaris_x00001\"\r\n      ],\r\n      \"test\": [\r\n        \"yaris_x00005\"\r\n      ]\r\n    },\r\n    \"all_manifest_nuisance_variants_by_fold\": {\r\n      \"train\": [\r\n        \"yaris_x00003\",\r\n        \"yaris_x00004\"\r\n      ],\r\n      \"validation\": [\r\n        \"yaris_x00001\",\r\n        \"yaris_x00002\"\r\n      ],\r\n      \"test\": [\r\n        \"yaris_x00005\"\r\n      ]\r\n    },\r\n    \"unused_geometry_groups_in_fixed_stratum\": 0,\r\n    \"grouping_rule\": \"All known nuisance variants of each selected initial geometry have one fold; only fixed-stratum cases enter the primary comparison\",\r\n    \"training_ready\": false,\r\n    \"fields_inspected\": false,\r\n    \"training_executed\": false,\r\n    \"claim_limit\": \"A metadata split does not establish geometry extrapolation, verified FEM labels, remesh convergence, or prediction accuracy\"\r\n  },\r\n  \"network_requests\": 0,\r\n  \"protected_data_acquired\": false,\r\n  \"ml_imports\": false,\r\n  \"fem_runs\": 0,\r\n  \"training_runs\": 0,\r\n  \"accuracy_validated\": false\r\n}\r\n"
+    },
+    {
+      "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py preflight --manifest manifest.template.json",
+      "exit_code": 2,
+      "output": "{\r\n  \"status\": \"PREPARED_NOT_EXECUTABLE\",\r\n  \"metadata_gates_pending\": [\r\n    \"approved\",\r\n    \"params_acquired\",\r\n    \"parameter_mapping_verified\",\r\n    \"condition_mapping_verified\",\r\n    \"actual case metadata\"\r\n  ],\r\n  \"implementation_gates_pending\": [\r\n    \"Approved gated access and acquired/hashed params; exact raw-to-canonical units and impact-condition mapping\",\r\n    \"Enough distinct geometries in one fixed material/thickness stratum; otherwise report geometry-only identification failure\",\r\n    \"Protected VTP parser and bounded out-of-core extraction; verify field association, units, time indexing and erosion semantics\",\r\n    \"Initial-coordinate, connectivity, part-ID and physical query-support hashes/correspondences\",\r\n    \"New variable-geometry loader/predictor without weakening frozen old cache/provenance checks\",\r\n    \"Feature-dimension/time-conditioning/AABB/OOD contracts for all six settings; current adapters are not a ready SHIFT runner\",\r\n    \"Surface graph coarsening/common-query mapping and sampling-density transfer validation\",\r\n    \"Resource calibration then explicit hardware, byte caps, subset size, split and fit budget\",\r\n    \"Actual trained checkpoints, validation-based selection, held-out physical metrics and visual comparison\"\r\n  ],\r\n  \"training_ready\": false,\r\n  \"training_executed\": false\r\n}\r\n"
+    }
+  ],
+  "expected_exit_codes": [
+    0,
+    0,
+    2
+  ],
+  "network_requests": 0,
+  "ml_imports": false,
+  "training_runs": 0,
+  "fem_runs": 0,
+  "protected_files_acquired": false,
+  "note": "Only preparation schema and explicitly synthetic fixtures were checked; no runtime benchmark. Preflight exit 2 is intentional.",
+  "historical_pre_correction_run": {
+    "started_utc": "2026-10-15 23:44:21 UTC",
+    "completed_utc": "2026-10-15 23:44:28 UTC",
+    "status": "PREPARATION_CHECKS_EXECUTED",
+    "scope": "stdlib metadata/synthetic fixtures only",
+    "records": [
+      {
+        "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py validate --manifest manifest.template.json",
+        "exit_code": 0,
+        "output": "{\r\n  \"status\": \"PREPARATION_SCHEMA_VALID\",\r\n  \"five_families_six_settings\": true,\r\n  \"training_executed\": false,\r\n  \"accuracy_validated\": false,\r\n  \"manifest\": {\r\n    \"status\": \"MANIFEST_SCHEMA_VALID\",\r\n    \"case_metadata_records\": 0,\r\n    \"record_origin\": \"actual_metadata\",\r\n    \"training_ready\": false\r\n  }\r\n}\r\n"
+      },
+      {
+        "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py selftest --out prep-selftest.json",
+        "exit_code": 0,
+        "output": "{\r\n  \"status\": \"STDLIB_PREPARATION_SELFTEST_PASS\",\r\n  \"record_origin\": \"SYNTHETIC_FIXTURES_ONLY\",\r\n  \"checks_passed\": 15,\r\n  \"checks\": [\r\n    \"exact decimal matching and deterministic geometry split\",\r\n    \"case input order does not affect assignments\",\r\n    \"same shape across nuisance materials stays in one fold and outside fixed-stratum fit\",\r\n    \"fixtures require explicit flag\",\r\n    \"unpinned revision rejected\",\r\n    \"missing access approval rejected\",\r\n    \"unverified raw/canonical mapping rejected\",\r\n    \"non-allowlisted/traversal file path rejected\",\r\n    \"duplicate case IDs rejected\",\r\n    \"nonfinite geometry rejected\",\r\n    \"mixed impact conditions rejected\",\r\n    \"insufficient matched shape groups rejected\",\r\n    \"fixture download plan rejected\",\r\n    \"explicit byte cap enforced without network\",\r\n    \"allowlist plan uses exact pinned revision, exact file paths and measured-size contract\"\r\n  ],\r\n  \"fixture_split\": {\r\n    \"status\": \"METADATA_CANDIDATE_SPLIT_ONLY\",\r\n    \"record_origin\": \"synthetic_fixture\",\r\n    \"source_manifest_digest\": \"fc47e71df3646462be0911ef713935e09999124c562c87a502ddab652b866d6d\",\r\n    \"dataset_id\": \"luminary-shift/SHIFT-Crash\",\r\n    \"revision\": \"6faa776f7e363ce39d43eb8dc8b0d9c7d0c83049\",\r\n    \"geometry_parameters_mm\": [\r\n      \"front_rails\",\r\n      \"cabin_length\",\r\n      \"car_width\",\r\n      \"roof_height\"\r\n    ],\r\n    \"fixed_material\": {\r\n      \"rail_thickness_mm\": \"1.2\",\r\n      \"rail_yield_strength_mpa\": \"300\"\r\n    },\r\n    \"fixed_condition\": {\r\n      \"impact_speed_kmh\": \"56\",\r\n      \"barrier_id\": \"FIXTURE_RIGID_WALL\",\r\n      \"duration_ms\": \"120\"\r\n    },\r\n    \"seed\": \"fixture-seed\",\r\n    \"geometry_counts\": {\r\n      \"train\": 2,\r\n      \"validation\": 1,\r\n      \"test\": 1\r\n    },\r\n    \"geometry_assignments\": {\r\n      \"f0a68bff78cfe592f68a17570cb321d43c17519f8dd77dc215ea8f19a124ebca\": \"train\",\r\n      \"2e811b51c4a85b10b4d4543c17f1a4e6db92f1f06d274905128443ddbd37fdbe\": \"train\",\r\n      \"b67afdc12dc48f59b3ce95455ab13fa304175f3e3b443d3f7cf16bb19cd1ce4d\": \"validation\",\r\n      \"777380ba2f8b04a928dcd170041fec7ef215f63a8eb8359871ed92ff8da6db35\": \"test\"\r\n    },\r\n    \"selected_cases_by_split\": {\r\n      \"train\": [\r\n        \"yaris_x00003\",\r\n        \"yaris_x00004\"\r\n      ],\r\n      \"validation\": [\r\n        \"yaris_x00001\"\r\n      ],\r\n      \"test\": [\r\n        \"yaris_x00005\"\r\n      ]\r\n    },\r\n    \"all_manifest_nuisance_variants_by_fold\": {\r\n      \"train\": [\r\n        \"yaris_x00003\",\r\n        \"yaris_x00004\"\r\n      ],\r\n      \"validation\": [\r\n        \"yaris_x00001\",\r\n        \"yaris_x00002\"\r\n      ],\r\n      \"test\": [\r\n        \"yaris_x00005\"\r\n      ]\r\n    },\r\n    \"unused_geometry_groups_in_fixed_stratum\": 0,\r\n    \"grouping_rule\": \"All known nuisance variants of each selected initial geometry have one fold; only fixed-stratum cases enter the primary comparison\",\r\n    \"training_ready\": false,\r\n    \"fields_inspected\": false,\r\n    \"training_executed\": false,\r\n    \"claim_limit\": \"A metadata split does not establish geometry extrapolation, verified FEM labels, remesh convergence, or prediction accuracy\"\r\n  },\r\n  \"network_requests\": 0,\r\n  \"protected_data_acquired\": false,\r\n  \"ml_imports\": false,\r\n  \"fem_runs\": 0,\r\n  \"training_runs\": 0,\r\n  \"accuracy_validated\": false\r\n}\r\n"
+      },
+      {
+        "command": "..\\expanded-ml\\venv\\Scripts\\python.exe -S campaign.py preflight --manifest manifest.template.json",
+        "exit_code": 2,
+        "output": "{\r\n  \"status\": \"PREPARED_NOT_EXECUTABLE\",\r\n  \"metadata_gates_pending\": [\r\n    \"approved\",\r\n    \"params_acquired\",\r\n    \"parameter_mapping_verified\",\r\n    \"condition_mapping_verified\",\r\n    \"actual case metadata\"\r\n  ],\r\n  \"implementation_gates_pending\": [\r\n    \"Approved gated access and acquired/hashed params; exact raw-to-canonical units and impact-condition mapping\",\r\n    \"Enough distinct geometries in one fixed material/thickness stratum; otherwise report geometry-only identification failure\",\r\n    \"Protected VTP parser and bounded out-of-core extraction; verify field association, units, time indexing and erosion semantics\",\r\n    \"Initial-coordinate, connectivity, part-ID and physical query-support hashes/correspondences\",\r\n    \"New variable-geometry loader/predictor without weakening frozen old cache/provenance checks\",\r\n    \"Feature-dimension/time-conditioning/AABB/OOD contracts for all six settings; current adapters are not a ready SHIFT runner\",\r\n    \"Surface graph coarsening/common-query mapping and sampling-density transfer validation\",\r\n    \"Resource calibration then explicit hardware, byte caps, subset size, split and fit budget\",\r\n    \"Actual trained checkpoints, validation-based selection, held-out physical metrics and visual comparison\"\r\n  ],\r\n  \"training_ready\": false,\r\n  \"training_executed\": false\r\n}\r\n"
+      }
+    ],
+    "launch_failures": [
+      {
+        "command": "../expanded-ml/venv/Scripts/python.exe -S campaign.py validate --manifest manifest.template.json",
+        "exit_code": 1,
+        "script_started": false,
+        "reason": "cmd.exe executable path used forward slashes; corrected to backslashes"
+      },
+      {
+        "command": "../expanded-ml/venv/Scripts/python.exe -S campaign.py selftest --out prep-selftest.json",
+        "exit_code": 1,
+        "script_started": false,
+        "reason": "cmd.exe executable path used forward slashes; corrected to backslashes"
+      },
+      {
+        "command": "../expanded-ml/venv/Scripts/python.exe -S campaign.py preflight --manifest manifest.template.json",
+        "exit_code": 1,
+        "script_started": false,
+        "reason": "cmd.exe executable path used forward slashes; corrected to backslashes"
+      }
+    ],
+    "expected_exit_codes": [
+      0,
+      0,
+      2
+    ],
+    "note": "Only preparation schema and explicitly synthetic fixtures were checked; no runtime benchmark. Preflight exit 2 is intentional.",
+    "network_requests": 0,
+    "ml_imports": false,
+    "training_runs": 0,
+    "fem_runs": 0,
+    "protected_files_acquired": false,
+    "campaign_sha256": "25b78cf1d67a8fb9011892cb3f94b36a361d4c6db5ed52eef4a660c4ea789507",
+    "historical_only": true,
+    "checks_passed": 15
+  }
+}

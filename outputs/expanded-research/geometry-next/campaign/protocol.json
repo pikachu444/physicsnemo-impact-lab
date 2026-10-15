@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "PREPARATION_ONLY_ACCESS_AND_IMPLEMENTATION_PENDING",
+  "question": "Can PhysicsNeMo predict displacement, von Mises stress and effective plastic strain for held-out initial whole-vehicle geometries at identical rail material, rail thickness and impact condition?",
+  "dataset": {
+    "id": "luminary-shift/SHIFT-Crash",
+    "revision": "6faa776f7e363ce39d43eb8dc8b0d9c7d0c83049",
+    "primary_source": "https://huggingface.co/datasets/luminary-shift/SHIFT-Crash",
+    "metadata_evidence": "../complex-public-datasets.json",
+    "protected_files_acquired": false,
+    "field_description_status": "Producer card only; protected VTP/params were not inspected",
+    "frame_time_seconds_card": [0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.11, 0.12],
+    "source_allowlist_roles": {"params": "<case_id>/params.json", "vtp": "<case_id>/merged_surfaces.vtp"},
+    "full_dataset_download_allowed": false,
+    "max_download_bytes": null,
+    "license": "cc-by-nc-4.0; inspect actual access terms before consent"
+  },
+  "geometry": {
+    "canonical_parameters_mm": ["front_rails", "cabin_length", "car_width", "roof_height"],
+    "canonical_to_raw_params_mapping": null,
+    "family_scope": "Four-parameter morphs of one baseline vehicle; new part topology and different vehicle families are outside this test",
+    "group_rule": "Hash exact decimal parameter tuple; all frames, sampling versions and nuisance material variants of each geometry remain in one fold",
+    "isolation_gate": "First identify a sufficiently populated exact rail_thickness / rail_yield_strength stratum with identical impact condition; otherwise no geometry-only comparison is available",
+    "split_counts": null,
+    "split_seed": null,
+    "extrapolation_label": "Audit parameter coverage after metadata; a held-out geometry is not automatically extrapolation"
+  },
+  "coordinates": {
+    "physical_frame": "Shared undeformed vehicle/world frame; retain dimensions, orientation and relative part positions",
+    "normalization": "One shared affine transform fitted only on training geometries, with a shared scalar spatial scale; retain physical inverse transform",
+    "per_case_bbox_normalization": false,
+    "clipping": false,
+    "out_of_training_domain_policy": "Flag and report. Do not clip or refit to test shapes. Resolve fixed FIGConv AABB / adapter range policy before training.",
+    "existing_normalization_note": "benchmark_data.py already computes one train-only bounding box across cases; it is not per-case normalization"
+  },
+  "inputs": {
+    "shared_information": ["initial_coordinates", "four_geometry_parameters", "rail_thickness", "rail_yield_strength", "fixed_impact_condition", "requested_time"],
+    "part_ids": "Available according to card; mapping/encoding must be verified and shared consistently across models",
+    "meshgraphnet_extra_structure": "True FEM surface connectivity; must not connect detached parts solely by Euclidean proximity",
+    "forbidden": ["future_deformed_coordinates", "future_stress_or_strain", "test_target_statistics"],
+    "known_condition_scope": "Card reports one 56 km/h frontal rigid-wall condition; verify per-case metadata"
+  },
+  "targets": [
+    {"name": "displacement", "components": 3, "card_unit": "mm", "card_array": "displacement_t<time>", "status": "VTP inspection required; contains rigid-body translation"},
+    {"name": "von_mises_stress", "components": 1, "card_unit": "Pa", "card_array": "stress_vm_t<time>", "status": "VTP inspection required; verify shell layer/aggregation and node/cell association"},
+    {"name": "effective_plastic_strain", "components": 1, "card_unit": "dimensionless", "card_array": "effective_plastic_strain_t<time>", "status": "VTP inspection required; this is not total strain"}
+  ],
+  "excluded_unverified_targets": ["total_strain_tensor", "fracture_probability", "contact_force", "specific_energy_unit_conversion"],
+  "algorithms": [
+    {"setting": "transolver", "family": "Transolver", "class": "physicsnemo.models.transolver.Transolver", "variant": "plus=False", "representation": "points", "status": "existing small adapter only; SHIFT loader/outputs/resources unverified"},
+    {"setting": "flare", "family": "FLARE", "class": "physicsnemo.models.flare.FLARE", "variant": "installed default backend", "representation": "points", "status": "existing small adapter only; SHIFT loader/outputs/resources unverified"},
+    {"setting": "geotransolver", "family": "GeoTransolver", "class": "physicsnemo.models.geotransolver.GeoTransolver", "variant": "attention_type=GALE", "representation": "points + geometry/global context", "status": "existing small adapter only; SHIFT feature contract/resources unverified"},
+    {"setting": "geoflare", "family": "GeoTransolver", "class": "physicsnemo.models.geotransolver.GeoTransolver", "variant": "attention_type=GALE_FA; not a separate GeoFLARE class", "representation": "points + geometry/global context", "status": "existing small adapter only; SHIFT feature contract/resources unverified"},
+    {"setting": "meshgraphnet", "family": "MeshGraphNet", "class": "physicsnemo.models.meshgraphnet.MeshGraphNet", "variant": "actual directed surface edges", "representation": "graph", "status": "needs variable-graph loader and valid coarsening/resource profile"},
+    {"setting": "figconvunet", "family": "FIGConvUNet", "class": "physicsnemo.models.figconvnet.FIGConvUNet", "variant": "existing KNN backend", "representation": "points + factorized grids", "status": "needs shared AABB/OOD policy and all-pairs KNN memory check"}
+  ],
+  "comparison": {
+    "primary_comparable_task": "Initial undeformed geometry + known material/thickness + common impact condition + requested physical time -> displacement vector, VM and EPSP at that time; no future ground-truth state at inference",
+    "temporal_implementation_status": "Time conditioning and this target contract are not implemented for SHIFT. A direct all-frame head can be an explicitly documented alternative. No temporal strategy is selected as best without results.",
+    "optional_rollout": "Separate free-rollout experiment from an allowed initial state, scored over the complete held-out trajectory; teacher-forced test scores must never substitute for free prediction",
+    "decoder_contract": "Must predict on declared common physical query support; present adapters predict at input nodes only. Implement and validate transfer/query decoder before density comparisons.",
+    "baselines": ["field-specific zero predictor as a transparent reference, never a successful geometry model", "training mean response only if verified node correspondence; otherwise common-query transfer first", "geometry-parameter regression on verified comparable field support", "POD + RBF only after stable node/cell correspondence and train-only basis verification; otherwise correspondence/field-transfer is a blocking implementation gate"],
+    "selection": "Validation geometries only; freeze fit/resource budgets after actual profiles; test once after selection",
+    "metrics": ["area-weighted physical-unit MAE/RMSE and relative L2 per field/time/case/part", "absolute displacement and centroid-removed deformation reported separately", "stress/EPSP peaks, hotspot localization and high-quantile error", "unclipped negative VM/EPSP rate and erosion-mask policy", "wall time, peak host private memory, peak allocated/reserved VRAM and inference latency"],
+    "weights_and_masks": "Define surface-area weights, part associations and eroded/active-cell interpolation from the same verified FEM support; do not silently omit failures",
+    "time_zero": "Check whether stress/EPSP t0 are absent or physically zero before creating labels"
+  },
+  "mesh_studies": {
+    "ai_sampling_density": "Same geometry, same FEM truth and common query support; vary only declared point/graph resolution after resource profiling. Hold geometry split and model-selection rules fixed. Include mapping error baseline.",
+    "graph_sampling_gate": "Valid graph coarsening preserving disconnected components/parts and connectivity; random deletion of nodes/edges is not a comparable FEM graph",
+    "native_fem_remeshing": "Separate unsatisfied study: independently mesh the same physical shape at multiple qualities/resolutions and rerun verified solver with unchanged material/contact/loading. SHIFT morphs alone do not establish convergence.",
+    "same_topology_status": "Unverified until connectivity hashes are compared; equal node counts alone are insufficient"
+  },
+  "execution": {
+    "training_runner_implemented": false,
+    "case_count": null,
+    "train_geometry_count": null,
+    "validation_geometry_count": null,
+    "test_geometry_count": null,
+    "fit_budget_seconds": null,
+    "hardware": null,
+    "resource_gate": "Measure import/preprocessing/small forward-backward on admitted host memory; define runtime floor and owned-process cap from measurements before full fits",
+    "paid_resources_authorized": false
+  },
+  "implementation_gates": [
+    "Approved gated access and acquired/hashed params; exact raw-to-canonical units and impact-condition mapping",
+    "Enough distinct geometries in one fixed material/thickness stratum; otherwise report geometry-only identification failure",
+    "Protected VTP parser and bounded out-of-core extraction; verify field association, units, time indexing and erosion semantics",
+    "Initial-coordinate, connectivity, part-ID and physical query-support hashes/correspondences",
+    "New variable-geometry loader/predictor without weakening frozen old cache/provenance checks",
+    "Feature-dimension/time-conditioning/AABB/OOD contracts for all six settings; current adapters are not a ready SHIFT runner",
+    "Surface graph coarsening/common-query mapping and sampling-density transfer validation",
+    "Resource calibration then explicit hardware, byte caps, subset size, split and fit budget",
+    "Actual trained checkpoints, validation-based selection, held-out physical metrics and visual comparison"
+  ],
+  "inspected_existing_sources": [
+    {"workspace_relative_path": "work/expanded-ml/model_adapters.py", "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d"},
+    {"workspace_relative_path": "work/expanded-ml/benchmark_data.py", "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6"},
+    {"workspace_relative_path": "work/expanded-batch/batch_adapters.py", "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"},
+    {"workspace_relative_path": "work/expanded-ml/predict_inputs.py", "sha256": "fe25900e1531ac86120c5994656d3da0c66b609b335de9a614713cc47470ad7d"}
+  ]
+}
