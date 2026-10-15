@@ -1,0 +1,973 @@
+{
+  "dataset": "Public phone 20 us interpolation slice",
+  "support": "full-assembly-corners",
+  "coordinates": "coordinates.npy",
+  "edge_index": "edge_index.npy",
+  "static_feature": "static_feature.npy",
+  "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+  "static_feature_unit": "mm",
+  "global_keys": [
+    "e_scale_common",
+    "rwall_rx_deg"
+  ],
+  "field_names": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "coordinate_unit": "mm",
+  "time_unit": "s",
+  "shape_per_run": [
+    76065,
+    10,
+    6
+  ],
+  "dtype": "float32",
+  "scope": "Two-dimensional small-data interpolation of initial 20 us response, not full drop/rebound, full-phone generalization, or independent five-material DoE.",
+  "source_case_manifest": "source_metadata/frozen-case-manifest.json",
+  "geometry_contract": "source_metadata/geometry-contract.json",
+  "full_graph_contract": "source_metadata/full-graph-contract.json",
+  "coupling_limitation": "Actual element edges only. Seventeen disconnected part meshes; TYPE2 tied and wall-contact cross-part edges are not encoded. Same fixed assembly, two continuous global condition axes; new contact/geometry generalization is not validated.",
+  "node_coverage": "All 76065 original solid corner nodes in full support; original 181034 TETRA10 midside nodes excluded. Rear support is exactly part2 cover_rear with19933 nodes.",
+  "schema": "bumper_multifield_cache_v1",
+  "runs": {
+    "phone_e100_rx000": {
+      "target": "runs/phone_e100_rx000.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        1.0,
+        0.0
+      ],
+      "source_target_sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0054321794304997e-06,
+        4.006144536106149e-06,
+        6.006857347529149e-06,
+        8.007569704204798e-06,
+        1.0008282515627798e-05,
+        1.2008994417556096e-05,
+        1.4009707228979096e-05,
+        1.6000514733605087e-05,
+        1.800122845452279e-05,
+        1.999203595914878e-05,
+        2.0001940356451087e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0054321794304997e-06,
+          "upper_weight": 0.9972912674453831
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0054321794304997e-06,
+          "upper_actual_time_s": 4.006144536106149e-06,
+          "upper_weight": 0.9969288258326356
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.006144536106149e-06,
+          "upper_actual_time_s": 6.006857347529149e-06,
+          "upper_weight": 0.9965725477989661
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.006857347529149e-06,
+          "upper_actual_time_s": 8.007569704204798e-06,
+          "upper_weight": 0.996216495499945
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.007569704204798e-06,
+          "upper_actual_time_s": 1.0008282515627798e-05,
+          "upper_weight": 0.9958602176281824
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0008282515627798e-05,
+          "upper_actual_time_s": 1.2008994417556096e-05,
+          "upper_weight": 0.9955043914381543
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2008994417556096e-05,
+          "upper_actual_time_s": 1.4009707228979096e-05,
+          "upper_weight": 0.9951481147500666
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4009707228979096e-05,
+          "upper_actual_time_s": 1.6000514733605087e-05,
+          "upper_weight": 0.9997414448137796
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.6000514733605087e-05,
+          "upper_actual_time_s": 1.800122845452279e-05,
+          "upper_weight": 0.9993859918538347
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.999203595914878e-05,
+          "upper_actual_time_s": 2.0001940356451087e-05,
+          "upper_weight": 0.8040914159777846
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e080_rxm100": {
+      "target": "runs/phone_e080_rxm100.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        0.8,
+        -1.0
+      ],
+      "source_target_sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0043189579155296e-06,
+        4.008637915831059e-06,
+        6.0018833210051525e-06,
+        8.006202733668033e-06,
+        1.0010521691583563e-05,
+        1.2003766642010305e-05,
+        1.4008085599925835e-05,
+        1.600133145984728e-05,
+        1.800565041776281e-05,
+        1.999889536818955e-05,
+        2.0009969375678338e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0043189579155296e-06,
+          "upper_weight": 0.9978451743428993
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0043189579155296e-06,
+          "upper_actual_time_s": 4.008637915831059e-06,
+          "upper_weight": 0.9956903486857986
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.008637915831059e-06,
+          "upper_actual_time_s": 6.0018833210051525e-06,
+          "upper_weight": 0.9990551484527376
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.0018833210051525e-06,
+          "upper_actual_time_s": 8.006202733668033e-06,
+          "upper_weight": 0.9969053167729426
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.006202733668033e-06,
+          "upper_actual_time_s": 1.0010521691583563e-05,
+          "upper_weight": 0.9947504904137084
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0010521691583563e-05,
+          "upper_actual_time_s": 1.2003766642010305e-05,
+          "upper_weight": 0.9981102964743503
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2003766642010305e-05,
+          "upper_actual_time_s": 1.4008085599925835e-05,
+          "upper_weight": 0.9959659115661692
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4008085599925835e-05,
+          "upper_actual_time_s": 1.600133145984728e-05,
+          "upper_weight": 0.9993320142416691
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.600133145984728e-05,
+          "upper_actual_time_s": 1.800565041776281e-05,
+          "upper_weight": 0.9971808789511803
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.999889536818955e-05,
+          "upper_actual_time_s": 2.0009969375678338e-05,
+          "upper_weight": 0.09974996057802839
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e080_rxp100": {
+      "target": "runs/phone_e080_rxp100.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        0.8,
+        1.0
+      ],
+      "source_target_sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0043189579155296e-06,
+        4.008637915831059e-06,
+        6.0018833210051525e-06,
+        8.006202733668033e-06,
+        1.0010521691583563e-05,
+        1.2003766642010305e-05,
+        1.4008085599925835e-05,
+        1.600133145984728e-05,
+        1.800565041776281e-05,
+        1.999889536818955e-05,
+        2.0009969375678338e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0043189579155296e-06,
+          "upper_weight": 0.9978451743428993
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0043189579155296e-06,
+          "upper_actual_time_s": 4.008637915831059e-06,
+          "upper_weight": 0.9956903486857986
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.008637915831059e-06,
+          "upper_actual_time_s": 6.0018833210051525e-06,
+          "upper_weight": 0.9990551484527376
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.0018833210051525e-06,
+          "upper_actual_time_s": 8.006202733668033e-06,
+          "upper_weight": 0.9969053167729426
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.006202733668033e-06,
+          "upper_actual_time_s": 1.0010521691583563e-05,
+          "upper_weight": 0.9947504904137084
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0010521691583563e-05,
+          "upper_actual_time_s": 1.2003766642010305e-05,
+          "upper_weight": 0.9981102964743503
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2003766642010305e-05,
+          "upper_actual_time_s": 1.4008085599925835e-05,
+          "upper_weight": 0.9959659115661692
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4008085599925835e-05,
+          "upper_actual_time_s": 1.600133145984728e-05,
+          "upper_weight": 0.9993320142416691
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.600133145984728e-05,
+          "upper_actual_time_s": 1.800565041776281e-05,
+          "upper_weight": 0.9971808789511803
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.999889536818955e-05,
+          "upper_actual_time_s": 2.0009969375678338e-05,
+          "upper_weight": 0.09974996057802839
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e120_rxm100": {
+      "target": "runs/phone_e120_rxm100.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        1.2,
+        -1.0
+      ],
+      "source_target_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0072229744982906e-06,
+        4.0054046621662565e-06,
+        6.0035858950868715e-06,
+        8.001768037502188e-06,
+        1.0008991012000479e-05,
+        1.2007171790173743e-05,
+        1.4005353477841709e-05,
+        1.6003536075004376e-05,
+        1.800171594368294e-05,
+        1.9990857254015282e-05,
+        2.000893982767593e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0072229744982906e-06,
+          "upper_weight": 0.996401508656458
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0072229744982906e-06,
+          "upper_actual_time_s": 4.0054046621662565e-06,
+          "upper_weight": 0.9972952098402201
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.0054046621662565e-06,
+          "upper_actual_time_s": 6.0035858950868715e-06,
+          "upper_weight": 0.9982054204955023
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.0035858950868715e-06,
+          "upper_actual_time_s": 8.001768037502188e-06,
+          "upper_weight": 0.9991151770078119
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.001768037502188e-06,
+          "upper_actual_time_s": 1.0008991012000479e-05,
+          "upper_weight": 0.9955206710391868
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0008991012000479e-05,
+          "upper_actual_time_s": 1.2007171790173743e-05,
+          "upper_weight": 0.9964108401741814
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2007171790173743e-05,
+          "upper_actual_time_s": 1.4005353477841709e-05,
+          "upper_weight": 0.9973208252909389
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4005353477841709e-05,
+          "upper_actual_time_s": 1.6003536075004376e-05,
+          "upper_weight": 0.9982303544183608
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.6003536075004376e-05,
+          "upper_actual_time_s": 1.800171594368294e-05,
+          "upper_weight": 0.9991412466365838
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.9990857254015282e-05,
+          "upper_actual_time_s": 2.000893982767593e-05,
+          "upper_weight": 0.5056108801930427
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e120_rxp100": {
+      "target": "runs/phone_e120_rxp100.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        1.2,
+        1.0
+      ],
+      "source_target_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0072229744982906e-06,
+        4.0054046621662565e-06,
+        6.0035858950868715e-06,
+        8.001768037502188e-06,
+        1.0008991012000479e-05,
+        1.2007171790173743e-05,
+        1.4005353477841709e-05,
+        1.6003536075004376e-05,
+        1.800171594368294e-05,
+        1.9990857254015282e-05,
+        2.000893982767593e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0072229744982906e-06,
+          "upper_weight": 0.996401508656458
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0072229744982906e-06,
+          "upper_actual_time_s": 4.0054046621662565e-06,
+          "upper_weight": 0.9972952098402201
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.0054046621662565e-06,
+          "upper_actual_time_s": 6.0035858950868715e-06,
+          "upper_weight": 0.9982054204955023
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.0035858950868715e-06,
+          "upper_actual_time_s": 8.001768037502188e-06,
+          "upper_weight": 0.9991151770078119
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.001768037502188e-06,
+          "upper_actual_time_s": 1.0008991012000479e-05,
+          "upper_weight": 0.9955206710391868
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0008991012000479e-05,
+          "upper_actual_time_s": 1.2007171790173743e-05,
+          "upper_weight": 0.9964108401741814
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2007171790173743e-05,
+          "upper_actual_time_s": 1.4005353477841709e-05,
+          "upper_weight": 0.9973208252909389
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4005353477841709e-05,
+          "upper_actual_time_s": 1.6003536075004376e-05,
+          "upper_weight": 0.9982303544183608
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.6003536075004376e-05,
+          "upper_actual_time_s": 1.800171594368294e-05,
+          "upper_weight": 0.9991412466365838
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.9990857254015282e-05,
+          "upper_actual_time_s": 2.000893982767593e-05,
+          "upper_weight": 0.5056108801930427
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e090_rxm050": {
+      "target": "runs/phone_e090_rxm050.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        0.9,
+        -0.5
+      ],
+      "source_target_sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.004533598665148e-06,
+        4.009067197330296e-06,
+        6.003160251566442e-06,
+        8.00769430497894e-06,
+        1.0001786904467735e-05,
+        1.2006320503132883e-05,
+        1.400041401211638e-05,
+        1.6004947610781528e-05,
+        1.8009481209446676e-05,
+        1.999313462874852e-05,
+        2.000357380893547e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.004533598665148e-06,
+          "upper_weight": 0.9977383274253088
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.004533598665148e-06,
+          "upper_actual_time_s": 4.009067197330296e-06,
+          "upper_weight": 0.9954766548506175
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.009067197330296e-06,
+          "upper_actual_time_s": 6.003160251566442e-06,
+          "upper_weight": 0.9984151935338583
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.003160251566442e-06,
+          "upper_actual_time_s": 8.00769430497894e-06,
+          "upper_weight": 0.9961615493805943
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.00769430497894e-06,
+          "upper_actual_time_s": 1.0001786904467735e-05,
+          "upper_weight": 0.9991039009581629
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0001786904467735e-05,
+          "upper_actual_time_s": 1.2006320503132883e-05,
+          "upper_weight": 0.9968468958878554
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2006320503132883e-05,
+          "upper_actual_time_s": 1.400041401211638e-05,
+          "upper_weight": 0.9997923807913144
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.400041401211638e-05,
+          "upper_actual_time_s": 1.6004947610781528e-05,
+          "upper_weight": 0.997531789547043
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.6004947610781528e-05,
+          "upper_actual_time_s": 1.8009481209446676e-05,
+          "upper_weight": 0.9952701169723525
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.999313462874852e-05,
+          "upper_actual_time_s": 2.000357380893547e-05,
+          "upper_weight": 0.657654253354075
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e110_rxp050": {
+      "target": "runs/phone_e110_rxp050.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        1.1,
+        0.5
+      ],
+      "source_target_sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0020402189402375e-06,
+        4.004080437880475e-06,
+        6.006120202073362e-06,
+        8.00816087576095e-06,
+        1.0000757356465328e-05,
+        1.2002797120658215e-05,
+        1.4004836884851102e-05,
+        1.600687755853869e-05,
+        1.8008917322731577e-05,
+        1.9992070519947447e-05,
+        2.0001514712930657e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0020402189402375e-06,
+          "upper_weight": 0.9989809300927442
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0020402189402375e-06,
+          "upper_actual_time_s": 4.004080437880475e-06,
+          "upper_weight": 0.9979618601854886
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.004080437880475e-06,
+          "upper_actual_time_s": 6.006120202073362e-06,
+          "upper_weight": 0.9969430167258296
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.006120202073362e-06,
+          "upper_actual_time_s": 8.00816087576095e-06,
+          "upper_weight": 0.9959237212968711
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.00816087576095e-06,
+          "upper_actual_time_s": 1.0000757356465328e-05,
+          "upper_weight": 0.9996199147832171
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0000757356465328e-05,
+          "upper_actual_time_s": 1.2002797120658215e-05,
+          "upper_weight": 0.9986028645842894
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2002797120658215e-05,
+          "upper_actual_time_s": 1.4004836884851102e-05,
+          "upper_weight": 0.9975840215875772
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4004836884851102e-05,
+          "upper_actual_time_s": 1.600687755853869e-05,
+          "upper_weight": 0.9965647258674205
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.600687755853869e-05,
+          "upper_actual_time_s": 1.8008917322731577e-05,
+          "upper_weight": 0.995545881310119
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.9992070519947447e-05,
+          "upper_actual_time_s": 2.0001514712930657e-05,
+          "upper_weight": 0.839614360554514
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e090_rxp050": {
+      "target": "runs/phone_e090_rxp050.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        0.9,
+        0.5
+      ],
+      "source_target_sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.004533598665148e-06,
+        4.009067197330296e-06,
+        6.003160251566442e-06,
+        8.00769430497894e-06,
+        1.0001786904467735e-05,
+        1.2006320503132883e-05,
+        1.400041401211638e-05,
+        1.6004947610781528e-05,
+        1.8009481209446676e-05,
+        1.999313462874852e-05,
+        2.000357380893547e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.004533598665148e-06,
+          "upper_weight": 0.9977383274253088
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.004533598665148e-06,
+          "upper_actual_time_s": 4.009067197330296e-06,
+          "upper_weight": 0.9954766548506175
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.009067197330296e-06,
+          "upper_actual_time_s": 6.003160251566442e-06,
+          "upper_weight": 0.9984151935338583
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.003160251566442e-06,
+          "upper_actual_time_s": 8.00769430497894e-06,
+          "upper_weight": 0.9961615493805943
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.00769430497894e-06,
+          "upper_actual_time_s": 1.0001786904467735e-05,
+          "upper_weight": 0.9991039009581629
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0001786904467735e-05,
+          "upper_actual_time_s": 1.2006320503132883e-05,
+          "upper_weight": 0.9968468958878554
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2006320503132883e-05,
+          "upper_actual_time_s": 1.400041401211638e-05,
+          "upper_weight": 0.9997923807913144
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.400041401211638e-05,
+          "upper_actual_time_s": 1.6004947610781528e-05,
+          "upper_weight": 0.997531789547043
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.6004947610781528e-05,
+          "upper_actual_time_s": 1.8009481209446676e-05,
+          "upper_weight": 0.9952701169723525
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.999313462874852e-05,
+          "upper_actual_time_s": 2.000357380893547e-05,
+          "upper_weight": 0.657654253354075
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    },
+    "phone_e110_rxm050": {
+      "target": "runs/phone_e110_rxm050.npy",
+      "thickness": "static_feature.npy",
+      "globals": [
+        1.1,
+        -0.5
+      ],
+      "source_target_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+      "nominal_target_time_values": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "actual_raw_saved_time_values": [
+        0.0,
+        2.0020402189402375e-06,
+        4.004080437880475e-06,
+        6.006120202073362e-06,
+        8.00816087576095e-06,
+        1.0000757356465328e-05,
+        1.2002797120658215e-05,
+        1.4004836884851102e-05,
+        1.600687755853869e-05,
+        1.8008917322731577e-05,
+        1.9992070519947447e-05,
+        2.0001514712930657e-05
+      ],
+      "target_time_brackets": [
+        {
+          "nominal_time_s": 2e-06,
+          "lower_actual_time_s": 0.0,
+          "upper_actual_time_s": 2.0020402189402375e-06,
+          "upper_weight": 0.9989809300927442
+        },
+        {
+          "nominal_time_s": 4e-06,
+          "lower_actual_time_s": 2.0020402189402375e-06,
+          "upper_actual_time_s": 4.004080437880475e-06,
+          "upper_weight": 0.9979618601854886
+        },
+        {
+          "nominal_time_s": 6e-06,
+          "lower_actual_time_s": 4.004080437880475e-06,
+          "upper_actual_time_s": 6.006120202073362e-06,
+          "upper_weight": 0.9969430167258296
+        },
+        {
+          "nominal_time_s": 8e-06,
+          "lower_actual_time_s": 6.006120202073362e-06,
+          "upper_actual_time_s": 8.00816087576095e-06,
+          "upper_weight": 0.9959237212968711
+        },
+        {
+          "nominal_time_s": 9.999999999999999e-06,
+          "lower_actual_time_s": 8.00816087576095e-06,
+          "upper_actual_time_s": 1.0000757356465328e-05,
+          "upper_weight": 0.9996199147832171
+        },
+        {
+          "nominal_time_s": 1.2e-05,
+          "lower_actual_time_s": 1.0000757356465328e-05,
+          "upper_actual_time_s": 1.2002797120658215e-05,
+          "upper_weight": 0.9986028645842894
+        },
+        {
+          "nominal_time_s": 1.4e-05,
+          "lower_actual_time_s": 1.2002797120658215e-05,
+          "upper_actual_time_s": 1.4004836884851102e-05,
+          "upper_weight": 0.9975840215875772
+        },
+        {
+          "nominal_time_s": 1.6e-05,
+          "lower_actual_time_s": 1.4004836884851102e-05,
+          "upper_actual_time_s": 1.600687755853869e-05,
+          "upper_weight": 0.9965647258674205
+        },
+        {
+          "nominal_time_s": 1.8e-05,
+          "lower_actual_time_s": 1.600687755853869e-05,
+          "upper_actual_time_s": 1.8008917322731577e-05,
+          "upper_weight": 0.995545881310119
+        },
+        {
+          "nominal_time_s": 1.9999999999999998e-05,
+          "lower_actual_time_s": 1.9992070519947447e-05,
+          "upper_actual_time_s": 2.0001514712930657e-05,
+          "upper_weight": 0.839614360554514
+        }
+      ],
+      "target_resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation."
+    }
+  },
+  "split": {
+    "train": [
+      "phone_e100_rx000",
+      "phone_e080_rxm100",
+      "phone_e080_rxp100",
+      "phone_e120_rxm100",
+      "phone_e120_rxp100"
+    ],
+    "validation": [
+      "phone_e090_rxm050",
+      "phone_e110_rxp050"
+    ],
+    "test": [
+      "phone_e090_rxp050",
+      "phone_e110_rxm050"
+    ]
+  },
+  "original_field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_alias_note": "Only u_x/y/z names were mapped to displacement_x/y/z. Numeric labels and units are bitwise unchanged.",
+  "legacy_loader_key_note": "Per-run key thickness points to the declared reference mesh-length feature; it is not shell thickness.",
+  "label_source": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+  "source_ready_sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80",
+  "source_manifest_sha256": "133b157b2c4a52bbe08f56bf78b59255bb44d3880e54f660751fd82e052fd356",
+  "source_ready_name": "dataset_READY_evidence.json",
+  "time_note": "Nominal 2..20us labels linearly interpolated within actual saved-frame brackets; no extrapolation. Canonical raw12frames remain separate.",
+  "input_scope_note": "Fixed assembly geometry; e_scale_common and rwall_rx_deg change constitutive stiffness and wall normal, not initial node coordinates."
+}

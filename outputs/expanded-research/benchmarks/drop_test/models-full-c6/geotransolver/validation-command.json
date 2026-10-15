@@ -1,0 +1,27 @@
+{
+  "domain": "phone",
+  "architecture": "geotransolver",
+  "stage": "validation",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver",
+    "--cache",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--mode",
+    "validation",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T06:49:34.321499+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted-suite-logs\\phone-geotransolver-validation.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T06:50:00.341267+00:00",
+  "wall_seconds": 26.018588699997053,
+  "exit_code": 0
+}

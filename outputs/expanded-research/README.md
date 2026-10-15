@@ -54,10 +54,17 @@ DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 �
 | POD + RBF | 0.02620% | 1.356% | 2.61635% | 2.11085% | 30.9711% |
 | POD + ridge | 0.02847% | 1.474% | 2.24952% | 2.13582% | 25.0761% |
 | Transolver B5, 240초 optimizer 예산 | 1.30285% | 67.4430% | 33.8000% | 36.4939% | 96.0813% |
+| FLARE B5, 같은 계산 예산 | 1.78040% | 86.4631% | 55.1959% | 57.7764% | 99.3542% |
+| GeoTransolver GALE B5, 같은 계산 예산 | 1.44160% | 74.0676% | 32.0092% | 35.1488% | 96.9469% |
+| GeoTransolver GALE_FA B5, 같은 계산 예산 | 2.82385% | 145.484% | 60.6539% | 67.7150% | 99.9753% |
 
 전체 메시의 첫 신경망 Transolver는 실제795epoch/795Adam업데이트/3,975조건 관측을 마쳤고 best754epoch를 내부 검증으로 선택했다. 새 프로세스 validation 재추론 차이0 후 test2조건을 한 번 예측하고, 별도 수치 검산에서 원 FEM·예측·RMSE/L2/P95/max·checkpoint 선택을 확인했다. VM RMSE0.150670MPa, total-strain Frobenius RMSE7.96288e-5, EPSP RMSE3.31994e-6였다. 원 예측의 음수 VM600,081개·Frobenius520,256개·EPSP658,778개, EPSP 시간 감소593,109/1,369,170개를 보존했다. EPSP 참값은 전체1,521,300점×시점 중27개만 양수다. 엄밀0 기준 support 통계와 감소량을 물리적 파손 허용치로 해석하지 않는다. 원 예측 배열은 로컬에 보존한다. [최종 지표·실행 hash·그림](benchmarks/drop_test/models-full-c6/transolver/), [독립 검산](full-support-evaluation-review.md)
 
 이 첫 실행의240.244초는 optimizer 구간이며 총 wall은923.502초였다. data read/정규화238.807초, H2D21.025초, CPU상태/체크포인트2.415초, validation4.763초, Windows 전체 프로세스 관측372.581초 등을 기록했다. 일부 타이머 경계가 겹치므로 이를 전부 더해 wall의 완전한 분할로 취급하지 않는다. 관측 비용만 총 wall의 약40.3%이므로 이를 순수 모델 계산 시간으로 보고하지 않는다. 후속 정적 모델도 같은 실행 소스·240초 규약으로 비교하며 전체 wall은 더 길다. 아직 모든 설정의 평가가 끝난 것은 아니다.
+
+FLARE와 GeoTransolver GALE도 실제 학습·새 프로세스 검증 재추론 차이0·test 한 번·원 FEM 기준 독립 수치 검산을 마쳤다. 각각247/682업데이트·1,235/3,410조건 관측이며, 최선 체크포인트가 마지막 완료 epoch247/682다. 두 설정은 마지막 validation도 개선 중이므로 수렴을 입증하지 못했다. VM RMSE는 각각0.246047/0.142688MPa다. 현재 세 설정의 결과로 나머지 알고리즘의 정확도를 대신 판정하지 않는다.
+
+GALE_FA도208업데이트·1,040조건 관측·별도 예측·독립 검산을 마쳤지만, 이번 예산에서는 병진 제거 형상 오차가100%보다 컸다. 변위 제곱오차는 초기속도와 중력만으로 계산한 기준선의2.129배였다. 마지막 update까지 마쳐241.127초로 상한을1.127초 넘겼으며 이 차이를 숨기지 않았다. 이 설정 역시 마지막 검증이 최선이라 수렴이나 알고리즘의 보편적 우열을 확정하지 않는다.
 
 POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므로 full POD+RBF와 직접 RBF 결과는 수치적으로 거의 같다. 이를 별개의 성능 우위로 세지 않는다. 변위 기준 norm²의99.9627%가 평균 병진이며, 작은 전체 변위 L2로 국부 변형을 대신 평가하지 않는다. 평가2조건 EPSP는 총1,521,300개 절점×시점 중27개만 비영이고 첫 조건의 정답 EPSP는 전부0이다. 정답 norm0인 조건의 EPSP 상대 오차는 undefined로 두고 절대 오차·비영 support를 따로 기록했다. 세 predictor는 새 프로세스 재추론 차이0을 확인했다.
 
@@ -65,7 +72,9 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 
 별도100µs 기준 FEM도 exit0으로 정상 완료했다. 20→100µs 추가8,079cycle·721.59초·sampled peakRSS388.82MiB이며, 시작 경계의 원 응답과 bitwise동일성을 확인했다. 실제 마지막100.008663µs의 native VM73.505MPa·EPSP0.0625744·소성solid240개로20µs보다 반응이 계속 커졌다. 마지막 시점이 여전히 최대이고 양의 반발도 없어 full-drop peak/rebound 완료로 판정하지 않는다. 20µs AI를100µs에 적용한 결과도 아니다. [추가 FEM 증거](benchmarks/drop_test/100us/)
 
-사용자 승인 후0.5ms 연장을 시작했으나 첫 시도는183.93초에 host 가용 RAM 하한으로 CHKPT/STOP 정상 중단했다. 중단 결과와 재시작 실패 로그를 보존하고, 같은 체크포인트의 지원되는 `/RUN ... /I` 경로로 재개했다. 이 연장은 아직 완료 결과 표에 포함하지 않는다. 20µs 학습 캐시도 바꾸지 않는다. [첫 시도 원기록](benchmarks/drop_test/500us/)
+사용자 승인 후0.5ms 연장의 첫 시도는183.93초에 host 가용 RAM 하한으로 CHKPT/STOP 정상 중단했다. 중단·재시작 실패 로그를 보존하고 지원되는 `/RUN ... /I` 경로로 재개하여, 최종 실제500.006427µs까지 exit0/NORMAL TERMINATION으로 완주했다. 재개 실행38,680cycle·3,202.127초(53분22초)·sampled peakRSS393.3MiB였다. 최종 native VM57.5733MPa·EPSP0.0800299·소성solid326개이며, 저장63frame 중 관측VM최대84.7672MPa는150.016058µs에 나타났다. 최종 history499.9078µs의 정상방향 COM 속도는−3.44098m/s로 전체 반발은 없었고, work 보정 에너지 drift는−0.151024%였다. 최종 체크포인트의 추가 동일시각 reload 검사는 access violation으로 실패했고 다음 시도는RAM gate로 engine을 시작하지 못했다. 이 추가 검사의 미확인을 메인 정상 완료와 구분한다. 20µs AI 캐시33파일의 hash는 유지했으며0.5ms AI 학습·예측 결과가 아니다. [동결 최종 FEM 증거](benchmarks/drop_test/500us-final/), [첫 시도 원기록](benchmarks/drop_test/500us/)
+
+![0.5ms까지 실제 계산한 native FEM 응력·총변형률·소성변형률 이력](benchmarks/drop_test/500us-final/phone-500us-field-trends.png)
 
 ## 실행 범위와 읽는 기준
 
@@ -78,6 +87,20 @@ PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를
 공식 Q1 `Elasticity2DSolver`도 CPU에서 실제 실행해 독립 해·힘·모멘트·에너지 등13개 검사를 통과했다. 변위 상대 L2는2.324e-10, 두 solve 합계0.592초, import 포함10.898초, 최대 메모리196.68MiB였다. 이는 수치 FEM baseline이며 구조 FNO·DDM 전체 실행이나 AI 학습으로 세지 않는다. [실행·독립 검산](benchmarks/elasticity_numerical/execution-report.md)
 
 범퍼·휴대폰의 실제 native B2/B5 배치24개 조합도 실행했다. 22개는 출력·gradient·입력 독립성·Adam 갱신 검사를 통과했고, 휴대폰 MGN B5는 CUDA OOM, FIG B5는 OS 가용 물리 메모리 하한으로 중단했다. 후자는 CUDA OOM으로 분류하지 않았다. 휴대폰 MGN은 성공한 B1, FIG는 B2로 본학습하며, 기능/배치 검사를 정확도 완료로 세지 않는다. [실제 배치 결과·실패·노출 회계](benchmarks/batching/README.md)
+
+## 가전제품에 적용할 때의 판단
+
+직접 확인한 범위는 **공개 FEM 입력 실행 → native 응력·변형률 확보 → 학습 라벨과 원 출력의 대응 → GPU 학습 → 독립 FEM 조건 예측 → 물리 단위 오차 검산**이다. 이 연결은 실제로 작동한다. 현재 신경망의 큰 국부 오차와 음수 응력·소성 이력 위반 때문에 제품 합격 판정이나 파손 위험의 대체 해석기로 사용할 정확도는 확보하지 못했다. 작은 고정 형상·두 조건축에서 회귀/축약 모델이 유리했던 결과도 새 제품·접촉·파손 일반화의 근거는 아니다.
+
+전체 조립체를 연구 대상에서 제외할 이유는 없다. 다만 이번17부품 휴대폰의 학습 입력은 초기 형상·mesh 길이 대리값·공통 탄성계수 배율·작은 자세 변화다. 각 부품의 재료 법칙·연결부·접촉 상태를 모두 독립 입력으로 준 모델이 아니다. Element graph의17성분 사이에는 FEM의 tied/contact edge도 없다. 이를 TV·세탁기의 체결부·포장재·서스펜션·유리 파손을 포함한 범용 낙하 모델로 확대하려면 해당 상태와 하중 경로를 표현하고 별도 검증해야 한다. [실제 조립체 입력·graph 감사](benchmarks/assembly_input_audit/README.md)
+
+전체 제품의 연결·접촉이 유지되고 설계 변수 범위가 제한되면 전체 응답 또는 주요 설계 지표의 surrogate를 검토할 수 있다. 국부 파손·간극·체결부가 지배하거나 연결과 메시가 자주 바뀌면 부품/서브어셈블리가 먼저 검증하기 쉬운 후보가 된다. 이때 전체 FEM 또는 coarse assembly에서 전달받는 힘·변위·속도 이력과 interface 에너지를 맞춰야 한다. 이번 rear support는 동일 전체 FEM의 절점 부분집합이며, 독립 부품 FEM의 경계조건이나 계산 절감 효과를 검증한 것이 아니다.
+
+제품 목적에 맞는 출력은 잔류 변형·부품 간 상대변위/간극, 응력·총변형률·EPSP의 hotspot과 peak 시각, 센서 위치의 가속도·접촉력 pulse·흡수 에너지 등이다. 이번 공개 데이터의 낮은 저장 빈도로 수치 미분한 가속도 peak를 검증했다고 할 수 없다. 파손 법칙·failure 라벨이 없는 경우 EPSP나 VM를 파손 확률로 바꾸지 않는다. [출력·알고리즘·상용 CAE 경로 검토](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/fem-integration-review.md)
+
+상용 환경 확장은 승인된 HyperMesh/Radioss 모델의 해석 자동화, 원 ANIM/TH/H3D 보존, node/element/part ID·단위·좌표계·적분점/층 정의의 고정, 학습 schema와 HyperView/ParaView 비교로 이어질 수 있다. 지금 실제 실행한 solver는 OpenCourant이며 회사의 상용 모델을 실행하거나 외부로 전송하지 않았다. 공개 solver와 상용 solver의 keyword·재료·접촉·수치 결과 호환성은 같은 deck으로 따로 확인해야 한다.
+
+6GiB GPU에서 실제 전체 출력 지원점의 작은 신경망은 학습할 수 있었지만, 휴대폰 MGN B5는 VRAM 부족, FIG B5는 host RAM 부족을 실제 겪었다. 공식 크기 판의 단일 update 성공도 장기 rollout 정확도나 임의 조립체 수용량을 보장하지 않는다. 자원 증설 여부는 각 모델의 실측 VRAM·RAM·처리량과 검증 곡선으로 정한다. [기존 비용 시나리오와 공식 가격 출처](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/resource-options.md)는 GPU 점유 시간에 따른 참고치이며 이번 연구에서 유료 자원은 사용하지 않았다.
 
 ## 보존과 재현
 

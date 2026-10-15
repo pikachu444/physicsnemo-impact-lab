@@ -1,0 +1,14 @@
+{
+  "stage": "exact_checkpoint_resume_to500us",
+  "exit_code": -1073741819,
+  "stopped_reason": null,
+  "elapsed_seconds": 5.3987533,
+  "sampled_peak_working_set_bytes": 142135296,
+  "minimum_sampled_system_free_memory_KiB": 2123388,
+  "minimum_sampled_system_free_virtual_memory_KiB": 24191128,
+  "omp_threads": 2,
+  "priority": "BelowNormal",
+  "requested_final_time_s": 0.0005,
+  "source_checkpoint_sha256": "8434daa6788ff7ca094eb3ad02270e9cb06281ca162affca1a335cd67bd58aca",
+  "AI_targets_unchanged": true
+}

@@ -1,15 +1,15 @@
 # Full-support 실행결과 독립 감사
 
-갱신: 2026-10-15T06:24:29.121057+00:00
+갱신: 2026-10-15T07:02:16.875100+00:00
 
 저장된 raw 예측과 FEM 배열을 CPU 1개로 독립 검산한다. 아직 완료되지 않은 실행은 pending이며 통과로 세지 않는다.
 
 |도메인 / 설정|감사 상태|업데이트 / 완료 epoch|선택 epoch|
 |---|---|---:|---:|
 |phone/transolver|passed|795 / 795|754|
-|phone/flare|pending_actual_completed_test|— / —|—|
-|phone/geotransolver|pending_actual_completed_test|— / —|—|
-|phone/geoflare|pending_actual_completed_test|— / —|—|
+|phone/flare|passed|247 / 247|247|
+|phone/geotransolver|passed|682 / 682|682|
+|phone/geoflare|passed|208 / 208|208|
 |phone/meshgraphnet|pending_actual_completed_test|— / —|—|
 |phone/figconvunet|pending_actual_completed_test|— / —|—|
 |bumper/transolver|pending_actual_completed_test|— / —|—|
@@ -18,6 +18,15 @@
 |bumper/geoflare|pending_actual_completed_test|— / —|—|
 |bumper/meshgraphnet|pending_actual_completed_test|— / —|—|
 |bumper/figconvunet|pending_actual_completed_test|— / —|—|
+
+phone/transolver 추가 기준선 감사: `passed`. 최초 필드 감사의 passed 기록과 백업을 보존한 별도 추가 감사다.
+
+원 RAD 초기속도와 nominal 저장 시점으로 계산한 접촉 없는 균일 이동 기준선도 변위 벡터 지표에 한해 독립 검산했다.
+
+- 순수 `v0×t`: relative L2 `0.019350611460141`.
+- 중력 포함 `v0×t + 0.5×a×t²`: relative L2 `0.019351616593866`.
+
+production의 정확한 중력 포함 지표 경로는 `phone_ballistic_reference.ballistic_physical_metrics.displacement_vector`이다. `gravity_only_physical_metrics.displacement_vector`는 초기속도를 제외한 중력만의 별도 기준선이다. 균일 이동 기준선은 접촉·변형·구속을 계산하지 않으며 scalar 기준선 지표와 그림은 별도 검산 범위에 포함하지 않는다.
 
 무결성과 학습량 충족을 분리한다. 100 updates / 완료 epoch 2개 미달은 insufficient_budget이며 수렴·알고리즘 우열의 근거로 쓰지 않는다. 완료 epoch가 1개 이상이고 checkpoint가 고정됐으면 단 한 번의 test는 허용된다.
 

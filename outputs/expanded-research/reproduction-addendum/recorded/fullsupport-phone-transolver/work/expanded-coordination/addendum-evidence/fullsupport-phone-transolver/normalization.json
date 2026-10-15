@@ -1,0 +1,58 @@
+{
+  "field_mean": [
+    -0.03517315913418567,
+    -0.0385820438540878,
+    -0.02876316748505359,
+    0.06022952564607638,
+    1.7047754975666166e-05,
+    1.2411550147925982e-08
+  ],
+  "field_std": [
+    0.017974573123006966,
+    0.017974573123006966,
+    0.017974573123006966,
+    0.45369370230930534,
+    0.00021970957380470076,
+    4.92506686390329e-06
+  ],
+  "constant_training_fields": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "normalization_groups": [
+    {
+      "fields": [
+        "displacement_x",
+        "displacement_y",
+        "displacement_z"
+      ],
+      "scale": 0.017974573123006966,
+      "definition": "sqrt(trace(training displacement covariance)/3), shared by all three vector components"
+    }
+  ],
+  "thickness_mean": 0.4747608139003153,
+  "thickness_std": 0.10520534419585854,
+  "global_mean": [
+    1.0000000238418578,
+    0.0
+  ],
+  "global_std": [
+    0.17888545419358806,
+    0.8944271909999159
+  ],
+  "coordinate_min": [
+    -29.730728969573974,
+    -52.867303657531735,
+    -2.1805434894561766
+  ],
+  "coordinate_span": [
+    59.46104404449463,
+    105.73474845886231,
+    9.167717113494874
+  ],
+  "coordinate_margin_fraction": 0.01
+}

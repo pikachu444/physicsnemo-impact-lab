@@ -1,0 +1,27 @@
+{
+  "domain": "phone",
+  "architecture": "geoflare",
+  "stage": "validation",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare",
+    "--cache",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--mode",
+    "validation",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T07:00:44.953880+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted-suite-logs\\phone-geoflare-validation.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T07:01:18.399811+00:00",
+  "wall_seconds": 33.444602899995516,
+  "exit_code": 0
+}

@@ -1,0 +1,71 @@
+{
+  "status": "prepared_waiting_for_explicit_root_gpu_slot_actual_new_domain_training_not_yet_executed",
+  "profile": "budget_v2_complete_epoch",
+  "seed": 20261015,
+  "frozen_budget_driver": {
+    "path": "work/expanded-temporal/run_budget_temporal_v2.py",
+    "sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1"
+  },
+  "frozen_prepared_driver": {
+    "path": "work/expanded-temporal/run_domain_temporal.py",
+    "sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013"
+  },
+  "execution_runner": {
+    "path": "work/expanded-temporal/run_domain_stage.py",
+    "sha256": "5fd31205911bee38d34cea1c2bd29aeebc907e488b40863075e2e660ff949de9"
+  },
+  "initial_optimizer_budget_seconds_per_fit": 180,
+  "initial_six_fit_optimizer_budget_seconds": 1080,
+  "timing_limit": "18 minutes is the sum of nominal training caps only. Probe, setup, full validation, numerical reload, final inference and posthoc metrics add time. One optimizer update can overshoot a cap. Actual throughput is not yet measured on these domain/strategy combinations.",
+  "domains": {
+    "phone_full": {
+      "manifest": "work/expanded-ml/phone-full-cache-v2/manifest.json",
+      "normalization": "work/expanded-ml/phone-full-normalization.json",
+      "nodes": 76065,
+      "times": 10,
+      "split_counts_train_validation_test": [
+        5,
+        2,
+        2
+      ],
+      "tc_channels": 6,
+      "ar_tf_channels": 3
+    },
+    "bumper": {
+      "manifest": "work/expanded-ml/multifield7-cache/manifest.json",
+      "normalization": "work/expanded-ml/bumper7-normalization.json",
+      "nodes": 13675,
+      "times": 10,
+      "split_counts_train_validation_test": [
+        112,
+        12,
+        7
+      ],
+      "tc_channels": 7,
+      "ar_tf_channels": 3
+    }
+  },
+  "strategies": [
+    "time_conditional",
+    "ar_rollout_training",
+    "one_step_teacher_forcing"
+  ],
+  "stages": [
+    "Each combination: original three-update actual forward/backward/optimizer resource probe, including inference target-value independence check.",
+    "Each combination: separate 180s budget fit with full-case/all-time validation. This normally supplies the whole sampled-case epoch check without a duplicate pilot. If no epoch completes, report the quality failure and obtain a validation-only budget decision before any test.",
+    "Report validation metrics, train-only baselines, timing/memory and selected versus all-executed exposure. Root selects the frozen checkpoint/profile using validation only.",
+    "Each selected checkpoint: fresh-process validation reload, normalized maximum prediction difference at most 1e-5, all SHA/source/contract gates.",
+    "Each selected checkpoint: single held-out final inference with started sentinel. Never retrain or overwrite after final starts.",
+    "Saved final NPZ only: arithmetic diagnostics, train-mean/zero/ballistic baseline metrics, centroid-removed displacement, raw EPSP support/history and scalar P95/max/hotspot error."
+  ],
+  "time_sampling": "TC uses one future frame per case per sampled epoch with seeded balanced offsets. Ten complete sampled epochs expose every case-time pair once. AR/TF keep the original ten-step C3 rollout.",
+  "checkpoint_policy": "Only complete sampled-case epochs can select checkpoints. Terminal partial work/validation is recorded but ineligible. Selected and total exposure are reported separately.",
+  "public_scope": "Code, JSON, logs and PNG only; large private caches, raw final predictions, checkpoints and environments remain local.",
+  "not_claimed": [
+    "AR/TF stress or strain output",
+    "convergence at a compute cap",
+    "full assembly original solver degrees of freedom",
+    "simple ranking against static 240s caps which exclude transfer",
+    "new-domain actual training before GPU allocation"
+  ]
+}

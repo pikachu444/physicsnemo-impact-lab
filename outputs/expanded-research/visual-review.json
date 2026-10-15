@@ -1,0 +1,42 @@
+{
+  "scope": "Root visual inspection of saved scientific figures, distinct from numeric source-array audits.",
+  "last_updated_utc": "2026-10-15T07:01:00Z",
+  "reviewed": [
+    {
+      "path": "coupon-algorithm-comparison.png",
+      "status": "readable",
+      "checks": "Ten predictors/baselines, six field panels; units, labels and scalar/vector distinctions are legible. Numeric values are separately checked against frozen metric files."
+    },
+    {
+      "path": "benchmarks/drop_test/models-full-c6/transolver/heldout/von_mises_GPS_final_FEM_prediction_error.png",
+      "status": "readable",
+      "checks": "First fixed case, final nominal20us, all76065 support points. FEM/raw prediction share MPa scale; signed error and reference XY coordinates are clearly labeled."
+    },
+    {
+      "path": "benchmarks/drop_test/models-full-c6/transolver/heldout/total_strain_frobenius_final_FEM_prediction_error.png",
+      "status": "readable",
+      "checks": "FEM/raw prediction and signed scalar-norm error, dimensionless scale and reference XY units are legible. This is projected total-strain tensor Frobenius norm, not all tensor components."
+    },
+    {
+      "path": "benchmarks/drop_test/models-full-c6/transolver/heldout/displacement_magnitude_final_FEM_prediction_error.png",
+      "status": "readable",
+      "checks": "Magnitude and signed magnitude error in mm, reference XY coordinates and full-support count are legible. Scalar magnitude error is distinct from vector error. Large common translation visually dominates, consistent with separate centroid-removed numeric evaluation."
+    },
+    {
+      "path": "benchmarks/drop_test/500us-final/phone-500us-field-trends.png",
+      "status": "readable",
+      "checks": "Three native FEM time histories, actual saved times, MPa and dimensionless units, observed VM peak annotation, and unchanged2..20us AI-label scope are clear. All-valid-IP strain maximum is distinguished from cell VM/EPSP."
+    },
+    {
+      "path": "benchmarks/drop_test/500us-final/phone-500us-energy-momentum.png",
+      "status": "readable",
+      "checks": "Actual final499.9078us history sample and requested500us are distinguished. Energy in J and normal COM P/M in m/s have readable legends; work-corrected total is separate from individual plotted components. No positive global rebound appears in the plotted interval. Energy formula is independently checked in the numeric audit, not inferred by summing the displayed subset."
+    },
+    {
+      "path": "benchmarks/drop_test/500us-final/phone-500us-native-fields.png",
+      "status": "readable",
+      "checks": "Actual final500.006427us FEM snapshot, requested stop, observed earlier VM peak, XY cell-center projection and explicit visualization subsampling are legible. Native VM MPa, signed total strain xx at IP111, and EPSP are labeled separately. This is FEM-only; strain xx image is distinct from the all-valid-IP Frobenius maximum."
+    }
+  ],
+  "limits": "Reference XY point projections may overlap different parts. These are not deformed3D surfaces. First-case EPSP is exactly zero in the FEM; both fixed cases and a FEM-defined positive-support envelope must be inspected separately. Other saved figures are not declared visually reviewed by this record."
+}

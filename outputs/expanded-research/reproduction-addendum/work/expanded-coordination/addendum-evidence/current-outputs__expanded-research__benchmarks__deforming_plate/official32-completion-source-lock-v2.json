@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "status": "frozen_pre_execution_source_lock",
+  "frozen_at_utc": "2026-10-15T06:06:43.0011809Z",
+  "protocol_sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33",
+  "source_sha256": {
+    "train_plate.py": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61",
+    "plate_evaluation.py": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d",
+    "plate_data.py": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659",
+    "selection_policy.py": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278",
+    "freeze_protocol.py": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68",
+    "run_validation_training.py": "a249a9c9abb4b22e7ecb1dff6e8b5b8ddade3033dd89a6cf7f9509fdd845dc15",
+    "run_frozen_final.py": "aead9c09ea99c263a6158425f5e0cee6ac9287006f47e0c8e2370c7799b55bbc",
+    "summarize_plate_fields.py": "e5d82fc56c531b10375d7ee29dd4cea6ac489af9a2a4e8576edf8a85d1278e1b",
+    "plot_plate.py": "a66b79c4aa66ff93123ba72c73c241f4e7bde4965a84ff6f797daccd7807ccba"
+  },
+  "scope": "Source compilation and synthetic stdlib selection checks only; no framework or GPU use. Parent fixed command pins this lock hash externally; lock pins each source hash. One official128/15 train32-anchor8-epoch5 validation experiment followed by separately locked fresh6 AR399."
+}

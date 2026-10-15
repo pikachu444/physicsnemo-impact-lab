@@ -1,0 +1,185 @@
+{
+  "working_directory": "${WORKSPACE}",
+  "protocol": "${WORKSPACE}\\outputs\\expanded-research\\full-support-static-training-protocol.json",
+  "protocol_sha256": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+  "source_sha256": {
+    "${WORKSPACE}\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "${WORKSPACE}\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "${WORKSPACE}\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "${WORKSPACE}\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "${WORKSPACE}\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "${WORKSPACE}\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "${WORKSPACE}\\work\\expanded-ml\\run_budgeted_suite.py": "b3c6b1c44397b771f23546197d8ef5aa0fb36cc384a10b912c9b2f744dd0de6e",
+    "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "concurrent_pids": [
+    34268
+  ],
+  "runs": [
+    {
+      "domain": "phone",
+      "architecture": "transolver",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\phone\\transolver\\B5\\result.json"
+      ],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "phone",
+      "architecture": "flare",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\phone\\flare\\B5\\result.json"
+      ],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "phone",
+      "architecture": "geotransolver",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\phone\\geotransolver\\B5\\result.json"
+      ],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "phone",
+      "architecture": "geoflare",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\phone\\geoflare\\B5\\result.json"
+      ],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "phone",
+      "architecture": "meshgraphnet",
+      "batch_size": 1,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet",
+      "batch_adapter": null,
+      "batch_approvals": [],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "phone",
+      "architecture": "figconvunet",
+      "batch_size": 2,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+      "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\phone-full-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B2\\result.json"
+      ],
+      "data_clarification": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\drop_test\\common-cache-provenance-clarification.json"
+    },
+    {
+      "domain": "bumper",
+      "architecture": "transolver",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\transolver\\B2\\result.json",
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\transolver\\B5\\result.json"
+      ]
+    },
+    {
+      "domain": "bumper",
+      "architecture": "flare",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\flare\\B2\\result.json",
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\flare\\B5\\result.json"
+      ]
+    },
+    {
+      "domain": "bumper",
+      "architecture": "geotransolver",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\geotransolver\\B2\\result.json",
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\geotransolver\\B5\\result.json"
+      ]
+    },
+    {
+      "domain": "bumper",
+      "architecture": "geoflare",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\geoflare\\B2\\result.json",
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\geoflare\\B5\\result.json"
+      ]
+    },
+    {
+      "domain": "bumper",
+      "architecture": "meshgraphnet",
+      "batch_size": 2,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\meshgraphnet\\B2\\result.json"
+      ]
+    },
+    {
+      "domain": "bumper",
+      "architecture": "figconvunet",
+      "batch_size": 5,
+      "cache": "${WORKSPACE}\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+      "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+      "normalization": "${WORKSPACE}\\work\\expanded-ml\\bumper7-normalization.json",
+      "out": "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet",
+      "batch_adapter": "${WORKSPACE}\\work\\expanded-batch\\batch_adapters.py",
+      "batch_approvals": [
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\figconvunet\\B2\\result.json",
+        "${WORKSPACE}\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\figconvunet\\B5\\result.json"
+      ]
+    }
+  ]
+}

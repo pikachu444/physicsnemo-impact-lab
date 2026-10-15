@@ -1,0 +1,704 @@
+{
+  "schema_version": 1,
+  "as_of_utc": "2026-10-15T06:47:51Z",
+  "files": [
+    {
+      "path": "bootstrap.py",
+      "bytes": 6138,
+      "sha256": "1897db681a0bd725c6756eb1eef49408e4da3991ff1cdc605fabde9de62d2e44"
+    },
+    {
+      "path": "capture-tool.py",
+      "bytes": 20310,
+      "sha256": "955c5dac5a4f9ade1ad07a1c95a4dedc0b5589f1fd993ae2f386b89db7b25c02"
+    },
+    {
+      "path": "licenses/NVIDIA-PhysicsNeMo-APACHE-2.0.txt",
+      "bytes": 11314,
+      "sha256": "f804cfd52b3bacfd16cb9e80c1af55ccd97a0c41159fc06452d7b8b44432149f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4620,
+      "sha256": "9c6c8ffe810f8d61f9c3c94f3d7e1e28aab6fe27b3adfcb4e9fd10ecff34eda0"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-batch/batch_adapters.py",
+      "bytes": 3050,
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/checkpoint-frozen.json",
+      "bytes": 1903,
+      "sha256": "985fdba1054d0a27afbfc10faee58015ce59108a8a8e7ef51b0dcbed91b0e473"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/data-provenance-clarification.json",
+      "bytes": 10163,
+      "sha256": "1f6d14bcce551daf1ccd31185e7bc60a430e8b4be0045f7b8156d3ce4d69b07c"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/normalization.json",
+      "bytes": 1201,
+      "sha256": "3c41175c0a778a769c7fc81de0efcde48c175dadc3d310069160e91bcf5ac53e"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/prospective-training-protocol.json",
+      "bytes": 3588,
+      "sha256": "b530eca5215049a5bebe2f24dcb225694dbd401e28c4d4604072a84c4a368b54"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/test-command.json",
+      "bytes": 890,
+      "sha256": "1ebcaa70f2a04e5aef59c174202547ad339238d5bd4a979757efa5bf7d6c0266"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/test_report.json",
+      "bytes": 52187,
+      "sha256": "5d109c489e6e5673f1c27c77f5494b43b30081910bc27520a308a8f571344417"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/train-command.json",
+      "bytes": 1635,
+      "sha256": "109e0d63b931ef0f8202de78a89045a2781d25baca450f615e7037238832363f"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/training_report.json",
+      "bytes": 192524,
+      "sha256": "c69e55260230ca6c9851879a5447aba5b7abe2db3497c502ac79306667fa1f1a"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/validation-command.json",
+      "bytes": 909,
+      "sha256": "3a48a28e8bc817a4129b066eacbfd8b65397fda5a24af86474f9f249acd37c42"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare/validation_fresh_process.json",
+      "bytes": 7835,
+      "sha256": "e09b201d2e1d682134c9d876b75bd93db55121a5d76b872b28e0d82f1f25dc8d"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-coordination/addendum-evidence/fullsupport-phone-flare-cache/manifest.json",
+      "bytes": 33083,
+      "sha256": "757bf2c9c0d0f5014e4f5cdc9587f93cb93491573b145416b193b6f0c5629064"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/benchmark_data.py",
+      "bytes": 12831,
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/budget_protocol.py",
+      "bytes": 12094,
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/budgeted_runtime.py",
+      "bytes": 7739,
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/evaluate_budgeted.py",
+      "bytes": 33300,
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/model_adapters.py",
+      "bytes": 11146,
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d"
+    },
+    {
+      "path": "recorded/fullsupport-phone-flare/work/expanded-ml/train_budgeted.py",
+      "bytes": 24463,
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-batch/batch_adapters.py",
+      "bytes": 3050,
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/checkpoint-frozen.json",
+      "bytes": 1904,
+      "sha256": "b127381f966d1ee32d6b6179ff67dd1afc1621229a67fabb00c9a9f693f31ba1"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/data-provenance-clarification.json",
+      "bytes": 10163,
+      "sha256": "1f6d14bcce551daf1ccd31185e7bc60a430e8b4be0045f7b8156d3ce4d69b07c"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/normalization.json",
+      "bytes": 1201,
+      "sha256": "3c41175c0a778a769c7fc81de0efcde48c175dadc3d310069160e91bcf5ac53e"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/prospective-training-protocol.json",
+      "bytes": 3588,
+      "sha256": "b530eca5215049a5bebe2f24dcb225694dbd401e28c4d4604072a84c4a368b54"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/test-command.json",
+      "bytes": 903,
+      "sha256": "8431c1c70d414688b0f1045e519962a3f07896434eceb3c7d81fdb8522ca0333"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/test_report.json",
+      "bytes": 52321,
+      "sha256": "c07fb2e98bf31300a05f503db8d7ce338b80bd4594ad935945dfa3941ba7f15e"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/train-command.json",
+      "bytes": 1659,
+      "sha256": "eb506219f1c6b2dff319bb293df1b1d73597041d9d0230024dc5fa401dea8773"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/training_report.json",
+      "bytes": 488844,
+      "sha256": "45e6283547df9702237468c34624c4a08ae7cd89572628bee10636adb36bf1d6"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/validation-command.json",
+      "bytes": 924,
+      "sha256": "caf03faf6346d621c44e511b4948728ebb192bd85f707af8a8fc3253e07405de"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver/validation_fresh_process.json",
+      "bytes": 7968,
+      "sha256": "63086bc92f8de11574dc0205f2ca058beaec8ff78fed537695cc483850c8a2e2"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-coordination/addendum-evidence/fullsupport-phone-transolver-cache/manifest.json",
+      "bytes": 33083,
+      "sha256": "757bf2c9c0d0f5014e4f5cdc9587f93cb93491573b145416b193b6f0c5629064"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/benchmark_data.py",
+      "bytes": 12831,
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/budget_protocol.py",
+      "bytes": 12094,
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/budgeted_runtime.py",
+      "bytes": 7739,
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/evaluate_budgeted.py",
+      "bytes": 33300,
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/model_adapters.py",
+      "bytes": 11146,
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d"
+    },
+    {
+      "path": "recorded/fullsupport-phone-transolver/work/expanded-ml/train_budgeted.py",
+      "bytes": 24463,
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca"
+    },
+    {
+      "path": "selfcheck-tool.py",
+      "bytes": 5425,
+      "sha256": "f45ee9c2eb7720f3c99b1981411655e2ec0c108d341faa4b620d8eab565186b8"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 99604,
+      "sha256": "556bbbea3ed08cbecc3f8e82931f3f46b83cc5b0fe4bb6e8275b2c9ded6f483e"
+    },
+    {
+      "path": "work/expanded-batch/batch_adapters.py",
+      "bytes": 3050,
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+    },
+    {
+      "path": "work/expanded-batch/finish_remaining.py",
+      "bytes": 7658,
+      "sha256": "1a61469fd1625dfc8b814b386f4942d3bb1fb068e637295fc3252574e36d51d3"
+    },
+    {
+      "path": "work/expanded-batch/run_batch_probe.py",
+      "bytes": 19075,
+      "sha256": "d3f3f5898eff47be4e5fdb54f489808f11e8ae501867d8257386e9548a19f6e6"
+    },
+    {
+      "path": "work/expanded-batch/run_batch_suite.py",
+      "bytes": 5567,
+      "sha256": "9dfb54a8fc3585e23c73be89b64f7a33ecdcc26af72f174daa8311c76e8c043a"
+    },
+    {
+      "path": "work/expanded-batch/static_check.py",
+      "bytes": 3675,
+      "sha256": "1c534b44918b72c369ab282d2f037148beedf7d06b23d7b1aa5e0e25dfae904a"
+    },
+    {
+      "path": "work/expanded-batch/summarize_completed.py",
+      "bytes": 13531,
+      "sha256": "7b1c680bd1ad84d2c6e6f7f45d8190813109b831021385dc5db3182e1990acfb"
+    },
+    {
+      "path": "work/expanded-batch/train_probe_data.py",
+      "bytes": 6068,
+      "sha256": "0287662371b5268a005b36a9cc3a5b278ea56a4b8b52a3a207e9725a4a9f78f5"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research/full-support-static-training-protocol.json",
+      "bytes": 3588,
+      "sha256": "b530eca5215049a5bebe2f24dcb225694dbd401e28c4d4604072a84c4a368b54"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__batching/batch-recommendations.json",
+      "bytes": 12222,
+      "sha256": "b40646040931b56660a8f7fdadc2d35c157b12d6138279c36170f9fd8e09f316"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__deforming_plate/final-split-contract.json",
+      "bytes": 5265,
+      "sha256": "aa4f215f3ee43824d268db5908a5768fc49f4f2c8cfe07d68685c5660572d333"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__deforming_plate/official32-completion-source-lock-v2.json",
+      "bytes": 1380,
+      "sha256": "659da0a1dc4baaba8c58bdbbb624c46e54aa4d2f6f28b07ac221ade04d21afce"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__deforming_plate/official32-validation-protocol.json",
+      "bytes": 12119,
+      "sha256": "a71497614937762d2ca7434d8b5c6e2f91d3fecb4c750ab9efd97192e776bf33"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__drop_test__500us/frozen-inputs-and-guards.json",
+      "bytes": 1267,
+      "sha256": "bf902f8043b974988020d98101f26e4e92036439070c6c5eccc31ba2412cf033"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__drop_test__500us-resume02/frozen-inputs-and-guards.json",
+      "bytes": 844,
+      "sha256": "3affd0268f6c9096930f5278019f1d65f38d516dbfca680b264ba2fed4ebf953"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__drop_test__500us-resume03/frozen-inputs-and-guards.json",
+      "bytes": 1259,
+      "sha256": "a9d8ccfe3b88b631ed1fa3b8f3375d4c605bc52522c004cb08438b16e1d50296"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__drop_test__500us-resume03/source-control-and-restart-audit.json",
+      "bytes": 2717,
+      "sha256": "24d5262f6a375ed899822dd6882fe85cd8020bde8c3ae0072e19de7e66439888"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__temporal_strategies/budget-v2-execution-plan.json",
+      "bytes": 3830,
+      "sha256": "9469f42bd7bccae24075f87c78cf47646dc7706010d731c23cda3280a715c703"
+    },
+    {
+      "path": "work/expanded-coordination/addendum-evidence/current-outputs__expanded-research__benchmarks__temporal_strategies__phone_full__budget_v2_complete_epoch/prepared-contract.json",
+      "bytes": 5919,
+      "sha256": "7481a79e35c6d82918ce5b2452cb0f4a8422bec46a505a31e170fbe6f44bcebd"
+    },
+    {
+      "path": "work/expanded-drop/check-500us-boundary.py",
+      "bytes": 2030,
+      "sha256": "4b628e78a3d5ac2cb9dea00d0b9820ca2d6d0e939ca50c216f10dac3f3248b4d"
+    },
+    {
+      "path": "work/expanded-drop/check-500us-final-boundary.py",
+      "bytes": 2364,
+      "sha256": "35f6038c63d23ad34805be46643eed5a75221250822c747dc286197b57b31bcb"
+    },
+    {
+      "path": "work/expanded-drop/curator-openradioss.py",
+      "bytes": 26178,
+      "sha256": "d0d6b0b0139bb8eef7f38797d5ae9b0683df7bca5089ddc0b217746c8d31bc00"
+    },
+    {
+      "path": "work/expanded-drop/finalize-500us-evidence.py",
+      "bytes": 4571,
+      "sha256": "49595b1f4f30f7cca9ac53c7cf390433eac2fb589d1e731461993974a823b03b"
+    },
+    {
+      "path": "work/expanded-drop/inspect_deck.py",
+      "bytes": 2624,
+      "sha256": "2694135fef7f82d5e70f8e3c17e637b5c127259ace0b4d76125e0f8b0d046ee4"
+    },
+    {
+      "path": "work/expanded-drop/plot-500us-bounded.py",
+      "bytes": 6003,
+      "sha256": "e46fcdee33f5f389fc42d4294e8d06270bec6f36062d308cea63a903f88fc9c1"
+    },
+    {
+      "path": "work/expanded-drop/resource_gate.py",
+      "bytes": 2108,
+      "sha256": "c8253cd169a676dded482ade5a858b938481b1ea5fbd84a2440a4b7fa75818ed"
+    },
+    {
+      "path": "work/expanded-drop/run-engine-500us-resume02.ps1",
+      "bytes": 7216,
+      "sha256": "55dd5002c37ccb201ebea286d0d3ed159d6f385306f3e5d3937056015d1ac3e2"
+    },
+    {
+      "path": "work/expanded-drop/run-engine-500us-resume03.ps1",
+      "bytes": 8058,
+      "sha256": "4249f422f6f1b5651d79dd9d317798bd74d6006f89c6f01db385a88595ff31e3"
+    },
+    {
+      "path": "work/expanded-drop/run-engine-500us.ps1",
+      "bytes": 8032,
+      "sha256": "a713a6026ad587e69edff0ba802fc70ee20a02ae265e5aa0bdb61d29a89b4a52"
+    },
+    {
+      "path": "work/expanded-drop/run-final-boundary-check.ps1",
+      "bytes": 5034,
+      "sha256": "6b109f4eacd244b7f260587e951ecd9621f0fecfe711b9a29e2cd12dd4398dd8"
+    },
+    {
+      "path": "work/expanded-drop/summarize-500us-bounded.py",
+      "bytes": 15348,
+      "sha256": "10a302a4264894fa497ec6f77d148bfb7246f623c2a2f2a998594ffaafe72589"
+    },
+    {
+      "path": "work/expanded-evaluation-audit/audit_full_support.py",
+      "bytes": 45733,
+      "sha256": "a0b0806fe828da6ebc7c80c9a07d27ec782a45cc9e3bf6c2072d045e21d658a8"
+    },
+    {
+      "path": "work/expanded-evaluation-audit/watch_full_support.py",
+      "bytes": 3937,
+      "sha256": "80fb63c5aca819ad4e52a504d73b3dfd26d366eece36b4ceb68ce0d3bc5c6064"
+    },
+    {
+      "path": "work/expanded-ml/benchmark_data.py",
+      "bytes": 12831,
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6"
+    },
+    {
+      "path": "work/expanded-ml/budget_protocol.py",
+      "bytes": 12094,
+      "sha256": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a"
+    },
+    {
+      "path": "work/expanded-ml/budgeted-suite-plan.json",
+      "bytes": 11146,
+      "sha256": "638a4bcdd7726175784138015577ed95d1537ed1486bbef847c2177b5d87c5da"
+    },
+    {
+      "path": "work/expanded-ml/budgeted_runtime.py",
+      "bytes": 7739,
+      "sha256": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a"
+    },
+    {
+      "path": "work/expanded-ml/bumper7-normalization.json",
+      "bytes": 1268,
+      "sha256": "04a20ecdfd16db024c0d419b1567ede6917c8c0bc56cec09a460d69e280fd196"
+    },
+    {
+      "path": "work/expanded-ml/clarify_phone_provenance.py",
+      "bytes": 4998,
+      "sha256": "b5cb3e26546c11a2bdbe075312ebedcca493aed6f49a9ef05302fedf7c844f47"
+    },
+    {
+      "path": "work/expanded-ml/estimate_b1_training_cost.py",
+      "bytes": 2946,
+      "sha256": "53379a9ef793adce67fec5783f120298d6c63508d56ab93f179ca3d83c9bcf46"
+    },
+    {
+      "path": "work/expanded-ml/evaluate_budgeted.py",
+      "bytes": 33300,
+      "sha256": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429"
+    },
+    {
+      "path": "work/expanded-ml/field_diagnostics.py",
+      "bytes": 7232,
+      "sha256": "7908c2b88784ee1725044385e97e183b535231655772f97f61ee6c538977d80c"
+    },
+    {
+      "path": "work/expanded-ml/finalize_cache.py",
+      "bytes": 1661,
+      "sha256": "f10d738f80c937693b6fdd4b6d2fdab227ccad50131fb3a7ec92dbd713c65055"
+    },
+    {
+      "path": "work/expanded-ml/model_adapters.py",
+      "bytes": 11146,
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d"
+    },
+    {
+      "path": "work/expanded-ml/phone-full-normalization.json",
+      "bytes": 1201,
+      "sha256": "3c41175c0a778a769c7fc81de0efcde48c175dadc3d310069160e91bcf5ac53e"
+    },
+    {
+      "path": "work/expanded-ml/prepare_budgeted_plan.py",
+      "bytes": 3426,
+      "sha256": "273f39b1cee42eecc6d6dfbcea911ced706eaef6b33f3a04e9d435b02e2f95dc"
+    },
+    {
+      "path": "work/expanded-ml/prepare_multifield.py",
+      "bytes": 7495,
+      "sha256": "be2d8ad468b19a0c843696860e284c29d5772d002042ec04110d16e34b1da035"
+    },
+    {
+      "path": "work/expanded-ml/prepare_phone.py",
+      "bytes": 6006,
+      "sha256": "1ecb636485905665e39e2b40945d52c9c07675e7b3574a2736fc60a9321c4f9e"
+    },
+    {
+      "path": "work/expanded-ml/run_budgeted_suite.py",
+      "bytes": 5294,
+      "sha256": "b3c6b1c44397b771f23546197d8ef5aa0fb36cc384a10b912c9b2f744dd0de6e"
+    },
+    {
+      "path": "work/expanded-ml/summarize_budgeted.py",
+      "bytes": 32654,
+      "sha256": "8cb969cdf3440c9d3acfc1269782a498cd1755a8d6caa3e7a25718fbd2ddd3ff"
+    },
+    {
+      "path": "work/expanded-ml/train_budgeted.py",
+      "bytes": 24463,
+      "sha256": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca"
+    },
+    {
+      "path": "work/expanded-plate/acquire_plate.py",
+      "bytes": 5888,
+      "sha256": "21c3cc910d875a62b50840f2212d9b4aa33b9678fbbf58db4293b59cfff0fc8c"
+    },
+    {
+      "path": "work/expanded-plate/check_reuse.py",
+      "bytes": 785,
+      "sha256": "f1727dbed2c0c98a3d342eee8a7888e79d41319b99241968db81aab8e15471ff"
+    },
+    {
+      "path": "work/expanded-plate/compare_noise.py",
+      "bytes": 1521,
+      "sha256": "93ee9c42aba3b0a3bdc442840752d827947275e2479fc106f6429e665e39a6a7"
+    },
+    {
+      "path": "work/expanded-plate/freeze_protocol.py",
+      "bytes": 11172,
+      "sha256": "d808ee3ca5bb51ebbe2e1ccca5360c0a9e510ed6da85616307f44842139b3c68"
+    },
+    {
+      "path": "work/expanded-plate/freeze_split.py",
+      "bytes": 1585,
+      "sha256": "197553fccfe0f7a445e3cab857e2d7be8cc184ef4feacb33b659e5778be51d24"
+    },
+    {
+      "path": "work/expanded-plate/get_original.py",
+      "bytes": 292,
+      "sha256": "d5b76b42db08c12b23ad41148957e92adac9a6c9c86c074ac10182767de76a42"
+    },
+    {
+      "path": "work/expanded-plate/hotspots.py",
+      "bytes": 953,
+      "sha256": "14524acd903f51f1f3e9652659033c99733cfa456a6770163d58b2b24cc30076"
+    },
+    {
+      "path": "work/expanded-plate/inspect_sources.py",
+      "bytes": 1151,
+      "sha256": "1c66b0124ab7fffa817e9e1859eed052a5ec1b5f9cdc431f839139725a405add"
+    },
+    {
+      "path": "work/expanded-plate/more_sources.py",
+      "bytes": 347,
+      "sha256": "c92cb03202cabc45f0a81822c3e5d0c749665409845e19a01ec84eebc464da6c"
+    },
+    {
+      "path": "work/expanded-plate/plate_data.py",
+      "bytes": 5781,
+      "sha256": "c8249b6f01b1a74221588bcfa7422e626113011ec53588a20948b7f7b1999659"
+    },
+    {
+      "path": "work/expanded-plate/plate_evaluation.py",
+      "bytes": 10751,
+      "sha256": "c106eaafca9ae77379c9a82fadc1cfa796ba470961406a07c5a1c2885b45ab3d"
+    },
+    {
+      "path": "work/expanded-plate/plot_plate.py",
+      "bytes": 4002,
+      "sha256": "a66b79c4aa66ff93123ba72c73c241f4e7bde4965a84ff6f797daccd7807ccba"
+    },
+    {
+      "path": "work/expanded-plate/resource_geometries.py",
+      "bytes": 840,
+      "sha256": "6ee2c3f2ea30aa975eba23426281fc26eda50fef3681fed723904b1ff8056bc8"
+    },
+    {
+      "path": "work/expanded-plate/run_frozen_final.py",
+      "bytes": 12269,
+      "sha256": "aead9c09ea99c263a6158425f5e0cee6ac9287006f47e0c8e2370c7799b55bbc"
+    },
+    {
+      "path": "work/expanded-plate/run_resource_probe.py",
+      "bytes": 7591,
+      "sha256": "592d493619a1be138d2ed9cab57ce6cb86d79767d774290f3614049977645456"
+    },
+    {
+      "path": "work/expanded-plate/run_validation_training.py",
+      "bytes": 6872,
+      "sha256": "a249a9c9abb4b22e7ecb1dff6e8b5b8ddade3033dd89a6cf7f9509fdd845dc15"
+    },
+    {
+      "path": "work/expanded-plate/selection_policy.py",
+      "bytes": 13228,
+      "sha256": "a74d6626da4aa657344d06dd6823d6b1a9f5cc3eb76deb38cc0720e54bf42278"
+    },
+    {
+      "path": "work/expanded-plate/summarize_plate_fields.py",
+      "bytes": 5533,
+      "sha256": "e5d82fc56c531b10375d7ee29dd4cea6ac489af9a2a4e8576edf8a85d1278e1b"
+    },
+    {
+      "path": "work/expanded-plate/train_plate.py",
+      "bytes": 30120,
+      "sha256": "fc34a8c7b04f0c83eee52fe3e96989dc5266c69770ad423c23689898b253cc61"
+    },
+    {
+      "path": "work/expanded-plate/training_time_guide.py",
+      "bytes": 6099,
+      "sha256": "2bc9e44fae3ed4d826f7103760ccbf39c39b527d4f11c4b429bc3d79c7ec029a"
+    },
+    {
+      "path": "work/expanded-temporal/budget_profile_selfcheck.py",
+      "bytes": 3208,
+      "sha256": "70d56b6b8c9cf93dbab52f54a8000f0b7639cc404fbcd72940c80de093eee696"
+    },
+    {
+      "path": "work/expanded-temporal/coupon_field_diagnostics.py",
+      "bytes": 4522,
+      "sha256": "635e76b22e474bfb233286878796415aa14da939cddb51653d3f11cad664ae2e"
+    },
+    {
+      "path": "work/expanded-temporal/domain_source_audit.py",
+      "bytes": 6809,
+      "sha256": "b42231370e7be0094cb89533f8f6b55fbcecba196aced366a6c8967a6be430ca"
+    },
+    {
+      "path": "work/expanded-temporal/fetch_sources.py",
+      "bytes": 1647,
+      "sha256": "d12b5714da568f58a75752996083d0359c060367430baea2bf91879c0405c00d"
+    },
+    {
+      "path": "work/expanded-temporal/make_visuals.py",
+      "bytes": 3238,
+      "sha256": "7086cdac671fbba91c81ede19c61667add9a1e317b741f0b009d8da2ba79f518"
+    },
+    {
+      "path": "work/expanded-temporal/run_budget_temporal.py",
+      "bytes": 13666,
+      "sha256": "c6d77ca48196cfefe1647521097f3d2cf9ab257e71806744dd23be04fb578885"
+    },
+    {
+      "path": "work/expanded-temporal/run_budget_temporal_v2.py",
+      "bytes": 20067,
+      "sha256": "985d5f3dc3b74d0414824fe4feed2427a8ee1e4a096c357b849b3fabe0d182b1"
+    },
+    {
+      "path": "work/expanded-temporal/run_domain_stage.py",
+      "bytes": 7403,
+      "sha256": "5fd31205911bee38d34cea1c2bd29aeebc907e488b40863075e2e660ff949de9"
+    },
+    {
+      "path": "work/expanded-temporal/run_domain_temporal.py",
+      "bytes": 20931,
+      "sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013"
+    },
+    {
+      "path": "work/expanded-temporal/run_temporal.py",
+      "bytes": 21275,
+      "sha256": "baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af"
+    },
+    {
+      "path": "work/expanded-temporal/source_audit.py",
+      "bytes": 6096,
+      "sha256": "c824ce3041bdbf1b4e888e4808c8d9f6f231b57c7ea0e34bd64e42b307c7ee60"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/conf/model/geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/datapipe.py",
+      "bytes": 30248,
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/rollout.py",
+      "bytes": 16103,
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb"
+    },
+    {
+      "path": "work/expanded-temporal/sources/crash/train.py",
+      "bytes": 15670,
+      "sha256": "1d9f7831ee22e2721b4656816932bc8c8f9a0071d9acdc89d4c4e02d935ca72b"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/datapipe.py",
+      "bytes": 31913,
+      "sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/rollout.py",
+      "bytes": 16531,
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354"
+    },
+    {
+      "path": "work/expanded-temporal/sources/drop_test/train.py",
+      "bytes": 18078,
+      "sha256": "66410fb3a1b02bef52dbcc39e66870e64197156e15cd078ae5f4626baafbce89"
+    },
+    {
+      "path": "work/expanded-temporal/stage_monitor_selfcheck.py",
+      "bytes": 3576,
+      "sha256": "79fbc5f7de1cebdbe881d83cd80fc59f05e0e9afc1d40cc5a175189a52cc7e5c"
+    },
+    {
+      "path": "work/expanded-temporal/summarize_domain_budget.py",
+      "bytes": 10189,
+      "sha256": "07cc43b8ae324e117388450cec28ba7b09ba8f064923ce924b0a0d59890a7b2a"
+    },
+    {
+      "path": "work/expanded-temporal/summarize_execution.py",
+      "bytes": 5064,
+      "sha256": "6a9b108630fb090e96e6061cde5d3743917682f5155aec51e653a0101e3f9ac9"
+    }
+  ],
+  "bootstrap_source_origin": "outputs/expanded-research/reproduction/bootstrap.py",
+  "bootstrap_original_sha256": "f4f19a851d78f7c462aef675b4972ba6c7e17b167e54ecbd0755714325199a44",
+  "bootstrap_change": "Added explicit duplicate destination rejection in each default/profile selection; original restoration safety logic retained",
+  "capture_tool_source_origin": "work/expanded-coordination/addendum_pack.py",
+  "manifest_self_hash_excluded": true,
+  "selfcheck_tool_source_origin": "work/expanded-coordination/addendum_selfcheck.py",
+  "license_source_origin": "outputs/expanded-research/reproduction/licenses/NVIDIA-PhysicsNeMo-APACHE-2.0.txt",
+  "acceptance_report": "Generated separately by addendum_selfcheck.py after actual verification"
+}

@@ -1,0 +1,1728 @@
+{
+  "status": "completed_read_only_metadata_coverage_audit",
+  "as_of_utc": "2026-10-15T06:48:04.020404+00:00",
+  "read_window_started_utc": "2026-10-15T06:48:03.817368+00:00",
+  "scope": "Finite pinned structural-example inventory plus the completed local benchmark artifacts listed here; not all PhysicsNeMo algorithms or all possible architecture/dataset pairs.",
+  "no_further_execution": {
+    "stdlib_only": true,
+    "numpy_torch_tensorflow_imported": false,
+    "GPU_used_or_queried": false,
+    "dataset_arrays_opened_or_hashed": 0,
+    "new_training_or_FEM": false,
+    "sources_suites_caches_modified": false,
+    "writes": "Only new JSON/MD in outputs/expanded-research/coverage-audit"
+  },
+  "source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "source_inventory_counts": {
+    "premade_neural_rows": 8,
+    "additional_config_rows": 11,
+    "current_numerical_rows": 1,
+    "legacy_context_rows": 3,
+    "total_current_rows": 20
+  },
+  "finite_source_rows": [
+    {
+      "id": "crash-bumper-geotransolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot"
+    },
+    {
+      "id": "crash-bumper-geotransolver-time-conditional",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoTransolver",
+      "strategy": "independent-time-conditional",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "implementation_class": "rollout.GeoTransolverTimeConditional"
+    },
+    {
+      "id": "crash-biw-geotransolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_biw",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot"
+    },
+    {
+      "id": "crash-bumper-geoflare-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_bumper",
+      "model": "GeoFLARE (GeoTransolver GALE_FA)",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot"
+    },
+    {
+      "id": "crash-biw-geoflare-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_biw",
+      "model": "GeoFLARE (GeoTransolver GALE_FA)",
+      "strategy": "one-shot",
+      "official_support": "premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot"
+    },
+    {
+      "id": "drop-phone-geotransolver-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "one-shot",
+      "official_support": "only_premade_drop_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/drop_test_geotransolver_oneshot.yaml",
+      "implementation_class": "rollout.GeoTransolverOneShot"
+    },
+    {
+      "id": "plate-hybrid-meshgraphnet",
+      "example": "deforming_plate",
+      "dataset_definition": "plate",
+      "model": "HybridMeshGraphNet",
+      "strategy": "one-step-supervised; autoregressive-position-rollout",
+      "official_support": "premade_recipe",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/conf/config.yaml",
+      "implementation_class": "physicsnemo.models.meshgraphnet.HybridMeshGraphNet"
+    },
+    {
+      "id": "sinter-vfgn",
+      "example": "sintering_physics",
+      "dataset_definition": "sinter",
+      "model": "VFGNLearnedSimulator",
+      "strategy": "acceleration-supervision; coordinate-integration-rollout",
+      "official_support": "premade_recipe_data_not_located",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/conf/config.yaml",
+      "implementation_class": "physicsnemo.models.vfgn.graph_network_modules.VFGNLearnedSimulator"
+    },
+    {
+      "id": "crash-transolver-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "Transolver",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+      "implementation_class": "rollout.TransolverOneShot"
+    },
+    {
+      "id": "crash-mgn-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "MeshGraphNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+      "implementation_class": "rollout.MeshGraphNetOneShot"
+    },
+    {
+      "id": "crash-figconvunet-one-shot",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "FIGConvUNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+      "implementation_class": "rollout.FIGConvUNetOneShot"
+    },
+    {
+      "id": "crash-geotransolver-ar-rollout",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "GeoTransolver",
+      "strategy": "autoregressive-rollout-training",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "implementation_class": "rollout.GeoTransolverAutoregressiveRolloutTraining"
+    },
+    {
+      "id": "crash-geotransolver-one-step",
+      "example": "crash",
+      "dataset_definition": "crash_generic",
+      "model": "GeoTransolver",
+      "strategy": "teacher-forced-training/autoregressive-inference",
+      "official_support": "model_config_and_wrapper_no_premade_experiment",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "implementation_class": "rollout.GeoTransolverOneStepRollout"
+    },
+    {
+      "id": "drop_test-transolver-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "Transolver",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/transolver_one_shot.yaml",
+      "implementation_class": "rollout.TransolverOneShot"
+    },
+    {
+      "id": "drop_test-mgn-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "MeshGraphNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/mgn_one_shot.yaml",
+      "implementation_class": "rollout.MeshGraphNetOneShot"
+    },
+    {
+      "id": "drop_test-figconvunet-one-shot",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "FIGConvUNet",
+      "strategy": "one-shot",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/figconvunet_one_shot.yaml",
+      "implementation_class": "rollout.FIGConvUNetOneShot"
+    },
+    {
+      "id": "drop_test-geotransolver-ar-rollout",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "autoregressive-rollout-training",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "implementation_class": "rollout.GeoTransolverAutoregressiveRolloutTraining"
+    },
+    {
+      "id": "drop_test-geotransolver-one-step",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "teacher-forced-training/autoregressive-inference",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "implementation_class": "rollout.GeoTransolverOneStepRollout"
+    },
+    {
+      "id": "drop_test-geotransolver-time-conditional",
+      "example": "drop_test",
+      "dataset_definition": "drop_phone",
+      "model": "GeoTransolver",
+      "strategy": "independent-time-conditional",
+      "official_support": "model_config_and_wrapper_no_premade_experiment; explicitly_unvalidated_for_drop",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "implementation_class": "rollout.GeoTransolverTimeConditional"
+    },
+    {
+      "id": "tcad-elasticity-numerical",
+      "example": "tcad/fp_ddm",
+      "dataset_definition": null,
+      "model": "Q1-FEM matrix-free BiCGSTAB + domain decomposition",
+      "strategy": "numerical-plane-stress-static-solve",
+      "official_support": "current_numerical_baseline; no elasticity FNO",
+      "config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_elasticity.py",
+      "implementation_class": null
+    }
+  ],
+  "archived_sym_rows": [
+    {
+      "example": "bracket",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/bracket/bracket.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "output_fields": [
+        "u",
+        "v",
+        "w",
+        "six independent stress components"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    },
+    {
+      "example": "fuselage_panel",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/fuselage_panel/panel.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y",
+        "sigma_hoop"
+      ],
+      "output_fields": [
+        "u",
+        "v",
+        "sigma_xx",
+        "sigma_yy",
+        "sigma_xy"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    },
+    {
+      "example": "plane_displacement",
+      "repository": "NVIDIA/physicsnemo-sym",
+      "revision": "0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c",
+      "source": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/plane_displacement/plane_displacement.py",
+      "algorithm": "physics-informed fully-connected neural network; legacy Sym API",
+      "input_fields": [
+        "x",
+        "y"
+      ],
+      "output_fields": [
+        "u",
+        "v; stress derived through variational displacement gradients"
+      ],
+      "compatibility": "archived separate repository; legacy Solver/Domain/PDE/Arch APIs incompatible with current core sym migration, not a current ready-to-run recipe",
+      "scope": "linear static elasticity, no contact/plasticity/impact validation"
+    }
+  ],
+  "counts": {
+    "current_official_source_rows": 20,
+    "premade_neural_recipe_rows": 8,
+    "additional_configuration_rows": 11,
+    "numerical_rows": 1,
+    "separate_archived_sym_rows": 3,
+    "coupon_static_training_artifacts": 6,
+    "coupon_static_unique_named_classes": 5,
+    "coupon_temporal_strategy_training_artifacts": 3,
+    "coupon_temporal_additional_backbone_classes": 0,
+    "plate_reduced_training_artifacts": 2,
+    "plate_reduced_family_count": 1,
+    "main_full_support_completed_training_artifacts": 2,
+    "main_full_support_completed_test_reports": 2,
+    "completed_neural_training_artifacts_in_this_scoped_ledger": 13,
+    "trained_named_implementation_classes": [
+      "FIGConvUNet",
+      "FLARE",
+      "GeoTransolver",
+      "HybridMeshGraphNet",
+      "MeshGraphNet",
+      "Transolver"
+    ],
+    "trained_named_implementation_class_count": 6,
+    "coarse_backbone_groups_in_this_report": 5,
+    "coarse_groups_definition": "Transolver, FLARE, GeoTransolver (includingGALE_FA+temporal), MeshGraphNet (includingHybridMeshGraphNet), FIGConvUNet; a reporting taxonomy, not a claim of theoretical independence.",
+    "final_ROM_support_representations": 4,
+    "final_ROM_predictor_fit_artifacts": 12,
+    "final_ROM_method_labels": 3,
+    "final_ROM_regression_mapping_families": 2,
+    "final_ROM_shared_train_POD_basis_fit_groups": 4,
+    "ROM_physical_case_families": 3,
+    "ROM_physical_case_families_definition": "Coupon, bumper, phone. Phone rear is a support slice of the same9FEMcases, not a new physical dataset.",
+    "historical_curated3_predictor_artifacts_separate": 3,
+    "historical_curated3_additional_algorithm_families": 0,
+    "B1_functionality_probe_configurations_not_accuracy_fits": 12,
+    "B2_B5_attempted_configurations_not_accuracy_fits": 24,
+    "B2_B5_results": {
+      "passed": 22,
+      "oom": 1,
+      "resource_guard_stop": 1
+    },
+    "Q1_numerical_problems": 2,
+    "Q1_independent_checks_passed": 13,
+    "Q1_AI_training_artifacts": 0
+  },
+  "counting_rules": [
+    "One fit artifact is one completed dataset/support/target+configuration+seed training; file copies, validation roundtrips, checkpoint reloads and evaluation passes add zero fits.",
+    "Configuration/seed sweeps add runs, not new algorithm families. GALE_FA is GeoTransolver attention backend; temporal strategies reuse GeoTransolver; Plate noise0 is sensitivity of one reduced HybridMeshGraphNet.",
+    "B1/Batch/Plate Adam smoke probes are functionality/resource checks, excluded from accuracy-training artifact counts.",
+    "POD+RBF and POD+Ridge share a train decomposition per support. Different ranks/predictors do not double the underlying basis fit; reloads do not refit it.",
+    "Final ROM methods3 x supports4 gives12predictor artifacts, not12algorithm families or12independent physical datasets. Historical curated3 remains separate. Phone rank4 POD+RBF and directRBF span all positive train modes and are numerically equivalent here, not independent superiority evidence.",
+    "No universal count of all research training is claimed. This ledger is restricted to the source crosswalk and local expanded benchmark evidence listed.",
+    "All completion counts are metadata snapshots at as_of_utc. Later completions require a new audit; pending paths are never promoted from preparation."
+  ],
+  "neural_training_ledger": [
+    {
+      "id": "coupon13/static/transolver",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "Transolver",
+      "implementation_class": "Transolver",
+      "configuration": "transolver",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/transolver/metrics.json",
+        "benchmarks/structural_coupon/models/transolver/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 1000
+    },
+    {
+      "id": "coupon13/static/flare",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "FLARE",
+      "implementation_class": "FLARE",
+      "configuration": "flare",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/flare/metrics.json",
+        "benchmarks/structural_coupon/models/flare/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 1000
+    },
+    {
+      "id": "coupon13/static/geotransolver",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "GeoTransolver",
+      "implementation_class": "GeoTransolver",
+      "configuration": "geotransolver",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/geotransolver/metrics.json",
+        "benchmarks/structural_coupon/models/geotransolver/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 1000
+    },
+    {
+      "id": "coupon13/static/geoflare",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "GeoTransolver",
+      "implementation_class": "GeoTransolver",
+      "configuration": "geoflare",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/geoflare/metrics.json",
+        "benchmarks/structural_coupon/models/geoflare/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 1000
+    },
+    {
+      "id": "coupon13/static/meshgraphnet",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "MeshGraphNet",
+      "implementation_class": "MeshGraphNet",
+      "configuration": "meshgraphnet",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/meshgraphnet/metrics.json",
+        "benchmarks/structural_coupon/models/meshgraphnet/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 325
+    },
+    {
+      "id": "coupon13/static/figconvunet",
+      "dataset": "coupon13",
+      "kind": "neural_static",
+      "family": "FIGConvUNet",
+      "implementation_class": "FIGConvUNet",
+      "configuration": "figconvunet",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_full_test",
+      "independent_audit": "completed_numeric_record_audit_not_useful_accuracy_certification",
+      "evidence": [
+        "benchmarks/structural_coupon/models/figconvunet/metrics.json",
+        "benchmarks/structural_coupon/models/figconvunet/fresh-inference/metrics.json",
+        "independent-review.md"
+      ],
+      "actual_epochs": 465
+    },
+    {
+      "id": "coupon13/temporal/time_conditional",
+      "dataset": "coupon13",
+      "kind": "neural_temporal",
+      "family": "GeoTransolver",
+      "implementation_class": "GeoTransolver",
+      "configuration": "time_conditional",
+      "seed": 20261015,
+      "seed_evidence": "Executed driver line179; current small source hash matches recorded reproduction manifest. See temporal_seed_source_confirmation.",
+      "channels": 7,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit_accuracy_limits_remain",
+      "evidence": [
+        "benchmarks/temporal_strategies/coupon13/time_conditional/result.json",
+        "benchmarks/temporal_strategies/coupon13/time_conditional/fresh-process-reload.json",
+        "independent-review.md"
+      ],
+      "epochs": 30,
+      "optimizer_updates": 1500
+    },
+    {
+      "id": "coupon13/temporal/ar_rollout_training",
+      "dataset": "coupon13",
+      "kind": "neural_temporal",
+      "family": "GeoTransolver",
+      "implementation_class": "GeoTransolver",
+      "configuration": "ar_rollout_training",
+      "seed": 20261015,
+      "seed_evidence": "Executed driver line179; current small source hash matches recorded reproduction manifest. See temporal_seed_source_confirmation.",
+      "channels": 3,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit_accuracy_limits_remain",
+      "evidence": [
+        "benchmarks/temporal_strategies/coupon13/ar_rollout_training/result.json",
+        "benchmarks/temporal_strategies/coupon13/ar_rollout_training/fresh-process-reload.json",
+        "independent-review.md"
+      ],
+      "epochs": 30,
+      "optimizer_updates": 150
+    },
+    {
+      "id": "coupon13/temporal/one_step_teacher_forcing",
+      "dataset": "coupon13",
+      "kind": "neural_temporal",
+      "family": "GeoTransolver",
+      "implementation_class": "GeoTransolver",
+      "configuration": "one_step_teacher_forcing",
+      "seed": 20261015,
+      "seed_evidence": "Executed driver line179; current small source hash matches recorded reproduction manifest. See temporal_seed_source_confirmation.",
+      "channels": 3,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit_accuracy_limits_remain",
+      "evidence": [
+        "benchmarks/temporal_strategies/coupon13/one_step_teacher_forcing/result.json",
+        "benchmarks/temporal_strategies/coupon13/one_step_teacher_forcing/fresh-process-reload.json",
+        "independent-review.md"
+      ],
+      "epochs": 30,
+      "optimizer_updates": 150
+    },
+    {
+      "id": "plate/pilot8",
+      "dataset": "plate8",
+      "kind": "neural_plate_capacity_sensitivity",
+      "family": "MeshGraphNet",
+      "implementation_class": "HybridMeshGraphNet",
+      "configuration": "pilot8",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "accuracy": "failed_useful_accuracy_gate",
+      "fresh_reload": "separate_process_first20_ARsteps_only",
+      "independent_audit": "completed_numeric_and_kinematics_audit",
+      "evidence": [
+        "benchmarks/deforming_plate/pilot8/metrics.json",
+        "benchmarks/deforming_plate/pilot8/config.json",
+        "benchmarks/deforming_plate/checkpoint-reuse-check.json",
+        "independent-review.md"
+      ],
+      "original_solver_strain_evaluation": false
+    },
+    {
+      "id": "plate/noise0_pilot8",
+      "dataset": "plate8",
+      "kind": "neural_plate_capacity_sensitivity",
+      "family": "MeshGraphNet",
+      "implementation_class": "HybridMeshGraphNet",
+      "configuration": "noise0_pilot8",
+      "seed": 20261015,
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "accuracy": "failed_useful_accuracy_gate",
+      "fresh_reload": "selected_state_loaded_in_accuracy_run; separate_process_reload_not_found",
+      "independent_audit": "completed_numeric_and_kinematics_audit",
+      "evidence": [
+        "benchmarks/deforming_plate/noise0_pilot8/metrics.json",
+        "benchmarks/deforming_plate/noise0_pilot8/config.json",
+        "benchmarks/deforming_plate/checkpoint-reuse-check.json",
+        "independent-review.md"
+      ],
+      "original_solver_strain_evaluation": false
+    },
+    {
+      "id": "phone/static/transolver",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "Transolver",
+      "configuration": "transolver",
+      "evidence": [
+        "benchmarks/drop_test/models-full-c6/transolver/training_report.json",
+        "benchmarks/drop_test/models-full-c6/transolver/test_report.json",
+        "benchmarks/drop_test/models-full-c6/transolver/checkpoint-frozen.json",
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_separate_test_process_selected_checkpoint_load; test_pass_is_not_an_extra_fit",
+      "independent_audit": "passed",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts.",
+      "training_status": "training_completed_best_complete_epoch_checkpoint_fixed_no_test_evaluation",
+      "seed": 20261015,
+      "batch_size": 5,
+      "quality_gates": {
+        "minimum_updates_satisfied": true,
+        "minimum_two_complete_epochs_satisfied": true,
+        "gate_passed": true,
+        "failure_action": "Report insufficient budget; do not silently extend cap"
+      },
+      "optimizer_updates": 795,
+      "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+      "training_process_pid": 42700,
+      "test_status": "completed",
+      "test_completed_utc": "2026-10-15T06:21:40.522200+00:00",
+      "test_process_pid": 9388,
+      "test_performance_passes": 1,
+      "freeze_status": "checkpoint_fixed_and_validation_roundtrip_passed"
+    },
+    {
+      "id": "phone/static/flare",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "FLARE",
+      "configuration": "flare",
+      "evidence": [
+        "benchmarks/drop_test/models-full-c6/flare/training_report.json",
+        "benchmarks/drop_test/models-full-c6/flare/test_report.json",
+        "benchmarks/drop_test/models-full-c6/flare/checkpoint-frozen.json",
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_separate_test_process_selected_checkpoint_load; test_pass_is_not_an_extra_fit",
+      "independent_audit": "metadata_passed_metrics_deferred_memory",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts.",
+      "training_status": "training_completed_best_complete_epoch_checkpoint_fixed_no_test_evaluation",
+      "seed": 20261015,
+      "batch_size": 5,
+      "quality_gates": {
+        "minimum_updates_satisfied": true,
+        "minimum_two_complete_epochs_satisfied": true,
+        "gate_passed": true,
+        "failure_action": "Report insufficient budget; do not silently extend cap"
+      },
+      "optimizer_updates": 247,
+      "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+      "training_process_pid": 8124,
+      "test_status": "completed",
+      "test_completed_utc": "2026-10-15T06:33:17.998524+00:00",
+      "test_process_pid": 38800,
+      "test_performance_passes": 1,
+      "freeze_status": "checkpoint_fixed_and_validation_roundtrip_passed"
+    }
+  ],
+  "prospective_full_support_rows": [
+    {
+      "id": "phone/static/transolver",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "Transolver",
+      "configuration": "transolver",
+      "evidence": [
+        "benchmarks/drop_test/models-full-c6/transolver/training_report.json",
+        "benchmarks/drop_test/models-full-c6/transolver/test_report.json",
+        "benchmarks/drop_test/models-full-c6/transolver/checkpoint-frozen.json",
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_separate_test_process_selected_checkpoint_load; test_pass_is_not_an_extra_fit",
+      "independent_audit": "passed",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts.",
+      "training_status": "training_completed_best_complete_epoch_checkpoint_fixed_no_test_evaluation",
+      "seed": 20261015,
+      "batch_size": 5,
+      "quality_gates": {
+        "minimum_updates_satisfied": true,
+        "minimum_two_complete_epochs_satisfied": true,
+        "gate_passed": true,
+        "failure_action": "Report insufficient budget; do not silently extend cap"
+      },
+      "optimizer_updates": 795,
+      "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+      "training_process_pid": 42700,
+      "test_status": "completed",
+      "test_completed_utc": "2026-10-15T06:21:40.522200+00:00",
+      "test_process_pid": 9388,
+      "test_performance_passes": 1,
+      "freeze_status": "checkpoint_fixed_and_validation_roundtrip_passed"
+    },
+    {
+      "id": "phone/static/flare",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "FLARE",
+      "configuration": "flare",
+      "evidence": [
+        "benchmarks/drop_test/models-full-c6/flare/training_report.json",
+        "benchmarks/drop_test/models-full-c6/flare/test_report.json",
+        "benchmarks/drop_test/models-full-c6/flare/checkpoint-frozen.json",
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed_separate_test_process_selected_checkpoint_load; test_pass_is_not_an_extra_fit",
+      "independent_audit": "metadata_passed_metrics_deferred_memory",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts.",
+      "training_status": "training_completed_best_complete_epoch_checkpoint_fixed_no_test_evaluation",
+      "seed": 20261015,
+      "batch_size": 5,
+      "quality_gates": {
+        "minimum_updates_satisfied": true,
+        "minimum_two_complete_epochs_satisfied": true,
+        "gate_passed": true,
+        "failure_action": "Report insufficient budget; do not silently extend cap"
+      },
+      "optimizer_updates": 247,
+      "convergence": "Unverified. A bounded initial comparison, not an optimized recipe; inspect the recorded validation curve and improvement at the last eligible state.",
+      "training_process_pid": 8124,
+      "test_status": "completed",
+      "test_completed_utc": "2026-10-15T06:33:17.998524+00:00",
+      "test_process_pid": 38800,
+      "test_performance_passes": 1,
+      "freeze_status": "checkpoint_fixed_and_validation_roundtrip_passed"
+    },
+    {
+      "id": "phone/static/geotransolver",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "GeoTransolver",
+      "configuration": "geotransolver",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "phone/static/geoflare",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "GeoTransolver",
+      "configuration": "geoflare",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "phone/static/meshgraphnet",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "MeshGraphNet",
+      "configuration": "meshgraphnet",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "phone/static/figconvunet",
+      "dataset": "phone9-full",
+      "kind": "prospective_full_support_neural",
+      "family": "FIGConvUNet",
+      "configuration": "figconvunet",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/transolver",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "Transolver",
+      "configuration": "transolver",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/flare",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "FLARE",
+      "configuration": "flare",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/geotransolver",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "GeoTransolver",
+      "configuration": "geotransolver",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/geoflare",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "GeoTransolver",
+      "configuration": "geoflare",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/meshgraphnet",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "MeshGraphNet",
+      "configuration": "meshgraphnet",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    },
+    {
+      "id": "bumper/static/figconvunet",
+      "dataset": "bumper131-c7",
+      "kind": "prospective_full_support_neural",
+      "family": "FIGConvUNet",
+      "configuration": "figconvunet",
+      "evidence": [
+        "full-support-evaluation-review.json"
+      ],
+      "train_completed": false,
+      "fem_evaluation_completed": false,
+      "fresh_reload": "not_yet_proven",
+      "independent_audit": "pending_actual_completed_test",
+      "completion_rule": "Read only completed training/test metadata; directory or preparation alone never counts."
+    }
+  ],
+  "ROM_predictor_ledger": [
+    {
+      "id": "coupon13/pod_rbf",
+      "dataset_support": "coupon13",
+      "method": "pod_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "coupon13/shared_POD_eigendecomposition",
+      "selected_rank": 2,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/coupon13/metrics.json",
+        "benchmarks/rom/coupon13/pod_rbf/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "coupon13/pod_ridge",
+      "dataset_support": "coupon13",
+      "method": "pod_ridge",
+      "family": "polynomial_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "coupon13/shared_POD_eigendecomposition",
+      "selected_rank": 2,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/coupon13/metrics.json",
+        "benchmarks/rom/coupon13/pod_ridge/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "coupon13/direct_rbf",
+      "dataset_support": "coupon13",
+      "method": "direct_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "direct_field",
+      "shared_basis_fit_group": null,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/coupon13-direct-rbf/metrics.json",
+        "benchmarks/rom/coupon13-direct-rbf/inference_reuse/metrics.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "bumper7/pod_rbf",
+      "dataset_support": "bumper7",
+      "method": "pod_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "bumper7/shared_POD_eigendecomposition",
+      "selected_rank": 27,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/bumper7/metrics.json",
+        "benchmarks/rom/bumper7/pod_rbf/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "bumper7/pod_ridge",
+      "dataset_support": "bumper7",
+      "method": "pod_ridge",
+      "family": "polynomial_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "bumper7/shared_POD_eigendecomposition",
+      "selected_rank": 109,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/bumper7/metrics.json",
+        "benchmarks/rom/bumper7/pod_ridge/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "bumper7/direct_rbf",
+      "dataset_support": "bumper7",
+      "method": "direct_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "direct_field",
+      "shared_basis_fit_group": null,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/bumper7-direct-rbf/metrics.json",
+        "benchmarks/rom/bumper7-direct-rbf/inference_reuse/metrics.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-full/pod_rbf",
+      "dataset_support": "phone9-full",
+      "method": "pod_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "phone9-full/shared_POD_eigendecomposition",
+      "selected_rank": 4,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-full/metrics.json",
+        "benchmarks/rom/phone9-full/pod_rbf/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-full/pod_ridge",
+      "dataset_support": "phone9-full",
+      "method": "pod_ridge",
+      "family": "polynomial_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "phone9-full/shared_POD_eigendecomposition",
+      "selected_rank": 4,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-full/metrics.json",
+        "benchmarks/rom/phone9-full/pod_ridge/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-full/direct_rbf",
+      "dataset_support": "phone9-full",
+      "method": "direct_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "direct_field",
+      "shared_basis_fit_group": null,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-full-direct-rbf/metrics.json",
+        "benchmarks/rom/phone9-full-direct-rbf/inference_reuse/metrics.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-rear/pod_rbf",
+      "dataset_support": "phone9-rear",
+      "method": "pod_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "phone9-rear/shared_POD_eigendecomposition",
+      "selected_rank": 4,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-rear/metrics.json",
+        "benchmarks/rom/phone9-rear/pod_rbf/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-rear/pod_ridge",
+      "dataset_support": "phone9-rear",
+      "method": "pod_ridge",
+      "family": "polynomial_ridge",
+      "representation": "train_only_POD",
+      "shared_basis_fit_group": "phone9-rear/shared_POD_eigendecomposition",
+      "selected_rank": 4,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "exact_prediction_match",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-rear/metrics.json",
+        "benchmarks/rom/phone9-rear/pod_ridge/inference_reuse/inference_report.json",
+        "independent-review.md"
+      ]
+    },
+    {
+      "id": "phone9-rear/direct_rbf",
+      "dataset_support": "phone9-rear",
+      "method": "direct_rbf",
+      "family": "Gaussian_RBF_kernel_ridge",
+      "representation": "direct_field",
+      "shared_basis_fit_group": null,
+      "fit_completed": true,
+      "fem_evaluation_completed": true,
+      "fresh_reload": "completed",
+      "independent_audit": "completed_numeric_record_audit",
+      "evidence": [
+        "benchmarks/rom/phone9-rear-direct-rbf/metrics.json",
+        "benchmarks/rom/phone9-rear-direct-rbf/inference_reuse/metrics.json",
+        "independent-review.md"
+      ]
+    }
+  ],
+  "historical_curated3": {
+    "predictor_fit_artifacts": 3,
+    "same_bumper_case_family": true,
+    "separate_displacement_only_representation": true,
+    "additional_algorithm_families": 0,
+    "evidence": [
+      "benchmarks/rom/curated3/metrics.json",
+      "benchmarks/bumper/curated3-rbf/metrics.json",
+      "independent-review.md"
+    ]
+  },
+  "stage_summary": {
+    "installation": "Core2.2.2 and per-run GPU Torch2.10.0+cu126 are recorded. This does not prove all optional recipe environments installed. Historical Torch2.13 and CPU Q1 runtime remain separate.",
+    "coupon_static": "6config/5namedclasses: installed, actual forward/backward, train, FEM heldout evaluation, full fresh process checkpoint inference and numeric independent audit complete. Accuracy/convergence limits remain.",
+    "coupon_temporal": "3strategy fits on1GeoTransolver backbone; CPU/CUDA probes include expected AR7/TF7 dimension failures; TC7/AR3/TF3 trained+evaluated+reload exact+independent audit complete. Not a phone-domain result.",
+    "bumper_neural": "6full-support B1 functionality probes and native batch evidence; completed main training/test only where explicitly represented in prospective_full_support_rows. ROM evaluated separately.",
+    "phone_neural": "2 completed main training artifacts across current rows; exact domain stage is in prospective_full_support_rows. A completed test process proves fresh model reconstruction/load, not an extra fit or converged useful accuracy.",
+    "ROM": "12final predictor fits/evaluations/reloads and independent numeric audit across4support representations/3physical case families. Curated3historical3predictors separately. Basis/local training snapshot dependencies remain.",
+    "plate_reduced": "2fits and399stepheldout comparisons complete; useful accuracy failed. Separate process pilot reload covers only first20steps; no separate noise0freshprocess evidence found. Derived GL strain is not original COMSOL strain-label validation.",
+    "plate_official_capacity": "5Adam resource probe complete; official32/preexecution contracts do not establish accuracy training/evaluation.",
+    "Q1": "2CPU numerical solves and13independent checks complete; no neural install/forward/backward/train/reload claim and no full2x2DDM.",
+    "Sinter_BIW_legacySym_structuralFNO": "No completed data-specific training/FEM accuracy evidence in this scoped inventory; blockers are explicit below."
+  },
+  "pending_or_unexecuted_blockers": [
+    {
+      "item": "Sinter/VFGN",
+      "status": "not_data_trained_or_evaluated",
+      "blockers": [
+        "Pinned recipe mentions local train/test TFRecord, metadata and checkpoint paths but verified public download was not located. This is not a claim that no public data exists anywhere.",
+        "VFGN predicts acceleration then positions, without stress/strain heads. Existing bumper/phone/coupon outputs do not replace temperature-conditioned densification trajectories.",
+        "Recorded source audit flags next_positions rank mismatch and version-specific scheduler/API handling; full dependency/model runtime remains unverified."
+      ],
+      "feasibility_without_paid_compute_or_new_GPU": "Existing public structural datasets cannot close the missing sintering-data task. A reduced CPU synthetic graph smoke test may be possible after engineering/dependency work, but would establish only interface operation. Actual sintering validation still needs suitable temperature/position-history data and reference outputs. No new paid GPU is established as necessary or sufficient.",
+      "primary_sources": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/README.md#L123-L171",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/graph_dataset.py#L161-L168",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/physicsnemo/models/vfgn/graph_network_modules.py#L1078-L1157",
+        "https://arxiv.org/html/2404.11753v1#S3.SS1"
+      ],
+      "local_evidence": [
+        "source-matrix/sinter-sym-notes.md",
+        "source-matrix/official-execution-matrix.json"
+      ]
+    },
+    {
+      "item": "BIW crash",
+      "status": "not_data_trained_or_evaluated",
+      "blockers": [
+        "Two official one-shot GeoTransolver/GALE_FA configurations exist, but the checked sources did not provide a verified full BIW FEM deck and 150-case result dataset download.",
+        "Bumper, coupon and phone functionality prove shared class operation only; they are different geometry, loading and input contracts."
+      ],
+      "feasibility_without_paid_compute_or_new_GPU": "Cannot claim the official BIW task solved with current local public examples. Existing six-class runtime evidence reduces software uncertainty, but does not supply BIW geometry/labels. A different public thin-shell model or synthetic mesh would be a new task requiring an explicit adapter and reference calculation.",
+      "primary_sources": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+        "https://arxiv.org/abs/2510.15201",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/README.md#L343-L362"
+      ],
+      "local_evidence": [
+        "source-matrix/official-execution-matrix.json"
+      ]
+    },
+    {
+      "item": "Archived Sym bracket/panel/plane-displacement",
+      "status": "no_actual_training_or_FEM_accuracy_evidence",
+      "blockers": [
+        "Examples belong to a distinct archived repository/API; current core symbolic migration removes legacy Solver/Domain/prebuilt PDE interfaces. Installed core does not establish legacy Sym installation success.",
+        "Default 6x512 networks and 1M/2M-step settings have no local resource measurement.",
+        "Bracket commercial-solver supplemental reference availability was not verified; supplemental data is not a pretrained checkpoint."
+      ],
+      "feasibility_without_paid_compute_or_new_GPU": "A small CPU PINN/VPINN on an analytic plane domain is a plausible engineering path using PDE/BC source and analytic/Q1 references already available; this is an inference, not executed evidence. It requires a legacy compatible environment or a current-API port, training time and separate validation. It does not reproduce full bracket/panel settings or impact/plasticity.",
+      "primary_sources": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/v2.0-MIGRATION-GUIDE.md#L206-L227",
+        "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/bracket/bracket.py",
+        "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/plane_displacement/plane_displacement.py"
+      ],
+      "local_evidence": [
+        "source-matrix/sinter-sym-notes.md"
+      ]
+    },
+    {
+      "item": "Structural FNO and full FNO-DDM",
+      "status": "no_structural_FNO_training; full2x2_DDM_not_executed",
+      "blockers": [
+        "Pinned elasticity path uses Q1 finite elements/BiCGSTAB and decomposition; it does not instantiate an elasticity FNO. A transitive thermal/FNO import is not structural neural training.",
+        "Actual local execution validates the unchanged Q1 solver component on two problems, not the complete2x2 decomposition comparison."
+      ],
+      "feasibility_without_paid_compute_or_new_GPU": "The self-generated elasticity example has no missing external dataset, so a bounded full numerical DDM CPU check appears feasible after dependency/resource preflight; not executed here. A new structural FNO benchmark could use newly generated Q1 fields and a small CPU model, but requires new dataset/architecture/training work and is outside the existing official structural recipe. No existing coupon/crash fit can count as that execution.",
+      "primary_sources": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity.py#L43-L47",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity_example.py#L92-L190",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/README.md#L121-L141"
+      ],
+      "local_evidence": [
+        "benchmarks/elasticity_numerical/cpu-execution/execution.json",
+        "benchmarks/elasticity_numerical/execution-review.md",
+        "source-matrix/sinter-sym-notes.md"
+      ]
+    },
+    {
+      "item": "Official-capacity Plate128x15 and new phone/bumper temporal profiles",
+      "status": "prepared_or_resource_probed; completed_accuracy_reports_not_found",
+      "blockers": [
+        "Plate128x15 has actual5Adam functionality/resource evidence, but no completed final accuracy training metadata; official32 preparation/audit is not execution.",
+        "Phone/bumper temporal prepared contracts and wrapper compatibility do not supply domain-specific completed fits. Original AR/TF remains C3, not direct stress/strain."
+      ],
+      "feasibility_without_paid_compute_or_new_GPU": "Public Plate trajectories and local structural labels already exist; the remaining barriers are host RAM, measured compute time and execution of frozen protocols. Existing GPU fits the Plate capacity probe, but accuracy/convergence are unproven. CPU or sequential use of the already owned GPU may avoid extra hardware cost; no zero-time/zero-engineering promise.",
+      "primary_sources": [
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/train.py#L136-L145",
+        "https://arxiv.org/abs/2010.03409",
+        "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py"
+      ],
+      "local_evidence": [
+        "benchmarks/deforming_plate/probe128_default/probe.json",
+        "benchmarks/deforming_plate/review/official32-preexecution-audit.json",
+        "benchmarks/temporal_strategies/phone_full/budget_v2_complete_epoch/prepared-contract.json"
+      ]
+    }
+  ],
+  "independent_audit_caution": {
+    "full_support_review_as_of": "2026-10-15T06:40:26.626227+00:00",
+    "full_support_review_status": "in_progress_or_findings",
+    "phone_transolver": "passed",
+    "phone_flare": "metadata_passed_metrics_deferred_memory",
+    "meaning": "Metadata/integrity pass is not the same as independent metric recomputation; record audit pass is not an appliance-useful-accuracy certificate.",
+    "evidence": "full-support-evaluation-review.json"
+  },
+  "primary_sources": {
+    "crash_readme": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/README.md#L343-L362",
+    "crash_rollout": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+    "drop_unvalidated": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/README.md#L206-L220",
+    "plate_model": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/deforming_plate/train.py#L136-L145",
+    "plate_paper": "https://arxiv.org/abs/2010.03409",
+    "sinter_readme": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/README.md#L123-L171",
+    "sinter_dataset": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/additive_manufacturing/sintering_physics/graph_dataset.py#L161-L168",
+    "sinter_model": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/physicsnemo/models/vfgn/graph_network_modules.py#L1078-L1157",
+    "sinter_paper": "https://arxiv.org/html/2404.11753v1#S3.SS1",
+    "biw_config": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+    "biw_paper_from_source_inventory": "https://arxiv.org/abs/2510.15201",
+    "migration": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/v2.0-MIGRATION-GUIDE.md#L206-L227",
+    "sym_bracket": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/bracket/bracket.py",
+    "sym_plane": "https://github.com/NVIDIA/physicsnemo-sym/blob/0c5f18c31d03d46ec0cc3ef4ccbf761a956dd38c/examples/plane_displacement/plane_displacement.py",
+    "q1_source": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity.py#L43-L47",
+    "ddm_example": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity_example.py#L92-L190",
+    "ddm_readme": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/README.md#L121-L141"
+  },
+  "evidence_files_at_read": {
+    "source-matrix/official-execution-matrix.json": {
+      "bytes": 45671,
+      "sha256": "6f70566140fe530c36470d793c39151751617fbd9687caa6b708fac2dcfbfaef",
+      "read_utc": "2026-10-15T06:48:03.818389+00:00",
+      "last_write_utc": "2026-10-15T02:47:40.506641+00:00"
+    },
+    "source-matrix/README.md": {
+      "bytes": 11673,
+      "sha256": "c152f3fdc8b1072eef6024247cff8e8fefaa74c4b1fd2881910f177d46e869dd",
+      "read_utc": "2026-10-15T06:48:03.819952+00:00",
+      "last_write_utc": "2026-10-15T04:32:01.925714+00:00"
+    },
+    "source-matrix/executed-evidence-crosswalk-2026-10-15.md": {
+      "bytes": 12325,
+      "sha256": "796e153ab52b466b4752d730ac0fcfc5098a7101ab62613827cb365d5155b089",
+      "read_utc": "2026-10-15T06:48:03.820958+00:00",
+      "last_write_utc": "2026-10-15T04:32:01.927717+00:00"
+    },
+    "source-matrix/sinter-sym-notes.md": {
+      "bytes": 26209,
+      "sha256": "51b11029b1e44cc0223ebf15ee75bd690377b0a02e79b9aaa99d38ead679e815",
+      "read_utc": "2026-10-15T06:48:03.821771+00:00",
+      "last_write_utc": "2026-10-15T02:42:53.150187+00:00"
+    },
+    "source-matrix/drop-plate-notes.md": {
+      "bytes": 21478,
+      "sha256": "99284af06e21dd083b512eb02a51cdb80c784a7595fb798c1110973a2c8890c1",
+      "read_utc": "2026-10-15T06:48:03.822651+00:00",
+      "last_write_utc": "2026-10-15T02:42:20.184336+00:00"
+    },
+    "benchmarks/temporal_strategies/source-notes.md": {
+      "bytes": 9820,
+      "sha256": "a8f46ec5ad58032ac85cd913329f981a7b7a6a7bd3b634b4bf6f2be97cc0f52b",
+      "read_utc": "2026-10-15T06:48:03.823527+00:00",
+      "last_write_utc": "2026-10-15T03:59:20.719273+00:00"
+    },
+    "benchmarks/rom/README.md": {
+      "bytes": 18304,
+      "sha256": "ed101ea7a2301f56be21ba626433c92cb461ba07a634d1f11ff82474f6351807",
+      "read_utc": "2026-10-15T06:48:03.824378+00:00",
+      "last_write_utc": "2026-10-15T04:08:16.882003+00:00"
+    },
+    "benchmarks/deforming_plate/README.md": {
+      "bytes": 16942,
+      "sha256": "050ec99f822d0f8e81d85faa74d9598c284b1ed636b452a191b70dce650b578e",
+      "read_utc": "2026-10-15T06:48:03.825681+00:00",
+      "last_write_utc": "2026-10-15T04:19:51.241654+00:00"
+    },
+    "benchmarks/elasticity_numerical/execution-review.md": {
+      "bytes": 9081,
+      "sha256": "e2b2162ed0904a4d7d39b1d7371083fe1ab775c1d8323cb96c8a7b5ec6cdfa48",
+      "read_utc": "2026-10-15T06:48:03.827071+00:00",
+      "last_write_utc": "2026-10-15T04:19:50.822745+00:00"
+    },
+    "independent-review.md": {
+      "bytes": 62955,
+      "sha256": "d1dcb8253d6b72fa057993b6be8aa15d5a09bb375d2f808127586b36ad18bd10",
+      "read_utc": "2026-10-15T06:48:03.827946+00:00",
+      "last_write_utc": "2026-10-15T04:35:59.210365+00:00"
+    },
+    "benchmarks/bumper/environment/installation-manifest.json": {
+      "bytes": 27024,
+      "sha256": "52a7108447a295045199baf67a0fd04089187f32f63e866ead22fa697c26592c",
+      "read_utc": "2026-10-15T06:48:03.829561+00:00",
+      "last_write_utc": "2026-10-15T02:52:38.614187+00:00"
+    },
+    "full-support-evaluation-review.json": {
+      "bytes": 35288,
+      "sha256": "becd45e8a296c786f3136f801ebfe75e6892074828970de38ea8bdbadbab778d",
+      "read_utc": "2026-10-15T06:48:03.830504+00:00",
+      "last_write_utc": "2026-10-15T06:40:26.627352+00:00"
+    },
+    "benchmarks/structural_coupon/static-six-model-comparison.json": {
+      "bytes": 238055,
+      "sha256": "4d65a6d4e8b6abb6b83e3278e8e65e7fd681c1153848473f4bcde599f70ec3d1",
+      "read_utc": "2026-10-15T06:48:03.832110+00:00",
+      "last_write_utc": "2026-10-15T04:17:03.004394+00:00"
+    },
+    "benchmarks/structural_coupon/models/transolver/metrics.json": {
+      "bytes": 98144,
+      "sha256": "43988bfcc7454dbba615eaeb4aa1d8921f09d9df82b14565efa50578101a4a08",
+      "read_utc": "2026-10-15T06:48:03.836316+00:00",
+      "last_write_utc": "2026-10-15T03:25:38.995465+00:00"
+    },
+    "benchmarks/structural_coupon/models/transolver/fresh-inference/metrics.json": {
+      "bytes": 69420,
+      "sha256": "358c6b90f81a2153766a27bad430487852fe1a2859d456bf41c65df223474b2f",
+      "read_utc": "2026-10-15T06:48:03.839230+00:00",
+      "last_write_utc": "2026-10-15T03:26:22.362484+00:00"
+    },
+    "benchmarks/structural_coupon/models/flare/metrics.json": {
+      "bytes": 98066,
+      "sha256": "165b338f5989f3f39b231e89a86e2ead96650f01bcbbeeb7c700934b1e0946f2",
+      "read_utc": "2026-10-15T06:48:03.841121+00:00",
+      "last_write_utc": "2026-10-15T03:40:09.797021+00:00"
+    },
+    "benchmarks/structural_coupon/models/flare/fresh-inference/metrics.json": {
+      "bytes": 69347,
+      "sha256": "134b85d989738fc6b3072b53a7d44109935fc69b5ed51c45b01bd4c1c214f223",
+      "read_utc": "2026-10-15T06:48:03.843890+00:00",
+      "last_write_utc": "2026-10-15T03:41:44.763011+00:00"
+    },
+    "benchmarks/structural_coupon/models/geotransolver/metrics.json": {
+      "bytes": 98296,
+      "sha256": "41112dcb39cf47b4816847de34a061d728bd90a057277a4ecf38e7a1df2ad460",
+      "read_utc": "2026-10-15T06:48:03.845824+00:00",
+      "last_write_utc": "2026-10-15T03:48:41.326597+00:00"
+    },
+    "benchmarks/structural_coupon/models/geotransolver/fresh-inference/metrics.json": {
+      "bytes": 69582,
+      "sha256": "a66e0a654143357ff51b11a02ce7cdb107a3711ab22207734df21067fb4e709f",
+      "read_utc": "2026-10-15T06:48:03.848375+00:00",
+      "last_write_utc": "2026-10-15T03:50:04.076917+00:00"
+    },
+    "benchmarks/structural_coupon/models/geoflare/metrics.json": {
+      "bytes": 98366,
+      "sha256": "4c576fe51a253f187e3b8e138492b0f33095985b80d8da8748d8bc5a7a9533f1",
+      "read_utc": "2026-10-15T06:48:03.850046+00:00",
+      "last_write_utc": "2026-10-15T03:57:04.796547+00:00"
+    },
+    "benchmarks/structural_coupon/models/geoflare/fresh-inference/metrics.json": {
+      "bytes": 69648,
+      "sha256": "793214f973e941f3cdff61b9a3cae3d3e1d9a75cf143e0d373252bed15ae7949",
+      "read_utc": "2026-10-15T06:48:03.852597+00:00",
+      "last_write_utc": "2026-10-15T03:59:08.440219+00:00"
+    },
+    "benchmarks/structural_coupon/models/meshgraphnet/metrics.json": {
+      "bytes": 98654,
+      "sha256": "001f67d580d0a6b6191860677c1462592288c9767e746fde52278644aa544533",
+      "read_utc": "2026-10-15T06:48:03.854261+00:00",
+      "last_write_utc": "2026-10-15T04:04:29.634408+00:00"
+    },
+    "benchmarks/structural_coupon/models/meshgraphnet/fresh-inference/metrics.json": {
+      "bytes": 70080,
+      "sha256": "8c2e4ab0091ce0ff48d7da5b3a0e1a992d805aa08359ac14b14264608b57aeef",
+      "read_utc": "2026-10-15T06:48:03.856896+00:00",
+      "last_write_utc": "2026-10-15T04:05:31.898436+00:00"
+    },
+    "benchmarks/structural_coupon/models/figconvunet/metrics.json": {
+      "bytes": 99052,
+      "sha256": "be3ecfba67853eaf94b30179b1ebd1bb2316f6e6a34eb99481f18fbd1eb2a76a",
+      "read_utc": "2026-10-15T06:48:03.858786+00:00",
+      "last_write_utc": "2026-10-15T04:12:25.501595+00:00"
+    },
+    "benchmarks/structural_coupon/models/figconvunet/fresh-inference/metrics.json": {
+      "bytes": 70325,
+      "sha256": "b83a170443ea318005e6dd9a4b2d93ae3e25521d208d1a37eaa4ce1adc28420a",
+      "read_utc": "2026-10-15T06:48:03.861577+00:00",
+      "last_write_utc": "2026-10-15T04:13:23.750300+00:00"
+    },
+    "benchmarks/temporal_strategies/execution-summary.json": {
+      "bytes": 61506,
+      "sha256": "299c0b6e67647903cb5337f9c1a0cda26ddef06714e6f5f819732f8c8b5b1b40",
+      "read_utc": "2026-10-15T06:48:03.863186+00:00",
+      "last_write_utc": "2026-10-15T03:52:52.945393+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/time_conditional/result.json": {
+      "bytes": 87093,
+      "sha256": "b0aa198228e65bf57918d1972f859a4830553c9dd6db67f1f74921f833cdbfbd",
+      "read_utc": "2026-10-15T06:48:03.864792+00:00",
+      "last_write_utc": "2026-10-15T03:30:49.414310+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/time_conditional/fresh-process-reload.json": {
+      "bytes": 468,
+      "sha256": "cd5a1e79fe858b3d838bbe9db58e8dc61fbc530675f4a869bfd7f3c2662c9f0e",
+      "read_utc": "2026-10-15T06:48:03.866854+00:00",
+      "last_write_utc": "2026-10-15T03:35:34.855777+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/ar_rollout_training/result.json": {
+      "bytes": 40838,
+      "sha256": "8049725d3666e298577b6956a1dab679de56003f0f140737ff1fa051be0e6017",
+      "read_utc": "2026-10-15T06:48:03.882384+00:00",
+      "last_write_utc": "2026-10-15T03:32:32.134526+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/ar_rollout_training/fresh-process-reload.json": {
+      "bytes": 431,
+      "sha256": "a0025f76e53f5056a63aaff6849f5598a9227469f75c245b9e4dbea57da67ee7",
+      "read_utc": "2026-10-15T06:48:03.895768+00:00",
+      "last_write_utc": "2026-10-15T03:35:36.286010+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/one_step_teacher_forcing/result.json": {
+      "bytes": 53865,
+      "sha256": "2385eda40cf39ffb1f99e701dc6e639ca610e39caaf9b5dc7bd3ce2b9e293295",
+      "read_utc": "2026-10-15T06:48:03.915760+00:00",
+      "last_write_utc": "2026-10-15T03:34:11.837889+00:00"
+    },
+    "benchmarks/temporal_strategies/coupon13/one_step_teacher_forcing/fresh-process-reload.json": {
+      "bytes": 436,
+      "sha256": "f7c68c2d41d8f01dbc7093723375069b14eb303827fdfe148624725633085019",
+      "read_utc": "2026-10-15T06:48:03.936198+00:00",
+      "last_write_utc": "2026-10-15T03:35:37.511451+00:00"
+    },
+    "benchmarks/deforming_plate/checkpoint-reuse-check.json": {
+      "bytes": 413,
+      "sha256": "3912e7a1406da53c46714b9cca78b536993822978bf9a647e1672be90084f63d",
+      "read_utc": "2026-10-15T06:48:03.937042+00:00",
+      "last_write_utc": "2026-10-15T03:09:14.359457+00:00"
+    },
+    "benchmarks/deforming_plate/pilot8/metrics.json": {
+      "bytes": 10937,
+      "sha256": "654e8cc4d01b5f998a2c272efbd05571b50bd2926b54d611175c5cb2cb99337f",
+      "read_utc": "2026-10-15T06:48:03.938019+00:00",
+      "last_write_utc": "2026-10-15T03:07:28.177188+00:00"
+    },
+    "benchmarks/deforming_plate/pilot8/config.json": {
+      "bytes": 2701,
+      "sha256": "6bcff2134eeb32d99dd20ec277cdf2e5c8062d6a39dbedc59a6d415cb512d10a",
+      "read_utc": "2026-10-15T06:48:03.938843+00:00",
+      "last_write_utc": "2026-10-15T03:04:30.999357+00:00"
+    },
+    "benchmarks/deforming_plate/noise0_pilot8/metrics.json": {
+      "bytes": 21308,
+      "sha256": "8f2e67c4a18a5763945e6cc8c1b78f5e7c7e98f4146bf6bc15997d96a71f342c",
+      "read_utc": "2026-10-15T06:48:03.939524+00:00",
+      "last_write_utc": "2026-10-15T03:17:41.539583+00:00"
+    },
+    "benchmarks/deforming_plate/noise0_pilot8/config.json": {
+      "bytes": 2886,
+      "sha256": "c9bb943bdcc55c550e5393562f4d79c5c743f8cf7b645760655c4a92940e7dde",
+      "read_utc": "2026-10-15T06:48:03.940616+00:00",
+      "last_write_utc": "2026-10-15T03:13:15.355413+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/transolver/training_report.json": {
+      "bytes": 504920,
+      "sha256": "058f0c73e3f7611d2a722c13d2df7226fc5b5e89259fe1f121d80e292b5c5ef4",
+      "read_utc": "2026-10-15T06:48:03.941419+00:00",
+      "last_write_utc": "2026-10-15T06:20:32.619918+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/transolver/test_report.json": {
+      "bytes": 56459,
+      "sha256": "746fd2bf7166f41fcbafb8a85a49cbe0790915cc8ebf22ca227c9db891d0f070",
+      "read_utc": "2026-10-15T06:48:03.948844+00:00",
+      "last_write_utc": "2026-10-15T06:21:40.528777+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/transolver/checkpoint-frozen.json": {
+      "bytes": 1933,
+      "sha256": "5076485fe81c85912c5e6b5002b0ed42a4a7d31f1f3ab86f7ff97d33c2b7938f",
+      "read_utc": "2026-10-15T06:48:03.950180+00:00",
+      "last_write_utc": "2026-10-15T06:20:32.694121+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/flare/training_report.json": {
+      "bytes": 198901,
+      "sha256": "967ad47af7c0967f345945171a4df66b4c7e857cc7687e222470c267dc8f384b",
+      "read_utc": "2026-10-15T06:48:03.950898+00:00",
+      "last_write_utc": "2026-10-15T06:32:04.122195+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/flare/test_report.json": {
+      "bytes": 56325,
+      "sha256": "2a4f31a6f889e9a6ef9deb6b46308e0a73572a0b1a341f507445b36cede6386e",
+      "read_utc": "2026-10-15T06:48:03.954255+00:00",
+      "last_write_utc": "2026-10-15T06:33:18.006772+00:00"
+    },
+    "benchmarks/drop_test/models-full-c6/flare/checkpoint-frozen.json": {
+      "bytes": 1932,
+      "sha256": "e2dde64d190142a2f3b0ccb8e4b8008e80a1fb8026f6926566de163cc662f4df",
+      "read_utc": "2026-10-15T06:48:03.955509+00:00",
+      "last_write_utc": "2026-10-15T06:32:04.192737+00:00"
+    },
+    "benchmarks/rom/coupon13/metrics.json": {
+      "bytes": 72156,
+      "sha256": "6d75bd77784284bc4018cee6c4d89dcd06b10c3b3d5df5eddc8cd3edb2f088c7",
+      "read_utc": "2026-10-15T06:48:03.958656+00:00",
+      "last_write_utc": "2026-10-15T03:38:42.578405+00:00"
+    },
+    "benchmarks/rom/coupon13/pod_rbf/inference_reuse/inference_report.json": {
+      "bytes": 408,
+      "sha256": "8a9718a6f15479edeb707033a873ace3d194a7c30692c36b4e2a3e66c8465055",
+      "read_utc": "2026-10-15T06:48:03.960617+00:00",
+      "last_write_utc": "2026-10-15T03:20:09.800041+00:00"
+    },
+    "benchmarks/rom/coupon13/pod_ridge/inference_reuse/inference_report.json": {
+      "bytes": 408,
+      "sha256": "789d0be1c18fdc9e6a4de9a2afe5512bd4b8cc228d1962085f1a559b7074babf",
+      "read_utc": "2026-10-15T06:48:03.961759+00:00",
+      "last_write_utc": "2026-10-15T03:20:10.762593+00:00"
+    },
+    "benchmarks/rom/coupon13-direct-rbf/metrics.json": {
+      "bytes": 40724,
+      "sha256": "b22d38c941ea433b7d219c99a71d98dc19f2ff853cf2b867f3fc46b52cb341db",
+      "read_utc": "2026-10-15T06:48:03.962543+00:00",
+      "last_write_utc": "2026-10-15T03:19:26.325395+00:00"
+    },
+    "benchmarks/rom/coupon13-direct-rbf/inference_reuse/metrics.json": {
+      "bytes": 40632,
+      "sha256": "55a46d71b37ba6417618eff114ace8b3de1ce637f2932e15954ccd6f03562045",
+      "read_utc": "2026-10-15T06:48:03.963804+00:00",
+      "last_write_utc": "2026-10-15T03:20:11.859828+00:00"
+    },
+    "benchmarks/rom/bumper7/metrics.json": {
+      "bytes": 197637,
+      "sha256": "de09fc1bfa981f1b15849d3bc5f1c395ce8fe1971a011a03b1eaddba44697652",
+      "read_utc": "2026-10-15T06:48:03.965209+00:00",
+      "last_write_utc": "2026-10-15T03:25:28.005125+00:00"
+    },
+    "benchmarks/rom/bumper7/pod_rbf/inference_reuse/inference_report.json": {
+      "bytes": 417,
+      "sha256": "e8507a223bd5a78a727976cbe2af5dacf2401054363dc234f9d4126257f419f2",
+      "read_utc": "2026-10-15T06:48:03.968819+00:00",
+      "last_write_utc": "2026-10-15T03:28:46.059949+00:00"
+    },
+    "benchmarks/rom/bumper7/pod_ridge/inference_reuse/inference_report.json": {
+      "bytes": 416,
+      "sha256": "c02f3294a82390913342552049fa61c3e3c8d00378a9ad5c481a584b94f934a0",
+      "read_utc": "2026-10-15T06:48:03.969872+00:00",
+      "last_write_utc": "2026-10-15T03:28:55.732051+00:00"
+    },
+    "benchmarks/rom/bumper7-direct-rbf/metrics.json": {
+      "bytes": 149604,
+      "sha256": "8d75cb66cab405b82d59acf184b8ab98692da4df5a1e09bd89d55c300f00e806",
+      "read_utc": "2026-10-15T06:48:03.970867+00:00",
+      "last_write_utc": "2026-10-15T03:38:42.618584+00:00"
+    },
+    "benchmarks/rom/bumper7-direct-rbf/inference_reuse/metrics.json": {
+      "bytes": 149439,
+      "sha256": "2ce5c0a1a117d03ba3074753dd72dae8835620abfba9ca6cb4c91001fdffd2d9",
+      "read_utc": "2026-10-15T06:48:03.973991+00:00",
+      "last_write_utc": "2026-10-15T03:38:42.657066+00:00"
+    },
+    "benchmarks/rom/phone9-full/metrics.json": {
+      "bytes": 45439,
+      "sha256": "a955e45abdbe46f8bbfd773c41bdf695dfa8bd5fe49186d3af4b9c62ffeeec7c",
+      "read_utc": "2026-10-15T06:48:03.976604+00:00",
+      "last_write_utc": "2026-10-15T03:54:26.486252+00:00"
+    },
+    "benchmarks/rom/phone9-full/pod_rbf/inference_reuse/inference_report.json": {
+      "bytes": 365,
+      "sha256": "b845c5084fef4f210f6fd89f441b4008adf248b4e44f4ff7479b6b58e0829753",
+      "read_utc": "2026-10-15T06:48:03.977855+00:00",
+      "last_write_utc": "2026-10-15T03:55:31.259491+00:00"
+    },
+    "benchmarks/rom/phone9-full/pod_ridge/inference_reuse/inference_report.json": {
+      "bytes": 365,
+      "sha256": "b2774d992906e1ef1238984d78da76e9e548b58801ac30dbe6ff862c6c219c2b",
+      "read_utc": "2026-10-15T06:48:03.978432+00:00",
+      "last_write_utc": "2026-10-15T03:56:30.054127+00:00"
+    },
+    "benchmarks/rom/phone9-full-direct-rbf/metrics.json": {
+      "bytes": 26435,
+      "sha256": "cec11e85b71ea1b9a8173501ca79f611b783e955755b5c762b4e5e5a03eab6ca",
+      "read_utc": "2026-10-15T06:48:03.979075+00:00",
+      "last_write_utc": "2026-10-15T03:57:10.311265+00:00"
+    },
+    "benchmarks/rom/phone9-full-direct-rbf/inference_reuse/metrics.json": {
+      "bytes": 26342,
+      "sha256": "736150779e18d9fd09955f90dd254d099548834423eb26fa23c8eda6900afda6",
+      "read_utc": "2026-10-15T06:48:03.980400+00:00",
+      "last_write_utc": "2026-10-15T03:57:34.876665+00:00"
+    },
+    "benchmarks/rom/phone9-rear/metrics.json": {
+      "bytes": 45410,
+      "sha256": "c3b08a92ad89e5965bf4b12f51b573086ca63806c0184823917d7df45087ab01",
+      "read_utc": "2026-10-15T06:48:03.981391+00:00",
+      "last_write_utc": "2026-10-15T04:00:02.250436+00:00"
+    },
+    "benchmarks/rom/phone9-rear/pod_rbf/inference_reuse/inference_report.json": {
+      "bytes": 364,
+      "sha256": "2a3cb03ba37aca18b70d8cbe4375692fcedf995bacf4ceb86c3286ddfa504db0",
+      "read_utc": "2026-10-15T06:48:03.983128+00:00",
+      "last_write_utc": "2026-10-15T04:00:45.406990+00:00"
+    },
+    "benchmarks/rom/phone9-rear/pod_ridge/inference_reuse/inference_report.json": {
+      "bytes": 364,
+      "sha256": "4aa4bcb70ed2dfe4de7c6e400a72c8ce04346e527ef0c44d350646a521278e1b",
+      "read_utc": "2026-10-15T06:48:03.983677+00:00",
+      "last_write_utc": "2026-10-15T04:01:06.126387+00:00"
+    },
+    "benchmarks/rom/phone9-rear-direct-rbf/metrics.json": {
+      "bytes": 26430,
+      "sha256": "0df99621f221fc263a6690bdb0836bb2949075ddbfe55149dd327b4433ae7e36",
+      "read_utc": "2026-10-15T06:48:03.984493+00:00",
+      "last_write_utc": "2026-10-15T04:01:08.684449+00:00"
+    },
+    "benchmarks/rom/phone9-rear-direct-rbf/inference_reuse/metrics.json": {
+      "bytes": 26337,
+      "sha256": "9f2ab021095ad7695b420f394bbe1b2a68a1237593a57c24764d4b58ae1c1c49",
+      "read_utc": "2026-10-15T06:48:03.985889+00:00",
+      "last_write_utc": "2026-10-15T04:01:21.661681+00:00"
+    },
+    "benchmarks/rom/curated3/metrics.json": {
+      "bytes": 85688,
+      "sha256": "20192f10068ca3a63ca5c50d12a539b333d436df62b5e2e304d68850d7ec7e92",
+      "read_utc": "2026-10-15T06:48:03.987321+00:00",
+      "last_write_utc": "2026-10-15T02:55:55.138986+00:00"
+    },
+    "benchmarks/bumper/curated3-rbf/metrics.json": {
+      "bytes": 63512,
+      "sha256": "c70be740627ca434e18e5ed27e3a2f1896e5c024649d921e80990ae221aa9429",
+      "read_utc": "2026-10-15T06:48:03.989608+00:00",
+      "last_write_utc": "2026-10-15T03:03:01.498279+00:00"
+    },
+    "benchmarks/rom/curated3/author_verification.json": {
+      "bytes": 803,
+      "sha256": "d17a6d4b9b49a0b656065e9e400660d7ca9b9a55b78123dfd0cac85d4980ba73",
+      "read_utc": "2026-10-15T06:48:03.991702+00:00",
+      "last_write_utc": "2026-10-15T02:59:10.818660+00:00"
+    },
+    "benchmarks/elasticity_numerical/cpu-execution/execution.json": {
+      "bytes": 5056,
+      "sha256": "e8e1b69a23a2d919c6c1bed2eea7b67de256689caed2e8b16e598c347092fdc6",
+      "read_utc": "2026-10-15T06:48:03.993406+00:00",
+      "last_write_utc": "2026-10-15T04:14:43.151743+00:00"
+    },
+    "benchmarks/elasticity_numerical/record-freeze.json": {
+      "bytes": 3893,
+      "sha256": "35dc62c971a6d13417291d3a6f05575ee75a74eb46a525821ef83bb361c49245",
+      "read_utc": "2026-10-15T06:48:03.994945+00:00",
+      "last_write_utc": "2026-10-15T04:20:26.643951+00:00"
+    },
+    "benchmarks/batching/merged-summary.json": {
+      "bytes": 251579,
+      "sha256": "a31186775a6de2f2e0d6bf75143a45be2e5a94145ae65c669ee447a388b3d640",
+      "read_utc": "2026-10-15T06:48:03.996826+00:00",
+      "last_write_utc": "2026-10-15T06:02:26.434068+00:00"
+    },
+    "benchmarks/batching/recovery-audit.json": {
+      "bytes": 7902,
+      "sha256": "273e11f8f81122cad74c0cf61d15590786bec04f87529d334d3dd55bb0f7406a",
+      "read_utc": "2026-10-15T06:48:04.001680+00:00",
+      "last_write_utc": "2026-10-15T06:03:14.247698+00:00"
+    },
+    "benchmarks/bumper/probes-c7/native-support-resource-summary.json": {
+      "bytes": 114499,
+      "sha256": "9f5e83d87f50ada883b84959d4fc2241886ab543165a36c04547168a5961b4ed",
+      "read_utc": "2026-10-15T06:48:04.004055+00:00",
+      "last_write_utc": "2026-10-15T04:26:58.773820+00:00"
+    },
+    "benchmarks/drop_test/probes-full-c6/native-support-resource-summary.json": {
+      "bytes": 18154,
+      "sha256": "ec8143d9e692fd7c310aa6fbb3dd04075654f0921a3b861fea36bd2c741aac55",
+      "read_utc": "2026-10-15T06:48:04.010966+00:00",
+      "last_write_utc": "2026-10-15T04:22:50.938629+00:00"
+    },
+    "benchmarks/deforming_plate/probe128_default/probe.json": {
+      "bytes": 976,
+      "sha256": "6495c520758b975ce5d9ab9b1dc675e09ca8b9a4b4714414e6bf08c04faec4fb",
+      "read_utc": "2026-10-15T06:48:04.013889+00:00",
+      "last_write_utc": "2026-10-15T04:15:18.748608+00:00"
+    },
+    "benchmarks/deforming_plate/review/official32-preexecution-audit.json": {
+      "bytes": 2746,
+      "sha256": "b755ce159afe21aa96fd702eb7f398c0ac338389bcd2edfff921e445b33bb94b",
+      "read_utc": "2026-10-15T06:48:04.015468+00:00",
+      "last_write_utc": "2026-10-15T04:38:42.055453+00:00"
+    },
+    "benchmarks/deforming_plate/review/official32-completion-preexecution-audit-v2.json": {
+      "bytes": 2025,
+      "sha256": "aa2a41e1c2650f4dadff5de37ac652e7af1d39c48c58ae6e8c63a63b21b3c9a6",
+      "read_utc": "2026-10-15T06:48:04.016503+00:00",
+      "last_write_utc": "2026-10-15T06:07:28.799894+00:00"
+    },
+    "benchmarks/temporal_strategies/phone_full/budget_v2_complete_epoch/prepared-contract.json": {
+      "bytes": 6105,
+      "sha256": "1d0d20d8917f2aec95b5546aa93a7a3c373cf2c1eedba28910a87a87f044baca",
+      "read_utc": "2026-10-15T06:48:04.017362+00:00",
+      "last_write_utc": "2026-10-15T04:37:33.789448+00:00"
+    },
+    "benchmarks/temporal_strategies/bumper/prepared-data-contract.json": {
+      "bytes": 6638,
+      "sha256": "66194bdeb212117ef733a07481dc548886a700f81ed33ee517e601129e31a32f",
+      "read_utc": "2026-10-15T06:48:04.019917+00:00",
+      "last_write_utc": "2026-10-15T03:52:52.713975+00:00"
+    },
+    "benchmarks/temporal_strategies/reproduction-manifest.json": {
+      "bytes": 6123,
+      "sha256": "332801bede4819c86e0a3fd3abb76efcb90cd722f2f6ad4a8c4e6a6bf42deb9a",
+      "read_utc": "2026-10-15T06:50:05.941020+00:00"
+    }
+  },
+  "limitations": [
+    "This audit trusts recorded completed source/metric audits; it does not reopen arrays or rerun their math.",
+    "Pinned code/papers are linked from the stored primary-source investigation. No claim about the newest upstream availability was introduced and no fresh web search was needed.",
+    "No claim of all-algorithm completion, converged training, full-drop peak/rebound, new geometry generalization, original solver strain forPlate, or structural FNO fromQ1."
+  ],
+  "temporal_seed_source_confirmation": {
+    "path": "work/expanded-temporal/run_temporal.py",
+    "sha256": "baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af",
+    "matches_executed_reproduction_manifest": true,
+    "source_excerpt_line": 179,
+    "seed": 20261015,
+    "read_utc": "2026-10-15T06:50:05.941020+00:00",
+    "executed": false,
+    "scope": "Source bytes read only; no Python source execution or imports."
+  },
+  "planned_temporal_extension_addendum": {
+    "reported_at_read_utc": "2026-10-15T06:50:05.941020+00:00",
+    "source_type": "Direct parent/orchestrator update in this conversation; plan, not execution metadata",
+    "counted_completed_training_runs": 0,
+    "planned_domain_strategy_runs": 6,
+    "domains": [
+      "phone_full_C6",
+      "bumper_C7"
+    ],
+    "strategies": [
+      "time_conditional_full_native_channels",
+      "V3_AR_native_scalar_response_heads",
+      "V3_teacher_forcing_native_scalar_response_heads"
+    ],
+    "original_official_wrapper_scope": "Original AR/TF is C3-only; actual shape failures and coupon C3 fits remain preserved.",
+    "new_research_extension": "V3 integrates only the first3acceleration components into geometry. Separate native scalar readouts have3phone channels(VM,strainFrobenius,EPSP) and4bumper channels(upper/lowerVM,upper/lowerEPSP). The4new AR/TF runs are2domains x2strategies, not a claim that every domain has4scalar channels. Original-recipe reproduction is not claimed.",
+    "planned_information_boundary": "TF uses training-only ground-truth geometry; evaluation does not use target response values. Same frozen data/normalization, internal validation, checkpoint freeze, and one final test are planned.",
+    "runtime_status_as_reported": "Implementation in progress; no GPU start and no completed training/test added by this audit.",
+    "future_rule": "Only new completed per-run metadata can advance stage counts; plan text never does.",
+    "native_scalar_channels_by_domain": {
+      "phone_full_C6": 3,
+      "bumper_C7": 4
+    },
+    "planned_runs_by_strategy": {
+      "time_conditional": 2,
+      "AR_native_readout": 2,
+      "teacher_forcing_native_readout": 2
+    }
+  }
+}

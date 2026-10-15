@@ -1,0 +1,27 @@
+{
+  "domain": "phone",
+  "architecture": "flare",
+  "stage": "validation",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare",
+    "--cache",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--mode",
+    "validation",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T06:32:06.807446+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted-suite-logs\\phone-flare-validation.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T06:32:33.388146+00:00",
+  "wall_seconds": 26.579651399995782,
+  "exit_code": 0
+}

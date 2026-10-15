@@ -1,0 +1,51 @@
+{
+  "status": "passed_source_preservation_and_restore_only",
+  "checked_at_utc": "2026-10-15T06:48:16.200621+00:00",
+  "capture_as_of_utc": "2026-10-15T06:47:51Z",
+  "manifest_sha256": "556bbbea3ed08cbecc3f8e82931f3f46b83cc5b0fe4bb6e8275b2c9ded6f483e",
+  "packaged_files_verified": 132,
+  "python_ast_files_verified": 89,
+  "profiles_restored_in_fresh_temporary_directories": {
+    "current": {
+      "files": 96,
+      "bytes": 826406,
+      "hashes_verified": 96
+    },
+    "fullsupport-phone-flare": {
+      "files": 107,
+      "bytes": 1132324,
+      "hashes_verified": 107
+    },
+    "fullsupport-phone-transolver": {
+      "files": 107,
+      "bytes": 1428964,
+      "hashes_verified": 107
+    }
+  },
+  "refusals_verified": [
+    "current:overwrite",
+    "fullsupport-phone-flare:overwrite",
+    "fullsupport-phone-transolver:overwrite",
+    "path:../outside.py",
+    "path:/outside.py",
+    "path:work/../outside.py",
+    "path:work//outside.py",
+    "path:work/venv/a.py",
+    "path:work/cache/a.py",
+    "path:C:/outside.py",
+    "path:work/a.npy",
+    "path:work\\outside.py",
+    "manifest:conflicting-destination"
+  ],
+  "original_bundle_manifest_unchanged": true,
+  "experiment_sources_imported": false,
+  "environment_installed": false,
+  "framework_or_gpu_used": false,
+  "arrays_or_weights_read": false,
+  "training_inference_or_FEM_executed": false,
+  "limits": [
+    "Restoration only; not a clean environment installation or complete training reproduction",
+    "External data, packages, solver and historical checkpoints are absent",
+    "JSON tokens require explicit rebinding and new-run hash fixation"
+  ]
+}

@@ -1,0 +1,277 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                         OpenCourant Engine                         **
+**                                                                    **
+**            Non-linear Finite Element Analysis Software             **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+**                  Windows 64 bits, Intel compiler                   **
+**                 Extended Single Precision Version                  **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+************************************************************************
+** OpenCourant Software                                               **
+** COPYRIGHT (C) 2026 Siemens                                         **
+** Licensed under GNU Affero General Public License.                  **
+** See License file.                                                  **
+************************************************************************
+ 
+ ROOT: Cell_Phone_Drop  RESTART: 0004
+ NUMBER OF HMPP PROCESSES     2
+ 15/10/2026
+ NC=       0 T= 1.1765E-04 DT= 9.9029E-09 ERR=  0.0% DM/M= 0.0000E+00
+     ANIMATION FILE: Cell_Phone_DropA024 WRITTEN
+ NC=     500 T= 1.2260E-04 DT= 9.9026E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         44.35 s  REMAINING TIME=       3380.81 s
+ NC=    1000 T= 1.2755E-04 DT= 9.9024E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         81.63 s  REMAINING TIME=       3070.30 s
+     ANIMATION FILE: Cell_Phone_DropA025 WRITTEN
+ NC=    1500 T= 1.3250E-04 DT= 9.9021E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        110.87 s  REMAINING TIME=       2743.16 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=    2000 T= 1.3745E-04 DT= 9.9019E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        139.94 s  REMAINING TIME=       2561.79 s
+     ANIMATION FILE: Cell_Phone_DropA026 WRITTEN
+ NC=    2500 T= 1.4240E-04 DT= 9.9016E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        168.13 s  REMAINING TIME=       2428.71 s
+ NC=    3000 T= 1.4735E-04 DT= 9.9012E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        197.39 s  REMAINING TIME=       2343.25 s
+     ANIMATION FILE: Cell_Phone_DropA027 WRITTEN
+ NC=    3500 T= 1.5230E-04 DT= 9.9009E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        227.12 s  REMAINING TIME=       2278.59 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=    4000 T= 1.5725E-04 DT= 9.9005E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        256.42 s  REMAINING TIME=       2218.94 s
+     ANIMATION FILE: Cell_Phone_DropA028 WRITTEN
+ NC=    4500 T= 1.6220E-04 DT= 9.9002E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        285.13 s  REMAINING TIME=       2161.61 s
+ NC=    5000 T= 1.6715E-04 DT= 9.8998E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        325.86 s  REMAINING TIME=       2190.82 s
+     ANIMATION FILE: Cell_Phone_DropA029 WRITTEN
+ NC=    5500 T= 1.7210E-04 DT= 9.8994E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        370.15 s  REMAINING TIME=       2228.76 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=    6000 T= 1.7705E-04 DT= 9.8991E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        413.40 s  REMAINING TIME=       2247.32 s
+     ANIMATION FILE: Cell_Phone_DropA030 WRITTEN
+ NC=    6500 T= 1.8200E-04 DT= 9.8987E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        455.51 s  REMAINING TIME=       2250.79 s
+ NC=    7000 T= 1.8695E-04 DT= 9.8983E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        496.81 s  REMAINING TIME=       2244.07 s
+     ANIMATION FILE: Cell_Phone_DropA031 WRITTEN
+ NC=    7500 T= 1.9190E-04 DT= 9.8979E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        539.18 s  REMAINING TIME=       2237.19 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=    8000 T= 1.9685E-04 DT= 9.8975E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        581.79 s  REMAINING TIME=       2226.80 s
+     ANIMATION FILE: Cell_Phone_DropA032 WRITTEN
+ NC=    8500 T= 2.0180E-04 DT= 9.8971E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        623.53 s  REMAINING TIME=       2209.56 s
+ NC=    9000 T= 2.0675E-04 DT= 9.8967E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        664.82 s  REMAINING TIME=       2188.11 s
+     ANIMATION FILE: Cell_Phone_DropA033 WRITTEN
+ NC=    9500 T= 2.1170E-04 DT= 9.8962E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        707.33 s  REMAINING TIME=       2168.31 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   10000 T= 2.1664E-04 DT= 9.8958E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        751.17 s  REMAINING TIME=       2150.07 s
+     ANIMATION FILE: Cell_Phone_DropA034 WRITTEN
+ NC=   10500 T= 2.2159E-04 DT= 9.8953E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        794.66 s  REMAINING TIME=       2128.44 s
+ NC=   11000 T= 2.2654E-04 DT= 9.8949E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        836.21 s  REMAINING TIME=       2099.97 s
+     ANIMATION FILE: Cell_Phone_DropA035 WRITTEN
+ NC=   11500 T= 2.3149E-04 DT= 9.8944E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        878.30 s  REMAINING TIME=       2071.65 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   12000 T= 2.3643E-04 DT= 9.8938E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        922.08 s  REMAINING TIME=       2045.93 s
+     ANIMATION FILE: Cell_Phone_DropA036 WRITTEN
+ NC=   12500 T= 2.4138E-04 DT= 9.8932E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        963.83 s  REMAINING TIME=       2014.54 s
+ NC=   13000 T= 2.4633E-04 DT= 9.8927E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1005.11 s  REMAINING TIME=       1981.43 s
+     ANIMATION FILE: Cell_Phone_DropA037 WRITTEN
+ NC=   13500 T= 2.5127E-04 DT= 9.8922E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1047.16 s  REMAINING TIME=       1949.15 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   14000 T= 2.5622E-04 DT= 9.8917E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1090.03 s  REMAINING TIME=       1917.64 s
+     ANIMATION FILE: Cell_Phone_DropA038 WRITTEN
+ NC=   14500 T= 2.6116E-04 DT= 9.8912E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1132.81 s  REMAINING TIME=       1885.17 s
+ NC=   15000 T= 2.6611E-04 DT= 9.8907E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1174.01 s  REMAINING TIME=       1849.55 s
+     ANIMATION FILE: Cell_Phone_DropA039 WRITTEN
+ NC=   15500 T= 2.7105E-04 DT= 9.8903E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1215.77 s  REMAINING TIME=       1814.40 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   16000 T= 2.7600E-04 DT= 9.8898E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1258.83 s  REMAINING TIME=       1780.69 s
+     ANIMATION FILE: Cell_Phone_DropA040 WRITTEN
+ NC=   16500 T= 2.8094E-04 DT= 9.8894E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1300.52 s  REMAINING TIME=       1744.58 s
+ NC=   17000 T= 2.8589E-04 DT= 9.8889E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1340.43 s  REMAINING TIME=       1705.87 s
+     ANIMATION FILE: Cell_Phone_DropA041 WRITTEN
+ NC=   17500 T= 2.9083E-04 DT= 9.8884E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1381.96 s  REMAINING TIME=       1669.05 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   18000 T= 2.9578E-04 DT= 9.8879E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1424.22 s  REMAINING TIME=       1632.83 s
+     ANIMATION FILE: Cell_Phone_DropA042 WRITTEN
+ NC=   18500 T= 3.0072E-04 DT= 9.8874E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1466.74 s  REMAINING TIME=       1596.55 s
+ NC=   19000 T= 3.0566E-04 DT= 9.8868E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=       1508.38 s  REMAINING TIME=       1559.05 s
+     ANIMATION FILE: Cell_Phone_DropA043 WRITTEN
+ NC=   19500 T= 3.1061E-04 DT= 9.8862E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1549.57 s  REMAINING TIME=       1520.90 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   20000 T= 3.1555E-04 DT= 9.8856E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1593.18 s  REMAINING TIME=       1484.86 s
+     ANIMATION FILE: Cell_Phone_DropA044 WRITTEN
+ NC=   20500 T= 3.2049E-04 DT= 9.8850E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1637.85 s  REMAINING TIME=       1449.39 s
+ NC=   21000 T= 3.2544E-04 DT= 9.8845E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1680.76 s  REMAINING TIME=       1412.00 s
+     ANIMATION FILE: Cell_Phone_DropA045 WRITTEN
+ NC=   21500 T= 3.3038E-04 DT= 9.8839E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1723.72 s  REMAINING TIME=       1374.41 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   22000 T= 3.3532E-04 DT= 9.8832E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1767.36 s  REMAINING TIME=       1337.09 s
+     ANIMATION FILE: Cell_Phone_DropA046 WRITTEN
+ NC=   22500 T= 3.4026E-04 DT= 9.8826E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1810.55 s  REMAINING TIME=       1299.17 s
+ NC=   23000 T= 3.4520E-04 DT= 9.8820E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1852.31 s  REMAINING TIME=       1260.05 s
+     ANIMATION FILE: Cell_Phone_DropA047 WRITTEN
+ NC=   23500 T= 3.5014E-04 DT= 9.8815E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1894.19 s  REMAINING TIME=       1220.90 s
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   24000 T= 3.5508E-04 DT= 9.8809E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1937.88 s  REMAINING TIME=       1182.75 s
+     ANIMATION FILE: Cell_Phone_DropA048 WRITTEN
+ NC=   24500 T= 3.6002E-04 DT= 9.8802E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       1982.61 s  REMAINING TIME=       1144.98 s
+ NC=   25000 T= 3.6496E-04 DT= 9.8796E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2024.50 s  REMAINING TIME=       1105.38 s
+ NC=   25500 T= 3.6990E-04 DT= 9.8791E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2066.06 s  REMAINING TIME=       1065.52 s
+     ANIMATION FILE: Cell_Phone_DropA049 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   26000 T= 3.7484E-04 DT= 9.8785E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2111.00 s  REMAINING TIME=       1027.25 s
+ NC=   26500 T= 3.7978E-04 DT= 9.8780E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2153.39 s  REMAINING TIME=        987.56 s
+     ANIMATION FILE: Cell_Phone_DropA050 WRITTEN
+ NC=   27000 T= 3.8472E-04 DT= 9.8774E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2196.64 s  REMAINING TIME=        948.14 s
+ NC=   27500 T= 3.8966E-04 DT= 9.8767E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2237.15 s  REMAINING TIME=        907.48 s
+     ANIMATION FILE: Cell_Phone_DropA051 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   28000 T= 3.9460E-04 DT= 9.8761E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2280.15 s  REMAINING TIME=        867.78 s
+ NC=   28500 T= 3.9954E-04 DT= 9.8756E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2320.73 s  REMAINING TIME=        827.10 s
+     ANIMATION FILE: Cell_Phone_DropA052 WRITTEN
+ NC=   29000 T= 4.0447E-04 DT= 9.8750E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2363.32 s  REMAINING TIME=        787.09 s
+ NC=   29500 T= 4.0941E-04 DT= 9.8744E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2408.41 s  REMAINING TIME=        747.78 s
+     ANIMATION FILE: Cell_Phone_DropA053 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   30000 T= 4.1435E-04 DT= 9.8739E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2455.80 s  REMAINING TIME=        708.94 s
+ NC=   30500 T= 4.1928E-04 DT= 9.8733E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2497.96 s  REMAINING TIME=        668.42 s
+     ANIMATION FILE: Cell_Phone_DropA054 WRITTEN
+ NC=   31000 T= 4.2422E-04 DT= 9.8728E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2541.40 s  REMAINING TIME=        628.18 s
+ NC=   31500 T= 4.2916E-04 DT= 9.8723E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2584.34 s  REMAINING TIME=        587.72 s
+     ANIMATION FILE: Cell_Phone_DropA055 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   32000 T= 4.3409E-04 DT= 9.8717E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2629.15 s  REMAINING TIME=        547.57 s
+ NC=   32500 T= 4.3903E-04 DT= 9.8712E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2670.33 s  REMAINING TIME=        506.60 s
+     ANIMATION FILE: Cell_Phone_DropA056 WRITTEN
+ NC=   33000 T= 4.4396E-04 DT= 9.8708E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2712.41 s  REMAINING TIME=        465.77 s
+ NC=   33500 T= 4.4890E-04 DT= 9.8703E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2753.69 s  REMAINING TIME=        424.79 s
+     ANIMATION FILE: Cell_Phone_DropA057 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   34000 T= 4.5384E-04 DT= 9.8698E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2798.09 s  REMAINING TIME=        384.23 s
+ NC=   34500 T= 4.5877E-04 DT= 9.8693E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2839.62 s  REMAINING TIME=        343.21 s
+     ANIMATION FILE: Cell_Phone_DropA058 WRITTEN
+ NC=   35000 T= 4.6370E-04 DT= 9.8688E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2882.59 s  REMAINING TIME=        302.33 s
+ NC=   35500 T= 4.6864E-04 DT= 9.8684E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2925.27 s  REMAINING TIME=        261.37 s
+     ANIMATION FILE: Cell_Phone_DropA059 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+ NC=   36000 T= 4.7357E-04 DT= 9.8679E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       2969.20 s  REMAINING TIME=        220.46 s
+ NC=   36500 T= 4.7851E-04 DT= 9.8675E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       3011.24 s  REMAINING TIME=        179.35 s
+     ANIMATION FILE: Cell_Phone_DropA060 WRITTEN
+ NC=   37000 T= 4.8344E-04 DT= 9.8671E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       3054.85 s  REMAINING TIME=        138.29 s
+ NC=   37500 T= 4.8837E-04 DT= 9.8668E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       3095.46 s  REMAINING TIME=         97.07 s
+     ANIMATION FILE: Cell_Phone_DropA061 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_I.rst WRITTEN
+ NC=   38000 T= 4.9331E-04 DT= 9.8665E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       3138.73 s  REMAINING TIME=         55.92 s
+ NC=   38500 T= 4.9824E-04 DT= 9.8662E-09 ERR= -0.1% DM/M= 0.0000E+00
+ ELAPSED TIME=       3182.59 s  REMAINING TIME=         14.71 s
+     ANIMATION FILE: Cell_Phone_DropA062 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0004_[0001-0001]_J.rst WRITTEN
+     ANIMATION FILE: Cell_Phone_DropA063 WRITTEN
+  
+                           ** CPU USER TIME **
+  
+  
+                        ** SUMMARY **
+  
+ #PROC  CONTSORT  CONTFOR   ELEMENT   KINCOND   INTEG     IO        T0        ASM       RESOL    
+   1   .6677E+03 .6719E+00 .4534E+04 .9611E+02 .3288E+03 .2029E+03 .6708E+03 .6317E+02 .6268E+04
+ 
+                   ** CUMULATIVE CPU TIME SUMMARY **
+  
+ CONTACT SORTING.............: .6677E+03    10.65 % 
+ CONTACT FORCES..............: .6719E+00     0.01 % 
+ ELEMENT FORCES..............: .4534E+04    72.33 % 
+ KINEMATIC COND..............: .9611E+02     1.53 % 
+ INTEGRATION.................: .3288E+03     5.25 % 
+ ASSEMBLING..................: .6317E+02     1.01 % 
+ OTHERS (including I/O)......: .5776E+03     9.22 % 
+ TOTAL.......................: .6268E+04   100.00 % 
+  
+                   ** MEMORY USAGE STATISTICS **
+  
+ TOTAL MEMORY USED .........................:      393 MB
+ MAXIMUM MEMORY PER PROCESSOR...............:      393 MB
+ MINIMUM MEMORY PER PROCESSOR...............:      393 MB
+ AVERAGE MEMORY PER PROCESSOR...............:      393 MB
+  
+                   ** DISK USAGE STATISTICS **
+  
+ TOTAL DISK SPACE USED .....................:       2286 MB
+ ANIMATION/H3D/TH/OUTP SIZE ................:       1746 MB
+ RESTART FILE SIZE .........................:        539 MB
+  
+ ELAPSED TIME     =       3201.10 s
+                          0:53:21
+  
+     NORMAL TERMINATION      
+     TOTAL NUMBER OF CYCLES  :   38680

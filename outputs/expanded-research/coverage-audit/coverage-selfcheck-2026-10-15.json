@@ -1,0 +1,24 @@
+{
+  "status": "passed_stdlib_document_selfcheck",
+  "checked_utc": "2026-10-15T06:50:36.150108+00:00",
+  "scope": "Only newly written coverage JSON/MD. No source/array/GPU execution, no update of active run state.",
+  "local_markdown_links_exist": true,
+  "finite_source_rows": 20,
+  "legacy_rows": 3,
+  "unique_completed_neural_artifacts": 13,
+  "unique_final_ROM_predictors": 12,
+  "planned_extension_added_to_completed_counts": 0,
+  "stdlib_only": true,
+  "files": [
+    {
+      "path": "outputs\\expanded-research\\coverage-audit\\coverage-audit-2026-10-15.json",
+      "bytes": 87384,
+      "sha256": "15cc8239b0804b688fc37b17afa7dfab04f3d085a76c8f06e07e77b49b00fee8"
+    },
+    {
+      "path": "outputs\\expanded-research\\coverage-audit\\coverage-audit-2026-10-15.md",
+      "bytes": 15967,
+      "sha256": "6cff4b7536f44470c90a1086855be8a6f9de2cc63076b3971f1536a6bfab3a05"
+    }
+  ]
+}

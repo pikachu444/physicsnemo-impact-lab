@@ -1,0 +1,12 @@
+{
+  "status": "NOT_VERIFIED_OPTIONAL_RELOAD",
+  "comparison_performed": false,
+  "same_actual_time_s": null,
+  "all_native_fields_bitwise_equal": null,
+  "reload01_exit_code": -1073741819,
+  "reload02_status": "deferred_for_memory_preflight",
+  "reason": "Reload01 access violation. Retry02 did not start because1GiB memory preflight stayed unmet for63seconds. No additional physical evolution was requested.",
+  "main_0_5ms_FEM_normal_completion_unaffected": true,
+  "existing_100us_boundary_bitwise": "100us-to-first500us-boundary-bitwise.json",
+  "guard_restart_limit": "117.636us pre-stop ANIM and117.65us checkpoint restart lack identical saved times; no field-bitwise equality claimed."
+}
