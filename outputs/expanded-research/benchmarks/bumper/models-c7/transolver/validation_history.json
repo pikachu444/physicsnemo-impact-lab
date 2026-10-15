@@ -1,0 +1,223 @@
+[
+  {
+    "epoch": 0,
+    "eligible_complete_epoch": false,
+    "validation_normalized_mse": 0.9714535723129908,
+    "improved": false,
+    "reason": "initial_state_not_eligible",
+    "state_accounting": {
+      "optimizer_updates": 0,
+      "samples": 0,
+      "train_seconds": 0.0
+    },
+    "accounted_train_seconds_at_evaluation": 0.0
+  },
+  {
+    "epoch": 11,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.4100343883037567,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 253,
+      "samples": 1232,
+      "train_seconds": 15.661877300102788
+    },
+    "accounted_train_seconds_at_evaluation": 15.661877300102788
+  },
+  {
+    "epoch": 22,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.32473427057266235,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 506,
+      "samples": 2464,
+      "train_seconds": 31.4413824000585
+    },
+    "accounted_train_seconds_at_evaluation": 31.4413824000585
+  },
+  {
+    "epoch": 33,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.2678891532123089,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 759,
+      "samples": 3696,
+      "train_seconds": 47.20210590004717
+    },
+    "accounted_train_seconds_at_evaluation": 47.20210590004717
+  },
+  {
+    "epoch": 44,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.23668309052785239,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 1012,
+      "samples": 4928,
+      "train_seconds": 62.91181990002224
+    },
+    "accounted_train_seconds_at_evaluation": 62.91181990002224
+  },
+  {
+    "epoch": 55,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.20017041514317194,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 1265,
+      "samples": 6160,
+      "train_seconds": 78.11272479999752
+    },
+    "accounted_train_seconds_at_evaluation": 78.11272479999752
+  },
+  {
+    "epoch": 66,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.1917066623767217,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 1518,
+      "samples": 7392,
+      "train_seconds": 93.20143969999481
+    },
+    "accounted_train_seconds_at_evaluation": 93.20143969999481
+  },
+  {
+    "epoch": 77,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.19703209772706032,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 1771,
+      "samples": 8624,
+      "train_seconds": 108.26943379996374
+    },
+    "accounted_train_seconds_at_evaluation": 108.26943379996374
+  },
+  {
+    "epoch": 89,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.18541849901278815,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 2047,
+      "samples": 9968,
+      "train_seconds": 123.61222460002318
+    },
+    "accounted_train_seconds_at_evaluation": 123.61222460002318
+  },
+  {
+    "epoch": 101,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.18717409546176592,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 2323,
+      "samples": 11312,
+      "train_seconds": 139.00124680004956
+    },
+    "accounted_train_seconds_at_evaluation": 139.00124680004956
+  },
+  {
+    "epoch": 113,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.1327492706477642,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 2599,
+      "samples": 12656,
+      "train_seconds": 154.79520010016859
+    },
+    "accounted_train_seconds_at_evaluation": 154.79520010016859
+  },
+  {
+    "epoch": 125,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.19335945385197797,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 2875,
+      "samples": 14000,
+      "train_seconds": 170.32630050014996
+    },
+    "accounted_train_seconds_at_evaluation": 170.32630050014996
+  },
+  {
+    "epoch": 137,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.1650275637706121,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 3151,
+      "samples": 15344,
+      "train_seconds": 186.02190660006454
+    },
+    "accounted_train_seconds_at_evaluation": 186.02190660006454
+  },
+  {
+    "epoch": 149,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.11592741621037324,
+    "improved": true,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 3427,
+      "samples": 16688,
+      "train_seconds": 201.45592130001023
+    },
+    "accounted_train_seconds_at_evaluation": 201.45592130001023
+  },
+  {
+    "epoch": 161,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.11860149912536144,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 3703,
+      "samples": 18032,
+      "train_seconds": 216.92684820002614
+    },
+    "accounted_train_seconds_at_evaluation": 216.92684820002614
+  },
+  {
+    "epoch": 173,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.11659711971879005,
+    "improved": false,
+    "reason": "periodic_or_budget_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 3979,
+      "samples": 19376,
+      "train_seconds": 232.31333899997844
+    },
+    "accounted_train_seconds_at_evaluation": 232.31333899997844
+  },
+  {
+    "epoch": 179,
+    "eligible_complete_epoch": true,
+    "validation_normalized_mse": 0.11665475492676099,
+    "improved": false,
+    "reason": "final_restored_complete_epoch",
+    "state_accounting": {
+      "optimizer_updates": 4117,
+      "samples": 20048,
+      "train_seconds": 239.6836799999801
+    },
+    "accounted_train_seconds_at_evaluation": 240.03653499998472
+  }
+]

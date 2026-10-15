@@ -1,8 +1,8 @@
 # Full-support 실행결과 독립 감사
 
-갱신: 2026-10-15T07:02:16.875100+00:00
+갱신: 2026-10-15T07:47:39.138459+00:00
 
-저장된 raw 예측과 FEM 배열을 CPU 1개로 독립 검산한다. 아직 완료되지 않은 실행은 pending이며 통과로 세지 않는다.
+저장된 raw 예측과 FEM 배열을 CPU 1개로 독립 검산한다. 아직 완료되지 않은 실행은 pending이며 통과로 세지 않는다. passed는 실행 계약·저장 결과·독립 재계산의 일치 판정이다. 공학적 예측 품질은 동명 JSON의 실제 오차와 기준선 비교로 별도 평가한다.
 
 |도메인 / 설정|감사 상태|업데이트 / 완료 epoch|선택 epoch|
 |---|---|---:|---:|
@@ -10,10 +10,10 @@
 |phone/flare|passed|247 / 247|247|
 |phone/geotransolver|passed|682 / 682|682|
 |phone/geoflare|passed|208 / 208|208|
-|phone/meshgraphnet|pending_actual_completed_test|— / —|—|
-|phone/figconvunet|pending_actual_completed_test|— / —|—|
-|bumper/transolver|pending_actual_completed_test|— / —|—|
-|bumper/flare|pending_actual_completed_test|— / —|—|
+|phone/meshgraphnet|passed|764 / 152|150|
+|phone/figconvunet|passed|403 / 134|133|
+|bumper/transolver|passed|4120 / 179|149|
+|bumper/flare|passed|1488 / 64|58|
 |bumper/geotransolver|pending_actual_completed_test|— / —|—|
 |bumper/geoflare|pending_actual_completed_test|— / —|—|
 |bumper/meshgraphnet|pending_actual_completed_test|— / —|—|

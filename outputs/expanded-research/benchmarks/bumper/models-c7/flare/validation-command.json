@@ -1,0 +1,27 @@
+{
+  "domain": "bumper",
+  "architecture": "flare",
+  "stage": "validation",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/evaluate_budgeted.py",
+    "--run",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare",
+    "--cache",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\multifield7-cache\\manifest.json",
+    "--expected-manifest-sha256",
+    "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "--mode",
+    "validation",
+    "--gpu-slot-authorized"
+  ],
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T07:46:13.880725+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted-suite-logs\\bumper-flare-validation.log",
+  "status": "passed",
+  "finished_utc": "2026-10-15T07:46:42.760215+00:00",
+  "wall_seconds": 28.87748769999598,
+  "exit_code": 0
+}

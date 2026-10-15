@@ -1,0 +1,41 @@
+{
+  "status": "saved_prediction_postprocessing_completed",
+  "model_calls": 0,
+  "scope": "All fixed test cases; FEM-defined display envelope, no error-based selection, refitting or clipping.",
+  "cases": [
+    "phone_e090_rxp050",
+    "phone_e110_rxm050"
+  ],
+  "time": 1.9999999999999998e-05,
+  "time_unit": "s",
+  "roi_reference_xy_min_mm": [
+    -28.51717758178711,
+    -51.3586540222168
+  ],
+  "roi_reference_xy_max_mm": [
+    -24.67894172668457,
+    -47.996238708496094
+  ],
+  "roi_node_count": 89,
+  "total_nodes": 76065,
+  "final_time_true_positive_counts": [
+    0,
+    11
+  ],
+  "overlap_policy": "Reference XY projection; coincident points drawn in increasing absolute value order. Not a deformed3D surface.",
+  "shared_truth_prediction_range": [
+    0.0,
+    0.00271891662850976
+  ],
+  "absolute_error_range": [
+    0,
+    0.0027033486403524876
+  ],
+  "source_sha256": "c827a700360f93db01fb3d2145013aeb84ec235c5f655725f3b38cec0b2a0ed9",
+  "cache_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+  "test_report_sha256": "2a4f31a6f889e9a6ef9deb6b46308e0a73572a0b1a341f507445b36cede6386e",
+  "truth_sha256": "f9fe7d81281e734e23e251d01682bdf3dfd47ff1dc168d8f2c2f43af9afdb38b",
+  "prediction_sha256": "fb241c8125a0449d1f7441ce882b1c3fbea1d0ed4cf0c7d6d84587531fc9cef4",
+  "image_sha256": "5052160e3cea0479c7fca3d1b403430003cbb468f5692ddda32f0124f24b5781",
+  "rss_bytes_at_end": 117747712
+}

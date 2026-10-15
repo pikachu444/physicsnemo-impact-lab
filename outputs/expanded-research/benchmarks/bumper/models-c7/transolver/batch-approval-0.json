@@ -1,0 +1,661 @@
+{
+  "status": "passed",
+  "domain": "bumper",
+  "architecture": "transolver",
+  "batch_size": 2,
+  "seed": 20261015,
+  "timing_repeats": 2,
+  "started_utc": "2026-10-15T04:27:33.207189+00:00",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py",
+    "--domain",
+    "bumper",
+    "--architecture",
+    "transolver",
+    "--batch-size",
+    "2",
+    "--out",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\bumper\\transolver\\B2",
+    "--timing-repeats",
+    "2",
+    "--gpu-slot-authorized"
+  ],
+  "python_executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "stage": "actual_Adam_update:3:complete",
+  "source_sha256": {
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py": "d3f3f5898eff47be4e5fdb54f489808f11e8ae501867d8257386e9548a19f6e6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\train_probe_data.py": "0287662371b5268a005b36a9cc3a5b278ea56a4b8b52a3a207e9725a4a9f78f5",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\run_benchmark.py": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab"
+  },
+  "torch": "2.10.0+cu126",
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_total_bytes": 6441926656,
+  "tf32": false,
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "determinism": {
+    "seed": 20261015,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "torch_deterministic_algorithms": false,
+    "note": "Original native CUDA scatter reductions may differ by float32 rounding. Numerical equivalence uses the declared tolerances; bitwise repeatability is not claimed. Strict deterministic-algorithm mode is not forced because unsupported native scatter would test a different execution restriction."
+  },
+  "train_cases": [
+    "Run192",
+    "Run179"
+  ],
+  "train_count": 112,
+  "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+  "normalization_sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+  "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+  "opened_data_files": [
+    {
+      "name": "coordinates.npy",
+      "bytes": 164228,
+      "sha256": "5ab7e0b25ef2aa8e273facf479272de4fe2c3eb4f1d4fcbf77e04d0b19fc252e"
+    },
+    {
+      "name": "edge_index.npy",
+      "bytes": 873664,
+      "sha256": "4bd560b695749c90680b847c6bbcacf3633afa3e93eab11bd3a59dba88ca126a"
+    },
+    {
+      "name": "runs/Run179.npy",
+      "bytes": 3829128,
+      "sha256": "3ef667f61a522a727ff0af44bb63c566785a291d590f29694c126a19de337c74"
+    },
+    {
+      "name": "runs/Run179_thickness.npy",
+      "bytes": 54828,
+      "sha256": "c467360af23111807b86099b8f214a9faf3fb063f968eda96659b201b3b09659"
+    },
+    {
+      "name": "runs/Run192.npy",
+      "bytes": 3829128,
+      "sha256": "06dc6308afa30d8b256c980075442640600806d86690c6ac61b70d1c46cf1232"
+    },
+    {
+      "name": "runs/Run192_thickness.npy",
+      "bytes": 54828,
+      "sha256": "19a9573a708276bacfbbdc77f2d14e90a41cf49e5234c28fbbd87629254c29f7"
+    }
+  ],
+  "no_validation_or_test_label_file_opened": true,
+  "shape": [
+    2,
+    13675,
+    70
+  ],
+  "global_dim": 3,
+  "real_directed_edges_per_case": 54596,
+  "static_feature_name": "nodal_thickness",
+  "model_config": {
+    "n_layers": 2,
+    "n_hidden": 48,
+    "n_head": 4,
+    "mlp_ratio": 2,
+    "slice_num": 8,
+    "dropout": 0.0,
+    "use_te": false,
+    "time_input": false,
+    "functional_dim": 4,
+    "embedding_dim": 3,
+    "out_dim": 70,
+    "unified_pos": false,
+    "structured_shape": null,
+    "plus": false
+  },
+  "model_source": {
+    "architecture": "transolver",
+    "module": "physicsnemo.models.transolver",
+    "class_name": "Transolver",
+    "implementation_module": "physicsnemo.models.transolver.transolver",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py",
+    "source_sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "3_global_parameters"
+    ]
+  },
+  "parameters": 43246,
+  "peak_sampled_rss_bytes": 1546248192,
+  "cuda_peak_allocated_bytes": 250513920,
+  "cuda_peak_reserved_bytes": 304087040,
+  "initial_weight_sha256": "8ab801245b85a6974e139a9d8a38e4833f804299fe6a16e5c4f134e8c9db5311",
+  "output_checks": {
+    "original_B1_vs_native_batch": {
+      "passed": true,
+      "max_absolute_difference": 4.172325134277344e-07,
+      "relative_l2_difference": 4.017762252939796e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "case_order_independence": {
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "other_case_globals_independence": {
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_original_B1_vs_batch": {
+      "passed": true,
+      "max_absolute_difference": 3.129243850708008e-07,
+      "relative_l2_difference": 4.4924716871681087e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_output_max_delta": 0.070619136095047,
+    "normalized_global_delta": 0.375
+  },
+  "gradient_check": {
+    "passed": true,
+    "definition": "gradient(mean_B mean_NTC MSE) versus sum_B gradient(B1 MSE)/B, same eval weights",
+    "original_B1_mean_loss": 1.0066199600696564,
+    "native_batchmean_loss": 1.006619930267334,
+    "loss_absolute_difference": 2.9802322387695312e-08,
+    "atol": 1e-05,
+    "rtol": 0.0005,
+    "parameters": {
+      "preprocess.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.6466875744923392e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 1.2001361592579021e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.0244548320770264e-08,
+        "relative_l2_difference": 1.8292414825768017e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1920928955078125e-07,
+        "relative_l2_difference": 1.1604310833969608e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_1.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.4551915228366852e-10,
+        "relative_l2_difference": 1.7343152120262764e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_1.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.958120942115784e-09,
+        "relative_l2_difference": 2.0353282825995207e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.temperature": {
+        "passed": true,
+        "max_absolute_difference": 1.2647660696529783e-12,
+        "relative_l2_difference": 8.14333469418107e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_slice.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.606537787476555e-12,
+        "relative_l2_difference": 2.0319242371681515e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_slice.bias": {
+        "passed": true,
+        "max_absolute_difference": 8.526512829121202e-11,
+        "relative_l2_difference": 3.311991883361033e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.qkv_project.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-08,
+        "relative_l2_difference": 7.116822331199961e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.out_linear.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 6.812330311327372e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.out_linear.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1920928955078125e-07,
+        "relative_l2_difference": 1.1193695762862742e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.566391957425367e-12,
+        "relative_l2_difference": 1.872555274431543e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.135358722123783e-12,
+        "relative_l2_difference": 1.8068313991092215e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_fx.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 2.4003270333048523e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_fx.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 1.6954455627726417e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 2.5948488385029235e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.984919309616089e-10,
+        "relative_l2_difference": 1.3069739581628168e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.30385160446167e-08,
+        "relative_l2_difference": 3.1618990408997274e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 1.4445741079504658e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 3.099562184455081e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.0978193283081055e-08,
+        "relative_l2_difference": 1.185616213903823e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_1.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.0186340659856796e-10,
+        "relative_l2_difference": 2.1411698846153006e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_1.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.94765117764473e-10,
+        "relative_l2_difference": 8.39437851447037e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.temperature": {
+        "passed": true,
+        "max_absolute_difference": 6.252776074688882e-13,
+        "relative_l2_difference": 2.102500152980801e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_slice.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.759126674500294e-12,
+        "relative_l2_difference": 7.874871168207852e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_slice.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.4783730623312294e-11,
+        "relative_l2_difference": 9.638660475036873e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.qkv_project.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.778887033462524e-09,
+        "relative_l2_difference": 6.110316911143786e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.out_linear.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.259629011154175e-09,
+        "relative_l2_difference": 5.919144588804497e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.out_linear.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-08,
+        "relative_l2_difference": 1.2357484679605262e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.097966327914037e-12,
+        "relative_l2_difference": 5.997586413063786e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.922018100231071e-12,
+        "relative_l2_difference": 1.1699482211152152e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_fx.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.6298145055770874e-09,
+        "relative_l2_difference": 2.685816711019726e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_fx.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.656612873077393e-10,
+        "relative_l2_difference": 1.8224086239566913e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 6.984919309616089e-10,
+        "relative_l2_difference": 2.9660212383716085e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.4924596548080444e-10,
+        "relative_l2_difference": 1.5241037835372958e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.0244548320770264e-08,
+        "relative_l2_difference": 3.254176408480936e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.7939677238464355e-09,
+        "relative_l2_difference": 1.470414841189451e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 2.873656536489688e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-08,
+        "relative_l2_difference": 1.0367260542226116e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp2.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-10,
+        "relative_l2_difference": 1.770786133534203e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp2.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.984919309616089e-10,
+        "relative_l2_difference": 1.495467358053636e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp2.1.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.421438694000244e-08,
+        "relative_l2_difference": 2.7650266727829496e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp2.1.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-09,
+        "relative_l2_difference": 7.993484179455677e-08,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      }
+    }
+  },
+  "timing": {
+    "forward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.019854699999996228,
+            "rss_bytes": 1481011200,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 52368896,
+            "cuda_peak_reserved_bytes": 304087040
+          },
+          {
+            "seconds": 0.01960770000005141,
+            "rss_bytes": 1480368128,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 52552192,
+            "cuda_peak_reserved_bytes": 304087040
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.008457100000669016,
+            "rss_bytes": 1481011200,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 68275712,
+            "cuda_peak_reserved_bytes": 304087040
+          },
+          {
+            "seconds": 0.008389599999645725,
+            "rss_bytes": 1480364032,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 68459008,
+            "cuda_peak_reserved_bytes": 304087040
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.01973120000002382,
+      "native_batch_median_seconds": 0.00842335000015737,
+      "original_B1_simulations_per_second": 101.36230943873589,
+      "native_batch_simulations_per_second": 237.43522469832487,
+      "measured_speedup": 2.3424409527866215,
+      "native_faster_in_every_paired_repeat": true
+    },
+    "forward_backward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.04355989999748999,
+            "rss_bytes": 1480359936,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 137675776,
+            "cuda_peak_reserved_bytes": 304087040
+          },
+          {
+            "seconds": 0.04362620000028983,
+            "rss_bytes": 1480413184,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 137675776,
+            "cuda_peak_reserved_bytes": 304087040
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.02527879999979632,
+            "rss_bytes": 1480359936,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 250146816,
+            "cuda_peak_reserved_bytes": 304087040
+          },
+          {
+            "seconds": 0.024887400002626237,
+            "rss_bytes": 1480388608,
+            "windows_process_peak_wset_bytes": 1481011200,
+            "cuda_peak_allocated_bytes": 250146816,
+            "cuda_peak_reserved_bytes": 304087040
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.04359304999888991,
+      "native_batch_median_seconds": 0.025083100001211278,
+      "original_B1_simulations_per_second": 45.87887289489792,
+      "native_batch_simulations_per_second": 79.73496098581988,
+      "measured_speedup": 1.7379450704571913,
+      "native_faster_in_every_paired_repeat": true
+    }
+  },
+  "adam": {
+    "updates": [
+      {
+        "update": 1,
+        "normalized_mse": 1.006619930267334,
+        "seconds": 0.08413440000003902,
+        "rss_bytes": 1546002432,
+        "windows_process_peak_wset_bytes": 1546002432,
+        "cuda_peak_allocated_bytes": 250146816,
+        "cuda_peak_reserved_bytes": 304087040
+      },
+      {
+        "update": 2,
+        "normalized_mse": 0.9445367455482483,
+        "seconds": 0.025019499997142702,
+        "rss_bytes": 1546133504,
+        "windows_process_peak_wset_bytes": 1546133504,
+        "cuda_peak_allocated_bytes": 250513920,
+        "cuda_peak_reserved_bytes": 304087040
+      },
+      {
+        "update": 3,
+        "normalized_mse": 0.9212530255317688,
+        "seconds": 0.025039800002559787,
+        "rss_bytes": 1546174464,
+        "windows_process_peak_wset_bytes": 1546174464,
+        "cuda_peak_allocated_bytes": 250513920,
+        "cuda_peak_reserved_bytes": 304087040
+      }
+    ],
+    "optimizer_updates": 3,
+    "simulation_observations": 6,
+    "learning_rate": 0.001,
+    "final_weight_sha256": "eb9f558d0f2328055d808d9b66e91b2a9becbf824951eca559b67c28c864b1b2"
+  },
+  "budget_note": "Timing compares equal 2-simulation workloads: B separate original B1 calls versus one native batch. Forward-backward timing uses one accumulated mean gradient and no optimizer update in either path. The separate Adam probe performs exactly 3 updates and 6 simulation observations. B1's 3 updates observe 3 simulations; matching epochs with batch B reduces updates to ceil(train_count/B). Timing benefit alone does not establish equal training convergence or equal optimizer-update budgets.",
+  "timing_note": "One correctness forward and one correctness backward warm each path before two default timed repetitions. CUDA synchronization brackets each timing. Inputs/labels already reside on GPU; adapter layout/graph preparation is included, disk reading and transfer excluded. Allocator peaks cover phase work and live tensors, not driver VRAM. Both forward paths retain all B simulation outputs until after synchronization/memory sampling. RSS is a phase-boundary snapshot; windows_process_peak_wset_bytes is process-wide context, not a per-phase CPU peak. No test labels or held-out cases are opened.",
+  "memory_final": {
+    "rss_bytes": 1546248192,
+    "windows_process_peak_wset_bytes": 1546248192,
+    "cuda_peak_allocated_bytes": 250513920,
+    "cuda_peak_reserved_bytes": 304087040
+  },
+  "total_seconds": 16.527520899999217
+}
