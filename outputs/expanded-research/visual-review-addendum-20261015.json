@@ -1,0 +1,480 @@
+{
+  "status": "PASS_VISUAL_QA_WITH_NONBLOCKING_INTERPRETATION_NOTES",
+  "reviewed_utc": "2026-10-15T07:50:15.960836+00:00",
+  "scope": "Actualview_imageinspection of6PhoneEPSPtwo-testROIimages and2firstNNbumperheldoutimages, with small JSON/PNGheader/hash reads only.",
+  "images_actually_viewed": 8,
+  "phone_images": [
+    {
+      "model": "transolver",
+      "image": "phone-visual-comparison\\transolver\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "77f7914c7169333bcb2f74a07883655bcd19bfd35ca9da4fde9ae7f82b13005f",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\transolver\\postprocessing.json",
+      "postprocessing_sha256": "80714eca47e69bd21557fc40fbeba60b487e96bfc4bae844ae6fb018a28985ea",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          -1.5002016198195633e-06,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.002631932031363249
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    },
+    {
+      "model": "flare",
+      "image": "phone-visual-comparison\\flare\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "5052160e3cea0479c7fca3d1b403430003cbb468f5692ddda32f0124f24b5781",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\flare\\postprocessing.json",
+      "postprocessing_sha256": "3092f9d205d88a719b630f128045df6a582e39933c422460aeb82ea1dca75869",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          0.0,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.0027033486403524876
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    },
+    {
+      "model": "geotransolver",
+      "image": "phone-visual-comparison\\geotransolver\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "cc966898b0d07b4f61b92831e6c4ab00d1e1470ddef214425a1875fd81ca5d01",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\geotransolver\\postprocessing.json",
+      "postprocessing_sha256": "8e4e255765efe4b507e32de117b06a278577f557f6b9b571384bfdd6d3c02d6e",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          -2.245935547762201e-06,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.0026548183523118496
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    },
+    {
+      "model": "geoflare",
+      "image": "phone-visual-comparison\\geoflare\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "a645f527d6974ad7d286c39e3984c33d80f70801aebb8807a414c876ff65e2af",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\geoflare\\postprocessing.json",
+      "postprocessing_sha256": "06ddd4353f56752acbd6e450882246e6012d396c193b1755fe09754b1fa1bb91",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          0.0,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.0027147585060447454
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    },
+    {
+      "model": "meshgraphnet",
+      "image": "phone-visual-comparison\\meshgraphnet\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "564a1358504e1d7b38a1b0ad2584b363e93ae64f719dd445113ea53ac3336e8d",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\meshgraphnet\\postprocessing.json",
+      "postprocessing_sha256": "fca63858ef54f981b2122745a51d2060dc9e965ee871a713ebc495ff72a31af5",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          0.0,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.0026053371839225292
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    },
+    {
+      "model": "figconvunet",
+      "image": "phone-visual-comparison\\figconvunet\\epsp_both_tests_truth_support_zoom.png",
+      "image_sha256": "a3df225873af2e4c3603bc65ac2a3a07157a652f5f61ecc6830e4bad7cbabc93",
+      "PNG_dimensions": [
+        1920,
+        1280
+      ],
+      "postprocessing": "phone-visual-comparison\\figconvunet\\postprocessing.json",
+      "postprocessing_sha256": "06c61647d6a3f10d11e6da55896e4b5b4fac27acdd9ff9b7b9972e1a5d40fc61",
+      "viewed_with": "functions tools.view_image(detail=original), actual image pixels visually inspected in this turn",
+      "verdict": "PASS_VISUAL_PRESENTATION_WITH_INTERPRETATION_NOTES",
+      "observations": {
+        "both_fixed_case_rows_readable": true,
+        "case_names_match_metadata": true,
+        "FEM_Raw_AbsoluteError_columns_clear": true,
+        "time_final_nominal20us_clear": true,
+        "axes_reference_XY_mm_readable": true,
+        "EPSP_colorbar_unit_dimensionless_1_visible": true,
+        "GT_based_positive_support_union_plus1mm_ROI_title_visible": true,
+        "GT_prediction_shared_bounds_match_metadata": true,
+        "first_case_GT_uniform_zero_color": true,
+        "second_case_small_nonzero_GT_cluster_visible": true,
+        "low_raw_predictions_and_cluster_error_visible": true,
+        "labels_or_colorbars_cut_off": false
+      },
+      "metadata_confirmed_not_recomputed": {
+        "roi_nodes": 89,
+        "full_support_nodes": 76065,
+        "GT_strictly_positive_final_node_counts": [
+          0,
+          11
+        ],
+        "original_metadata_key": "final_time_true_positive_counts; interpreted as positive FEM truth counts, not classifierTP",
+        "roi_reference_xy_min_mm": [
+          -28.51717758178711,
+          -51.3586540222168
+        ],
+        "roi_reference_xy_max_mm": [
+          -24.67894172668457,
+          -47.996238708496094
+        ],
+        "shared_truth_prediction_range": [
+          0.0,
+          0.00271891662850976
+        ],
+        "absolute_error_range": [
+          0,
+          0.002708060434088111
+        ],
+        "model_calls_for_original_postprocess": 0,
+        "declared_no_clipping": true
+      },
+      "limitations": [
+        "Exact89-node ROI and0/11positive counts are confirmed from postprocessing metadata; coincident XY points prevent independently counting all nodes from pixels.",
+        "Visual inspection is not a new inference, test pass, metric recalculation or proof of model accuracy."
+      ]
+    }
+  ],
+  "bumper_images": [
+    {
+      "model": "transolver",
+      "image": "benchmarks\\bumper\\models-c7\\transolver\\heldout\\inplane_vm_upper_final_FEM_prediction_error.png",
+      "image_sha256": "2163b893223979756252e4d658db346f753ebab9230312ebb20ef2a7a44641d5",
+      "PNG_dimensions": [
+        2210,
+        765
+      ],
+      "source_metadata": "benchmarks\\bumper\\models-c7\\transolver\\test_report.json",
+      "source_metadata_sha256": "5684d8a3042a36528e4ce3fd951f34531b179cca3d21cf7fc7bdffe6f973ba68",
+      "case": "Run224",
+      "final_time": 100.0,
+      "time_unit": "ms",
+      "support_nodes": 13675,
+      "field": "inplane_vm_upper",
+      "unit": "GPa",
+      "GT_prediction_common_bounds": [
+        -0.020208001136779785,
+        0.6289995908737183
+      ],
+      "signed_error_bounds": [
+        -0.3156391680240631,
+        0.3156391680240631
+      ],
+      "viewed_with": "functions tools.view_image(detail=original); host displayed2210x765source at2048x709",
+      "verdict": "PASS_VISUAL_PRESENTATION",
+      "observations": {
+        "title_case_field_time_support_readable": true,
+        "FEM_and_raw_prediction_visible": true,
+        "stress_GPa_or_EPSP_dimensionless_label_readable": true,
+        "reference_XY_mm_axes_readable": true,
+        "matching_GT_prediction_colorbars": true,
+        "signed_PredictionMinusFEM_diverging_zero_center_colorbar": true,
+        "legends_or_titles_cut_off": false,
+        "full_field_spatial_pattern_and_error_visible": true,
+        "long_thin_physical_aspect_ratio_preserved": true
+      },
+      "limitations": [
+        "The full support overview has narrow geometry panels; exact local hotspot shape should not be inferred beyond the visible resolution.",
+        "Signed error in these bumper images differs from the nonnegative absolute error in Phone ROI images.",
+        "The first held-out case/final-time example is a display selection, not the complete7case performance summary."
+      ]
+    },
+    {
+      "model": "transolver",
+      "image": "benchmarks\\bumper\\models-c7\\transolver\\heldout\\EPSP_upper_final_FEM_prediction_error.png",
+      "image_sha256": "8f0847d8d4bb9633dc5ac9294b70a71a0b32c6966dae1d18a7903a316126fb6d",
+      "PNG_dimensions": [
+        2210,
+        765
+      ],
+      "source_metadata": "benchmarks\\bumper\\models-c7\\transolver\\test_report.json",
+      "source_metadata_sha256": "5684d8a3042a36528e4ce3fd951f34531b179cca3d21cf7fc7bdffe6f973ba68",
+      "case": "Run224",
+      "final_time": 100.0,
+      "time_unit": "ms",
+      "support_nodes": 13675,
+      "field": "EPSP_upper",
+      "unit": "dimensionless",
+      "GT_prediction_common_bounds": [
+        -0.0044792694970965385,
+        0.46271732449531555
+      ],
+      "signed_error_bounds": [
+        -0.2603887617588043,
+        0.2603887617588043
+      ],
+      "viewed_with": "functions tools.view_image(detail=original); host displayed2210x765source at2048x709",
+      "verdict": "PASS_VISUAL_PRESENTATION",
+      "observations": {
+        "title_case_field_time_support_readable": true,
+        "FEM_and_raw_prediction_visible": true,
+        "stress_GPa_or_EPSP_dimensionless_label_readable": true,
+        "reference_XY_mm_axes_readable": true,
+        "matching_GT_prediction_colorbars": true,
+        "signed_PredictionMinusFEM_diverging_zero_center_colorbar": true,
+        "legends_or_titles_cut_off": false,
+        "full_field_spatial_pattern_and_error_visible": true,
+        "long_thin_physical_aspect_ratio_preserved": true
+      },
+      "limitations": [
+        "The full support overview has narrow geometry panels; exact local hotspot shape should not be inferred beyond the visible resolution.",
+        "Signed error in these bumper images differs from the nonnegative absolute error in Phone ROI images.",
+        "The first held-out case/final-time example is a display selection, not the complete7case performance summary."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "interpretation",
+      "issue": "Phone ROI89/0-11counts are in metadata, not printed as exact counts in the image title.",
+      "effect": "PNG clearly shows bothcase rows and zero/sparseGTpattern; exactcounts must be read with metadata/caption. This is not a blocking legibility error."
+    },
+    {
+      "severity": "interpretation",
+      "issue": "Phone error colorbar maximum is model-specific; GT/prediction maximum is common across6models.",
+      "effect": "Compare each image against its own labeled error scale; equal error colors acrossdifferentPNGs are not guaranteed equal error values."
+    },
+    {
+      "severity": "interpretation",
+      "issue": "Transolver/GeoTransolver include small negative rawROIvalues in shared bounds; lower ticks round to0.0000.",
+      "effect": "No clipping is declared and negative minima remain recorded. A rounded tick is not proof of clipping or nonnegative predictions."
+    },
+    {
+      "severity": "scope",
+      "issue": "A truth-defined small ROI and nearly zero background are not a globalaccuracy certificate.",
+      "effect": "The figure reveals underprediction on the secondcase sparseGTcluster; global metrics and physical validation remain outside this visualQA."
+    }
+  ],
+  "not_performed": {
+    "GPU_query_or_execution": false,
+    "NumPy_or_ML_framework_import": false,
+    "model_calls": 0,
+    "inference_or_retesting": false,
+    "metric_or_ROI_recalculation": false,
+    "NPY_NPZ_or_FEMarrays_opened": false,
+    "coverage_snapshot_updated": false,
+    "root_visual_review_or_README_Git_Page_modified": false
+  },
+  "write_scope": [
+    "outputs/expanded-research/visual-review-addendum-20261015.json",
+    "outputs/expanded-research/visual-review-addendum-20261015.md"
+  ]
+}

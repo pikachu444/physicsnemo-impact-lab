@@ -8,7 +8,7 @@
 |---|---|---|
 | 공개 범퍼 충돌 | 131해석, 1,441 ANIM 원본, 전체 변형체 13,675절점. 원본11시점(0포함), 모델 평가10개 비영 시점. 학습112/내부 검증12/평가7 | shell local 응력에서 계산한 upper/lower 면내 VM, upper/lower 등가소성변형률(EPSP). 면적 투영 nodal scalar와 원 cell tensor·상태를 별도 보존 |
 | OpenCourant DP600 인장 시편 | 직접 생성한 13해석, shell808개·학습 절점919개·10시점. 학습5/검증4/평가4 | native VM, EPSP, native total-strain tensor의 면내 주값 major/minor. 총변형률을 변위 미분으로 대체하지 않음 |
-| OpenCourant 휴대폰 초기 충격 | 실제 9조건·전체 출력 corner76,065절점·17부품, 학습5/검증2/평가2. 별도 중심 조건100µs도 정상 완주 | native solid stress·total strain·EPSP 및 GPS nodal stress. 학습 구간20µs와 추가 FEM100µs는 전체 낙하·최대 응답 완료가 아님 |
+| OpenCourant 휴대폰 초기 충격 | 실제 9조건·전체 출력 corner76,065절점·17부품, 학습5/검증2/평가2. 별도 중심 조건0.5ms도 정상 완주 | native solid stress·total strain·EPSP 및 GPS nodal stress. AI9조건은20µs까지이며 중심 FEM0.5ms의 전체 반발 완료는 확인되지 않음 |
 | 공개 DeformingPlate | 실제 400시점 궤적 다운로드·학습·자기회귀 실행 | 원본 nodal scalar `stress`는 원논문이 von Mises로 정의(물리 단위 미확정). 원 COMSOL strain 출력은 없으며, 좌표에서 계산한 Green–Lagrange strain은 별도 유도 기준값 |
 
 공개 curated 범퍼의 변위만으로 응력 학습이 됐다고 주장하지 않았다. RAW ANIM 3.799GB를 추가 확보하고, hash·형상·ID·실제 시점·물리량·112/12/7 분할을 검증한 2.921GB 라벨 캐시를 동결했다. 전체 cache 작성자의 전수 hash 검증과 독립 검토자의 메타데이터 전수·원 binary 표본 검산은 별개다. [범퍼 정답 추출](fem-labels/README.md), [시편 정답 생성](benchmarks/structural_coupon/README.md)
@@ -41,18 +41,21 @@ FIG는 이번 신경망 중 응력 오차가 가장 작았지만 EPSP 음수6,78
 
 범퍼의 다중 물리량 POD+RBF도 실제 학습·내부 검증 선택·평가를 마쳤다. 변위 L2는 3.0320%지만 VM upper/lower L2는 15.059%/15.572%(RMSE 43.357/45.201MPa), EPSP는 51.849%/55.022%였다. EPSP 예측의 약 22%가 음수였다. **변위가 잘 맞는다는 이유로 소성변형·파손 위험도 맞는다고 판단할 수 없다.** 이 사례의 strain은 EPSP이며 total strain과 다르다.
 
-동일한 범퍼 전체 support·112/12/7 분할에서 Transolver와 FLARE도 학습·새 프로세스 validation 재추론 차이0·test7조건 한 번·독립 수치 검산을 마쳤다. 아래는 완료된 결과만 모은 표다. 나머지 네 신경망 설정은 진행 중이며 미완료 값을 채우지 않는다.
+동일한 범퍼 전체 support·112/12/7 분할에서 Transolver·FLARE·GeoTransolver GALE도 학습·새 프로세스 validation 재추론 차이0·test7조건 한 번·독립 수치 검산을 마쳤다. 아래는 완료된 결과만 모은 표다. 나머지 세 신경망 설정은 진행 중이며 미완료 값을 채우지 않는다.
 
 | 범퍼, 평가7조건 | 변위 벡터 L2 | 병진 제거 형상 변위 L2 | VM upper / lower L2 | VM upper / lower RMSE | EPSP upper / lower L2 |
 |---|---:|---:|---:|---:|---:|
 | 학습112조건의 node/time별 평균장 | 20.5503% | 33.3162% | 41.4694% / 41.4290% | 119.393 / 120.258MPa | 83.8202% / 84.6501% |
-| POD + RBF | 3.0320% | 별도 원 지표 참조 | 15.059% / 15.572% | 43.357 / 45.201MPa | 51.849% / 55.022% |
+| POD + RBF | 3.0320% | 4.74479% | 15.059% / 15.572% | 43.357 / 45.201MPa | 51.849% / 55.022% |
 | Transolver B5, 240초 optimizer 예산 | 6.3208% | 10.9944% | 26.0753% / 25.9900% | 75.073 / 75.442MPa | 42.9540% / 43.2482% |
 | FLARE B5, 같은 계산 예산 | 7.1697% | 11.8860% | 29.2712% / 28.8180% | 84.274 / 83.652MPa | 61.8180% / 62.8264% |
+| GeoTransolver GALE B5, 같은 계산 예산 | 6.0032% | 10.8372% | 24.5831% / 24.4616% | 70.777 / 71.006MPa | 44.5157% / 44.8914% |
 
 이 Transolver는 실제4,120업데이트·20,063조건 관측·179완료 epoch 중 best149를 선택했다. 마지막 부분 epoch의3업데이트·15관측은 선택에서 제외했다. Optimizer240.037초와 training wall901.421초를 구분한다. POD+RBF가 변위·응력에 유리했으나 이번 신경망이 EPSP에는 더 낮은 오차를 보였으므로 한 방법이 모든 물리량에서 낫다고 결론내리지 않는다. VM 원 단위는 GPa이며 위 RMSE는 ×1000한 MPa다. Raw 음수 VM upper/lower4,239/5,942개, 음수 EPSP201,590/205,166개와 EPSP 이력 감소258,776/263,206개도 남아 있다. [첫 범퍼 신경망 원 지표](benchmarks/bumper/models-c7/transolver/test_report.json), [평균장 기준선](full-support-mean-baselines.md)
 
 FLARE는 실제1,488업데이트·7,248관측·64완료 epoch 중 best58을 선택했고 부분 epoch16업데이트는 제외했다. Optimizer240.002초·training wall537.195초였으며 EPSP 음수479,915/488,649개·이력 감소358,977/354,601개를 기록했다. 두 신경망은 평균장보다 집계 오차가 낮지만 원 물리 제약 위반과 단일 seed·예산 제한을 함께 보고한다. [FLARE 원 지표](benchmarks/bumper/models-c7/flare/test_report.json)
+
+GeoTransolver GALE는 실제3,579업데이트·17,430관측·155완료 epoch 중 best153을 선택했고 부분 epoch14업데이트는 제외했다. Optimizer240.009초·training wall787.704초였다. EPSP 음수274,291/250,132개·이력 감소378,649/390,680개도 남아 있다. 수치 감사 통과는 저장 지표의 일치이며 제품 적용 정확도 승인을 뜻하지 않는다. [GALE 원 지표](benchmarks/bumper/models-c7/geotransolver/test_report.json)
 
 DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 실제 학습했다. 각각 12epoch·1,920업데이트이며 399단계 자기회귀를 평가했다. noise 제거와 loss 정규화 변경을 묶은 설정은 drift를 줄였지만 내부 검증 응력을 악화했고, 두 설정 모두 정확도 실패였다. 원 COMSOL strain이 없는 이 예제의 유도 strain 비교를 native FEM strain 검증이라고 부르지 않는다. [판 실행 기록](benchmarks/deforming_plate/README.md)
 
@@ -104,9 +107,13 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 
 공식 예제 source pin은 `11685edb3ec1fb6f25665e96cf7a8c4d11a23f16`(current source2.3.0a0)이고, 실제 학습 backbone은 설치된 배포 PhysicsNeMo2.2.2다. 생성자 차이·삭제한 미지원 옵션·실제 source hash를 실행별 보존했다. [공식 실행 행렬](source-matrix/README.md)은 현행 20개 설정 조합과 archived Sym 3개를 분리한다. 20개 모델을 학습했다는 뜻이 아니다. 소스 확인, 설치, GPU 역전파, 실제 학습, 별도 FEM 평가, 독립 수치 검산, 물리 실험 검증을 각각 구분한다. [공통 실험 규약](experiment-contract.json)
 
+이20행은 선정한 구조 예제·설정의 교차표이며 모든 PhysicsNeMo 구조 연구의 전체 목록이 아니다. [휴대폰·범퍼 외 구조 예제 부록](broader-structural-examples.md)에 실제 인장·판재·탄성·BOX1BL 수행 상태와, 추가 확인한 TopoDiff·Carbon lattice·UVA 다중 충실도 응력 연구 및 소형 접촉 후보를 구분했다. Plus·Concrete Dropout·개발판 FLARE++ 등의 미시험 기능도 여섯 설정의 완료에 포함하지 않는다.
+
+분할은 해석 조건 단위로 고정했으며 정규화와 학습에는 training 조건만 사용했다. 체크포인트 선택에는 validation을 사용했다. 각 신경망의 ‘test 한 번’은 고정한 checkpoint의 성능 예측 pass 횟수이며 저장 배열을 다시 읽는 수치 검산·후처리 횟수와 다르다. 같은 test 조건은 앞선 회귀/축약 모델 등에도 이미 평가에 쓰였으므로 연구 전체에서 처음 보는 비공개 최종 holdout이라고 주장하지 않는다. 제품 적용 전에는 후속 선택에 사용하지 않은 별도 FEM·가능하면 실험 조건으로 검증해야 한다.
+
 실제 실행 장소는 사용자 PC의 RTX3060 Laptop 6GiB다. Codex Cloud는 별도 컨테이너에서 CPU·RAM·네트워크·GPU 장치를 검사했지만 NVIDIA GPU가 노출되지 않았다. 이 로컬 GPU 결과를 Cloud GPU 실행으로 기록하지 않는다. 유료 GPU나 추가 결제는 사용하지 않았다.
 
-PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 새 전용 환경에 설치했다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 설정은 13,675절점에서 CUDA 역전파와 가중치 갱신을 통과했다. 시편 여섯 설정의 학습·평가는 위 표로 구분하며, 휴대폰·범퍼의 다물리량 신경망 학습은 별도로 진행한다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
+PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 전용 학습 환경에 설치했다. 이 환경은 기존 system/user site 의존 경로를 포함하며 완전히 독립된 clean 설치와 구분한다. 별도 독립 환경 재설치는 진행 중이고 완료를 주장하지 않는다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 설정은 13,675절점에서 CUDA 역전파와 가중치 갱신을 통과했다. 시편 여섯 설정의 학습·평가는 위 표로 구분하며, 휴대폰·범퍼의 다물리량 신경망 학습은 별도로 진행한다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
 
 공식 Q1 `Elasticity2DSolver`도 CPU에서 실제 실행해 독립 해·힘·모멘트·에너지 등13개 검사를 통과했다. 변위 상대 L2는2.324e-10, 두 solve 합계0.592초, import 포함10.898초, 최대 메모리196.68MiB였다. 이는 수치 FEM baseline이며 구조 FNO·DDM 전체 실행이나 AI 학습으로 세지 않는다. [실행·독립 검산](benchmarks/elasticity_numerical/execution-report.md)
 
@@ -118,6 +125,8 @@ PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를
 
 전체 조립체를 연구 대상에서 제외할 이유는 없다. 다만 이번17부품 휴대폰은 질량27.01477g의 단순화한 공개 benchmark이며, 유리는 선형탄성이고 파손·접합분리 법칙은 없다. 학습 입력도 초기 형상·mesh 길이 대리값·공통 탄성계수 배율·작은 자세 변화다. 각 부품의 재료 법칙·연결부·접촉 상태를 모두 독립 입력으로 준 모델이 아니다. Element graph의17성분 사이에는 FEM의 tied/contact edge도 없다. 이를 TV·세탁기의 체결부·포장재·서스펜션·유리 파손을 포함한 범용 낙하 모델로 확대하려면 해당 상태와 하중 경로를 표현하고 별도 검증해야 한다. [공개 FEM의 물리 범위](benchmarks/drop_test/PHONE-FEM-AND-DATASET.md), [실제 조립체 입력·graph 감사](benchmarks/assembly_input_audit/README.md)
 
+Graph의 단절을 모든 backbone에서 부품 간 영향이 전혀 전달되지 않는다는 뜻으로 확대하지 않는다. Attention·공간 격자 방식은 좌표와 학습 응답에서 결합 영향을 배울 여지가 있다. 다만 이번 입력에 접촉의 열림·닫힘·미끄럼이나 체결 상태를 명시적으로 준 것은 아니며, 현재 오차의 원인을 graph 하나로 분리 입증한 실험도 아니다.
+
 전체 제품의 연결·접촉이 유지되고 설계 변수 범위가 제한되면 전체 응답 또는 주요 설계 지표의 surrogate를 검토할 수 있다. 국부 파손·간극·체결부가 지배하거나 연결과 메시가 자주 바뀌면 부품/서브어셈블리가 먼저 검증하기 쉬운 후보가 된다. 이때 전체 FEM 또는 coarse assembly에서 전달받는 힘·변위·속도 이력과 interface 에너지를 맞춰야 한다. 이번 rear support는 동일 전체 FEM의 절점 부분집합이며, 독립 부품 FEM의 경계조건이나 계산 절감 효과를 검증한 것이 아니다.
 
 제품 목적에 맞는 출력은 잔류 변형·부품 간 상대변위/간극, 응력·총변형률·EPSP의 hotspot과 peak 시각, 센서 위치의 가속도·접촉력 pulse·흡수 에너지 등이다. 이번 공개 데이터의 낮은 저장 빈도로 수치 미분한 가속도 peak를 검증했다고 할 수 없다. 파손 법칙·failure 라벨이 없는 경우 EPSP나 VM를 파손 확률로 바꾸지 않는다. [출력·알고리즘·상용 CAE 경로 검토](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/fem-integration-review.md)
@@ -125,6 +134,8 @@ PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를
 상용 환경 확장은 승인된 HyperMesh/Radioss 모델의 해석 자동화, 원 ANIM/TH/H3D 보존, node/element/part ID·단위·좌표계·적분점/층 정의의 고정, 학습 schema와 HyperView/ParaView 비교로 이어질 수 있다. 지금 실제 실행한 solver는 OpenCourant이며 회사의 상용 모델을 실행하거나 외부로 전송하지 않았다. 공개 solver와 상용 solver의 keyword·재료·접촉·수치 결과 호환성은 같은 deck으로 따로 확인해야 한다.
 
 6GiB GPU에서 실제 전체 출력 지원점의 작은 신경망은 학습할 수 있었지만, 휴대폰 MGN B5는 VRAM 부족, FIG B5는 host RAM 부족을 실제 겪었다. 공식 크기 판의 단일 update 성공도 장기 rollout 정확도나 임의 조립체 수용량을 보장하지 않는다. 자원 증설 여부는 각 모델의 실측 VRAM·RAM·처리량과 검증 곡선으로 정한다. [기존 비용 시나리오와 공식 가격 출처](https://github.com/pikachu444/physicsnemo-impact-lab/blob/main/docs/resource-options.md)는 GPU 점유 시간에 따른 참고치이며 이번 연구에서 유료 자원은 사용하지 않았다.
+
+후속 실행 중 [공식 GPU·host RAM·저장 가격 재확인](resources-pricing-recheck-20261015.md)도 기록했다. RTX A5000 24GB/host25GB는 표시0.27USD/h, A6000 48GB/host50GB는0.59USD/h였다. 실제 필요한 점유 시간을 측정하기 전에는 이를 수렴 학습 비용으로 확정하지 않는다. 별도 GPU 지출은0이며 전기·기존 장비·구독 비용을 측정한 결과와 구분한다.
 
 ## 보존과 재현
 
