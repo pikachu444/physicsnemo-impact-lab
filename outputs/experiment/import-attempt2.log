@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from physicsnemo.models.transolver import Transolver; import torch,physicsnemo; m=Transolver(functional_dim=1,out_dim=3,embedding_dim=3,n_layers=2,n_hidden=32,n_head=4,slice_num=8,use_te=False); y=m(torch.rand(1,128,1),torch.rand(1,128,3)); print(physicsnemo.__version__, y.shape, sum(p.numel() for p in m.parameters()))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\__init__.py", line 22, in <module>
+    from .core.meta import ModelMetaData  # noqa E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\core\__init__.py", line 19, in <module>
+    from .module import Module
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\core\module.py", line 37, in <module>
+    from physicsnemo.core.filesystem import _download_cached, _get_fs
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\core\filesystem.py", line 33, in <module>
+    import s3fs
+ModuleNotFoundError: No module named 's3fs'

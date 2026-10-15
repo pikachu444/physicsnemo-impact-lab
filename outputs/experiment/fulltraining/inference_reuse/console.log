@@ -1,0 +1,27 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{
+  "status": "inference_completed",
+  "run": "Run224",
+  "device": "cuda",
+  "nodes": 13675,
+  "checkpoint_sha256": "dc1f895100dd521afded61a9c43ced99a866e312cd2ec7629bee840ac29d124b",
+  "forward_seconds_excluding_loading_and_transfers": 0.03796940000029281,
+  "units": {
+    "length": "mm",
+    "time": "ms"
+  },
+  "scope": "Matching fixed node ordering and source physical regime only; this helper performs no fitting.",
+  "within_training_global_bounds": true,
+  "outside_training_global_features": [],
+  "displacement_relative_l2": 0.0644212996239409,
+  "displacement_component_rmse_mm": 4.859404325759391,
+  "checkpoint_roundtrip": {
+    "passed": true,
+    "max_absolute_difference_mm": 0.0,
+    "rtol": 1e-05,
+    "atol_mm": 0.0001
+  }
+}

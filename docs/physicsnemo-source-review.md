@@ -2,6 +2,8 @@
 
 확인일: 2026-10-15 (Asia/Seoul). 공식 저장소의 `main` 소스, 원 저자 논문, 데이터 제공자 파일 트리를 직접 열어 확인했다. 아래의 **확인**은 문서·코드 열람으로 확인했다는 뜻이며, 이 문서 작성자가 학습·FEM 해석을 실행했다는 뜻은 아니다. `main`은 변동 가능하며 이번 소스 검토에서는 커밋 SHA 고정에 성공하지 못했다. 실행 결과와 환경 검증은 별도 실행 기록을 우선한다.
 
+**후속 실행으로 확인한 사항:** 별도 실행에서는 소스 commit `11685edb3ec1fb6f25665e96cf7a8c4d11a23f16`과 데이터 revision을 고정했다. 범퍼 curated132파일을 실제 읽었으며 변위와 두께만 존재하고 응력·소성변형률은 없다. 원 `.rad`에서 CC BY-NC4.0 고지를 확인했다. 전체13,675 변형체 절점의 GPU 학습·평가까지 수행했다. 아래 최초 조사 당시의 “미확인”과 구별해 [실제 실행 결과](experiment-results.md)를 우선한다.
+
 ## 판단에 직접 영향을 주는 발견
 
 현재 공식 `examples/structural_mechanics/`에는 `crash`, `deforming_plate`, `drop_test`, `openradioss_dataset_gen`이 있다. 따라서 PhysicsNeMo의 구조 예제를 준정적 판 문제 하나로 한정해서 평가하면 현재 기능을 놓친다. 특히 **OpenRadioss 휴대폰 낙하 → VTU → GeoTransolver → 변위·Von Mises 응력 비교** 경로가 공식 코드로 존재한다. [공식 폴더 트리](https://github.com/NVIDIA/physicsnemo/tree/main/examples/structural_mechanics)

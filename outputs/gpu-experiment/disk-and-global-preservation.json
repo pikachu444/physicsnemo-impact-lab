@@ -1,0 +1,15 @@
+{
+  "task_directory_bytes_by_subdirectory": {
+    "tmp": 0,
+    "venv": 4698797493,
+    "wheels": 2594592768
+  },
+  "task_directory_bytes_total": 7293390261,
+  "global_torch_metadata_version": "2.13.0",
+  "global_torch_origin": "C:\\Users\\pikac\\AppData\\Roaming\\Python\\Python313\\site-packages\\torch\\__init__.py",
+  "global_torch_version_source_lines": [
+    "__all__ = ['__version__', 'debug', 'cuda', 'git_version', 'hip', 'rocm', 'xpu']",
+    "__version__ = '2.13.0+cpu'",
+    "cuda: Optional[str] = None"
+  ]
+}

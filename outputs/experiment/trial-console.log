@@ -1,0 +1,8 @@
+FEM data loaded: train=112 val=12 test=7 nodes=1024/13676 times=[0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0]
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+PhysicsNeMo model instantiated: 41286 parameters; device=cpu
+{"epoch": 1, "training_normalized_mse": 0.5930815979040095, "validation_normalized_mse": 0.3704136945307255, "seconds": 27.742473599999357}
+{"epoch": 5, "training_normalized_mse": 0.37066684077892986, "validation_normalized_mse": 0.2922823689877987, "seconds": 20.779294500000105}

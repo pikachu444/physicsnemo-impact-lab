@@ -1,0 +1,173 @@
+FEM data loaded: train=112 val=12 test=7 nodes=1024/13676 times=[0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0]
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+PhysicsNeMo model instantiated: 41286 parameters; device=cuda
+{"epoch": 1, "training_normalized_mse": 0.5930816331612212, "validation_normalized_mse": 0.3704137143989404, "seconds": 3.6583766999992804}
+{"epoch": 5, "training_normalized_mse": 0.3706668592723353, "validation_normalized_mse": 0.2922823714713256, "seconds": 2.4494634000002407}
+{"epoch": 10, "training_normalized_mse": 0.3644424163337265, "validation_normalized_mse": 0.26565712442000705, "seconds": 2.5039655000000494}
+{"epoch": 15, "training_normalized_mse": 0.34724426322749685, "validation_normalized_mse": 0.28106653317809105, "seconds": 2.6350161000009393}
+{"epoch": 20, "training_normalized_mse": 0.33499352913349867, "validation_normalized_mse": 0.26024120301008224, "seconds": 2.55796890000056}
+{"epoch": 25, "training_normalized_mse": 0.3301787423635168, "validation_normalized_mse": 0.2933732184271018, "seconds": 2.8861526000000595}
+{"epoch": 30, "training_normalized_mse": 0.3235313279687294, "validation_normalized_mse": 0.2540018204599619, "seconds": 2.4919501000003947}
+{"epoch": 35, "training_normalized_mse": 0.31941600230389405, "validation_normalized_mse": 0.25827945210039616, "seconds": 2.677780400001211}
+{"epoch": 40, "training_normalized_mse": 0.313775282752301, "validation_normalized_mse": 0.24738214475413164, "seconds": 2.5033423000004404}
+{"epoch": 45, "training_normalized_mse": 0.31043325471026556, "validation_normalized_mse": 0.2493990045040846, "seconds": 2.5881910999996762}
+{"epoch": 50, "training_normalized_mse": 0.30744113673322965, "validation_normalized_mse": 0.2539744731038809, "seconds": 2.3730352000002313}
+{"epoch": 55, "training_normalized_mse": 0.30209992486717446, "validation_normalized_mse": 0.2534924695889155, "seconds": 2.59076880000066}
+{"epoch": 60, "training_normalized_mse": 0.2999897307849356, "validation_normalized_mse": 0.25233150584002334, "seconds": 2.5837035000004107}
+{
+  "best_epoch": 27,
+  "training_seconds": 152.71877759999916,
+  "metrics": {
+    "physicsnemo_transolver": {
+      "displacement_relative_l2": 0.06375682830240635,
+      "displacement_rmse_native_units": 5.368534863574466,
+      "per_timestep_relative_l2": [
+        0.05969382756916204,
+        0.046996967106809805,
+        0.04975727045886969,
+        0.04970198682673232,
+        0.05368695835693913,
+        0.058116445021142604,
+        0.06311869925161309,
+        0.06744059979161997,
+        0.07210379819686623,
+        0.07514489704054113
+      ],
+      "per_timestep_rmse_native_units": [
+        1.4183503850749843,
+        2.0093351717530683,
+        2.9799073934747105,
+        3.711993981333713,
+        4.648612510379906,
+        5.557529993158849,
+        6.417799493426989,
+        7.056796708549896,
+        7.547553666120444,
+        7.6847861657040095
+      ],
+      "per_run_relative_l2": [
+        0.06946386289525999,
+        0.05619873062854262,
+        0.05449497280518154,
+        0.07857137919510351,
+        0.04756855000903953,
+        0.06263449148744027,
+        0.07175813523234283
+      ]
+    },
+    "zero_displacement": {
+      "displacement_relative_l2": 1.0,
+      "displacement_rmse_native_units": 84.20329251811044,
+      "per_timestep_relative_l2": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_timestep_rmse_native_units": [
+        23.76041950789075,
+        42.754571102140716,
+        59.888883895630066,
+        74.68502203491812,
+        86.58736968247457,
+        95.62749392425904,
+        101.67825968408202,
+        104.6372174973859,
+        104.6762286435068,
+        102.26624120009133
+      ],
+      "per_run_relative_l2": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "training_mean_field": {
+      "displacement_relative_l2": 0.2058786710425778,
+      "displacement_rmse_native_units": 17.335661961038014,
+      "per_timestep_relative_l2": [
+        0.14361750921192648,
+        0.14443190705258593,
+        0.14401194625711283,
+        0.1561031925186753,
+        0.1726606401901588,
+        0.18972661363630253,
+        0.20589548021738158,
+        0.22040073726463508,
+        0.23318670997814828,
+        0.24476139391287732
+      ],
+      "per_timestep_rmse_native_units": [
+        3.412412267553737,
+        6.175124239497565,
+        8.624714728975947,
+        11.65857037297833,
+        14.950230681758008,
+        18.143080592775764,
+        20.9350941053217,
+        23.062119881743826,
+        24.40910537029976,
+        25.030827746364878
+      ],
+      "per_run_relative_l2": [
+        0.2359931523619028,
+        0.20383171940455175,
+        0.17523167652775323,
+        0.22004203658013294,
+        0.19981293664791266,
+        0.24928914260655954,
+        0.10963404180371157
+      ]
+    },
+    "rbf_kernel_field": {
+      "displacement_relative_l2": 0.031441106095989525,
+      "displacement_rmse_native_units": 2.6474446536935514,
+      "per_timestep_relative_l2": [
+        0.03603337485042026,
+        0.027462575314129715,
+        0.025130474462916993,
+        0.02374114007520169,
+        0.02667669979779302,
+        0.02985425045154845,
+        0.03231766980605776,
+        0.03386268190424712,
+        0.03448908952037927,
+        0.03484300284958937
+      ],
+      "per_timestep_rmse_native_units": [
+        0.8561681027310656,
+        1.1741506289158532,
+        1.5050360673517322,
+        1.7731075696505156,
+        2.309865267299899,
+        2.8548871536687574,
+        3.286004422924758,
+        3.5432968114595,
+        3.6101878203415954,
+        3.563262933551576
+      ],
+      "per_run_relative_l2": [
+        0.016161763378120756,
+        0.027170701360061247,
+        0.015670081773903437,
+        0.030092067563429928,
+        0.029523297197700006,
+        0.028577638595347375,
+        0.05674535553949576
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-15T08:53:22.6637504+09:00",
+  "initial_tensor_test": "not yet run",
+  "global_torch_before": "2.13.0+cpu",
+  "cuda_wheel_version": "2.13.0+cu126",
+  "cuda_wheel_bytes": 2594592768,
+  "cuda_wheel_uncompressed_bytes": 4171209895,
+  "download_seconds": 232.449214,
+  "download_sha256": "cb91b2f91d053bb91e413459a13ec8b036ff348d03e411e9c29988cc6edb7b32",
+  "venv_method": "--system-site-packages, independent from other experiment venv",
+  "setup_issue": "Initial ensurepip TEMP permission failure; reran with TEMP and TMP pointing inside work/gpu-experiment/tmp",
+  "observed_contention": "Root reported available host RAM about0.3GiB during concurrent CPU training; CPU training stopped before CUDA verification"
+}

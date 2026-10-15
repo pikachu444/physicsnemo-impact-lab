@@ -1,0 +1,124 @@
+{
+  "code_recipe_commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "installed_package": "nvidia-physicsnemo==2.2.2",
+  "dataset_commit": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "download": {
+    "completed": true,
+    "files": 167,
+    "bytes": 540482522,
+    "seconds": 41.5817711,
+    "note": "Includes 132 curated dataset files and 35 original crash recipe files; 2 small source decks downloaded separately for units/license inspection."
+  },
+  "cpu_custom_trial": {
+    "status": "interrupted_after_at_least_5_epochs_to_prioritize_gpu",
+    "exit_code": 1,
+    "device": "cpu",
+    "epoch_1_train_normalized_mse": 0.5930815979040095,
+    "epoch_1_validation_normalized_mse": 0.3704136945307255,
+    "epoch_5_train_normalized_mse": 0.37066684077892986,
+    "epoch_5_validation_normalized_mse": 0.2922823689877987,
+    "epoch_5_seconds": 20.7792945,
+    "heldout_evaluation_completed": false,
+    "checkpoint_saved": false,
+    "note": "This initial CPU process predated the device/checkpoint/source-snapshot additions. Its log is functional evidence, not a completed performance experiment."
+  },
+  "official_driver_cpu_trial": {
+    "status": "completed_with_added_config_and_one_line_reader_compatibility_copy",
+    "exit_code": 0,
+    "upstream_train_py_modified": false,
+    "original_vtp_reader_modified": false,
+    "compatibility_fix": "Generalize displacement_t0.xxx regex to displacement_t<number>.<digits> so t10..100 ms fields are read.",
+    "reader_selfcheck": "Original Run100 load shape (1,13676,3); compatibility copy shape (11,13676,3), assert passed.",
+    "training_runs": [
+      "Run100",
+      "Run101"
+    ],
+    "validation_runs": [
+      "Run224"
+    ],
+    "nodes": 13676,
+    "time_steps": 11,
+    "epochs": 2,
+    "parameters": 15634,
+    "epoch_training_seconds": [
+      0.51,
+      0.32
+    ],
+    "validation_normalized_mse": [
+      0.738358,
+      0.720199
+    ],
+    "checkpoints_saved": true,
+    "claim": "Stock training driver, preprocessing, optimizer, validation and checkpoint path verified on a tiny subset; predictive accuracy not established."
+  },
+  "gpu_field_trial": {
+    "status": "completed",
+    "directory": "gpu1024",
+    "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "torch": "2.13.0+cu126",
+    "cuda": "12.6",
+    "training_runs": 112,
+    "internal_validation_runs": 12,
+    "final_heldout_runs": 7,
+    "sampled_nodes": 1024,
+    "time_steps": 11,
+    "epoch_cap": 60,
+    "note": "New lightweight driver using official installed Transolver class; full original recipe reproduction is not claimed.",
+    "exit_code": 0,
+    "metrics_file": "gpu1024/metrics.json",
+    "best_epoch": 27
+  },
+  "verified_units": {
+    "mass": "kg",
+    "length": "mm",
+    "time": "ms",
+    "source": "Run100_0000.rad /BEGIN"
+  },
+  "source_model_license": "Altair CC BY-NC 4.0 as declared in both source deck headers",
+  "data_scope": "Fixed aligned mesh, varying shell thickness and pole offset, constant initial velocity -5 mm/ms. Curated targets contain displacement, not stress/plastic strain/fracture.",
+  "full_mesh_training_trial": {
+    "status": "completed",
+    "directory": "fulltraining",
+    "training_nodes": 13675,
+    "epochs_cap": 60,
+    "architecture_and_split": "Same as gpu1024; kernel fitting skipped to reduce host memory.",
+    "reason": "Scale experiment selected from measured full-node step time/memory before evaluation, not heldout score tuning.",
+    "exit_code": 0,
+    "metrics_file": "fulltraining/metrics.json",
+    "pure_inference_reuse": "passed; max absolute difference0.0mm; matching mesh hash checked",
+    "negative_mesh_order_test": "rejected as expected"
+  },
+  "full_mesh_sampled_model_probe": {
+    "status": "completed",
+    "report": "full_mesh/full_mesh_probe.json",
+    "checkpoint_roundtrip_maxdiff_mm": 0.0,
+    "full_mesh_displacement_relative_l2": 0.06375595726378284,
+    "scope": "1024-node training checkpoint evaluated at13675nodes; full-node training was not part of this probe."
+  },
+  "capacity_ablation": {
+    "status": "completed",
+    "directory": "capacity1024",
+    "config": {
+      "n_layers": 4,
+      "n_hidden": 96,
+      "slice_num": 16,
+      "n_head": 4
+    },
+    "execution_gate": "Actual step peak GPU tensor allocation<2GB and estimated60epoch training with10percent overhead<300seconds",
+    "parameters": 293582,
+    "measured_mean_step_seconds": 0.04041273000020738,
+    "measured_peak_cuda_allocated_bytes": 44851200,
+    "estimated_training_seconds_with10percent_overhead": 298.73090016153293,
+    "exit_code": 0,
+    "metrics_file": "capacity1024/metrics.json",
+    "best_epoch": 60,
+    "training_seconds": 291.0826277,
+    "displacement_relative_l2": 0.0547674565724,
+    "component_rmse_mm": 4.61160016624,
+    "interpretation": "Exploratory one-seed capacity comparison. Mean improves but largest local vector error and translation-removed relative error worsen; no convergence or universal ranking claim.",
+    "pure_inference_reuse": "passed, max prediction difference0.0mm"
+  },
+  "publication_guide": "public_copy_policy.json",
+  "reproduction_document": "README.md",
+  "all_gpu_training_processes_completed": true
+}

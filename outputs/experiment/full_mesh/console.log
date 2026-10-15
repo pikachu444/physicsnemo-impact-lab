@@ -1,0 +1,109 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+Checkpoint roundtrip {"passed": true, "run": "Run224", "max_absolute_difference_mm": 0.0, "rtol": 1e-05, "atol_mm": 0.0001, "checkpoint_sha256": "217565c8a3b5c8547d5a4f0980ee154b102cb45ddf13020fed45d0f518bc021d"}
+{"nodes": 1024, "mean_train_step_seconds": 0.020513433333690045, "train_step_seconds": [0.01886220000051253, 0.021836699999767006, 0.0208414000007906], "peak_cuda_allocated_bytes": 24835584, "sampled_process_rss_bytes": 1430548480, "last_loss": 0.17113077640533447}
+{"nodes": 4096, "mean_train_step_seconds": 0.020618600000185932, "train_step_seconds": [0.02169060000051104, 0.02207529999941471, 0.018089900000632042], "peak_cuda_allocated_bytes": 47371776, "sampled_process_rss_bytes": 1432227840, "last_loss": 0.14725050330162048}
+{"nodes": 13675, "mean_train_step_seconds": 0.02376923333395098, "train_step_seconds": [0.024332000000867993, 0.02369150000049558, 0.023284200000489363], "peak_cuda_allocated_bytes": 118536192, "sampled_process_rss_bytes": 1432363008, "last_loss": 0.14498992264270782}
+{
+  "status": "completed",
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "training_nodes": 1024,
+  "inference_nodes": 13675,
+  "execution_source_sha256": "7227eef135cf0003a86575fbcc35d78403aa3f98c724e0f70c7b72f155f9d937",
+  "checkpoint_roundtrip": {
+    "passed": true,
+    "run": "Run224",
+    "max_absolute_difference_mm": 0.0,
+    "rtol": 1e-05,
+    "atol_mm": 0.0001,
+    "checkpoint_sha256": "217565c8a3b5c8547d5a4f0980ee154b102cb45ddf13020fed45d0f518bc021d"
+  },
+  "claim": "Training-step memory/time feasibility and full-node inference using a model trained at sampled nodes. Full-node training was not performed.",
+  "units": {
+    "length": "mm",
+    "time": "ms"
+  },
+  "training_step_probes": [
+    {
+      "nodes": 1024,
+      "mean_train_step_seconds": 0.020513433333690045,
+      "train_step_seconds": [
+        0.01886220000051253,
+        0.021836699999767006,
+        0.0208414000007906
+      ],
+      "peak_cuda_allocated_bytes": 24835584,
+      "sampled_process_rss_bytes": 1430548480,
+      "last_loss": 0.17113077640533447
+    },
+    {
+      "nodes": 4096,
+      "mean_train_step_seconds": 0.020618600000185932,
+      "train_step_seconds": [
+        0.02169060000051104,
+        0.02207529999941471,
+        0.018089900000632042
+      ],
+      "peak_cuda_allocated_bytes": 47371776,
+      "sampled_process_rss_bytes": 1432227840,
+      "last_loss": 0.14725050330162048
+    },
+    {
+      "nodes": 13675,
+      "mean_train_step_seconds": 0.02376923333395098,
+      "train_step_seconds": [
+        0.024332000000867993,
+        0.02369150000049558,
+        0.023284200000489363
+      ],
+      "peak_cuda_allocated_bytes": 118536192,
+      "sampled_process_rss_bytes": 1432363008,
+      "last_loss": 0.14498992264270782
+    }
+  ],
+  "heldout_per_run": [
+    {
+      "run": "Run224",
+      "displacement_relative_l2": 0.06894923563467943,
+      "inference_seconds": 0.04439670000101614
+    },
+    {
+      "run": "Run225",
+      "displacement_relative_l2": 0.05654695524192569,
+      "inference_seconds": 0.04426479999892763
+    },
+    {
+      "run": "Run226",
+      "displacement_relative_l2": 0.05510727005280103,
+      "inference_seconds": 0.0422073999998247
+    },
+    {
+      "run": "Run227",
+      "displacement_relative_l2": 0.0788406938846695,
+      "inference_seconds": 0.04220270000041637
+    },
+    {
+      "run": "Run228",
+      "displacement_relative_l2": 0.046890665708747746,
+      "inference_seconds": 0.04026549999980489
+    },
+    {
+      "run": "Run229",
+      "displacement_relative_l2": 0.06274070259154645,
+      "inference_seconds": 0.04009279999991122
+    },
+    {
+      "run": "Run230",
+      "displacement_relative_l2": 0.07143991677783416,
+      "inference_seconds": 0.039276799998333445
+    }
+  ],
+  "full_mesh_displacement_relative_l2": 0.06375595726378284,
+  "full_mesh_displacement_rmse_mm": 5.375887775985302,
+  "full_mesh_training_mean_field_relative_l2": 0.20550271468873452,
+  "zero_displacement_relative_l2": 1.0,
+  "inference_timing_note": "One warmup per run; synchronized forward call only; excludes data loading, transfers and disk I/O.",
+  "memory_note": "CUDA peak allocation covers real FP32 forward/backward/Adam steps after a warmup. Host RSS is sampled, not a true peak."
+}

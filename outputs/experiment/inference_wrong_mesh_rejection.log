@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\outputs\experiment\infer_checkpoint.py", line 40, in <module>
+    assert hashlib.sha256(np.ascontiguousarray(xyz[ids],dtype="<f4").tobytes()).hexdigest()==contract["reference_coordinates_float32_le_sha256"],"Input mesh geometry or node order differs from the trained reference"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Input mesh geometry or node order differs from the trained reference

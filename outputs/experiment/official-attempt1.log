@@ -1,0 +1,8 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+Could not delete from config. 'model.global_dim' does not exist.
+
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

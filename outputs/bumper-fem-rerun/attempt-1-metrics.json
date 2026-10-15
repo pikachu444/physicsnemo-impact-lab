@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "starter",
+    "executable": "starter_win64_sp.exe",
+    "arguments": "-i Bumper_Beam_AP_meshed_0000.rad -np 1 -nt 2",
+    "exit_code": 0,
+    "elapsed_seconds": 19.9846123,
+    "sampled_peak_working_set_bytes": 221253632,
+    "terminated_by_resource_cap": false,
+    "threads": 2,
+    "memory_cap_bytes": 600000000,
+    "wall_time_cap_seconds_per_stage": 600
+  },
+  {
+    "stage": "engine",
+    "executable": "engine_win64_sp.exe",
+    "arguments": "-i Bumper_Beam_AP_meshed_0001.rad -nt 2",
+    "exit_code": -1,
+    "elapsed_seconds": 203.1343175,
+    "sampled_peak_working_set_bytes": 93818880,
+    "terminated_by_resource_cap": false,
+    "threads": 2,
+    "memory_cap_bytes": 600000000,
+    "wall_time_cap_seconds_per_stage": 600
+  }
+]

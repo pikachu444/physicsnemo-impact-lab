@@ -1,0 +1,82 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\distributed\manager.py:415: UserWarning: Could not initialize using ENV, SLURM or OPENMPI methods. Assuming this is a single process job
+  warn(
+[2026-10-15 08:54:20,602][main][INFO] - Config:
+reader:
+  _target_: vtp_reader.Reader
+  _convert_: all
+datapipe:
+  _target_: datapipe.CrashPointCloudDataset
+  _convert_: all
+  data_dir: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA
+  global_features_filepath: null
+  num_samples: 2
+  num_steps: 11
+  sample_type: all_time_steps
+  static_features:
+  - thickness
+  dynamic_features: []
+  dynamic_targets: []
+  global_features: null
+  stats_dir: stats
+model:
+  _target_: rollout.TransolverOneShot
+  _convert_: all
+  functional_dim: 4
+  embedding_dim: 3
+  out_dim: 30
+  slice_num: 16
+  n_layers: 1
+  unified_pos: false
+  structured_shape: null
+  use_te: false
+  time_input: false
+  num_time_steps: 11
+  global_dim: null
+  n_hidden: 32
+  n_head: 4
+training:
+  raw_data_dir: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA
+  raw_data_dir_validation: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA
+  global_features_filepath: null
+  max_workers_preprocessing: 1
+  optimizer: adam
+  optimizer_weight_decay: 0.0001
+  num_time_steps: 11
+  num_training_samples: 2
+  num_validation_samples: 1
+  start_lr: 0.0001
+  end_lr: 3.0e-07
+  epochs: 2
+  validation_freq: 1
+  save_checkpoint_freq: 1
+  amp: false
+  num_dataloader_workers: 0
+  ckpt_path: ./checkpoints
+  tensorboard_log_dir: ./tensorboard_logs
+inference:
+  output_dir_pred: ./predicted_vtps
+  output_dir_exact: ./exact_vtps
+  raw_data_dir_test: ???
+experiment_name: Car-Crash-GeoTransolver
+
+[2026-10-15 08:54:20,604][main][INFO] - Output directory: ./tensorboard_logs
+[2026-10-15 08:54:20,604][main][INFO] - Checkpoint directory: ./checkpoints
+[2026-10-15 08:54:20,604][main][INFO] - Stats directory: stats
+[2026-10-15 08:54:20,635][main][INFO] - [CrashPointCloudDataset] Preparing the train dataset...
+[2026-10-15 08:54:20,643][main][INFO] - Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA\Run100.vtp...
+[2026-10-15 08:54:21,156][main][INFO] - Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA\Run101.vtp...
+[2026-10-15 08:54:22,890][main][INFO] - Number of validation samples: 1
+[2026-10-15 08:54:22,898][main][INFO] - [CrashPointCloudDataset] Preparing the validation dataset...
+[2026-10-15 08:54:22,901][main][INFO] - Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA\Run224.vtp...
+Error executing job with overrides: ['model=transolver_one_shot', '~model.activation_checkpointing', '~model.checkpointing_ratio', 'model.n_layers=1', 'model.slice_num=16', '+model.n_hidden=32', '+model.n_head=4', 'model.out_dim=30', 'training.num_time_steps=11', 'training.optimizer=adam', 'training.amp=false', 'training.num_training_samples=2', 'training.num_validation_samples=1', 'training.epochs=2', 'training.validation_freq=1', 'training.save_checkpoint_freq=1', 'training.num_dataloader_workers=0', 'training.max_workers_preprocessing=1', 'training.raw_data_dir=C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA', 'training.raw_data_dir_validation=C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA']
+
+Error in call to target 'rollout.TransolverOneShot':
+TypeError("Transolver.__init__() got an unexpected keyword argument 'global_dim'")
+full_key: model
+
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

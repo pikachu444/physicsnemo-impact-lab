@@ -1,0 +1,81 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from physicsnemo.models.transolver import Transolver; import torch,physicsnemo;m=Transolver(functional_dim=4,out_dim=30,embedding_dim=3,n_layers=2,n_hidden=48,n_head=4,slice_num=8,use_te=False,mlp_ratio=2);print(physicsnemo.__version__,m(torch.rand(1,32,4),torch.rand(1,32,3)).shape)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\models\__init__.py", line 17, in <module>
+    from .dit import DiT
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\models\dit\__init__.py", line 35, in <module>
+    from .dit import DiT
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\models\dit\dit.py", line 28, in <module>
+    from physicsnemo.nn import (
+    ...<9 lines>...
+    )
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\__init__.py", line 20, in <module>
+    from .module.activations import (
+    ...<7 lines>...
+    )
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\module\__init__.py", line 28, in <module>
+    from .ball_query import BQWarp
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\module\ball_query.py", line 29, in <module>
+    from physicsnemo.nn.functional import radius_search
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\functional\__init__.py", line 59, in <module>
+    from .interpolation import (
+    ...<3 lines>...
+    )
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\functional\interpolation\__init__.py", line 17, in <module>
+    from .grid_to_point_interpolation import (
+    ...<3 lines>...
+    )
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\functional\interpolation\grid_to_point_interpolation\__init__.py", line 17, in <module>
+    from .grid_to_point_interpolation import (
+    ...<3 lines>...
+    )
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\functional\interpolation\grid_to_point_interpolation\grid_to_point_interpolation.py", line 25, in <module>
+    from ._torch_impl import interpolation_torch
+  File "C:\Users\pikac\Documents\Codex\2026-10-15\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\work\physicsnemo-experiment\.venv\Lib\site-packages\physicsnemo\nn\functional\interpolation\grid_to_point_interpolation\_torch_impl.py", line 40, in <module>
+    @torch.compile
+     ^^^^^^^^^^^^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\__init__.py", line 2836, in compile
+    return torch._dynamo.optimize(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        backend=backend,
+        ^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        shapes_spec=shapes_spec,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )(model)  # type: ignore[return-value]
+    ^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 1682, in optimize
+    return _optimize(rebuild_ctx, *args, **kwargs)
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 1799, in _optimize
+    backend.get_compiler_config()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\__init__.py", line 2497, in get_compiler_config
+    from torch._inductor.compile_fx import get_patched_config_dict
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\compile_fx.py", line 114, in <module>
+    from . import config, distributed_autotune, metrics
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\distributed_autotune.py", line 15, in <module>
+    from . import config, select_algorithm
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\select_algorithm.py", line 6073, in <module>
+    from . import lowering  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\lowering.py", line 9111, in <module>
+    import_submodule(kernel)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\utils.py", line 4384, in import_submodule
+    importlib.import_module(f"{mod.__name__}.{filename[:-3]}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\kernel\mm_grouped.py", line 142, in <module>
+    source=load_kernel_template("cutedsl_mm_grouped"),
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pikac\AppData\Roaming\Python\Python313\site-packages\torch\_inductor\utils.py", line 4770, in load_template
+    return f.read()
+           ~~~~~~^^
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xe2 in position 616: illegal multibyte sequence

@@ -1,0 +1,135 @@
+[08:58:11 - main - INFO] Config:
+reader:
+  _target_: vtp_reader_compat.Reader
+  _convert_: all
+datapipe:
+  _target_: datapipe.CrashPointCloudDataset
+  _convert_: all
+  data_dir: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA
+  global_features_filepath: null
+  num_samples: 2
+  num_steps: 11
+  sample_type: all_time_steps
+  static_features:
+  - thickness
+  dynamic_features: []
+  dynamic_targets: []
+  global_features: null
+  stats_dir: stats
+training:
+  raw_data_dir: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA
+  raw_data_dir_validation: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA
+  global_features_filepath: null
+  max_workers_preprocessing: 1
+  optimizer: adam
+  optimizer_weight_decay: 0.0001
+  num_time_steps: 11
+  num_training_samples: 2
+  num_validation_samples: 1
+  start_lr: 0.0001
+  end_lr: 3.0e-07
+  epochs: 2
+  validation_freq: 1
+  save_checkpoint_freq: 1
+  amp: false
+  num_dataloader_workers: 0
+  ckpt_path: ./checkpoints
+  tensorboard_log_dir: ./tensorboard_logs
+inference:
+  output_dir_pred: ./predicted_vtps
+  output_dir_exact: ./exact_vtps
+  raw_data_dir_test: ???
+experiment_name: Public-OpenRadioss-Bumper-CPU-Smoke
+model:
+  _target_: rollout.TransolverOneShot
+  _convert_: all
+  functional_dim: 4
+  embedding_dim: 3
+  out_dim: 30
+  slice_num: 16
+  n_layers: 1
+  n_hidden: 32
+  n_head: 4
+  use_te: false
+  num_time_steps: 11
+
+[08:58:11 - main - INFO] Output directory: ./tensorboard_logs
+[08:58:11 - main - INFO] Checkpoint directory: ./checkpoints
+[08:58:11 - main - INFO] Stats directory: stats
+[08:58:11 - main - INFO] [CrashPointCloudDataset] Preparing the train dataset...
+[08:58:11 - main - INFO] Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA\Run100.vtp...
+[08:58:12 - main - INFO] Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA\Run101.vtp...
+[08:58:14 - main - INFO] Number of validation samples: 1
+[08:58:14 - main - INFO] [CrashPointCloudDataset] Preparing the validation dataset...
+[08:58:14 - main - INFO] Processing C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA\Run224.vtp...
+[08:58:15 - main - INFO] Model parameters: 15,634
+[08:58:15 - main - INFO] 
+===========================================================================
+Layer (type:depth-idx)                             Param #
+===========================================================================
+TransolverOneShot                                  --
+├─_TransolverMlp: 1-1                              --
+│    └─Sequential: 2-1                             --
+│    │    └─Linear: 3-1                            512
+│    │    └─GELU: 3-2                              --
+│    │    └─Linear: 3-3                            2,080
+├─ModuleList: 1-2                                  --
+│    └─TransolverBlock: 2-2                        --
+│    │    └─LayerNorm: 3-4                         64
+│    │    └─PhysicsAttentionIrregularMesh: 3-5     3,508
+│    │    └─Sequential: 3-6                        8,416
+│    │    └─Sequential: 3-7                        1,054
+===========================================================================
+Total params: 15,634
+Trainable params: 15,634
+Non-trainable params: 0
+===========================================================================
+[08:58:15 - main - INFO] Using Adam optimizer
+[08:58:15 - main - INFO] Training started...
+[08:58:15 - main - INFO] Epoch 1 [1/2] Loss: 0.873503 Duration: 0.33s Mem: 0.00GB
+[08:58:15 - main - INFO] Epoch 1 [2/2] Loss: 0.869497 Duration: 0.18s Mem: 0.00GB
+[08:58:15 - main - INFO] Epoch 1/2 avg_loss: 0.871500 lr: 5.015e-05 duration: 0.51s
+[08:58:16 - main - INFO] Saved model on rank 0
+[08:58:16 - main - INFO] Validation epoch 1: MSE: 0.738358
+[08:58:16 - main - INFO] 
+Validation metrics:
++----------------+----------+
+|     Metric     |  Value   |
++----------------+----------+
+| MSE (overall)  | 0.738358 |
+| timestep_0_MSE | 0.093094 |
+| timestep_1_MSE | 0.274637 |
+| timestep_2_MSE | 0.495021 |
+| timestep_3_MSE | 0.789332 |
+| timestep_4_MSE | 0.956643 |
+| timestep_5_MSE | 1.022368 |
+| timestep_6_MSE | 1.011842 |
+| timestep_7_MSE | 1.027801 |
+| timestep_8_MSE | 0.881083 |
+| timestep_9_MSE | 0.831753 |
++----------------+----------+
+
+[08:58:16 - main - INFO] Epoch 2 [1/2] Loss: 0.847669 Duration: 0.16s Mem: 0.00GB
+[08:58:17 - main - INFO] Epoch 2 [2/2] Loss: 0.819408 Duration: 0.16s Mem: 0.00GB
+[08:58:17 - main - INFO] Epoch 2/2 avg_loss: 0.833539 lr: 3.000e-07 duration: 0.32s
+[08:58:17 - main - INFO] Saved model on rank 0
+[08:58:17 - main - INFO] Validation epoch 2: MSE: 0.720199
+[08:58:17 - main - INFO] 
+Validation metrics:
++----------------+----------+
+|     Metric     |  Value   |
++----------------+----------+
+| MSE (overall)  | 0.720199 |
+| timestep_0_MSE | 0.094990 |
+| timestep_1_MSE | 0.279231 |
+| timestep_2_MSE | 0.477885 |
+| timestep_3_MSE | 0.770393 |
+| timestep_4_MSE | 0.925034 |
+| timestep_5_MSE | 1.003892 |
+| timestep_6_MSE | 1.004298 |
+| timestep_7_MSE | 1.008735 |
+| timestep_8_MSE | 0.837692 |
+| timestep_9_MSE | 0.799828 |
++----------------+----------+
+
+[08:58:17 - main - INFO] Training completed!

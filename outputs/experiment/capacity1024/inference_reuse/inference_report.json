@@ -1,0 +1,23 @@
+{
+  "status": "inference_completed",
+  "run": "Run224",
+  "device": "cuda",
+  "nodes": 1024,
+  "checkpoint_sha256": "380f2097a2f98d76fb5b7420e0a671adc5909df5637ff9ee77f665053bc359d4",
+  "forward_seconds_excluding_loading_and_transfers": 0.014449800000875257,
+  "units": {
+    "length": "mm",
+    "time": "ms"
+  },
+  "scope": "Matching fixed node ordering and source physical regime only; this helper performs no fitting.",
+  "within_training_global_bounds": true,
+  "outside_training_global_features": [],
+  "displacement_relative_l2": 0.06882496216335947,
+  "displacement_component_rmse_mm": 5.188334941791333,
+  "checkpoint_roundtrip": {
+    "passed": true,
+    "max_absolute_difference_mm": 0.0,
+    "rtol": 1e-05,
+    "atol_mm": 0.0001
+  }
+}

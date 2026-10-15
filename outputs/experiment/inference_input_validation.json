@@ -1,0 +1,13 @@
+{
+  "valid_matching_mesh_inference": {
+    "status": "passed",
+    "report": "fulltraining/inference_reuse/inference_report.json",
+    "max_prediction_difference_mm": 0.0
+  },
+  "permuted_reference_coordinates": {
+    "status": "rejected_as_expected",
+    "process_exit_code": 1,
+    "message": "Input mesh geometry or node order differs from the trained reference",
+    "log": "inference_wrong_mesh_rejection.log"
+  }
+}

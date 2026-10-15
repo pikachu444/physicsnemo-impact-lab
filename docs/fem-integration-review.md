@@ -17,7 +17,7 @@
 | 후보 | 실제 공개 상태 | 적합한 검증 | 지금 남은 확인 |
 |---|---|---|---|
 | OpenCourant MiniQA BOX1BL | 원본 deck+기준값+Windows 실행기 확보, **직접 실행 성공** | solver 설치, 반복 실행, 변형 mesh·history 변환, FEM 데이터 연결의 첫 회귀시험 | 학습 데이터 다양성 없음. 실제 제품 물성/큰 접촉/파손 검증과 다름 |
-| [OpenRadioss2PhysicsNeMo](https://github.com/HoussemMouradi/OpenRadioss2PhysicsNeMo) bumper | 원본 `.rad`, Python 데이터 생성, ANIM→d3plot pipeline 공개 | 접촉/소성 shell 부품, 두께·pole 위치 변화와 공식 crash reader 연결 | 구형 OpenRadioss 다운로드 링크 교체; 실제 solver/변환기/훈련 실행 검증 |
+| [OpenRadioss2PhysicsNeMo](https://github.com/HoussemMouradi/OpenRadioss2PhysicsNeMo) bumper | 원본 `.rad`, Python 데이터 생성, ANIM→d3plot pipeline 공개 | 접촉/소성 shell 부품; Run224 OpenCourant 재실행 및 학습모델 연결 검증 완료 | 원 generator의 Linux batch/대규모 DOE 전체 재현은 미검증 |
 | [BumperBeamCrashExample](https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/tree/main) | 131 runs 표방, 파일 tree 공개. 전체15.8GB, curated VTP540MB | 직접 FEM 재계산 없이 reader/학습/정량평가 가능 | 전체 다운로드/무결성은 아직 이 조사에서 검증하지 않음. public validation 외 별도 holdout 필요 |
 | [Plasticity-MeshGraphNets](https://github.com/mikelunizar/Plasticity-MeshGraphNets) | 코드·학습/평가 명령·dataset Drive 링크 공개 | 작은 판의 접촉+소성, 응력텐서 및 변형 예측 비교 | 고속 동적 충격이 아니라 **quasi-static pseudo-time** 문제. Drive 실제 획득/재학습 미검증 |
 | [CarCrashNet](https://github.com/Mohamedelrefaie/CarCrashNet) | 논문·README·그림 공개, **데이터와 loader는 peer review 후 공개 예정** 명시 | full-vehicle와 부품 hierarchy의 연구 근거 | 즉시 실행 가능한 공개 corpus로 계산하면 안 됨 |
@@ -80,6 +80,14 @@ TV는 잔류 휨/패널-프레임 간극/체결부 상대변위와 국소 가속
 
 ## 직접 실행 결과
 
-[FEM 실행 기록](fem-experiment/README.md), [측정값](fem-experiment/execution-metrics.json), [기준값 검증](fem-experiment/validation-summary.json), [결과 그림](fem-experiment/fem-results.png)에 원본·스크립트·로그를 묶었다. 350MB 공개 Windows package로 작은 FEM case를 약4.2s의 solver 자체 보고 시간에 실행했고, 원본 기준값을 표시 정밀도로 재현했다. 11개 VTK와 100개 time-history sample을 생성했다. **이는 실제 FEM 실행 성과이며 AI 예측 정확도 또는 Codex Cloud/GPU 실행 결과가 아니다.**
+[FEM 실행 기록](../outputs/fem-experiment/README.md), [측정값](../outputs/fem-experiment/execution-metrics.json), [기준값 검증](../outputs/fem-experiment/validation-summary.json), [결과 그림](../outputs/fem-experiment/fem-results.png)에 원본·스크립트·로그를 묶었다. 350MB 공개 Windows package로 작은 FEM case를 약4.2s의 solver 자체 보고 시간에 실행했고, 원본 기준값을 표시 정밀도로 재현했다. 11개 VTK와 100개 time-history sample을 생성했다. **이는 실제 FEM 실행 성과이며 AI 예측 정확도 또는 Codex Cloud/GPU 실행 결과가 아니다.**
 
 추가 비용을 지출하거나 유료 자원을 생성하지 않았다. 이 작은 회귀모델의 시간/메모리를 전체 가전제품·대규모 학습의 자원 추정치로 외삽하면 안 된다.
+
+## 추가 실행: 학습 데이터와 동일한 범퍼 Run224
+
+MiniQA 이후 [동일 범퍼 FEM 연결 검증](../outputs/bumper-fem-rerun/README.md)도 완료했다. 고정 Hugging Face revision의 heldout Run224 입력을 변경 없이 OpenCourant extended single precision/2threads로 재실행해100ms까지 정상종료했다. Starter+Engine 프로세스 시간746.995s(12분27초), 관측 peak working set 약210.1MiB/89.1MiB다. 이 값은 로컬·동시작업 조건이며 Codex Cloud 측정 또는 통제된 solver 성능 비교가 아니다.
+
+원본 RAD 초기 좌표→고유 node ID→실제 VTK의 NODE_ID로13,675점을 정렬했다. 명목100ms와 실제100.001ms 차이0.001ms를 보간 없이 기록했고 두께0·중복시각화ID 예외1점은 제외했다. 원 Dataset에 대한 새 FEM의 최종 변위 vector RMSE는0.012518mm, component RMSE0.007227mm였다. 이는 FEM 재실행/후처리의 재현 근거다.
+
+이미 학습한 PhysicsNeMo fulltraining 저장 예측을 같은 Run224의 새 FEM10시점과 연결했다. Run/좌표/노드순서/시간/truth 일치 검사를 통과했고 NN component RMSE4.8573mm, vector RMSE8.4131mm, displacement relative L2=6.4392%였다. 최종100ms만의 component RMSE는7.6670mm/relative L2=9.4001%다. 이 연구의 직접 실행은 **공개 FEM 입력 실행→원 FEM 데이터 수치 재현→실제 학습 모델 예측과 새 FEM 비교**까지 연결되었으며, 원본 범퍼의 제한된 조건·변위 검증이라는 적용 범위를 유지한다.

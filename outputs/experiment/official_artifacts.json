@@ -1,0 +1,50 @@
+{
+  "launch.log": {
+    "bytes": 5970,
+    "sha256": "dcfcc0983c4a1f913347290c3de4d42a5d0139874099e76d464ae97cb6abecdd"
+  },
+  "train.log": {
+    "bytes": 7621,
+    "sha256": "af8cf1cc471e35b8bcdffd16554839698711ba0004f944172d44076a53185c17"
+  },
+  ".hydra\\config.yaml": {
+    "bytes": 1675,
+    "sha256": "9ebaa94bf05b834db3aa107ebe8aeb23397bc2d0d4c8b148c84af01ef1527d27"
+  },
+  ".hydra\\hydra.yaml": {
+    "bytes": 4827,
+    "sha256": "10d9d410005990f88ee56e6099a69c18d54782dca6a26ffe54716912af770882"
+  },
+  ".hydra\\overrides.yaml": {
+    "bytes": 393,
+    "sha256": "a163eefde343b98b4b8c77765e08df6e7fa8fdaebf466f7dbdf5e1c42a857418"
+  },
+  "checkpoints\\checkpoint.0.1.pt": {
+    "bytes": 146361,
+    "sha256": "d406855bbbde51e6c087c467b5bf11115466eea8c35b5bad9767e00d340ef019"
+  },
+  "checkpoints\\checkpoint.0.2.pt": {
+    "bytes": 146361,
+    "sha256": "e6110cf5a0541d48a05b4e456e50149a0e4886bbe9747777ef64e7b159586b6c"
+  },
+  "checkpoints\\TransolverOneShot.0.1.mdlus": {
+    "bytes": 72122,
+    "sha256": "ce8fbf422b3f44580280d053ecf8a6a59aa8cc8d3d62dd4e9141b4f7f5bce391"
+  },
+  "checkpoints\\TransolverOneShot.0.2.mdlus": {
+    "bytes": 72122,
+    "sha256": "1783a28bfeff008140c2eaa8744d29d1b931d4f3b2936ad828e9a801cb29716a"
+  },
+  "stats\\feature_stats.json": {
+    "bytes": 76,
+    "sha256": "ad3e38c357a1c0b99126892d515c217c5548ce3f3440bf1f38d9e9a4f997ff1e"
+  },
+  "stats\\node_stats.json": {
+    "bytes": 444,
+    "sha256": "94becc143799f510a2d5ae810b414bc6012f5fbd138248a52afc2a25bb40c768"
+  },
+  "tensorboard_logs\\events.out.tfevents.1792022295.LAPTOP-LEETAEHO.33952.0": {
+    "bytes": 1458,
+    "sha256": "94474297d7cc17bf85613eb92aa59ce36f9de5115daed4ee608c7c204480bb7c"
+  }
+}

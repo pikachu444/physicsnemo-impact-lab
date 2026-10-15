@@ -1,0 +1,178 @@
+{
+  "scope": "Actual local Windows rerun of the same public held-out Run224 bumper FEM input; FEM-to-FEM comparison, not AI accuracy.",
+  "dataset_revision": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "dataset_path": "RAW_DATA/VALIDATION_DATA/Run224",
+  "global_features_from_curated_dataset": {
+    "thickness_scale": 1.52,
+    "velocity_x": -5.0,
+    "rwall_origin_y": -415.52
+  },
+  "current_solver_release": "OpenCourant latest-20261011",
+  "current_solver_commit": "cb760c206e346eff12161a2268b134ef9d48a4ef",
+  "source_solver": "OpenRadioss; precise binary release/build not identified in supplied log",
+  "source_threads": 16,
+  "current_threads": 2,
+  "model_units": {
+    "mass": "kg",
+    "length": "mm",
+    "time": "ms",
+    "velocity": "mm/ms",
+    "stress": "GPa",
+    "energy": "J"
+  },
+  "unit_evidence": "/BEGIN input and work kg/mm/ms, steel density 7.85e-6 kg/mm^3, E=210 GPa",
+  "source_engine": {
+    "normal_termination": true,
+    "precision_header": "Extended Single Precision Version",
+    "threads_per_domain": 16,
+    "spmd_domains": 1,
+    "solver_reported_elapsed_seconds": 326.99,
+    "solver_reported_memory_MB": 93.0,
+    "summary_total_cycles": 100001.0,
+    "last_printed_record": {
+      "cycle_index": 100000.0,
+      "model_time_ms": 100.0,
+      "time_step_ms": 0.001,
+      "controlling_entity_type": "NODE",
+      "controlling_entity_id": 14050.0,
+      "energy_error_percent": -0.4,
+      "internal_energy_J": 6037.0,
+      "translational_kinetic_energy_J": 215.2,
+      "rotational_kinetic_energy_J": 0.1671,
+      "external_work_J": -186.0,
+      "mass_error_fraction": 0.0002304,
+      "total_mass_kg": 517.0,
+      "added_mass_kg": 0.1191,
+      "reported_mass_error_percent": 0.023039999999999998,
+      "added_mass_ratio_to_printed_total_mass": 0.00023036750483558993
+    }
+  },
+  "current_engine": {
+    "normal_termination": true,
+    "precision_header": "Extended Single Precision Version",
+    "threads_per_domain": 2,
+    "spmd_domains": 1,
+    "solver_reported_elapsed_seconds": 742.29,
+    "solver_reported_memory_MB": 89.0,
+    "summary_total_cycles": 100001.0,
+    "last_printed_record": {
+      "cycle_index": 100000.0,
+      "model_time_ms": 100.0,
+      "time_step_ms": 0.001,
+      "controlling_entity_type": "NODE",
+      "controlling_entity_id": 14050.0,
+      "energy_error_percent": -0.4,
+      "internal_energy_J": 6037.0,
+      "translational_kinetic_energy_J": 215.2,
+      "rotational_kinetic_energy_J": 0.1605,
+      "external_work_J": -186.0,
+      "mass_error_fraction": 0.0002315,
+      "total_mass_kg": 517.0,
+      "added_mass_kg": 0.1196,
+      "reported_mass_error_percent": 0.02315,
+      "added_mass_ratio_to_printed_total_mass": 0.00023133462282398453
+    }
+  },
+  "process_measurements": [
+    {
+      "attempt": 2,
+      "stage": "starter",
+      "executable": "starter_win64_sp.exe",
+      "arguments": "-i Bumper_Beam_AP_meshed_0000.rad -np 1 -nt 2",
+      "exit_code": 0,
+      "elapsed_seconds": 4.3997035,
+      "sampled_peak_working_set_bytes": 220282880,
+      "terminated_by_resource_cap": false,
+      "threads": 2,
+      "memory_cap_bytes": 600000000,
+      "wall_time_cap_seconds_per_stage": 1200
+    },
+    {
+      "attempt": 2,
+      "stage": "engine",
+      "executable": "engine_win64_sp.exe",
+      "arguments": "-i Bumper_Beam_AP_meshed_0001.rad -nt 2",
+      "exit_code": 0,
+      "elapsed_seconds": 742.5953613,
+      "sampled_peak_working_set_bytes": 93376512,
+      "terminated_by_resource_cap": false,
+      "threads": 2,
+      "memory_cap_bytes": 600000000,
+      "wall_time_cap_seconds_per_stage": 1200
+    }
+  ],
+  "run_artifacts_bytes_including_raw_and_converted_local_files": 171094617,
+  "current_starter_warning_ids": [
+    "343"
+  ],
+  "current_starter_reported_warning_count": 1,
+  "current_starter_error_ids": [],
+  "source_starter_warning_ids": [
+    "343"
+  ],
+  "source_starter_reported_warning_count": 1,
+  "initial_penetration_warning": {
+    "source_penetrations": [
+      "638"
+    ],
+    "current_penetrations": [
+      "638"
+    ],
+    "source_concerned_nodes": [
+      "212"
+    ],
+    "current_concerned_nodes": [
+      "212"
+    ],
+    "interpretation": "Inherited public-model warning; recorded without changing the physical input or judging validity from warning count alone."
+  },
+  "input_hash_unchanged": {
+    "Bumper_Beam_AP_meshed_0000.rad": {
+      "sha256": "fad6cf13a8b214506b48b0d36dd30dc4b6d315c76a1aba4810e5ee5db3da0f62",
+      "matches_pinned_source": true
+    },
+    "Bumper_Beam_AP_meshed_0001.rad": {
+      "sha256": "d6bbdac8460c8731b5fba6ecc268f40d01ec963099c5a296db163f753836ec5a",
+      "matches_pinned_source": true
+    }
+  },
+  "timing_limitations": "Source and rerun differ in solver build and threads. Other GPU training/inference tasks ran concurrently during local rerun; timing is not an isolated controlled benchmark.",
+  "final_global_differences": {
+    "internal_energy_J": {
+      "source_printed": 6037.0,
+      "rerun_printed": 6037.0,
+      "difference": 0.0,
+      "relative_difference": 0.0
+    },
+    "translational_kinetic_energy_J": {
+      "source_printed": 215.2,
+      "rerun_printed": 215.2,
+      "difference": 0.0,
+      "relative_difference": 0.0
+    },
+    "rotational_kinetic_energy_J": {
+      "source_printed": 0.1671,
+      "rerun_printed": 0.1605,
+      "difference": -0.006599999999999995,
+      "relative_difference": -0.0394973070017953
+    },
+    "external_work_J": {
+      "source_printed": -186.0,
+      "rerun_printed": -186.0,
+      "difference": 0.0,
+      "relative_difference": 0.0
+    },
+    "total_mass_kg": {
+      "source_printed": 517.0,
+      "rerun_printed": 517.0,
+      "difference": 0.0,
+      "relative_difference": 0.0
+    },
+    "added_mass_kg": {
+      "source_printed": 0.1191,
+      "rerun_printed": 0.1196,
+      "difference": 0.0005000000000000004,
+      "relative_difference": 0.004198152812762389
+    }
+  }
+}

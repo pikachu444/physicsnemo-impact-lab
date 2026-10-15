@@ -1,0 +1,38 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{
+  "status": "completed",
+  "nodes": 1024,
+  "model_config": {
+    "functional_dim": 4,
+    "out_dim": 30,
+    "embedding_dim": 3,
+    "n_layers": 4,
+    "n_hidden": 96,
+    "n_head": 4,
+    "slice_num": 16,
+    "use_te": false,
+    "mlp_ratio": 2
+  },
+  "parameters": 293582,
+  "step_seconds": [
+    0.03458469999895897,
+    0.03810840000005555,
+    0.042194500001642155,
+    0.03949490000013611,
+    0.05169040000146197,
+    0.03848400000060792,
+    0.042039699999804725,
+    0.04182829999990645,
+    0.0377662999999302,
+    0.037936099999569706
+  ],
+  "mean_step_seconds": 0.04041273000020738,
+  "peak_cuda_allocated_bytes": 44851200,
+  "sampled_rss_bytes": 1432010752,
+  "estimated_60epoch_112run_training_seconds_with_10percent_overhead": 298.73090016153293,
+  "execution_gate_passed": true,
+  "note": "Real FP32 forward/backward/Adam step after warmup; estimate is not measured full training runtime. GPU allocation excludes CUDA context and dataset cache."
+}

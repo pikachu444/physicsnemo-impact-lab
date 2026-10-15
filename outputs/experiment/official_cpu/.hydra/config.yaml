@@ -1,0 +1,53 @@
+reader:
+  _target_: vtp_reader.Reader
+  _convert_: all
+datapipe:
+  _target_: datapipe.CrashPointCloudDataset
+  _convert_: all
+  data_dir: ${training.raw_data_dir}
+  global_features_filepath: ${training.global_features_filepath}
+  num_samples: ${training.num_training_samples}
+  num_steps: ${training.num_time_steps}
+  sample_type: all_time_steps
+  static_features:
+  - thickness
+  dynamic_features: []
+  dynamic_targets: []
+  global_features: null
+  stats_dir: stats
+training:
+  raw_data_dir: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/TRAINING_DATA
+  raw_data_dir_validation: C:/Users/pikac/Documents/Codex/2026-10-15/physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20/work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA
+  global_features_filepath: null
+  max_workers_preprocessing: 1
+  optimizer: adam
+  optimizer_weight_decay: 0.0001
+  num_time_steps: 11
+  num_training_samples: 2
+  num_validation_samples: 1
+  start_lr: 0.0001
+  end_lr: 3.0e-07
+  epochs: 2
+  validation_freq: 1
+  save_checkpoint_freq: 1
+  amp: false
+  num_dataloader_workers: 0
+  ckpt_path: ./checkpoints
+  tensorboard_log_dir: ./tensorboard_logs
+inference:
+  output_dir_pred: ./predicted_vtps
+  output_dir_exact: ./exact_vtps
+  raw_data_dir_test: ???
+experiment_name: Public-OpenRadioss-Bumper-CPU-Smoke
+model:
+  _target_: rollout.TransolverOneShot
+  _convert_: all
+  functional_dim: 4
+  embedding_dim: 3
+  out_dim: 30
+  slice_num: 16
+  n_layers: 1
+  n_hidden: 32
+  n_head: 4
+  use_te: false
+  num_time_steps: 11

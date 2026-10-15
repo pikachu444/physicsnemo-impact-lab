@@ -1,0 +1,211 @@
+{
+  "scope": "Saved full-training PhysicsNeMo Transolver Run224 predictions compared with independently rerun OpenCourant FEM; no additional training or NN inference executed by this script.",
+  "run": "Run224",
+  "test_run_index": 0,
+  "test_run_order": [
+    "Run224",
+    "Run225",
+    "Run226",
+    "Run227",
+    "Run228",
+    "Run229",
+    "Run230"
+  ],
+  "prediction_file": "outputs/experiment/fulltraining/heldout_predictions.npz",
+  "prediction_sha256": "d78b21af831f84bba85e04897a7dc2623dceb642f0868589e730ba91628b5fc9",
+  "training_metrics_sha256": "ed5663539cfc16947359dc196f402eb8c2725c47243f0d32cfbba39a206f6741",
+  "checkpoint_sha256_from_mesh_contract": "dc1f895100dd521afded61a9c43ced99a866e312cd2ec7629bee840ac29d124b",
+  "reference_vtp_sha256": "f9d73f1d9767b07b52cbf1c277ee67751f8498aa10ba62331cead08bdb6c7275",
+  "rad_sha256": "fad6cf13a8b214506b48b0d36dd30dc4b6d315c76a1aba4810e5ee5db3da0f62",
+  "verified_assertions": [
+    "Heldout run names and order exactly Run224..Run230",
+    "NPZ node_indices hash equals full-mesh contract",
+    "All 13675 points have positive thickness and unique node indices",
+    "NPZ coords bitwise equal Run224 VTP coordinates cast float32 at node_indices",
+    "NPZ truth bitwise equal Run224 VTP displacement arrays cast float32 in identical node/time/component order",
+    "Initial-coordinate RAD mapping accepted every selected point uniquely within 0.001mm",
+    "All frame NODE_ID mappings exact, unique, present and finite",
+    "Nominal times exactly 10,20,...,100ms; each actual FIELD TIME differs by <=0.1ms"
+  ],
+  "shape_nodes_times_components": [
+    13675,
+    10,
+    3
+  ],
+  "excluded_reference_points": 1,
+  "source_mapping_max_distance_mm": 3.3046267503180924e-05,
+  "source_mapping_min_second_nearest_distance_mm": 1.9396634333360867,
+  "actual_frame_times": [
+    {
+      "file": "Bumper_Beam_AP_meshedA002.vtk",
+      "sha256": "678f094c0e9dedeee0226ef6a4ebd41cd6c32246a228f38eb2435b03b5a90cf8",
+      "nominal_ms": 10.0,
+      "actual_ms": 10.0001,
+      "difference_ms": 9.999999999976694e-05
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA003.vtk",
+      "sha256": "124a8486f26a7511ecf916cedd28865342ff53effcfe99b9901ab212f2b699d0",
+      "nominal_ms": 20.0,
+      "actual_ms": 20.0001,
+      "difference_ms": 9.999999999976694e-05
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA004.vtk",
+      "sha256": "f71274e29c4b7c4b485cedf842e30e6ef276dc4ea537f18f5e3823dae04492c4",
+      "nominal_ms": 30.0,
+      "actual_ms": 30.0002,
+      "difference_ms": 0.00019999999999953388
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA005.vtk",
+      "sha256": "f69f97ef62d72c57d43f77267b352875938597c5adcf3282b1f2499a3acf8ab6",
+      "nominal_ms": 40.0,
+      "actual_ms": 40.0002,
+      "difference_ms": 0.00019999999999953388
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA006.vtk",
+      "sha256": "d4f7728fcb2f68d34ece44b353ab0454878bc4623d2688a63504e8ddb90a6d61",
+      "nominal_ms": 50.0,
+      "actual_ms": 50.0002,
+      "difference_ms": 0.00019999999999953388
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA007.vtk",
+      "sha256": "6309244ee1e1b62493cc3e557e267047498aeb6193e94bf5b2fd6707c370d2ce",
+      "nominal_ms": 60.0,
+      "actual_ms": 60.0002,
+      "difference_ms": 0.00019999999999953388
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA008.vtk",
+      "sha256": "d500d1764d6507cf7a475264db2d915b891ecb4f3fabaeb8e5b631f4744770e7",
+      "nominal_ms": 70.0,
+      "actual_ms": 70.0003,
+      "difference_ms": 0.0002999999999957481
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA009.vtk",
+      "sha256": "349f158a864fdb14498d0164ffb9208b20ca2dc46f56f88ce6645a1353ca6005",
+      "nominal_ms": 80.0,
+      "actual_ms": 80.0003,
+      "difference_ms": 0.0002999999999957481
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA010.vtk",
+      "sha256": "ecf30eb590f461c62468b5f055dc0004b8c84ba9780af10c765def9778b85392",
+      "nominal_ms": 90.0,
+      "actual_ms": 90.0005,
+      "difference_ms": 0.0005000000000023874
+    },
+    {
+      "file": "Bumper_Beam_AP_meshedA011.vtk",
+      "sha256": "40e9df4700c1a311d4a7faf3c70f082814b46c882f16d2d47a36bc906fd5be9c",
+      "nominal_ms": 100.0,
+      "actual_ms": 100.001,
+      "difference_ms": 0.0010000000000047748
+    }
+  ],
+  "metric_definitions": {
+    "component_rmse": "sqrt(mean over nodes,time,xyz of squared displacement error)",
+    "vector_rmse": "sqrt(mean over nodes,time of squared Euclidean displacement error)",
+    "relative_l2": "L2 norm of displacement error / L2 norm of pair reference displacement"
+  },
+  "all_ten_snapshots": {
+    "nn_vs_original_fem": {
+      "component_rmse_mm": 4.859404325759391,
+      "vector_rmse_mm": 8.416735186735247,
+      "vector_mae_mm": 6.627490223016203,
+      "vector_error_p95_mm": 17.025305283886688,
+      "vector_error_max_mm": 34.29239781632386,
+      "relative_displacement_l2": 0.06442129962394096
+    },
+    "nn_vs_new_fem": {
+      "component_rmse_mm": 4.857321296171668,
+      "vector_rmse_mm": 8.413127273655643,
+      "vector_mae_mm": 6.624676229121369,
+      "vector_error_p95_mm": 17.020045989135756,
+      "vector_error_max_mm": 34.3038023767512,
+      "relative_displacement_l2": 0.06439172891071719
+    },
+    "new_fem_vs_original_fem": {
+      "component_rmse_mm": 0.005296810743450579,
+      "vector_rmse_mm": 0.009174345325733082,
+      "vector_mae_mm": 0.005915558050567545,
+      "vector_error_p95_mm": 0.01142395531318644,
+      "vector_error_max_mm": 0.1184218101345851,
+      "relative_displacement_l2": 7.022001238841461e-05
+    }
+  },
+  "final_100ms": {
+    "nn_vs_original_fem": {
+      "component_rmse_mm": 7.671155113025476,
+      "vector_rmse_mm": 13.2868304085019,
+      "vector_mae_mm": 12.038572418167572,
+      "vector_error_p95_mm": 21.473492311758253,
+      "vector_error_max_mm": 34.29239781632386,
+      "relative_displacement_l2": 0.0940572008226008
+    },
+    "nn_vs_new_fem": {
+      "component_rmse_mm": 7.666988743646143,
+      "vector_rmse_mm": 13.279614045053792,
+      "vector_mae_mm": 12.031442835224073,
+      "vector_error_p95_mm": 21.46242075161705,
+      "vector_error_max_mm": 34.3038023767512,
+      "relative_displacement_l2": 0.09400086310389139
+    },
+    "new_fem_vs_original_fem": {
+      "component_rmse_mm": 0.007227351069646864,
+      "vector_rmse_mm": 0.01251813925676564,
+      "vector_mae_mm": 0.009871583413538193,
+      "vector_error_p95_mm": 0.012647614967498104,
+      "vector_error_max_mm": 0.11359989244067152,
+      "relative_displacement_l2": 8.861565187476819e-05
+    }
+  },
+  "per_time_component_rmse_mm": {
+    "nn_vs_original_fem": [
+      1.616377480489381,
+      1.5462317088493953,
+      2.587362188794778,
+      3.424421384191668,
+      3.959887514169002,
+      4.488614759844985,
+      5.316402647297208,
+      6.228174344440511,
+      7.140322493731613,
+      7.671155113025476
+    ],
+    "nn_vs_new_fem": [
+      1.6164194345690104,
+      1.5461264854452168,
+      2.586872806698211,
+      3.4243590729672855,
+      3.959648283903358,
+      4.487638062801542,
+      5.314187081638413,
+      6.224810528879546,
+      7.136172650455538,
+      7.666988743646143
+    ],
+    "new_fem_vs_original_fem": [
+      0.00040988992103010345,
+      0.001183738000361378,
+      0.0015928337081361121,
+      0.003590374872838765,
+      0.004780964720911005,
+      0.006016654993731911,
+      0.006742915521208642,
+      0.007257255983820656,
+      0.007357842453342484,
+      0.007227351069646864
+    ]
+  },
+  "limits": [
+    "This is one heldout run in a fixed public bumper family, not a full appliance or new-geometry validation.",
+    "New FEM snapshots are nearest actual times, not interpolated; actual/nominal differences are reported.",
+    "Original FEM conversion history and original solver build remain partly unverified.",
+    "FEM repeatability error and NN approximation error are reported separately; NN forward timing and FEM wall time do not have identical output scope."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp_utc": "2026-10-14T23:57:20.646668+00:00",
+  "python": "C:\\Users\\pikac\\Documents\\Codex\\2026-10-15\\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\\work\\gpu-experiment\\venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch_version": "2.13.0+cu126",
+  "torch_path": "C:\\Users\\pikac\\Documents\\Codex\\2026-10-15\\physicsnemo-page-page-6ad00b7eb9f481918f03df6281dc8d85-x20\\work\\gpu-experiment\\venv\\Lib\\site-packages\\torch\\__init__.py",
+  "torch_cuda_build": "12.6",
+  "cuda_available": true,
+  "nvidia_smi_before": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 3060 Laptop GPU, 576.02, 6144 MiB, 0 MiB, 0 %",
+    "stderr": ""
+  },
+  "disk_free_bytes": 91055394816,
+  "pid": 10200,
+  "host_memory_before_bytes": {
+    "total": 16841400320,
+    "available": 636166144,
+    "percent": 96.2,
+    "used": 16205234176,
+    "free": 636166144
+  },
+  "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_capability": [
+    8,
+    6
+  ],
+  "tensor_shape": [
+    1024,
+    1024
+  ],
+  "tensor_device": "cuda:0",
+  "loss": 0.9994174242019653,
+  "gradient_assertion_passed": true,
+  "cuda_forward_backward_wall_seconds_including_first_operation": 0.4734554999995453,
+  "torch_peak_allocated_bytes": 29360640,
+  "torch_peak_reserved_bytes": 48234496,
+  "nvidia_smi_tensors_alive": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 3060 Laptop GPU, 576.02, 6144 MiB, 169 MiB, 5 %",
+    "stderr": ""
+  },
+  "status": "passed",
+  "process_rss_after_bytes": 824283136
+}

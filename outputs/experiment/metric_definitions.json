@@ -1,0 +1,13 @@
+{
+  "evaluation_population": "Heldout runs, selected positive-thickness nodes, source times10..100ms, all3 displacement components; t0 is excluded from error aggregates.",
+  "displacement_relative_l2": "sqrt(sum((u_prediction-u_FEM)^2)/sum(u_FEM^2)), summed over run,node,time,xyz. Denominator uses displacement, not absolute position.",
+  "displacement_rmse_native_units": "Displacement COMPONENT RMSE in mm: sqrt(mean((u_prediction-u_FEM)^2)) over run,node,time,xyz.",
+  "node_vector_rmse": "sqrt(mean(||u_prediction-u_FEM||_2^2)) over run,node,time, equal to sqrt(3) times component RMSE for3 components.",
+  "spatial_weighting": "Uniform nodal weighting. No element-volume or nodal-mass weighting.",
+  "zero_displacement_baseline": "Prediction u=0; displacement-relative L2 is exactly1 when FEM displacement energy is nonzero.",
+  "training_mean_field_baseline": "At each aligned node,time,component, predict mean displacement from112 training runs only.",
+  "normalization": "Input, coordinates and target normalization fitted on112 training runs only. Twelve internal validation runs select checkpoint;7 official validation runs act as heldout evaluation.",
+  "timing": "GPU training seconds cover epoch loops with validation/checkpoint writing. Reported inference seconds cover synchronized warm forward calls, excluding loading, transfers and file I/O.",
+  "memory": "cuda_peak_allocated_bytes is PyTorch tensor allocation, excluding driver/context and other processes. peak_sampled_rss_bytes is maximum sampled at initialization/epoch boundaries, not a true process peak.",
+  "limits": "These metrics validate displacement interpolation on a fixed mesh and fixed velocity. They do not establish stress, plastic strain, energy conservation, contact forces, damage, failure probability, new geometry, or appliance drop performance."
+}

@@ -1,0 +1,96 @@
+{
+  "working_directory": "Workspace root containing work/ and outputs/",
+  "environment_variables": {
+    "PYTHONUTF8": "1",
+    "TORCHDYNAMO_DISABLE": "1",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "gpu_python": "work/gpu-experiment/venv/Scripts/python.exe",
+  "cpu_python": "work/physicsnemo-experiment/.venv/Scripts/python.exe",
+  "public_data_root": "work/physicsnemo-experiment/data/CURATED_DATA_VTP",
+  "runs": [
+    {
+      "name": "gpu1024",
+      "exit_code": 0,
+      "script": "outputs/experiment/gpu1024/executed_source.py",
+      "arguments": [
+        "--device",
+        "cuda",
+        "--epochs",
+        "60",
+        "--nodes",
+        "1024",
+        "--data",
+        "work/physicsnemo-experiment/data/CURATED_DATA_VTP",
+        "--out",
+        "outputs/experiment/gpu1024"
+      ]
+    },
+    {
+      "name": "fulltraining",
+      "exit_code": 0,
+      "script": "outputs/experiment/fulltraining/executed_source.py",
+      "arguments": [
+        "--device",
+        "cuda",
+        "--epochs",
+        "60",
+        "--nodes",
+        "13675",
+        "--skip-kernel",
+        "--data",
+        "work/physicsnemo-experiment/data/CURATED_DATA_VTP",
+        "--out",
+        "outputs/experiment/fulltraining"
+      ]
+    },
+    {
+      "name": "full_checkpoint_inference_reuse",
+      "exit_code": 0,
+      "script": "outputs/experiment/infer_checkpoint.py",
+      "arguments": [
+        "--checkpoint",
+        "outputs/experiment/fulltraining/transolver_cuda_checkpoint.pt",
+        "--vtp",
+        "work/physicsnemo-experiment/data/CURATED_DATA_VTP/VALIDATION_DATA/Run224.vtp",
+        "--globals",
+        "work/physicsnemo-experiment/data/CURATED_DATA_VTP/GLOBAL_FEATURES.json",
+        "--device",
+        "cuda",
+        "--reference-predictions",
+        "outputs/experiment/fulltraining/heldout_predictions.npz",
+        "--out",
+        "outputs/experiment/fulltraining/inference_reuse"
+      ]
+    },
+    {
+      "name": "capacity1024",
+      "status": "completed",
+      "script": "outputs/experiment/capacity1024/executed_source.py",
+      "arguments": [
+        "--device",
+        "cuda",
+        "--epochs",
+        "60",
+        "--nodes",
+        "1024",
+        "--skip-kernel",
+        "--layers",
+        "4",
+        "--hidden",
+        "96",
+        "--slices",
+        "16",
+        "--heads",
+        "4",
+        "--data",
+        "work/physicsnemo-experiment/data/CURATED_DATA_VTP",
+        "--out",
+        "outputs/experiment/capacity1024"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "note": "Use -X utf8 -u before each script. The optional reference-predictions argument is for local reproducibility assertions and can be omitted for ordinary inference. Completed checkpoint and mesh_contract.json must be kept together."
+}

@@ -1,0 +1,4 @@
+# Preserve the exact bytes of measured evidence and executed-source snapshots.
+# Their SHA256 values are recorded in manifests and metrics.
+outputs/** -text
+results/** -text

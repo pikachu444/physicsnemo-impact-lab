@@ -1,0 +1,136 @@
+FEM data loaded: train=112 val=12 test=7 nodes=1024/13676 times=[0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0]
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+PhysicsNeMo model instantiated: 293582 parameters; device=cuda
+{"epoch": 1, "training_normalized_mse": 0.5774353612214327, "validation_normalized_mse": 0.35420045504967373, "seconds": 6.6870672999993985}
+{"epoch": 5, "training_normalized_mse": 0.3679228655195662, "validation_normalized_mse": 0.410991583019495, "seconds": 5.937664199998835}
+{"epoch": 10, "training_normalized_mse": 0.3663549656048417, "validation_normalized_mse": 0.27917588750521344, "seconds": 4.636583500001507}
+{"epoch": 15, "training_normalized_mse": 0.33656123214002165, "validation_normalized_mse": 0.27928806468844414, "seconds": 4.990646899999774}
+{"epoch": 20, "training_normalized_mse": 0.334160503000021, "validation_normalized_mse": 0.28351985787351924, "seconds": 4.709358500000235}
+{"epoch": 25, "training_normalized_mse": 0.32434917793476153, "validation_normalized_mse": 0.2856805423895518, "seconds": 4.578678199999558}
+{"epoch": 30, "training_normalized_mse": 0.31833101509671125, "validation_normalized_mse": 0.25258968708415824, "seconds": 4.581123500000103}
+{"epoch": 35, "training_normalized_mse": 0.312346626073122, "validation_normalized_mse": 0.23675773106515408, "seconds": 5.403409500000635}
+{"epoch": 40, "training_normalized_mse": 0.2971564761496016, "validation_normalized_mse": 0.24961029924452305, "seconds": 5.280824800000119}
+{"epoch": 45, "training_normalized_mse": 0.2776658474467695, "validation_normalized_mse": 0.24397320672869682, "seconds": 4.953132800001185}
+{"epoch": 50, "training_normalized_mse": 0.25520362738253816, "validation_normalized_mse": 0.2047430487970511, "seconds": 4.611622599999464}
+{"epoch": 55, "training_normalized_mse": 0.2297774291863399, "validation_normalized_mse": 0.20063264730075994, "seconds": 4.383874499999365}
+{"epoch": 60, "training_normalized_mse": 0.2151762656867504, "validation_normalized_mse": 0.18808570193747678, "seconds": 3.865619800000786}
+{
+  "best_epoch": 60,
+  "training_seconds": 291.08262769999965,
+  "metrics": {
+    "physicsnemo_transolver": {
+      "displacement_relative_l2": 0.05476745657240351,
+      "displacement_rmse_native_units": 4.611600166239004,
+      "per_timestep_relative_l2": [
+        0.05461855198861265,
+        0.04882511795474247,
+        0.049397185659922245,
+        0.04911079875171644,
+        0.04953357783334868,
+        0.05158112729552175,
+        0.05344129625260706,
+        0.05656030755054394,
+        0.05950427469077859,
+        0.060552632228151174
+      ],
+      "per_timestep_rmse_native_units": [
+        1.297759708162977,
+        2.087496977166444,
+        2.958342316757966,
+        3.667841086924372,
+        4.28898221555179,
+        4.9325739370589385,
+        5.43381799822654,
+        5.918313202885305,
+        6.228683062797975,
+        6.192490092744531
+      ],
+      "per_run_relative_l2": [
+        0.06882496216068272,
+        0.04599281874574102,
+        0.04730674022518755,
+        0.06119618592616439,
+        0.04527769608195368,
+        0.05692182602498219,
+        0.05558731212609013
+      ]
+    },
+    "zero_displacement": {
+      "displacement_relative_l2": 1.0,
+      "displacement_rmse_native_units": 84.20329251811044,
+      "per_timestep_relative_l2": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_timestep_rmse_native_units": [
+        23.76041950789075,
+        42.754571102140716,
+        59.888883895630066,
+        74.68502203491812,
+        86.58736968247457,
+        95.62749392425904,
+        101.67825968408202,
+        104.6372174973859,
+        104.6762286435068,
+        102.26624120009133
+      ],
+      "per_run_relative_l2": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "training_mean_field": {
+      "displacement_relative_l2": 0.2058786710425778,
+      "displacement_rmse_native_units": 17.335661961038014,
+      "per_timestep_relative_l2": [
+        0.14361750921192648,
+        0.14443190705258593,
+        0.14401194625711283,
+        0.1561031925186753,
+        0.1726606401901588,
+        0.18972661363630253,
+        0.20589548021738158,
+        0.22040073726463508,
+        0.23318670997814828,
+        0.24476139391287732
+      ],
+      "per_timestep_rmse_native_units": [
+        3.412412267553737,
+        6.175124239497565,
+        8.624714728975947,
+        11.65857037297833,
+        14.950230681758008,
+        18.143080592775764,
+        20.9350941053217,
+        23.062119881743826,
+        24.40910537029976,
+        25.030827746364878
+      ],
+      "per_run_relative_l2": [
+        0.2359931523619028,
+        0.20383171940455175,
+        0.17523167652775323,
+        0.22004203658013294,
+        0.19981293664791266,
+        0.24928914260655954,
+        0.10963404180371157
+      ]
+    }
+  }
+}

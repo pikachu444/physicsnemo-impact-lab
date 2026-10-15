@@ -1,0 +1,9 @@
+*.npz
+pip-*.log
+!pip-check.log
+**/tensorboard/
+**/tensorboard_logs/
+**/output_*/
+**/transolver_best_checkpoint.pt
+local-run/
+*.whl

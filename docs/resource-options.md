@@ -1,6 +1,8 @@
 # 실행 환경·GPU 자원 대안
 
-조사 기준: 2026-10-15, 한국 시간. 이 문서는 공개 공식 문서·가격표 확인 결과와 실험 제안을 구분한다. 이 조사에서 클라우드 인스턴스를 만들거나 결제하지 않았다. 아래 시간은 학습 완료 시간의 예측이 아니라 비용을 비교하기 위한 GPU 점유 시간 시나리오다.
+조사 기준: 2026-10-15, 한국 시간. 이 문서는 공개 공식 문서·가격표 확인 결과와 실험 제안을 구분한다. 유료 GPU 인스턴스를 만들거나 결제하지 않았다. 아래 시간은 학습 완료 시간의 예측이 아니라 비용을 비교하기 위한 GPU 점유 시간 시나리오다.
+
+**실행 결과에 따른 보완:** 이후 별도 실제 실험에서 보유 RTX3060 Laptop6GB로 공개 범퍼13,675절점의 Transolver 학습·평가를 완료했다. 60epoch260.53초, Torch 최대 할당383.35MB로, 이 작은 네트워크·현재 데이터 실험을 위해 유료GPU가 필수라는 근거는 없다. 큰 조립체나 다른 모델의 필요 자원은 별도 측정해야 한다. 아래 가격표는 후속 대안 비교다. [실제 실험](experiment-results.md), [로컬 GPU 환경 기록](../outputs/gpu-experiment/README.md)
 
 ## 1. Codex Cloud: 문서 확인과 실측은 별개
 
@@ -11,11 +13,11 @@
 | Plus, Edu Plus | 2 | 8 GiB | 8 GiB |
 | Pro, Business, Enterprise, Edu, Edu Pro | 4 | 16 GiB | 32 GiB |
 
-GPU/CUDA가 위 기본 사양 표에 명시되어 있지 않다. 따라서 **GPU 제공이 문서로 보장되지 않는다**고 판단하며, **실제 VM에 GPU가 없음을 관측했다**고 기록하면 안 된다. Enterprise의 더 큰 VM·맞춤 사양은 별도 문의 대상이다. [Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments)
+GPU/CUDA가 위 기본 사양 표에 명시되어 있지 않다. 따라서 **GPU 제공이 문서로 보장되지 않는다**고 판단한다. 문서 표만으로 실제 VM에 GPU가 없음을 관측했다고 기록할 수는 없다. 이후 별도로 만든 Cloud 환경에서는 `/dev/nvidia*`와 NVIDIA PCI 장치가 노출되지 않음을 실제 확인했다. 이는 해당 컨테이너의 측정이며 모든 Cloud 호스트의 GPU 유무를 단정하지 않는다. Enterprise의 더 큰 VM·맞춤 사양은 별도 문의 대상이다. [Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments), [해당 환경의 실측](../results/cloud/README.md)
 
 클라우드 환경은 저장소를 선택해 준비·검사·Publish한 뒤 새 작업에서 사용한다. 인터넷은 환경별 설정 대상이며, Package managers 프리셋에는 PyPI, PyTorch, GitHub 소스·릴리스 호스트와 NVIDIA 패키지 호스트 등이 포함된다. 그 외 데이터 서버·리다이렉션 호스트는 별도 허용이 필요할 수 있다. 저장된 VM 상태는 소스 관리의 대체물이 아니다. [환경 및 네트워크 설정](https://learn.chatgpt.com/docs/environments/cloud-environments)
 
-**제안:** GitHub 저장소 연결 후 첫 작업에서 CPU·RAM·가용 디스크·`nvidia-smi`·PyTorch CUDA 가용성·GPU 텐서 연산·필요한 데이터 URL 접근을 한 번에 수집한다. GPU 미검출 또는 디스크 부족이 확인되면 기록한 원인과 함께 GPU 실행 경로로 이동한다. CPU 설치/기능 검사는 준비 단계로 남기며, 실제 낙하·충격 학습 검증을 완료한 것으로 취급하지 않는다.
+**실행 상태:** GitHub 저장소를 연결해 Cloud 환경을 준비·게시했고 CPU·RAM·디스크·GPU 장치·네트워크를 검사했다. 이 컨테이너에는 PyTorch와 NVIDIA GPU가 없어 Cloud GPU 텐서 연산·학습은 수행하지 않았다. 사용자 로컬의 별도 CUDA 환경에서 GPU 텐서 역전파와 실제 공개 FEM 학습·평가를 완료했다. 후속 환경에서도 드라이버 인식·GPU 연산·학습·오차 검증을 각각 확인한다.
 
 ## 2. 유료 GPU 대안: 공식 공개 단가
 
@@ -45,18 +47,18 @@ Lambda 행은 다중 GPU 표의 GPU당 가격을 단일 GPU 인스턴스 비용�
 
 ## 4. 로컬 RTX 3060 Laptop 6 GiB 활용 경로
 
-다른 환경 검사 담당자가 전달한 로컬 사양은 RTX 3060 Laptop 6 GiB, 시스템 RAM 약 15.7 GiB, 현재 설치된 CPU용 PyTorch다. 이는 이 문서 작성자가 새로 실측한 값이 아니다. GPU 하드웨어 존재와 현재 Python 환경의 GPU 사용 가능성은 서로 다른 상태다.
+초기 환경 검사에서 전달받은 로컬 사양은 RTX3060 Laptop6GiB·시스템 RAM약15.7GiB·전역 CPU용 PyTorch였다. 이후 기존 전역 환경을 보존한 별도 venv에서 CUDA PyTorch를 설치하고 실제 역전파·공개 FEM 학습을 완료했다. 초기 CPU 상태와 최종 GPU 실행 상태를 구분한다. [최종 GPU 실행 기록](../outputs/gpu-experiment/README.md)
 
 최신 PhysicsNeMo 공식 요구사항은 Windows(native/WSL), Ubuntu 24.04와 RTX 30xx를 지원 대상으로 명시한다. 그러므로 Windows라는 이유만으로 실행 불가능하다고 단정할 근거는 없다. [PhysicsNeMo 요구사항](https://docs.nvidia.com/physicsnemo/latest/getting-started/system_requirements.html)
 
-권장 실행 순서는 다음과 같다.
+아래는 적용한 순서와 추가 대안이다. 현재 선택한 네이티브 Windows 경로는 실제 학습까지 완료했다.
 
 1. 기존 Python 환경을 보존하고 프로젝트 전용 가상환경을 만든다.
 2. PyTorch 공식 선택기에서 Windows·pip·호환 CUDA 빌드를 골라 설치한다. GPU 텐서 연산과 `torch.cuda.is_available()`을 확인한다. 설치 버전·드라이버·`torch.version.cuda`를 함께 기록한다. [PyTorch 공식 설치·검사](https://pytorch.org/get-started/locally/)
 3. 그 환경에 PhysicsNeMo와 선택한 예제의 추가 의존성을 설치한다. 공식 문서는 PyTorch를 먼저 설치한 뒤 PhysicsNeMo를 설치하는 pip/uv 경로와, 의존성을 포함한 NGC 컨테이너 경로를 제공한다. 예제별 추가 패키지는 별도 확인 대상이다. [PhysicsNeMo 설치](https://docs.nvidia.com/physicsnemo/latest/getting-started/installation.html)
 4. 네이티브 Windows 추가 의존성에서 문제가 발생하면 WSL 2를 비교한다. NVIDIA는 Windows 드라이버를 WSL에서 공유하며 WSL 내부 Linux 디스플레이 드라이버를 설치하지 않도록 명시한다. WSL 설정·재부팅이 필요한 경우는 별도 사용자 작업으로 설명한다. [CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
 
-**추정:** 6 GiB는 작은 모델·작은 배치의 실제 GPU 학습 및 추론을 시도할 자원이다. 그러나 특정 crash/drop 예제 전체 설정, 대규모 조립체 또는 장기 시계열 rollout이 들어간다는 보장은 없다. 메모리는 절점 수뿐 아니라 간선 수, 상태 채널, 은닉 폭, 층 수, 배치, 시간창, 정밀도, 활성값 저장 방식에 좌우된다. 작은 성공 사례를 전체 제품 학습 가능성의 증거로 확대하지 않는다.
+**실측과 한계:** 보유6GiB에서 현재 공개 범퍼·작은 batch의 실제 GPU 학습·평가를 완료했다. 그러나 공식 crash/drop 전체 구성, 대규모 조립체 또는 장기 rollout이 들어간다는 보장은 없다. 메모리는 절점 수뿐 아니라 간선 수, 상태 채널, 은닉 폭, 층 수, 배치, 시간창, 정밀도, 활성값 저장 방식에 좌우된다. 작은 성공 사례를 전체 제품 학습 가능성의 증거로 확대하지 않는다.
 
 ## 5. 자원 산정과 실행 기록 방법
 

@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "status": "manually_stopped_for_runtime_cap_extension",
+  "reason": "The initial wrapper fixed a 600-second cap. After observing ETA and authorization to extend to 1200 seconds, only the identified owned Run224 engine was stopped and the unmodified input was restarted in a separate directory.",
+  "last_printed_cycle_index": 19600,
+  "last_printed_model_time_ms": 19.6000,
+  "last_solver_reported_elapsed_seconds": 202.29,
+  "last_solver_reported_remaining_seconds": 829.78,
+  "process_engine_elapsed_seconds": 203.1343175,
+  "include_in_successful_rerun_wall_time": false,
+  "original_logs_location": "work/bumper-fem-rerun/run"
+}

@@ -1,0 +1,1022 @@
+{
+  "code_commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "dataset_commit": "78f1302fba4d75926c6fdd22d01d5133efc14742",
+  "download_seconds": 41.58177109999997,
+  "total_bytes": 540482522,
+  "files": [
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/GLOBAL_FEATURES.json",
+      "path": "data/CURATED_DATA_VTP/GLOBAL_FEATURES.json",
+      "bytes": 15994,
+      "sha256": "6267b9345ee1fb1f942a8bfcbe7e466d4853ceeeb223b31fc77307b1d58089da"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run100.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run100.vtp",
+      "bytes": 4118718,
+      "sha256": "dfded996ec7ad23d88e6b561d5125a95fbca404ffa965db0a6251400b5ef8668"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run101.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run101.vtp",
+      "bytes": 4117554,
+      "sha256": "6fa840fe65040a64b7ce5ef07106f329afb7e4ad19a7ada015c709b1e08f03fe"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run102.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run102.vtp",
+      "bytes": 4131312,
+      "sha256": "a73c9798ced4fceb3df089673e2a8b87f53098c867a8fb2576fbf026e770185e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run103.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run103.vtp",
+      "bytes": 4108764,
+      "sha256": "fbf33f19e491eed2a79449d09e3ead544680816e9944047db24520d88243b38a"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run104.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run104.vtp",
+      "bytes": 4108770,
+      "sha256": "04f2b59744074dd347d430d3d1943f60c7324bd24f4c28faf2d261fe03112cbc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run105.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run105.vtp",
+      "bytes": 4099349,
+      "sha256": "abe91b6867855e3719238d019e42bd75a4c32d208280c90f528118c054679f2b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run106.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run106.vtp",
+      "bytes": 4079311,
+      "sha256": "aefebab2c56c1f9ce5d9d0911ef70c3e4543476624d2b085e017285c6480e058"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run107.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run107.vtp",
+      "bytes": 4221568,
+      "sha256": "7e3452dc11f0c02d7d38b2a9f22b69778e95cac2679c5e5e3075ebc5b2e28d4f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run108.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run108.vtp",
+      "bytes": 4121901,
+      "sha256": "fb79997ac056fbfdc880caa0cbda6e6026771eca7534f5f64ab34983a9db2b15"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run109.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run109.vtp",
+      "bytes": 4103646,
+      "sha256": "78f284a0175cb5865b8a38ad53912df3c61d96ba6db40ac2f94d7f3c45f3b5e4"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run110.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run110.vtp",
+      "bytes": 4164128,
+      "sha256": "4fbc7a04bc97f48094ae28413609948ac3c1c55b5fbe8ffcb0575c20bd46b553"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run111.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run111.vtp",
+      "bytes": 4115722,
+      "sha256": "1616991b581d99e400b97ebb5f9637ff6792f0c055337a30027c9530e033cdfa"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run112.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run112.vtp",
+      "bytes": 4065070,
+      "sha256": "080e82b77b5e2557bb7cb179d96399d37ae2f96e88793e24516718daedf4b4ac"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run113.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run113.vtp",
+      "bytes": 4114692,
+      "sha256": "6e6533c70725b93ad3dc7226b408b2d911ba59de60fc2d5eb74c70a8f3c07341"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run114.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run114.vtp",
+      "bytes": 4133617,
+      "sha256": "3816849795330675c5bdf82b1004155a58570ef3077bbe81600a8b2354cce354"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run115.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run115.vtp",
+      "bytes": 4113819,
+      "sha256": "c582d90198072a0fcedfb428ba448765daf2891f10dda15b53e0e68dbf1300f6"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run116.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run116.vtp",
+      "bytes": 4126627,
+      "sha256": "11d0e7c892a3818a6c2647dcab141684bb32c580b0cf9fa73ba8c5311ec019a5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run117.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run117.vtp",
+      "bytes": 4091729,
+      "sha256": "263bc4d9cb5190691a3b002c42f7d575cb3efb4beac11ed460060a58a80ed590"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run118.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run118.vtp",
+      "bytes": 4068250,
+      "sha256": "4158731068cf963dd331cf56b4c87786e57fac16fb005303fe6a411a4af96d70"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run119.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run119.vtp",
+      "bytes": 4114574,
+      "sha256": "e8c44f4db5104fa7ae1bc2ce0ba5e576c2c6ab66b0b0003079872eaf979a3b38"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run120.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run120.vtp",
+      "bytes": 4131166,
+      "sha256": "1c72c75f24ddc868b56e65a72baf93db2ac2eb3db47ef9a28d3bbe6a8b4fed1e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run121.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run121.vtp",
+      "bytes": 4081356,
+      "sha256": "52230caf90b464c18df28d5ff3c0282d6d78f551aa06382d29ca86aebb649f2d"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run122.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run122.vtp",
+      "bytes": 4118235,
+      "sha256": "92bc63842b3a501f2a403674c0570dbb71b4c52375961949d825912e3f9ca2ce"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run123.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run123.vtp",
+      "bytes": 4168081,
+      "sha256": "443c204bbe1e9049abfcb81ec7d2e27ada5ae5b237d320b72213a978b7506447"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run124.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run124.vtp",
+      "bytes": 4158886,
+      "sha256": "78030554b13b3ff949383c9ca5bfa57e46c0ca95eb659e8a4cef42aeb236e424"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run125.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run125.vtp",
+      "bytes": 4079968,
+      "sha256": "64db5ce5661f02fba6f492fe78fbd4c1b195ff34f0e7f90cfab5823e2c1485ca"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run126.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run126.vtp",
+      "bytes": 4097068,
+      "sha256": "8a0eca3e73d0967d783b566948aa365e14cc443913ec7453a35a40f5f2457059"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run127.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run127.vtp",
+      "bytes": 4068727,
+      "sha256": "dc36f0a2d08d6eb29aa866f261942540754ffe90a390984ea4a8ab4ecc3b8dcd"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run128.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run128.vtp",
+      "bytes": 4198383,
+      "sha256": "6e9180eb8ae577b2cbc3c96becba56e911b129f168ed59c212a811f25066ccb8"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run129.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run129.vtp",
+      "bytes": 4088885,
+      "sha256": "5c9b7994cfcae9ed4191e820dd89ae25cf4592e8789af2511bbcc447dd951313"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run130.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run130.vtp",
+      "bytes": 4112308,
+      "sha256": "86011ee273242896d0f3b0173efcc7f03c88c8f4c8e789f02e5e5f6d26bb0aec"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run131.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run131.vtp",
+      "bytes": 4075708,
+      "sha256": "d17ecaebe4303804dc32aa206349e8270f939d98cb2644d08b6390e642aa31ef"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run132.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run132.vtp",
+      "bytes": 4120924,
+      "sha256": "5bfc470939d9571a319803763102a97a3862a30857ad7ca18ef8e5b2d278ba6b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run133.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run133.vtp",
+      "bytes": 4119615,
+      "sha256": "3aa9efb4dae9dcfe444f2478235a9826a9096b55cd73475076ffc78721d82326"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run134.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run134.vtp",
+      "bytes": 4107072,
+      "sha256": "8ff8ffec73e36ffc4eecd60c3a68a3100ffecada1935c39b2ccb2feb42145231"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run135.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run135.vtp",
+      "bytes": 4170447,
+      "sha256": "257821ab77bf6077d2e222a8da22caec410cea9b55417975701d8324762b226e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run136.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run136.vtp",
+      "bytes": 4157045,
+      "sha256": "e175362beb4025312218a862de6f0fa930e0ca8a9e1e76a9d11afba5535b07d5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run137.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run137.vtp",
+      "bytes": 4124256,
+      "sha256": "d5b867db537dd74a200ed642fe19920411c5562218e9e6af9da25e77fbe65b96"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run138.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run138.vtp",
+      "bytes": 4144482,
+      "sha256": "bb50ed5954cf9c0a6653302d357dc3f5c8da32b1e793ad002736c9d3f091209f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run139.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run139.vtp",
+      "bytes": 4117967,
+      "sha256": "602fffcd666d4f7e9268bb4b43e0acf657cf2d2cbe3e2c9d7e59fffd2728ba3e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run140.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run140.vtp",
+      "bytes": 4072871,
+      "sha256": "b494c6cf485297a9d59fafc16de9b4d60e07c6314fef45b3230071f180fe0503"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run141.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run141.vtp",
+      "bytes": 4089892,
+      "sha256": "59fcdb503bd47b6b55ba0ba4961ae950155e0cd160a784bb5af5185b9905fd97"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run142.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run142.vtp",
+      "bytes": 4101702,
+      "sha256": "6d019b9324800eab666b61ab75624591d2eeb0010a20601a34f7495cf2a135a3"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run143.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run143.vtp",
+      "bytes": 4134887,
+      "sha256": "359d5a0f055d106f953b4fe51f27e650f4eb6cbf3a291c8a57b72770fe95103a"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run144.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run144.vtp",
+      "bytes": 4110209,
+      "sha256": "b1e1089f8e7723e2380911df1648ba3dce81f1d37428b1f2dd7695c61741f618"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run145.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run145.vtp",
+      "bytes": 4096127,
+      "sha256": "165c3832b1bae59d9ac0ec8dfc482bb15820cd15b1d960d6c82ec01afc142240"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run146.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run146.vtp",
+      "bytes": 4086875,
+      "sha256": "d70a798f927ec38dd573c8f8077fa635687b8981d6b6156ee0c5291f846ca81c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run147.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run147.vtp",
+      "bytes": 4188631,
+      "sha256": "d2d5ad1dfc1e74d14aa509fcfa2b4f7d265083d4455887912d354b2e99e23a5f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run148.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run148.vtp",
+      "bytes": 4123530,
+      "sha256": "8b3fc8d826b769c4055ca355e90dbaf924c80ca803ee171cbbd83c957a54c265"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run149.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run149.vtp",
+      "bytes": 4112805,
+      "sha256": "fd75f38778392603570a7ae40296113ede6a80c3e00bda609f073a60577d2ee3"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run150.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run150.vtp",
+      "bytes": 4129548,
+      "sha256": "a42d117b6627ed00f97348ce6c69488d81452cb22ae1300899b5e3c0b2413918"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run151.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run151.vtp",
+      "bytes": 4073609,
+      "sha256": "94f062d443d8cb1beca4fd83ee6d3ba9311408f66724078e9bb07b0a1cd16ffb"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run152.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run152.vtp",
+      "bytes": 4120268,
+      "sha256": "50a9acba6dc9c353c1a715a13557b203f3c8aaa89f5519bed3df090674685310"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run153.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run153.vtp",
+      "bytes": 4101642,
+      "sha256": "e828e69d7ef791e29a8a5efc6851d0f11116cee18973e3f1b0c1b71c6cbd83af"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run154.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run154.vtp",
+      "bytes": 4089563,
+      "sha256": "99c39e32add5e63470213573b5a3fe5872c07bdbd2cc4e32cc9429b9b07ad379"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run155.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run155.vtp",
+      "bytes": 4171354,
+      "sha256": "6d6cc40d2f97c174d18e18f56ded2a85b12370f206ee9ea6085321677da402dd"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run156.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run156.vtp",
+      "bytes": 4193219,
+      "sha256": "260afc4306a6cc34caeb6f99f3f11c448399e006ae4617444d3dafd19aeb4af9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run157.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run157.vtp",
+      "bytes": 4170159,
+      "sha256": "3f1a902953bbade2027c296abb969328c0df30dffcbff20c8812b3c8bd55a72a"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run158.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run158.vtp",
+      "bytes": 4118881,
+      "sha256": "08b47a25ee90cfb6076ff42e52a1ef4cff64d20aebf6e23fe8adb312dc975271"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run159.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run159.vtp",
+      "bytes": 4110304,
+      "sha256": "e998274ec024f11949d3f724551541382b6d7b034a8edb5bd2e0e7dbd46cbe30"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run160.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run160.vtp",
+      "bytes": 4072486,
+      "sha256": "0ef9c4e452d509eb61612aac27d216c95770cd8e891e999b6c140c15b0f66a3b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run161.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run161.vtp",
+      "bytes": 4123870,
+      "sha256": "97641913e6952307de49da8e936104b12ab1eedc18556c6fb9841a077f5c67ef"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run162.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run162.vtp",
+      "bytes": 4147596,
+      "sha256": "67a2f702db5c5be46fb523d4054933ab6461c217a15eb02f47a61f1472066b3d"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run163.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run163.vtp",
+      "bytes": 4110871,
+      "sha256": "e94dbc1fbba8dff24e2ffb0c6953153e19aabbfc42d6907c8e34111ac5d4ac3c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run164.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run164.vtp",
+      "bytes": 4135935,
+      "sha256": "d72adc27342e3a6c9e319b7705523436ab72071ebdd0b75b79e8cb2867714d9c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run165.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run165.vtp",
+      "bytes": 4084981,
+      "sha256": "16e6437f0180050e6d22a9d8cc525a2c94cff80828005b028960555ab9492ba1"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run166.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run166.vtp",
+      "bytes": 4061096,
+      "sha256": "c2eee190e1e1a7d79ff0bd97e4984a37a406f6c267a38bd919669e14b96677c8"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run167.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run167.vtp",
+      "bytes": 4111239,
+      "sha256": "989cd4a64a0e082c11a01b8131f95e441d8b4feeda0bdce0bf28e42fccebb28e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run168.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run168.vtp",
+      "bytes": 4132804,
+      "sha256": "ea4481a657ab8cec6def0122517ef3f33b131feeb55430bd86d2cb0c3b3d37d4"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run169.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run169.vtp",
+      "bytes": 4151877,
+      "sha256": "0796580add9f395b6260d5fcaa525ff9e981e295c2fc50a94a5d8c609d8a2c29"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run170.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run170.vtp",
+      "bytes": 4107314,
+      "sha256": "52988c6e1e5564ca8fdde524710d77351bfd0eae1cb94e94f5e7bc6c4b8e8bdd"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run171.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run171.vtp",
+      "bytes": 4092157,
+      "sha256": "d501dec6b928b345841762de679c5c103039be0a6173b422568d69bf757b6eac"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run172.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run172.vtp",
+      "bytes": 4118043,
+      "sha256": "9de87afe28dd2b847e70e2b8d7e4ee16c885b98f7a48fc805a28f5b25a341b36"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run173.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run173.vtp",
+      "bytes": 4117432,
+      "sha256": "b0cbf2aa8cf6ae5d12fc8612e3f239a6eef3736596b68a577d9585e2b52a0562"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run174.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run174.vtp",
+      "bytes": 4101173,
+      "sha256": "6a9680d3ea4614f722762acc56311d2cb10e7fe11d9736bbbad518a72d33503e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run175.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run175.vtp",
+      "bytes": 4115135,
+      "sha256": "1ef08d96409ba739648ac0599bcb5c3f769f09cef031a5522041ace256d396bc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run176.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run176.vtp",
+      "bytes": 4119293,
+      "sha256": "2576cf4143b0e1530a44d231cf50bc7ae7ef67c1da84f1f8c670b122401e92a0"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run177.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run177.vtp",
+      "bytes": 4146814,
+      "sha256": "84344b3d6c283cf724024cf0dbfdeda7116f89d09d8cd1e72da15ff05ca00fd4"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run178.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run178.vtp",
+      "bytes": 4113204,
+      "sha256": "53d9ed53611d0e8483ac5f98a0776ca816e75adff2fd9dccf253936c8c5103c5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run179.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run179.vtp",
+      "bytes": 4055089,
+      "sha256": "b76a32f560303286a481b32879aff521e787c58548d6dc0acd0685977eaa68be"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run180.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run180.vtp",
+      "bytes": 4103380,
+      "sha256": "26425aadf3c287f57685b4790af1c06d0a5ad94a5c106378c5aa70a779083bac"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run181.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run181.vtp",
+      "bytes": 4187986,
+      "sha256": "4162c6f3a22f2f8c5140c08963bc1781b49daaea60722077c86b6a10b007d64d"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run182.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run182.vtp",
+      "bytes": 4132580,
+      "sha256": "da3c8796d7a705313e9318f3bfe337584a3c8a4930773d33767d76ebc441a1c9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run183.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run183.vtp",
+      "bytes": 4102711,
+      "sha256": "cab53512b0191e958cc85e3428c740427ecf8d09d43b9592864c10ee9660776b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run184.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run184.vtp",
+      "bytes": 4139707,
+      "sha256": "5b761b7735f112997338879df68e5371b7ba7f24eeb6eb99f2a49d66d9535083"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run185.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run185.vtp",
+      "bytes": 4116241,
+      "sha256": "04f4ac855aa1eefd14465abdf7282a015c690098be58c7f7014861425f9db8c5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run186.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run186.vtp",
+      "bytes": 4093211,
+      "sha256": "6b5988cc773fb142e0ee045b440b3f7929d3f7bce2573b677cb552f7a2fc1c9b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run187.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run187.vtp",
+      "bytes": 4114324,
+      "sha256": "6493306ba67055f1caaab3858ea4cd8e1f82a0daeea8eb211810cd4a40c1c083"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run188.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run188.vtp",
+      "bytes": 4172290,
+      "sha256": "2ffeab02dbe1c344eadb051f05984b3b5e261008b803b78d4b73e89d7346a001"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run189.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run189.vtp",
+      "bytes": 4200254,
+      "sha256": "1ed81e7c82edaaecb0b6c879f5d66f01602891044425142a48d5fcbf44eda5e9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run190.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run190.vtp",
+      "bytes": 4101924,
+      "sha256": "71843e7064a2d27475da5e39aed54de67a9c2b0227779028c1a98eb5af15187c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run191.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run191.vtp",
+      "bytes": 4091852,
+      "sha256": "f00b48ddc3e2844e93b0c20b4115be5ca3980d5563119bad59a0fca551766bd4"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run192.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run192.vtp",
+      "bytes": 4141039,
+      "sha256": "7366bc3b0b929c447c823fe3fdf4cab004f64862e39cf8e6eee663f429fe5b43"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run193.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run193.vtp",
+      "bytes": 4086537,
+      "sha256": "4852a2653c6852aae5595e22f4934f7dbfee9c38c0e98d0a10a3ad5464f931f2"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run194.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run194.vtp",
+      "bytes": 4493223,
+      "sha256": "6325059dc2122d5eab9584a5a0af8e026ea2d4f61aa33f00adf8be574aa56bdc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run195.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run195.vtp",
+      "bytes": 4106297,
+      "sha256": "0f2023e1e73b2ccd844e1b55ce924dbbe2d3704a13fd6043f13311fcc82056c0"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run196.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run196.vtp",
+      "bytes": 4110285,
+      "sha256": "bacd29391dff00d8da5a66bf45a2ed4ce829c663e1ddc9d326e24756bef275a7"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run197.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run197.vtp",
+      "bytes": 4112154,
+      "sha256": "6625f79f891277ddd93a3b076f3a4b9486fa3543095a70529d3ce2b7c3db99bc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run198.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run198.vtp",
+      "bytes": 4091184,
+      "sha256": "7ef8b1a5ff697bc401c5d5c9deb599cca5a0ac94d3f9a6be1df6defd0c1f42bc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run199.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run199.vtp",
+      "bytes": 4117822,
+      "sha256": "c2718d604f20bea2dfa5e65e04c7a941f3e22442a9cd9ac39e7e45be0d1b61cf"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run200.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run200.vtp",
+      "bytes": 4094036,
+      "sha256": "f621bba7fd15db731e222a0812a6100034150294515c0428ab0a3cab1292e51c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run201.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run201.vtp",
+      "bytes": 4113438,
+      "sha256": "e7f6e66f886a0ec59f6626d8b79e2fe14270cf691462bfaea5edb2c010d79019"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run202.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run202.vtp",
+      "bytes": 4124388,
+      "sha256": "10a70180fd3554dc3a82ba08ff9a15ed6e026beb6b3c39197b61ca97c96a38d6"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run203.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run203.vtp",
+      "bytes": 4468120,
+      "sha256": "a8e5ccb5c5d3d2548f67ccd0edcea543e0824397c9022550cb38ef42b2a0adff"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run204.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run204.vtp",
+      "bytes": 4117243,
+      "sha256": "a8117624047ccbd2ca3154a9b8cdc9339e65260bc73f02d64efb44c29be14cbe"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run205.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run205.vtp",
+      "bytes": 4108454,
+      "sha256": "ac17bed8e43292d2afb8fbb7cdfe506f63b77a18f49d364a5b60440de0c0e990"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run206.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run206.vtp",
+      "bytes": 4114963,
+      "sha256": "1e8806bfa5237cc80dac3459bc0a0693c270c022f4b3852a0b40312f8476aca6"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run207.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run207.vtp",
+      "bytes": 4112051,
+      "sha256": "484fd1cfc536dcaf44cd38be2448aaef45cb84a8661f5e2b421c5651890a289a"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run208.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run208.vtp",
+      "bytes": 4103254,
+      "sha256": "a2fca5935f0331c928c5ab83ab949ce5fcfff6995dbf9c4354034a36bc145d6b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run209.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run209.vtp",
+      "bytes": 4117676,
+      "sha256": "cbb174aa58043b1a7729a54b93950b95e96fbe47de0ffaffefcc34e38bdd7ea5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run210.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run210.vtp",
+      "bytes": 4102777,
+      "sha256": "70ff6c6497151b81f0f4638fdcc5f997c482ec4a5f713534bb4f6c5f124cd7f7"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run211.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run211.vtp",
+      "bytes": 4113968,
+      "sha256": "9f046f3f2e95290e521bfab1aab6200fd0f038908845e4732feb4f67a43ab8e8"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run212.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run212.vtp",
+      "bytes": 4114195,
+      "sha256": "951bbc11eaa4efcfe41260358500eeebd43525468222d1e9e6a1c7b143c615f5"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run213.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run213.vtp",
+      "bytes": 4100421,
+      "sha256": "1524b92ff1bd61035acb2930d1288c1bbb2e5dd7d77ce8bf65ed511d86b2adcc"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run214.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run214.vtp",
+      "bytes": 4115583,
+      "sha256": "4129ac51440f4ae9b6dbe03f936af558be32ea7e8bcb5198ce0c4f55b0a73d3f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run215.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run215.vtp",
+      "bytes": 4196914,
+      "sha256": "9c731329f0b80ff74af1cd8e2cec63541e355cb1cdad52537c41b19073fa3d98"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run216.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run216.vtp",
+      "bytes": 4096136,
+      "sha256": "ebf7a78890e38bf31735a7e165617e6947f6c2ccc0bcb8bca4e79420b81d6ee9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run217.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run217.vtp",
+      "bytes": 4130493,
+      "sha256": "cd1693237b6c49f49fb81f56b4cde0653313abab57be938e5ed64d307ba7920a"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run218.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run218.vtp",
+      "bytes": 4133162,
+      "sha256": "f161894fe62a0747942bdf2f765d3342339984253f1e8c464e38d3257e15c0fe"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run219.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run219.vtp",
+      "bytes": 4101989,
+      "sha256": "8ffb8df462de2f2e640a0d9a68313312386baf9d7ac7fe72610509ee50cd3da8"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run220.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run220.vtp",
+      "bytes": 4108519,
+      "sha256": "e2d0c5233f269bd6c3cc1e45004765f166ef84504f5d45a210b4a176bf9b73f9"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run221.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run221.vtp",
+      "bytes": 4123054,
+      "sha256": "5820cad6a10fb1e2b445c24f9fc1275377b24a11b1bca399f1a6c7f759d671d4"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run222.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run222.vtp",
+      "bytes": 4085024,
+      "sha256": "e02f94bd6ba4f4b4c0576a5df08461bbf6957c03962c8918e640402bdb521706"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/TRAINING_DATA/Run223.vtp",
+      "path": "data/CURATED_DATA_VTP/TRAINING_DATA/Run223.vtp",
+      "bytes": 4086731,
+      "sha256": "3dcae5b2d7823d46dbe0b1d6860a218e952ede6ec95359cc4f0b175c078fdb18"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run224.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run224.vtp",
+      "bytes": 4096558,
+      "sha256": "f9d73f1d9767b07b52cbf1c277ee67751f8498aa10ba62331cead08bdb6c7275"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run225.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run225.vtp",
+      "bytes": 4130638,
+      "sha256": "226c3cd7c7686102e894a310cdf656778d0b20da8f38f2add279d1556103b08b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run226.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run226.vtp",
+      "bytes": 4116016,
+      "sha256": "9656d1443a317514d4735556a295de1f6df2a1543530305cb8e536121234646b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run227.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run227.vtp",
+      "bytes": 4198251,
+      "sha256": "f613843ff66faaa4ff61887fb513ab5ff098202596ffffbc60ccff1f3941803c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run228.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run228.vtp",
+      "bytes": 4154997,
+      "sha256": "ef56173107e6928aaefe1ef1493f5eb7316c35034d69e5925e584c83b23f0851"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run229.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run229.vtp",
+      "bytes": 4155484,
+      "sha256": "5b7170e360bebcfcfe4715fc647ead2388b19c1f8bfd98a67af5f13a229ee9d1"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/CURATED_DATA_VTP/VALIDATION_DATA/Run230.vtp",
+      "path": "data/CURATED_DATA_VTP/VALIDATION_DATA/Run230.vtp",
+      "bytes": 4116330,
+      "sha256": "fca5478ea16f461dd89c8092ce3570e68a42b8db9c0abd6c001c4b7ca8fc850f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/README.md",
+      "path": "original_crash/README.md",
+      "bytes": 34858,
+      "sha256": "dd7c774c3651b2aaea08f6f113e98f5e32c07e1d6d516d95531ae7ff93d74e7e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/README.md",
+      "path": "original_crash/conf/README.md",
+      "bytes": 1207,
+      "sha256": "94c9df65066bd885ae4c71b56d4ee59434f5160286904726960f1bc40a6f30dc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geoflare_oneshot.yaml",
+      "path": "original_crash/conf/bumper_geoflare_oneshot.yaml",
+      "bytes": 3465,
+      "sha256": "d1cec7e05eacb68c616c66bd4cc0d24ef50e9f9d81ce9715a9d03d71bb8831d7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_oneshot.yaml",
+      "path": "original_crash/conf/bumper_geotransolver_oneshot.yaml",
+      "bytes": 3549,
+      "sha256": "01f78f7241cbeb49207d02f69193ec54374463ca2833ed97f65a34e89d899df1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "path": "original_crash/conf/bumper_geotransolver_time_conditional.yaml",
+      "bytes": 3376,
+      "sha256": "72e6e193ca37b27794f41420681d023f9a4b788122753e3ef4555838713a5c13"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geoflare_oneshot.yaml",
+      "path": "original_crash/conf/crash_geoflare_oneshot.yaml",
+      "bytes": 3456,
+      "sha256": "649fd8f069b3237a7a252aaa6182d14df17a94c8b7f674e581645b804c322742"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/crash_geotransolver_oneshot.yaml",
+      "path": "original_crash/conf/crash_geotransolver_oneshot.yaml",
+      "bytes": 3394,
+      "sha256": "44f526283a45bf596955a2de781396d8bc5929c62a00dc2b84e7017c0c1a37db"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/graph.yaml",
+      "path": "original_crash/conf/datapipe/graph.yaml",
+      "bytes": 1325,
+      "sha256": "30a6699b69762277414ad1ae961a500f6af0b7abe36107433b956fc3e7377a5a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/datapipe/point_cloud.yaml",
+      "path": "original_crash/conf/datapipe/point_cloud.yaml",
+      "bytes": 1271,
+      "sha256": "0bdf2c5ee82527b92fa4f21cc341397e1989b1bb540b728264a30914dae8fa32"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/inference/default.yaml",
+      "path": "original_crash/conf/inference/default.yaml",
+      "bytes": 877,
+      "sha256": "5be8135a889e6af99f2215eed65c7c5dc26ff524e85a6abbba0b1e12d31caee0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/figconvunet_one_shot.yaml",
+      "path": "original_crash/conf/model/figconvunet_one_shot.yaml",
+      "bytes": 1646,
+      "sha256": "a671e7ef304c5f7215a5f26edc30f975f53a104661c4d4aec4f3888f6c75bae5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "path": "original_crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_shot.yaml",
+      "path": "original_crash/conf/model/geotransolver_one_shot.yaml",
+      "bytes": 1098,
+      "sha256": "8c965d7def164d68c550aab5d68ceb7acf2e283ac84ee105832953c7fcd4e8c2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "path": "original_crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+      "path": "original_crash/conf/model/geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/mgn_one_shot.yaml",
+      "path": "original_crash/conf/model/mgn_one_shot.yaml",
+      "bytes": 1133,
+      "sha256": "58a084f724018a006f97884af418b32daa2c20d146d0326776e1bf8f198adcc3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/transolver_one_shot.yaml",
+      "path": "original_crash/conf/model/transolver_one_shot.yaml",
+      "bytes": 1192,
+      "sha256": "d53585ded8a8960d748d46095d334f8853ed0a6448902065e7db878ddb2ed109"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/reader/vtp.yaml",
+      "path": "original_crash/conf/reader/vtp.yaml",
+      "bytes": 759,
+      "sha256": "ff3d2938d2ae5848e64e8c221c11c0d68e2233d4a97a4ccdcb3642748ec8501c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/reader/zarr.yaml",
+      "path": "original_crash/conf/reader/zarr.yaml",
+      "bytes": 760,
+      "sha256": "05fb6578cc542182198b05f395a366efb0c1ab468a9a6a92db80dc750d8f5899"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/training/default.yaml",
+      "path": "original_crash/conf/training/default.yaml",
+      "bytes": 2905,
+      "sha256": "94db8f2d3a435f4ed26d7a998b49fe86e2922d799a7dc7fb669c01fd9a2bd558"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/datapipe.py",
+      "path": "original_crash/datapipe.py",
+      "bytes": 30248,
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/inference.py",
+      "path": "original_crash/inference.py",
+      "bytes": 15385,
+      "sha256": "8fd78ab4561753d219b54487b53d239a77e636eae9d726da0b9196908300cdcf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/compute_l2_error.py",
+      "path": "original_crash/post_processing/compute_l2_error.py",
+      "bytes": 7538,
+      "sha256": "c445b1787c6630ef8839e66a7385dbb653c5677caa0aa72cf6d33a817ef5f2be"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/compute_probe_kinematics.py",
+      "path": "original_crash/post_processing/compute_probe_kinematics.py",
+      "bytes": 11310,
+      "sha256": "ab68e1d3354b2d0dd4edd3fea5b406f32bc327a2f6b569f89020f167ede247f1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/plot_cross_section.py",
+      "path": "original_crash/post_processing/plot_cross_section.py",
+      "bytes": 8448,
+      "sha256": "6ca08cb7d9a6ee8b94b079d0ac50cf1635952748953fb24e3b11d23981522389"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/post_processing/run_post_processing.sh",
+      "path": "original_crash/post_processing/run_post_processing.sh",
+      "bytes": 810,
+      "sha256": "ffe447974c9b04bacc461cd31e575d4cd7e947f3e54ea872738f15e1a702e12a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/requirements.txt",
+      "path": "original_crash/requirements.txt",
+      "bytes": 67,
+      "sha256": "844e388afd517280c1c738668978c49e2a5baa23a80ec061286bcfa1af8c6827"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+      "path": "original_crash/rollout.py",
+      "bytes": 16103,
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_rollout.py",
+      "path": "original_crash/tests/test_rollout.py",
+      "bytes": 8011,
+      "sha256": "767772a6e7d2eb5e36bba9f8b35eb70a5e758c090acb296d8a58581b1be230d1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_vtp_reader.py",
+      "path": "original_crash/tests/test_vtp_reader.py",
+      "bytes": 6898,
+      "sha256": "abd79ce3f9455eee8402db1ff41872e8c810f69ab234891509f6fb289bba945a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/tests/test_zarr_reader.py",
+      "path": "original_crash/tests/test_zarr_reader.py",
+      "bytes": 14350,
+      "sha256": "db4e43a5918fa0859c18a4cec1e7362b823bbb93d0f9cea2bb714b22e32205a0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/train.py",
+      "path": "original_crash/train.py",
+      "bytes": 15670,
+      "sha256": "1d9f7831ee22e2721b4656816932bc8c8f9a0071d9acdc89d4c4e02d935ca72b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/utils.py",
+      "path": "original_crash/utils.py",
+      "bytes": 3712,
+      "sha256": "9d38c5ca47423779f2ddb9e04ab7174ad3a0d8ee29900ffe6ad4211ea727618b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/vtp_reader.py",
+      "path": "original_crash/vtp_reader.py",
+      "bytes": 9730,
+      "sha256": "b1bdc9ea4d60a5b6e4d23f3f2613f7badeda34db7222943692b85b884cb6c842"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/zarr_reader.py",
+      "path": "original_crash/zarr_reader.py",
+      "bytes": 7817,
+      "sha256": "501e4cfd0b852a6e891a7376bff6a063ce4e851bd24385ec09d374f6f37af10f"
+    }
+  ],
+  "unit_and_license_evidence": [
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/RAW_DATA/TRAINING_DATA/Run100/Bumper_Beam_AP_meshed_0000.rad",
+      "bytes": 1751156,
+      "sha256": "7c6a01c12e82e91180d957dcc83143873b121fc614d5c3e928083424e073202c"
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIRBORNEPANDA/BumperBeamCrashExample/resolve/78f1302fba4d75926c6fdd22d01d5133efc14742/RAW_DATA/TRAINING_DATA/Run100/Bumper_Beam_AP_meshed_0001.rad",
+      "bytes": 442,
+      "sha256": "2b44d4713621089644fcba0e01cbee73166f47344ebdc4780afffdf4beaddad0"
+    }
+  ]
+}

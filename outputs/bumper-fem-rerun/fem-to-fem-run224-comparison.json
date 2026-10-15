@@ -1,0 +1,210 @@
+{
+  "claim_scope": "FEM-to-FEM comparison: original public OpenRadioss-derived Run224 versus a new OpenCourant rerun; no AI accuracy claim.",
+  "status": "fem_to_fem_compared",
+  "precision_scope": "Observed initial-coordinate differences are compatible with limited output precision; the complete conversion provenance is unverified. Solver build, precision, output timing, conversion and numerical settings can cause differences.",
+  "units": {
+    "length": "mm",
+    "time": "ms",
+    "displacement": "mm"
+  },
+  "mapping_tolerance_mm": 0.001,
+  "reference_file": "Run224.vtp",
+  "reference_sha256": "f9d73f1d9767b07b52cbf1c277ee67751f8498aa10ba62331cead08bdb6c7275",
+  "rad_file": "Bumper_Beam_AP_meshed_0000.rad",
+  "rad_sha256": "fad6cf13a8b214506b48b0d36dd30dc4b6d315c76a1aba4810e5ee5db3da0f62",
+  "original_solver_log": {
+    "available": true,
+    "file": "Bumper_Beam_AP_meshed_0001.out",
+    "sha256": "41045b40f10b8b98c00d0fe9a9e541fd8d7f378177adb73ea6ad6708d784b977",
+    "solver_banner": "OpenRadioss Engine",
+    "precision_banner": "Extended Single Precision Version",
+    "threads_per_domain": 16,
+    "exact_build_version": "Not identified by these log banners; an input deck version is not a solver build version."
+  },
+  "rerun_solver_log": {
+    "available": true,
+    "file": "Bumper_Beam_AP_meshed_0001.out",
+    "sha256": "8f2d60663c15b38f0d80a203a61991e0319bd6aa9a012464882641aae450c035",
+    "solver_banner": "OpenCourant Engine",
+    "precision_banner": "Extended Single Precision Version",
+    "threads_per_domain": 2,
+    "exact_build_version": "Not identified by these log banners; an input deck version is not a solver build version."
+  },
+  "source_mapping": {
+    "vtp_points": 13676,
+    "rad_nodes": 13832,
+    "vtp_point_arrays": [
+      "thickness",
+      "displacement_t0.000",
+      "displacement_t10.000",
+      "displacement_t20.000",
+      "displacement_t30.000",
+      "displacement_t40.000",
+      "displacement_t50.000",
+      "displacement_t60.000",
+      "displacement_t70.000",
+      "displacement_t80.000",
+      "displacement_t90.000",
+      "displacement_t100.000"
+    ],
+    "exact_duplicate_vtp_coordinates": 0,
+    "exact_duplicate_rad_coordinates": 0,
+    "accepted_to_rad": 13675,
+    "accepted_initial_distance_mm": {
+      "median": 9.391293570276526e-06,
+      "p95": 2.831454925289674e-05,
+      "p99": 3.0377869355788093e-05,
+      "max": 3.3046267503180924e-05
+    },
+    "all_nearest_distance_mm": {
+      "median": 9.39129407883332e-06,
+      "p95": 2.8316312663673524e-05,
+      "p99": 3.037908700282943e-05,
+      "max": 2.2866835420488485
+    },
+    "minimum_second_candidate_distance_mm": 1.9396634333360867,
+    "unresolved_points": [
+      {
+        "vtp_index": 13675,
+        "coordinate_mm": [
+          267.37139892578125,
+          -838.6860961914062,
+          60.457275390625
+        ],
+        "thickness_mm": 0.0,
+        "nearest_rad_node_id": 6528,
+        "nearest_distance_mm": 2.2866835420488485
+      }
+    ]
+  },
+  "target_reference_array": "displacement_t100.000",
+  "target_time_ms": 100.0,
+  "actual_time_ms": 100.001,
+  "time_difference_ms": 0.0010000000000047748,
+  "time_alignment": "Closest available actual FIELD TIME; no temporal interpolation or time relabeling.",
+  "initial_frame": "Bumper_Beam_AP_meshedA001.vtk",
+  "initial_time_ms": 0.0,
+  "selected_frame": "Bumper_Beam_AP_meshedA011.vtk",
+  "selected_frame_sha256": "40e9df4700c1a311d4a7faf3c70f082814b46c882f16d2d47a36bc906fd5be9c",
+  "available_frames": [
+    {
+      "name": "Bumper_Beam_AP_meshedA001.vtk",
+      "actual_time_ms": 0.0
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA002.vtk",
+      "actual_time_ms": 10.0001
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA003.vtk",
+      "actual_time_ms": 20.0001
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA004.vtk",
+      "actual_time_ms": 30.0002
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA005.vtk",
+      "actual_time_ms": 40.0002
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA006.vtk",
+      "actual_time_ms": 50.0002
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA007.vtk",
+      "actual_time_ms": 60.0002
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA008.vtk",
+      "actual_time_ms": 70.0003
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA009.vtk",
+      "actual_time_ms": 80.0003
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA010.vtk",
+      "actual_time_ms": 90.0005
+    },
+    {
+      "name": "Bumper_Beam_AP_meshedA011.vtk",
+      "actual_time_ms": 100.001
+    }
+  ],
+  "initial_frame_statistics": {
+    "points": 13882,
+    "negative_node_ids": 0,
+    "zero_node_ids": 50,
+    "duplicate_id_occurrences": 49,
+    "nonfinite_coordinate_points": 0
+  },
+  "final_frame_statistics": {
+    "points": 13882,
+    "negative_node_ids": 0,
+    "zero_node_ids": 50,
+    "duplicate_id_occurrences": 49,
+    "nonfinite_coordinate_points": 0
+  },
+  "final_frame_point_arrays": [
+    "NODE_ID",
+    "Displacement",
+    "Contact_Pressure_/_Normal",
+    "Contact_Pressure_/_Tangent"
+  ],
+  "displacement_source": "VTK point vector Displacement",
+  "effective_counts": {
+    "reference_points": 13676,
+    "initial_vtk_recovered_points": 0,
+    "unique_mapping_points": 13675,
+    "missing_in_either_frame": 0,
+    "nonfinite_aligned_points": 0,
+    "compared_points": 13675,
+    "excluded_points": 1
+  },
+  "excluded_vtp_indices": [
+    13675
+  ],
+  "initial_vtk_to_vtp_distance_mm": {
+    "median": 0.0002747641465052659,
+    "p95": 0.0005296346580069207,
+    "p99": 0.0006598544199654683,
+    "max": 0.004275463956218813
+  },
+  "metrics": {
+    "vector_rmse_mm": 0.012518114490905938,
+    "vector_rmse_definition": "sqrt(mean over nodes of squared Euclidean displacement error)",
+    "component_rmse_mm": 0.0072273367710710985,
+    "component_rmse_definition": "sqrt(mean over all nodes and x/y/z components of squared displacement error)",
+    "component_rmse_xyz_mm": [
+      0.008073838446292031,
+      0.008461959938136261,
+      0.004462236788426057
+    ],
+    "vector_mae_mm": 0.009871544170631791,
+    "component_mae_mm": 0.004515995705389028,
+    "vector_error_p95_mm": 0.01264954922060314,
+    "vector_error_max_mm": 0.1135962649045349,
+    "relative_displacement_l2": 8.861547652069487e-05,
+    "relative_l2_definition": "L2 norm of displacement error divided by L2 norm of reference displacement, on identical compared nodes",
+    "reference_displacement_norm_mm": {
+      "median": 139.87710012863596,
+      "p95": 204.46144049301475,
+      "p99": 231.33141784923376,
+      "max": 242.1783248471709
+    },
+    "rerun_displacement_norm_mm": {
+      "median": 139.8852923093506,
+      "p95": 204.47155564416394,
+      "p99": 231.3430391623226,
+      "max": 242.18836918075988
+    }
+  },
+  "comparison_limitations": [
+    "This compares two numerical FEM trajectories, not a physical impact experiment or an AI prediction.",
+    "The original public trajectory and the new OpenCourant rerun can differ in solver version, precision, settings and conversion.",
+    "Spatial correspondence uses undeformed coordinates and persistent node IDs; unresolved points are explicitly excluded.",
+    "The nearest saved time can differ from nominal 100 ms; review the recorded difference before interpreting errors."
+  ],
+  "plot_file": "fem-to-fem-run224-comparison.png"
+}

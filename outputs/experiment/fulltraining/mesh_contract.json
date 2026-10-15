@@ -1,0 +1,25 @@
+{
+  "checkpoint_sha256": "dc1f895100dd521afded61a9c43ced99a866e312cd2ec7629bee840ac29d124b",
+  "point_count": 13676,
+  "selected_node_count": 13675,
+  "node_indices_int64_le_sha256": "04127b4992c759b9ff6373e8fd58e5227982c7a6b5cb6631a397e6da0124f43a",
+  "reference_coordinates_float32_le_sha256": "53c268e37428c2960db363ca25ea1a1b39de959219ca504ad52c149651532a25",
+  "reference_vtp_sha256": "dfded996ec7ad23d88e6b561d5125a95fbca404ffa965db0a6251400b5ef8668",
+  "global_feature_keys": [
+    "thickness_scale",
+    "velocity_x",
+    "rwall_origin_y"
+  ],
+  "training_global_min": [
+    1.21,
+    -5.0,
+    -480.26
+  ],
+  "training_global_max": [
+    2.0,
+    -5.0,
+    491.83
+  ],
+  "geometry_rule": "Exact fixed reference coordinates and node order required; no new topology/geometry claim.",
+  "training_source_sha256": "179823d176347a1b350def6426845a3adde4afc75fde3c8850176b7750b38a10"
+}
