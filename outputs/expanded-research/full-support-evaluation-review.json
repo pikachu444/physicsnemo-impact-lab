@@ -1,0 +1,693 @@
+{
+  "updated_utc": "2026-10-15T06:24:29.121057+00:00",
+  "scope": "Only prospective phone full C6 and bumper C7 supervised GPU results; saved-array CPU audit, no model execution",
+  "status": "in_progress_or_findings",
+  "auditor": {
+    "framework_imports": false,
+    "GPU_used": false,
+    "threads": 1,
+    "RSS_limit_bytes": 209715200,
+    "minimum_host_free_bytes": 1073741824,
+    "peak_observed_RSS_bytes": 168628224,
+    "minimum_observed_host_free_bytes": 1724530688,
+    "script_sha256": "8667e028ae91b9ab90fec45cd1f9ca9c8b0d680517ff14d860c27dc8f2a1ed7c"
+  },
+  "interpretation": [
+    "Quality budget and integrity are separate. At least one complete frozen epoch permits exactly one held-out pass; fewer than 100 updates or two complete epochs is insufficient_budget.",
+    "All-split file hashing verifies provenance and does not itself use held-out response values to select weights.",
+    "Raw values are not clipped; negative nominally nonnegative fields and EPSP history decreases are reported.",
+    "Phone 2..20us displacement is dominated by common translation. Centroid-removed error and tiny EPSP support must accompany scalar/vector scores.",
+    "Phone GPStress-derived VM and projected total-strain Frobenius are distinct fields; bumper upper/lower VM in GPa and EPSP are not total strain. GPa RMSE converts to MPa by multiplying 1000.",
+    "Node- and timestep-weighted projected nodal metrics do not equal native-cell hotspot errors; near-zero component relative percentages are not a ranking.",
+    "Workstation compute times are concurrent-workload observations, and convergence remains unverified."
+  ],
+  "models": {
+    "phone/transolver": {
+      "domain": "phone",
+      "architecture": "transolver",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver",
+      "audited_utc": "2026-10-15T06:24:26.011217+00:00",
+      "status": "passed",
+      "provenance": {
+        "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+        "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+        "verified_files": 27,
+        "all_split_hash_audit_reused_from_domain_cache": false,
+        "domain_cache": "<LOCAL_WORKSPACE>\\work\\expanded-evaluation-audit\\domain-cache-phone.json",
+        "cache_invalidation": "manifest/READY/normalization SHA or any inventoried file size/mtime_ns change",
+        "all_split_hashing_is_provenance_not_response_selection": true
+      },
+      "gates": {
+        "integrity": "passed",
+        "quality_budget": "satisfied",
+        "optimizer_updates": 795,
+        "case_observations": 3975,
+        "complete_epochs": 795,
+        "optimizer_compute_seconds": 240.2440714999684,
+        "last_update_overshoot_seconds": 0.24407149996841326,
+        "best_epoch": 754,
+        "last_validation_improved": false,
+        "convergence": "unverified",
+        "timing_isolated": false,
+        "phase_timing": {
+          "training_wall_seconds": 923.502019399999,
+          "training_excluded_timers": {
+            "training_data_read_seconds": 83.01107069997306,
+            "training_normalization_seconds": 155.75544770000124,
+            "data_read_normalize_seconds": 238.80674040003578,
+            "host_device_transfer_seconds": 21.02547859988408,
+            "validation_seconds": 4.763316300002771,
+            "checkpoint_io_seconds": 2.415371399936703
+          },
+          "test_wall_seconds": 39.731417200004216,
+          "test_forward_seconds": 0.41211339999426855,
+          "setup_seconds_including_framework_import": 25.81954830000177,
+          "setup_components": {
+            "ready_hash_verification_seconds": 0.6678596999990987,
+            "cache_contract_setup_seconds": 0.40616059999956633,
+            "training_statistics_seconds": 0.7695576999976765
+          },
+          "source_preparation_seconds": 0.03971389999787789,
+          "monitoring_seconds": 372.5808065999954,
+          "monitoring_note": "Process-enumeration/host monitoring overhead is outside optimizer compute; setup-boundary samples can overlap setup timing. These components must not be assumed mutually exclusive."
+        },
+        "resources": {
+          "training_peak_sampled_rss_bytes_lower_bound": 1447034880,
+          "training_cuda_allocator_peak_bytes": 3150204928,
+          "workload_observed_processes": {
+            "34268:1792044022.3499503": {
+              "pid": 34268,
+              "name": "engine_win64_sp.exe",
+              "rss_bytes": 402825216,
+              "process_created_utc": "2026-10-15T06:00:22.349950+00:00",
+              "first_observed_utc": "2026-10-15T06:05:13.387135+00:00",
+              "last_observed_utc": "2026-10-15T06:20:30.581602+00:00",
+              "max_observed_rss_bytes": 406122496
+            }
+          }
+        }
+      },
+      "independent_recomputation": {
+        "status": "passed",
+        "saved_truth_matches_original_FEM_bitwise": true,
+        "raw_physical_aggregate_matches_bitwise": true,
+        "metrics": {
+          "displacement_x": {
+            "sum_squared_error": 0.44048855797283604,
+            "truth_sum_square": 2395.389452522641,
+            "truth_l2_norm": 48.94271603132218,
+            "relative_l2": 0.013560610733267203,
+            "rmse": 0.0005380961481468902,
+            "absolute_error_p95": 0.0006292091682553293,
+            "absolute_error_max": 0.04970324889291078,
+            "truth_exact_nonzero_count": 1521280,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": null,
+            "prediction_min": -0.06806254386901855,
+            "prediction_max": -5.725771188735962e-05,
+            "per_timestep_rmse": [
+              0.0005303012251955107,
+              0.0005022016809040795,
+              0.0003609281112149859,
+              0.00024529523568099233,
+              0.0002524434843268246,
+              0.0003216071427321656,
+              0.0004815887857175926,
+              0.0005742925503576391,
+              0.000748309572329241,
+              0.0009395446235518723
+            ],
+            "per_case": [
+              {
+                "sse": 0.22690765360363646,
+                "truth_sum_square": 1197.7751169015876,
+                "count": 760650,
+                "truth_absolute_peak": 0.06716892868280411,
+                "prediction_absolute_peak": 0.06732151657342911,
+                "absolute_peak_error": 0.000152587890625,
+                "truth_peak_node_index": 73400,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.06297697126865387,
+                "absolute_error_at_truth_peak": 0.004191957414150238,
+                "predicted_peak_node_index": 75530,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 1.9999999999999998e-05
+              },
+              {
+                "sse": 0.21358090436919955,
+                "truth_sum_square": 1197.6143356210534,
+                "count": 760650,
+                "truth_absolute_peak": 0.06625418365001678,
+                "prediction_absolute_peak": 0.06806254386901855,
+                "absolute_peak_error": 0.00180836021900177,
+                "truth_peak_node_index": 73004,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.06326209008693695,
+                "absolute_error_at_truth_peak": 0.002992093563079834,
+                "predicted_peak_node_index": 75530,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "displacement_y": {
+            "sum_squared_error": 0.4655254492545625,
+            "truth_sum_square": 2882.248707997368,
+            "truth_l2_norm": 53.6865784716941,
+            "relative_l2": 0.012708842201890986,
+            "rmse": 0.000553177212205967,
+            "absolute_error_p95": 0.0006649458315223457,
+            "absolute_error_max": 0.05432526767253876,
+            "truth_exact_nonzero_count": 1521280,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": null,
+            "prediction_min": -0.074594646692276,
+            "prediction_max": -0.0003661997616291046,
+            "per_timestep_rmse": [
+              0.0006997409722418003,
+              0.0004460070913087888,
+              0.00035597677742458037,
+              0.00029039414044869214,
+              0.00029034223853600504,
+              0.0003094297525569989,
+              0.0004498866552065118,
+              0.0006137413069302234,
+              0.0007448120686238205,
+              0.0009200953783477553
+            ],
+            "per_case": [
+              {
+                "sse": 0.2381132106850571,
+                "truth_sum_square": 1441.2261637819572,
+                "count": 760650,
+                "truth_absolute_peak": 0.0728565901517868,
+                "prediction_absolute_peak": 0.07323039323091507,
+                "absolute_peak_error": 0.0003738030791282654,
+                "truth_peak_node_index": 74546,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.06948579847812653,
+                "absolute_error_at_truth_peak": 0.0033707916736602783,
+                "predicted_peak_node_index": 75530,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 1.9999999999999998e-05
+              },
+              {
+                "sse": 0.2274122385695054,
+                "truth_sum_square": 1441.022544215411,
+                "count": 760650,
+                "truth_absolute_peak": 0.07207823544740677,
+                "prediction_absolute_peak": 0.074594646692276,
+                "absolute_peak_error": 0.002516411244869232,
+                "truth_peak_node_index": 74547,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.0695076659321785,
+                "absolute_error_at_truth_peak": 0.0025705695152282715,
+                "predicted_peak_node_index": 75704,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "displacement_z": {
+            "sum_squared_error": 0.2618252845884526,
+            "truth_sum_square": 1602.4571092362207,
+            "truth_l2_norm": 40.03070208272921,
+            "relative_l2": 0.012782405333850631,
+            "rmse": 0.00041485693985028084,
+            "absolute_error_p95": 0.0004610745236277589,
+            "absolute_error_max": 0.031281637493520975,
+            "truth_exact_nonzero_count": 1521280,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": null,
+            "prediction_min": -0.054479651153087616,
+            "prediction_max": -0.0002545192837715149,
+            "per_timestep_rmse": [
+              0.00043396663804106425,
+              0.0003364691645549926,
+              0.0002799730384531205,
+              0.0002622673381843835,
+              0.0002588521479390121,
+              0.0003179627462764457,
+              0.0003965430206837356,
+              0.0004511159507363148,
+              0.0005385926571424189,
+              0.0006733620450765384
+            ],
+            "per_case": [
+              {
+                "sse": 0.1331524476535191,
+                "truth_sum_square": 801.3177124543973,
+                "count": 760650,
+                "truth_absolute_peak": 0.05924070253968239,
+                "prediction_absolute_peak": 0.054031241685152054,
+                "absolute_peak_error": 0.0052094608545303345,
+                "truth_peak_node_index": 73222,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.050478365272283554,
+                "absolute_error_at_truth_peak": 0.008762337267398834,
+                "predicted_peak_node_index": 75670,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 1.9999999999999998e-05
+              },
+              {
+                "sse": 0.1286728369349335,
+                "truth_sum_square": 801.1393967818233,
+                "count": 760650,
+                "truth_absolute_peak": 0.05767599493265152,
+                "prediction_absolute_peak": 0.054479651153087616,
+                "absolute_peak_error": 0.003196343779563904,
+                "truth_peak_node_index": 73214,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": -0.05003644898533821,
+                "absolute_error_at_truth_peak": 0.007639545947313309,
+                "predicted_peak_node_index": 75672,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "von_mises_GPS": {
+            "sum_squared_error": 34535.80890329308,
+            "truth_sum_square": 302299.3029847874,
+            "truth_l2_norm": 549.8175178955172,
+            "relative_l2": 0.3379996444071451,
+            "rmse": 0.15067020655707378,
+            "absolute_error_p95": 0.0996017931764075,
+            "absolute_error_max": 18.213507652282715,
+            "truth_exact_nonzero_count": 1354540,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": 600081,
+            "prediction_min": -0.21417613327503204,
+            "prediction_max": 10.255059242248535,
+            "per_timestep_rmse": [
+              0.04109442776441705,
+              0.0581289176208443,
+              0.07114874522591746,
+              0.08775845007315988,
+              0.11507227274815698,
+              0.1383367952771589,
+              0.16521032641426853,
+              0.1913418282229521,
+              0.21992770567273662,
+              0.25402885483528254
+            ],
+            "per_case": [
+              {
+                "sse": 13134.149633201008,
+                "truth_sum_square": 127191.57535890806,
+                "count": 760650,
+                "truth_absolute_peak": 23.436975479125977,
+                "prediction_absolute_peak": 10.04181957244873,
+                "absolute_peak_error": 13.395155906677246,
+                "truth_peak_node_index": 74755,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": 9.967020988464355,
+                "absolute_error_at_truth_peak": 13.469954490661621,
+                "predicted_peak_node_index": 74753,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 1.9999999999999998e-05
+              },
+              {
+                "sse": 21401.65927009207,
+                "truth_sum_square": 175107.72762587934,
+                "count": 760650,
+                "truth_absolute_peak": 28.126007080078125,
+                "prediction_absolute_peak": 10.255059242248535,
+                "absolute_peak_error": 17.87094783782959,
+                "truth_peak_node_index": 74755,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": 9.91249942779541,
+                "absolute_error_at_truth_peak": 18.213507652282715,
+                "predicted_peak_node_index": 74569,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "total_strain_frobenius": {
+            "sum_squared_error": 0.00964616610057565,
+            "truth_sum_square": 0.07242931507259368,
+            "truth_l2_norm": 0.2691269497330092,
+            "relative_l2": 0.3649389169182503,
+            "rmse": 7.962875678981623e-05,
+            "absolute_error_p95": 2.0830190078413586e-05,
+            "absolute_error_max": 0.010347899049520493,
+            "truth_exact_nonzero_count": 1354412,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": 520256,
+            "prediction_min": -0.00014225178165361285,
+            "prediction_max": 0.005755406804382801,
+            "per_timestep_rmse": [
+              2.3798902388256514e-05,
+              3.382107427750444e-05,
+              4.2092205416900445e-05,
+              5.1579161130914474e-05,
+              6.328930719007947e-05,
+              7.29250387623926e-05,
+              8.57894473005946e-05,
+              9.883764709397572e-05,
+              0.00011585180713297855,
+              0.0001318750317104455
+            ],
+            "per_case": [
+              {
+                "sse": 0.004988372898331259,
+                "truth_sum_square": 0.03834951538405666,
+                "count": 760650,
+                "truth_absolute_peak": 0.015156315639615059,
+                "prediction_absolute_peak": 0.005755406804382801,
+                "absolute_peak_error": 0.009400908835232258,
+                "truth_peak_node_index": 74755,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": 0.005708635319024324,
+                "absolute_error_at_truth_peak": 0.009447680320590734,
+                "predicted_peak_node_index": 74575,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 1.9999999999999998e-05
+              },
+              {
+                "sse": 0.00465779320224439,
+                "truth_sum_square": 0.03407979968853702,
+                "count": 760650,
+                "truth_absolute_peak": 0.015736473724246025,
+                "prediction_absolute_peak": 0.005695415195077658,
+                "absolute_peak_error": 0.010041058529168367,
+                "truth_peak_node_index": 74755,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": 0.005519637372344732,
+                "absolute_error_at_truth_peak": 0.010216836351901293,
+                "predicted_peak_node_index": 74385,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "epsp": {
+            "sum_squared_error": 1.676773990791148e-05,
+            "truth_sum_square": 1.8163400595792024e-05,
+            "truth_l2_norm": 0.004261854126526625,
+            "relative_l2": 0.960812586617092,
+            "rmse": 3.3199369180387217e-06,
+            "absolute_error_p95": 1.9135592594921035e-07,
+            "absolute_error_max": 0.0026319321332266554,
+            "truth_exact_nonzero_count": 27,
+            "count": 1521300,
+            "prediction_nonfinite_count": 0,
+            "truth_nonfinite_count": 0,
+            "prediction_negative_count_for_nonnegative_field": 658778,
+            "prediction_min": -7.88672059570672e-06,
+            "prediction_max": 8.698449528310448e-05,
+            "per_timestep_rmse": [
+              2.625814356710866e-08,
+              1.671819209838161e-08,
+              1.2206268826336448e-08,
+              1.1875598864480009e-08,
+              3.0056339632974473e-08,
+              2.0208090166462376e-08,
+              7.16217629306214e-08,
+              1.0912233918044647e-06,
+              4.370401169961097e-06,
+              9.482665030573555e-06
+            ],
+            "per_case": [
+              {
+                "sse": 2.9917446146305775e-07,
+                "truth_sum_square": 0.0,
+                "count": 760650,
+                "truth_absolute_peak": 0.0,
+                "prediction_absolute_peak": 8.079756662482396e-05,
+                "absolute_peak_error": 8.079756662482396e-05,
+                "truth_peak_node_index": 0,
+                "truth_peak_time_index": 0,
+                "prediction_at_truth_peak": -2.132278353883521e-08,
+                "absolute_error_at_truth_peak": 2.132278353883521e-08,
+                "predicted_peak_node_index": 74942,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e090_rxp050",
+                "truth_peak_time": 2e-06
+              },
+              {
+                "sse": 1.646856544644842e-05,
+                "truth_sum_square": 1.8163400595792024e-05,
+                "count": 760650,
+                "truth_absolute_peak": 0.00271891662850976,
+                "prediction_absolute_peak": 8.698449528310448e-05,
+                "absolute_peak_error": 0.0026319321332266554,
+                "truth_peak_node_index": 74942,
+                "truth_peak_time_index": 9,
+                "prediction_at_truth_peak": 8.698449528310448e-05,
+                "absolute_error_at_truth_peak": 0.0026319321332266554,
+                "predicted_peak_node_index": 74942,
+                "predicted_peak_time_index": 9,
+                "case": "phone_e110_rxm050",
+                "truth_peak_time": 1.9999999999999998e-05
+              }
+            ]
+          },
+          "displacement_vector": {
+            "sum_squared_error": 1.1678392918158513,
+            "truth_sum_square": 6880.095269756229,
+            "relative_l2": 0.013028496944769877,
+            "component_rmse": 0.0005058520117242542,
+            "vector_rmse": 0.0008761613854173357,
+            "vector_error_p95": 0.0010188187592491918,
+            "vector_error_max": 0.07728101858635723,
+            "centroid_removed_relative_l2": 0.6744301175313258,
+            "centroid_removed_sum_squared_error": 1.166306058923895,
+            "centroid_removed_truth_sum_square": 2.564121615198838,
+            "truth_centroid_translation_fraction": 0.9996273130654934
+          }
+        },
+        "epsp": {
+          "epsp": {
+            "truth_exact_positive_count": 27,
+            "truth_exact_zero_count": 1521273,
+            "truth_negative_count": 0,
+            "prediction_negative_count": 658778,
+            "truth_positive_support_per_timestep": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              7,
+              9,
+              11
+            ],
+            "prediction_positive_support_per_timestep": [
+              74910,
+              83315,
+              88117,
+              77977,
+              69490,
+              77503,
+              84291,
+              98818,
+              104704,
+              103397
+            ],
+            "rmse_on_reference_positive_support": 0.0007733562164898006,
+            "rmse_on_reference_exact_zero_support": 6.381850424251403e-07,
+            "prediction_absolute_peak_on_reference_exact_zero_support": 8.439266093773767e-05,
+            "support": [
+              {
+                "threshold": 0.0,
+                "reference_count": 27,
+                "prediction_count": 862522,
+                "true_positive": 27,
+                "false_positive": 862495,
+                "false_negative": 0,
+                "true_negative": 658778,
+                "precision": 3.1303549358740994e-05,
+                "recall": 1.0,
+                "iou": 3.1303549358740994e-05
+              }
+            ],
+            "history": {
+              "prediction": {
+                "minimum_delta": -3.846856600375759e-06,
+                "maximum_delta": 2.8865753392892657e-05,
+                "negative_count": 593109,
+                "zero_count": 0,
+                "count": 1369170,
+                "maximum_decrease": 3.846856600375759e-06,
+                "decrease_magnitude_quantiles": {
+                  "0.5": 1.1837189894947642e-08,
+                  "0.9": 8.423820307967846e-08,
+                  "0.95": 1.211158203062723e-07,
+                  "0.99": 3.0129617982765933e-07,
+                  "1.0": 3.846856600375759e-06
+                }
+              },
+              "truth": {
+                "minimum_delta": 0.0,
+                "maximum_delta": 0.001464584842324257,
+                "negative_count": 0,
+                "zero_count": 1369143,
+                "count": 1369170,
+                "maximum_decrease": 0.0,
+                "decrease_magnitude_quantiles": null
+              }
+            }
+          }
+        },
+        "inverse_normalization": {
+          "bitwise_equal": true,
+          "maximum_float32_ULP_difference": 0,
+          "maximum_physical_absolute_difference_per_field": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "maximum_scale_normalized_difference_per_field": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "formula": "float32 normalized * float32 field_std + float32 field_mean, saved node/time/channel order; at most one ULP roundoff is distinguished from an actual mismatch"
+        },
+        "train_only_normalization": {
+          "field_mean": [
+            -0.03517315913418568,
+            -0.03858204385408778,
+            -0.028763167485053583,
+            0.06022952564608746,
+            1.7047754975666122e-05,
+            1.241155014792598e-08
+          ],
+          "field_std": [
+            0.0179745731230109,
+            0.0179745731230109,
+            0.0179745731230109,
+            0.4536937023092597,
+            0.00021970957380470054,
+            4.925066863902238e-06
+          ],
+          "node_time_observations": 3803250,
+          "all_displacement_components_share_train_covariance_scale": true,
+          "coordinate_and_graph_array_order_hashes_match": true,
+          "reused_from_unchanged_domain_audit": false
+        },
+        "relative_l2_zero_denominator_policy": "null; physical RMSE remains reported",
+        "raw_output_clipping": false,
+        "scope_exclusion": "phone_ballistic_reference is not independently recomputed by this saved-field audit; its source-card analytic baseline remains separately reported"
+      }
+    },
+    "phone/flare": {
+      "domain": "phone",
+      "architecture": "flare",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\flare",
+      "audited_utc": "2026-10-15T06:18:46.823684+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "phone/geotransolver": {
+      "domain": "phone",
+      "architecture": "geotransolver",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geotransolver",
+      "audited_utc": "2026-10-15T06:18:46.823923+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "phone/geoflare": {
+      "domain": "phone",
+      "architecture": "geoflare",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\geoflare",
+      "audited_utc": "2026-10-15T06:18:46.824064+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "phone/meshgraphnet": {
+      "domain": "phone",
+      "architecture": "meshgraphnet",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\meshgraphnet",
+      "audited_utc": "2026-10-15T06:18:46.824240+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "phone/figconvunet": {
+      "domain": "phone",
+      "architecture": "figconvunet",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\figconvunet",
+      "audited_utc": "2026-10-15T06:18:46.824365+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/transolver": {
+      "domain": "bumper",
+      "architecture": "transolver",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\transolver",
+      "audited_utc": "2026-10-15T06:18:46.824521+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/flare": {
+      "domain": "bumper",
+      "architecture": "flare",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\flare",
+      "audited_utc": "2026-10-15T06:18:46.824662+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/geotransolver": {
+      "domain": "bumper",
+      "architecture": "geotransolver",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geotransolver",
+      "audited_utc": "2026-10-15T06:18:46.824795+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/geoflare": {
+      "domain": "bumper",
+      "architecture": "geoflare",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\geoflare",
+      "audited_utc": "2026-10-15T06:18:46.824925+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/meshgraphnet": {
+      "domain": "bumper",
+      "architecture": "meshgraphnet",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\meshgraphnet",
+      "audited_utc": "2026-10-15T06:18:46.825060+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    },
+    "bumper/figconvunet": {
+      "domain": "bumper",
+      "architecture": "figconvunet",
+      "run": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\bumper\\models-c7\\figconvunet",
+      "audited_utc": "2026-10-15T06:18:46.825195+00:00",
+      "status": "pending_actual_completed_test",
+      "present_evidence": []
+    }
+  }
+}

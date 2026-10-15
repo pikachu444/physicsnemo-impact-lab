@@ -1,0 +1,1226 @@
+{
+  "process_identity": {
+    "pid": 9388,
+    "created_unix_seconds": 1792045260.551428
+  },
+  "pid": 9388,
+  "architecture": "transolver",
+  "checkpoint_sha256": "189917723c8fd4d4ef2f4730238c933bcb027fe653fb4876e0b00715744681d5",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 19.499341400005505,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\checkpoint-frozen.json": "5076485fe81c85912c5e6b5002b0ed42a4a7d31f1f3ab86f7ff97d33c2b7938f",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\training_report.json": "058f0c73e3f7611d2a722c13d2df7226fc5b5e89259fe1f121d80e292b5c5ef4",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\best_checkpoint.pt": "189917723c8fd4d4ef2f4730238c933bcb027fe653fb4876e0b00715744681d5",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\validation_reference.npy": "d2740d5266c4b84a5aa9bb78072d142dc468a0169677bc6014ad6043d9ab8529",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\validation_serialization_roundtrip.json": "ce2d594bf3caf19c47f0b19666c7af163020dd8ace590842b1f7f322f73ddc81",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\normalization.json": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\training_mean_field.npy": "b2596285b96916c8856e96dc13617680ef61e82c89fb7ae1ae0f6308dfa39085",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\data-provenance-clarification.json": "120de8550a38cd46074efe780464dfa39a132881813ac392234663a0abae202b",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\validation_fresh_process.json": "6d407ca10e7b8fc2c2e3887e0dc0be641a75773bcef09007e4c34368c6bd0bd4"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "transolver",
+    "module": "physicsnemo.models.transolver",
+    "class_name": "Transolver",
+    "implementation_module": "physicsnemo.models.transolver.transolver",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py",
+    "source_sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "reference_mean_incident_corner_cell_volume_cuberoot",
+      "2_global_parameters"
+    ]
+  },
+  "status": "completed",
+  "started_utc": "2026-10-15T06:21:20.319558+00:00",
+  "test_performance_passes": 1,
+  "completed_utc": "2026-10-15T06:21:40.522200+00:00",
+  "cases": [
+    "phone_e090_rxp050",
+    "phone_e110_rxm050"
+  ],
+  "shape": [
+    2,
+    76065,
+    10,
+    6
+  ],
+  "field_names": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "time_unit": "s",
+  "physical_metrics": {
+    "displacement_x": {
+      "unit": "mm",
+      "relative_l2": 0.013560610733267203,
+      "sum_squared_error": 0.44048855797283604,
+      "truth_sum_square": 2395.389452522641,
+      "truth_l2_norm": 48.94271603132218,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.0005380961481468902,
+      "absolute_error_p95": 0.0006292091682553293,
+      "absolute_error_max": 0.04970324889291078,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.06806254386901855,
+      "prediction_max": -5.725771188735962e-05,
+      "per_timestep_rmse": [
+        0.0005303012251957217,
+        0.0005022016809037716,
+        0.00036092811121498573,
+        0.00024529523568099233,
+        0.0002524434843268246,
+        0.0003216071427321656,
+        0.00048158878571759247,
+        0.000574292550357639,
+        0.0007483095723292409,
+        0.0009395446235518701
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.22690765360363643,
+          "truth_sum_square": 1197.7751169015876,
+          "count": 760650,
+          "truth_absolute_peak": 0.06716892868280411,
+          "prediction_absolute_peak": 0.06732151657342911,
+          "absolute_peak_error": 0.000152587890625,
+          "truth_peak_node_index": 73400,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.06297697126865387,
+          "absolute_error_at_truth_peak": 0.004191957414150238,
+          "predicted_peak_node_index": 75530,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.2135809043691996,
+          "truth_sum_square": 1197.6143356210532,
+          "count": 760650,
+          "truth_absolute_peak": 0.06625418365001678,
+          "prediction_absolute_peak": 0.06806254386901855,
+          "absolute_peak_error": 0.00180836021900177,
+          "truth_peak_node_index": 73004,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.06326209008693695,
+          "absolute_error_at_truth_peak": 0.002992093563079834,
+          "predicted_peak_node_index": 75530,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "relative_l2": 0.012708842201890986,
+      "sum_squared_error": 0.4655254492545625,
+      "truth_sum_square": 2882.248707997368,
+      "truth_l2_norm": 53.6865784716941,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.000553177212205967,
+      "absolute_error_p95": 0.0006649458315223457,
+      "absolute_error_max": 0.05432526767253876,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.074594646692276,
+      "prediction_max": -0.0003661997616291046,
+      "per_timestep_rmse": [
+        0.0006997409722416343,
+        0.00044600709130835264,
+        0.0003559767774245803,
+        0.0002903941404486921,
+        0.000290342238536005,
+        0.0003094297525569988,
+        0.0004498866552065118,
+        0.0006137413069302232,
+        0.0007448120686238204,
+        0.0009200953783477547
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.23811321068505711,
+          "truth_sum_square": 1441.226163781957,
+          "count": 760650,
+          "truth_absolute_peak": 0.0728565901517868,
+          "prediction_absolute_peak": 0.07323039323091507,
+          "absolute_peak_error": 0.0003738030791282654,
+          "truth_peak_node_index": 74546,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.06948579847812653,
+          "absolute_error_at_truth_peak": 0.0033707916736602783,
+          "predicted_peak_node_index": 75530,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.22741223856950543,
+          "truth_sum_square": 1441.022544215411,
+          "count": 760650,
+          "truth_absolute_peak": 0.07207823544740677,
+          "prediction_absolute_peak": 0.074594646692276,
+          "absolute_peak_error": 0.002516411244869232,
+          "truth_peak_node_index": 74547,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.0695076659321785,
+          "absolute_error_at_truth_peak": 0.0025705695152282715,
+          "predicted_peak_node_index": 75704,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "relative_l2": 0.012782405333850633,
+      "sum_squared_error": 0.26182528458845256,
+      "truth_sum_square": 1602.4571092362203,
+      "truth_l2_norm": 40.030702082729206,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.0004148569398502808,
+      "absolute_error_p95": 0.0004610745236277589,
+      "absolute_error_max": 0.031281637493520975,
+      "truth_exact_nonzero_count": 1521280,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": null,
+      "prediction_min": -0.054479651153087616,
+      "prediction_max": -0.0002545192837715149,
+      "per_timestep_rmse": [
+        0.0004339666380410801,
+        0.0003364691645548587,
+        0.00027997303845310554,
+        0.0002622673381843833,
+        0.0002588521479390119,
+        0.0003179627462764455,
+        0.00039654302068373545,
+        0.0004511159507363147,
+        0.0005385926571424174,
+        0.0006733620450765372
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.1331524476535191,
+          "truth_sum_square": 801.317712454397,
+          "count": 760650,
+          "truth_absolute_peak": 0.05924070253968239,
+          "prediction_absolute_peak": 0.054031241685152054,
+          "absolute_peak_error": 0.0052094608545303345,
+          "truth_peak_node_index": 73222,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.050478365272283554,
+          "absolute_error_at_truth_peak": 0.008762337267398834,
+          "predicted_peak_node_index": 75670,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.12867283693493348,
+          "truth_sum_square": 801.1393967818232,
+          "count": 760650,
+          "truth_absolute_peak": 0.05767599493265152,
+          "prediction_absolute_peak": 0.054479651153087616,
+          "absolute_peak_error": 0.003196343779563904,
+          "truth_peak_node_index": 73214,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": -0.05003644898533821,
+          "absolute_error_at_truth_peak": 0.007639545947313309,
+          "predicted_peak_node_index": 75672,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "von_mises_GPS": {
+      "unit": "MPa",
+      "relative_l2": 0.33799964440714514,
+      "sum_squared_error": 34535.80890329309,
+      "truth_sum_square": 302299.3029847874,
+      "truth_l2_norm": 549.8175178955172,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 0.1506702065570738,
+      "absolute_error_p95": 0.0996017931764075,
+      "absolute_error_max": 18.213507652282715,
+      "truth_exact_nonzero_count": 1354540,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 600081,
+      "prediction_min": -0.21417613327503204,
+      "prediction_max": 10.255059242248535,
+      "per_timestep_rmse": [
+        0.04109442776441718,
+        0.05812891762084434,
+        0.07114874522591726,
+        0.08775845007315983,
+        0.11507227274815714,
+        0.13833679527715936,
+        0.16521032641426858,
+        0.19134182822295187,
+        0.2199277056727367,
+        0.254028854835284
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 13134.14963320101,
+          "truth_sum_square": 127191.57535890809,
+          "count": 760650,
+          "truth_absolute_peak": 23.436975479125977,
+          "prediction_absolute_peak": 10.04181957244873,
+          "absolute_peak_error": 13.395155906677246,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 9.967020988464355,
+          "absolute_error_at_truth_peak": 13.469954490661621,
+          "predicted_peak_node_index": 74753,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 21401.659270092074,
+          "truth_sum_square": 175107.72762587934,
+          "count": 760650,
+          "truth_absolute_peak": 28.126007080078125,
+          "prediction_absolute_peak": 10.255059242248535,
+          "absolute_peak_error": 17.87094783782959,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 9.91249942779541,
+          "absolute_error_at_truth_peak": 18.213507652282715,
+          "predicted_peak_node_index": 74569,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "total_strain_frobenius": {
+      "unit": "1",
+      "relative_l2": 0.36493891691825026,
+      "sum_squared_error": 0.00964616610057565,
+      "truth_sum_square": 0.0724293150725937,
+      "truth_l2_norm": 0.26912694973300927,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 7.962875678981623e-05,
+      "absolute_error_p95": 2.0830190078413586e-05,
+      "absolute_error_max": 0.010347899049520493,
+      "truth_exact_nonzero_count": 1354412,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 520256,
+      "prediction_min": -0.00014225178165361285,
+      "prediction_max": 0.005755406804382801,
+      "per_timestep_rmse": [
+        2.3798902388256503e-05,
+        3.3821074277504605e-05,
+        4.2092205416900276e-05,
+        5.1579161130914386e-05,
+        6.328930719007954e-05,
+        7.292503876239244e-05,
+        8.57894473005947e-05,
+        9.883764709397583e-05,
+        0.00011585180713297856,
+        0.0001318750317104463
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 0.0049883728983312605,
+          "truth_sum_square": 0.038349515384056676,
+          "count": 760650,
+          "truth_absolute_peak": 0.015156315639615059,
+          "prediction_absolute_peak": 0.005755406804382801,
+          "absolute_peak_error": 0.009400908835232258,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 0.005708635319024324,
+          "absolute_error_at_truth_peak": 0.009447680320590734,
+          "predicted_peak_node_index": 74575,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 0.00465779320224439,
+          "truth_sum_square": 0.03407979968853702,
+          "count": 760650,
+          "truth_absolute_peak": 0.015736473724246025,
+          "prediction_absolute_peak": 0.005695415195077658,
+          "absolute_peak_error": 0.010041058529168367,
+          "truth_peak_node_index": 74755,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 0.005519637372344732,
+          "absolute_error_at_truth_peak": 0.010216836351901293,
+          "predicted_peak_node_index": 74385,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "epsp": {
+      "unit": "1",
+      "relative_l2": 0.9608125866170917,
+      "sum_squared_error": 1.6767739907911467e-05,
+      "truth_sum_square": 1.816340059579202e-05,
+      "truth_l2_norm": 0.004261854126526625,
+      "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+      "rmse": 3.3199369180387205e-06,
+      "absolute_error_p95": 1.9135592594921035e-07,
+      "absolute_error_max": 0.0026319321332266554,
+      "truth_exact_nonzero_count": 27,
+      "count": 1521300,
+      "truth_nonfinite_count": 0,
+      "prediction_nonfinite_count": 0,
+      "prediction_negative_count_for_nonnegative_field": 658778,
+      "prediction_min": -7.88672059570672e-06,
+      "prediction_max": 8.698449528310448e-05,
+      "per_timestep_rmse": [
+        2.625814356710946e-08,
+        1.6718192098382132e-08,
+        1.2206268826336883e-08,
+        1.1875598864480548e-08,
+        3.0056339632975486e-08,
+        2.0208090166462856e-08,
+        7.162176293062187e-08,
+        1.0912233918044658e-06,
+        4.370401169961098e-06,
+        9.482665030573558e-06
+      ],
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "sse": 2.9917446146305775e-07,
+          "truth_sum_square": 0.0,
+          "count": 760650,
+          "truth_absolute_peak": 0.0,
+          "prediction_absolute_peak": 8.079756662482396e-05,
+          "absolute_peak_error": 8.079756662482396e-05,
+          "truth_peak_node_index": 0,
+          "truth_peak_time_index": 0,
+          "truth_peak_time": 2e-06,
+          "prediction_at_truth_peak": -2.132278353883521e-08,
+          "absolute_error_at_truth_peak": 2.132278353883521e-08,
+          "predicted_peak_node_index": 74942,
+          "predicted_peak_time_index": 9
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "sse": 1.6468565446448418e-05,
+          "truth_sum_square": 1.816340059579202e-05,
+          "count": 760650,
+          "truth_absolute_peak": 0.00271891662850976,
+          "prediction_absolute_peak": 8.698449528310448e-05,
+          "absolute_peak_error": 0.0026319321332266554,
+          "truth_peak_node_index": 74942,
+          "truth_peak_time_index": 9,
+          "truth_peak_time": 1.9999999999999998e-05,
+          "prediction_at_truth_peak": 8.698449528310448e-05,
+          "absolute_error_at_truth_peak": 0.0026319321332266554,
+          "predicted_peak_node_index": 74942,
+          "predicted_peak_time_index": 9
+        }
+      ]
+    },
+    "displacement_vector": {
+      "unit": "mm",
+      "relative_l2": 0.013028496944769876,
+      "sum_squared_error": 1.167839291815851,
+      "truth_sum_square": 6880.095269756229,
+      "component_rmse": 0.0005058520117242542,
+      "vector_rmse": 0.0008761613854173357,
+      "vector_error_p95": 0.0010188187592491918,
+      "vector_error_max": 0.07728101858635723,
+      "centroid_removed_relative_l2": 0.6744301175313252
+    }
+  },
+  "epsp_diagnostics": {
+    "epsp": {
+      "support_definition": "Raw EPSP strictly greater than the exact dimensionless zero threshold; no fitted threshold or clipping. Projected nodal support is not a raw-cell damage criterion.",
+      "truth_exact_nonzero_count": 27,
+      "truth_exact_positive_count": 27,
+      "truth_exact_zero_count": 1521273,
+      "truth_negative_count": 0,
+      "prediction_exact_nonzero_count": 1521300,
+      "prediction_negative_count": 658778,
+      "prediction_min": -7.88672059570672e-06,
+      "prediction_max": 8.698449528310448e-05,
+      "count": 1521300,
+      "support": [
+        {
+          "threshold": 0.0,
+          "reference_count": 27,
+          "prediction_count": 862522,
+          "true_positive": 27,
+          "false_positive": 862495,
+          "false_negative": 0,
+          "true_negative": 658778,
+          "precision": 3.1303549358740994e-05,
+          "recall": 1.0,
+          "iou": 3.1303549358740994e-05
+        }
+      ],
+      "truth_positive_support_per_timestep": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        9,
+        11
+      ],
+      "prediction_positive_support_per_timestep": [
+        74910,
+        83315,
+        88117,
+        77977,
+        69490,
+        77503,
+        84291,
+        98818,
+        104704,
+        103397
+      ],
+      "rmse_on_reference_positive_support": 0.0007733562164898006,
+      "rmse_on_reference_exact_zero_support": 6.381850424251403e-07,
+      "prediction_absolute_peak_on_reference_exact_zero_support": 8.439266093773767e-05,
+      "history": {
+        "definition": "Strict time increments at fixed support; raw cumulative EPSP is expected not to decrease. Counts include roundoff. Reference increments are reported separately without corrections.",
+        "prediction": {
+          "minimum_delta": -3.846856600375759e-06,
+          "maximum_delta": 2.8865753392892657e-05,
+          "negative_count": 593109,
+          "zero_count": 0,
+          "count": 1369170,
+          "maximum_decrease": 3.846856600375759e-06,
+          "decrease_magnitude_quantiles": {
+            "0.5": 1.1837189894947642e-08,
+            "0.9": 8.423820307967846e-08,
+            "0.95": 1.211158203062723e-07,
+            "0.99": 3.0129617982765933e-07,
+            "1.0": 3.846856600375759e-06
+          }
+        },
+        "truth": {
+          "minimum_delta": 0.0,
+          "maximum_delta": 0.001464584842324257,
+          "negative_count": 0,
+          "zero_count": 1369143,
+          "count": 1369170,
+          "maximum_decrease": 0.0,
+          "decrease_magnitude_quantiles": null
+        },
+        "stored_prediction_dtype": "float32",
+        "stored_truth_dtype": "float32",
+        "float32_machine_epsilon": 1.1920928955078125e-07
+      },
+      "per_case": [
+        {
+          "case": "phone_e090_rxp050",
+          "truth_positive_count": 0,
+          "truth_exact_zero_count": 760650,
+          "prediction_negative_count": 341876,
+          "truth_peak": 0.0,
+          "prediction_peak": 8.079756662482396e-05
+        },
+        {
+          "case": "phone_e110_rxm050",
+          "truth_positive_count": 27,
+          "truth_exact_zero_count": 760623,
+          "prediction_negative_count": 316902,
+          "truth_peak": 0.00271891662850976,
+          "prediction_peak": 8.698449528310448e-05
+        }
+      ]
+    }
+  },
+  "principal_order_diagnostics": null,
+  "phone_ballistic_reference": {
+    "definition": "Uniform contact-free displacement v0*t + 0.5*a*t^2 = v0*t - 0.5*g*t^2 with signed g=-a from each hash-verified source deck. Actual source cards and nominal stored times are used; contact, deformation and constraints are intentionally absent from this analytic comparator.",
+    "coordinate_unit": "mm",
+    "source_time_unit": "s",
+    "time_conversion_to_seconds": 1.0,
+    "case_initial_condition_evidence": [
+      {
+        "case": "phone_e090_rxp050",
+        "starter_sha256": "5952227ce9e8ebc4ff7683d887ca650708d63b5672a0218c74b8b462abb38360",
+        "starter_path": "<LOCAL_WORKSPACE>\\work\\expanded-drop\\doe\\phone_e090_rxp050\\Cell_Phone_Drop_0000.rad",
+        "initial_speed_mm_per_s": 5424.942395981551,
+        "velocity_mm_per_s": [
+          -3200.900476,
+          -3511.241739,
+          -2618.285239
+        ],
+        "acceleration_mm_per_s_squared": [
+          -5788.233566,
+          -6349.428058,
+          -4734.6822
+        ],
+        "velocity_node_group": 1,
+        "gravity_node_group": 2,
+        "constant_gravity_function_domain_s": [
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "case": "phone_e110_rxm050",
+        "starter_sha256": "b34c8e92993ebc5391210aa1e9d632418cc510415d09105fc8112a87c01de082",
+        "starter_path": "<LOCAL_WORKSPACE>\\work\\expanded-drop\\doe\\phone_e110_rxm050\\Cell_Phone_Drop_0000.rad",
+        "initial_speed_mm_per_s": 5424.942395981551,
+        "velocity_mm_per_s": [
+          -3200.900476,
+          -3511.241739,
+          -2618.285239
+        ],
+        "acceleration_mm_per_s_squared": [
+          -5788.233566,
+          -6349.428058,
+          -4734.6822
+        ],
+        "velocity_node_group": 1,
+        "gravity_node_group": 2,
+        "constant_gravity_function_domain_s": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "ballistic_physical_metrics": {
+      "displacement_x": {
+        "unit": "mm",
+        "relative_l2": 0.01622851332241806,
+        "sum_squared_error": 0.6308608919761173,
+        "truth_sum_square": 2395.389452522641,
+        "truth_l2_norm": 48.94271603132218,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0006439607094923002,
+        "absolute_error_p95": 1.569098927277357e-05,
+        "absolute_error_max": 0.06401916716671319,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.06401916716671319,
+        "prediction_max": -0.006401812528467132,
+        "per_timestep_rmse": [
+          3.939360393312108e-05,
+          0.00011630500636966558,
+          0.00021576025279911056,
+          0.0003285333311273729,
+          0.0004524432311434258,
+          0.0005829619882571648,
+          0.0007144571558408872,
+          0.0008466430281510144,
+          0.0009797882541931525,
+          0.0011160199738120971
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.339308019420812,
+            "truth_sum_square": 1197.7751169015876,
+            "count": 760650,
+            "truth_absolute_peak": 0.06716892868280411,
+            "prediction_absolute_peak": 0.06401916716671319,
+            "absolute_peak_error": 0.003149761516090921,
+            "truth_peak_node_index": 73400,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.06401916716671319,
+            "absolute_error_at_truth_peak": 0.003149761516090921,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.29155287255530526,
+            "truth_sum_square": 1197.6143356210532,
+            "count": 760650,
+            "truth_absolute_peak": 0.06625418365001678,
+            "prediction_absolute_peak": 0.06401916716671319,
+            "absolute_peak_error": 0.002235016483303598,
+            "truth_peak_node_index": 73004,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.06401916716671319,
+            "absolute_error_at_truth_peak": 0.002235016483303598,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "relative_l2": 0.01661708813251064,
+        "sum_squared_error": 0.7958684702333416,
+        "truth_sum_square": 2882.248707997368,
+        "truth_l2_norm": 53.6865784716941,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0007232912599037038,
+        "absolute_error_p95": 1.773398003419857e-05,
+        "absolute_error_max": 0.07022610466561159,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.07022610466561159,
+        "prediction_max": -0.007022496176856116,
+        "per_timestep_rmse": [
+          4.350038737223181e-05,
+          0.0001304847005182506,
+          0.00024350477691411487,
+          0.0003726954019975059,
+          0.0005133458721475818,
+          0.0006605245656675698,
+          0.0008072965951000472,
+          0.0009526662448279056,
+          0.0010975536076840303,
+          0.0012452494176560455
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.4204501153093316,
+            "truth_sum_square": 1441.226163781957,
+            "count": 760650,
+            "truth_absolute_peak": 0.0728565901517868,
+            "prediction_absolute_peak": 0.07022610466561159,
+            "absolute_peak_error": 0.002630485486175213,
+            "truth_peak_node_index": 74546,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.07022610466561159,
+            "absolute_error_at_truth_peak": 0.002630485486175213,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.37541835492401004,
+            "truth_sum_square": 1441.022544215411,
+            "count": 760650,
+            "truth_absolute_peak": 0.07207823544740677,
+            "prediction_absolute_peak": 0.07022610466561159,
+            "absolute_peak_error": 0.0018521307817951776,
+            "truth_peak_node_index": 74547,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.07022610466561159,
+            "absolute_error_at_truth_peak": 0.0018521307817951776,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "relative_l2": 0.02678619728416587,
+        "sum_squared_error": 1.1497635606877088,
+        "truth_sum_square": 1602.4571092362203,
+        "truth_l2_norm": 40.030702082729206,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.0008693543621329829,
+        "absolute_error_p95": 9.98499601154168e-07,
+        "absolute_error_max": 0.05741772300636676,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -0.05236665171643999,
+        "prediction_max": -0.0052365799473643995,
+        "per_timestep_rmse": [
+          3.285271404197185e-05,
+          9.993705259159342e-05,
+          0.00020630659310604007,
+          0.0003507158343654189,
+          0.0005262365792660416,
+          0.0007220071964198492,
+          0.0009283424995768274,
+          0.0011425309652791846,
+          0.0013647569432056852,
+          0.0015978616026582988
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 0.5807961003701665,
+            "truth_sum_square": 801.317712454397,
+            "count": 760650,
+            "truth_absolute_peak": 0.05924070253968239,
+            "prediction_absolute_peak": 0.05236665171643999,
+            "absolute_peak_error": 0.0068740508232423975,
+            "truth_peak_node_index": 73222,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.05236665171643999,
+            "absolute_error_at_truth_peak": 0.0068740508232423975,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 0.5689674603175419,
+            "truth_sum_square": 801.1393967818232,
+            "count": 760650,
+            "truth_absolute_peak": 0.05767599493265152,
+            "prediction_absolute_peak": 0.05236665171643999,
+            "absolute_peak_error": 0.005309343216211529,
+            "truth_peak_node_index": 73214,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -0.05236665171643999,
+            "absolute_error_at_truth_peak": 0.005309343216211529,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_vector": {
+        "unit": "mm",
+        "relative_l2": 0.01935161659386571,
+        "sum_squared_error": 2.5764929228971676,
+        "truth_sum_square": 6880.095269756229,
+        "component_rmse": 0.0007513571385571931,
+        "vector_rmse": 0.0013013887386106272,
+        "vector_error_p95": 3.688056402491696e-05,
+        "vector_error_max": 0.10850080991963115,
+        "centroid_removed_relative_l2": 0.9999999999999999
+      }
+    },
+    "gravity_only_physical_metrics": {
+      "displacement_x": {
+        "unit": "mm",
+        "relative_l2": 0.999985780246099,
+        "sum_squared_error": 2395.321329309968,
+        "truth_sum_square": 2395.389452522641,
+        "truth_l2_norm": 48.94271603132218,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.03968025534661483,
+        "absolute_error_p95": 0.06401677894062048,
+        "absolute_error_max": 0.06716777103609091,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -1.1576467131999998e-06,
+        "prediction_max": -1.1576467131999999e-08,
+        "per_timestep_rmse": [
+          0.006401550640074362,
+          0.012801809376824853,
+          0.01920004934257466,
+          0.025596719611485724,
+          0.031991374722420175,
+          0.03838359791795494,
+          0.044773287860116626,
+          0.051160342877655744,
+          0.05754425046558534,
+          0.06392502736505427
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 1197.7410544469567,
+            "truth_sum_square": 1197.7751169015876,
+            "count": 760650,
+            "truth_absolute_peak": 0.06716892868280411,
+            "prediction_absolute_peak": 1.1576467131999998e-06,
+            "absolute_peak_error": 0.06716777103609091,
+            "truth_peak_node_index": 73400,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.1576467131999998e-06,
+            "absolute_error_at_truth_peak": 0.06716777103609091,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 1197.5802748630108,
+            "truth_sum_square": 1197.6143356210532,
+            "count": 760650,
+            "truth_absolute_peak": 0.06625418365001678,
+            "prediction_absolute_peak": 1.1576467131999998e-06,
+            "absolute_peak_error": 0.06625302600330359,
+            "truth_peak_node_index": 73004,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.1576467131999998e-06,
+            "absolute_error_at_truth_peak": 0.06625302600330359,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "relative_l2": 0.9999857799707506,
+        "sum_squared_error": 2882.1667372583215,
+        "truth_sum_square": 2882.248707997368,
+        "truth_l2_norm": 53.6865784716941,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.04352633679939165,
+        "absolute_error_p95": 0.07022347717611784,
+        "absolute_error_max": 0.07285532026617521,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -1.2698856115999997e-06,
+        "prediction_max": -1.2698856116000001e-08,
+        "per_timestep_rmse": [
+          0.007022150953040762,
+          0.014042751505760214,
+          0.02106151183070416,
+          0.028077959185163943,
+          0.03509184695110404,
+          0.04210346090161282,
+          0.04911273995820809,
+          0.056118950368826886,
+          0.06312192005273073,
+          0.07012159193217028
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 1441.18517720997,
+            "truth_sum_square": 1441.226163781957,
+            "count": 760650,
+            "truth_absolute_peak": 0.0728565901517868,
+            "prediction_absolute_peak": 1.2698856115999997e-06,
+            "absolute_peak_error": 0.07285532026617521,
+            "truth_peak_node_index": 74546,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.2698856115999997e-06,
+            "absolute_error_at_truth_peak": 0.07285532026617521,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 1440.9815600483514,
+            "truth_sum_square": 1441.022544215411,
+            "count": 760650,
+            "truth_absolute_peak": 0.07207823544740677,
+            "prediction_absolute_peak": 1.2698856115999997e-06,
+            "absolute_peak_error": 0.07207696556179517,
+            "truth_peak_node_index": 74547,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -1.2698856115999997e-06,
+            "absolute_error_at_truth_peak": 0.07207696556179517,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "relative_l2": 0.9999857825315628,
+        "sum_squared_error": 1602.4115437933901,
+        "truth_sum_square": 1602.4571092362203,
+        "truth_l2_norm": 40.030702082729206,
+        "relative_l2_definition": "sqrt(sum((prediction-truth)^2)/sum(truth^2)) over all evaluation cases, support points and times; undefined when denominator is zero",
+        "rmse": 0.03245484952164796,
+        "absolute_error_p95": 0.05236478078620481,
+        "absolute_error_max": 0.05923975560324239,
+        "truth_exact_nonzero_count": 1521280,
+        "count": 1521300,
+        "truth_nonfinite_count": 0,
+        "prediction_nonfinite_count": 0,
+        "prediction_negative_count_for_nonnegative_field": null,
+        "prediction_min": -9.469364399999998e-07,
+        "prediction_max": -9.4693644e-09,
+        "per_timestep_rmse": [
+          0.0052362340347053915,
+          0.010471346637060942,
+          0.015704876551127626,
+          0.020936682246819504,
+          0.026166599052544134,
+          0.03139453408484358,
+          0.03662039910386903,
+          0.04184405934609225,
+          0.04706545935174229,
+          0.05228454306019168
+        ],
+        "per_case": [
+          {
+            "case": "phone_e090_rxp050",
+            "sse": 801.2949284775499,
+            "truth_sum_square": 801.317712454397,
+            "count": 760650,
+            "truth_absolute_peak": 0.05924070253968239,
+            "prediction_absolute_peak": 9.469364399999998e-07,
+            "absolute_peak_error": 0.05923975560324239,
+            "truth_peak_node_index": 73222,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -9.469364399999998e-07,
+            "absolute_error_at_truth_peak": 0.05923975560324239,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "sse": 801.1166153158404,
+            "truth_sum_square": 801.1393967818232,
+            "count": 760650,
+            "truth_absolute_peak": 0.05767599493265152,
+            "prediction_absolute_peak": 9.469364399999998e-07,
+            "absolute_peak_error": 0.05767504799621152,
+            "truth_peak_node_index": 73214,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "prediction_at_truth_peak": -9.469364399999998e-07,
+            "absolute_error_at_truth_peak": 0.05767504799621152,
+            "predicted_peak_node_index": 0,
+            "predicted_peak_time_index": 9
+          }
+        ]
+      },
+      "displacement_vector": {
+        "unit": "mm",
+        "relative_l2": 0.9999857806630605,
+        "sum_squared_error": 6879.899610361679,
+        "truth_sum_square": 6880.095269756229,
+        "component_rmse": 0.0388260304307108,
+        "vector_rmse": 0.06724865736220645,
+        "vector_error_p95": 0.10849679718509804,
+        "vector_error_max": 0.10882715054578972,
+        "centroid_removed_relative_l2": 1.0
+      }
+    },
+    "model_displacement_sse_over_ballistic_sse": 0.4532670287728408
+  },
+  "figures": {
+    "case_selection": "First held-out case in frozen split order, final stored time; no error-based selection",
+    "geometry": "All support points at reference XY; overlapping assembly parts can hide each other. No response clipping, nodal subsampling or deformed-geometry exaggeration.",
+    "figures": [
+      {
+        "path": "displacement_magnitude_final_FEM_prediction_error.png",
+        "sha256": "f2ec8d83627c437dd8d68decd5e528112091b7fdc22873af1c94199cd22316f0",
+        "case": "phone_e090_rxp050",
+        "field": "displacement_magnitude",
+        "fem_prediction_common_color_bounds": [
+          0.0,
+          0.11289664692199228
+        ],
+        "error_symmetric_bounds": [
+          -0.07728101858635723,
+          0.07728101858635723
+        ]
+      },
+      {
+        "path": "von_mises_GPS_final_FEM_prediction_error.png",
+        "sha256": "fc201570c7abb0dadcca7411621ac96bd5a0cd2aa6e5deb25be821cdaa2ede85",
+        "case": "phone_e090_rxp050",
+        "field": "von_mises_GPS",
+        "fem_prediction_common_color_bounds": [
+          -0.20532454550266266,
+          23.436975479125977
+        ],
+        "error_symmetric_bounds": [
+          -13.469954490661621,
+          13.469954490661621
+        ]
+      },
+      {
+        "path": "total_strain_frobenius_final_FEM_prediction_error.png",
+        "sha256": "9d0a027bb6d1af0bbb0d993a1d864618077ebd2c981cf4c6a178c97df73f93b0",
+        "case": "phone_e090_rxp050",
+        "field": "total_strain_frobenius",
+        "fem_prediction_common_color_bounds": [
+          -0.00014225178165361285,
+          0.015156315639615059
+        ],
+        "error_symmetric_bounds": [
+          -0.009447680320590734,
+          0.009447680320590734
+        ]
+      },
+      {
+        "path": "epsp_final_FEM_prediction_error.png",
+        "sha256": "c46e903ed7570342555a6e36c691e079fda7416d861868d44ca0d8c4b67ce0a4",
+        "case": "phone_e090_rxp050",
+        "field": "epsp",
+        "fem_prediction_common_color_bounds": [
+          -7.88672059570672e-06,
+          8.079756662482396e-05
+        ],
+        "error_symmetric_bounds": [
+          -8.079756662482396e-05,
+          8.079756662482396e-05
+        ]
+      }
+    ]
+  },
+  "per_case": [
+    {
+      "case": "phone_e090_rxp050",
+      "forward_seconds_cuda_synchronized": 0.36081419999391073,
+      "preparation": {
+        "read_normalize_seconds": 0.007419499997922685,
+        "read_seconds": 0.002111100002366584,
+        "normalize_seconds": 0.005300700002408121,
+        "host_device_transfer_seconds": 0.0009253000025637448
+      },
+      "device_to_host_unscale_save_truth_read_seconds": 0.11848040000040783,
+      "normalized_prediction": "phone_e090_rxp050.normalized.npy",
+      "physical_prediction": "phone_e090_rxp050.physical.npy"
+    },
+    {
+      "case": "phone_e110_rxm050",
+      "forward_seconds_cuda_synchronized": 0.051299200000357814,
+      "preparation": {
+        "read_normalize_seconds": 0.006142500002169982,
+        "read_seconds": 0.0018812999987858348,
+        "normalize_seconds": 0.004254899999068584,
+        "host_device_transfer_seconds": 0.0009787000017240644
+      },
+      "device_to_host_unscale_save_truth_read_seconds": 0.1159172000043327,
+      "normalized_prediction": "phone_e110_rxm050.normalized.npy",
+      "physical_prediction": "phone_e110_rxm050.physical.npy"
+    }
+  ],
+  "forward_seconds_cuda_synchronized_total": 0.41211339999426855,
+  "metrics_and_figures_seconds": 18.43915630000265,
+  "output_sha256": {
+    "displacement_magnitude_final_FEM_prediction_error.png": "f2ec8d83627c437dd8d68decd5e528112091b7fdc22873af1c94199cd22316f0",
+    "epsp_final_FEM_prediction_error.png": "c46e903ed7570342555a6e36c691e079fda7416d861868d44ca0d8c4b67ce0a4",
+    "phone_e090_rxp050.normalized.npy": "e99a28db38622a216734c5c6c5093eab45272146b9aeb995df4f2a4562770303",
+    "phone_e090_rxp050.physical.npy": "8355ebf0aae8ed07bfa8a785e0c07a9f1831697e032fc56e35830b4a4761d59b",
+    "phone_e110_rxm050.normalized.npy": "df95d27fd8c4bea21cce2d0db92e6b64adc9bdffb8a00b4ff76f572fee960f11",
+    "phone_e110_rxm050.physical.npy": "749799536e3b130fc2ab1d4cca84d82341ea452527450644e4e354a30467cc5d",
+    "predictions.npy": "ce02716420daca82c98f505cff548ef67240626a6df4d5bb3a5d558b1bf05d04",
+    "total_strain_frobenius_final_FEM_prediction_error.png": "9d0a027bb6d1af0bbb0d993a1d864618077ebd2c981cf4c6a178c97df73f93b0",
+    "truth.npy": "f9fe7d81281e734e23e251d01682bdf3dfd47ff1dc168d8f2c2f43af9afdb38b",
+    "von_mises_GPS_final_FEM_prediction_error.png": "fc201570c7abb0dadcca7411621ac96bd5a0cd2aa6e5deb25be821cdaa2ede85"
+  },
+  "baseline_source_sha256": {
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\source_metadata\\frozen-case-manifest.json": "2995581f60626a0edbf9e48aa50fac56417760c39fc9b8717a1222a1102f74fd",
+    "<LOCAL_WORKSPACE>\\work\\expanded-drop\\doe\\phone_e090_rxp050\\Cell_Phone_Drop_0000.rad": "5952227ce9e8ebc4ff7683d887ca650708d63b5672a0218c74b8b462abb38360",
+    "<LOCAL_WORKSPACE>\\work\\expanded-drop\\doe\\phone_e110_rxm050\\Cell_Phone_Drop_0000.rad": "b34c8e92993ebc5391210aa1e9d632418cc510415d09105fc8112a87c01de082"
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "raw_predictions_clipped": false,
+  "data_access_disclosure": "READY/contract hashing covers every split. Each held-out FEM target is opened once after sentinel creation; metrics/figures then reuse saved memory-mapped truth and predictions. One B1 forward per held-out case, with no warm-up or repeated performance pass.",
+  "metric_memory_scope": "Disk-backed aggregate float32 arrays; physical_metrics temporarily allocates channel-wise float64 fields and displacement vectors.",
+  "peak_sampled_rss_bytes_lower_bound": 1377939456,
+  "data_value_access": {
+    "train": {
+      "phone_e100_rx000": 1
+    },
+    "validation": {},
+    "test": {
+      "phone_e090_rxp050": 1,
+      "phone_e110_rxm050": 1
+    }
+  },
+  "cuda_allocator_peak_bytes": 128415744,
+  "cuda_reserved_peak_bytes": 184549376,
+  "total_wall_seconds": 39.731417200004216
+}

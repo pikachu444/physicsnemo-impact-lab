@@ -53,6 +53,11 @@ DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 �
 |---|---:|---:|---:|---:|---:|
 | POD + RBF | 0.02620% | 1.356% | 2.61635% | 2.11085% | 30.9711% |
 | POD + ridge | 0.02847% | 1.474% | 2.24952% | 2.13582% | 25.0761% |
+| Transolver B5, 240초 optimizer 예산 | 1.30285% | 67.4430% | 33.8000% | 36.4939% | 96.0813% |
+
+전체 메시의 첫 신경망 Transolver는 실제795epoch/795Adam업데이트/3,975조건 관측을 마쳤고 best754epoch를 내부 검증으로 선택했다. 새 프로세스 validation 재추론 차이0 후 test2조건을 한 번 예측하고, 별도 수치 검산에서 원 FEM·예측·RMSE/L2/P95/max·checkpoint 선택을 확인했다. VM RMSE0.150670MPa, total-strain Frobenius RMSE7.96288e-5, EPSP RMSE3.31994e-6였다. 원 예측의 음수 VM600,081개·Frobenius520,256개·EPSP658,778개, EPSP 시간 감소593,109/1,369,170개를 보존했다. EPSP 참값은 전체1,521,300점×시점 중27개만 양수다. 엄밀0 기준 support 통계와 감소량을 물리적 파손 허용치로 해석하지 않는다. 원 예측 배열은 로컬에 보존한다. [최종 지표·실행 hash·그림](benchmarks/drop_test/models-full-c6/transolver/), [독립 검산](full-support-evaluation-review.md)
+
+이 첫 실행의240.244초는 optimizer 구간이며 총 wall은923.502초였다. data read/정규화238.807초, H2D21.025초, CPU상태/체크포인트2.415초, validation4.763초, Windows 전체 프로세스 관측372.581초 등을 기록했다. 일부 타이머 경계가 겹치므로 이를 전부 더해 wall의 완전한 분할로 취급하지 않는다. 관측 비용만 총 wall의 약40.3%이므로 이를 순수 모델 계산 시간으로 보고하지 않는다. 후속 정적 모델도 같은 실행 소스·240초 규약으로 비교하며 전체 wall은 더 길다. 아직 모든 설정의 평가가 끝난 것은 아니다.
 
 POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므로 full POD+RBF와 직접 RBF 결과는 수치적으로 거의 같다. 이를 별개의 성능 우위로 세지 않는다. 변위 기준 norm²의99.9627%가 평균 병진이며, 작은 전체 변위 L2로 국부 변형을 대신 평가하지 않는다. 평가2조건 EPSP는 총1,521,300개 절점×시점 중27개만 비영이고 첫 조건의 정답 EPSP는 전부0이다. 정답 norm0인 조건의 EPSP 상대 오차는 undefined로 두고 절대 오차·비영 support를 따로 기록했다. 세 predictor는 새 프로세스 재추론 차이0을 확인했다.
 

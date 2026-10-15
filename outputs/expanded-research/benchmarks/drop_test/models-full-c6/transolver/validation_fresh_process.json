@@ -1,0 +1,114 @@
+{
+  "process_identity": {
+    "pid": 35964,
+    "created_unix_seconds": 1792045235.3346648
+  },
+  "pid": 35964,
+  "architecture": "transolver",
+  "checkpoint_sha256": "189917723c8fd4d4ef2f4730238c933bcb027fe653fb4876e0b00715744681d5",
+  "versions": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "torch": "2.10.0+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "nvidia-physicsnemo": "2.2.2",
+    "torch-geometric": "2.8.1",
+    "torch-scatter": "2.1.2+pt210cu126",
+    "warp-lang": "1.18.0",
+    "matplotlib": "3.10.1"
+  },
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "setup_seconds": 21.596109500002058,
+  "quality_gates": {
+    "minimum_updates_satisfied": true,
+    "minimum_two_complete_epochs_satisfied": true,
+    "gate_passed": true,
+    "failure_action": "Report insufficient budget; do not silently extend cap"
+  },
+  "frozen_evidence_sha256": {
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\checkpoint-frozen.json": "5076485fe81c85912c5e6b5002b0ed42a4a7d31f1f3ab86f7ff97d33c2b7938f",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\training_report.json": "058f0c73e3f7611d2a722c13d2df7226fc5b5e89259fe1f121d80e292b5c5ef4",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\best_checkpoint.pt": "189917723c8fd4d4ef2f4730238c933bcb027fe653fb4876e0b00715744681d5",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\validation_reference.npy": "d2740d5266c4b84a5aa9bb78072d142dc468a0169677bc6014ad6043d9ab8529",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\validation_serialization_roundtrip.json": "ce2d594bf3caf19c47f0b19666c7af163020dd8ace590842b1f7f322f73ddc81",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\normalization.json": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\training_mean_field.npy": "b2596285b96916c8856e96dc13617680ef61e82c89fb7ae1ae0f6308dfa39085",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\prospective-training-protocol.json": "99868fbc6585a2434cd7378c5fe788315e49c4f6185948d32a4dadaa9bb494dd",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\source\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\drop_test\\models-full-c6\\transolver\\data-provenance-clarification.json": "120de8550a38cd46074efe780464dfa39a132881813ac392234663a0abae202b"
+  },
+  "source_sha256": {
+    "train_budgeted.py": "80f5ce7f2147d50e26e4d960a665a5c576d90cfc71f8ebb2cc4dfbc5bc2b79ca",
+    "evaluate_budgeted.py": "53e95aee981977af4a36b73c3379aacc9a3307c3460105f4c984405ea624b429",
+    "budgeted_runtime.py": "f4a4bf631ec5eb509d45268f8c3acbde36ecbd1cf63ff9c9bb97cdd44d43ed9a",
+    "budget_protocol.py": "b2fd00f37cbd3b395b20235452cdc8f81f209627e5565768456266a37be7b78a",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673"
+  },
+  "model_source": {
+    "architecture": "transolver",
+    "module": "physicsnemo.models.transolver",
+    "class_name": "Transolver",
+    "implementation_module": "physicsnemo.models.transolver.transolver",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\transolver\\transolver.py",
+    "source_sha256": "4aaa2631e5fd7899037b249a662acce078b967e72e11e468753573f3a79ab78c",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "reference_mean_incident_corner_cell_volume_cuberoot",
+      "2_global_parameters"
+    ]
+  },
+  "status": "passed",
+  "completed_utc": "2026-10-15T06:20:58.067793+00:00",
+  "validation_anchor_case": "phone_e090_rxm050",
+  "max_scale_normalized_difference": 0.0,
+  "tolerance_scale_normalized": 1e-05,
+  "test_values_used": false,
+  "forward_seconds_cuda_synchronized": 0.34825399999681395,
+  "preparation": {
+    "read_normalize_seconds": 0.007252100003825035,
+    "read_seconds": 0.0023479000010411255,
+    "normalize_seconds": 0.004894399993645493,
+    "host_device_transfer_seconds": 0.0011558000041986816
+  },
+  "data_value_access": {
+    "train": {
+      "phone_e100_rx000": 1
+    },
+    "validation": {},
+    "test": {}
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "frozen_data_end_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "total_wall_seconds": 22.513872900002752,
+  "definition": "Fresh executable process reconstructs model from fixed serialized checkpoint and compares its validation anchor with training's saved normalized reference; no test response values."
+}

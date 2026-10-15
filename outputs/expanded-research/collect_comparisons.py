@@ -9,9 +9,45 @@ from pathlib import Path
 
 def collect(root: Path) -> dict:
     runs, rows, other, reloads = [], [], [], []
-    for path in sorted((root / "benchmarks").rglob("metrics.json")):
+    paths = set((root / "benchmarks").rglob("metrics.json"))
+    paths.update((root / "benchmarks").rglob("test_report.json"))
+    for path in sorted(paths):
         raw = path.read_bytes()
         data = json.loads(raw.decode("utf-8-sig"))
+        budget_metadata = {}
+        if path.name == "test_report.json":
+            training_path = path.parent / "training_report.json"
+            if (data.get("status") != "completed" or data.get("test_performance_passes") != 1
+                    or "physical_metrics" not in data or not training_path.is_file()):
+                other.append(path.relative_to(root).as_posix())
+                continue
+            training_bytes = training_path.read_bytes()
+            training = json.loads(training_bytes.decode("utf-8-sig"))
+            accounting = training["budget_accounting"]
+            budget_metadata = {
+                "training_report_sha256": hashlib.sha256(training_bytes).hexdigest(),
+                "quality_gates": training["quality_gates"],
+                "optimizer_updates": accounting["total_updates"],
+                "case_observations": accounting["total_samples"],
+                "training_total_wall_seconds": training["total_wall_seconds"],
+                "test_total_wall_seconds": data["total_wall_seconds"],
+                "separate_training_timers": training["separate_timers"],
+                "monitoring_seconds": training["workloads"]["monitoring_seconds"],
+                "timing_boundary": training["timing_boundary"],
+            }
+            data = {
+                "status": "actual_budgeted_training_and_fresh_heldout_evaluation_completed",
+                "mode": "budgeted_train_and_fresh_test",
+                "contract": training["contract"],
+                "metrics": {data["architecture"]: data["physical_metrics"]},
+                "actual_epochs": len(accounting["completed_epochs"]),
+                "best_epoch": training["best_epoch"],
+                "best_validation_normalized_mse": training["best_validation_normalized_mse"],
+                "selected_by_validation_only": True,
+                "training_seconds": accounting["train_seconds"],
+                "peak_sampled_rss_bytes": training["peak_sampled_rss_bytes_lower_bound"],
+                "cuda_peak_allocated_bytes": training["training_cuda_allocator_peak_bytes"],
+            }
         if str(data.get("status", "")).startswith("fresh_"):
             reloads.append({"evidence": path.relative_to(root).as_posix(),
                             "metrics_sha256": hashlib.sha256(raw).hexdigest(),
@@ -51,6 +87,7 @@ def collect(root: Path) -> dict:
             "peak_process_rss_bytes": data.get("peak_process_rss_bytes", data.get("peak_sampled_rss_bytes")),
             "cuda_peak_allocated_bytes": data.get("cuda_peak_allocated_bytes"),
             "models": [item[0] for item in recognized],
+            **budget_metadata,
         }
         runs.append(provenance)
         for model, fields in recognized:
