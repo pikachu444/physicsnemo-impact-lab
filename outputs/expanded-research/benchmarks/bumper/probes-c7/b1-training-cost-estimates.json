@@ -1,0 +1,232 @@
+{
+  "status": "resource_based_training_budget_proposal; no full training or heldout evaluation performed",
+  "optimizer_unit": "One FEM condition: predict all nodes and all stored10times/channels in one forward; one normalized mean loss and one Adam update. Time frames are flattened output channels, not separate samples or updates.",
+  "limitations": "Based on only update2/3 from a single training condition. Their scaled interval is an observed sample range, not a statistical confidence interval or runtime guarantee. Excludes normalization/cache setup, per-case input/output copies and validation. Probe finite-gradient checks can add costs not present in the training loop. Actual epochs must be timed before a longer run. Does not establish convergence, generalization or an algorithm ranking.",
+  "data_access": "Numerical train-only; all-split provenance hash access is separately disclosed in data-access-clarification.json.",
+  "results": [
+    {
+      "dataset": "phone-full-c6",
+      "batch_size": 1,
+      "training_cases": 5,
+      "adam_updates_per_epoch": 5,
+      "epochs_for_1000_updates": 200.0,
+      "epochs_for_5000_updates": 1000.0,
+      "models": [
+        {
+          "architecture": "transolver",
+          "warm_update_median_seconds": 0.12297579999903974,
+          "observed_warm_update_seconds": [
+            0.12143199999991339,
+            0.12451959999816609
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 0.6148789999951987,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            0.6071599999995669,
+            0.6225979999908304
+          ],
+          "1000_adam_updates_seconds": 122.97579999903974,
+          "5000_adam_updates_seconds": 614.8789999951987,
+          "cuda_allocator_peak_bytes": 633687552,
+          "sampled_rss_max_bytes_lower_bound": 1453977600
+        },
+        {
+          "architecture": "flare",
+          "warm_update_median_seconds": 0.2956342500001483,
+          "observed_warm_update_seconds": [
+            0.2959508999992977,
+            0.29531760000099894
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 1.4781712500007416,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            1.4765880000049947,
+            1.4797544999964884
+          ],
+          "1000_adam_updates_seconds": 295.6342500001483,
+          "5000_adam_updates_seconds": 1478.1712500007416,
+          "cuda_allocator_peak_bytes": 636468736,
+          "sampled_rss_max_bytes_lower_bound": 1348354048
+        },
+        {
+          "architecture": "geotransolver",
+          "warm_update_median_seconds": 0.14833084999918356,
+          "observed_warm_update_seconds": [
+            0.1504434999988007,
+            0.14621819999956642
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 0.7416542499959178,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            0.7310909999978321,
+            0.7522174999940034
+          ],
+          "1000_adam_updates_seconds": 148.33084999918356,
+          "5000_adam_updates_seconds": 741.6542499959178,
+          "cuda_allocator_peak_bytes": 691119104,
+          "sampled_rss_max_bytes_lower_bound": 1483378688
+        },
+        {
+          "architecture": "geoflare",
+          "warm_update_median_seconds": 0.42378445000031206,
+          "observed_warm_update_seconds": [
+            0.42704130000129226,
+            0.42052759999933187
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 2.1189222500015603,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            2.1026379999966593,
+            2.1352065000064613
+          ],
+          "1000_adam_updates_seconds": 423.78445000031206,
+          "5000_adam_updates_seconds": 2118.9222500015603,
+          "cuda_allocator_peak_bytes": 816505856,
+          "sampled_rss_max_bytes_lower_bound": 1482551296
+        },
+        {
+          "architecture": "meshgraphnet",
+          "warm_update_median_seconds": 0.30431994999889866,
+          "observed_warm_update_seconds": [
+            0.3032502999994904,
+            0.30538959999830695
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 1.5215997499944933,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            1.516251499997452,
+            1.5269479999915347
+          ],
+          "1000_adam_updates_seconds": 304.31994999889866,
+          "5000_adam_updates_seconds": 1521.5997499944933,
+          "cuda_allocator_peak_bytes": 3021069824,
+          "sampled_rss_max_bytes_lower_bound": 1782652928
+        },
+        {
+          "architecture": "figconvunet",
+          "warm_update_median_seconds": 0.3791672999996081,
+          "observed_warm_update_seconds": [
+            0.3857970999997633,
+            0.37253749999945285
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 1.8958364999980404,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            1.8626874999972642,
+            1.9289854999988165
+          ],
+          "1000_adam_updates_seconds": 379.1672999996081,
+          "5000_adam_updates_seconds": 1895.8364999980404,
+          "cuda_allocator_peak_bytes": 1690085888,
+          "sampled_rss_max_bytes_lower_bound": 1841950720
+        }
+      ]
+    },
+    {
+      "dataset": "bumper-c7",
+      "batch_size": 1,
+      "training_cases": 112,
+      "adam_updates_per_epoch": 112,
+      "epochs_for_1000_updates": 8.928571428571429,
+      "epochs_for_5000_updates": 44.642857142857146,
+      "models": [
+        {
+          "architecture": "transolver",
+          "warm_update_median_seconds": 0.11063370000192663,
+          "observed_warm_update_seconds": [
+            0.13712170000144397,
+            0.08414570000240928
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 12.390974400215782,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            9.42431840026984,
+            15.357630400161725
+          ],
+          "1000_adam_updates_seconds": 110.63370000192663,
+          "5000_adam_updates_seconds": 553.1685000096331,
+          "cuda_allocator_peak_bytes": 133975552,
+          "sampled_rss_max_bytes_lower_bound": 1428348928
+        },
+        {
+          "architecture": "flare",
+          "warm_update_median_seconds": 0.06532404999779828,
+          "observed_warm_update_seconds": [
+            0.06670509999821661,
+            0.06394299999737996
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 7.316293599753408,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            7.161615999706555,
+            7.47097119980026
+          ],
+          "1000_adam_updates_seconds": 65.32404999779828,
+          "5000_adam_updates_seconds": 326.6202499889914,
+          "cuda_allocator_peak_bytes": 132816384,
+          "sampled_rss_max_bytes_lower_bound": 1322213376
+        },
+        {
+          "architecture": "geotransolver",
+          "warm_update_median_seconds": 0.11569009999948321,
+          "observed_warm_update_seconds": [
+            0.14526349999869126,
+            0.08611670000027516
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 12.95729119994212,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            9.645070400030818,
+            16.26951199985342
+          ],
+          "1000_adam_updates_seconds": 115.69009999948321,
+          "5000_adam_updates_seconds": 578.450499997416,
+          "cuda_allocator_peak_bytes": 143698432,
+          "sampled_rss_max_bytes_lower_bound": 1457995776
+        },
+        {
+          "architecture": "geoflare",
+          "warm_update_median_seconds": 0.14585119999901508,
+          "observed_warm_update_seconds": [
+            0.17205589999866788,
+            0.11964649999936228
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 16.33533439988969,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            13.400407999928575,
+            19.270260799850803
+          ],
+          "1000_adam_updates_seconds": 145.85119999901508,
+          "5000_adam_updates_seconds": 729.2559999950754,
+          "cuda_allocator_peak_bytes": 165241344,
+          "sampled_rss_max_bytes_lower_bound": 1457778688
+        },
+        {
+          "architecture": "meshgraphnet",
+          "warm_update_median_seconds": 0.13517425000100047,
+          "observed_warm_update_seconds": [
+            0.14663859999927809,
+            0.12370990000272286
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 15.139516000112053,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            13.85550880030496,
+            16.423523199919146
+          ],
+          "1000_adam_updates_seconds": 135.17425000100047,
+          "5000_adam_updates_seconds": 675.8712500050024,
+          "cuda_allocator_peak_bytes": 334359040,
+          "sampled_rss_max_bytes_lower_bound": 1788874752
+        },
+        {
+          "architecture": "figconvunet",
+          "warm_update_median_seconds": 0.19788180000068678,
+          "observed_warm_update_seconds": [
+            0.19637950000105775,
+            0.1993841000003158
+          ],
+          "one_training_epoch_seconds_excluding_validation_and_case_io": 22.16276160007692,
+          "one_training_epoch_observed_sample_scaled_interval_seconds": [
+            21.994504000118468,
+            22.33101920003537
+          ],
+          "1000_adam_updates_seconds": 197.88180000068678,
+          "5000_adam_updates_seconds": 989.4090000034339,
+          "cuda_allocator_peak_bytes": 345326592,
+          "sampled_rss_max_bytes_lower_bound": 1818193920
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "status":  "USER_AUTHORIZED_LOCAL_FEM_CONTINUATION",
+    "source_checkpoint_sha256":  "e56c1f0764f5daa4946c313458d126f8df4230f19b7917b87de4843603de1dee",
+    "engine_binary_sha256":  "13a9d6551fb9206b6c27c8af819e752edf3550e4725e446a2c3042c6c1a2b9d1",
+    "source_actual_time_s":  0.00010000866313930601,
+    "requested_final_time_s":  0.0005,
+    "engine_number":  3,
+    "threads":  2,
+    "priority":  "BelowNormal",
+    "process_memory_cap_MiB":  600,
+    "system_free_memory_graceful_stop_MiB":  256,
+    "preflight_free_memory_MiB":  1280,
+    "wall_cap_seconds":  7200,
+    "expected_wall_seconds_linear_estimate":  3607.56,
+    "estimate_is_measurement":  false,
+    "checkpoint":  "RFILE2 every2000cycles, plus CHKPT/STOP if resource guard fires",
+    "output":  "10us animations;4validIP stress+strain;VM/EPSP/GPS/VEL;0.1us globalhistory",
+    "changed_physics":  "None. Original geometry/material/wall/velocity/gravity and20usAIcache unchanged.",
+    "source_checkpoint":  "work/expanded-drop/100us-run/Cell_Phone_Drop_0002_0001.rst",
+    "source_restart_boundary_check":  "../100us/restart-boundary-bitwise-check.json",
+    "supersedes_direction_status_of":  "../100us/500us-continuation-plan-NOT-EXECUTED.json",
+    "new_engine_file_sha256":  "1383bc14f21d63c54b04d6e796cae5afc44dc106a93235c46c75e06a83adc6c7"
+}

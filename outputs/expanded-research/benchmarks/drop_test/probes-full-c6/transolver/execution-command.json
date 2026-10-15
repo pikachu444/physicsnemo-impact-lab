@@ -1,0 +1,33 @@
+{
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/run_benchmark.py",
+    "--cache",
+    "work/expanded-ml/phone-full-cache-v2/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/drop_test/probes-full-c6/transolver",
+    "--architecture",
+    "transolver",
+    "--mode",
+    "probe",
+    "--probe-steps",
+    "3",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--normalization",
+    "work/expanded-ml/phone-full-normalization.json",
+    "--workload-note",
+    "Single GPU owner for native support resource probe; no other model training. Public FEM training case only. User applications remain open; timings are on a shared workstation."
+  ],
+  "seconds": 26.3964419,
+  "started_utc": "2026-10-15T04:18:54.3947259+00:00",
+  "architecture": "transolver",
+  "dataset": "phone-full-c6",
+  "exit_code": 0,
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "finished_utc": "2026-10-15T04:19:20.7911678+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-c6-transolver-probe.log"
+}

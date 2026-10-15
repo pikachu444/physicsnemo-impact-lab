@@ -1,0 +1,179 @@
+{
+  "status": "completed_with_stops",
+  "started_utc": "2026-10-15T05:58:50.125952+00:00",
+  "scope": "Only phone FIGConvUNet B2, then B5 if B2 passes; no training run or held-out evaluation",
+  "original_suite_sha256": "654ba5b55fec24bfc237777e83698a4b1ef43c93e9a08400867a7cb3dc613a7e",
+  "results": [
+    {
+      "domain": "phone",
+      "architecture": "figconvunet",
+      "batch_size": 2,
+      "command": [
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py",
+        "--domain",
+        "phone",
+        "--architecture",
+        "figconvunet",
+        "--batch-size",
+        "2",
+        "--out",
+        "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B2",
+        "--timing-repeats",
+        "2",
+        "--gpu-slot-authorized"
+      ],
+      "raw_log": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B2.raw.log",
+      "pid": 45004,
+      "exit_code": 0,
+      "status": "passed",
+      "result": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B2\\result.json",
+      "timing": {
+        "forward": {
+          "measurements": {
+            "original_B1_x_B": [
+              {
+                "seconds": 0.4884606999985408,
+                "rss_bytes": 2159517696,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 460033024,
+                "cuda_peak_reserved_bytes": 4290772992
+              },
+              {
+                "seconds": 0.4476646000002802,
+                "rss_bytes": 2160041984,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 462447616,
+                "cuda_peak_reserved_bytes": 4290772992
+              }
+            ],
+            "native_batch": [
+              {
+                "seconds": 0.621206899999379,
+                "rss_bytes": 2159521792,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 810277888,
+                "cuda_peak_reserved_bytes": 4290772992
+              },
+              {
+                "seconds": 0.4150183999990986,
+                "rss_bytes": 2160025600,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 812692480,
+                "cuda_peak_reserved_bytes": 4290772992
+              }
+            ]
+          },
+          "original_B1_x_B_median_seconds": 0.4680626499994105,
+          "native_batch_median_seconds": 0.5181126499992388,
+          "original_B1_simulations_per_second": 4.272932266658147,
+          "native_batch_simulations_per_second": 3.8601643870361753,
+          "measured_speedup": 0.9033993862147511,
+          "native_faster_in_every_paired_repeat": false
+        },
+        "forward_backward": {
+          "measurements": {
+            "original_B1_x_B": [
+              {
+                "seconds": 0.694737100002385,
+                "rss_bytes": 2160001024,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 1707099648,
+                "cuda_peak_reserved_bytes": 4290772992
+              },
+              {
+                "seconds": 0.637941499997396,
+                "rss_bytes": 2160111616,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 1707099648,
+                "cuda_peak_reserved_bytes": 4290772992
+              }
+            ],
+            "native_batch": [
+              {
+                "seconds": 0.6056915999979537,
+                "rss_bytes": 2160017408,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 3339035648,
+                "cuda_peak_reserved_bytes": 4290772992
+              },
+              {
+                "seconds": 0.6042022999972687,
+                "rss_bytes": 2160074752,
+                "windows_process_peak_wset_bytes": 2165116928,
+                "cuda_peak_allocated_bytes": 3339035648,
+                "cuda_peak_reserved_bytes": 4290772992
+              }
+            ]
+          },
+          "original_B1_x_B_median_seconds": 0.6663392999998905,
+          "native_batch_median_seconds": 0.6049469499976112,
+          "original_B1_simulations_per_second": 3.001473873746196,
+          "native_batch_simulations_per_second": 3.3060750203102893,
+          "measured_speedup": 1.101483857390341,
+          "native_faster_in_every_paired_repeat": true
+        }
+      },
+      "failed_stage": null,
+      "seconds": 59.100858900001185,
+      "resource_log": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone-figconvunet-B2-resources.jsonl",
+      "samples": 119,
+      "resource_summary": {
+        "minimum_available_physical_bytes": 1124827136,
+        "minimum_available_commit_bytes": 18638438400,
+        "peak_sampled_rss_bytes": 3964928
+      }
+    },
+    {
+      "domain": "phone",
+      "architecture": "figconvunet",
+      "batch_size": 5,
+      "command": [
+        "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+        "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py",
+        "--domain",
+        "phone",
+        "--architecture",
+        "figconvunet",
+        "--batch-size",
+        "5",
+        "--out",
+        "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5",
+        "--timing-repeats",
+        "2",
+        "--gpu-slot-authorized"
+      ],
+      "raw_log": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5.raw.log",
+      "pid": 37968,
+      "exit_code": 1,
+      "status": "resource_guard_stop",
+      "stop_sample": {
+        "utc": "2026-10-15T06:00:21.794289+00:00",
+        "elapsed_seconds": 32.56435209999836,
+        "available_physical_bytes": 11423744,
+        "available_commit_bytes": 14057857024,
+        "total_commit_bytes": 48987578368,
+        "rss_bytes": 3960832,
+        "windows_process_peak_wset_bytes": 3973120
+      },
+      "reason": "Owned probe terminated by explicit OS resource guard",
+      "seconds": 32.56943829999727,
+      "resource_log": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone-figconvunet-B5-resources.jsonl",
+      "samples": 66,
+      "resource_summary": {
+        "minimum_available_physical_bytes": 11423744,
+        "minimum_available_commit_bytes": 14034624512,
+        "peak_sampled_rss_bytes": 3973120
+      }
+    }
+  ],
+  "timeout_seconds": 180,
+  "guard": {
+    "physical_available_min_bytes": 134217728,
+    "commit_available_min_bytes": 1073741824,
+    "commit_definition": "Windows GlobalMemoryStatusEx ullAvailPageFile; available system commit, not process address space",
+    "sample_interval_seconds": 0.5
+  },
+  "runner_sha256": "1a61469fd1625dfc8b814b386f4942d3bb1fb068e637295fc3252574e36d51d3",
+  "finished_utc": "2026-10-15T06:00:21.803420+00:00"
+}

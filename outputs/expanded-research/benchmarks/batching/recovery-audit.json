@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "static_checks": {
+    "status": "static_checks_passed",
+    "python_files": [
+      "batch_adapters.py",
+      "finish_remaining.py",
+      "run_batch_probe.py",
+      "run_batch_suite.py",
+      "static_check.py",
+      "summarize_completed.py",
+      "train_probe_data.py"
+    ],
+    "training_metadata_checks": [
+      {
+        "domain": "bumper",
+        "batch_size": 1,
+        "train_cases": [
+          "Run192"
+        ],
+        "selected_file_count": 4,
+        "array_files_opened": 0
+      },
+      {
+        "domain": "bumper",
+        "batch_size": 2,
+        "train_cases": [
+          "Run192",
+          "Run179"
+        ],
+        "selected_file_count": 6,
+        "array_files_opened": 0
+      },
+      {
+        "domain": "bumper",
+        "batch_size": 5,
+        "train_cases": [
+          "Run192",
+          "Run179",
+          "Run213",
+          "Run209",
+          "Run102"
+        ],
+        "selected_file_count": 12,
+        "array_files_opened": 0
+      },
+      {
+        "domain": "phone",
+        "batch_size": 1,
+        "train_cases": [
+          "phone_e100_rx000"
+        ],
+        "selected_file_count": 4,
+        "array_files_opened": 0
+      },
+      {
+        "domain": "phone",
+        "batch_size": 2,
+        "train_cases": [
+          "phone_e100_rx000",
+          "phone_e080_rxm100"
+        ],
+        "selected_file_count": 5,
+        "array_files_opened": 0
+      },
+      {
+        "domain": "phone",
+        "batch_size": 5,
+        "train_cases": [
+          "phone_e100_rx000",
+          "phone_e080_rxm100",
+          "phone_e080_rxp100",
+          "phone_e120_rxm100",
+          "phone_e120_rxp100"
+        ],
+        "selected_file_count": 8,
+        "array_files_opened": 0
+      }
+    ],
+    "ML_modules_imported": false,
+    "array_files_opened": 0,
+    "GPU_execution": false
+  },
+  "recovery_source_sha256": {
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\recovery-source\\finish_remaining.py": "1a61469fd1625dfc8b814b386f4942d3bb1fb068e637295fc3252574e36d51d3",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\recovery-source\\summarize_completed.py": "7b1c680bd1ad84d2c6e6f7f45d8190813109b831021385dc5db3182e1990acfb"
+  },
+  "guarded_B5_source_snapshot_checks": [
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\run_batch_probe.py",
+      "sha256": "d3f3f5898eff47be4e5fdb54f489808f11e8ae501867d8257386e9548a19f6e6",
+      "matched_completed_B2_snapshot": true
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\batch_adapters.py",
+      "sha256": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+      "matched_completed_B2_snapshot": true
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\train_probe_data.py",
+      "sha256": "0287662371b5268a005b36a9cc3a5b278ea56a4b8b52a3a207e9725a4a9f78f5",
+      "matched_completed_B2_snapshot": true
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\model_adapters.py",
+      "sha256": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+      "matched_completed_B2_snapshot": true
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\benchmark_data.py",
+      "sha256": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+      "matched_completed_B2_snapshot": true
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-02\\phone\\figconvunet\\B5\\source\\run_benchmark.py",
+      "sha256": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab",
+      "matched_completed_B2_snapshot": true
+    }
+  ],
+  "guarded_B5_input_provenance": {
+    "evidence_type": "Reconstructed from frozen train-only metadata and exact source snapshot; train_data:complete event proves loader finished, but process stopped before result.json",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "normalization_sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "selected_train_cases": [
+      "phone_e100_rx000",
+      "phone_e080_rxm100",
+      "phone_e080_rxp100",
+      "phone_e120_rxm100",
+      "phone_e120_rxp100"
+    ],
+    "selected_train_files_expected_from_READY": [
+      {
+        "name": "coordinates.npy",
+        "bytes": 912908,
+        "sha256": "b786c1bcbc5016dc9bebaa8919d186ee18c4dcfa1a20fc95bd6533321e7938f5"
+      },
+      {
+        "name": "edge_index.npy",
+        "bytes": 8979072,
+        "sha256": "dc670b7640884ea26cf006f0b5a13d5cb91ff335701b89c90ee8b889bd6b2298"
+      },
+      {
+        "name": "runs/phone_e080_rxm100.npy",
+        "bytes": 18255728,
+        "sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa"
+      },
+      {
+        "name": "runs/phone_e080_rxp100.npy",
+        "bytes": 18255728,
+        "sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f"
+      },
+      {
+        "name": "runs/phone_e100_rx000.npy",
+        "bytes": 18255728,
+        "sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf"
+      },
+      {
+        "name": "runs/phone_e120_rxm100.npy",
+        "bytes": 18255728,
+        "sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa"
+      },
+      {
+        "name": "runs/phone_e120_rxp100.npy",
+        "bytes": 18255728,
+        "sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a"
+      },
+      {
+        "name": "static_feature.npy",
+        "bytes": 304388,
+        "sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8"
+      }
+    ],
+    "heldout_label_arrays_read_or_hashed_by_audit": 0
+  },
+  "metric_clarification": "Batch recommendations optimize forward/backward training workload. Phone FIG B2 forward-only speedup is0.9034x, while forward/backward speedup is1.1015x. Neither demonstrates equal training convergence.",
+  "source_and_data_digest_clarification": "Preceding main B1 coordinate/edge hashes use raw contiguous array bytes; strict batch opened_data_files hashes use full .npy bytes. These digest formats must not be equated.",
+  "guard_RSS_clarification": "System-wide available physical/commit samples are valid. Monitor RSS describes the Windows venv launcher. Actual Torch RSS is recorded by the probe in result/events; the runner never mistakes launcher RSS for actual probe peak in final interpretation."
+}

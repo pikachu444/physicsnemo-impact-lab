@@ -1,0 +1,8 @@
+{
+  "scope": "The twelve B1 native-support probes: full-phone C6 and bumper C7, six model configurations each.",
+  "numerical_use": "Field normalization is computed from training cases only and checked against the frozen training statistics. Each actual forward/backward/Adam probe uses the first training condition only, with all its stored time/channel labels. No validation/test response value is used for parameter selection, a gradient update, or heldout performance evaluation in these probes.",
+  "provenance_access": "The shared READY verifier and Cache.contract read target-file bytes from all splits, including validation and test, to verify SHA256 data identity and shape/file inventory contracts. This is provenance verification, not response fitting or performance evaluation.",
+  "strict_file_access_claim": false,
+  "interpretation": "Train-only describes numerical statistics and optimizer use here. It does not mean heldout files were never opened. The independent B2/B5 probe uses a separate restricted loader and has its own access evidence.",
+  "immutability": "This clarification is additive. Existing probe.json, code snapshots, normalized statistics, run logs and measurements are unchanged."
+}

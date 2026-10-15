@@ -1,0 +1,33 @@
+{
+  "finished_utc": "2026-10-15T04:21:57.1587331+00:00",
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "dataset": "phone-full-c6",
+  "architecture": "meshgraphnet",
+  "seconds": 31.4274978,
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-c6-meshgraphnet-probe.log",
+  "started_utc": "2026-10-15T04:21:25.7312353+00:00",
+  "exit_code": 0,
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/run_benchmark.py",
+    "--cache",
+    "work/expanded-ml/phone-full-cache-v2/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/drop_test/probes-full-c6/meshgraphnet",
+    "--architecture",
+    "meshgraphnet",
+    "--mode",
+    "probe",
+    "--probe-steps",
+    "3",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--normalization",
+    "work/expanded-ml/phone-full-normalization.json",
+    "--workload-note",
+    "Single GPU owner for native support resource probe; no other model training. Public FEM training case only. User applications remain open; timings are on a shared workstation."
+  ]
+}

@@ -1,0 +1,40 @@
+{"utc": "2026-10-15T04:33:08.614105+00:00", "elapsed_seconds": 5.3703078999969875, "stage": "train_data:start"}
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{"utc": "2026-10-15T04:33:24.452360+00:00", "elapsed_seconds": 21.2086195999982, "stage": "train_data:complete", "rss_bytes": 1095393280, "windows_process_peak_wset_bytes": 1095393280, "cuda_peak_allocated_bytes": 109118464, "cuda_peak_reserved_bytes": 115343360}
+{"utc": "2026-10-15T04:33:24.459482+00:00", "elapsed_seconds": 21.215733099998033, "stage": "warm_original_B1_outputs:start"}
+{"utc": "2026-10-15T04:33:25.504645+00:00", "elapsed_seconds": 22.26090539999859, "stage": "warm_original_B1_outputs:complete", "seconds": 1.0434071000017866, "rss_bytes": 1522765824, "windows_process_peak_wset_bytes": 1522765824, "cuda_peak_allocated_bytes": 225558528, "cuda_peak_reserved_bytes": 276824064}
+{"utc": "2026-10-15T04:33:25.506360+00:00", "elapsed_seconds": 22.262618999997358, "stage": "warm_native_batch_output:start"}
+{"utc": "2026-10-15T04:33:25.674310+00:00", "elapsed_seconds": 22.430571399996552, "stage": "warm_native_batch_output:complete", "seconds": 0.16650230000232114, "rss_bytes": 1619525632, "windows_process_peak_wset_bytes": 1619525632, "cuda_peak_allocated_bytes": 683391488, "cuda_peak_reserved_bytes": 1065353216}
+{"utc": "2026-10-15T04:33:26.445779+00:00", "elapsed_seconds": 23.202058799997758, "stage": "case_order_independence:start"}
+{"utc": "2026-10-15T04:33:26.601488+00:00", "elapsed_seconds": 23.357753199998115, "stage": "case_order_independence:complete", "seconds": 0.15399069999693893, "rss_bytes": 1936220160, "windows_process_peak_wset_bytes": 2003812352, "cuda_peak_allocated_bytes": 689099776, "cuda_peak_reserved_bytes": 1065353216}
+{"utc": "2026-10-15T04:33:27.267598+00:00", "elapsed_seconds": 24.023872499998106, "stage": "other_case_globals_independence:start"}
+{"utc": "2026-10-15T04:33:27.393901+00:00", "elapsed_seconds": 24.150173899997753, "stage": "other_case_globals_independence:complete", "seconds": 0.12462109999978566, "rss_bytes": 2219646976, "windows_process_peak_wset_bytes": 2219646976, "cuda_peak_allocated_bytes": 683014144, "cuda_peak_reserved_bytes": 1065353216}
+{"utc": "2026-10-15T04:33:28.158938+00:00", "elapsed_seconds": 24.91522299999997, "stage": "warm_original_B1_mean_gradient:start"}
+{"utc": "2026-10-15T04:33:28.858262+00:00", "elapsed_seconds": 25.614539700000023, "stage": "warm_original_B1_mean_gradient:complete", "seconds": 0.6965872000000672, "rss_bytes": 2217193472, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 708548096, "cuda_peak_reserved_bytes": 1067450368}
+{"utc": "2026-10-15T04:33:28.862524+00:00", "elapsed_seconds": 25.618797600000107, "stage": "warm_native_batchmean_gradient:start"}
+{"utc": "2026-10-15T04:33:29.139019+00:00", "elapsed_seconds": 25.895302599998104, "stage": "warm_native_batchmean_gradient:complete", "seconds": 0.274788400001853, "rss_bytes": 2217082880, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 3149615104, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:29.162978+00:00", "elapsed_seconds": 25.919257799996558, "stage": "forward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:29.418426+00:00", "elapsed_seconds": 26.174702999996953, "stage": "forward:1:original_B1_x_B:complete", "seconds": 0.25354650000008405, "rss_bytes": 2217385984, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 306951168, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:29.419429+00:00", "elapsed_seconds": 26.175696899998, "stage": "forward:1:native_batch:start"}
+{"utc": "2026-10-15T04:33:29.519904+00:00", "elapsed_seconds": 26.27618369999982, "stage": "forward:1:native_batch:complete", "seconds": 0.09905470000012428, "rss_bytes": 2217394176, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 691911168, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:29.521174+00:00", "elapsed_seconds": 26.277446399999462, "stage": "forward_backward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:30.055518+00:00", "elapsed_seconds": 26.81180129999848, "stage": "forward_backward:1:original_B1_x_B:complete", "seconds": 0.5327124999967054, "rss_bytes": 2217533440, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 708548096, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:30.056372+00:00", "elapsed_seconds": 26.812641399999848, "stage": "forward_backward:1:native_batch:start"}
+{"utc": "2026-10-15T04:33:30.324054+00:00", "elapsed_seconds": 27.080328899999586, "stage": "forward_backward:1:native_batch:complete", "seconds": 0.26646839999739313, "rss_bytes": 2217533440, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 3146866688, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:30.324945+00:00", "elapsed_seconds": 27.08121989999927, "stage": "forward:2:native_batch:start"}
+{"utc": "2026-10-15T04:33:30.431655+00:00", "elapsed_seconds": 27.187940199997684, "stage": "forward:2:native_batch:complete", "seconds": 0.10554159999810508, "rss_bytes": 2217533440, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 692091904, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:30.432528+00:00", "elapsed_seconds": 27.188797099999647, "stage": "forward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:30.687181+00:00", "elapsed_seconds": 27.443464099997072, "stage": "forward:2:original_B1_x_B:complete", "seconds": 0.2533819999989646, "rss_bytes": 2217545728, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 307131904, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:30.688222+00:00", "elapsed_seconds": 27.444493899998633, "stage": "forward_backward:2:native_batch:start"}
+{"utc": "2026-10-15T04:33:30.948943+00:00", "elapsed_seconds": 27.70521909999661, "stage": "forward_backward:2:native_batch:complete", "seconds": 0.2595919000013964, "rss_bytes": 2217558016, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 3146866688, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:30.949719+00:00", "elapsed_seconds": 27.70599139999831, "stage": "forward_backward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:31.491670+00:00", "elapsed_seconds": 28.24795709999671, "stage": "forward_backward:2:original_B1_x_B:complete", "seconds": 0.5407106999991811, "rss_bytes": 2217586688, "windows_process_peak_wset_bytes": 2276392960, "cuda_peak_allocated_bytes": 708548096, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:31.497147+00:00", "elapsed_seconds": 28.25342719999753, "stage": "actual_Adam_update:1:start"}
+{"utc": "2026-10-15T04:33:31.867807+00:00", "elapsed_seconds": 28.62408729999879, "stage": "actual_Adam_update:1:complete", "seconds": 0.36945579999883194, "rss_bytes": 2283134976, "windows_process_peak_wset_bytes": 2283134976, "cuda_peak_allocated_bytes": 3146866688, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:31.895022+00:00", "elapsed_seconds": 28.65130549999958, "stage": "actual_Adam_update:2:start"}
+{"utc": "2026-10-15T04:33:32.157235+00:00", "elapsed_seconds": 28.913517499997397, "stage": "actual_Adam_update:2:complete", "seconds": 0.26066180000270833, "rss_bytes": 2283171840, "windows_process_peak_wset_bytes": 2283171840, "cuda_peak_allocated_bytes": 3147228672, "cuda_peak_reserved_bytes": 3460300800}
+{"utc": "2026-10-15T04:33:32.176727+00:00", "elapsed_seconds": 28.933013799996843, "stage": "actual_Adam_update:3:start"}
+{"utc": "2026-10-15T04:33:32.444809+00:00", "elapsed_seconds": 29.201097399996797, "stage": "actual_Adam_update:3:complete", "seconds": 0.2662586000005831, "rss_bytes": 2283212800, "windows_process_peak_wset_bytes": 2283212800, "cuda_peak_allocated_bytes": 3147228672, "cuda_peak_reserved_bytes": 3460300800}

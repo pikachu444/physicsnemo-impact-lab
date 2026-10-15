@@ -1,0 +1,292 @@
+{
+  "mode": "probe",
+  "architecture": "figconvunet",
+  "model_config": {
+    "in_channels": 6,
+    "out_channels": 60,
+    "kernel_size": 3,
+    "hidden_channels": [
+      16,
+      24,
+      32
+    ],
+    "num_levels": 2,
+    "num_down_blocks": 1,
+    "num_up_blocks": 1,
+    "aabb_min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "aabb_max": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "voxel_size": null,
+    "resolution_memory_format_pairs": [
+      [
+        "b_xc_y_z",
+        [
+          2,
+          16,
+          16
+        ]
+      ],
+      [
+        "b_yc_x_z",
+        [
+          16,
+          2,
+          16
+        ]
+      ],
+      [
+        "b_zc_x_y",
+        [
+          16,
+          16,
+          2
+        ]
+      ]
+    ],
+    "use_rel_pos": true,
+    "use_rel_pos_embed": true,
+    "pos_encode_dim": 8,
+    "communication_types": [
+      "sum"
+    ],
+    "to_point_sample_method": "graphconv",
+    "neighbor_search_type": "knn",
+    "knn_k": 8,
+    "reductions": [
+      "mean"
+    ],
+    "use_scalar_output": false,
+    "has_input_features": true
+  },
+  "model_source": {
+    "architecture": "figconvunet",
+    "module": "physicsnemo.models.figconvnet",
+    "class_name": "FIGConvUNet",
+    "implementation_module": "physicsnemo.models.figconvnet.figconvunet",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\figconvnet\\figconvunet.py",
+    "source_sha256": "ffd3147def14be4f008711d8c3069f8d3b6339c7209040af68734bef2a86f042",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "reference_mean_incident_corner_cell_volume_cuberoot",
+      "2_global_parameters"
+    ],
+    "dependencies": [
+      "warp-lang (import)",
+      "torch_scatter (CSR reduction)"
+    ],
+    "neighbor_backend": "installed torch.cdist/topk KNN; no radius-Warp execution"
+  },
+  "frozen_data_verification": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "parameters": 587164,
+  "source_sha256": {
+    "run_benchmark.py": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab",
+    "benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d"
+  },
+  "contract": {
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "coordinate_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+    "edge_sha256": "b9087fce217be5a690917303cb5a18f0da8a73e428348413cfdf11abc85c0c74",
+    "shape": [
+      76065,
+      10,
+      6
+    ],
+    "fields": [
+      "displacement_x",
+      "displacement_y",
+      "displacement_z",
+      "von_mises_GPS",
+      "total_strain_frobenius",
+      "epsp"
+    ],
+    "units": [
+      "mm",
+      "mm",
+      "mm",
+      "MPa",
+      "1",
+      "1"
+    ],
+    "times": [
+      2e-06,
+      4e-06,
+      6e-06,
+      8e-06,
+      9.999999999999999e-06,
+      1.2e-05,
+      1.4e-05,
+      1.6e-05,
+      1.8e-05,
+      1.9999999999999998e-05
+    ],
+    "split": {
+      "train": [
+        "phone_e100_rx000",
+        "phone_e080_rxm100",
+        "phone_e080_rxp100",
+        "phone_e120_rxm100",
+        "phone_e120_rxp100"
+      ],
+      "validation": [
+        "phone_e090_rxm050",
+        "phone_e110_rxp050"
+      ],
+      "test": [
+        "phone_e090_rxp050",
+        "phone_e110_rxm050"
+      ]
+    },
+    "source_ready_sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80",
+    "label_source": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+    "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+    "case_inputs_and_labels": {
+      "phone_e100_rx000": {
+        "target_sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.0,
+          0.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxm100": {
+        "target_sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.8,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxp100": {
+        "target_sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.8,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxm100": {
+        "target_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.2,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxp100": {
+        "target_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.2,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxm050": {
+        "target_sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.9,
+          -0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxp050": {
+        "target_sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.1,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxp050": {
+        "target_sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.9,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxm050": {
+        "target_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.1,
+          -0.5
+        ],
+        "actual_time_values": null
+      }
+    }
+  },
+  "seed": 20261015,
+  "epochs_budget": 60,
+  "early_stopping": {
+    "patience": 0,
+    "minimum_epochs": 0,
+    "criterion": "Strict improvement in mean internal-validation normalized squared error; test is not used"
+  },
+  "python": "3.13.5",
+  "torch": "2.10.0+cu126",
+  "physicsnemo": "2.2.2",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "competing_workloads": "Single GPU owner for native support resource probe; no other model training. Public FEM training case only. User applications remain open; timings are on a shared workstation.",
+  "normalization_note": "Train cases only; scalar channels use one mean/std across nodes and time. DisplacementXYZ shares sqrt(trace(covariance)/3) as one vector field. Constant scalar channels use scale1. No label replacement or clipping. Equal normalized squared error weights per channel and time; all nodes uniformly weighted. Coordinates use train bounds with recorded1%input margin.",
+  "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+  "prediction_scope": "One-shot all stored nonzero times. Evaluation cases already have FEM reference results; no novel appliance or geometry generalization is tested.",
+  "memory_note": "RSS sampled at step/epoch boundaries; lower bound on true process peak. CUDA allocator peak measured by PyTorch, not total driver VRAM.",
+  "data_manifest": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-cache-v2\\manifest.json",
+  "load_and_setup_seconds": 17.146633099997416,
+  "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+  "steps": [
+    {
+      "step": 1,
+      "seconds": 6.407615199997963,
+      "normalized_mse": 1.0230156183242798
+    },
+    {
+      "step": 2,
+      "seconds": 0.3857970999997633,
+      "normalized_mse": 0.8987820744514465
+    },
+    {
+      "step": 3,
+      "seconds": 0.37253749999945285,
+      "normalized_mse": 0.8322049975395203
+    }
+  ],
+  "estimated_60_epoch_training_seconds_excluding_validation": 113.75018999988242,
+  "peak_sampled_rss_bytes": 1841950720,
+  "cuda_peak_allocated_bytes": 1690085888,
+  "cuda_peak_reserved_bytes": 2212495360
+}

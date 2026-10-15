@@ -1,0 +1,190 @@
+{
+  "status": "all_document_links_and_frozen_evidence_hashes_passed",
+  "artifact_count": 23,
+  "local_link_count": 45,
+  "source_snapshot_sha256": "d188b9cba2b582a7c7a93c0bb4ae760f7197869c349fffa74058051aee2b847f",
+  "ml_imports": [],
+  "gpu_or_solver_execution": false,
+  "checks": [
+    {
+      "document": "README.md",
+      "target": "README.source-investigation-2026-10-15.md"
+    },
+    {
+      "document": "README.md",
+      "target": "executed-evidence-crosswalk-2026-10-15.md"
+    },
+    {
+      "document": "README.md",
+      "target": "official-execution-matrix.json"
+    },
+    {
+      "document": "README.md",
+      "target": "source-blob-manifest.json"
+    },
+    {
+      "document": "README.md",
+      "target": "drop-plate-notes.md"
+    },
+    {
+      "document": "README.md",
+      "target": "sinter-sym-notes.md"
+    },
+    {
+      "document": "README.md",
+      "target": "bumper-raw-file-inventory.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "README.source-investigation-2026-10-15.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/bumper/environment/installation-manifest.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/bumper/environment/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/elasticity_numerical/cpu-execution/execution.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../fem-labels/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../fem-labels/dataset-build-summary.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../fem-labels/total-strain-validation.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../fem-labels/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/PHONE-FEM-AND-DATASET.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/doe/frozen-case-manifest.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/common-cache-provenance-clarification.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/doe/canonical/manifest-full-assembly-corners.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/rom/phone9-metadata-clarification.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/100us/summary.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/100us/execution-metrics.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/structural_coupon/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/structural_coupon/static-six-model-comparison.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/rom/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/rom/bumper7/metrics.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/rom/phone9-full/metrics.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/pilot8/metrics.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/noise0_pilot8/metrics.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/official128-resource-summary.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/deforming_plate/probe128_default/probe.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/temporal_strategies/source-notes.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/temporal_strategies/execution-summary.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/elasticity_numerical/execution-report.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/elasticity_numerical/execution-review.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/bumper/probes-c7/native-support-resource-summary.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/probes-full-c6/native-support-resource-summary.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/drop_test/probes-full-c6/data-access-clarification.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../benchmarks/batching/PREPARATION.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "official-execution-matrix.json"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "sinter-sym-notes.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "../reproduction/README.md"
+    },
+    {
+      "document": "executed-evidence-crosswalk-2026-10-15.md",
+      "target": "executed-evidence-crosswalk-2026-10-15.json"
+    }
+  ]
+}

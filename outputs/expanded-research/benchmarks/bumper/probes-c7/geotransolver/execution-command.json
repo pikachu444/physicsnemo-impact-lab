@@ -1,0 +1,33 @@
+{
+  "started_utc": "2026-10-15T04:24:00.6544497+00:00",
+  "exit_code": 0,
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\bumper-c7-geotransolver-probe.log",
+  "architecture": "geotransolver",
+  "seconds": 28.8309592,
+  "finished_utc": "2026-10-15T04:24:29.4854089+00:00",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/run_benchmark.py",
+    "--cache",
+    "work/expanded-ml/multifield7-cache/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/bumper/probes-c7/geotransolver",
+    "--architecture",
+    "geotransolver",
+    "--mode",
+    "probe",
+    "--probe-steps",
+    "3",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "--normalization",
+    "work/expanded-ml/bumper7-normalization.json",
+    "--workload-note",
+    "Single GPU owner for native support resource probe; no other model training. Public FEM training case only. User applications remain open; timings are on a shared workstation."
+  ],
+  "dataset": "bumper-c7"
+}

@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-15",
+  "status": "documentation_crosswalk_verified_against_saved_artifacts",
+  "relative_paths_from": "outputs/expanded-research",
+  "method": "Read saved text/JSON and SHA256 only; no framework import, model, solver or GPU execution in this documentation pass",
+  "original_source_readme_sha256": "d188b9cba2b582a7c7a93c0bb4ae760f7197869c349fffa74058051aee2b847f",
+  "not_covered": "A new clean-environment full rerun; whole-product accuracy certification; unfinished batch correctness/performance or full-domain neural accuracy training",
+  "batch_at_crosswalk_time": {
+    "status": "in_progress_not_final_frozen",
+    "expected_result_directory": "benchmarks/batching/allocated-slot-01",
+    "final_result_hashes_recorded": false
+  },
+  "artifacts": [
+    {
+      "path": "source-matrix/README.source-investigation-2026-10-15.md",
+      "bytes": 11016,
+      "sha256": "d188b9cba2b582a7c7a93c0bb4ae760f7197869c349fffa74058051aee2b847f"
+    },
+    {
+      "path": "source-matrix/executed-evidence-crosswalk-2026-10-15.md",
+      "bytes": 12325,
+      "sha256": "796e153ab52b466b4752d730ac0fcfc5098a7101ab62613827cb365d5155b089"
+    },
+    {
+      "path": "source-matrix/official-execution-matrix.json",
+      "bytes": 45671,
+      "sha256": "6f70566140fe530c36470d793c39151751617fbd9687caa6b708fac2dcfbfaef"
+    },
+    {
+      "path": "source-matrix/source-blob-manifest.json",
+      "bytes": 41990,
+      "sha256": "bcbb1efac58e22a793ebeb709547e9c14567ddff74ce7da4344a44ec01bdb7d3"
+    },
+    {
+      "path": "fem-labels/dataset-build-summary.json",
+      "bytes": 2155,
+      "sha256": "d2d876d6285e7c55695db034007321c0132405da5efd76a8cac50ce085c1ba0b"
+    },
+    {
+      "path": "fem-labels/total-strain-validation.json",
+      "bytes": 25847,
+      "sha256": "12004895d25a24b6a31ea19acc9f79bae4e54dabd9c03f5dbe7a9107a832b144"
+    },
+    {
+      "path": "benchmarks/elasticity_numerical/cpu-execution/execution.json",
+      "bytes": 5056,
+      "sha256": "e8e1b69a23a2d919c6c1bed2eea7b67de256689caed2e8b16e598c347092fdc6"
+    },
+    {
+      "path": "benchmarks/elasticity_numerical/execution-report.md",
+      "bytes": 8004,
+      "sha256": "fed198466abb85254107f0d03ac1b79c6f6865d91b54a5476fe275e49d300bbf"
+    },
+    {
+      "path": "benchmarks/bumper/environment/installation-manifest.json",
+      "bytes": 27024,
+      "sha256": "52a7108447a295045199baf67a0fd04089187f32f63e866ead22fa697c26592c"
+    },
+    {
+      "path": "benchmarks/structural_coupon/static-six-model-comparison.json",
+      "bytes": 238055,
+      "sha256": "4d65a6d4e8b6abb6b83e3278e8e65e7fd681c1153848473f4bcde599f70ec3d1"
+    },
+    {
+      "path": "benchmarks/temporal_strategies/execution-summary.json",
+      "bytes": 61506,
+      "sha256": "299c0b6e67647903cb5337f9c1a0cda26ddef06714e6f5f819732f8c8b5b1b40"
+    },
+    {
+      "path": "benchmarks/deforming_plate/pilot8/metrics.json",
+      "bytes": 10937,
+      "sha256": "654e8cc4d01b5f998a2c272efbd05571b50bd2926b54d611175c5cb2cb99337f"
+    },
+    {
+      "path": "benchmarks/deforming_plate/noise0_pilot8/metrics.json",
+      "bytes": 21308,
+      "sha256": "8f2e67c4a18a5763945e6cc8c1b78f5e7c7e98f4146bf6bc15997d96a71f342c"
+    },
+    {
+      "path": "benchmarks/deforming_plate/probe128_default/probe.json",
+      "bytes": 976,
+      "sha256": "6495c520758b975ce5d9ab9b1dc675e09ca8b9a4b4714414e6bf08c04faec4fb"
+    },
+    {
+      "path": "benchmarks/drop_test/doe/canonical/manifest-full-assembly-corners.json",
+      "bytes": 4130,
+      "sha256": "133b157b2c4a52bbe08f56bf78b59255bb44d3880e54f660751fd82e052fd356"
+    },
+    {
+      "path": "benchmarks/drop_test/100us/summary.json",
+      "bytes": 3389,
+      "sha256": "1f7259e4ca1ae9fed80f23ba940a4fa99404a0e5e94e15a649a4fc72b79b581d"
+    },
+    {
+      "path": "benchmarks/drop_test/common-cache-provenance-clarification.json",
+      "bytes": 10626,
+      "sha256": "120de8550a38cd46074efe780464dfa39a132881813ac392234663a0abae202b"
+    },
+    {
+      "path": "benchmarks/rom/bumper7/metrics.json",
+      "bytes": 197637,
+      "sha256": "de09fc1bfa981f1b15849d3bc5f1c395ce8fe1971a011a03b1eaddba44697652"
+    },
+    {
+      "path": "benchmarks/rom/phone9-full/metrics.json",
+      "bytes": 45439,
+      "sha256": "a955e45abdbe46f8bbfd773c41bdf695dfa8bd5fe49186d3af4b9c62ffeeec7c"
+    },
+    {
+      "path": "benchmarks/bumper/probes-c7/native-support-resource-summary.json",
+      "bytes": 114499,
+      "sha256": "9f5e83d87f50ada883b84959d4fc2241886ab543165a36c04547168a5961b4ed"
+    },
+    {
+      "path": "benchmarks/drop_test/probes-full-c6/native-support-resource-summary.json",
+      "bytes": 18154,
+      "sha256": "ec8143d9e692fd7c310aa6fbb3dd04075654f0921a3b861fea36bd2c741aac55"
+    },
+    {
+      "path": "benchmarks/drop_test/probes-full-c6/data-access-clarification.json",
+      "bytes": 1218,
+      "sha256": "0d6900da14d24c31bc45ae082f3cc9fdff10dfd33c92d301b8dfb8992086d596"
+    },
+    {
+      "path": "reproduction/bootstrap-acceptance.json",
+      "bytes": 985,
+      "sha256": "b6fcbd609aecfc9acc6b9196909e73e15dfaa7eec7644969003b61748fc3632a"
+    }
+  ]
+}

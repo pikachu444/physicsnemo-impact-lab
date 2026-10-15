@@ -1,0 +1,8 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+W1015 13:26:32.139000 32164 venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+{"step": 1, "seconds": 6.49286740000025, "normalized_mse": 1.288211703300476}
+{"step": 2, "seconds": 0.19637950000105775, "normalized_mse": 1.2288521528244019}
+{"step": 3, "seconds": 0.1993841000003158, "normalized_mse": 1.1940935850143433}

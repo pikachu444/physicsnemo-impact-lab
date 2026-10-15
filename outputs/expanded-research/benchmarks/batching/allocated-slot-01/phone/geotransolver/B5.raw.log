@@ -1,0 +1,40 @@
+{"utc": "2026-10-15T04:35:18.804963+00:00", "elapsed_seconds": 6.608880800002225, "stage": "train_data:start"}
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{"utc": "2026-10-15T04:35:35.765574+00:00", "elapsed_seconds": 23.569558099999995, "stage": "train_data:complete", "rss_bytes": 1095569408, "windows_process_peak_wset_bytes": 1095569408, "cuda_peak_allocated_bytes": 109137920, "cuda_peak_reserved_bytes": 115343360}
+{"utc": "2026-10-15T04:35:35.773407+00:00", "elapsed_seconds": 23.577389000001858, "stage": "warm_original_B1_outputs:start"}
+{"utc": "2026-10-15T04:35:36.724436+00:00", "elapsed_seconds": 24.528424000000086, "stage": "warm_original_B1_outputs:complete", "seconds": 0.948883000000933, "rss_bytes": 1547329536, "windows_process_peak_wset_bytes": 1547329536, "cuda_peak_allocated_bytes": 251288576, "cuda_peak_reserved_bytes": 306184192}
+{"utc": "2026-10-15T04:35:36.725988+00:00", "elapsed_seconds": 24.529962200002046, "stage": "warm_native_batch_output:start"}
+{"utc": "2026-10-15T04:35:36.917343+00:00", "elapsed_seconds": 24.72133229999963, "stage": "warm_native_batch_output:complete", "seconds": 0.18986450000011246, "rss_bytes": 1638916096, "windows_process_peak_wset_bytes": 1638916096, "cuda_peak_allocated_bytes": 788383744, "cuda_peak_reserved_bytes": 1168113664}
+{"utc": "2026-10-15T04:35:37.863519+00:00", "elapsed_seconds": 25.667529599999398, "stage": "case_order_independence:start"}
+{"utc": "2026-10-15T04:35:38.050214+00:00", "elapsed_seconds": 25.85421309999947, "stage": "case_order_independence:complete", "seconds": 0.1828953999975056, "rss_bytes": 1955536896, "windows_process_peak_wset_bytes": 2023477248, "cuda_peak_allocated_bytes": 794750464, "cuda_peak_reserved_bytes": 1168113664}
+{"utc": "2026-10-15T04:35:38.883132+00:00", "elapsed_seconds": 26.687131599999702, "stage": "other_case_globals_independence:start"}
+{"utc": "2026-10-15T04:35:39.039355+00:00", "elapsed_seconds": 26.843349800001306, "stage": "other_case_globals_independence:complete", "seconds": 0.15391539999836823, "rss_bytes": 2238971904, "windows_process_peak_wset_bytes": 2238971904, "cuda_peak_allocated_bytes": 788384256, "cuda_peak_reserved_bytes": 1168113664}
+{"utc": "2026-10-15T04:35:39.890172+00:00", "elapsed_seconds": 27.69418410000071, "stage": "warm_original_B1_mean_gradient:start"}
+{"utc": "2026-10-15T04:35:40.787330+00:00", "elapsed_seconds": 28.591339400001743, "stage": "warm_original_B1_mean_gradient:complete", "seconds": 0.8949466000012762, "rss_bytes": 2247356416, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 766578688, "cuda_peak_reserved_bytes": 1170210816}
+{"utc": "2026-10-15T04:35:40.793845+00:00", "elapsed_seconds": 28.597859299999982, "stage": "warm_native_batchmean_gradient:start"}
+{"utc": "2026-10-15T04:35:41.117323+00:00", "elapsed_seconds": 28.92132390000188, "stage": "warm_native_batchmean_gradient:complete", "seconds": 0.3204742999987502, "rss_bytes": 2247446528, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 3439578624, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:41.153999+00:00", "elapsed_seconds": 28.958001499999227, "stage": "forward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:35:41.501996+00:00", "elapsed_seconds": 29.306001100001595, "stage": "forward:1:original_B1_x_B:complete", "seconds": 0.34605390000069747, "rss_bytes": 2247712768, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 332529664, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:41.503259+00:00", "elapsed_seconds": 29.307252300000982, "stage": "forward:1:native_batch:start"}
+{"utc": "2026-10-15T04:35:41.617189+00:00", "elapsed_seconds": 29.42119730000195, "stage": "forward:1:native_batch:complete", "seconds": 0.1123989999978221, "rss_bytes": 2247729152, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 796903424, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:41.618517+00:00", "elapsed_seconds": 29.422516900001938, "stage": "forward_backward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:35:42.277382+00:00", "elapsed_seconds": 30.081388000002335, "stage": "forward_backward:1:original_B1_x_B:complete", "seconds": 0.6568412000015087, "rss_bytes": 2247880704, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 766200832, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:42.279476+00:00", "elapsed_seconds": 30.08350960000098, "stage": "forward_backward:1:native_batch:start"}
+{"utc": "2026-10-15T04:35:42.593449+00:00", "elapsed_seconds": 30.397475000001577, "stage": "forward_backward:1:native_batch:complete", "seconds": 0.3110612000018591, "rss_bytes": 2247921664, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 3438204416, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:42.596783+00:00", "elapsed_seconds": 30.400803100001212, "stage": "forward:2:native_batch:start"}
+{"utc": "2026-10-15T04:35:42.712647+00:00", "elapsed_seconds": 30.51665409999987, "stage": "forward:2:native_batch:complete", "seconds": 0.11299859999780892, "rss_bytes": 2247958528, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 797103616, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:42.713993+00:00", "elapsed_seconds": 30.517997700000706, "stage": "forward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:35:43.063506+00:00", "elapsed_seconds": 30.867528400001902, "stage": "forward:2:original_B1_x_B:complete", "seconds": 0.347478299998329, "rss_bytes": 2248007680, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 332729856, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:43.065146+00:00", "elapsed_seconds": 30.869153600000573, "stage": "forward_backward:2:native_batch:start"}
+{"utc": "2026-10-15T04:35:43.375220+00:00", "elapsed_seconds": 31.179282400000375, "stage": "forward_backward:2:native_batch:complete", "seconds": 0.3077878000003693, "rss_bytes": 2248048640, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 3438204416, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:43.376575+00:00", "elapsed_seconds": 31.180579200001375, "stage": "forward_backward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:35:44.039985+00:00", "elapsed_seconds": 31.84400359999927, "stage": "forward_backward:2:original_B1_x_B:complete", "seconds": 0.6616314999992028, "rss_bytes": 2248093696, "windows_process_peak_wset_bytes": 2295689216, "cuda_peak_allocated_bytes": 766200832, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:44.049707+00:00", "elapsed_seconds": 31.853724700002203, "stage": "actual_Adam_update:1:start"}
+{"utc": "2026-10-15T04:35:44.481088+00:00", "elapsed_seconds": 32.28510219999953, "stage": "actual_Adam_update:1:complete", "seconds": 0.4290684000006877, "rss_bytes": 2313596928, "windows_process_peak_wset_bytes": 2313596928, "cuda_peak_allocated_bytes": 3438204416, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:44.519548+00:00", "elapsed_seconds": 32.32359910000014, "stage": "actual_Adam_update:2:start"}
+{"utc": "2026-10-15T04:35:44.826340+00:00", "elapsed_seconds": 32.63035460000174, "stage": "actual_Adam_update:2:complete", "seconds": 0.3040106999978889, "rss_bytes": 2313736192, "windows_process_peak_wset_bytes": 2313736192, "cuda_peak_allocated_bytes": 3438605312, "cuda_peak_reserved_bytes": 3860856832}
+{"utc": "2026-10-15T04:35:44.861137+00:00", "elapsed_seconds": 32.665154000002076, "stage": "actual_Adam_update:3:start"}
+{"utc": "2026-10-15T04:35:45.167319+00:00", "elapsed_seconds": 32.97133440000107, "stage": "actual_Adam_update:3:complete", "seconds": 0.30417229999875417, "rss_bytes": 2313736192, "windows_process_peak_wset_bytes": 2313736192, "cuda_peak_allocated_bytes": 3438605312, "cuda_peak_reserved_bytes": 3860856832}

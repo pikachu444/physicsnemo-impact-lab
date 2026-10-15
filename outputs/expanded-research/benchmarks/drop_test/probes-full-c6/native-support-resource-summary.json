@@ -1,0 +1,503 @@
+{
+  "dataset": "phone-full-c6",
+  "batch_size": 1,
+  "contract": {
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "coordinate_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+    "edge_sha256": "b9087fce217be5a690917303cb5a18f0da8a73e428348413cfdf11abc85c0c74",
+    "shape": [
+      76065,
+      10,
+      6
+    ],
+    "fields": [
+      "displacement_x",
+      "displacement_y",
+      "displacement_z",
+      "von_mises_GPS",
+      "total_strain_frobenius",
+      "epsp"
+    ],
+    "units": [
+      "mm",
+      "mm",
+      "mm",
+      "MPa",
+      "1",
+      "1"
+    ],
+    "times": [
+      2e-06,
+      4e-06,
+      6e-06,
+      8e-06,
+      9.999999999999999e-06,
+      1.2e-05,
+      1.4e-05,
+      1.6e-05,
+      1.8e-05,
+      1.9999999999999998e-05
+    ],
+    "split": {
+      "train": [
+        "phone_e100_rx000",
+        "phone_e080_rxm100",
+        "phone_e080_rxp100",
+        "phone_e120_rxm100",
+        "phone_e120_rxp100"
+      ],
+      "validation": [
+        "phone_e090_rxm050",
+        "phone_e110_rxp050"
+      ],
+      "test": [
+        "phone_e090_rxp050",
+        "phone_e110_rxm050"
+      ]
+    },
+    "source_ready_sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80",
+    "label_source": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+    "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+    "case_inputs_and_labels": {
+      "phone_e100_rx000": {
+        "target_sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.0,
+          0.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxm100": {
+        "target_sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.8,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxp100": {
+        "target_sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.8,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxm100": {
+        "target_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.2,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxp100": {
+        "target_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.2,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxm050": {
+        "target_sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.9,
+          -0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxp050": {
+        "target_sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.1,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxp050": {
+        "target_sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          0.9,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxm050": {
+        "target_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+        "thickness_sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8",
+        "coordinates_sha256": "65352c8533c3091a30e9187d580413f5d3a3c688bcca36ff015062a5c0710260",
+        "globals": [
+          1.1,
+          -0.5
+        ],
+        "actual_time_values": null
+      }
+    }
+  },
+  "rows": [
+    {
+      "architecture": "transolver",
+      "exit_code": 0,
+      "process_wall_seconds": 26.3964419,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\transolver\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 42660,
+      "model_config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 3,
+        "embedding_dim": 3,
+        "out_dim": 60,
+        "unified_pos": false,
+        "structured_shape": null,
+        "plus": false
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 1.0998370999986946,
+          "normalized_mse": 0.8901703953742981
+        },
+        {
+          "step": 2,
+          "seconds": 0.12143199999991339,
+          "normalized_mse": 0.7351334095001221
+        },
+        {
+          "step": 3,
+          "seconds": 0.12451959999816609,
+          "normalized_mse": 0.6749725341796875
+        }
+      ],
+      "warm_update_median_seconds": 0.12297579999903974,
+      "cuda_allocator_peak_bytes": 633687552,
+      "cuda_allocator_reserved_peak_bytes": 704643072,
+      "sampled_rss_max_bytes_lower_bound": 1453977600,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "0d61eb1098f8ce35eee0fb97ac402f2c2aff033aa60cbf53b643407a16b31f60"
+    },
+    {
+      "architecture": "flare",
+      "exit_code": 0,
+      "process_wall_seconds": 28.2548193,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\flare\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 38268,
+      "model_config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 3,
+        "embedding_dim": 3,
+        "out_dim": 60,
+        "unified_pos": false,
+        "structured_shape": null
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 0.860661100003199,
+          "normalized_mse": 0.8381027579307556
+        },
+        {
+          "step": 2,
+          "seconds": 0.2959508999992977,
+          "normalized_mse": 0.7112724781036377
+        },
+        {
+          "step": 3,
+          "seconds": 0.29531760000099894,
+          "normalized_mse": 0.6602588891983032
+        }
+      ],
+      "warm_update_median_seconds": 0.2956342500001483,
+      "cuda_allocator_peak_bytes": 636468736,
+      "cuda_allocator_reserved_peak_bytes": 748683264,
+      "sampled_rss_max_bytes_lower_bound": 1348354048,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "d4a05dc0f5cc633d30588def980ad65264c646c7482d6beb2d96c09652c6576c"
+    },
+    {
+      "architecture": "geotransolver",
+      "exit_code": 0,
+      "process_wall_seconds": 26.0352026,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\geotransolver\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 44870,
+      "model_config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 4,
+        "out_dim": 60,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 0.8876976999999897,
+          "normalized_mse": 0.9923850297927856
+        },
+        {
+          "step": 2,
+          "seconds": 0.1504434999988007,
+          "normalized_mse": 0.7621537446975708
+        },
+        {
+          "step": 3,
+          "seconds": 0.14621819999956642,
+          "normalized_mse": 0.6575872302055359
+        }
+      ],
+      "warm_update_median_seconds": 0.14833084999918356,
+      "cuda_allocator_peak_bytes": 691119104,
+      "cuda_allocator_reserved_peak_bytes": 788529152,
+      "sampled_rss_max_bytes_lower_bound": 1483378688,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "792d5904a20fd678266af2f81d95c6e6f9b300e32b0d9dae4d205d2918699d8a"
+    },
+    {
+      "architecture": "geoflare",
+      "exit_code": 0,
+      "process_wall_seconds": 26.0528037,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\geoflare\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 40478,
+      "model_config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 4,
+        "out_dim": 60,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE_FA"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 1.0846706999982416,
+          "normalized_mse": 1.4626705646514893
+        },
+        {
+          "step": 2,
+          "seconds": 0.42704130000129226,
+          "normalized_mse": 1.094527006149292
+        },
+        {
+          "step": 3,
+          "seconds": 0.42052759999933187,
+          "normalized_mse": 0.8606684803962708
+        }
+      ],
+      "warm_update_median_seconds": 0.42378445000031206,
+      "cuda_allocator_peak_bytes": 816505856,
+      "cuda_allocator_reserved_peak_bytes": 943718400,
+      "sampled_rss_max_bytes_lower_bound": 1482551296,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "4a0bcd81fc1ac779a20f9d4cab8d1f9d6d28be345be29caa26997a24e268eecb"
+    },
+    {
+      "architecture": "meshgraphnet",
+      "exit_code": 0,
+      "process_wall_seconds": 31.4274978,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\meshgraphnet\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 81468,
+      "model_config": {
+        "input_dim_nodes": 6,
+        "input_dim_edges": 4,
+        "output_dim": 60,
+        "processor_size": 3,
+        "hidden_dim_processor": 48,
+        "hidden_dim_node_encoder": 48,
+        "hidden_dim_edge_encoder": 48,
+        "hidden_dim_node_decoder": 48,
+        "num_layers_node_encoder": 2,
+        "num_layers_edge_encoder": 2,
+        "num_layers_node_decoder": 2,
+        "num_layers_node_processor": 2,
+        "num_layers_edge_processor": 2,
+        "mlp_activation_fn": "relu",
+        "aggregation": "sum",
+        "do_concat_trick": false,
+        "num_processor_checkpoint_segments": 0,
+        "checkpoint_offloading": false,
+        "recompute_activation": false,
+        "norm_type": "LayerNorm"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 1.184501600000658,
+          "normalized_mse": 0.8589827418327332
+        },
+        {
+          "step": 2,
+          "seconds": 0.3032502999994904,
+          "normalized_mse": 0.8131208419799805
+        },
+        {
+          "step": 3,
+          "seconds": 0.30538959999830695,
+          "normalized_mse": 0.78370600938797
+        }
+      ],
+      "warm_update_median_seconds": 0.30431994999889866,
+      "cuda_allocator_peak_bytes": 3021069824,
+      "cuda_allocator_reserved_peak_bytes": 3412066304,
+      "sampled_rss_max_bytes_lower_bound": 1782652928,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "f8d38001822a423f3098060b12e3f11ec91a9df7ec61bda5b7256aa9496d46b0"
+    },
+    {
+      "architecture": "figconvunet",
+      "exit_code": 0,
+      "process_wall_seconds": 31.8359039,
+      "log": "outputs\\expanded-research\\benchmarks\\drop_test\\probes-full-c6\\figconvunet\\run.log",
+      "status": "actual_FEM_forward_backward_optimizer_steps_completed",
+      "parameters": 587164,
+      "model_config": {
+        "in_channels": 6,
+        "out_channels": 60,
+        "kernel_size": 3,
+        "hidden_channels": [
+          16,
+          24,
+          32
+        ],
+        "num_levels": 2,
+        "num_down_blocks": 1,
+        "num_up_blocks": 1,
+        "aabb_min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "aabb_max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "voxel_size": null,
+        "resolution_memory_format_pairs": [
+          [
+            "b_xc_y_z",
+            [
+              2,
+              16,
+              16
+            ]
+          ],
+          [
+            "b_yc_x_z",
+            [
+              16,
+              2,
+              16
+            ]
+          ],
+          [
+            "b_zc_x_y",
+            [
+              16,
+              16,
+              2
+            ]
+          ]
+        ],
+        "use_rel_pos": true,
+        "use_rel_pos_embed": true,
+        "pos_encode_dim": 8,
+        "communication_types": [
+          "sum"
+        ],
+        "to_point_sample_method": "graphconv",
+        "neighbor_search_type": "knn",
+        "knn_k": 8,
+        "reductions": [
+          "mean"
+        ],
+        "use_scalar_output": false,
+        "has_input_features": true
+      },
+      "steps": [
+        {
+          "step": 1,
+          "seconds": 6.407615199997963,
+          "normalized_mse": 1.0230156183242798
+        },
+        {
+          "step": 2,
+          "seconds": 0.3857970999997633,
+          "normalized_mse": 0.8987820744514465
+        },
+        {
+          "step": 3,
+          "seconds": 0.37253749999945285,
+          "normalized_mse": 0.8322049975395203
+        }
+      ],
+      "warm_update_median_seconds": 0.3791672999996081,
+      "cuda_allocator_peak_bytes": 1690085888,
+      "cuda_allocator_reserved_peak_bytes": 2212495360,
+      "sampled_rss_max_bytes_lower_bound": 1841950720,
+      "input_information": "Initial coordinates, reference_mean_incident_corner_cell_volume_cuberoot, 2 global parameters; no target result is an input. Architecture adapters differ only in API/layout/graph use.",
+      "probe_json_sha256": "91369a191fadfa6a2bf4d78aaaf78440341ffd8d50c10112f56d4712fa0d2e4b"
+    }
+  ],
+  "actual_optimizer_updates_per_completed_model": 3,
+  "scope": "One original training condition on the complete native common support. Genuine CUDA forward/backward/Adam updates; no heldout prediction, model accuracy evaluation, or full training.",
+  "timing_limitations": "Three updates only. First update includes initialization effects; warm median uses updates2/3. Timing includes normalized loss/finite-gradient checks but excludes cache preparation and input copies before the update loop. Epoch-budget metadata is unused in probe mode. Allocator peak is not total device VRAM; sampled RSS is a lower bound on true process peak. Shared workstation.",
+  "phone_provenance_clarification": "For phone, consult data-provenance-clarification.json in each model folder: new local OpenCourant executions of the public phone deck; volume-cuberoot mesh-length input, not physical thickness."
+}

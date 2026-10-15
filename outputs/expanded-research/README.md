@@ -6,10 +6,10 @@
 
 | 구조 예제 | 실제 정답과 규모 | 응력·변형률의 의미 |
 |---|---|---|
-| 공개 범퍼 충돌 | 131해석, 1,441 ANIM 원본, 전체 변형체 13,675절점, 공통 11시점. 학습112/내부 검증12/평가7 | shell local 응력에서 계산한 upper/lower 면내 VM, upper/lower 등가소성변형률(EPSP). 면적 투영 nodal scalar와 원 cell tensor·상태를 별도 보존 |
+| 공개 범퍼 충돌 | 131해석, 1,441 ANIM 원본, 전체 변형체 13,675절점. 원본11시점(0포함), 모델 평가10개 비영 시점. 학습112/내부 검증12/평가7 | shell local 응력에서 계산한 upper/lower 면내 VM, upper/lower 등가소성변형률(EPSP). 면적 투영 nodal scalar와 원 cell tensor·상태를 별도 보존 |
 | OpenCourant DP600 인장 시편 | 직접 생성한 13해석, shell808개·학습 절점919개·10시점. 학습5/검증4/평가4 | native VM, EPSP, native total-strain tensor의 면내 주값 major/minor. 총변형률을 변위 미분으로 대체하지 않음 |
 | OpenCourant 휴대폰 초기 충격 | 실제 9조건·전체 출력 corner76,065절점·17부품, 학습5/검증2/평가2. 별도 중심 조건100µs도 정상 완주 | native solid stress·total strain·EPSP 및 GPS nodal stress. 학습 구간20µs와 추가 FEM100µs는 전체 낙하·최대 응답 완료가 아님 |
-| 공개 DeformingPlate | 실제 400시점 궤적 다운로드·학습·자기회귀 실행 | 원본 nodal VM 응력. 원 COMSOL strain 출력은 없으며, 좌표에서 계산한 Green–Lagrange strain은 별도 유도 기준값 |
+| 공개 DeformingPlate | 실제 400시점 궤적 다운로드·학습·자기회귀 실행 | 원본 nodal scalar `stress`는 원논문이 von Mises로 정의(물리 단위 미확정). 원 COMSOL strain 출력은 없으며, 좌표에서 계산한 Green–Lagrange strain은 별도 유도 기준값 |
 
 공개 curated 범퍼의 변위만으로 응력 학습이 됐다고 주장하지 않았다. RAW ANIM 3.799GB를 추가 확보하고, hash·형상·ID·실제 시점·물리량·112/12/7 분할을 검증한 2.921GB 라벨 캐시를 동결했다. 전체 cache 작성자의 전수 hash 검증과 독립 검토자의 메타데이터 전수·원 binary 표본 검산은 별개다. [범퍼 정답 추출](fem-labels/README.md), [시편 정답 생성](benchmarks/structural_coupon/README.md)
 
@@ -43,6 +43,8 @@ FIG는 이번 신경망 중 응력 오차가 가장 작았지만 EPSP 음수6,78
 
 DeformingPlate의 공식 HybridMeshGraphNet 축소 구조를 두 설정으로 실제 학습했다. 각각 12epoch·1,920업데이트이며 399단계 자기회귀를 평가했다. noise 제거와 loss 정규화 변경을 묶은 설정은 drift를 줄였지만 내부 검증 응력을 악화했고, 두 설정 모두 정확도 실패였다. 원 COMSOL strain이 없는 이 예제의 유도 strain 비교를 native FEM strain 검증이라고 부르지 않는다. [판 실행 기록](benchmarks/deforming_plate/README.md)
 
+판 loader만으로 stress invariant를 확정할 수는 없었으나, [원논문 Section4의 DeformingPlate 설명](https://ar5iv.labs.arxiv.org/html/2010.03409#S4)과 [저자 프로젝트](https://sites.google.com/view/meshgraphnets/home)가 nodal von Mises stress로 정의함을 추가 확인했다. 이 근거가 물리 단위까지 확정하는 것은 아니므로 MPa로 임의 환산하지 않는다.
+
 ## 휴대폰 전체 조립체의 실제 예측과 범위
 
 공개 deck으로 새로 생성한 OpenCourant9조건의 전체 출력 corner76,065절점에서 POD+RBF, POD+ridge, 직접 RBF를 실제 fit·내부 검증 선택·평가·새 프로세스 재추론했다. 원257,099절점 중181,034개 TETRA10 midside는 이 출력 support에서 제외한다. 17부품의 실제 solid 인접 graph는561,184방향간선·17연결 성분이다. FEM의14개 tied/contact 및 wall을 가로지르는 간선을 학습 graph에 추가한 것은 아니다. [FEM·데이터 정의](benchmarks/drop_test/PHONE-FEM-AND-DATASET.md), [전체 예측](benchmarks/rom/phone9-full/metrics.json)
@@ -58,6 +60,8 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 
 별도100µs 기준 FEM도 exit0으로 정상 완료했다. 20→100µs 추가8,079cycle·721.59초·sampled peakRSS388.82MiB이며, 시작 경계의 원 응답과 bitwise동일성을 확인했다. 실제 마지막100.008663µs의 native VM73.505MPa·EPSP0.0625744·소성solid240개로20µs보다 반응이 계속 커졌다. 마지막 시점이 여전히 최대이고 양의 반발도 없어 full-drop peak/rebound 완료로 판정하지 않는다. 20µs AI를100µs에 적용한 결과도 아니다. [추가 FEM 증거](benchmarks/drop_test/100us/)
 
+사용자 승인 후0.5ms 연장을 시작했으나 첫 시도는183.93초에 host 가용 RAM 하한으로 CHKPT/STOP 정상 중단했다. 중단 결과와 재시작 실패 로그를 보존하고, 같은 체크포인트의 지원되는 `/RUN ... /I` 경로로 재개했다. 이 연장은 아직 완료 결과 표에 포함하지 않는다. 20µs 학습 캐시도 바꾸지 않는다. [첫 시도 원기록](benchmarks/drop_test/500us/)
+
 ## 실행 범위와 읽는 기준
 
 공식 예제 source pin은 `11685edb3ec1fb6f25665e96cf7a8c4d11a23f16`(current source2.3.0a0)이고, 실제 학습 backbone은 설치된 배포 PhysicsNeMo2.2.2다. 생성자 차이·삭제한 미지원 옵션·실제 source hash를 실행별 보존했다. [공식 실행 행렬](source-matrix/README.md)은 현행 20개 설정 조합과 archived Sym 3개를 분리한다. 20개 모델을 학습했다는 뜻이 아니다. 소스 확인, 설치, GPU 역전파, 실제 학습, 별도 FEM 평가, 독립 수치 검산, 물리 실험 검증을 각각 구분한다. [공통 실험 규약](experiment-contract.json)
@@ -67,6 +71,8 @@ POD rank4는 학습5조건의 양수 중심화 mode4개 전부를 사용하므�
 PhysicsNeMo2.2.2와 Torch2.10.0+cu126, 호환 공식 torch_scatter wheel, PyG를 새 전용 환경에 설치했다. 실제 Transolver·FLARE·GeoTransolver·GeoFLARE 방식(GALE_FA)·MeshGraphNet·FIGConvUNet의 여섯 설정은 13,675절점에서 CUDA 역전파와 가중치 갱신을 통과했다. 시편 여섯 설정의 학습·평가는 위 표로 구분하며, 휴대폰·범퍼의 다물리량 신경망 학습은 별도로 진행한다. 기존 실행 환경과 앞선 변위 전용 연구는 보존했다.
 
 공식 Q1 `Elasticity2DSolver`도 CPU에서 실제 실행해 독립 해·힘·모멘트·에너지 등13개 검사를 통과했다. 변위 상대 L2는2.324e-10, 두 solve 합계0.592초, import 포함10.898초, 최대 메모리196.68MiB였다. 이는 수치 FEM baseline이며 구조 FNO·DDM 전체 실행이나 AI 학습으로 세지 않는다. [실행·독립 검산](benchmarks/elasticity_numerical/execution-report.md)
+
+범퍼·휴대폰의 실제 native B2/B5 배치24개 조합도 실행했다. 22개는 출력·gradient·입력 독립성·Adam 갱신 검사를 통과했고, 휴대폰 MGN B5는 CUDA OOM, FIG B5는 OS 가용 물리 메모리 하한으로 중단했다. 후자는 CUDA OOM으로 분류하지 않았다. 휴대폰 MGN은 성공한 B1, FIG는 B2로 본학습하며, 기능/배치 검사를 정확도 완료로 세지 않는다. [실제 배치 결과·실패·노출 회계](benchmarks/batching/README.md)
 
 ## 보존과 재현
 

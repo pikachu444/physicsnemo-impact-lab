@@ -1,0 +1,869 @@
+{
+  "status": "passed",
+  "domain": "phone",
+  "architecture": "geoflare",
+  "batch_size": 2,
+  "seed": 20261015,
+  "timing_repeats": 2,
+  "started_utc": "2026-10-15T04:35:48.686476+00:00",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py",
+    "--domain",
+    "phone",
+    "--architecture",
+    "geoflare",
+    "--batch-size",
+    "2",
+    "--out",
+    "<LOCAL_WORKSPACE>\\outputs\\expanded-research\\benchmarks\\batching\\allocated-slot-01\\phone\\geoflare\\B2",
+    "--timing-repeats",
+    "2",
+    "--gpu-slot-authorized"
+  ],
+  "python_executable": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+  "stage": "actual_Adam_update:3:complete",
+  "source_sha256": {
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\run_batch_probe.py": "d3f3f5898eff47be4e5fdb54f489808f11e8ae501867d8257386e9548a19f6e6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\batch_adapters.py": "58a987382bd4039a1c0c81133bd41b088e558ebdf2e71d47bbdfd9f0fdf4c673",
+    "<LOCAL_WORKSPACE>\\work\\expanded-batch\\train_probe_data.py": "0287662371b5268a005b36a9cc3a5b278ea56a4b8b52a3a207e9725a4a9f78f5",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\model_adapters.py": "fcfbfc72c4eb36793849410ba54e7e41c27a5261d7f0f3830800a774edd66e7d",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\benchmark_data.py": "4888594826c9a517bb8fc876d2fa533daf7eb78d9f247c10af287821f70956c6",
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\run_benchmark.py": "6f11b318cc872b8e15401833db294f7bdfddc7a69ae78e0e8890dd20ece72eab"
+  },
+  "torch": "2.10.0+cu126",
+  "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_total_bytes": 6441926656,
+  "tf32": false,
+  "dtype": "float32",
+  "cpu_threads": 4,
+  "determinism": {
+    "seed": 20261015,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "torch_deterministic_algorithms": false,
+    "note": "Original native CUDA scatter reductions may differ by float32 rounding. Numerical equivalence uses the declared tolerances; bitwise repeatability is not claimed. Strict deterministic-algorithm mode is not forced because unsupported native scatter would test a different execution restriction."
+  },
+  "train_cases": [
+    "phone_e100_rx000",
+    "phone_e080_rxm100"
+  ],
+  "train_count": 5,
+  "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+  "normalization_sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+  "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+  "opened_data_files": [
+    {
+      "name": "coordinates.npy",
+      "bytes": 912908,
+      "sha256": "b786c1bcbc5016dc9bebaa8919d186ee18c4dcfa1a20fc95bd6533321e7938f5"
+    },
+    {
+      "name": "edge_index.npy",
+      "bytes": 8979072,
+      "sha256": "dc670b7640884ea26cf006f0b5a13d5cb91ff335701b89c90ee8b889bd6b2298"
+    },
+    {
+      "name": "runs/phone_e080_rxm100.npy",
+      "bytes": 18255728,
+      "sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa"
+    },
+    {
+      "name": "runs/phone_e100_rx000.npy",
+      "bytes": 18255728,
+      "sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf"
+    },
+    {
+      "name": "static_feature.npy",
+      "bytes": 304388,
+      "sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8"
+    }
+  ],
+  "no_validation_or_test_label_file_opened": true,
+  "shape": [
+    2,
+    76065,
+    60
+  ],
+  "global_dim": 2,
+  "real_directed_edges_per_case": 561184,
+  "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+  "model_config": {
+    "n_layers": 2,
+    "n_hidden": 48,
+    "n_head": 4,
+    "mlp_ratio": 2,
+    "slice_num": 8,
+    "dropout": 0.0,
+    "use_te": false,
+    "time_input": false,
+    "functional_dim": 4,
+    "out_dim": 60,
+    "geometry_dim": 3,
+    "global_dim": 2,
+    "include_local_features": false,
+    "structured_shape": null,
+    "plus": false,
+    "concrete_dropout": false,
+    "state_mixing_mode": "weighted",
+    "attention_type": "GALE_FA"
+  },
+  "model_source": {
+    "architecture": "geoflare",
+    "module": "physicsnemo.models.geotransolver",
+    "class_name": "GeoTransolver",
+    "implementation_module": "physicsnemo.models.geotransolver.geotransolver",
+    "physicsnemo_distribution_version": "2.2.2",
+    "source_file": "<LOCAL_WORKSPACE>\\work\\gpu-experiment\\venv\\Lib\\site-packages\\physicsnemo\\models\\geotransolver\\geotransolver.py",
+    "source_sha256": "1355b0f37d02875762a2d32a0660676803fe8f5fae6f1e4fb4bb7f451efd3cdc",
+    "transformer_engine": false,
+    "output_layout": "batch,node,(caller-defined time*channel)",
+    "input_information": [
+      "initial_xyz",
+      "nodal_thickness",
+      "2_global_parameters"
+    ],
+    "variant": "GeoTransolver attention_type=GALE_FA (FLARE + geometry/global context)"
+  },
+  "parameters": 40478,
+  "peak_sampled_rss_bytes": 2040975360,
+  "cuda_peak_allocated_bytes": 1595017216,
+  "cuda_peak_reserved_bytes": 2260729856,
+  "initial_weight_sha256": "3ea41b9b29620e03bd26e24fcc7838bbc42747838e48018f32b3b3d378aa1604",
+  "output_checks": {
+    "original_B1_vs_native_batch": {
+      "passed": true,
+      "max_absolute_difference": 1.5497207641601562e-06,
+      "relative_l2_difference": 3.597913416404102e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "case_order_independence": {
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "other_case_globals_independence": {
+      "passed": true,
+      "max_absolute_difference": 0.0,
+      "relative_l2_difference": 0.0,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_original_B1_vs_batch": {
+      "passed": true,
+      "max_absolute_difference": 1.430511474609375e-06,
+      "relative_l2_difference": 3.6274273279568575e-07,
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "all_finite": true
+    },
+    "changed_case_output_max_delta": 0.1355804204940796,
+    "normalized_global_delta": 0.375
+  },
+  "gradient_check": {
+    "passed": true,
+    "definition": "gradient(mean_B mean_NTC MSE) versus sum_B gradient(B1 MSE)/B, same eval weights",
+    "original_B1_mean_loss": 1.39427649974823,
+    "native_batchmean_loss": 1.3942766189575195,
+    "loss_absolute_difference": 1.1920928955078125e-07,
+    "atol": 1e-05,
+    "rtol": 0.0005,
+    "parameters": {
+      "context_builder.geometry_tokenizer.temperature": {
+        "passed": true,
+        "max_absolute_difference": 1.5133991837501526e-09,
+        "relative_l2_difference": 1.2912108348241308e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 8.294591680169106e-10,
+        "relative_l2_difference": 2.2352730202240614e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.255546860396862e-10,
+        "relative_l2_difference": 1.1266444123964937e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_fx.weight": {
+        "passed": true,
+        "max_absolute_difference": 8.381903171539307e-09,
+        "relative_l2_difference": 3.246215716033268e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_fx.bias": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 2.276876469994186e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_slice.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.5861587598919868e-09,
+        "relative_l2_difference": 1.7537599647360565e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.geometry_tokenizer.in_project_slice.bias": {
+        "passed": true,
+        "max_absolute_difference": 8.167262421920896e-10,
+        "relative_l2_difference": 1.4507445692680532e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.temperature": {
+        "passed": true,
+        "max_absolute_difference": 7.916241884231567e-09,
+        "relative_l2_difference": 2.5982456688928714e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.3096723705530167e-09,
+        "relative_l2_difference": 2.3142937281964326e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.6298145055770874e-09,
+        "relative_l2_difference": 2.694713951452731e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_fx.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 2.2833785609402428e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_fx.bias": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-09,
+        "relative_l2_difference": 1.9804295932937808e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_slice.weight": {
+        "passed": true,
+        "max_absolute_difference": 6.664777174592018e-09,
+        "relative_l2_difference": 3.601561465412221e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "context_builder.global_tokenizer.in_project_slice.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.0995579436421394e-09,
+        "relative_l2_difference": 3.212148682823936e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.0.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 2.3115203381030225e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.0.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 2.1772262753520382e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.0.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.470348358154297e-08,
+        "relative_l2_difference": 2.499289965131621e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "preprocess.0.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.470348358154297e-08,
+        "relative_l2_difference": 2.1027664596750407e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_1.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.7939677238464355e-09,
+        "relative_l2_difference": 1.8240791298257437e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_1.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-09,
+        "relative_l2_difference": 1.7914006043973224e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.q_global": {
+        "passed": true,
+        "max_absolute_difference": 1.280568540096283e-09,
+        "relative_l2_difference": 5.678481467464666e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.state_mixing": {
+        "passed": true,
+        "max_absolute_difference": 2.2351741790771484e-08,
+        "relative_l2_difference": 1.0967593866975436e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.2351741790771484e-08,
+        "relative_l2_difference": 2.0741023204627436e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 1.7045859438820694e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.self_k.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 4.685195685539406e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.self_k.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.190951585769653e-09,
+        "relative_l2_difference": 6.68003051885005e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.self_v.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.9802322387695312e-08,
+        "relative_l2_difference": 2.939323561270466e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.self_v.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.7809241872675955e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_q.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.521563485264778e-09,
+        "relative_l2_difference": 1.6205904536074597e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_q.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.8853613659739494e-09,
+        "relative_l2_difference": 1.6889441838065996e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_k.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.903995431959629e-09,
+        "relative_l2_difference": 2.2368490441583734e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_k.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.474269760772586e-10,
+        "relative_l2_difference": 0.2408773303311651,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_v.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.341104507446289e-07,
+        "relative_l2_difference": 9.965618450665337e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.cross_v.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.7539667759722338e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.out_linear.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.587935447692871e-08,
+        "relative_l2_difference": 5.780664331033982e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.Attn.out_linear.bias": {
+        "passed": true,
+        "max_absolute_difference": 5.960464477539063e-08,
+        "relative_l2_difference": 2.2884490138726107e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.30385160446167e-08,
+        "relative_l2_difference": 3.7932105881507393e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-09,
+        "relative_l2_difference": 2.7714441565972276e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.21540641784668e-08,
+        "relative_l2_difference": 4.6595675558724133e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.1175870895385742e-08,
+        "relative_l2_difference": 2.9770364129416e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.043081283569336e-07,
+        "relative_l2_difference": 4.125943483349971e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.0.ln_mlp1.1.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.470348358154297e-08,
+        "relative_l2_difference": 2.385073152095486e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_1.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.889443516731262e-09,
+        "relative_l2_difference": 4.365080128640389e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_1.bias": {
+        "passed": true,
+        "max_absolute_difference": 4.190951585769653e-09,
+        "relative_l2_difference": 2.775183023572428e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.q_global": {
+        "passed": true,
+        "max_absolute_difference": 1.7025740817189217e-09,
+        "relative_l2_difference": 2.5376547454382438e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.state_mixing": {
+        "passed": true,
+        "max_absolute_difference": 2.468004822731018e-08,
+        "relative_l2_difference": 1.5130273388181487e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_x.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.862645149230957e-08,
+        "relative_l2_difference": 4.096624736952268e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.in_project_x.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.984919309616089e-09,
+        "relative_l2_difference": 2.487266325988185e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.self_k.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.762558430433273e-09,
+        "relative_l2_difference": 1.4438597298114258e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.self_k.bias": {
+        "passed": true,
+        "max_absolute_difference": 6.155460141599178e-09,
+        "relative_l2_difference": 1.374630250755681e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.self_v.weight": {
+        "passed": true,
+        "max_absolute_difference": 4.0978193283081055e-08,
+        "relative_l2_difference": 5.03728586205886e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.self_v.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.6763806343078613e-08,
+        "relative_l2_difference": 2.3158617382442089e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_q.weight": {
+        "passed": true,
+        "max_absolute_difference": 1.3751559890806675e-09,
+        "relative_l2_difference": 7.994463564008563e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_q.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.5511432138737291e-09,
+        "relative_l2_difference": 6.808742047203741e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_k.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.670265869004652e-09,
+        "relative_l2_difference": 1.0962967868103955e-05,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_k.bias": {
+        "passed": true,
+        "max_absolute_difference": 3.5288394428789616e-10,
+        "relative_l2_difference": 0.5885362243703324,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_v.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.4016709327697754e-08,
+        "relative_l2_difference": 1.006947638421002e-06,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.cross_v.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.7773496899848224e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.out_linear.weight": {
+        "passed": true,
+        "max_absolute_difference": 5.21540641784668e-08,
+        "relative_l2_difference": 4.984857404718777e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.Attn.out_linear.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.9802322387695312e-08,
+        "relative_l2_difference": 1.9851924175071776e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 9.313225746154785e-09,
+        "relative_l2_difference": 2.59092878880959e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 5.704350769519806e-09,
+        "relative_l2_difference": 2.2882212307716322e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 3.725290298461914e-08,
+        "relative_l2_difference": 4.051520144630832e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 7.916241884231567e-09,
+        "relative_l2_difference": 2.423423710260749e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.2.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-08,
+        "relative_l2_difference": 3.1478409971674547e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "blocks.1.ln_mlp1.1.layers.2.bias": {
+        "passed": true,
+        "max_absolute_difference": 2.2351741790771484e-08,
+        "relative_l2_difference": 1.6483074537014438e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "ln_mlp_out.0.0.weight": {
+        "passed": true,
+        "max_absolute_difference": 2.2351741790771484e-08,
+        "relative_l2_difference": 2.0465173046995386e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "ln_mlp_out.0.0.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.6120967211031305e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "ln_mlp_out.0.1.weight": {
+        "passed": true,
+        "max_absolute_difference": 7.450580596923828e-08,
+        "relative_l2_difference": 3.292977134288944e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      },
+      "ln_mlp_out.0.1.bias": {
+        "passed": true,
+        "max_absolute_difference": 1.4901161193847656e-08,
+        "relative_l2_difference": 1.5212496188874504e-07,
+        "atol": 1e-05,
+        "rtol": 0.0005,
+        "all_finite": true
+      }
+    }
+  },
+  "timing": {
+    "forward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.1763025000000198,
+            "rss_bytes": 2008317952,
+            "windows_process_peak_wset_bytes": 2008317952,
+            "cuda_peak_allocated_bytes": 219349504,
+            "cuda_peak_reserved_bytes": 2260729856
+          },
+          {
+            "seconds": 0.17620210000313818,
+            "rss_bytes": 1975021568,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 219532288,
+            "cuda_peak_reserved_bytes": 2260729856
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.10227579999991576,
+            "rss_bytes": 2008322048,
+            "windows_process_peak_wset_bytes": 2008322048,
+            "cuda_peak_allocated_bytes": 334713344,
+            "cuda_peak_reserved_bytes": 2260729856
+          },
+          {
+            "seconds": 0.10167749999891385,
+            "rss_bytes": 1974976512,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 334896128,
+            "cuda_peak_reserved_bytes": 2260729856
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.176252300001579,
+      "native_batch_median_seconds": 0.1019766499994148,
+      "original_B1_simulations_per_second": 11.347369651244737,
+      "native_batch_simulations_per_second": 19.61233282336179,
+      "measured_speedup": 1.7283593842569884,
+      "native_faster_in_every_paired_repeat": true
+    },
+    "forward_backward": {
+      "measurements": {
+        "original_B1_x_B": [
+          {
+            "seconds": 0.806129199998395,
+            "rss_bytes": 1974910976,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 831608320,
+            "cuda_peak_reserved_bytes": 2260729856
+          },
+          {
+            "seconds": 0.8069308000012825,
+            "rss_bytes": 1975103488,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 831608320,
+            "cuda_peak_reserved_bytes": 2260729856
+          }
+        ],
+        "native_batch": [
+          {
+            "seconds": 0.5550450999980967,
+            "rss_bytes": 1974931456,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 1594651136,
+            "cuda_peak_reserved_bytes": 2260729856
+          },
+          {
+            "seconds": 0.5533222999983991,
+            "rss_bytes": 1975062528,
+            "windows_process_peak_wset_bytes": 2008465408,
+            "cuda_peak_allocated_bytes": 1594651136,
+            "cuda_peak_reserved_bytes": 2260729856
+          }
+        ]
+      },
+      "original_B1_x_B_median_seconds": 0.8065299999998388,
+      "native_batch_median_seconds": 0.5541836999982479,
+      "original_B1_simulations_per_second": 2.479758967428862,
+      "native_batch_simulations_per_second": 3.608911629855449,
+      "measured_speedup": 1.4553477484133668,
+      "native_faster_in_every_paired_repeat": true
+    }
+  },
+  "adam": {
+    "updates": [
+      {
+        "update": 1,
+        "normalized_mse": 1.3942766189575195,
+        "seconds": 0.6704781000007642,
+        "rss_bytes": 2040922112,
+        "windows_process_peak_wset_bytes": 2040922112,
+        "cuda_peak_allocated_bytes": 1594651136,
+        "cuda_peak_reserved_bytes": 2260729856
+      },
+      {
+        "update": 2,
+        "normalized_mse": 1.0402870178222656,
+        "seconds": 0.5528971999992791,
+        "rss_bytes": 2040975360,
+        "windows_process_peak_wset_bytes": 2040975360,
+        "cuda_peak_allocated_bytes": 1595017216,
+        "cuda_peak_reserved_bytes": 2260729856
+      },
+      {
+        "update": 3,
+        "normalized_mse": 0.8143999576568604,
+        "seconds": 0.5522352999978466,
+        "rss_bytes": 1975005184,
+        "windows_process_peak_wset_bytes": 2040975360,
+        "cuda_peak_allocated_bytes": 1595017216,
+        "cuda_peak_reserved_bytes": 2260729856
+      }
+    ],
+    "optimizer_updates": 3,
+    "simulation_observations": 6,
+    "learning_rate": 0.001,
+    "final_weight_sha256": "017acf216e63274bde4748915e569bd19eb9ca1366c8f2845b45dfdf2f80751a"
+  },
+  "budget_note": "Timing compares equal 2-simulation workloads: B separate original B1 calls versus one native batch. Forward-backward timing uses one accumulated mean gradient and no optimizer update in either path. The separate Adam probe performs exactly 3 updates and 6 simulation observations. B1's 3 updates observe 3 simulations; matching epochs with batch B reduces updates to ceil(train_count/B). Timing benefit alone does not establish equal training convergence or equal optimizer-update budgets.",
+  "timing_note": "One correctness forward and one correctness backward warm each path before two default timed repetitions. CUDA synchronization brackets each timing. Inputs/labels already reside on GPU; adapter layout/graph preparation is included, disk reading and transfer excluded. Allocator peaks cover phase work and live tensors, not driver VRAM. Both forward paths retain all B simulation outputs until after synchronization/memory sampling. RSS is a phase-boundary snapshot; windows_process_peak_wset_bytes is process-wide context, not a per-phase CPU peak. No test labels or held-out cases are opened.",
+  "memory_final": {
+    "rss_bytes": 1975021568,
+    "windows_process_peak_wset_bytes": 2040975360,
+    "cuda_peak_allocated_bytes": 1595017216,
+    "cuda_peak_reserved_bytes": 2260729856
+  },
+  "total_seconds": 32.244199700002355
+}

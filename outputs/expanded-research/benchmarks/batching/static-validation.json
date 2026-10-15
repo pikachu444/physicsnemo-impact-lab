@@ -1,0 +1,79 @@
+{
+  "status": "static_checks_passed",
+  "python_files": [
+    "batch_adapters.py",
+    "run_batch_probe.py",
+    "run_batch_suite.py",
+    "static_check.py",
+    "train_probe_data.py"
+  ],
+  "training_metadata_checks": [
+    {
+      "domain": "bumper",
+      "batch_size": 1,
+      "train_cases": [
+        "Run192"
+      ],
+      "selected_file_count": 4,
+      "array_files_opened": 0
+    },
+    {
+      "domain": "bumper",
+      "batch_size": 2,
+      "train_cases": [
+        "Run192",
+        "Run179"
+      ],
+      "selected_file_count": 6,
+      "array_files_opened": 0
+    },
+    {
+      "domain": "bumper",
+      "batch_size": 5,
+      "train_cases": [
+        "Run192",
+        "Run179",
+        "Run213",
+        "Run209",
+        "Run102"
+      ],
+      "selected_file_count": 12,
+      "array_files_opened": 0
+    },
+    {
+      "domain": "phone",
+      "batch_size": 1,
+      "train_cases": [
+        "phone_e100_rx000"
+      ],
+      "selected_file_count": 4,
+      "array_files_opened": 0
+    },
+    {
+      "domain": "phone",
+      "batch_size": 2,
+      "train_cases": [
+        "phone_e100_rx000",
+        "phone_e080_rxm100"
+      ],
+      "selected_file_count": 5,
+      "array_files_opened": 0
+    },
+    {
+      "domain": "phone",
+      "batch_size": 5,
+      "train_cases": [
+        "phone_e100_rx000",
+        "phone_e080_rxm100",
+        "phone_e080_rxp100",
+        "phone_e120_rxm100",
+        "phone_e120_rxp100"
+      ],
+      "selected_file_count": 8,
+      "array_files_opened": 0
+    }
+  ],
+  "ML_modules_imported": false,
+  "array_files_opened": 0,
+  "GPU_execution": false
+}

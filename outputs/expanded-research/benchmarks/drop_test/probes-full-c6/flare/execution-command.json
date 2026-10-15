@@ -1,0 +1,33 @@
+{
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/run_benchmark.py",
+    "--cache",
+    "work/expanded-ml/phone-full-cache-v2/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/drop_test/probes-full-c6/flare",
+    "--architecture",
+    "flare",
+    "--mode",
+    "probe",
+    "--probe-steps",
+    "3",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "--normalization",
+    "work/expanded-ml/phone-full-normalization.json",
+    "--workload-note",
+    "Single GPU owner for native support resource probe; no other model training. Public FEM training case only. User applications remain open; timings are on a shared workstation."
+  ],
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\phone-full-c6-flare-probe.log",
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "exit_code": 0,
+  "seconds": 28.2548193,
+  "started_utc": "2026-10-15T04:19:29.4614504+00:00",
+  "architecture": "flare",
+  "dataset": "phone-full-c6",
+  "finished_utc": "2026-10-15T04:19:57.7162697+00:00"
+}

@@ -1,0 +1,74 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                         OpenCourant Engine                         **
+**                                                                    **
+**            Non-linear Finite Element Analysis Software             **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+**                  Windows 64 bits, Intel compiler                   **
+**                 Extended Single Precision Version                  **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+************************************************************************
+** OpenCourant Software                                               **
+** COPYRIGHT (C) 2026 Siemens                                         **
+** Licensed under GNU Affero General Public License.                  **
+** See License file.                                                  **
+************************************************************************
+ 
+ ROOT: Cell_Phone_Drop  RESTART: 0003
+ NUMBER OF HMPP PROCESSES     2
+ 15/10/2026
+ NC=       0 T= 1.0001E-04 DT= 9.9035E-09 ERR=  0.0% DM/M= 0.0000E+00
+     ANIMATION FILE: Cell_Phone_DropA021 WRITTEN
+ NC=     500 T= 1.0496E-04 DT= 9.9034E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         51.64 s  REMAINING TIME=       4119.44 s
+ NC=    1000 T= 1.0991E-04 DT= 9.9032E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        101.23 s  REMAINING TIME=       3987.37 s
+     ANIMATION FILE: Cell_Phone_DropA022 WRITTEN
+ NC=    1500 T= 1.1486E-04 DT= 9.9030E-09 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        151.78 s  REMAINING TIME=       3935.19 s
+     ANIMATION FILE: Cell_Phone_DropA023 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0003_[0001-0001]_I.rst WRITTEN
+  
+                           ** CPU USER TIME **
+  
+  
+                        ** SUMMARY **
+  
+ #PROC  CONTSORT  CONTFOR   ELEMENT   KINCOND   INTEG     IO        T0        ASM       RESOL    
+   1   .3653E+02 .3125E-01 .2383E+03 .5641E+01 .1842E+02 .1231E+02 .3655E+02 .3766E+01 .3376E+03
+ 
+                   ** CUMULATIVE CPU TIME SUMMARY **
+  
+ CONTACT SORTING.............: .3653E+02    10.82 % 
+ CONTACT FORCES..............: .3125E-01     0.01 % 
+ ELEMENT FORCES..............: .2383E+03    70.59 % 
+ KINEMATIC COND..............: .5641E+01     1.67 % 
+ INTEGRATION.................: .1842E+02     5.46 % 
+ ASSEMBLING..................: .3766E+01     1.12 % 
+ OTHERS (including I/O)......: .3489E+02    10.33 % 
+ TOTAL.......................: .3376E+03   100.00 % 
+  
+                   ** MEMORY USAGE STATISTICS **
+  
+ TOTAL MEMORY USED .........................:      377 MB
+ MAXIMUM MEMORY PER PROCESSOR...............:      377 MB
+ MINIMUM MEMORY PER PROCESSOR...............:      377 MB
+ AVERAGE MEMORY PER PROCESSOR...............:      377 MB
+  
+                   ** DISK USAGE STATISTICS **
+  
+ TOTAL DISK SPACE USED .....................:        400 MB
+ ANIMATION/H3D/TH/OUTP SIZE ................:        130 MB
+ RESTART FILE SIZE .........................:        269 MB
+  
+ ELAPSED TIME     =        183.34 s
+                          0:03:03
+  
+     NORMAL TERMINATION      
+     USER BREAK 
+     TOTAL NUMBER OF CYCLES  :    1781

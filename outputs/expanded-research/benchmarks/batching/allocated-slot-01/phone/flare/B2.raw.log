@@ -1,0 +1,40 @@
+{"utc": "2026-10-15T04:33:40.561509+00:00", "elapsed_seconds": 4.787013799999841, "stage": "train_data:start"}
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{"utc": "2026-10-15T04:33:55.774904+00:00", "elapsed_seconds": 20.00045820000014, "stage": "train_data:complete", "rss_bytes": 1036496896, "windows_process_peak_wset_bytes": 1036496896, "cuda_peak_allocated_bytes": 49686528, "cuda_peak_reserved_bytes": 62914560}
+{"utc": "2026-10-15T04:33:55.781187+00:00", "elapsed_seconds": 20.00673960000131, "stage": "warm_original_B1_outputs:start"}
+{"utc": "2026-10-15T04:33:56.292803+00:00", "elapsed_seconds": 20.518359300000157, "stage": "warm_original_B1_outputs:complete", "seconds": 0.5098815000019385, "rss_bytes": 1261146112, "windows_process_peak_wset_bytes": 1261146112, "cuda_peak_allocated_bytes": 161254912, "cuda_peak_reserved_bytes": 201326592}
+{"utc": "2026-10-15T04:33:56.294139+00:00", "elapsed_seconds": 20.519692400001077, "stage": "warm_native_batch_output:start"}
+{"utc": "2026-10-15T04:33:56.397616+00:00", "elapsed_seconds": 20.623170899998513, "stage": "warm_native_batch_output:complete", "seconds": 0.10216159999981755, "rss_bytes": 1276469248, "windows_process_peak_wset_bytes": 1276469248, "cuda_peak_allocated_bytes": 264852480, "cuda_peak_reserved_bytes": 377487360}
+{"utc": "2026-10-15T04:33:56.641149+00:00", "elapsed_seconds": 20.866729599998507, "stage": "case_order_independence:start"}
+{"utc": "2026-10-15T04:33:56.747419+00:00", "elapsed_seconds": 20.972976900000504, "stage": "case_order_independence:complete", "seconds": 0.10465800000019954, "rss_bytes": 1465589760, "windows_process_peak_wset_bytes": 1514913792, "cuda_peak_allocated_bytes": 267287552, "cuda_peak_reserved_bytes": 377487360}
+{"utc": "2026-10-15T04:33:57.029576+00:00", "elapsed_seconds": 21.255150000000867, "stage": "other_case_globals_independence:start"}
+{"utc": "2026-10-15T04:33:57.127574+00:00", "elapsed_seconds": 21.35313600000154, "stage": "other_case_globals_independence:complete", "seconds": 0.09621719999995548, "rss_bytes": 1538957312, "windows_process_peak_wset_bytes": 1612025856, "cuda_peak_allocated_bytes": 264852992, "cuda_peak_reserved_bytes": 377487360}
+{"utc": "2026-10-15T04:33:57.478594+00:00", "elapsed_seconds": 21.704164700000547, "stage": "warm_original_B1_mean_gradient:start"}
+{"utc": "2026-10-15T04:33:58.120538+00:00", "elapsed_seconds": 22.346108199999435, "stage": "warm_original_B1_mean_gradient:complete", "seconds": 0.6402082000022347, "rss_bytes": 1708261376, "windows_process_peak_wset_bytes": 1708261376, "cuda_peak_allocated_bytes": 654025728, "cuda_peak_reserved_bytes": 780140544}
+{"utc": "2026-10-15T04:33:58.124868+00:00", "elapsed_seconds": 22.350457699998515, "stage": "warm_native_batchmean_gradient:start"}
+{"utc": "2026-10-15T04:33:58.558496+00:00", "elapsed_seconds": 22.78407099999822, "stage": "warm_native_batchmean_gradient:complete", "seconds": 0.43171779999829596, "rss_bytes": 1708314624, "windows_process_peak_wset_bytes": 1708314624, "cuda_peak_allocated_bytes": 1239084544, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:58.581275+00:00", "elapsed_seconds": 22.80684679999831, "stage": "forward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:58.711520+00:00", "elapsed_seconds": 22.937089399998513, "stage": "forward:1:original_B1_x_B:complete", "seconds": 0.12847429999965243, "rss_bytes": 1708474368, "windows_process_peak_wset_bytes": 1708474368, "cuda_peak_allocated_bytes": 188724224, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:58.712765+00:00", "elapsed_seconds": 22.93832779999866, "stage": "forward:1:native_batch:start"}
+{"utc": "2026-10-15T04:33:58.798764+00:00", "elapsed_seconds": 23.024337700000615, "stage": "forward:1:native_batch:complete", "seconds": 0.08424670000022161, "rss_bytes": 1708474368, "windows_process_peak_wset_bytes": 1708474368, "cuda_peak_allocated_bytes": 273523200, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:58.799961+00:00", "elapsed_seconds": 23.025525299999572, "stage": "forward_backward:1:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:33:59.365896+00:00", "elapsed_seconds": 23.591460200001166, "stage": "forward_backward:1:original_B1_x_B:complete", "seconds": 0.5645909999984724, "rss_bytes": 1708482560, "windows_process_peak_wset_bytes": 1708482560, "cuda_peak_allocated_bytes": 653407232, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:59.366726+00:00", "elapsed_seconds": 23.592289500000334, "stage": "forward_backward:1:native_batch:start"}
+{"utc": "2026-10-15T04:33:59.798756+00:00", "elapsed_seconds": 24.024326599999767, "stage": "forward_backward:1:native_batch:complete", "seconds": 0.430649000001722, "rss_bytes": 1708482560, "windows_process_peak_wset_bytes": 1708482560, "cuda_peak_allocated_bytes": 1238782464, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:59.799857+00:00", "elapsed_seconds": 24.025422499998967, "stage": "forward:2:native_batch:start"}
+{"utc": "2026-10-15T04:33:59.885772+00:00", "elapsed_seconds": 24.111346499998035, "stage": "forward:2:native_batch:complete", "seconds": 0.08431149999887566, "rss_bytes": 1708482560, "windows_process_peak_wset_bytes": 1708482560, "cuda_peak_allocated_bytes": 273686528, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:33:59.887099+00:00", "elapsed_seconds": 24.11266610000166, "stage": "forward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:34:00.017122+00:00", "elapsed_seconds": 24.242691499999637, "stage": "forward:2:original_B1_x_B:complete", "seconds": 0.1285807999993267, "rss_bytes": 1708482560, "windows_process_peak_wset_bytes": 1708482560, "cuda_peak_allocated_bytes": 188887552, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:34:00.018323+00:00", "elapsed_seconds": 24.243891999998596, "stage": "forward_backward:2:native_batch:start"}
+{"utc": "2026-10-15T04:34:00.450318+00:00", "elapsed_seconds": 24.67589919999955, "stage": "forward_backward:2:native_batch:complete", "seconds": 0.4303957000010996, "rss_bytes": 1708490752, "windows_process_peak_wset_bytes": 1708490752, "cuda_peak_allocated_bytes": 1238782464, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:34:00.451416+00:00", "elapsed_seconds": 24.676980799999, "stage": "forward_backward:2:original_B1_x_B:start"}
+{"utc": "2026-10-15T04:34:01.016355+00:00", "elapsed_seconds": 25.241943799999717, "stage": "forward_backward:2:original_B1_x_B:complete", "seconds": 0.5637124000022595, "rss_bytes": 1708498944, "windows_process_peak_wset_bytes": 1708498944, "cuda_peak_allocated_bytes": 653407232, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:34:01.021921+00:00", "elapsed_seconds": 25.247493399998348, "stage": "actual_Adam_update:1:start"}
+{"utc": "2026-10-15T04:34:01.506129+00:00", "elapsed_seconds": 25.731705499998498, "stage": "actual_Adam_update:1:complete", "seconds": 0.48270529999717837, "rss_bytes": 1774424064, "windows_process_peak_wset_bytes": 1774424064, "cuda_peak_allocated_bytes": 1238782464, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:34:01.525382+00:00", "elapsed_seconds": 25.750957899999776, "stage": "actual_Adam_update:2:start"}
+{"utc": "2026-10-15T04:34:01.957387+00:00", "elapsed_seconds": 26.182968199998868, "stage": "actual_Adam_update:2:complete", "seconds": 0.43044739999822923, "rss_bytes": 1774469120, "windows_process_peak_wset_bytes": 1774469120, "cuda_peak_allocated_bytes": 1239109632, "cuda_peak_reserved_bytes": 1755316224}
+{"utc": "2026-10-15T04:34:01.977250+00:00", "elapsed_seconds": 26.20283550000022, "stage": "actual_Adam_update:3:start"}
+{"utc": "2026-10-15T04:34:02.409794+00:00", "elapsed_seconds": 26.635379999999714, "stage": "actual_Adam_update:3:complete", "seconds": 0.43053769999824, "rss_bytes": 1774518272, "windows_process_peak_wset_bytes": 1774518272, "cuda_peak_allocated_bytes": 1239109632, "cuda_peak_reserved_bytes": 1755316224}

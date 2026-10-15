@@ -1,0 +1,46 @@
+{
+  "same_actual_time_s": 0.00010000866313930601,
+  "all_existing_native_fields_bitwise_equal": true,
+  "field_checks": {
+    "coords": true,
+    "node_ids": true,
+    "connectivity_8": true,
+    "solid_active_flags": true,
+    "scalar_fields/Plastic_Strain": true,
+    "scalar_fields/Von_Mises": true,
+    "node_scalar_fields/GPS_SIGXX": true,
+    "node_scalar_fields/GPS_SIGYY": true,
+    "node_scalar_fields/GPS_SIGZZ": true,
+    "node_scalar_fields/GPS_SIGXY": true,
+    "node_scalar_fields/GPS_SIGZY": true,
+    "node_scalar_fields/GPS_SIGXZ": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point111__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point112__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point121__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point211__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point111__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point112__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point121__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point211__": true,
+    "node_vector_fields/Velocity": true
+  },
+  "new_tensor_field_count": 8,
+  "new_tensor_names": [
+    "Strs_Intg_Point111__",
+    "Strs_Intg_Point112__",
+    "Strs_Intg_Point121__",
+    "Strs_Intg_Point211__",
+    "Stra_Intg_Point111__",
+    "Stra_Intg_Point112__",
+    "Stra_Intg_Point121__",
+    "Stra_Intg_Point211__"
+  ],
+  "old_tensor_field_count": 16,
+  "output_change": "Only nonexistent-invalidIP tensors removed; all4validTETRA10IP and BRICKIP111 remain. No physical state changed.",
+  "new_frame_bytes": 45778222,
+  "resource_measurement": {
+    "available_bytes": 1525219328,
+    "working_set_bytes": 115060736,
+    "peak_working_set_bytes": 116162560
+  }
+}

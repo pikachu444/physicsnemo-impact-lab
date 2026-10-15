@@ -1,0 +1,7 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+{"step": 1, "seconds": 1.0846706999982416, "normalized_mse": 1.4626705646514893}
+{"step": 2, "seconds": 0.42704130000129226, "normalized_mse": 1.094527006149292}
+{"step": 3, "seconds": 0.42052759999933187, "normalized_mse": 0.8606684803962708}

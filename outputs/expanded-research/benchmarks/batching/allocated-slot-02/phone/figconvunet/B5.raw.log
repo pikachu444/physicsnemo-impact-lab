@@ -1,0 +1,18 @@
+{"utc": "2026-10-15T05:59:53.675936+00:00", "elapsed_seconds": 4.256818599998951, "stage": "train_data:start"}
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+W1015 15:00:08.837000 42688 venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+{"utc": "2026-10-15T06:00:09.127459+00:00", "elapsed_seconds": 19.7083513999969, "stage": "train_data:complete", "rss_bytes": 1103843328, "windows_process_peak_wset_bytes": 1103843328, "cuda_peak_allocated_bytes": 111352320, "cuda_peak_reserved_bytes": 117440512}
+{"utc": "2026-10-15T06:00:09.150246+00:00", "elapsed_seconds": 19.731141199998092, "stage": "warm_original_B1_outputs:start"}
+{"utc": "2026-10-15T06:00:11.193356+00:00", "elapsed_seconds": 21.77424759999849, "stage": "warm_original_B1_outputs:complete", "seconds": 2.0415339000028325, "rss_bytes": 1853521920, "windows_process_peak_wset_bytes": 1853521920, "cuda_peak_allocated_bytes": 489250304, "cuda_peak_reserved_bytes": 664797184}
+{"utc": "2026-10-15T06:00:11.195230+00:00", "elapsed_seconds": 21.776116999997612, "stage": "warm_native_batch_output:start"}
+{"utc": "2026-10-15T06:00:12.329311+00:00", "elapsed_seconds": 22.910211399997934, "stage": "warm_native_batch_output:complete", "seconds": 1.1325943000010739, "rss_bytes": 1947893760, "windows_process_peak_wset_bytes": 1947893760, "cuda_peak_allocated_bytes": 1969732096, "cuda_peak_reserved_bytes": 2787115008}
+{"utc": "2026-10-15T06:00:13.008552+00:00", "elapsed_seconds": 23.589459599999827, "stage": "case_order_independence:start"}
+{"utc": "2026-10-15T06:00:14.061135+00:00", "elapsed_seconds": 24.642033199997968, "stage": "case_order_independence:complete", "seconds": 1.0503166999988025, "rss_bytes": 2241024000, "windows_process_peak_wset_bytes": 2332348416, "cuda_peak_allocated_bytes": 1974694400, "cuda_peak_reserved_bytes": 2787115008}
+{"utc": "2026-10-15T06:00:14.763641+00:00", "elapsed_seconds": 25.344543799998064, "stage": "other_case_globals_independence:start"}
+{"utc": "2026-10-15T06:00:15.819839+00:00", "elapsed_seconds": 26.400731699999596, "stage": "other_case_globals_independence:complete", "seconds": 1.054273399997328, "rss_bytes": 2524418048, "windows_process_peak_wset_bytes": 2524418048, "cuda_peak_allocated_bytes": 1969732608, "cuda_peak_reserved_bytes": 2787115008}
+{"utc": "2026-10-15T06:00:16.699011+00:00", "elapsed_seconds": 27.279918299998826, "stage": "warm_original_B1_mean_gradient:start"}
+{"utc": "2026-10-15T06:00:18.657875+00:00", "elapsed_seconds": 29.238775699999678, "stage": "warm_original_B1_mean_gradient:complete", "seconds": 1.9562863999999536, "rss_bytes": 2570915840, "windows_process_peak_wset_bytes": 2579390464, "cuda_peak_allocated_bytes": 1764891136, "cuda_peak_reserved_bytes": 2803892224}
+{"utc": "2026-10-15T06:00:18.684226+00:00", "elapsed_seconds": 29.26512609999918, "stage": "warm_native_batchmean_gradient:start"}
