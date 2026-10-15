@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<LOCAL_WORKSPACE>\work\expanded-rom\run_pod_rom.py", line 361, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "<LOCAL_WORKSPACE>\work\expanded-rom\run_pod_rom.py", line 249, in main
+    prediction_from_checkpoint(cache,cache.split["test"],args.reuse,args.out/"fresh_predictions.npy",args.chunk_features)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LOCAL_WORKSPACE>\work\expanded-rom\run_pod_rom.py", line 165, in prediction_from_checkpoint
+    assert meta["contract"] == cache.contract, "Mesh/fields/units/times/split contract differs"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Mesh/fields/units/times/split contract differs

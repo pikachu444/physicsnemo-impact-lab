@@ -11,7 +11,7 @@
       "prediction_exact_nonzero_count": 36759,
       "prediction_nonfinite_count": 0,
       "count": 36760,
-      "reference_component_norm_to_vector_norm_ratio": 0.9998806532643931
+      "reference_component_norm_to_vector_norm_ratio": 0.9998806532643927
     },
     "displacement_y": {
       "unit": "mm",
@@ -23,7 +23,7 @@
       "prediction_exact_nonzero_count": 36760,
       "prediction_nonfinite_count": 0,
       "count": 36760,
-      "reference_component_norm_to_vector_norm_ratio": 0.015449246828571156
+      "reference_component_norm_to_vector_norm_ratio": 0.015449246828571149
     },
     "displacement_z": {
       "unit": "mm",
@@ -35,7 +35,7 @@
       "prediction_exact_nonzero_count": 36760,
       "prediction_nonfinite_count": 0,
       "count": 36760,
-      "reference_component_norm_to_vector_norm_ratio": 7.881459407146207e-16
+      "reference_component_norm_to_vector_norm_ratio": 7.881459407146208e-16
     },
     "von_mises_shell_scalar_projected": {
       "unit": "MPa",
@@ -70,7 +70,74 @@
       "false_negative": 2744,
       "positive_support_precision": 0.8715633018962242,
       "positive_support_recall": 0.9050420458871163,
-      "positive_support_iou": 0.7985405025800739
+      "positive_support_iou": 0.7985405025800739,
+      "per_case_support_errors": [
+        {
+          "case": "holdout_test_01",
+          "reference_positive_count": 7252,
+          "reference_positive_rmse": 0.0007502614530381588,
+          "reference_zero_rmse": 0.0004140021776369549,
+          "reference_peak": 0.08595474809408188,
+          "prediction_absolute_peak": 0.08430085331201553
+        },
+        {
+          "case": "holdout_test_02",
+          "reference_positive_count": 7155,
+          "reference_positive_rmse": 0.0005697008252815931,
+          "reference_zero_rmse": 0.000401165343715513,
+          "reference_peak": 0.06141209974884987,
+          "prediction_absolute_peak": 0.060485392808914185
+        },
+        {
+          "case": "holdout_test_03",
+          "reference_positive_count": 7266,
+          "reference_positive_rmse": 0.0007410129938633965,
+          "reference_zero_rmse": 0.00038404148557234563,
+          "reference_peak": 0.08809059858322144,
+          "prediction_absolute_peak": 0.0862647294998169
+        },
+        {
+          "case": "holdout_test_04",
+          "reference_positive_count": 7224,
+          "reference_positive_rmse": 0.0006818960350254913,
+          "reference_zero_rmse": 0.0005034966997090805,
+          "reference_peak": 0.07296130061149597,
+          "prediction_absolute_peak": 0.07111740857362747
+        }
+      ],
+      "history_diagnostics": {
+        "definition": "Exact negative time increments at fixed projected support; raw cumulative EPSP is expected not to decrease. Report reference rounding/decrease separately; no correction is applied.",
+        "prediction_negative_time_increment_count": 7189,
+        "reference_negative_time_increment_count": 0,
+        "prediction_maximum_time_decrease": 0.000569785013794899,
+        "reference_maximum_time_decrease": 0.0,
+        "prediction_raw_delta_distribution": {
+          "minimum_delta": -0.000569785013794899,
+          "maximum_delta": 0.009469680488109589,
+          "negative_count": 7189,
+          "zero_count": 0,
+          "count": 33084,
+          "decrease_magnitude_quantiles": {
+            "0.5": 9.018741548061371e-05,
+            "0.9": 0.0002705033868551254,
+            "0.95": 0.00034579299390316006,
+            "0.99": 0.0004496844857931136,
+            "1.0": 0.000569785013794899
+          }
+        },
+        "reference_raw_delta_distribution": {
+          "minimum_delta": 0.0,
+          "maximum_delta": 0.009391851723194122,
+          "negative_count": 0,
+          "zero_count": 7032,
+          "count": 33084,
+          "decrease_magnitude_quantiles": null
+        },
+        "stored_prediction_dtype": "float32",
+        "stored_reference_dtype": "float32",
+        "float32_machine_epsilon": 1.1920928955078125e-07,
+        "interpretation": "Strict negative counts include roundoff-sized changes. Quantile magnitudes and the same truth statistics are reported without an invented pass/fail threshold."
+      }
     },
     "total_strain_principal_major_inplane_projected": {
       "unit": "1",
@@ -95,6 +162,16 @@
       "count": 36760
     }
   },
-  "source_sha256": "655daa6a3878e42b0018d9f9cc963d820223fa61add225192517c19eadeb3897",
-  "near_zero_axis_note": "For a nominally planar FEM case, displacement_z is numerical noise; emphasize absolute mm error and predicted z magnitude. A relative error divided by near-zero reference z is not useful as a physical accuracy claim."
+  "source_sha256": "7908c2b88784ee1725044385e97e183b535231655772f97f61ee6c538977d80c",
+  "principal_order_diagnostics": {
+    "prediction_minor_greater_than_major_count": 4485,
+    "reference_minor_greater_than_major_count": 0,
+    "prediction_maximum_order_violation": 0.0019872207194566727,
+    "definition": "A projected in-plane major principal strain must be >= its paired minor principal strain. No reordering is applied."
+  },
+  "near_zero_reference_components": [
+    "displacement_z"
+  ],
+  "near_zero_diagnostic_definition": "Component reference L2 norm / vector reference L2 norm <1e-10; reporting diagnostic only, no field removal or model selection.",
+  "near_zero_axis_note": "For these near-zero reference components, emphasize absolute error and predicted magnitude in physical units. Relative error divided by a near-zero reference is not a useful standalone accuracy claim."
 }

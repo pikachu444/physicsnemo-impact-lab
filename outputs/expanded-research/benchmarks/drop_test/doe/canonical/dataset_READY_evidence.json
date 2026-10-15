@@ -1,0 +1,588 @@
+{
+  "ready": true,
+  "freeze_utc": "2026-10-15T03:43:00.824924+00:00",
+  "cases": 9,
+  "split_counts": {
+    "train": 5,
+    "val": 2,
+    "test": 2
+  },
+  "field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "case_statistics": [
+    {
+      "run_id": "phone_e100_rx000",
+      "split": "train",
+      "global_features": [
+        1.0,
+        0.0
+      ],
+      "full_field_min": [
+        -0.06653416156768799,
+        -0.07231993228197098,
+        -0.058543894439935684,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.0036547379568219185,
+        26.185354232788086,
+        0.015495004132390022,
+        0.0005590760847553611
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        675861,
+        680175,
+        13
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.0036547379568219185,
+        26.185354232788086,
+        0.015495004132390022,
+        0.0005590760847553611
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.0001940356451087e-05
+      ]
+    },
+    {
+      "run_id": "phone_e080_rxm100",
+      "split": "train",
+      "global_features": [
+        0.8,
+        -1.0
+      ],
+      "full_field_min": [
+        -0.06704119592905045,
+        -0.07295569032430649,
+        -0.058306287974119186,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.00125620246399194,
+        21.740140914916992,
+        0.015816641971468925,
+        0.0
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        675260,
+        682629,
+        0
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.00125620246399194,
+        21.740140914916992,
+        0.015816641971468925,
+        0.0
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.0009969375678338e-05
+      ]
+    },
+    {
+      "run_id": "phone_e080_rxp100",
+      "split": "train",
+      "global_features": [
+        0.8,
+        1.0
+      ],
+      "full_field_min": [
+        -0.0674644410610199,
+        -0.0732726901769638,
+        -0.0595577247440815,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.00010853324783965945,
+        0.0,
+        0.006636473350226879,
+        20.561262130737305,
+        0.014964049682021141,
+        0.0
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        675260,
+        682629,
+        0
+      ],
+      "rear_field_max": [
+        0.00010853324783965945,
+        0.0,
+        0.006636473350226879,
+        20.561262130737305,
+        0.014964049682021141,
+        0.0
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.0009969375678338e-05
+      ]
+    },
+    {
+      "run_id": "phone_e120_rxm100",
+      "split": "train",
+      "global_features": [
+        1.2,
+        -1.0
+      ],
+      "full_field_min": [
+        -0.0661357045173645,
+        -0.07188068330287933,
+        -0.057588234543800354,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.0013783406466245651,
+        29.729570388793945,
+        0.016310354694724083,
+        0.005157390609383583
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        677257,
+        682512,
+        40
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.0013783406466245651,
+        29.729570388793945,
+        0.016310354694724083,
+        0.005157390609383583
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.000893982767593e-05
+      ]
+    },
+    {
+      "run_id": "phone_e120_rxp100",
+      "split": "train",
+      "global_features": [
+        1.2,
+        1.0
+      ],
+      "full_field_min": [
+        -0.06632264703512192,
+        -0.07200849801301956,
+        -0.05876429006457329,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.00015922159946057945,
+        0.0,
+        0.0068916683085262775,
+        30.260940551757812,
+        0.01509244553744793,
+        0.0010669061448425055
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        677257,
+        682512,
+        25
+      ],
+      "rear_field_max": [
+        0.00015922159946057945,
+        0.0,
+        0.0068916683085262775,
+        30.260940551757812,
+        0.01509244553744793,
+        0.0010669061448425055
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.000893982767593e-05
+      ]
+    },
+    {
+      "run_id": "phone_e090_rxm050",
+      "split": "val",
+      "global_features": [
+        0.9,
+        -0.5
+      ],
+      "full_field_min": [
+        -0.06671051681041718,
+        -0.07268111407756805,
+        -0.05808887630701065,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.0024477296974509954,
+        23.8658447265625,
+        0.015561236068606377,
+        0.00023837352637201548
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        672217,
+        672183,
+        6
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.0024477296974509954,
+        23.8658447265625,
+        0.015561236068606377,
+        0.00023837352637201548
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.000357380893547e-05
+      ]
+    },
+    {
+      "run_id": "phone_e110_rxp050",
+      "split": "val",
+      "global_features": [
+        1.1,
+        0.5
+      ],
+      "full_field_min": [
+        -0.06650213897228241,
+        -0.07219969481229782,
+        -0.05872911214828491,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.005329530220478773,
+        28.198238372802734,
+        0.015260567888617516,
+        0.0008338628686033189
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        682323,
+        682229,
+        13
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.005329530220478773,
+        28.198238372802734,
+        0.015260567888617516,
+        0.0008338628686033189
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.0001514712930657e-05
+      ]
+    },
+    {
+      "run_id": "phone_e090_rxp050",
+      "split": "test",
+      "global_features": [
+        0.9,
+        0.5
+      ],
+      "full_field_min": [
+        -0.06716892868280411,
+        -0.0728565901517868,
+        -0.05924070253968239,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.005051071289926767,
+        23.436975479125977,
+        0.015156315639615059,
+        0.0
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        672217,
+        672183,
+        0
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.005051071289926767,
+        23.436975479125977,
+        0.015156315639615059,
+        0.0
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.000357380893547e-05
+      ]
+    },
+    {
+      "run_id": "phone_e110_rxm050",
+      "split": "test",
+      "global_features": [
+        1.1,
+        -0.5
+      ],
+      "full_field_min": [
+        -0.06625418365001678,
+        -0.07207823544740677,
+        -0.05767599493265152,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_field_max": [
+        0.0,
+        0.0,
+        0.002608755836263299,
+        28.126007080078125,
+        0.015736473724246025,
+        0.00271891662850976
+      ],
+      "full_field_nonzero_values": [
+        760640,
+        760640,
+        760640,
+        682323,
+        682229,
+        27
+      ],
+      "rear_field_max": [
+        0.0,
+        0.0,
+        0.002608755836263299,
+        28.126007080078125,
+        0.015736473724246025,
+        0.00271891662850976
+      ],
+      "all_full_values_finite": true,
+      "rear_equals_full_subset_bitwise": true,
+      "raw_frames": 12,
+      "actual_time_range_s": [
+        0.0,
+        2.0001514712930657e-05
+      ]
+    }
+  ],
+  "file_hashes": {
+    "runs\\phone_e100_rx000\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "cd2bfebdd7bf02290a6ff82fa800e9cfeebb0a203f274736a618f7d2b890ffc8"
+    },
+    "runs\\phone_e100_rx000\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf"
+    },
+    "runs\\phone_e080_rxm100\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "773042b5cdb43e315554d43bfa0edcdbe7694586b3a66b721ecde16ed2df548a"
+    },
+    "runs\\phone_e080_rxm100\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa"
+    },
+    "runs\\phone_e080_rxp100\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "c68a8981b384459fc9adbc21f5f1ea89099ffee0ef902d9e11ab0bb9d45057a9"
+    },
+    "runs\\phone_e080_rxp100\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f"
+    },
+    "runs\\phone_e120_rxm100\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c"
+    },
+    "runs\\phone_e120_rxm100\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa"
+    },
+    "runs\\phone_e120_rxp100\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b"
+    },
+    "runs\\phone_e120_rxp100\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a"
+    },
+    "runs\\phone_e090_rxm050\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "256dd323aafda9ad5cbadd4280283a4e432b25d7e2bc84d83ce64ae897daa0da"
+    },
+    "runs\\phone_e090_rxm050\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c"
+    },
+    "runs\\phone_e110_rxp050\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "7f05d6ba3a9eade4b51e2fc0be4fb872095185a603a9822ed95f0d4931cf2b5b"
+    },
+    "runs\\phone_e110_rxp050\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da"
+    },
+    "runs\\phone_e090_rxp050\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "247f6f6a434e7f4b61474318d1384841e63e725f396f05fbf9a59f43718c9d3c"
+    },
+    "runs\\phone_e090_rxp050\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51"
+    },
+    "runs\\phone_e110_rxm050\\target.npy": {
+      "bytes": 4784048,
+      "sha256": "a20adfa869a7d248001fd3d76b424b4332c5408b62065ccfc88ef2ef600ab71f"
+    },
+    "runs\\phone_e110_rxm050\\target-full.npy": {
+      "bytes": 18255728,
+      "sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf"
+    },
+    "shared\\connected_component_full.npy": {
+      "bytes": 304388,
+      "sha256": "56749536b34e99a2286121d421bb0a193db1818b39379e2a8b7648d118c56a27"
+    },
+    "shared\\coordinates.npy": {
+      "bytes": 239324,
+      "sha256": "22195b6bc17b8e7b0ba7d847991f414b8fd9935daf8562d1ef66481611aad173"
+    },
+    "shared\\coordinates_full.npy": {
+      "bytes": 912908,
+      "sha256": "b786c1bcbc5016dc9bebaa8919d186ee18c4dcfa1a20fc95bd6533321e7938f5"
+    },
+    "shared\\coordinates_source_float64_full.npy": {
+      "bytes": 1825688,
+      "sha256": "63904a3c7601c442dbbab8503a39cbdbfdf7dae7dc20d97408b12ec944b29790"
+    },
+    "shared\\edge_index.npy": {
+      "bytes": 3146656,
+      "sha256": "4b8ff12b3a180b306122f50e49c0aa12636661b60e73019f80a2190fa17c3a16"
+    },
+    "shared\\edge_index_full.npy": {
+      "bytes": 8979072,
+      "sha256": "dc670b7640884ea26cf006f0b5a13d5cb91ff335701b89c90ee8b889bd6b2298"
+    },
+    "shared\\full-graph-contract.json": {
+      "bytes": 1769,
+      "sha256": "8dcf6333b480900b50349c496885e4c64f3540b7fc7328edd347ca5643c870cf"
+    },
+    "shared\\geometry-contract.json": {
+      "bytes": 1636,
+      "sha256": "1db44a18006ec9dd02ad782e4f6bd7c6b5f2a44389fadbd53f51153f9c9faa1a"
+    },
+    "shared\\node_ids.npy": {
+      "bytes": 79860,
+      "sha256": "b8688e1093132e6ed50e74e5f58232ead24b47455a6c59e6fa64711edbafbcbf"
+    },
+    "shared\\node_ids_full.npy": {
+      "bytes": 304388,
+      "sha256": "b2b0964ba6f4e3fda44195c217a5e0f97f309bad7c5ac0448c76f343b5f3250c"
+    },
+    "shared\\rear_cover_full_node_indices.npy": {
+      "bytes": 79860,
+      "sha256": "5241f103bfe3e545dc4fb00e2e8c4b63b655fc56a882952abfca9f3a7a92aacf"
+    },
+    "shared\\solid_connectivity_8.npy": {
+      "bytes": 4167104,
+      "sha256": "fd5b71c9a76969181df467e92183e01af9547bd3cc2d9fd4ac71e50b5f374160"
+    },
+    "shared\\solid_corner_reference_volumes_mm3.npy": {
+      "bytes": 1041872,
+      "sha256": "677fb3c50085c57b874b6c8701e2892bdd870228a5572bf1087c6abad5409b8c"
+    },
+    "shared\\static_feature.npy": {
+      "bytes": 79860,
+      "sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad"
+    },
+    "shared\\static_feature_full.npy": {
+      "bytes": 304388,
+      "sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8"
+    }
+  },
+  "full_target_total_bytes": 164301552,
+  "all_support_checks_passed": true,
+  "active_semantics_correction": "../../active-flag-and-node-coverage-correction.json"
+}

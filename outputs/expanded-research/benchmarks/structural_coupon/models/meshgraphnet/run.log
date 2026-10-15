@@ -1,0 +1,72 @@
+Warp UserWarning: 
+   Insufficient CUDA driver version.
+   The minimum required CUDA driver version is 13.0, but the installed CUDA driver version is 12.9.
+   Visit https://nvidia.github.io/warp/stable/user_guide/installation.html for guidance.
+W1015 13:03:07.013000 44796 venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+{"epoch": 1, "training_normalized_mse": 1.0005412101745605, "validation_normalized_mse": 0.9363668262958527, "seconds": 1.3938545000019076}
+{"epoch": 5, "training_normalized_mse": 0.8745750665664673, "validation_normalized_mse": 0.8204958885908127, "seconds": 0.2862219999988156}
+{"epoch": 10, "training_normalized_mse": 0.7966489315032959, "validation_normalized_mse": 0.7345107048749924, "seconds": 0.2592399999994086}
+{"epoch": 15, "training_normalized_mse": 0.5737061560153961, "validation_normalized_mse": 0.5253765881061554, "seconds": 0.23841489999904297}
+{"epoch": 20, "training_normalized_mse": 0.43821061253547666, "validation_normalized_mse": 0.4056103974580765, "seconds": 0.25779049999982817}
+{"epoch": 25, "training_normalized_mse": 0.34223605394363404, "validation_normalized_mse": 0.4386484734714031, "seconds": 0.24324669999987236}
+{"epoch": 30, "training_normalized_mse": 0.3391463220119476, "validation_normalized_mse": 0.2729218751192093, "seconds": 0.21848649999810732}
+{"epoch": 35, "training_normalized_mse": 0.1316469468176365, "validation_normalized_mse": 0.15405583567917347, "seconds": 0.24119209999844315}
+{"epoch": 40, "training_normalized_mse": 0.0921536073088646, "validation_normalized_mse": 0.1662284005433321, "seconds": 0.24167120000129216}
+{"epoch": 45, "training_normalized_mse": 0.1267179973423481, "validation_normalized_mse": 0.11966361850500107, "seconds": 0.1826519999995071}
+{"epoch": 50, "training_normalized_mse": 0.11985811144113541, "validation_normalized_mse": 0.09575614519417286, "seconds": 0.24204230000032112}
+{"epoch": 55, "training_normalized_mse": 0.15962110459804535, "validation_normalized_mse": 0.08497709222137928, "seconds": 0.24772330000268994}
+{"epoch": 60, "training_normalized_mse": 0.2185255229473114, "validation_normalized_mse": 0.1514824889600277, "seconds": 0.25308700000095996}
+{"epoch": 65, "training_normalized_mse": 0.07082333415746689, "validation_normalized_mse": 0.0912849772721529, "seconds": 0.240531599996757}
+{"epoch": 70, "training_normalized_mse": 0.059418535232543944, "validation_normalized_mse": 0.074922657571733, "seconds": 0.22715529999913997}
+{"epoch": 75, "training_normalized_mse": 0.034838563203811644, "validation_normalized_mse": 0.09251847490668297, "seconds": 0.23529449999841745}
+{"epoch": 80, "training_normalized_mse": 0.026494788751006127, "validation_normalized_mse": 0.09391468949615955, "seconds": 0.26219590000255266}
+{"epoch": 85, "training_normalized_mse": 0.035428479127585885, "validation_normalized_mse": 0.0544996028766036, "seconds": 0.28368070000215084}
+{"epoch": 90, "training_normalized_mse": 0.049001440033316614, "validation_normalized_mse": 0.06241558771580458, "seconds": 0.21587839999847347}
+{"epoch": 95, "training_normalized_mse": 0.0660185307264328, "validation_normalized_mse": 0.16164391860365868, "seconds": 0.2460465000003751}
+{"epoch": 100, "training_normalized_mse": 0.13525006100535392, "validation_normalized_mse": 0.18943480402231216, "seconds": 0.20502610000039567}
+{"epoch": 105, "training_normalized_mse": 0.03630333840847015, "validation_normalized_mse": 0.06553405895829201, "seconds": 0.2410280000003695}
+{"epoch": 110, "training_normalized_mse": 0.02068788670003414, "validation_normalized_mse": 0.08073660498484969, "seconds": 0.216995599999791}
+{"epoch": 115, "training_normalized_mse": 0.016210522688925266, "validation_normalized_mse": 0.06366306124255061, "seconds": 0.21525390000169864}
+{"epoch": 120, "training_normalized_mse": 0.016736538521945475, "validation_normalized_mse": 0.0693751648068428, "seconds": 0.21342870000080438}
+{"epoch": 125, "training_normalized_mse": 0.05454033985733986, "validation_normalized_mse": 0.19414223544299603, "seconds": 0.23032160000002477}
+{"epoch": 130, "training_normalized_mse": 0.040639343485236165, "validation_normalized_mse": 0.0706682512536645, "seconds": 0.21390510000128415}
+{"epoch": 135, "training_normalized_mse": 0.042377515509724614, "validation_normalized_mse": 0.05597461760044098, "seconds": 0.22392369999943185}
+{"epoch": 140, "training_normalized_mse": 0.036575368419289586, "validation_normalized_mse": 0.09186261333525181, "seconds": 0.22109220000129426}
+{"epoch": 145, "training_normalized_mse": 0.03887059725821018, "validation_normalized_mse": 0.1070284191519022, "seconds": 0.23113089999969816}
+{"epoch": 150, "training_normalized_mse": 0.04834461230784655, "validation_normalized_mse": 0.07313380669802427, "seconds": 0.23838279999836232}
+{"epoch": 155, "training_normalized_mse": 0.051471381820738314, "validation_normalized_mse": 0.11334782186895609, "seconds": 0.24594249999790918}
+{"epoch": 160, "training_normalized_mse": 0.03507033791393042, "validation_normalized_mse": 0.04937918111681938, "seconds": 0.23077919999923324}
+{"epoch": 165, "training_normalized_mse": 0.047764933109283446, "validation_normalized_mse": 0.06919237412512302, "seconds": 0.22598119999747723}
+{"epoch": 170, "training_normalized_mse": 0.035186569578945635, "validation_normalized_mse": 0.11295198416337371, "seconds": 0.22019099999670289}
+{"epoch": 175, "training_normalized_mse": 0.05508055277168751, "validation_normalized_mse": 0.0580621063709259, "seconds": 0.22443100000236882}
+{"epoch": 180, "training_normalized_mse": 0.013921491801738739, "validation_normalized_mse": 0.08311938098631799, "seconds": 0.25985320000108914}
+{"epoch": 185, "training_normalized_mse": 0.009532566275447607, "validation_normalized_mse": 0.06855026795528829, "seconds": 0.25827469999785535}
+{"epoch": 190, "training_normalized_mse": 0.008907025400549173, "validation_normalized_mse": 0.06744152633473277, "seconds": 0.2281318999994255}
+{"epoch": 195, "training_normalized_mse": 0.00905367759987712, "validation_normalized_mse": 0.06365833501331508, "seconds": 0.20011090000116383}
+{"epoch": 200, "training_normalized_mse": 0.01892577428370714, "validation_normalized_mse": 0.10918490309268236, "seconds": 0.20596159999695374}
+{"epoch": 205, "training_normalized_mse": 0.036040947400033475, "validation_normalized_mse": 0.09191662236116827, "seconds": 0.22100639999916893}
+{"epoch": 210, "training_normalized_mse": 0.0541788924485445, "validation_normalized_mse": 0.10060039069503546, "seconds": 0.21181330000035814}
+{"epoch": 215, "training_normalized_mse": 0.055678747966885565, "validation_normalized_mse": 0.0738395694643259, "seconds": 0.23979870000039227}
+{"epoch": 220, "training_normalized_mse": 0.051393518969416616, "validation_normalized_mse": 0.057581523433327675, "seconds": 0.2612473000008322}
+{"epoch": 225, "training_normalized_mse": 0.03776389267295599, "validation_normalized_mse": 0.046944630332291126, "seconds": 0.22029249999832246}
+{"epoch": 230, "training_normalized_mse": 0.024538153689354657, "validation_normalized_mse": 0.05387498717755079, "seconds": 0.22868349999771453}
+{"epoch": 235, "training_normalized_mse": 0.015018773451447486, "validation_normalized_mse": 0.051363945472985506, "seconds": 0.2265177000008407}
+{"epoch": 240, "training_normalized_mse": 0.012139982171356678, "validation_normalized_mse": 0.06620111525990069, "seconds": 0.212797899999714}
+{"epoch": 245, "training_normalized_mse": 0.008094331528991461, "validation_normalized_mse": 0.062225686153396964, "seconds": 0.23517179999907967}
+{"epoch": 250, "training_normalized_mse": 0.006707019545137883, "validation_normalized_mse": 0.06754567101597786, "seconds": 0.22281809999913094}
+{"epoch": 255, "training_normalized_mse": 0.005898322537541389, "validation_normalized_mse": 0.0645266454666853, "seconds": 0.2064576999982819}
+{"epoch": 260, "training_normalized_mse": 0.005501384660601616, "validation_normalized_mse": 0.06513092457316816, "seconds": 0.21913189999759197}
+{"epoch": 265, "training_normalized_mse": 0.005795793235301971, "validation_normalized_mse": 0.06953571923077106, "seconds": 0.20592540000143345}
+{"epoch": 270, "training_normalized_mse": 0.0063927040435373785, "validation_normalized_mse": 0.06755371065810323, "seconds": 0.19303539999964414}
+{"epoch": 275, "training_normalized_mse": 0.006173409800976515, "validation_normalized_mse": 0.07647022698074579, "seconds": 0.22058929999911925}
+{"epoch": 280, "training_normalized_mse": 0.007663785293698311, "validation_normalized_mse": 0.06319774407893419, "seconds": 0.22655610000219895}
+{"epoch": 285, "training_normalized_mse": 0.007354126591235399, "validation_normalized_mse": 0.07852325635030866, "seconds": 0.23462510000172188}
+{"epoch": 290, "training_normalized_mse": 0.01081243371590972, "validation_normalized_mse": 0.06215212633833289, "seconds": 0.22215950000099838}
+{"epoch": 295, "training_normalized_mse": 0.022448827140033246, "validation_normalized_mse": 0.10633784579113126, "seconds": 0.22858070000074804}
+{"epoch": 300, "training_normalized_mse": 0.015389915928244591, "validation_normalized_mse": 0.0504957758821547, "seconds": 0.2454156999992847}
+{"epoch": 305, "training_normalized_mse": 0.01092651141807437, "validation_normalized_mse": 0.08722032024525106, "seconds": 0.20829320000120788}
+{"epoch": 310, "training_normalized_mse": 0.01803464312106371, "validation_normalized_mse": 0.05526007851585746, "seconds": 0.21729920000143466}
+{"epoch": 315, "training_normalized_mse": 0.007649370189756155, "validation_normalized_mse": 0.07256438420154154, "seconds": 0.2480851000000257}
+{"epoch": 320, "training_normalized_mse": 0.005567154521122575, "validation_normalized_mse": 0.05787250632420182, "seconds": 0.2248182999974233}
+{"epoch": 325, "training_normalized_mse": 0.013358166813850403, "validation_normalized_mse": 0.10370467510074377, "seconds": 0.24965849999716738}
+{"status": "actual_supervised_training_and_heldout_evaluation_completed", "architecture": "meshgraphnet", "seconds": 103.92787619999945, "fields": {"displacement_x": {"unit": "mm", "relative_l2": 0.06688135306821386, "rmse": 0.2714463897575172}, "displacement_y": {"unit": "mm", "relative_l2": 1.1047717740521261, "rmse": 0.06928045570333842}, "displacement_z": {"unit": "mm", "relative_l2": 10212476020018.197, "rmse": 0.032671460334993165}, "von_mises_shell_scalar_projected": {"unit": "MPa", "relative_l2": 0.23717538276578434, "rmse": 122.45142645009267}, "equivalent_plastic_strain_projected": {"unit": "1", "relative_l2": 0.2495431600224401, "rmse": 0.007661208064627724}, "total_strain_principal_major_inplane_projected": {"unit": "1", "relative_l2": 0.2412734355696803, "rmse": 0.007893253167979479}, "total_strain_principal_minor_inplane_projected": {"unit": "1", "relative_l2": 0.2426241184478386, "rmse": 0.0038583360861486906}, "displacement_vector": {"unit": "mm", "relative_l2": 0.06948486034774146, "component_rmse": 0.1628397457372055}}}

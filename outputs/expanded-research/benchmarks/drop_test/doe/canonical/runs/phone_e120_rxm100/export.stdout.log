@@ -1,0 +1,59 @@
+{
+  "run_id": "phone_e120_rxm100",
+  "split": "train",
+  "globals": [
+    1.2,
+    -1.0
+  ],
+  "field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "target_shape": [
+    19933,
+    10,
+    6
+  ],
+  "target_dtype": "float32",
+  "target_full_shape": [
+    76065,
+    10,
+    6
+  ],
+  "all_raw_frames_all_solids_active": true,
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "coordinate_unit": "mm",
+  "time_unit": "s",
+  "reference_source_starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+  "case_starter_sha256": "6d5b49b102b7caf13fcc52d55e58a583ee67d2d8f5a7325d9f51e68246836cc4",
+  "max_t0_anim_vs_original_RAD_coordinate_delta_mm": 1.9072265615704964e-06,
+  "t0_delta_interpretation": "Float64 source-to-single-precision ANIM difference checked separately; original RAD coordinates are always the reference.",
+  "resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation.",
+  "extra_terminal_snapshot_status": "All raw frames retained in provenance and native ANIM; only nominal 2..20 us values enter learning targets.",
+  "target_sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c",
+  "target_full_sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa",
+  "complete": true
+}

@@ -1,0 +1,267 @@
+{
+  "run_id": "phone_e120_rxp100",
+  "split": "train",
+  "globals": [
+    1.2,
+    1.0
+  ],
+  "field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "target_shape": [
+    19933,
+    10,
+    6
+  ],
+  "target_dtype": "float32",
+  "target_full_shape": [
+    76065,
+    10,
+    6
+  ],
+  "all_raw_frames_all_solids_active": true,
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "coordinate_unit": "mm",
+  "time_unit": "s",
+  "reference_source_starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+  "case_starter_sha256": "828fad594ef263fd8df88e9354abe5b15004b21830076673e8081e7149f94d88",
+  "raw_frame_records": [
+    {
+      "file": "Cell_Phone_DropA001",
+      "actual_time_s": 0.0,
+      "bytes": 67695397,
+      "sha256": "7c0ae97512d69dad86974f9d7e1bb00f9fdbe28901d66489bb5bfd65ba27b6ae",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 0.0,
+      "gps_nodal_vm_max_MPa_full": 0.0,
+      "gps_nodal_vm_max_MPa_rear": 0.0,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA002",
+      "actual_time_s": 2.0072229744982906e-06,
+      "bytes": 67695397,
+      "sha256": "548106fd0cbab0ababed62246a782b6dd65a9366f702419acfc121e52855f92c",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 14.871325492858887,
+      "gps_nodal_vm_max_MPa_full": 7.006133079528809,
+      "gps_nodal_vm_max_MPa_rear": 7.006133079528809,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA003",
+      "actual_time_s": 4.0054046621662565e-06,
+      "bytes": 67695397,
+      "sha256": "bb89fefcb8a5d32159642720805de9980aa2de279f61e997d054540c75d020bd",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 19.576663970947266,
+      "gps_nodal_vm_max_MPa_full": 9.175453186035156,
+      "gps_nodal_vm_max_MPa_rear": 9.175453186035156,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA004",
+      "actual_time_s": 6.0035858950868715e-06,
+      "bytes": 67695397,
+      "sha256": "55c10eb4973d03fad4ac58bd74e52f91fa03ed730649e747ab3dcb68dad65337",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 24.657617568969727,
+      "gps_nodal_vm_max_MPa_full": 11.367560386657715,
+      "gps_nodal_vm_max_MPa_rear": 11.367560386657715,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA005",
+      "actual_time_s": 8.001768037502188e-06,
+      "bytes": 67695397,
+      "sha256": "2e757c9f7e92f9996ed51d71c26b07d82fe2d4544c321531366af338f72c1320",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 28.712175369262695,
+      "gps_nodal_vm_max_MPa_full": 13.676311492919922,
+      "gps_nodal_vm_max_MPa_rear": 13.676311492919922,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA006",
+      "actual_time_s": 1.0008991012000479e-05,
+      "bytes": 67695397,
+      "sha256": "c229b1addc673294d9e5dd70c061dc9494935a5cf8eaac9981111a1db940a029",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 33.33702087402344,
+      "gps_nodal_vm_max_MPa_full": 16.40121078491211,
+      "gps_nodal_vm_max_MPa_rear": 16.40121078491211,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA007",
+      "actual_time_s": 1.2007171790173743e-05,
+      "bytes": 67695397,
+      "sha256": "7f09938d5009a6bd96e580053e79325df699c595db8eebc82b5bcf3386f66d6d",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 38.790382385253906,
+      "gps_nodal_vm_max_MPa_full": 19.471237182617188,
+      "gps_nodal_vm_max_MPa_rear": 19.471237182617188,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA008",
+      "actual_time_s": 1.4005353477841709e-05,
+      "bytes": 67695397,
+      "sha256": "84c9f063e9a254b6494b760cccdb5e1b9779e115fdf6c8d24f77caa8482a709b",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 45.1131477355957,
+      "gps_nodal_vm_max_MPa_full": 22.49042510986328,
+      "gps_nodal_vm_max_MPa_rear": 22.49042510986328,
+      "native_cell_epsp_max": 0.0,
+      "projected_nodal_epsp_max_rear": 0.0
+    },
+    {
+      "file": "Cell_Phone_DropA009",
+      "actual_time_s": 1.6003536075004376e-05,
+      "bytes": 67695397,
+      "sha256": "a0c95d9f1509522444e04464b1bcd17ac0e96167d8b8cc85a4a7ab583b883f9e",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 50.254371643066406,
+      "gps_nodal_vm_max_MPa_full": 25.810667037963867,
+      "gps_nodal_vm_max_MPa_rear": 25.810667037963867,
+      "native_cell_epsp_max": 0.0005087389727123082,
+      "projected_nodal_epsp_max_rear": 5.200812275336529e-05
+    },
+    {
+      "file": "Cell_Phone_DropA010",
+      "actual_time_s": 1.800171594368294e-05,
+      "bytes": 67695397,
+      "sha256": "06fa4c016119e0e0d342184aaa1219c397de386108ce33c107dede02cc72fb9b",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 51.218833923339844,
+      "gps_nodal_vm_max_MPa_full": 28.09549903869629,
+      "gps_nodal_vm_max_MPa_rear": 28.09549903869629,
+      "native_cell_epsp_max": 0.002437667455524206,
+      "projected_nodal_epsp_max_rear": 0.00033913278225062194
+    },
+    {
+      "file": "Cell_Phone_DropA011",
+      "actual_time_s": 1.9990857254015282e-05,
+      "bytes": 67695397,
+      "sha256": "104cea727aacd8c98ec4354fe1218cc2e1744fdd7db6caf41e5ef55ffe2e9c1f",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 52.17058181762695,
+      "gps_nodal_vm_max_MPa_full": 30.24990463256836,
+      "gps_nodal_vm_max_MPa_rear": 30.24990463256836,
+      "native_cell_epsp_max": 0.004341167397797108,
+      "projected_nodal_epsp_max_rear": 0.0010627518135864784
+    },
+    {
+      "file": "Cell_Phone_DropA012",
+      "actual_time_s": 2.000893982767593e-05,
+      "bytes": 67695397,
+      "sha256": "4c3e4bdd0193d8fbfbfd264729e2d5487fbac601c6e257c9e62098eb091a76f0",
+      "all_solids_active": true,
+      "native_cell_vm_max_MPa": 52.17921829223633,
+      "gps_nodal_vm_max_MPa_full": 30.271732330322266,
+      "gps_nodal_vm_max_MPa_rear": 30.271732330322266,
+      "native_cell_epsp_max": 0.004358435515314341,
+      "projected_nodal_epsp_max_rear": 0.00107096837168412
+    }
+  ],
+  "max_t0_anim_vs_original_RAD_coordinate_delta_mm": 1.9072265615704964e-06,
+  "t0_delta_interpretation": "Float64 source-to-single-precision ANIM difference checked separately; original RAD coordinates are always the reference.",
+  "resample_method": "Linear interpolation of all six canonical outputs in physical units using explicit actual-time brackets; t0 excluded from learning targets; no temporal extrapolation.",
+  "time_brackets": [
+    {
+      "nominal_time_s": 2e-06,
+      "lower_actual_time_s": 0.0,
+      "upper_actual_time_s": 2.0072229744982906e-06,
+      "upper_weight": 0.996401508656458
+    },
+    {
+      "nominal_time_s": 4e-06,
+      "lower_actual_time_s": 2.0072229744982906e-06,
+      "upper_actual_time_s": 4.0054046621662565e-06,
+      "upper_weight": 0.9972952098402201
+    },
+    {
+      "nominal_time_s": 6e-06,
+      "lower_actual_time_s": 4.0054046621662565e-06,
+      "upper_actual_time_s": 6.0035858950868715e-06,
+      "upper_weight": 0.9982054204955023
+    },
+    {
+      "nominal_time_s": 8e-06,
+      "lower_actual_time_s": 6.0035858950868715e-06,
+      "upper_actual_time_s": 8.001768037502188e-06,
+      "upper_weight": 0.9991151770078119
+    },
+    {
+      "nominal_time_s": 9.999999999999999e-06,
+      "lower_actual_time_s": 8.001768037502188e-06,
+      "upper_actual_time_s": 1.0008991012000479e-05,
+      "upper_weight": 0.9955206710391868
+    },
+    {
+      "nominal_time_s": 1.2e-05,
+      "lower_actual_time_s": 1.0008991012000479e-05,
+      "upper_actual_time_s": 1.2007171790173743e-05,
+      "upper_weight": 0.9964108401741814
+    },
+    {
+      "nominal_time_s": 1.4e-05,
+      "lower_actual_time_s": 1.2007171790173743e-05,
+      "upper_actual_time_s": 1.4005353477841709e-05,
+      "upper_weight": 0.9973208252909389
+    },
+    {
+      "nominal_time_s": 1.6e-05,
+      "lower_actual_time_s": 1.4005353477841709e-05,
+      "upper_actual_time_s": 1.6003536075004376e-05,
+      "upper_weight": 0.9982303544183608
+    },
+    {
+      "nominal_time_s": 1.8e-05,
+      "lower_actual_time_s": 1.6003536075004376e-05,
+      "upper_actual_time_s": 1.800171594368294e-05,
+      "upper_weight": 0.9991412466365838
+    },
+    {
+      "nominal_time_s": 1.9999999999999998e-05,
+      "lower_actual_time_s": 1.9990857254015282e-05,
+      "upper_actual_time_s": 2.000893982767593e-05,
+      "upper_weight": 0.5056108801930427
+    }
+  ],
+  "extra_terminal_snapshot_status": "All raw frames retained in provenance and native ANIM; only nominal 2..20 us values enter learning targets.",
+  "target_sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b",
+  "target_full_sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a",
+  "complete": true
+}

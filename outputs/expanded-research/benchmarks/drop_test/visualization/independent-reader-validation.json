@@ -1,0 +1,46 @@
+{
+  "reader_version": "5.3.5",
+  "reports": [
+    {
+      "run_id": "phone_e090_rxp050",
+      "read_success": true,
+      "reader": "meshio5.3.5",
+      "points": 76065,
+      "cells": 130218,
+      "cell_type_counts": {
+        "tetra": 109600,
+        "hexahedron": 20150,
+        "wedge": 468
+      },
+      "source_node_order_bitwise_equal": true,
+      "all_FEM_point_fields_bitwise_equal_to_frozen_nominal20us_target": true,
+      "coordinates_equal_reference_plus_FEM_u_scale1": true,
+      "all_cell_corner_sets_equal_native": true,
+      "point_and_cell_PART_ID_consistent": true,
+      "AI_or_error_fields_present": false,
+      "bytes": 13759876,
+      "sha256": "7fb6ca4c6e87e9b496c95dbf39ca6ae59297917205bb5fef22d42796a544c0e4"
+    },
+    {
+      "run_id": "phone_e110_rxm050",
+      "read_success": true,
+      "reader": "meshio5.3.5",
+      "points": 76065,
+      "cells": 130218,
+      "cell_type_counts": {
+        "tetra": 109600,
+        "hexahedron": 20150,
+        "wedge": 468
+      },
+      "source_node_order_bitwise_equal": true,
+      "all_FEM_point_fields_bitwise_equal_to_frozen_nominal20us_target": true,
+      "coordinates_equal_reference_plus_FEM_u_scale1": true,
+      "all_cell_corner_sets_equal_native": true,
+      "point_and_cell_PART_ID_consistent": true,
+      "AI_or_error_fields_present": false,
+      "bytes": 13759876,
+      "sha256": "58819d9a5a989b22e97b6c9c818c9be725b3805aaa3331e241be99fc7e323b41"
+    }
+  ],
+  "limits": "Independent VTU XML parser validation; ParaView GUI was not opened. VTU uses standard VTKXML and cell types10/12/13."
+}

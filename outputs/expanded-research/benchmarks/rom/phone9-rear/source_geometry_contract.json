@@ -1,0 +1,20 @@
+{
+  "physical_reference": "Original RAD NODE coordinates mapped by original NODE_ID; float64 archival and float32 model-input versions are both stored.",
+  "full_solid_corner_nodes": 76065,
+  "rear_cover_nodes": 19933,
+  "rear_cover_solid_elements": 58462,
+  "directed_edges": 196658,
+  "rear_cover_connected_components": 1,
+  "graph_definition": "Six undirected corner edges per original TETRA10 element, duplicates removed and both directions stored. This is the ANIM/VTK linearized corner representation; original midside nodes are not model inputs.",
+  "solid_corner_topology": "109600 TETRA10 elements have four distinct ANIM corners. 20150 BRICK elements have eight distinct corners and 468 BRICK elements are valid six-corner degenerate wedge representations in eight slots.",
+  "static_feature": {
+    "name": "reference_mean_incident_corner_cell_volume_cuberoot",
+    "unit": "mm",
+    "min": 0.29396432638168335,
+    "max": 0.5608762502670288,
+    "is_shell_thickness": false
+  },
+  "element_average": "TETRA10: equal-weight mean of valid integration points 111,112,121,211. BRICK Isolid=1: integration point111 only. Invalid zero integration-point outputs are excluded.",
+  "nodal_projection": "Reference linearized-corner solid-volume weighted global strain tensor and EPSP; then Frobenius norm of projected strain tensor. Corner volumes are an explicit postprocessing approximation to the quadratic FEM geometry.",
+  "stress_target": "Von Mises invariant of solver GPS_SIGXX/YY/ZZ/XY/ZY/XZ nodal stresses, matching the official Curator operation order. Different from cell Von Mises averaged at nodes."
+}

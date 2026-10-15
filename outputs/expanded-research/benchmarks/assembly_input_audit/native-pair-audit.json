@@ -1,0 +1,229 @@
+{
+  "status": "uninterpolated_FEM_derived_pair_check_completed",
+  "pairs": 132,
+  "cases": 9,
+  "scope": "Native actual ANIM times including t0 and retained terminal snapshot. C6 raw-frame cache uses the existing verified GPS/strain-projection definitions; these are not raw tensor components.",
+  "field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "dimensionless",
+    "dimensionless"
+  ],
+  "max_abs_difference_per_channel": [
+    0.0,
+    1.9073486328125e-06,
+    1.1920928955078125e-07,
+    5.557366330322111e-05,
+    1.2767522150625155e-08,
+    0.0
+  ],
+  "pairs_nonzero_any_native_case_time_per_channel": [
+    0,
+    2,
+    9,
+    132,
+    132,
+    0
+  ],
+  "max_examples_per_channel": [
+    null,
+    {
+      "run": "phone_e100_rx000",
+      "raw_frame": {
+        "file": "Cell_Phone_DropA008",
+        "actual_time_s": 1.4009707228979096e-05,
+        "bytes": 67695397,
+        "sha256": "7408b355b3d73885c77fd9b7d08a0e042ce7e7b7b40b9a534d2eb5c14b717238",
+        "native_cell_vm_max_MPa": 41.290103912353516,
+        "gps_nodal_vm_max_MPa_full": 18.967527389526367,
+        "gps_nodal_vm_max_MPa_rear": 18.967527389526367,
+        "native_cell_epsp_max": 0.0,
+        "projected_nodal_epsp_max_rear": 0.0
+      },
+      "node_indices": [
+        14996,
+        37346
+      ],
+      "node_ids": [
+        3277,
+        2910
+      ],
+      "field": "u_y",
+      "unit": "mm",
+      "values": [
+        -0.049190521240234375,
+        -0.04919242858886719
+      ],
+      "abs_difference": 1.9073486328125e-06
+    },
+    {
+      "run": "phone_e100_rx000",
+      "raw_frame": {
+        "file": "Cell_Phone_DropA011",
+        "actual_time_s": 1.999203595914878e-05,
+        "bytes": 67695397,
+        "sha256": "e9fd7be42deaf120fca7cbcc7372c0d0b09ce63facb716d5de4794a89e522fe5",
+        "native_cell_vm_max_MPa": 51.356414794921875,
+        "gps_nodal_vm_max_MPa_full": 26.179983139038086,
+        "gps_nodal_vm_max_MPa_rear": 26.179983139038086,
+        "native_cell_epsp_max": 0.002712840214371681,
+        "projected_nodal_epsp_max_rear": 0.0005564439947163327
+      },
+      "node_indices": [
+        21334,
+        38777
+      ],
+      "node_ids": [
+        4161,
+        3794
+      ],
+      "field": "u_z",
+      "unit": "mm",
+      "values": [
+        -0.05234479904174805,
+        -0.0523449182510376
+      ],
+      "abs_difference": 1.1920928955078125e-07
+    },
+    {
+      "run": "phone_e120_rxm100",
+      "raw_frame": {
+        "file": "Cell_Phone_DropA012",
+        "actual_time_s": 2.000893982767593e-05,
+        "bytes": 67695397,
+        "sha256": "0a486b216a5a464e84e7d0da7f0705f947f20c64ee18fd1a80a1e5432250bdd2",
+        "all_solids_active": true,
+        "native_cell_vm_max_MPa": 54.48373031616211,
+        "gps_nodal_vm_max_MPa_full": 29.739330291748047,
+        "gps_nodal_vm_max_MPa_rear": 29.739330291748047,
+        "native_cell_epsp_max": 0.008967465721070766,
+        "projected_nodal_epsp_max_rear": 0.005161783676641469
+      },
+      "node_indices": [
+        18908,
+        38759
+      ],
+      "node_ids": [
+        4171,
+        3804
+      ],
+      "field": "von_mises_GPS",
+      "unit": "MPa",
+      "values": [
+        6.374103395501152e-05,
+        8.167370651790407e-06
+      ],
+      "abs_difference": 5.557366330322111e-05
+    },
+    {
+      "run": "phone_e080_rxp100",
+      "raw_frame": {
+        "file": "Cell_Phone_DropA012",
+        "actual_time_s": 2.0009969375678338e-05,
+        "bytes": 67695397,
+        "sha256": "757f0f10774b85a77145dc12ccdb31da90c9b8747816452e55bd6d021dcb5395",
+        "all_solids_active": true,
+        "native_cell_vm_max_MPa": 41.547908782958984,
+        "gps_nodal_vm_max_MPa_full": 20.573787689208984,
+        "gps_nodal_vm_max_MPa_rear": 20.573787689208984,
+        "native_cell_epsp_max": 0.0,
+        "projected_nodal_epsp_max_rear": 0.0
+      },
+      "node_indices": [
+        21334,
+        38777
+      ],
+      "node_ids": [
+        4161,
+        3794
+      ],
+      "field": "total_strain_frobenius",
+      "unit": "dimensionless",
+      "values": [
+        2.42076403367264e-09,
+        1.5188286184297795e-08
+      ],
+      "abs_difference": 1.2767522150625155e-08
+    },
+    null
+  ],
+  "raw_cache_source_hashes": [
+    {
+      "run": "phone_e100_rx000",
+      "bytes": 21906848,
+      "sha256": "43f139aa6837c7661359034fd228c8540e07ce7e638f34ad71a65b398c05f25d",
+      "raw_frames": 12,
+      "metadata_sha256": "51b70d94336f4ead31ad9b39cabaf715b0e2c567d2d3521844e2dde7f810ad65"
+    },
+    {
+      "run": "phone_e080_rxm100",
+      "bytes": 21906848,
+      "sha256": "04d945cc31e0bb78f18f820c373b093c16186fe106276d5c1af6d4e87546b177",
+      "raw_frames": 12,
+      "metadata_sha256": "f00b71880f4c86987b1b1a9024eec9aa21ae4cbbd2a8053b947fb758b5ea7057"
+    },
+    {
+      "run": "phone_e080_rxp100",
+      "bytes": 21906848,
+      "sha256": "ad696f120c14b01d1db1fe3727dcc9c49cf37802d6e7365434899ff6b5f07bfe",
+      "raw_frames": 12,
+      "metadata_sha256": "3b73f77c32c19bbdc6e89181ea21337a45dc70f0dc404e8b4b637d283ea60464"
+    },
+    {
+      "run": "phone_e120_rxm100",
+      "bytes": 21906848,
+      "sha256": "342cea59bb12b6955772e20232bc6e8e0c75be6013fd3567a1915d5897f55d9e",
+      "raw_frames": 12,
+      "metadata_sha256": "ad77825d2d744dcde0fd07259b9ba6cb519b3374513bd73646b9a8abe42a906e"
+    },
+    {
+      "run": "phone_e120_rxp100",
+      "bytes": 21906848,
+      "sha256": "462632c8ee0d6b28a65c96d8c7c708713eeac4253a32c086f0287adcaa9675cf",
+      "raw_frames": 12,
+      "metadata_sha256": "b56c2cb7554a403c2a7593c01880f1162297f35fb33b199fd2066748f65d7dca"
+    },
+    {
+      "run": "phone_e090_rxm050",
+      "bytes": 21906848,
+      "sha256": "07a7e4e14c7813e019db26b5f0541b5a3daf3fb9cd6e440d610fa80daa6cc383",
+      "raw_frames": 12,
+      "metadata_sha256": "70e0f35432667d501a2394115ee821d9494f95e4327d48df38c41b5c65d9263d"
+    },
+    {
+      "run": "phone_e110_rxp050",
+      "bytes": 21906848,
+      "sha256": "8a66101cd5fa507784275259bb2cb2db0b4d38404b2d23e9452299b74fc2c476",
+      "raw_frames": 12,
+      "metadata_sha256": "9095b8af54bbcbb541e443d55b47fbdfcfbb514df47de0d8f969a9fd96996b35"
+    },
+    {
+      "run": "phone_e090_rxp050",
+      "bytes": 21906848,
+      "sha256": "356bfb9efda2fe336208d89b77ee0f86cec0049211aa2c098113c0deb394eb0a",
+      "raw_frames": 12,
+      "metadata_sha256": "ef30c73879bbb359fc00c840c1b70799bc3dd30728273de00705c6730915e73e"
+    },
+    {
+      "run": "phone_e110_rxm050",
+      "bytes": 21906848,
+      "sha256": "f14446bc3a69baa4d927280bda52362c5b537313d13d1adf4098df6219bca36c",
+      "raw_frames": 12,
+      "metadata_sha256": "c0b7d4b78c80560a3ad0b70a2398dc359343ab902433bec70ab4c9554c633bd3"
+    }
+  ],
+  "GPU_used": false,
+  "cpu_threads_environment": 1,
+  "elapsed_seconds": 0.4640490999991016,
+  "peak_working_set_bytes": 35864576
+}

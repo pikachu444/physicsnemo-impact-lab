@@ -3,7 +3,7 @@
   "case": "holdout_test_01",
   "time": 10,
   "time_unit": "ms",
-  "postprocess_source_sha256": "1eb53890ac95bff502766a8aa0b84b481437e3c5eb34e76cd53beadbb67dacdb",
+  "postprocess_source_sha256": "79e4b16f4bc93dd493946799d49b97cf989ce023572012d71fd83b040649bbfc",
   "geometry": "Reference XY, nodal projected scalars. Hotspot/peak is a nodal projection result, not original element/integration-point maximum.",
   "figure_fields": {
     "von_mises_shell_scalar_projected": {
@@ -15,7 +15,9 @@
         0.0,
         1.238037109375
       ],
-      "unit": "MPa"
+      "display_unit": "MPa",
+      "source_unit": "MPa",
+      "display_multiplier": 1.0
     },
     "equivalent_plastic_strain_projected": {
       "shared_fem_prediction_color_range": [
@@ -26,7 +28,9 @@
         0.0,
         0.0007137656211853027
       ],
-      "unit": "1"
+      "display_unit": "1",
+      "source_unit": "1",
+      "display_multiplier": 1.0
     },
     "total_strain_principal_major_inplane_projected": {
       "shared_fem_prediction_color_range": [
@@ -37,7 +41,9 @@
         0.0,
         0.0007196143269538879
       ],
-      "unit": "1"
+      "display_unit": "1",
+      "source_unit": "1",
+      "display_multiplier": 1.0
     },
     "total_strain_principal_minor_inplane_projected": {
       "shared_fem_prediction_color_range": [
@@ -48,7 +54,9 @@
         0.0,
         0.0003558844327926636
       ],
-      "unit": "1"
+      "display_unit": "1",
+      "source_unit": "1",
+      "display_multiplier": 1.0
     }
   },
   "physical_diagnostics": {

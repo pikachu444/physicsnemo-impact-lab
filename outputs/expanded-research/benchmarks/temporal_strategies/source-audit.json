@@ -1,0 +1,159 @@
+{
+  "status": "static source audit and NumPy FEM shape verification complete; runtime pending GPU allocation",
+  "source_git_blob_matches_independent_inventory": true,
+  "source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "findings": {
+    "crash": {
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb",
+      "class_line_ranges": {
+        "GeoTransolverOneShot": [
+          90,
+          117
+        ],
+        "TransolverOneShot": [
+          120,
+          132
+        ],
+        "MeshGraphNetOneShot": [
+          135,
+          151
+        ],
+        "FIGConvUNetOneShot": [
+          154,
+          166
+        ],
+        "GeoTransolverAutoregressiveRolloutTraining": [
+          182,
+          257
+        ],
+        "GeoTransolverTimeConditional": [
+          265,
+          341
+        ],
+        "GeoTransolverOneStepRollout": [
+          349,
+          429
+        ]
+      },
+      "time_conditional_support": "arbitrary out_dim including C7; independent time output, not AR",
+      "ar_training_support": "three-dimensional acceleration and position only; extra scalar fields unsupported",
+      "one_step_support": "three-dimensional position only; full C7 node_target concatenation with coords3 fails",
+      "time_encoding": "t_index/(num_time_steps-1), first future frame is encoded0, final frame .9 for T11; this is index encoding not physical time0",
+      "fixed_scalar_dt_only": true,
+      "initial_vel_attribute_is_registered_buffer": false,
+      "time_conditional_mutates_input_time_key": true
+    },
+    "drop_test": {
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354",
+      "class_line_ranges": {
+        "GeoTransolverOneShot": [
+          90,
+          117
+        ],
+        "TransolverOneShot": [
+          120,
+          132
+        ],
+        "MeshGraphNetOneShot": [
+          135,
+          151
+        ],
+        "FIGConvUNetOneShot": [
+          154,
+          166
+        ],
+        "GeoTransolverAutoregressiveRolloutTraining": [
+          182,
+          257
+        ],
+        "GeoTransolverTimeConditional": [
+          265,
+          348
+        ],
+        "GeoTransolverOneStepRollout": [
+          356,
+          436
+        ]
+      },
+      "time_conditional_support": "arbitrary out_dim including C7; independent time output, not AR",
+      "ar_training_support": "three-dimensional acceleration and position only; extra scalar fields unsupported",
+      "one_step_support": "three-dimensional position only; full C7 node_target concatenation with coords3 fails",
+      "time_encoding": "t_index/(num_time_steps-1), first future frame is encoded0, final frame .9 for T11; this is index encoding not physical time0",
+      "fixed_scalar_dt_only": true,
+      "initial_vel_attribute_is_registered_buffer": false,
+      "time_conditional_mutates_input_time_key": false
+    }
+  },
+  "coupon": {
+    "manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+    "ready_sha256": "ac1df2f0c5d08f73d4bc9c0c4793b6cf7e2afd2d4fe73183b856e1050c73db59",
+    "shape": [
+      919,
+      10,
+      7
+    ],
+    "train_cases": 5,
+    "validation_cases": 4,
+    "test_cases": 4,
+    "test_target_values_read": false,
+    "all_frozen_file_hashes_verified": true,
+    "fixed_nodes": 91,
+    "moving_rigid_grip_slave_nodes": 91,
+    "excluded_master_node": 990,
+    "boundary_feature_sha256": "93116a4ad1c8bf448cf293c616a39b1ebe4313e584311d06324e9ad95d26620e",
+    "source_initial_velocity": "all physical919 initial ANIM velocity components exactly0, independently checked by FEM producer",
+    "velocity_after_t0": "constant step imposed X velocity at rigid master990, transferred to91 right-grip slave nodes; scale in global inputs",
+    "source_inivel_card_present": false,
+    "source_boundary_card_sha256": "36272441339572e8a2d63a7f89cf3a953277ed6ace9c7f6fad89215ae0130ee4",
+    "wrapper_dt": 1.0,
+    "wrapper_dt_unit": "ms",
+    "dt_assumption": "nominal1ms with actual output jitter recorded; no interpolation",
+    "max_actual_time_jitter_ms": 0.00019999999999953388,
+    "train_only_normalization": {
+      "field_mean": [
+        2.7502403098489263,
+        2.1176213526361766e-06,
+        1.333453671492574e-15,
+        449.3280553101715,
+        0.01846377318639557,
+        0.020601543118924884,
+        -0.00981575517755815
+      ],
+      "field_std": [
+        1.7728746101277206,
+        1.7728746101277206,
+        1.7728746101277206,
+        254.71853486797872,
+        0.025152260415946617,
+        0.026019210977930668,
+        0.01281830861578897
+      ],
+      "global_mean": [
+        1.0,
+        1.0
+      ],
+      "global_std": [
+        0.08944274042479759,
+        0.22360679774997896
+      ],
+      "displacement_scale_definition": "train-only sqrt(trace(covariance)/3), one scale for XYZ",
+      "scalar_scale_definition": "train-only population standard deviation per scalar field"
+    }
+  },
+  "runtime_plan": {
+    "genuine_official_wrapper": true,
+    "model": "GeoTransolver, PyTorch GALE backend",
+    "preset_training_epochs": 30,
+    "optimizer": "Adam, learning_rate0.001",
+    "selection": "lowest internal validation normalized MSE; final test after selection only",
+    "test_values_for_initial_velocity": false,
+    "initial_velocity": "zero at every physical node",
+    "output_scopes": {
+      "time_conditional": "C7 displacement+stress+plasticstrain+native-totalstrainprincipal2",
+      "ar_rollout_training": "position3 only",
+      "one_step_teacher_forcing": "position3 only"
+    },
+    "modifications": "independent data driver, boundary input features and physically consistent normalized initial velocity/dt; original wrapper class source unchanged",
+    "comparison_limit": "same data/case split and displacement loss scale, but timeconditional7-channel vs AR/TF3-channel task differs"
+  }
+}

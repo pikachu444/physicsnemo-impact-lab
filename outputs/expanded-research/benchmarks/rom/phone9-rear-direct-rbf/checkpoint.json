@@ -1,0 +1,228 @@
+{
+  "architecture": "rbf_direct_field",
+  "contract": {
+    "manifest_sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48",
+    "coordinate_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+    "edge_sha256": "806d8b80175b03a4e4026d037625c34d77baf2836dec4e125b50f5abd7158ad8",
+    "shape": [
+      19933,
+      10,
+      6
+    ],
+    "fields": [
+      "displacement_x",
+      "displacement_y",
+      "displacement_z",
+      "von_mises_GPS",
+      "total_strain_frobenius",
+      "epsp"
+    ],
+    "units": [
+      "mm",
+      "mm",
+      "mm",
+      "MPa",
+      "1",
+      "1"
+    ],
+    "times": [
+      2e-06,
+      4e-06,
+      6e-06,
+      8e-06,
+      9.999999999999999e-06,
+      1.2e-05,
+      1.4e-05,
+      1.6e-05,
+      1.8e-05,
+      1.9999999999999998e-05
+    ],
+    "split": {
+      "train": [
+        "phone_e100_rx000",
+        "phone_e080_rxm100",
+        "phone_e080_rxp100",
+        "phone_e120_rxm100",
+        "phone_e120_rxp100"
+      ],
+      "validation": [
+        "phone_e090_rxm050",
+        "phone_e110_rxp050"
+      ],
+      "test": [
+        "phone_e090_rxp050",
+        "phone_e110_rxm050"
+      ]
+    },
+    "source_ready_sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80",
+    "label_source": "Frozen public phone OpenRadioss20us canonical fields; original RAD reference geometry and nominal-frame interpolation",
+    "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+    "case_inputs_and_labels": {
+      "phone_e100_rx000": {
+        "target_sha256": "cd2bfebdd7bf02290a6ff82fa800e9cfeebb0a203f274736a618f7d2b890ffc8",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          1.0,
+          0.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxm100": {
+        "target_sha256": "773042b5cdb43e315554d43bfa0edcdbe7694586b3a66b721ecde16ed2df548a",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          0.8,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e080_rxp100": {
+        "target_sha256": "c68a8981b384459fc9adbc21f5f1ea89099ffee0ef902d9e11ab0bb9d45057a9",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          0.8,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxm100": {
+        "target_sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          1.2,
+          -1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e120_rxp100": {
+        "target_sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          1.2,
+          1.0
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxm050": {
+        "target_sha256": "256dd323aafda9ad5cbadd4280283a4e432b25d7e2bc84d83ce64ae897daa0da",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          0.9,
+          -0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxp050": {
+        "target_sha256": "7f05d6ba3a9eade4b51e2fc0be4fb872095185a603a9822ed95f0d4931cf2b5b",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          1.1,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e090_rxp050": {
+        "target_sha256": "247f6f6a434e7f4b61474318d1384841e63e725f396f05fbf9a59f43718c9d3c",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          0.9,
+          0.5
+        ],
+        "actual_time_values": null
+      },
+      "phone_e110_rxm050": {
+        "target_sha256": "a20adfa869a7d248001fd3d76b424b4332c5408b62065ccfc88ef2ef600ab71f",
+        "thickness_sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad",
+        "coordinates_sha256": "38bdf950f9b51934ebaa5c2623a4b77d91eb2afa0d51951e4a950a0f3a4cd91c",
+        "globals": [
+          1.1,
+          -0.5
+        ],
+        "actual_time_values": null
+      }
+    }
+  },
+  "normalization": {
+    "field_mean": [
+      -0.03508522097235094,
+      -0.0384828743909635,
+      -0.02866354588727808,
+      0.11149168091232887,
+      6.326724132703032e-05,
+      4.736289379431044e-08
+    ],
+    "field_std": [
+      0.01793973121797891,
+      0.01793973121797891,
+      0.01793973121797891,
+      0.7530109572667864,
+      0.00042575254757480613,
+      9.620870055481657e-06
+    ],
+    "constant_training_fields": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "normalization_groups": [
+      {
+        "fields": [
+          "displacement_x",
+          "displacement_y",
+          "displacement_z"
+        ],
+        "scale": 0.01793973121797891,
+        "definition": "sqrt(trace(training displacement covariance)/3), shared by all three vector components"
+      }
+    ],
+    "thickness_mean": 0.4132896319688823,
+    "thickness_std": 0.031558966811329484,
+    "global_mean": [
+      1.0000000238418578,
+      0.0
+    ],
+    "global_std": [
+      0.17888545419358806,
+      0.8944271909999159
+    ],
+    "coordinate_min": [
+      -29.730728969573974,
+      -52.867303657531735,
+      -0.6509521061182022
+    ],
+    "coordinate_span": [
+      59.46104404449463,
+      105.73474845886231,
+      7.622981261014939
+    ],
+    "coordinate_margin_fraction": 0.01
+  },
+  "model_config": {
+    "gamma": 0.1,
+    "alpha": 0.0001
+  },
+  "validation_normalized_mse": 0.0002979428130724833,
+  "training_cases": [
+    "phone_e100_rx000",
+    "phone_e080_rxm100",
+    "phone_e080_rxp100",
+    "phone_e120_rxm100",
+    "phone_e120_rxp100"
+  ],
+  "training_matrix": "training_centered_scaled.npy",
+  "training_mean_field": "training_mean_field.npy",
+  "kernel_checkpoint": "kernel_checkpoint.npz",
+  "source_sha256": "c3a87aa36b6923797398c472f522af16a6dff6422c2351a2c5b9ceb8baa1c9b4",
+  "checkpoint_note": "Small JSON/NPZ parameters require the adjacent centered training-field matrix and mean-field NPY sidecars for inference."
+}

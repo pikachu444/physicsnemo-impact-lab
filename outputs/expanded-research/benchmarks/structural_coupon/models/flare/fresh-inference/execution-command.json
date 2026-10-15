@@ -1,0 +1,29 @@
+{
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T03:41:24.0412773+00:00",
+  "exit_code": 0,
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/source/run_benchmark.py",
+    "--cache",
+    "work/expanded-structural-coupon/cache-initial13-nodal7/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/fresh-inference",
+    "--mode",
+    "infer",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/best_checkpoint.pt",
+    "--reference",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/predictions.npy",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1"
+  ],
+  "seconds": 22.7984935,
+  "finished_utc": "2026-10-15T03:41:46.8397708+00:00",
+  "architecture": "flare",
+  "stage": "fresh",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-flare-fresh.log"
+}

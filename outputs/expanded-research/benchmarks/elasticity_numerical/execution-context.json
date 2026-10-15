@@ -1,0 +1,26 @@
+{
+  "status": "supplementary_execution_context",
+  "raw_execution_records_preserved": true,
+  "sequence": [
+    {
+      "stage": "first_cpu_slot_allocation_during_separate_fig_training",
+      "available_memory_bytes": 736858112,
+      "action": "Deferred before importing Torch; required available memory was 1073741824 bytes."
+    },
+    {
+      "stage": "one_authorized_memory_recheck",
+      "available_memory_bytes": 918122496,
+      "action": "Still deferred without importing Torch."
+    },
+    {
+      "stage": "actual_successful_cpu_execution",
+      "available_memory_bytes": 1983922176,
+      "coordination_evidence": "The coordinator had reported that all main FIG coupon training had finished and released its GPU/ML Torch process. A separate plate GPU short probe was scheduled. The existing CPU-only authorization remained valid.",
+      "action": "Official pinned Elasticity2DSolver executed on base CPU Torch, one thread, CUDA_VISIBLE_DEVICES=-1; supervised exit code was 0."
+    }
+  ],
+  "clarification_of_execution_json_competing_workload_context": "That literal note refers to the initial slot allocation, which was deferred for low available RAM. It is not evidence that FIG training overlapped the actual successful solve. Exact per-second overlap with the separately scheduled plate probe was not instrumented.",
+  "benchmark_scope": "One supervised local CPU execution; not an isolated-hardware benchmark or a production model timing.",
+  "historical_static_artifacts": "README.md, static-source-report.json and memory-deferral.json describe preparation or deferral stages and are preserved unchanged. execution-report.md describes the later successful execution.",
+  "process_status": "The owned Python process exited normally; its working set was released. No other process was terminated."
+}

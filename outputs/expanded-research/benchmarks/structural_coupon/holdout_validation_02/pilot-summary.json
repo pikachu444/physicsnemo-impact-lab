@@ -1,0 +1,280 @@
+{
+  "case": "holdout_validation_02",
+  "parameters": {
+    "case": "holdout_validation_02",
+    "strength_scale": 0.9158756857737899,
+    "velocity_scale": 0.9078528033569455,
+    "end_ms": 10.0,
+    "animation_interval_ms": 1.0,
+    "source_url": "https://2022.help.altair.com/2022.2/simulation/demos/hwsolvers/radioss/example/RD-E-1101_Tensile_test.zip",
+    "source_zip_sha256": "b873a56df00aba34f44a80a0fa443e188dd0d0bf3844d274feb4b06494c72564",
+    "source_starter_sha256": "36272441339572e8a2d63a7f89cf3a953277ed6ace9c7f6fad89215ae0130ee4",
+    "source_units": {
+      "mass": "kg",
+      "length": "mm",
+      "time": "ms",
+      "stress": "GPa",
+      "force": "kN"
+    },
+    "material": {
+      "source_name": "Steel_DP600",
+      "E_GPa": 210.0,
+      "nu": 0.3,
+      "rho_kg_per_mm3": 7.8e-06,
+      "yield_GPa": 0.27476270573213696,
+      "UTS_GPa": 0.6282907204408199,
+      "strain_at_UTS": 0.129
+    },
+    "strength_scale_definition": "Scale Iflag=1 engineering yield and engineering UTS together; E, density, nu, engineering strain at UTS remain fixed. Solver recalculates LAW2 A/B/n; this is not an assertion that A and B scale uniformly.",
+    "parameter_bounds_scope": "Local algorithm-validation sensitivity assumptions, not measured DP600 material scatter or product design tolerances.",
+    "mesh": {
+      "source_nodes": 920,
+      "quad_shells": 804,
+      "tri_shells": 4,
+      "thickness_mm": 2.5,
+      "formulation": "QEPH24",
+      "thickness_integration_points": 5
+    },
+    "output_location": "shell thickness integration point3; scalar cross-check output definitions remain distinct",
+    "source_license": "No redistribution grant found in official ZIP; documentation is copyright Altair, All Rights Reserved. Original decks remain local.",
+    "scope": "Source mesh/material/BC retained at unit scales; first10ms is an exploratory prefix of the original40ms.",
+    "prepared_sha256": {
+      "tensile_LAW2_0000.rad": "3cb1caba491f92dd6c572f0968030fd8669a943f7e5c34941f8dd1d98fd52cee",
+      "tensile_LAW2_0001.rad": "fd622f949dbf37ac80c2cc17bf6162718b0de971548b2ae4eaa4c38f52d8dd23"
+    }
+  },
+  "native_fields": [
+    "stress_xx_local",
+    "stress_yy_local",
+    "stress_xy_local",
+    "total_strain_xx_local",
+    "total_strain_yy_local",
+    "total_strain_xy_local",
+    "equivalent_plastic_strain",
+    "von_mises_shell_scalar"
+  ],
+  "units": [
+    "MPa",
+    "MPa",
+    "MPa",
+    "1",
+    "1",
+    "1",
+    "1",
+    "MPa"
+  ],
+  "solver_calculated_LAW2_coefficients": {
+    "A_GPa": 0.274762705732,
+    "B_GPa": 0.6599044866473,
+    "n": 0.1980449212603
+  },
+  "actual_times_ms": [
+    0.0,
+    1.00016,
+    2.00008,
+    3.00015,
+    4.00003,
+    5.00008,
+    6.00011,
+    7.00014,
+    8.00016,
+    9.00017,
+    10.0002
+  ],
+  "support": "808 original physical shell elements, sorted by original ELEMENT_ID; no nodal stress smoothing",
+  "physical_mesh_node_count": 919,
+  "basis": "native element local co-rotational basis; no conversion to global coordinates",
+  "shear_convention": "tensor epsilon_xy=engineering gamma_xy/2; no additional scaling in extraction",
+  "strain_measure": "solver native accumulated total strain output for full nonlinear QEPH shell; not displacement-derived; exact finite-strain-measure equivalence not independently proved",
+  "location": "tensor stress/total strain/EPSP:thickness integration point3 of5; vonMises:separate native shell scalar output, not asserted identical to IP3 tensor invariant",
+  "converter_sha256": "238278b91341168f517eb1547efdb249705af8080cd1f0beca0ba61d3bc65e12",
+  "checks": [
+    {
+      "time_ms": 0.0,
+      "von_mises_crosscheck_max_abs_MPa": 0.0,
+      "coordinate_minus_displacement_max_abs_mm": 7.32421875682121e-06,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756587303074298,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 1.00016,
+      "von_mises_crosscheck_max_abs_MPa": 0.015497207641601562,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005100917816207584,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47565497521480893,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 2.00008,
+      "von_mises_crosscheck_max_abs_MPa": 0.012755393981933594,
+      "coordinate_minus_displacement_max_abs_mm": 0.000498886108402985,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475444511214107,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 3.00015,
+      "von_mises_crosscheck_max_abs_MPa": 0.01233816146850586,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005041122436466594,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753597534092364,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 4.00003,
+      "von_mises_crosscheck_max_abs_MPa": 0.011622905731201172,
+      "coordinate_minus_displacement_max_abs_mm": 0.0004995155334484025,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4750948703678546,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 5.00008,
+      "von_mises_crosscheck_max_abs_MPa": 0.011980533599853516,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005067443847792674,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4750054634006915,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 6.00011,
+      "von_mises_crosscheck_max_abs_MPa": 0.011444091796875,
+      "coordinate_minus_displacement_max_abs_mm": 0.0004915428161496038,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4758723533543048,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 7.00014,
+      "von_mises_crosscheck_max_abs_MPa": 0.011801719665527344,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005059242248535156,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.475753144064754,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 8.00016,
+      "von_mises_crosscheck_max_abs_MPa": 0.011205673217773438,
+      "coordinate_minus_displacement_max_abs_mm": 0.0004940032958984375,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4756181991489825,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 9.00017,
+      "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005135345458882057,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.47548325423321103,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    },
+    {
+      "time_ms": 10.0002,
+      "von_mises_crosscheck_max_abs_MPa": 0.011682510375976562,
+      "coordinate_minus_displacement_max_abs_mm": 0.0005060577392441701,
+      "excluded_auxiliary_node_reference_offset_max_abs_mm": 0.4753535545261798,
+      "vtk_cells": 899,
+      "kept_physical_shell_cells": 808,
+      "excluded_rigid_body_auxiliary_cells": 91
+    }
+  ],
+  "final_min": [
+    -51.05390167236328,
+    -51.04819869995117,
+    -219.07200622558594,
+    -0.03568769991397858,
+    -0.035686999559402466,
+    -0.003230920061469078,
+    0.0,
+    0.0
+  ],
+  "final_max": [
+    665.094970703125,
+    665.0989990234375,
+    120.40799713134766,
+    0.07292310148477554,
+    0.07292520254850388,
+    0.0037395800463855267,
+    0.06976079940795898,
+    664.2340087890625
+  ],
+  "final_std": [
+    278.7899169921875,
+    278.76263427734375,
+    39.95838928222656,
+    0.03589533269405365,
+    0.035895124077796936,
+    0.0015602258499711752,
+    0.03251102194190025,
+    244.58892822265625
+  ],
+  "final_positive_plastic_cell_fraction": 0.7673267326732673,
+  "force_diagnostic": {
+    "source": "negative derivative of RBODY T01 impulse, no filter",
+    "gauge_length_mm": 80.0,
+    "area_initial_mm2": 30,
+    "final_force_kN": 18.51871327763365,
+    "final_engineering_strain": 0.07350290000000001,
+    "final_engineering_stress_MPa": 617.2904425877883
+  },
+  "energy": {
+    "final_internal_J": 153.092,
+    "final_kinetic_J": 0.009794858,
+    "max_kinetic_over_internal_after1ms": 0.001068128588101697,
+    "final_hourglass_over_internal": 0.0
+  },
+  "execution": [
+    {
+      "stage": "starter",
+      "started_utc": "2026-10-15T03:08:28.913999+00:00",
+      "threads": 1,
+      "pid": 34584,
+      "exit_code": 0,
+      "wall_seconds": 1.781207899999572,
+      "sampled_peak_rss_bytes": 169447424,
+      "memory_cap_bytes": 400000000,
+      "sample_interval_seconds": 0.05,
+      "terminated_reason": null,
+      "executable": "starter_win64.exe",
+      "arguments": [
+        "-i",
+        "tensile_LAW2_0000.rad",
+        "-np",
+        "1",
+        "-nt",
+        "1"
+      ]
+    },
+    {
+      "stage": "engine",
+      "started_utc": "2026-10-15T03:08:30.696166+00:00",
+      "threads": 1,
+      "pid": 44916,
+      "exit_code": 0,
+      "wall_seconds": 50.3389285000012,
+      "sampled_peak_rss_bytes": 46989312,
+      "memory_cap_bytes": 400000000,
+      "sample_interval_seconds": 0.05,
+      "terminated_reason": null,
+      "executable": "engine_win64.exe",
+      "arguments": [
+        "-i",
+        "tensile_LAW2_0001.rad",
+        "-nt",
+        "1"
+      ]
+    }
+  ],
+  "labels_sha256": "d770a7c9f31efe99aba58640d7e592ec0874c2e41b41361d48581664d0f51eb4"
+}

@@ -1,10 +1,11 @@
 {
   "status": "all_separate_formula_metric_assertions_passed",
   "scope": "Author-side diagnostic; no model or hyperparameter changes, no clipping or target replacements. Independent review is a separate gate.",
+  "audit_source_sha256": "f2737cd0f13beabbef828f2dba072803f2ab583ed8d0db16d7a0581c93674af5",
   "cache_manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
   "shared_normalization_sha256": "fc9574c541d0b3571abe995b5463c7ecdda3b1a007a24e4b36673383aa9b18b7",
   "same_contract_split_fields_and_normalization": true,
-  "support_definition": "Exact nonzero projected nodal truth, without a newly selected numerical threshold. Peak/hotspot is a nodal projection, not original element or integration-point extrema.",
+  "support_definition": "Exact nonzero nodal truth, without a newly selected numerical threshold. Source derivation/projection is defined in the frozen cache. Nodal peaks do not establish original element or integration-point extrema.",
   "source_field_definition": null,
   "source_strain_note": null,
   "physical_diagnostics": {
@@ -306,6 +307,202 @@
             "prediction_at_truth_peak": 0.07326168566942215,
             "absolute_error_at_truth_peak": 0.000300385057926178,
             "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "holdout_test_01",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009404905140399933,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009220749139785767,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_02",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 13,
+              "minimum_delta": -6.4406129318683725e-09,
+              "maximum_delta": 0.006610136479139328,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.971383305019117e-10,
+                5.987911855243054e-09,
+                6.3500727165433085e-09,
+                6.4406129318683725e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                42507.0,
+                14854454.2,
+                15079196.44,
+                15135382.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.006757628172636032,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_03",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 6,
+              "minimum_delta": -4.4024375256412895e-09,
+              "maximum_delta": 0.009590685367584229,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.060922265125555e-09,
+                4.330981795419575e-09,
+                4.388146379596946e-09,
+                4.4024375256412895e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                571524.0,
+                609531.5,
+                617576.7,
+                619588.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009391851723194122,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_04",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 8,
+              "minimum_delta": -4.8303183675102446e-09,
+              "maximum_delta": 0.007914133369922638,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.151785277211161e-09,
+                4.798409580786256e-09,
+                4.823936610165447e-09,
+                4.8303183675102446e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                5363123.0,
+                10805057.8,
+                10862539.56,
+                10876910.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.007936302572488785,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
           }
         ]
       },
@@ -729,6 +926,202 @@
             "absolute_error_at_truth_peak": 0.0002875328063964844,
             "magnitude_underprediction_at_truth_peak": 0.0
           }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "holdout_test_01",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009362548589706421,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009220749139785767,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_02",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 13,
+              "minimum_delta": -6.228396021157323e-09,
+              "maximum_delta": 0.006594181060791016,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.807816367247142e-10,
+                5.790611279365975e-09,
+                6.1408390727990525e-09,
+                6.228396021157323e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                41106.0,
+                14365003.0,
+                14582339.799999999,
+                14636674.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.006757628172636032,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_03",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 6,
+              "minimum_delta": -4.207805659461883e-09,
+              "maximum_delta": 0.009588532149791718,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.8813894320810505e-09,
+                4.1395100680574615e-09,
+                4.194146541180999e-09,
+                4.207805659461883e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                546257.0,
+                582584.25,
+                590273.65,
+                592196.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009391851723194122,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_04",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 10,
+              "minimum_delta": -5.384146462006356e-09,
+              "maximum_delta": 0.007913440465927124,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.8327082074165446e-09,
+                5.338417241596005e-09,
+                5.375000617924286e-09,
+                5.384146462006356e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                452536.0,
+                12021046.95,
+                12103425.39,
+                12124020.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.007936302572488785,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
         ]
       },
       "total_strain_principal_major_inplane_projected": {
@@ -1150,6 +1543,202 @@
             "prediction_at_truth_peak": 0.07320919632911682,
             "absolute_error_at_truth_peak": 0.0002478957176208496,
             "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "holdout_test_01",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009361185133457184,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009220749139785767,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_02",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 46,
+              "minimum_delta": -6.775927374746971e-09,
+              "maximum_delta": 0.006622862070798874,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.991784597838887e-09,
+                6.214590397846109e-09,
+                6.638035476846937e-09,
+                6.775927374746971e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                13001000.5,
+                15238483.25,
+                15701704.299999999,
+                15923368.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.006757628172636032,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 3.725290298461914e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_03",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 7,
+              "minimum_delta": -4.016513344140549e-09,
+              "maximum_delta": 0.009564056992530823,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.69141872624823e-09,
+                3.9382847205615685e-09,
+                4.000867619424752e-09,
+                4.016513344140549e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                519521.0,
+                554264.2999999999,
+                563072.0599999999,
+                565274.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.009391851723194122,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "holdout_test_04",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 22,
+              "minimum_delta": -8.198014711524593e-09,
+              "maximum_delta": 0.007891424000263214,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.3154135558579583e-09,
+                8.011653385153749e-09,
+                8.172381242843584e-09,
+                8.198014711524593e-09
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                242104.5,
+                11157939.1,
+                11335044.31,
+                11380150.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 8271,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.007936302572488785,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 7.450580596923828e-09,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
           }
         ]
       },

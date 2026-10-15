@@ -1,0 +1,1041 @@
+{
+  "status": "all_separate_formula_metric_assertions_passed",
+  "scope": "Author-side diagnostic; no model or hyperparameter changes, no clipping or target replacements. Independent review is a separate gate.",
+  "audit_source_sha256": "f2737cd0f13beabbef828f2dba072803f2ab583ed8d0db16d7a0581c93674af5",
+  "cache_manifest_sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48",
+  "shared_normalization_sha256": "34408da4f962d89c80761bf8271c4171cfaed6152affff67c63d3f182c8ea768",
+  "same_contract_split_fields_and_normalization": true,
+  "support_definition": "Exact nonzero nodal truth, without a newly selected numerical threshold. Source derivation/projection is defined in the frozen cache. Nodal peaks do not establish original element or integration-point extrema.",
+  "source_field_definition": null,
+  "source_strain_note": null,
+  "physical_diagnostics": {
+    "pod_rbf": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0004922704114016144,
+        "recomputed_rmse": 1.9487221195936172e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 1.9487710032399668e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0004922704114016144,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.06694766879081726,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17268,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06716892868280411,
+            "prediction_at_truth_peak": -0.06694766879081726,
+            "absolute_error_at_truth_peak": 0.00022125989198684692,
+            "magnitude_underprediction_at_truth_peak": 0.00022125989198684692
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 16872,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06625418365001678,
+            "prediction_at_truth_peak": -0.0661533996462822,
+            "absolute_error_at_truth_peak": 0.00010078400373458862,
+            "magnitude_underprediction_at_truth_peak": 0.00010078400373458862
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0004218876348372239,
+        "recomputed_rmse": 1.8318945002821624e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 1.8319404533105604e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0004218876348372239,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.07271648943424225,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18414,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.0728565901517868,
+            "prediction_at_truth_peak": -0.07271648943424225,
+            "absolute_error_at_truth_peak": 0.00014010071754455566,
+            "magnitude_underprediction_at_truth_peak": 0.00014010071754455566
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18415,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.07207823544740677,
+            "prediction_at_truth_peak": -0.07208956778049469,
+            "absolute_error_at_truth_peak": 1.1332333087921143e-05,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.000653490208478239,
+        "recomputed_rmse": 2.1147613491695703e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 2.1148143979059023e-05,
+        "relative_l2_on_nonzero_truth_support": 0.000653490208478239,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.05917029827833176,
+        "prediction_max": 0.0052953860722482204,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17090,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05924070253968239,
+            "prediction_at_truth_peak": -0.05917029827833176,
+            "absolute_error_at_truth_peak": 7.040426135063171e-05,
+            "magnitude_underprediction_at_truth_peak": 7.040426135063171e-05
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 17082,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05767599493265152,
+            "prediction_at_truth_peak": -0.05789942294359207,
+            "absolute_error_at_truth_peak": 0.00022342801094055176,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "von_mises_GPS": {
+        "unit": "MPa",
+        "recomputed_relative_l2": 0.025452010810136667,
+        "recomputed_rmse": 0.01890533935904927,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.01890533935904927,
+        "relative_l2_on_nonzero_truth_support": 0.025452010810136667,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 7341,
+        "negative_fraction_if_nonnegative_field": 0.018414187528219536,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 7341,
+        "prediction_min": -0.006728971842676401,
+        "prediction_max": 28.55896759033203,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 23.436975479125977,
+            "prediction_at_truth_peak": 23.198678970336914,
+            "absolute_error_at_truth_peak": 0.2382965087890625,
+            "magnitude_underprediction_at_truth_peak": 0.2382965087890625
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 28.126007080078125,
+            "prediction_at_truth_peak": 28.55896759033203,
+            "absolute_error_at_truth_peak": 0.43296051025390625,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "total_strain_frobenius": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.02110901349980735,
+        "recomputed_rmse": 8.99632860319214e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 8.99632860319214e-06,
+        "relative_l2_on_nonzero_truth_support": 0.02110901349980735,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 5697,
+        "negative_fraction_if_nonnegative_field": 0.014290372748708173,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 5697,
+        "prediction_min": -2.8451174785004696e-06,
+        "prediction_max": 0.015889832749962807,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015156315639615059,
+            "prediction_at_truth_peak": 0.01515719573944807,
+            "absolute_error_at_truth_peak": 8.800998330116272e-07,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015736473724246025,
+            "prediction_at_truth_peak": 0.015889832749962807,
+            "absolute_error_at_truth_peak": 0.00015335902571678162,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "epsp": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.3097112637350317,
+        "recomputed_rmse": 2.09051962936613e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 27,
+        "truth_zero_support_count": 398633,
+        "rmse_on_nonzero_truth_support": 0.00017202483433967155,
+        "relative_l2_on_nonzero_truth_support": 0.20973670923089183,
+        "rmse_on_zero_truth_support": 1.5382528324089032e-06,
+        "negative_count_if_nonnegative_field": 48,
+        "negative_fraction_if_nonnegative_field": 0.00012040335122660914,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 0,
+        "prediction_min": -0.00047113464097492397,
+        "prediction_max": 0.002663147635757923,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 0,
+            "truth_peak_time_index": 0,
+            "truth_peak_time": 2e-06,
+            "truth_value": 0.0,
+            "prediction_at_truth_peak": 0.0,
+            "absolute_error_at_truth_peak": 0.0,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18810,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.00271891662850976,
+            "prediction_at_truth_peak": 0.002663147635757923,
+            "absolute_error_at_truth_peak": 5.576899275183678e-05,
+            "magnitude_underprediction_at_truth_peak": 5.576899275183678e-05
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "phone_e090_rxp050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 37,
+              "minimum_delta": -0.00022910338884685189,
+              "maximum_delta": 0.00011899357195943594,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.9457281925715506e-05,
+                0.00015444476266566166,
+                0.0002244348148087738,
+                0.00022910338884685189
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                9553530.875,
+                16042134.4,
+                16426245.76,
+                16583659.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9103830456733704e-11,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.0,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.401298464324817e-45,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 4,
+              "minimum_delta": -5.689659943186598e-08,
+              "maximum_delta": 0.0009864270687103271,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.1566442793007354e-08,
+                5.381539320836736e-08,
+                5.628035818716625e-08,
+                5.689659943186598e-08
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                14833962.0,
+                15873896.1,
+                15986754.42,
+                16014969.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.001464584842324257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    },
+    "pod_ridge": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0005568712772960817,
+        "recomputed_rmse": 2.204453793481982e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 2.2045090921510697e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0005568712772960817,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.06681832671165466,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17268,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06716892868280411,
+            "prediction_at_truth_peak": -0.06681832671165466,
+            "absolute_error_at_truth_peak": 0.0003506019711494446,
+            "magnitude_underprediction_at_truth_peak": 0.0003506019711494446
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 16872,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06625418365001678,
+            "prediction_at_truth_peak": -0.06614088267087936,
+            "absolute_error_at_truth_peak": 0.00011330097913742065,
+            "magnitude_underprediction_at_truth_peak": 0.00011330097913742065
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.00044320018232185855,
+        "recomputed_rmse": 1.9244365311458266e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 1.9244848055887885e-05,
+        "relative_l2_on_nonzero_truth_support": 0.00044320018232185855,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.07264651358127594,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18414,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.0728565901517868,
+            "prediction_at_truth_peak": -0.07264651358127594,
+            "absolute_error_at_truth_peak": 0.00021007657051086426,
+            "magnitude_underprediction_at_truth_peak": 0.00021007657051086426
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18415,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.07207823544740677,
+            "prediction_at_truth_peak": -0.07212350517511368,
+            "absolute_error_at_truth_peak": 4.526972770690918e-05,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0007160786273842717,
+        "recomputed_rmse": 2.317303893022421e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 2.3173620225334744e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0007160786273842717,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.05907949060201645,
+        "prediction_max": 0.005057420581579208,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17090,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05924070253968239,
+            "prediction_at_truth_peak": -0.05907949060201645,
+            "absolute_error_at_truth_peak": 0.00016121193766593933,
+            "magnitude_underprediction_at_truth_peak": 0.00016121193766593933
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 17082,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05767599493265152,
+            "prediction_at_truth_peak": -0.05798293277621269,
+            "absolute_error_at_truth_peak": 0.0003069378435611725,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "von_mises_GPS": {
+        "unit": "MPa",
+        "recomputed_relative_l2": 0.022555592006856567,
+        "recomputed_rmse": 0.016753926615654807,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.016753926615654807,
+        "relative_l2_on_nonzero_truth_support": 0.022555592006856567,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 5325,
+        "negative_fraction_if_nonnegative_field": 0.01335724677670195,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 5325,
+        "prediction_min": -0.004940584767609835,
+        "prediction_max": 28.217388153076172,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 23.436975479125977,
+            "prediction_at_truth_peak": 23.633323669433594,
+            "absolute_error_at_truth_peak": 0.1963481903076172,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 28.126007080078125,
+            "prediction_at_truth_peak": 28.217388153076172,
+            "absolute_error_at_truth_peak": 0.09138107299804688,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "total_strain_frobenius": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.021358927771670318,
+        "recomputed_rmse": 9.102838123986527e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 9.102838123986527e-06,
+        "relative_l2_on_nonzero_truth_support": 0.021358927771670318,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 4208,
+        "negative_fraction_if_nonnegative_field": 0.010555360457532735,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 4208,
+        "prediction_min": -2.0076167857041582e-06,
+        "prediction_max": 0.015832174569368362,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015156315639615059,
+            "prediction_at_truth_peak": 0.015205631032586098,
+            "absolute_error_at_truth_peak": 4.931539297103882e-05,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015736473724246025,
+            "prediction_at_truth_peak": 0.015832174569368362,
+            "absolute_error_at_truth_peak": 9.570084512233734e-05,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "epsp": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.25076132324785105,
+        "recomputed_rmse": 1.6926135078637206e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 27,
+        "truth_zero_support_count": 398633,
+        "rmse_on_nonzero_truth_support": 0.00014114868696632558,
+        "relative_l2_on_nonzero_truth_support": 0.1720917868063382,
+        "rmse_on_zero_truth_support": 1.2311472996126305e-06,
+        "negative_count_if_nonnegative_field": 39,
+        "negative_fraction_if_nonnegative_field": 9.782772287161993e-05,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 0,
+        "prediction_min": -0.00039480399573221803,
+        "prediction_max": 0.0023533205967396498,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 0,
+            "truth_peak_time_index": 0,
+            "truth_peak_time": 2e-06,
+            "truth_value": 0.0,
+            "prediction_at_truth_peak": 0.0,
+            "absolute_error_at_truth_peak": 0.0,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18810,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.00271891662850976,
+            "prediction_at_truth_peak": 0.0023533205967396498,
+            "absolute_error_at_truth_peak": 0.00036559603177011013,
+            "magnitude_underprediction_at_truth_peak": 0.00036559603177011013
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "phone_e090_rxp050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 33,
+              "minimum_delta": -0.00018669262317416724,
+              "maximum_delta": 0.00016948093252722174,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.075256972806528e-05,
+                0.00014634526123700187,
+                0.00018638748755620327,
+                0.00018669262317416724
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                9537496.0,
+                14860182.799999999,
+                16028089.871875,
+                16201350.046875
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9103830456733704e-11,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.0,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.401298464324817e-45,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.0009113011183217168,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.001464584842324257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    },
+    "direct_rbf": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0004922707030926412,
+        "recomputed_rmse": 1.9487232742938446e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 1.9487721579691596e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0004922707030926412,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.06694766879081726,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17268,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06716892868280411,
+            "prediction_at_truth_peak": -0.06694766879081726,
+            "absolute_error_at_truth_peak": 0.00022125989198684692,
+            "magnitude_underprediction_at_truth_peak": 0.00022125989198684692
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 16872,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.06625418365001678,
+            "prediction_at_truth_peak": -0.0661533996462822,
+            "absolute_error_at_truth_peak": 0.00010078400373458862,
+            "magnitude_underprediction_at_truth_peak": 0.00010078400373458862
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.00042188743961712,
+        "recomputed_rmse": 1.831893652609453e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 1.831939605616587e-05,
+        "relative_l2_on_nonzero_truth_support": 0.00042188743961712,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.07271648943424225,
+        "prediction_max": 0.0,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18414,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.0728565901517868,
+            "prediction_at_truth_peak": -0.07271648943424225,
+            "absolute_error_at_truth_peak": 0.00014010071754455566,
+            "magnitude_underprediction_at_truth_peak": 0.00014010071754455566
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18415,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.07207823544740677,
+            "prediction_at_truth_peak": -0.07208956778049469,
+            "absolute_error_at_truth_peak": 1.1332333087921143e-05,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.0006534901084789526,
+        "recomputed_rmse": 2.114761025561622e-05,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398640,
+        "truth_zero_support_count": 20,
+        "rmse_on_nonzero_truth_support": 2.114814074289836e-05,
+        "relative_l2_on_nonzero_truth_support": 0.0006534901084789526,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -0.05917029827833176,
+        "prediction_max": 0.0052953860722482204,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 17090,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05924070253968239,
+            "prediction_at_truth_peak": -0.05917029827833176,
+            "absolute_error_at_truth_peak": 7.040426135063171e-05,
+            "magnitude_underprediction_at_truth_peak": 7.040426135063171e-05
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 17082,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": -0.05767599493265152,
+            "prediction_at_truth_peak": -0.05789942666888237,
+            "absolute_error_at_truth_peak": 0.00022343173623085022,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "von_mises_GPS": {
+        "unit": "MPa",
+        "recomputed_relative_l2": 0.025452001170985897,
+        "recomputed_rmse": 0.018905332199244968,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.018905332199244968,
+        "relative_l2_on_nonzero_truth_support": 0.025452001170985897,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 7341,
+        "negative_fraction_if_nonnegative_field": 0.018414187528219536,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 7341,
+        "prediction_min": -0.006728971842676401,
+        "prediction_max": 28.5589656829834,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 23.436975479125977,
+            "prediction_at_truth_peak": 23.198678970336914,
+            "absolute_error_at_truth_peak": 0.2382965087890625,
+            "magnitude_underprediction_at_truth_peak": 0.2382965087890625
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 28.126007080078125,
+            "prediction_at_truth_peak": 28.5589656829834,
+            "absolute_error_at_truth_peak": 0.43295860290527344,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "total_strain_frobenius": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.02110901404335627,
+        "recomputed_rmse": 8.996328834844115e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 398660,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 8.996328834844115e-06,
+        "relative_l2_on_nonzero_truth_support": 0.02110901404335627,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 5697,
+        "negative_fraction_if_nonnegative_field": 0.014290372748708173,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 5697,
+        "prediction_min": -2.845119297489873e-06,
+        "prediction_max": 0.015889832749962807,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015156315639615059,
+            "prediction_at_truth_peak": 0.01515719573944807,
+            "absolute_error_at_truth_peak": 8.800998330116272e-07,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18623,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.015736473724246025,
+            "prediction_at_truth_peak": 0.015889832749962807,
+            "absolute_error_at_truth_peak": 0.00015335902571678162,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "epsp": {
+        "unit": "1",
+        "recomputed_relative_l2": 0.30971129167580375,
+        "recomputed_rmse": 2.090519817963509e-06,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 398660,
+        "truth_exact_nonzero_support_count": 27,
+        "truth_zero_support_count": 398633,
+        "rmse_on_nonzero_truth_support": 0.00017202483987999143,
+        "relative_l2_on_nonzero_truth_support": 0.20973671598577964,
+        "rmse_on_zero_truth_support": 1.5382530467691187e-06,
+        "negative_count_if_nonnegative_field": 48,
+        "negative_fraction_if_nonnegative_field": 0.00012040335122660914,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 0,
+        "prediction_min": -0.00047113464097492397,
+        "prediction_max": 0.0026631474029272795,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "phone_e090_rxp050",
+            "truth_peak_node_index": 0,
+            "truth_peak_time_index": 0,
+            "truth_peak_time": 2e-06,
+            "truth_value": 0.0,
+            "prediction_at_truth_peak": 0.0,
+            "absolute_error_at_truth_peak": 0.0,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "truth_peak_node_index": 18810,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 1.9999999999999998e-05,
+            "truth_value": 0.00271891662850976,
+            "prediction_at_truth_peak": 0.0026631474029272795,
+            "absolute_error_at_truth_peak": 5.576922558248043e-05,
+            "magnitude_underprediction_at_truth_peak": 5.576922558248043e-05
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "phone_e090_rxp050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 37,
+              "minimum_delta": -0.00022910337429493666,
+              "maximum_delta": 0.00011899351375177503,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.9457280106726103e-05,
+                0.00015444477248820443,
+                0.00022443481007940137,
+                0.00022910337429493666
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                9553531.5,
+                16042167.0,
+                16426247.48,
+                16583660.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9103830456733704e-11,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.0,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.401298464324817e-45,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "phone_e110_rxm050",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 4,
+              "minimum_delta": -5.690077387043857e-08,
+              "maximum_delta": 0.0009864268358796835,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.1568250236091444e-08,
+                5.381925376468643e-08,
+                5.6284469849288136e-08,
+                5.690077387043857e-08
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                14834973.0,
+                15875024.299999999,
+                15987920.06,
+                16016144.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 179397,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.001464584842324257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.3283064365386963e-10,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    }
+  }
+}

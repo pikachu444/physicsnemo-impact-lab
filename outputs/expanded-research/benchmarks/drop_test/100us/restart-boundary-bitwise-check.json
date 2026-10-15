@@ -1,0 +1,31 @@
+{
+  "same_actual_time_s": 2.0001940356451087e-05,
+  "all_previous_output_fields_bitwise_equal": true,
+  "field_checks": {
+    "coords": true,
+    "node_ids": true,
+    "connectivity_8": true,
+    "solid_active_flags": true,
+    "scalar_fields/Plastic_Strain": true,
+    "scalar_fields/Von_Mises": true,
+    "node_scalar_fields/GPS_SIGXX": true,
+    "node_scalar_fields/GPS_SIGYY": true,
+    "node_scalar_fields/GPS_SIGZZ": true,
+    "node_scalar_fields/GPS_SIGXY": true,
+    "node_scalar_fields/GPS_SIGZY": true,
+    "node_scalar_fields/GPS_SIGXZ": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point111__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point112__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point121__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Strs_Intg_Point211__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point111__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point112__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point121__": true,
+    "tensor_fields_6_xx_yy_zz_xy_yz_xz/Stra_Intg_Point211__": true
+  },
+  "new_nodal_vector_names": [
+    "Velocity"
+  ],
+  "physics_and_frozen20us_targets_unchanged": true,
+  "source_checkpoint_sha256": "85a12db11e73cebf6ae6dccc0d41affd3dda63825632f23b94ddbaa38c67ff18"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "contract_and_bitwise_truth_equal",
+  "same_full_support": 13675,
+  "same_split": {
+    "train": 112,
+    "validation": 12,
+    "test": 7
+  },
+  "maximum_field_std_difference": 1.3429257705865894e-11,
+  "difference_note": "Old subtraction variance vs stable Welford differs by less than1.4e-11 mm. Both use train-only field stats and train mean-field centering. Final7-channel trial will reuse the same frozen normalization file.",
+  "pod_rbf_displacement_l2": 0.030996432104822055,
+  "direct_rbf_displacement_l2": 0.03052998583032544,
+  "selection": "both gamma3 alpha0.1 chosen by validation, POD rank44 additionally validation-selected",
+  "interpretation": "Comparable fixed-geometry exploratory benchmark. POD has slightly lower validation normalized MSE but slightly higher test displacement L2; no universal superiority claim."
+}

@@ -1,0 +1,102 @@
+{
+  "pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "checked_utc": "2026-10-15T03:18:19.320077+00:00",
+  "files": [
+    {
+      "path": "examples/structural_mechanics/crash/rollout.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/rollout.py",
+      "bytes": 16103,
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb",
+      "git_blob_sha1": "d107d4c84b13923a9edcb155227cea54cef76453",
+      "local": "work\\expanded-temporal\\sources\\crash\\rollout.py"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/datapipe.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/datapipe.py",
+      "bytes": 30248,
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a",
+      "git_blob_sha1": "6409156e61bafee2b66afafba825f847fe877e05",
+      "local": "work\\expanded-temporal\\sources\\crash\\datapipe.py"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/train.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/train.py",
+      "bytes": 15670,
+      "sha256": "1d9f7831ee22e2721b4656816932bc8c8f9a0071d9acdc89d4c4e02d935ca72b",
+      "git_blob_sha1": "d322d4e6137a23aa6ac5cc481e5f7a5a3033c59e",
+      "local": "work\\expanded-temporal\\sources\\crash\\train.py"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d",
+      "git_blob_sha1": "16ce765afdfdae6476dd0163f74ea8cd6a870412",
+      "local": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_time_conditional.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca",
+      "git_blob_sha1": "dddca73bf4d0aeac93e1ebc178dfa90e74f91b02",
+      "local": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_autoregressive_rollout_training.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/crash/conf/model/geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72",
+      "git_blob_sha1": "247b262ac557e33c0f33edea35ca3bf0e1cb38d4",
+      "local": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_one_step_rollout.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/rollout.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/rollout.py",
+      "bytes": 16531,
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354",
+      "git_blob_sha1": "7691d10ecd3e1f861996cac1ba8c0f7390d895e0",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\rollout.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/datapipe.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/datapipe.py",
+      "bytes": 31913,
+      "sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239",
+      "git_blob_sha1": "3072cc74902c4aa580c82b92cab22253f9e4d7e2",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\datapipe.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/train.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/train.py",
+      "bytes": 18078,
+      "sha256": "66410fb3a1b02bef52dbcc39e66870e64197156e15cd078ae5f4626baafbce89",
+      "git_blob_sha1": "85062c6b1829e74abc15690edaff6c76e7abcac9",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\train.py"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d",
+      "git_blob_sha1": "16ce765afdfdae6476dd0163f74ea8cd6a870412",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_time_conditional.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca",
+      "git_blob_sha1": "dddca73bf4d0aeac93e1ebc178dfa90e74f91b02",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_autoregressive_rollout_training.yaml"
+    },
+    {
+      "path": "examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/structural_mechanics/drop_test/conf/model/geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72",
+      "git_blob_sha1": "247b262ac557e33c0f33edea35ca3bf0e1cb38d4",
+      "local": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_one_step_rollout.yaml"
+    }
+  ]
+}

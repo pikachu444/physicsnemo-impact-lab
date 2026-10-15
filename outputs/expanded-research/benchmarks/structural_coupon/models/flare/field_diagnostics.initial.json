@@ -1,0 +1,100 @@
+{
+  "scope": "Posthoc diagnostics of saved raw predictions against the same heldout FEM references; no training or model selection",
+  "fields": {
+    "displacement_x": {
+      "unit": "mm",
+      "truth_absolute_peak": 11.309800148010254,
+      "prediction_absolute_peak": 11.776739120483398,
+      "component_rmse": 0.07284696867071232,
+      "absolute_error_max": 0.47043704986572266,
+      "truth_exact_nonzero_count": 33120,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 0.9998806532643927
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "truth_absolute_peak": 0.2597540020942688,
+      "prediction_absolute_peak": 0.1788235455751419,
+      "component_rmse": 0.03407494616072936,
+      "absolute_error_max": 0.13704150170087814,
+      "truth_exact_nonzero_count": 29480,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 0.015449246828571149
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "truth_absolute_peak": 2.3001100061593484e-14,
+      "prediction_absolute_peak": 0.02280581369996071,
+      "component_rmse": 0.0032400142718055315,
+      "absolute_error_max": 0.022805813699959578,
+      "truth_exact_nonzero_count": 29480,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 7.881459407146208e-16
+    },
+    "von_mises_shell_scalar_projected": {
+      "unit": "MPa",
+      "truth_absolute_peak": 789.0155029296875,
+      "prediction_absolute_peak": 794.8568115234375,
+      "component_rmse": 33.44399108579612,
+      "absolute_error_max": 172.1064910888672,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    },
+    "equivalent_plastic_strain_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.08809059858322144,
+      "prediction_absolute_peak": 0.08687202632427216,
+      "component_rmse": 0.0007372779437098755,
+      "absolute_error_max": 0.007242161780595779,
+      "truth_exact_nonzero_count": 28897,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "support_definition": "Reference EPSP >0 exactly; prediction >0 exactly. No clipping/threshold tuning. This is a nodal averaged projected support, not a raw-cell damage criterion.",
+      "reference_positive_support_count": 28897,
+      "reference_zero_support_count": 7863,
+      "rmse_on_reference_positive_support": 0.0007681576202981313,
+      "rmse_on_reference_zero_support": 0.0006105201861722648,
+      "prediction_absolute_peak_on_reference_zero_support": 0.001886235550045967,
+      "prediction_negative_count": 7277,
+      "true_positive": 26082,
+      "false_positive": 3401,
+      "false_negative": 2815,
+      "positive_support_precision": 0.8846453888681614,
+      "positive_support_recall": 0.9025850434301138,
+      "positive_support_iou": 0.8075422626788037
+    },
+    "total_strain_principal_major_inplane_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.09144166857004166,
+      "prediction_absolute_peak": 0.08965861797332764,
+      "component_rmse": 0.0007488233498849247,
+      "absolute_error_max": 0.006816107779741287,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    },
+    "total_strain_principal_minor_inplane_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.04487096890807152,
+      "prediction_absolute_peak": 0.04412897676229477,
+      "component_rmse": 0.00042662620470921946,
+      "absolute_error_max": 0.005006859079003334,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    }
+  },
+  "source_sha256": "655daa6a3878e42b0018d9f9cc963d820223fa61add225192517c19eadeb3897",
+  "near_zero_axis_note": "For a nominally planar FEM case, displacement_z is numerical noise; emphasize absolute mm error and predicted z magnitude. A relative error divided by near-zero reference z is not useful as a physical accuracy claim."
+}

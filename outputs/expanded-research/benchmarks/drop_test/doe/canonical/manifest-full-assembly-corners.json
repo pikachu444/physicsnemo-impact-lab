@@ -1,0 +1,153 @@
+{
+  "dataset": "Public phone 20 us interpolation slice",
+  "support": "full-assembly-corners",
+  "ready": true,
+  "coordinates": "shared/coordinates_full.npy",
+  "edge_index": "shared/edge_index_full.npy",
+  "static_feature": "shared/static_feature_full.npy",
+  "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+  "static_feature_unit": "mm",
+  "global_keys": [
+    "e_scale_common",
+    "rwall_rx_deg"
+  ],
+  "field_names": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "coordinate_unit": "mm",
+  "time_unit": "s",
+  "shape_per_run": [
+    76065,
+    10,
+    6
+  ],
+  "dtype": "float32",
+  "split_counts": {
+    "train": 5,
+    "val": 2,
+    "test": 2
+  },
+  "scope": "Two-dimensional small-data interpolation of initial 20 us response, not full drop/rebound, full-phone generalization, or independent five-material DoE.",
+  "source_case_manifest": "../frozen-case-manifest.json",
+  "geometry_contract": "shared/geometry-contract.json",
+  "full_graph_contract": "shared/full-graph-contract.json",
+  "coupling_limitation": "Actual element edges only. Seventeen disconnected part meshes; TYPE2 tied and wall-contact cross-part edges are not encoded. Same fixed assembly, two continuous global condition axes; new contact/geometry generalization is not validated.",
+  "node_coverage": "All 76065 original solid corner nodes in full support; original 181034 TETRA10 midside nodes excluded. Rear support is exactly part2 cover_rear with19933 nodes.",
+  "runs": [
+    {
+      "run_id": "phone_e100_rx000",
+      "split": "train",
+      "globals": [
+        1.0,
+        0.0
+      ],
+      "target": "runs/phone_e100_rx000/target-full.npy",
+      "metadata": "runs/phone_e100_rx000/metadata.json"
+    },
+    {
+      "run_id": "phone_e080_rxm100",
+      "split": "train",
+      "globals": [
+        0.8,
+        -1.0
+      ],
+      "target": "runs/phone_e080_rxm100/target-full.npy",
+      "metadata": "runs/phone_e080_rxm100/metadata.json"
+    },
+    {
+      "run_id": "phone_e080_rxp100",
+      "split": "train",
+      "globals": [
+        0.8,
+        1.0
+      ],
+      "target": "runs/phone_e080_rxp100/target-full.npy",
+      "metadata": "runs/phone_e080_rxp100/metadata.json"
+    },
+    {
+      "run_id": "phone_e120_rxm100",
+      "split": "train",
+      "globals": [
+        1.2,
+        -1.0
+      ],
+      "target": "runs/phone_e120_rxm100/target-full.npy",
+      "metadata": "runs/phone_e120_rxm100/metadata.json"
+    },
+    {
+      "run_id": "phone_e120_rxp100",
+      "split": "train",
+      "globals": [
+        1.2,
+        1.0
+      ],
+      "target": "runs/phone_e120_rxp100/target-full.npy",
+      "metadata": "runs/phone_e120_rxp100/metadata.json"
+    },
+    {
+      "run_id": "phone_e090_rxm050",
+      "split": "val",
+      "globals": [
+        0.9,
+        -0.5
+      ],
+      "target": "runs/phone_e090_rxm050/target-full.npy",
+      "metadata": "runs/phone_e090_rxm050/metadata.json"
+    },
+    {
+      "run_id": "phone_e110_rxp050",
+      "split": "val",
+      "globals": [
+        1.1,
+        0.5
+      ],
+      "target": "runs/phone_e110_rxp050/target-full.npy",
+      "metadata": "runs/phone_e110_rxp050/metadata.json"
+    },
+    {
+      "run_id": "phone_e090_rxp050",
+      "split": "test",
+      "globals": [
+        0.9,
+        0.5
+      ],
+      "target": "runs/phone_e090_rxp050/target-full.npy",
+      "metadata": "runs/phone_e090_rxp050/metadata.json"
+    },
+    {
+      "run_id": "phone_e110_rxm050",
+      "split": "test",
+      "globals": [
+        1.1,
+        -0.5
+      ],
+      "target": "runs/phone_e110_rxm050/target-full.npy",
+      "metadata": "runs/phone_e110_rxm050/metadata.json"
+    }
+  ]
+}

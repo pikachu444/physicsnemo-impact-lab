@@ -1,0 +1,11 @@
+{
+  "purpose": "Additional execution-context evidence; original training metrics, source, checkpoint and raw predictions are not rewritten.",
+  "gpu_schedule": "Single RTX3060 GPU owner: this static FIGConvUNet coupon training. No concurrent GPU model training is authorized.",
+  "cpu_concurrency": [
+    "CPU-only NumPy ROM fitting, phone cache/provenance preparation and figure generation can overlap on the same workstation.",
+    "The root orchestrator authorized a bounded official numerical Q1 CPU probe during this FIGConvUNet training: base CPU Torch2.13, CPU1, CUDA_VISIBLE_DEVICES=-1, matrix below1MB, memory cap2GB, duration below5minutes. Exact overlap timestamps are not instrumented in the neural training log."
+  ],
+  "timing_interpretation": "Reported epoch/training times are wall-clock measurements on a shared workstation. They can include CPU scheduling and memory contention; they are not isolated-hardware throughput benchmarks.",
+  "solver_wording_clarification": "The captured training command uses the broad phrase CPU OpenRadioss phone simulations. The actual new phone FEM executions used the pinned local OpenCourant binaries. See ../../../drop_test/common-cache-provenance-clarification.json and the original phone environment/execution evidence. This wording does not alter coupon labels or any model computation.",
+  "training_policy": "The root orchestrator reviewed epoch1/5/10 resource measurements and approved retaining the same1000epoch cap/minimum100/validationpatience100 despite the estimated12-14minute runtime. No test labels were read to make that resource decision."
+}

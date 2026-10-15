@@ -1,0 +1,114 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                         OpenCourant Engine                         **
+**                                                                    **
+**            Non-linear Finite Element Analysis Software             **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+**                  Windows 64 bits, Intel compiler                   **
+**                 Extended Single Precision Version                  **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+************************************************************************
+** OpenCourant Software                                               **
+** COPYRIGHT (C) 2026 Siemens                                         **
+** Licensed under GNU Affero General Public License.                  **
+** See License file.                                                  **
+************************************************************************
+ 
+ ROOT: Cell_Phone_Drop  RESTART: 0001
+ NUMBER OF HMPP PROCESSES     2
+ 15/10/2026
+ NC=       0 T= 0.0000E+00 DT= 1.0440E-08 ERR=  0.0% DM/M= 0.0000E+00
+     ANIMATION FILE: Cell_Phone_DropA001 WRITTEN
+ NC=     100 T= 1.0440E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         10.33 s  REMAINING TIME=        187.78 s
+     ANIMATION FILE: Cell_Phone_DropA002 WRITTEN
+ NC=     200 T= 2.0881E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         20.28 s  REMAINING TIME=        174.14 s
+ NC=     300 T= 3.1321E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         29.03 s  REMAINING TIME=        156.51 s
+     ANIMATION FILE: Cell_Phone_DropA003 WRITTEN
+ NC=     400 T= 4.1761E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         38.82 s  REMAINING TIME=        147.28 s
+ NC=     500 T= 5.2201E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         47.45 s  REMAINING TIME=        134.54 s
+     ANIMATION FILE: Cell_Phone_DropA004 WRITTEN
+ NC=     600 T= 6.2642E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         57.12 s  REMAINING TIME=        125.43 s
+ NC=     700 T= 7.3082E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         65.58 s  REMAINING TIME=        114.07 s
+     ANIMATION FILE: Cell_Phone_DropA005 WRITTEN
+ NC=     800 T= 8.3522E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         76.14 s  REMAINING TIME=        106.37 s
+ NC=     900 T= 9.3963E-06 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         86.17 s  REMAINING TIME=         97.43 s
+     ANIMATION FILE: Cell_Phone_DropA006 WRITTEN
+ NC=    1000 T= 1.0440E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=         96.47 s  REMAINING TIME=         88.51 s
+ NC=    1100 T= 1.1484E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        105.69 s  REMAINING TIME=         78.55 s
+     ANIMATION FILE: Cell_Phone_DropA007 WRITTEN
+ NC=    1200 T= 1.2528E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        116.94 s  REMAINING TIME=         69.93 s
+ NC=    1300 T= 1.3572E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        127.24 s  REMAINING TIME=         60.45 s
+     ANIMATION FILE: Cell_Phone_DropA008 WRITTEN
+ NC=    1400 T= 1.4616E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        137.46 s  REMAINING TIME=         50.82 s
+ NC=    1500 T= 1.5660E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        146.07 s  REMAINING TIME=         40.66 s
+     ANIMATION FILE: Cell_Phone_DropA009 WRITTEN
+ NC=    1600 T= 1.6704E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        156.08 s  REMAINING TIME=         30.98 s
+ NC=    1700 T= 1.7748E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        164.84 s  REMAINING TIME=         21.10 s
+     ANIMATION FILE: Cell_Phone_DropA010 WRITTEN
+ NC=    1800 T= 1.8793E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        175.07 s  REMAINING TIME=         11.44 s
+ NC=    1900 T= 1.9837E-05 DT= 1.0440E-08 ERR= -0.0% DM/M= 0.0000E+00
+ ELAPSED TIME=        184.74 s  REMAINING TIME=          1.71 s
+     ANIMATION FILE: Cell_Phone_DropA011 WRITTEN
+     ANIMATION FILE: Cell_Phone_DropA012 WRITTEN
+     RESTART FILES: Cell_Phone_Drop_0001_[0001-0001].rst WRITTEN
+  
+                           ** CPU USER TIME **
+  
+  
+                        ** SUMMARY **
+  
+ #PROC  CONTSORT  CONTFOR   ELEMENT   KINCOND   INTEG     IO        T0        ASM       RESOL    
+   1   .3731E+02 .3125E-01 .2453E+03 .5750E+01 .1805E+02 .2580E+02 .3734E+02 .3703E+01 .3565E+03
+ 
+                   ** CUMULATIVE CPU TIME SUMMARY **
+  
+ CONTACT SORTING.............: .3731E+02    10.47 % 
+ CONTACT FORCES..............: .3125E-01     0.01 % 
+ ELEMENT FORCES..............: .2453E+03    68.82 % 
+ KINEMATIC COND..............: .5750E+01     1.61 % 
+ INTEGRATION.................: .1805E+02     5.06 % 
+ ASSEMBLING..................: .3703E+01     1.04 % 
+ OTHERS (including I/O)......: .4633E+02    13.00 % 
+ TOTAL.......................: .3565E+03   100.00 % 
+  
+                   ** MEMORY USAGE STATISTICS **
+  
+ TOTAL MEMORY USED .........................:      391 MB
+ MAXIMUM MEMORY PER PROCESSOR...............:      391 MB
+ MINIMUM MEMORY PER PROCESSOR...............:      391 MB
+ AVERAGE MEMORY PER PROCESSOR...............:      391 MB
+  
+                   ** DISK USAGE STATISTICS **
+  
+ TOTAL DISK SPACE USED .....................:       1044 MB
+ ANIMATION/H3D/TH/OUTP SIZE ................:        774 MB
+ RESTART FILE SIZE .........................:        269 MB
+  
+ ELAPSED TIME     =        190.47 s
+                          0:03:10
+  
+     NORMAL TERMINATION      
+     TOTAL NUMBER OF CYCLES  :    1918

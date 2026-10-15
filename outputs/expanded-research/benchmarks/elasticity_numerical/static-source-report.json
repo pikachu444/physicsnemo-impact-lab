@@ -1,0 +1,228 @@
+{
+  "status": "static_only_no_framework_execution",
+  "official_source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "current_source_version": "2.3.0a0",
+  "installed_metadata_versions": {
+    "torch": "2.13.0+cu126",
+    "nvidia-physicsnemo": "2.2.2",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "tqdm": "4.67.3",
+    "matplotlib": "3.10.1",
+    "imageio": "2.37.0",
+    "opensimplex": null,
+    "psutil": "7.2.2"
+  },
+  "python_version": "3.13.5",
+  "version_scope": "Current 2.3.0a0 example source is vendored at an exact SHA. Installed PhysicsNeMo 2.2.2 is a separate release. The standalone official Elasticity2DSolver imports only Torch; no wheel package is replaced.",
+  "imports_by_official_file": {
+    "fpddm/__init__.py": [],
+    "fpddm/data.py": [
+      "from __future__ import annotations",
+      "import copy",
+      "import multiprocessing as mp",
+      "import os",
+      "from collections.abc import Mapping",
+      "import numpy as np",
+      "import torch",
+      "from opensimplex import OpenSimplex",
+      "from scipy.ndimage import gaussian_filter",
+      "from torch.utils.data import DataLoader, Dataset, DistributedSampler, random_split"
+    ],
+    "fpddm/domain.py": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from enum import Enum, auto",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from .data import make_layout_fields as build_fields"
+    ],
+    "fpddm/elasticity.py": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import torch"
+    ],
+    "fpddm/elasticity_example.py": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "import torch",
+      "from .domain import DIRECTIONS, Domain, Fields, Subdomain, assemble_avg",
+      "from .elasticity import Elasticity2DSolver",
+      "from .interfaces import ExchangeInterfaceHandler",
+      "from .observers import MetricsLogger",
+      "from .schwarz import EarlyStopping, SchwarzMethod",
+      "import matplotlib.pyplot as plt"
+    ],
+    "fpddm/interfaces.py": [
+      "from __future__ import annotations",
+      "import torch",
+      "from .domain import DIRECTIONS, Fields, Subdomain"
+    ],
+    "fpddm/model.py": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "import torch",
+      "from physicsnemo import ModelMetaData, Module",
+      "from physicsnemo.models.fno import FNO"
+    ],
+    "fpddm/observers.py": [
+      "from __future__ import annotations",
+      "import csv",
+      "import io",
+      "import time",
+      "from collections.abc import Callable",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import torch",
+      "from .domain import Fields, Subdomain, assemble_avg",
+      "import matplotlib.pyplot as plt",
+      "import imageio.v3",
+      "import matplotlib.pyplot as plt",
+      "import imageio"
+    ],
+    "fpddm/pipeline.py": [
+      "from __future__ import annotations",
+      "import time",
+      "import warnings",
+      "from collections.abc import Mapping",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from .domain import Domain, Fields, Subdomain, initialize_thermal_fields",
+      "from .interfaces import ExchangeInterfaceHandler, GradientInterfaceHandler, InterfaceConsistencyMonitor, ParallelGradientInterfaceHandler",
+      "from .observers import AttributeVisualizer, MetricsLogger, NRMAMetric, R2Metric, plot_heat_flux, visualize_array",
+      "from .schwarz import EarlyStopping, PhysicsInformedAdapter, SchwarzMethod",
+      "from .solvers import NeuralDomainSolver, ThermalFEMSolver"
+    ],
+    "fpddm/schwarz.py": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable, Iterable",
+      "from pathlib import Path",
+      "import torch",
+      "from tqdm import tqdm",
+      "from .domain import Domain, Subdomain",
+      "from .model import thermal_losses",
+      "from .solvers import NeuralDomainSolver",
+      "import matplotlib.pyplot as plt"
+    ],
+    "fpddm/solvers.py": [
+      "from __future__ import annotations",
+      "from collections.abc import Iterable, Mapping",
+      "from pathlib import Path",
+      "import torch",
+      "from physicsnemo.utils import load_checkpoint",
+      "from .domain import BC_FIELDS, INPUT_FIELDS, OUTPUT_FIELDS, Fields, Subdomain",
+      "from .model import ThermalPINO, thermal_losses",
+      "from .thermal import Heat2DSolver"
+    ],
+    "fpddm/thermal.py": [
+      "from __future__ import annotations",
+      "import torch"
+    ],
+    "fpddm/training.py": [
+      "from __future__ import annotations",
+      "import random",
+      "import time",
+      "from collections.abc import Mapping",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import torch",
+      "from torch.nn.parallel import DistributedDataParallel",
+      "from physicsnemo.distributed import DistributedManager",
+      "from physicsnemo.utils import load_checkpoint, save_checkpoint",
+      "from physicsnemo.utils.logging import LaunchLogger",
+      "from .data import create_dataloaders",
+      "from .model import ThermalPINO, thermal_losses"
+    ],
+    "run_elasticity.py": [
+      "import argparse",
+      "from fpddm.elasticity_example import run_elasticity"
+    ],
+    "run_fpddm.py": [
+      "from pathlib import Path",
+      "import hydra",
+      "from fpddm.pipeline import run_fpddm",
+      "from fpddm.training import set_seed",
+      "from hydra.utils import to_absolute_path",
+      "from omegaconf import DictConfig, OmegaConf",
+      "from physicsnemo.distributed import DistributedManager",
+      "from physicsnemo.utils.logging import PythonLogger"
+    ],
+    "train.py": [
+      "from pathlib import Path",
+      "import hydra",
+      "import torch",
+      "from fpddm.training import train_model",
+      "from hydra.utils import to_absolute_path",
+      "from omegaconf import DictConfig, OmegaConf",
+      "from physicsnemo.distributed import DistributedManager",
+      "from physicsnemo.utils.logging import LaunchLogger, PythonLogger"
+    ]
+  },
+  "direct_solver_imports": [
+    "from __future__ import annotations",
+    "from collections.abc import Sequence",
+    "import torch"
+  ],
+  "full_ddm_transitive_imports": "elasticity_example -> schwarz -> model/solvers -> PhysicsNeMo FNO, Module, ModelMetaData, load_checkpoint. These imports do not instantiate or train an elasticity FNO.",
+  "optional_requirements_scope": "opensimplex/imageio are declared by the complete fp_ddm example; domain.make_layout_fields delays thermal-data import. Bare elasticity.py requires Torch only; validation driver also uses stdlib and psutil.",
+  "source_version_evidence": {
+    "url": "https://github.com/NVIDIA/physicsnemo/blob/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/physicsnemo/__init__.py",
+    "sha256": "edff8ac4d11f3f8e949b535f049db219f76d880bb72a4cf85f1f45368b2114ba"
+  },
+  "framework_modules_imported": [],
+  "solver_execution_performed": false,
+  "package_installation_performed": false,
+  "minimal_ddm_source_constraints": {
+    "API": "run_elasticity(size=4,overlap=2)",
+    "patch_size": 3,
+    "global_grid_nodes": 16,
+    "Q1_elements": 9,
+    "status": "source-admissible parameter estimate, not executed"
+  },
+  "planned_solver_validation": {
+    "grid": [
+      9,
+      9
+    ],
+    "domain_lengths_y_x": [
+      1.0,
+      2.0
+    ],
+    "young_modulus": 120.0,
+    "poisson_ratio": 0.25,
+    "uniform_strain_yx": [
+      [
+        0.001,
+        0.0003
+      ],
+      [
+        0.0003,
+        0.002
+      ]
+    ],
+    "analytic_plane_stress_yx": [
+      [
+        0.192,
+        0.0288
+      ],
+      [
+        0.0288,
+        0.288
+      ]
+    ],
+    "body_force_uniform_patch": [
+      0.0,
+      0.0
+    ],
+    "boundary": "both displacement components prescribed on all four boundaries",
+    "second_problem": "independent constant body force [f_y,f_x]=[-.01,0], clamp x=0; equilibrium/energy checks, no closed-form displacement accuracy claim",
+    "units": "Official example declares no physical unit system. Use consistent model L and stress S: u[L], strain[-], E/sigma[S], body force[S/L], energy per unit thickness[S L^2].",
+    "array_memory_estimate": "9x9 float64 solver fields/scratch <<1MiB; Torch import/allocator dominates process memory.",
+    "wall_time_estimate": "Likely within 5 minutes for import plus two 9x9 CPU solves; not measured yet.",
+    "process_memory_estimate": "Framework baseline may be hundreds of MiB to about 1.5GiB depending on loaded runtime; must measure after root grants a slot."
+  }
+}

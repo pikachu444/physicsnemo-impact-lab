@@ -1,0 +1,14 @@
+{
+  "fresh_process": true,
+  "strategy": "one_step_teacher_forcing",
+  "checkpoint_sha256": "cc272461e6d00991c94d7b8c79c08b1eea56d40959ea0481c27dc3dea40c0369",
+  "prediction_max_abs_difference": 0.0,
+  "truth_max_abs_difference": 0.0,
+  "prediction_reproducible_at_atol_1e-4": true,
+  "physical_units": "mixed fields: per-field maximum differences below",
+  "per_field_max_abs_difference": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

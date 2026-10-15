@@ -1,0 +1,146 @@
+{
+  "status": "official_q1_validation_passed",
+  "algorithm": "Untouched official current-source Q1 finite elements + matrix-free preconditioned BiCGSTAB; no neural network, optimizer or training.",
+  "official_source_pin": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "official_source_version": "2.3.0a0",
+  "official_solver_sha256": "822d7d4a11b36411975b0aa08f7ed87ac90ca0e691555de13db5f4b3473147ee",
+  "driver_sha256": "526c7e4b962d9e06e5e655693daebbe0407894782996f7d0e0b9f57e6a31c4a2",
+  "source_manifest_sha256": "19471259c443d4f421213bbb2bb9d878634154a5671a36351e9182acb6b358e3",
+  "runtime_physicsnemo_metadata_version": null,
+  "torch_version": "2.13.0+cpu",
+  "device": "cpu",
+  "torch_cuda_build_version": null,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "cuda_initialized": false,
+  "all_solve_tensors_on_cpu": true,
+  "competing_workload_context": "Root reported separate FIG GPU training at slot allocation; this process does not monitor that workload. Timings are not an isolated-hardware benchmark.",
+  "dtype": "torch.float64",
+  "cpu_threads": 1,
+  "grid": [
+    9,
+    9
+  ],
+  "domain_lengths_y_x": [
+    1.0,
+    2.0
+  ],
+  "units": "Consistent model length L and stress S; no SI/material unit declared by source. Energy per unit thickness has S L^2 units.",
+  "affine_independent_reference": {
+    "u_y": ".001*y+.0003*x",
+    "u_x": ".0003*y+.002*x",
+    "strain_y_x": [
+      [
+        0.001,
+        0.0003
+      ],
+      [
+        0.0003,
+        0.002
+      ]
+    ],
+    "stress_y_x": [
+      [
+        0.192,
+        0.0288
+      ],
+      [
+        0.0288,
+        0.288
+      ]
+    ],
+    "body_force": [
+      0,
+      0
+    ]
+  },
+  "affine_patch": {
+    "free_dof_force_residual_relative": 9.437144402571925e-10,
+    "reaction_sum_y_x": [
+      1.27402765420781e-09,
+      -2.637377920222672e-10
+    ],
+    "body_force_sum_y_x": [
+      0.0,
+      0.0
+    ],
+    "net_force_balance_y_x": [
+      1.27402765420781e-09,
+      -2.637377920222672e-10
+    ],
+    "net_force_balance_relative": 5.549064238559392e-09,
+    "net_moment_balance_z": 1.337886024188606e-09,
+    "net_moment_balance_relative": 2.551898202246872e-09,
+    "strain_energy_per_unit_thickness": 0.0007852800000000001,
+    "final_force_displacement_product_body_plus_reactions": 0.0015705600004360517,
+    "two_energy_vs_final_force_displacement_product_relative": 2.776408321512663e-10,
+    "displacement_relative_L2": 2.324189652923323e-10,
+    "boundary_displacement_max_abs_error": 0.0,
+    "strain_max_abs_error": 4.0469927756192625e-12,
+    "stress_max_abs_error": 5.180150752792656e-10,
+    "analytic_boundary_traction_nodal_force_max_abs_error": 1.2098624879719466e-10,
+    "analytic_energy_per_unit_thickness": 0.00078528,
+    "energy_vs_analytic_relative": 1.380656800740506e-16
+  },
+  "constant_body_force_clamp": {
+    "free_dof_force_residual_relative": 5.126803547922775e-09,
+    "reaction_sum_y_x": [
+      0.01999999995292146,
+      1.0130524891183157e-13
+    ],
+    "body_force_sum_y_x": [
+      -0.019999999999999997,
+      0.0
+    ],
+    "net_force_balance_y_x": [
+      -4.707853703232734e-11,
+      1.0130524891183157e-13
+    ],
+    "net_force_balance_relative": 2.140646882997506e-09,
+    "net_moment_balance_z": -5.5603139714061056e-11,
+    "net_moment_balance_relative": 1.1306687312318979e-09,
+    "strain_energy_per_unit_thickness": 1.082965629091348e-05,
+    "final_force_displacement_product_body_plus_reactions": 2.16593126360857e-05,
+    "two_energy_vs_final_force_displacement_product_relative": 2.505099897656793e-09,
+    "boundary_displacement_max_abs_error": 0.0,
+    "max_displacement_magnitude": 0.0024941776513179043,
+    "independent_expected_total_body_force_y_x": [
+      -0.02,
+      0.0
+    ],
+    "independent_expected_total_reaction_y_x": [
+      0.02,
+      0.0
+    ],
+    "accuracy_scope": "No closed-form displacement accuracy claim; independently prescribed constant force, free equilibrium, support reaction balance and energy/work are checked."
+  },
+  "checks": {
+    "affine_u": true,
+    "affine_strain": true,
+    "affine_stress": true,
+    "affine_traction": true,
+    "affine_energy": true,
+    "affine_free_equilibrium": true,
+    "body_free_equilibrium": true,
+    "body_force_balance": true,
+    "body_moment_balance": true,
+    "body_energy_identity": true,
+    "body_positive_energy": true,
+    "body_independent_force_sum": true,
+    "body_clamp": true
+  },
+  "timings_seconds": {
+    "imports": 9.286010899999383,
+    "affine_solve": 0.270858899999439,
+    "body_solve": 0.32111190000068746,
+    "total": 9.966009899999335
+  },
+  "peak_working_set_bytes": 206200832,
+  "cuda_peak_allocated_bytes": null,
+  "physicsnemo_imported": false,
+  "not_claimed": [
+    "Official full 2x2 DDM run",
+    "PhysicsNeMo 2.2.2 example-version reproduction",
+    "AI learning or prediction accuracy",
+    "nonlinear/contact/dynamic/plastic/fracture/appliance validation"
+  ]
+}

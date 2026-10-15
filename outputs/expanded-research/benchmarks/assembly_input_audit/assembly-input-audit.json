@@ -1,0 +1,2240 @@
+{
+  "status": "read_only_input_audit_completed",
+  "scope": "Nine frozen FEM conditions, full linearized solid-corner support, 2..20us nominal labels. No prediction-error or model-impossibility verdict.",
+  "coordinate_pair_definitions": {
+    "exact": "Byte-identical stored coordinates, distinct NODE_IDs, unordered i<j pairs; float64 archival and float32 model representations audited separately.",
+    "near": "Euclidean separation <= 1e-6 mm in original RAD float64 coordinates; inclusive of exact pairs.",
+    "coords_plus_static": "Byte-identical concatenation of model float32 xyz and the single existing float32 static feature. Globals and nominal time are common to both nodes within each evaluated case/time."
+  },
+  "source_ready_sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80",
+  "source_manifest_sha256": "133b157b2c4a52bbe08f56bf78b59255bb44d3880e54f660751fd82e052fd356",
+  "original_rad_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+  "part_npz_sha256": "b8e929c8abfed8172be9f2e1c679fb40cdd4ff4c10993d95b91040bde2c229d4",
+  "shared_file_evidence": {
+    "shared/coordinates_full.npy": {
+      "bytes": 912908,
+      "sha256": "b786c1bcbc5016dc9bebaa8919d186ee18c4dcfa1a20fc95bd6533321e7938f5"
+    },
+    "shared/coordinates_source_float64_full.npy": {
+      "bytes": 1825688,
+      "sha256": "63904a3c7601c442dbbab8503a39cbdbfdf7dae7dc20d97408b12ec944b29790"
+    },
+    "shared/node_ids_full.npy": {
+      "bytes": 304388,
+      "sha256": "b2b0964ba6f4e3fda44195c217a5e0f97f309bad7c5ac0448c76f343b5f3250c"
+    },
+    "shared/solid_connectivity_8.npy": {
+      "bytes": 4167104,
+      "sha256": "fd5b71c9a76969181df467e92183e01af9547bd3cc2d9fd4ac71e50b5f374160"
+    },
+    "shared/static_feature_full.npy": {
+      "bytes": 304388,
+      "sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8"
+    },
+    "shared/connected_component_full.npy": {
+      "bytes": 304388,
+      "sha256": "56749536b34e99a2286121d421bb0a193db1818b39379e2a8b7648d118c56a27"
+    },
+    "shared/edge_index_full.npy": {
+      "bytes": 8979072,
+      "sha256": "dc670b7640884ea26cf006f0b5a13d5cb91ff335701b89c90ee8b889bd6b2298"
+    }
+  },
+  "case_target_evidence": [
+    {
+      "run": "phone_e100_rx000",
+      "split": "train",
+      "globals": [
+        1.0,
+        0.0
+      ],
+      "file": "runs/phone_e100_rx000/target-full.npy",
+      "sha256": "28905b227b6aaed0a81c3e28ec4a864acb3c73f5191992af2dcc57c7daaa8ebf"
+    },
+    {
+      "run": "phone_e080_rxm100",
+      "split": "train",
+      "globals": [
+        0.8,
+        -1.0
+      ],
+      "file": "runs/phone_e080_rxm100/target-full.npy",
+      "sha256": "2c24999a5c1d559d85be0eaa6ae3e9d439cf5084a7afebefd9cda342de2370aa"
+    },
+    {
+      "run": "phone_e080_rxp100",
+      "split": "train",
+      "globals": [
+        0.8,
+        1.0
+      ],
+      "file": "runs/phone_e080_rxp100/target-full.npy",
+      "sha256": "96fc8c845e1c367860c22917e40706e222a7b011fb175e1d0dff21ad7f67743f"
+    },
+    {
+      "run": "phone_e120_rxm100",
+      "split": "train",
+      "globals": [
+        1.2,
+        -1.0
+      ],
+      "file": "runs/phone_e120_rxm100/target-full.npy",
+      "sha256": "150363bd6238e66674a4a1ed31652724b3a466e8f1920bd1fe72e02bb99e7afa"
+    },
+    {
+      "run": "phone_e120_rxp100",
+      "split": "train",
+      "globals": [
+        1.2,
+        1.0
+      ],
+      "file": "runs/phone_e120_rxp100/target-full.npy",
+      "sha256": "53f852b119d93c7bcdcb2b3d81ac51cf9abf4797542038ad5fca7c0a0a9a800a"
+    },
+    {
+      "run": "phone_e090_rxm050",
+      "split": "val",
+      "globals": [
+        0.9,
+        -0.5
+      ],
+      "file": "runs/phone_e090_rxm050/target-full.npy",
+      "sha256": "e045a1b7273ee3cb977d204fe5e8a5dcab96ae450e4f62006ab78b44338d613c"
+    },
+    {
+      "run": "phone_e110_rxp050",
+      "split": "val",
+      "globals": [
+        1.1,
+        0.5
+      ],
+      "file": "runs/phone_e110_rxp050/target-full.npy",
+      "sha256": "9792341e605542de9bc5cfeb41b890d23d8765ca8384db54c2fea160f593f5da"
+    },
+    {
+      "run": "phone_e090_rxp050",
+      "split": "test",
+      "globals": [
+        0.9,
+        0.5
+      ],
+      "file": "runs/phone_e090_rxp050/target-full.npy",
+      "sha256": "41ec35f249df0d52fd0b4762c48e30b051087aee4b8b8cc9521ef5e831da1e51"
+    },
+    {
+      "run": "phone_e110_rxm050",
+      "split": "test",
+      "globals": [
+        1.1,
+        -0.5
+      ],
+      "file": "runs/phone_e110_rxm050/target-full.npy",
+      "sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf"
+    }
+  ],
+  "fields": [
+    "u_x",
+    "u_y",
+    "u_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "field_units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "dimensionless",
+    "dimensionless"
+  ],
+  "nominal_time_s": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "global_keys": [
+    "e_scale_common",
+    "rwall_rx_deg"
+  ],
+  "coordinate_equality_summaries": {
+    "source_float64": {
+      "groups": 132,
+      "involved_nodes": 264,
+      "unordered_pairs": 132,
+      "max_multiplicity": 2
+    },
+    "model_float32": {
+      "groups": 132,
+      "involved_nodes": 264,
+      "unordered_pairs": 132,
+      "max_multiplicity": 2
+    },
+    "model_coords_plus_static_float32": {
+      "groups": 0,
+      "involved_nodes": 0,
+      "unordered_pairs": 0,
+      "max_multiplicity": 1
+    }
+  },
+  "pair_results": {
+    "source_float64_bitwise_exact": {
+      "unordered_pairs": 132,
+      "different_node_id_pairs": 132,
+      "different_part_pairs": 132,
+      "different_material_pairs": 132,
+      "part_pair_counts": {
+        "27-28": 94,
+        "13-19": 8,
+        "13-17": 8,
+        "25-28": 11,
+        "23-28": 11
+      },
+      "static_feature_abs_difference_mm": {
+        "min": 0.10822021961212158,
+        "median": 0.22056365013122559,
+        "max": 0.24914616346359253
+      },
+      "target_differences": {
+        "max_abs_per_channel": [
+          0.0,
+          1.8998980522155762e-06,
+          2.2351741790771484e-08,
+          5.552907350647729e-05,
+          1.2763720080855023e-08,
+          0.0
+        ],
+        "pairs_nonzero_in_any_case_time_per_channel": [
+          0,
+          2,
+          9,
+          132,
+          132,
+          0
+        ],
+        "max_examples_per_channel": [
+          null,
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.4e-05,
+            "node_indices": [
+              14996,
+              37346
+            ],
+            "node_ids": [
+              3277,
+              2910
+            ],
+            "part_ids": [
+              13,
+              17
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_01"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ],
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.6921524405479431,
+              0.5158653855323792
+            ],
+            "full_C6_values": [
+              [
+                -0.044812604784965515,
+                -0.04915643483400345,
+                -0.03665599972009659,
+                1.7176516848849133e-05,
+                1.4239157630768773e-09,
+                0.0
+              ],
+              [
+                -0.044812604784965515,
+                -0.049158334732055664,
+                -0.03665599972009659,
+                7.3868786785169505e-06,
+                6.0878351249016305e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              1.8998980522155762e-06,
+              0.0,
+              9.789638170332182e-06,
+              4.663919361824753e-09,
+              0.0
+            ],
+            "channel": "u_y",
+            "channel_unit": "mm",
+            "max_abs_difference": 1.8998980522155762e-06
+          },
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              26876,
+              36677
+            ],
+            "node_ids": [
+              2433,
+              2066
+            ],
+            "part_ids": [
+              28,
+              27
+            ],
+            "part_names": [
+              "bottom_pcb",
+              "bottom_micro_chip_03"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                8.685305,
+                -7.605779,
+                1.2
+              ],
+              [
+                8.685305,
+                -7.605779,
+                1.2
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.7926158308982849,
+              0.5720520615577698
+            ],
+            "full_C6_values": [
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236569419503212,
+                8.433703442278784e-06,
+                7.811152835657253e-10,
+                0.0
+              ],
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236571654677391,
+                3.984023351222277e-06,
+                1.8144260538477397e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              2.2351741790771484e-08,
+              4.449680091056507e-06,
+              1.0333107702820143e-09,
+              0.0
+            ],
+            "channel": "u_z",
+            "channel_unit": "mm",
+            "max_abs_difference": 2.2351741790771484e-08
+          },
+          {
+            "run": "phone_e120_rxm100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              18908,
+              38759
+            ],
+            "node_ids": [
+              4171,
+              3804
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ],
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.4198923408985138,
+              0.30652421712875366
+            ],
+            "full_C6_values": [
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                6.368241884047166e-05,
+                3.4793892211837374e-09,
+                0.0
+              ],
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                8.153345333994366e-06,
+                6.8608549952386966e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              5.552907350647729e-05,
+              3.381465774054959e-09,
+              0.0
+            ],
+            "channel": "von_mises_GPS",
+            "channel_unit": "MPa",
+            "max_abs_difference": 5.552907350647729e-05
+          },
+          {
+            "run": "phone_e080_rxp100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              21334,
+              38777
+            ],
+            "node_ids": [
+              4161,
+              3794
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ],
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.42559173703193665,
+              0.30652350187301636
+            ],
+            "full_C6_values": [
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                5.091325874673203e-06,
+                2.4217008398608186e-09,
+                0.0
+              ],
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                3.842607384285657e-06,
+                1.5185420920715842e-08,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              1.248718490387546e-06,
+              1.2763720080855023e-08,
+              0.0
+            ],
+            "channel": "total_strain_frobenius",
+            "channel_unit": "dimensionless",
+            "max_abs_difference": 1.2763720080855023e-08
+          },
+          null
+        ],
+        "displacement_vector_max_mm": 1.8998980522155762e-06,
+        "displacement_vector_max_example": {
+          "run": "phone_e100_rx000",
+          "nominal_time_s": 1.4e-05,
+          "node_indices": [
+            14996,
+            37346
+          ],
+          "node_ids": [
+            3277,
+            2910
+          ],
+          "part_ids": [
+            13,
+            17
+          ],
+          "part_names": [
+            "top_pcb",
+            "top_micro_chip_01"
+          ],
+          "material_ids": [
+            8,
+            9
+          ],
+          "material_names": [
+            "pcb_elastic",
+            "comps_elastic"
+          ],
+          "source_coordinates_mm": [
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ],
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ]
+          ],
+          "source_coordinate_distance_mm": 0.0,
+          "static_feature_mm": [
+            0.6921524405479431,
+            0.5158653855323792
+          ],
+          "full_C6_values": [
+            [
+              -0.044812604784965515,
+              -0.04915643483400345,
+              -0.03665599972009659,
+              1.7176516848849133e-05,
+              1.4239157630768773e-09,
+              0.0
+            ],
+            [
+              -0.044812604784965515,
+              -0.049158334732055664,
+              -0.03665599972009659,
+              7.3868786785169505e-06,
+              6.0878351249016305e-09,
+              0.0
+            ]
+          ],
+          "absolute_C6_difference": [
+            0.0,
+            1.8998980522155762e-06,
+            0.0,
+            9.789638170332182e-06,
+            4.663919361824753e-09,
+            0.0
+          ]
+        },
+        "pairs_nonzero_in_any_channel_case_time": 132
+      },
+      "per_case": [
+        {
+          "run": "phone_e100_rx000",
+          "max_abs_per_channel": [
+            0.0,
+            1.8998980522155762e-06,
+            2.2351741790771484e-08,
+            4.388889010442654e-05,
+            1.1017461609696966e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            9,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821614473054069e-05,
+            1.2763504919632851e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821930522462935e-05,
+            1.2763720080855023e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.552907350647729e-05,
+            8.081533109383088e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.54268408450298e-05,
+            8.175556509559812e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.082687792106299e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.47994791304518e-05,
+            9.097824493764506e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.08322703151498e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.4670084864483215e-05,
+            9.097539832580992e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        }
+      ]
+    },
+    "model_float32_bitwise_exact": {
+      "unordered_pairs": 132,
+      "different_node_id_pairs": 132,
+      "different_part_pairs": 132,
+      "different_material_pairs": 132,
+      "part_pair_counts": {
+        "27-28": 94,
+        "13-17": 8,
+        "25-28": 11,
+        "23-28": 11,
+        "13-19": 8
+      },
+      "static_feature_abs_difference_mm": {
+        "min": 0.10822021961212158,
+        "median": 0.22056365013122559,
+        "max": 0.24914616346359253
+      },
+      "target_differences": {
+        "max_abs_per_channel": [
+          0.0,
+          1.8998980522155762e-06,
+          2.2351741790771484e-08,
+          5.552907350647729e-05,
+          1.2763720080855023e-08,
+          0.0
+        ],
+        "pairs_nonzero_in_any_case_time_per_channel": [
+          0,
+          2,
+          9,
+          132,
+          132,
+          0
+        ],
+        "max_examples_per_channel": [
+          null,
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.4e-05,
+            "node_indices": [
+              14996,
+              37346
+            ],
+            "node_ids": [
+              3277,
+              2910
+            ],
+            "part_ids": [
+              13,
+              17
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_01"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ],
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.6921524405479431,
+              0.5158653855323792
+            ],
+            "full_C6_values": [
+              [
+                -0.044812604784965515,
+                -0.04915643483400345,
+                -0.03665599972009659,
+                1.7176516848849133e-05,
+                1.4239157630768773e-09,
+                0.0
+              ],
+              [
+                -0.044812604784965515,
+                -0.049158334732055664,
+                -0.03665599972009659,
+                7.3868786785169505e-06,
+                6.0878351249016305e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              1.8998980522155762e-06,
+              0.0,
+              9.789638170332182e-06,
+              4.663919361824753e-09,
+              0.0
+            ],
+            "channel": "u_y",
+            "channel_unit": "mm",
+            "max_abs_difference": 1.8998980522155762e-06
+          },
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              26876,
+              36677
+            ],
+            "node_ids": [
+              2433,
+              2066
+            ],
+            "part_ids": [
+              28,
+              27
+            ],
+            "part_names": [
+              "bottom_pcb",
+              "bottom_micro_chip_03"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                8.685305,
+                -7.605779,
+                1.2
+              ],
+              [
+                8.685305,
+                -7.605779,
+                1.2
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.7926158308982849,
+              0.5720520615577698
+            ],
+            "full_C6_values": [
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236569419503212,
+                8.433703442278784e-06,
+                7.811152835657253e-10,
+                0.0
+              ],
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236571654677391,
+                3.984023351222277e-06,
+                1.8144260538477397e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              2.2351741790771484e-08,
+              4.449680091056507e-06,
+              1.0333107702820143e-09,
+              0.0
+            ],
+            "channel": "u_z",
+            "channel_unit": "mm",
+            "max_abs_difference": 2.2351741790771484e-08
+          },
+          {
+            "run": "phone_e120_rxm100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              18908,
+              38759
+            ],
+            "node_ids": [
+              4171,
+              3804
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ],
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.4198923408985138,
+              0.30652421712875366
+            ],
+            "full_C6_values": [
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                6.368241884047166e-05,
+                3.4793892211837374e-09,
+                0.0
+              ],
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                8.153345333994366e-06,
+                6.8608549952386966e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              5.552907350647729e-05,
+              3.381465774054959e-09,
+              0.0
+            ],
+            "channel": "von_mises_GPS",
+            "channel_unit": "MPa",
+            "max_abs_difference": 5.552907350647729e-05
+          },
+          {
+            "run": "phone_e080_rxp100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              21334,
+              38777
+            ],
+            "node_ids": [
+              4161,
+              3794
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ],
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.42559173703193665,
+              0.30652350187301636
+            ],
+            "full_C6_values": [
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                5.091325874673203e-06,
+                2.4217008398608186e-09,
+                0.0
+              ],
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                3.842607384285657e-06,
+                1.5185420920715842e-08,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              1.248718490387546e-06,
+              1.2763720080855023e-08,
+              0.0
+            ],
+            "channel": "total_strain_frobenius",
+            "channel_unit": "dimensionless",
+            "max_abs_difference": 1.2763720080855023e-08
+          },
+          null
+        ],
+        "displacement_vector_max_mm": 1.8998980522155762e-06,
+        "displacement_vector_max_example": {
+          "run": "phone_e100_rx000",
+          "nominal_time_s": 1.4e-05,
+          "node_indices": [
+            14996,
+            37346
+          ],
+          "node_ids": [
+            3277,
+            2910
+          ],
+          "part_ids": [
+            13,
+            17
+          ],
+          "part_names": [
+            "top_pcb",
+            "top_micro_chip_01"
+          ],
+          "material_ids": [
+            8,
+            9
+          ],
+          "material_names": [
+            "pcb_elastic",
+            "comps_elastic"
+          ],
+          "source_coordinates_mm": [
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ],
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ]
+          ],
+          "source_coordinate_distance_mm": 0.0,
+          "static_feature_mm": [
+            0.6921524405479431,
+            0.5158653855323792
+          ],
+          "full_C6_values": [
+            [
+              -0.044812604784965515,
+              -0.04915643483400345,
+              -0.03665599972009659,
+              1.7176516848849133e-05,
+              1.4239157630768773e-09,
+              0.0
+            ],
+            [
+              -0.044812604784965515,
+              -0.049158334732055664,
+              -0.03665599972009659,
+              7.3868786785169505e-06,
+              6.0878351249016305e-09,
+              0.0
+            ]
+          ],
+          "absolute_C6_difference": [
+            0.0,
+            1.8998980522155762e-06,
+            0.0,
+            9.789638170332182e-06,
+            4.663919361824753e-09,
+            0.0
+          ]
+        },
+        "pairs_nonzero_in_any_channel_case_time": 132
+      },
+      "per_case": [
+        {
+          "run": "phone_e100_rx000",
+          "max_abs_per_channel": [
+            0.0,
+            1.8998980522155762e-06,
+            2.2351741790771484e-08,
+            4.388889010442654e-05,
+            1.1017461609696966e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            9,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821614473054069e-05,
+            1.2763504919632851e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821930522462935e-05,
+            1.2763720080855023e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.552907350647729e-05,
+            8.081533109383088e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.54268408450298e-05,
+            8.175556509559812e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.082687792106299e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.47994791304518e-05,
+            9.097824493764506e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.08322703151498e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            0,
+            132,
+            132,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.4670084864483215e-05,
+            9.097539832580992e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            132,
+            132,
+            0
+          ]
+        }
+      ]
+    },
+    "source_float64_distance_within_1e-6_mm": {
+      "unordered_pairs": 334,
+      "different_node_id_pairs": 334,
+      "different_part_pairs": 334,
+      "different_material_pairs": 334,
+      "part_pair_counts": {
+        "25-28": 107,
+        "13-17": 13,
+        "23-28": 107,
+        "27-28": 94,
+        "13-19": 13
+      },
+      "static_feature_abs_difference_mm": {
+        "min": 0.08647841215133667,
+        "median": 0.1759546399116516,
+        "max": 0.24914616346359253
+      },
+      "target_differences": {
+        "max_abs_per_channel": [
+          0.0,
+          1.8998980522155762e-06,
+          2.2351741790771484e-08,
+          5.552907350647729e-05,
+          1.2763720080855023e-08,
+          0.0
+        ],
+        "pairs_nonzero_in_any_case_time_per_channel": [
+          0,
+          4,
+          29,
+          334,
+          334,
+          0
+        ],
+        "max_examples_per_channel": [
+          null,
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.4e-05,
+            "node_indices": [
+              14996,
+              37346
+            ],
+            "node_ids": [
+              3277,
+              2910
+            ],
+            "part_ids": [
+              13,
+              17
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_01"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ],
+              [
+                -7.359996,
+                -16.8,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.6921524405479431,
+              0.5158653855323792
+            ],
+            "full_C6_values": [
+              [
+                -0.044812604784965515,
+                -0.04915643483400345,
+                -0.03665599972009659,
+                1.7176516848849133e-05,
+                1.4239157630768773e-09,
+                0.0
+              ],
+              [
+                -0.044812604784965515,
+                -0.049158334732055664,
+                -0.03665599972009659,
+                7.3868786785169505e-06,
+                6.0878351249016305e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              1.8998980522155762e-06,
+              0.0,
+              9.789638170332182e-06,
+              4.663919361824753e-09,
+              0.0
+            ],
+            "channel": "u_y",
+            "channel_unit": "mm",
+            "max_abs_difference": 1.8998980522155762e-06
+          },
+          {
+            "run": "phone_e100_rx000",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              31256,
+              39106
+            ],
+            "node_ids": [
+              655,
+              288
+            ],
+            "part_ids": [
+              28,
+              23
+            ],
+            "part_names": [
+              "bottom_pcb",
+              "bottom_micro_chip_01"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                -9.535432,
+                -10.441981,
+                1.2
+              ],
+              [
+                -9.535432,
+                -10.441981,
+                1.199999
+              ]
+            ],
+            "source_coordinate_distance_mm": 9.999999999177334e-07,
+            "static_feature_mm": [
+              0.568628191947937,
+              0.4103941321372986
+            ],
+            "full_C6_values": [
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236569419503212,
+                1.5405228623421863e-05,
+                1.1236818142634775e-09,
+                0.0
+              ],
+              [
+                -0.06401780247688293,
+                -0.07022470980882645,
+                -0.05236571654677391,
+                8.828146746964194e-06,
+                5.757487819835205e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              2.2351741790771484e-08,
+              6.577081876457669e-06,
+              4.633806005571728e-09,
+              0.0
+            ],
+            "channel": "u_z",
+            "channel_unit": "mm",
+            "max_abs_difference": 2.2351741790771484e-08
+          },
+          {
+            "run": "phone_e120_rxm100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              18908,
+              38759
+            ],
+            "node_ids": [
+              4171,
+              3804
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ],
+              [
+                16.8,
+                -5.599999,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.4198923408985138,
+              0.30652421712875366
+            ],
+            "full_C6_values": [
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                6.368241884047166e-05,
+                3.4793892211837374e-09,
+                0.0
+              ],
+              [
+                -0.06401856988668442,
+                -0.07022488117218018,
+                -0.0523657500743866,
+                8.153345333994366e-06,
+                6.8608549952386966e-09,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              5.552907350647729e-05,
+              3.381465774054959e-09,
+              0.0
+            ],
+            "channel": "von_mises_GPS",
+            "channel_unit": "MPa",
+            "max_abs_difference": 5.552907350647729e-05
+          },
+          {
+            "run": "phone_e080_rxp100",
+            "nominal_time_s": 1.9999999999999998e-05,
+            "node_indices": [
+              21334,
+              38777
+            ],
+            "node_ids": [
+              4161,
+              3794
+            ],
+            "part_ids": [
+              13,
+              19
+            ],
+            "part_names": [
+              "top_pcb",
+              "top_micro_chip_02"
+            ],
+            "material_ids": [
+              8,
+              9
+            ],
+            "material_names": [
+              "pcb_elastic",
+              "comps_elastic"
+            ],
+            "source_coordinates_mm": [
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ],
+              [
+                21.120002,
+                -6.0,
+                2.0
+              ]
+            ],
+            "source_coordinate_distance_mm": 0.0,
+            "static_feature_mm": [
+              0.42559173703193665,
+              0.30652350187301636
+            ],
+            "full_C6_values": [
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                5.091325874673203e-06,
+                2.4217008398608186e-09,
+                0.0
+              ],
+              [
+                -0.06401804834604263,
+                -0.07022485136985779,
+                -0.05236568674445152,
+                3.842607384285657e-06,
+                1.5185420920715842e-08,
+                0.0
+              ]
+            ],
+            "absolute_C6_difference": [
+              0.0,
+              0.0,
+              0.0,
+              1.248718490387546e-06,
+              1.2763720080855023e-08,
+              0.0
+            ],
+            "channel": "total_strain_frobenius",
+            "channel_unit": "dimensionless",
+            "max_abs_difference": 1.2763720080855023e-08
+          },
+          null
+        ],
+        "displacement_vector_max_mm": 1.8998980522155762e-06,
+        "displacement_vector_max_example": {
+          "run": "phone_e100_rx000",
+          "nominal_time_s": 1.4e-05,
+          "node_indices": [
+            14996,
+            37346
+          ],
+          "node_ids": [
+            3277,
+            2910
+          ],
+          "part_ids": [
+            13,
+            17
+          ],
+          "part_names": [
+            "top_pcb",
+            "top_micro_chip_01"
+          ],
+          "material_ids": [
+            8,
+            9
+          ],
+          "material_names": [
+            "pcb_elastic",
+            "comps_elastic"
+          ],
+          "source_coordinates_mm": [
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ],
+            [
+              -7.359996,
+              -16.8,
+              2.0
+            ]
+          ],
+          "source_coordinate_distance_mm": 0.0,
+          "static_feature_mm": [
+            0.6921524405479431,
+            0.5158653855323792
+          ],
+          "full_C6_values": [
+            [
+              -0.044812604784965515,
+              -0.04915643483400345,
+              -0.03665599972009659,
+              1.7176516848849133e-05,
+              1.4239157630768773e-09,
+              0.0
+            ],
+            [
+              -0.044812604784965515,
+              -0.049158334732055664,
+              -0.03665599972009659,
+              7.3868786785169505e-06,
+              6.0878351249016305e-09,
+              0.0
+            ]
+          ],
+          "absolute_C6_difference": [
+            0.0,
+            1.8998980522155762e-06,
+            0.0,
+            9.789638170332182e-06,
+            4.663919361824753e-09,
+            0.0
+          ]
+        },
+        "pairs_nonzero_in_any_channel_case_time": 334
+      },
+      "per_case": [
+        {
+          "run": "phone_e100_rx000",
+          "max_abs_per_channel": [
+            0.0,
+            1.8998980522155762e-06,
+            2.2351741790771484e-08,
+            4.388889010442654e-05,
+            1.1017461609696966e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            1,
+            29,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821614473054069e-05,
+            1.2763504919632851e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e080_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            3.821930522462935e-05,
+            1.2763720080855023e-08,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxm100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.552907350647729e-05,
+            8.081533109383088e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            2,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e120_rxp100",
+          "max_abs_per_channel": [
+            0.0,
+            9.611248970031738e-07,
+            0.0,
+            5.54268408450298e-05,
+            8.175556509559812e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            2,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.082687792106299e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            2,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.47994791304518e-05,
+            9.252743349286163e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e090_rxp050",
+          "max_abs_per_channel": [
+            0.0,
+            2.384185791015625e-07,
+            0.0,
+            4.08322703151498e-05,
+            6.726993850847407e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            2,
+            0,
+            334,
+            334,
+            0
+          ]
+        },
+        {
+          "run": "phone_e110_rxm050",
+          "max_abs_per_channel": [
+            0.0,
+            0.0,
+            0.0,
+            5.4670084864483215e-05,
+            9.232607456333142e-09,
+            0.0
+          ],
+          "pairs_nonzero_per_channel": [
+            0,
+            0,
+            0,
+            334,
+            334,
+            0
+          ]
+        }
+      ]
+    },
+    "model_coords_and_static_float32_bitwise_exact": {
+      "unordered_pairs": 0,
+      "different_node_id_pairs": 0,
+      "different_part_pairs": 0,
+      "different_material_pairs": 0,
+      "part_pair_counts": {},
+      "static_feature_abs_difference_mm": null,
+      "target_differences": {
+        "max_abs_per_channel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pairs_nonzero_in_any_case_time_per_channel": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_examples_per_channel": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "displacement_vector_max_mm": 0.0,
+        "displacement_vector_max_example": null,
+        "pairs_nonzero_in_any_channel_case_time": 0
+      },
+      "per_case": []
+    }
+  },
+  "parts": {
+    "1": {
+      "name": "lcd_screen",
+      "property_id": 17,
+      "material_id": 5
+    },
+    "2": {
+      "name": "cover_rear",
+      "property_id": 16,
+      "material_id": 1
+    },
+    "5": {
+      "name": "ic",
+      "property_id": 4,
+      "material_id": 9
+    },
+    "6": {
+      "name": "ic_01",
+      "property_id": 6,
+      "material_id": 9
+    },
+    "7": {
+      "name": "ct_01",
+      "property_id": 7,
+      "material_id": 9
+    },
+    "8": {
+      "name": "ct_02",
+      "property_id": 8,
+      "material_id": 9
+    },
+    "9": {
+      "name": "ic_02",
+      "property_id": 9,
+      "material_id": 9
+    },
+    "10": {
+      "name": "battery",
+      "property_id": 1,
+      "material_id": 4
+    },
+    "11": {
+      "name": "camera",
+      "property_id": 11,
+      "material_id": 9
+    },
+    "12": {
+      "name": "camera_conn",
+      "property_id": 13,
+      "material_id": 9
+    },
+    "13": {
+      "name": "top_pcb",
+      "property_id": 14,
+      "material_id": 8
+    },
+    "17": {
+      "name": "top_micro_chip_01",
+      "property_id": 3,
+      "material_id": 9
+    },
+    "19": {
+      "name": "top_micro_chip_02",
+      "property_id": 5,
+      "material_id": 9
+    },
+    "23": {
+      "name": "bottom_micro_chip_01",
+      "property_id": 10,
+      "material_id": 9
+    },
+    "25": {
+      "name": "bottom_micro_chip_02",
+      "property_id": 12,
+      "material_id": 9
+    },
+    "27": {
+      "name": "bottom_micro_chip_03",
+      "property_id": 2,
+      "material_id": 9
+    },
+    "28": {
+      "name": "bottom_pcb",
+      "property_id": 15,
+      "material_id": 8
+    }
+  },
+  "materials": {
+    "1": {
+      "model": "PLAS_TAB",
+      "name": "polymer_unfilled_plastic"
+    },
+    "4": {
+      "model": "ELAST",
+      "name": "battery_elastic"
+    },
+    "5": {
+      "model": "ELAST",
+      "name": "glass_elastic"
+    },
+    "8": {
+      "model": "ELAST",
+      "name": "pcb_elastic"
+    },
+    "9": {
+      "model": "ELAST",
+      "name": "comps_elastic"
+    }
+  },
+  "node_coverage": {
+    "original_node_count": 257099,
+    "type2_tied_interfaces": 14,
+    "rigid_wall_cards": 1,
+    "corner_nodes": 76065,
+    "excluded_nodes": 181034,
+    "excluded_are_TETRA10_midside_only": true,
+    "coverage_evidence": "drop_test/active-flag-and-node-coverage-correction.json; 109600 TETRA10/20618 BRICK, original quadratic midside DOFs are not model-input support."
+  },
+  "graph": {
+    "directed_edges": 561184,
+    "connected_components": 17,
+    "cross_part_edges": 0,
+    "component_part_mapping": [
+      {
+        "component": 0,
+        "nodes": 6804,
+        "part_ids": [
+          10
+        ]
+      },
+      {
+        "component": 1,
+        "nodes": 16352,
+        "part_ids": [
+          13
+        ]
+      },
+      {
+        "component": 2,
+        "nodes": 13470,
+        "part_ids": [
+          28
+        ]
+      },
+      {
+        "component": 3,
+        "nodes": 363,
+        "part_ids": [
+          27
+        ]
+      },
+      {
+        "component": 4,
+        "nodes": 363,
+        "part_ids": [
+          17
+        ]
+      },
+      {
+        "component": 5,
+        "nodes": 1080,
+        "part_ids": [
+          5
+        ]
+      },
+      {
+        "component": 6,
+        "nodes": 363,
+        "part_ids": [
+          19
+        ]
+      },
+      {
+        "component": 7,
+        "nodes": 200,
+        "part_ids": [
+          6
+        ]
+      },
+      {
+        "component": 8,
+        "nodes": 363,
+        "part_ids": [
+          23
+        ]
+      },
+      {
+        "component": 9,
+        "nodes": 363,
+        "part_ids": [
+          25
+        ]
+      },
+      {
+        "component": 10,
+        "nodes": 11891,
+        "part_ids": [
+          1
+        ]
+      },
+      {
+        "component": 11,
+        "nodes": 75,
+        "part_ids": [
+          7
+        ]
+      },
+      {
+        "component": 12,
+        "nodes": 78,
+        "part_ids": [
+          8
+        ]
+      },
+      {
+        "component": 13,
+        "nodes": 1536,
+        "part_ids": [
+          9
+        ]
+      },
+      {
+        "component": 14,
+        "nodes": 1959,
+        "part_ids": [
+          11
+        ]
+      },
+      {
+        "component": 15,
+        "nodes": 872,
+        "part_ids": [
+          12
+        ]
+      },
+      {
+        "component": 16,
+        "nodes": 19933,
+        "part_ids": [
+          2
+        ]
+      }
+    ],
+    "missing_coupling": "14 TYPE2 tied interfaces and wall-contact couplings exist in FEM but are not added as cross-part graph edges. Seventeen graph components do not mean the FEM parts are physically uncoupled."
+  },
+  "static_feature": {
+    "definition": "(sum of incident reference linearized-corner cell volumes / count of incident unique-corner cells)^(1/3)",
+    "unit": "mm",
+    "is_thickness": false,
+    "explicit_part_material_nodeID_channels": false,
+    "scope": "A local mesh/geometry length proxy. Measured differences can distinguish current coincident pairs but it does not semantically encode part or material identity."
+  },
+  "interpretation_limits": [
+    "Different FEM outputs at the same stored location are factual multi-part observations, not a neural-model prediction test.",
+    "No identical xyz+existing-static-feature float32 pairs were found if the reported count is zero; xyz-only collisions must not be called full-input collisions.",
+    "Near-equal coordinates within 1e-6 mm are not byte-identical inputs.",
+    "C6 stress is GPS-derived nodal von Mises; total strain target is the Frobenius norm of a volume-projected tensor; EPSP is distinct. This audit does not compare all tensor components.",
+    "Different node IDs/parts/materials and connected graph neighbourhoods may provide distinguishable structure when a model actually receives them; this audit does not assess model expressivity.",
+    "No new topology, geometry, long-duration drop or damage prediction is validated."
+  ],
+  "execution": {
+    "cpu_threads_environment": 1,
+    "framework_modules_imported": [],
+    "gpu_used": false,
+    "elapsed_seconds": 1.4252959999976156,
+    "peak_working_set_bytes": 99090432
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "policy": "VTU local-only; public visualization package includes code/hash/audit summaries/README/PNG, excludes all VTU and execution logs. No publication performed by this exporter.",
+  "public_candidates": {
+    "execution-metrics.json": {
+      "bytes": 262,
+      "sha256": "85ebd1adbff898b52018f85ecd8e2742cc10888ed89bf59fa6cc17dc8413d593"
+    },
+    "independent-reader-validation.json": {
+      "bytes": 1633,
+      "sha256": "ed5a9173581f8623266aef5a944bd67700289cbbabad084da1ea50c2d1ed6d73"
+    },
+    "independent-review.md": {
+      "bytes": 1371,
+      "sha256": "ed82e490414f7ac085d6ec29f926eb5d005fd6f1d2fe67b54f8b6d763a3a84ec"
+    },
+    "measure-export.ps1": {
+      "bytes": 1132,
+      "sha256": "fac3518ed27607bb7e4d2a2ae9a0585d1bf1944b3509a7b1ef4b9e6b1581af35"
+    },
+    "phone-test20us-FEM-3D-preview.png": {
+      "bytes": 414751,
+      "sha256": "7b33b6b928a1b455e4a371a7dc1a494a9c5d32fa9dfa5d80615bfb4861dce74e"
+    },
+    "phone_e090_rxp050_t20us_FEM.json": {
+      "bytes": 2627,
+      "sha256": "112469a2f1173fdb3d642b6c524217f9e04ab4a477df5292d702850095fa5f6a"
+    },
+    "phone_e110_rxm050_t20us_FEM.json": {
+      "bytes": 2630,
+      "sha256": "1fed6c417dda0f9b2b382e87c7a40e343fefda6c9cdc90c2f574801038638527"
+    },
+    "preview_phone_vtu.py": {
+      "bytes": 2003,
+      "sha256": "169fd4b4098d3790b2cefca4a502ab7fdea7e5050692d400d6fb03257a1de054"
+    },
+    "README.md": {
+      "bytes": 4606,
+      "sha256": "b29e6277b2cdae1881255493bb5b34721a226e157336d4cfb09a4af751a4ab5d"
+    },
+    "validate_phone_vtu.py": {
+      "bytes": 3309,
+      "sha256": "789a5d49142c3629794dfec0eab41c9a86b8d718d8fdf2eb7237270545f68a8d"
+    },
+    "write_phone_vtu.py": {
+      "bytes": 11091,
+      "sha256": "ceb880ad3d5bbe5f858db93ea70c1b202b337377976c53c0833ca58107688fc4"
+    }
+  },
+  "local_only_do_not_publish": {
+    "phone_e090_rxp050_t20us_FEM.vtu": {
+      "bytes": 13759876,
+      "sha256": "7fb6ca4c6e87e9b496c95dbf39ca6ae59297917205bb5fef22d42796a544c0e4"
+    },
+    "phone_e110_rxm050_t20us_FEM.vtu": {
+      "bytes": 13759876,
+      "sha256": "58819d9a5a989b22e97b6c9c818c9be725b3805aaa3331e241be99fc7e323b41"
+    }
+  },
+  "also_exclude": [
+    "export.stdout.log",
+    "export.stderr.log",
+    "__pycache__"
+  ],
+  "source_cache_or_raw_mesh_copied_to_public": false
+}

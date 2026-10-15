@@ -1712,7 +1712,7 @@
   "host_available_memory_bytes_at_end": 863604736,
   "input_information": "Per-run global parameters only, normalized with train statistics; constant inputs dropped. Fixed geometry/reference coordinates are encoded by POD basis. No heldout response is a predictor input.",
   "loss": "Mean squared residual divided by the shared train-only field scales. XYZ use a common rotation-invariant vector scale when specified by normalization metadata; scalar fields retain their train scales. Equal node/time/channel weights; mean field uses train cases only. No response values replaced or clipped.",
-  "scope": "Exploratory public benchmark; same fixed geometry, heldout GPU-model split cases previously exist in public FEM results; no blindtest or appliance generalization claim.",
+  "scope": "Newly generated OpenCourant tensile FEM13-case exploratory benchmark:919registered nodes,7fields,5train anchors/4validation/4test in a fixed2-parameter geometry. No whole-appliance or independent certification claim.",
   "local_data_warning": "Prediction NPZ/snapshots/mean field contain FEM-derived data; local evidence, excluded from public redistribution pending license handling.",
   "active_input_keys": [
     "yield_UTS_scale",

@@ -1,0 +1,114 @@
+{
+  "status": "frozen_successful_official_q1_cpu_records",
+  "entrypoint": "execution-report.md",
+  "independent_review": "execution-review.md",
+  "file_count_excluding_this_manifest": 19,
+  "bytes_excluding_this_manifest": 99159,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 60,
+      "sha256": "c4f7538991bde72d3e1a22989ea0b1aa6e4a3d52a2f731f14295a4ee1a222031"
+    },
+    {
+      "path": "base-runtime-static-evidence.json",
+      "bytes": 584,
+      "sha256": "8d307fc6bcd7ce2ba0589039eba7f80caf5218950b9586586c896149ec3a76d6"
+    },
+    {
+      "path": "cpu-execution/affine-patch-fields.csv",
+      "bytes": 13249,
+      "sha256": "57a5d4a20c7c0ed568d298225e4fd3e83a208f8daaa453f7589f7442d8e56477"
+    },
+    {
+      "path": "cpu-execution/driver.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cpu-execution/driver.stdout.log",
+      "bytes": 473,
+      "sha256": "77f796b77093f584c864a445011f81ae75661bac52f896f30c7abd3e74bb2a79"
+    },
+    {
+      "path": "cpu-execution/execution.json",
+      "bytes": 5056,
+      "sha256": "e8e1b69a23a2d919c6c1bed2eea7b67de256689caed2e8b16e598c347092fdc6"
+    },
+    {
+      "path": "cpu-execution/supervisor.json",
+      "bytes": 453,
+      "sha256": "39c3f45fa1007c5253d4ed4c1e5b97286fa0de396163ac4f759850a65be3ad69"
+    },
+    {
+      "path": "execution-context.json",
+      "bytes": 1819,
+      "sha256": "767c584bad50713b4b99ac1cf1d7bbefb8938d43c7f3fbc3e9efd3ab2340bfec"
+    },
+    {
+      "path": "execution-report.md",
+      "bytes": 8004,
+      "sha256": "fed198466abb85254107f0d03ac1b79c6f6865d91b54a5476fe275e49d300bbf"
+    },
+    {
+      "path": "execution-review.md",
+      "bytes": 9081,
+      "sha256": "e2b2162ed0904a4d7d39b1d7371083fe1ab775c1d8323cb96c8a7b5ec6cdfa48"
+    },
+    {
+      "path": "memory-deferral.json",
+      "bytes": 414,
+      "sha256": "922a4f504017d8b0daced5a17f2fb9aac75aeeceb4bea40320af731be602e61e"
+    },
+    {
+      "path": "prepare-source.py",
+      "bytes": 2108,
+      "sha256": "b711dfecc44f02276c6bd68cf412ec35f168d831155f33cca754090c6cb04a54"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5883,
+      "sha256": "11c651de1d18fbb4640be51be002a0652809e07e700fbcb21de2a4fa8c91df54"
+    },
+    {
+      "path": "run-official-q1.py",
+      "bytes": 11101,
+      "sha256": "526c7e4b962d9e06e5e655693daebbe0407894782996f7d0e0b9f57e6a31c4a2"
+    },
+    {
+      "path": "run-supervised.ps1",
+      "bytes": 2737,
+      "sha256": "a6612cd63f1ecda4ce1b66be73fbfbd3c2d1408009aa2ae54f155ac2696d1651"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 7788,
+      "sha256": "19471259c443d4f421213bbb2bb9d878634154a5671a36351e9182acb6b358e3"
+    },
+    {
+      "path": "static-source-report.json",
+      "bytes": 9012,
+      "sha256": "e5b1d22b73ce7f2b4226484ad8a230a1100085faa210c6cb6dde5909b60b1896"
+    },
+    {
+      "path": "static-source-report.py",
+      "bytes": 4105,
+      "sha256": "5cde30f01b8ddc6b5e09d6ddaaef158252a2dec8ef898c265cf1f738a409b9f2"
+    },
+    {
+      "path": "validation-contract-review.md",
+      "bytes": 17232,
+      "sha256": "4a3a7163ce7ccc8678ebf3d04ea8e568e2175bf68b1527e1bae6620c633133f0"
+    }
+  ],
+  "public_content_scan": {
+    "issues": [],
+    "method": "UTF-8 scan for user profile paths and common Windows hostnames; prohibited binary/cache suffix check."
+  },
+  "execution_integrity": {
+    "all_13_gates": true,
+    "supervised_exit_code": 0,
+    "executed_driver_and_source_manifest_sha256_match": true
+  },
+  "scope": "Official unchanged current-source Elasticity2DSolver numerical component only; not full DDM or AI training. Historical preparation documents remain unchanged. No owned compute process remains running."
+}

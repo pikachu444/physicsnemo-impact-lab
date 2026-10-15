@@ -1,0 +1,143 @@
+{
+  "status": "pinned_official_source_verified",
+  "repository": "NVIDIA/physicsnemo",
+  "commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "file_count": 19,
+  "total_bytes": 141239,
+  "files": [
+    {
+      "path": "examples/tcad/fp_ddm/README.md",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/README.md",
+      "bytes": 7658,
+      "git_blob_sha": "4f5805f05d5bdf714ea73696d5a6b729fc90480f",
+      "sha256": "6956fbdf61685202d94389acc32c27c2665927a0a5bc15c57bea05fc0a023336"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/config.yaml",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/config.yaml",
+      "bytes": 2810,
+      "git_blob_sha": "fe674fb4e60c03f5d231ac65f413267bd88be0a2",
+      "sha256": "68436f49f49ad65437f432d310d6b362be8db8caeed4e8e5a84d43089d447f4d"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/__init__.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/__init__.py",
+      "bytes": 794,
+      "git_blob_sha": "09ad55b6c0f5ea37ff9216a18eea270b1ed2889a",
+      "sha256": "c027fe349d9ec0a91c3c57490fd55e389e802a0f677cb0ae80b6a89d235b87ea"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/data.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/data.py",
+      "bytes": 11390,
+      "git_blob_sha": "8ef6b023514b6210182cd558579bfe71e70c274b",
+      "sha256": "3babf1f6da250dfad92e6da50fdb3e93714686b0a5a99b155528367c1937a73c"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/domain.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/domain.py",
+      "bytes": 11346,
+      "git_blob_sha": "a5f34c73e5e5b3f49bd6b0d3d72c470870feafb8",
+      "sha256": "81fae4681f3334470ec6ad18e88a745c2d3bdcd38498abe6e7534b82b7f50c9c"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/elasticity.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity.py",
+      "bytes": 17600,
+      "git_blob_sha": "3f81f368fcbd44522863146e55153c2d99a99a23",
+      "sha256": "822d7d4a11b36411975b0aa08f7ed87ac90ca0e691555de13db5f4b3473147ee"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/elasticity_example.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/elasticity_example.py",
+      "bytes": 9551,
+      "git_blob_sha": "7cfa7f9ca8648c3f78f4dcf72dacaf436b2c9d60",
+      "sha256": "153426ae02f6768fb5497111cb71de4502061c39d17505ceb29b40586430dbdf"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/interfaces.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/interfaces.py",
+      "bytes": 10775,
+      "git_blob_sha": "65cba4344ac9f51b742284f434a75a0fb2e9c62d",
+      "sha256": "29a5a32323dc7556d3b71cd16adc1279105e58cd74dac44fe77162dc093204b2"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/model.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/model.py",
+      "bytes": 7587,
+      "git_blob_sha": "a9c64401f3218ac492a576fa1d2bee89962f65ed",
+      "sha256": "d42f058f7763c1c4b63252e800993413cc44bc1ebd4c9658359dd86168d0852d"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/observers.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/observers.py",
+      "bytes": 9678,
+      "git_blob_sha": "da0b6f1bb37e6069e23b03f228a553ce3d7d84e5",
+      "sha256": "1c894c6794ea88b6558333fa968dc2d8f84fbf26ce815a705faa1eb19ebc8ab2"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/pipeline.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/pipeline.py",
+      "bytes": 10046,
+      "git_blob_sha": "5f0e83af01c57d9b2170237c18ac2557c3698960",
+      "sha256": "52f3130e6011098b89364f5a3845b980f31a843b689556fb30c67cab2c753f64"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/schwarz.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/schwarz.py",
+      "bytes": 9338,
+      "git_blob_sha": "0d4fe77e59079c9d435f79e3d3cc2b67542a63a3",
+      "sha256": "c1460eb86c047cc1603130fce174afc9d739e38d421b7f6f86e4fce7afc35c85"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/solvers.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/solvers.py",
+      "bytes": 9166,
+      "git_blob_sha": "4a1638d733b645c41c91e9b11aac213fc1acfdb1",
+      "sha256": "c35b8e61282b10d5e1f9b45088af646a248c8f6332c5861dd4860b92a7e2eec3"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/thermal.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/thermal.py",
+      "bytes": 8292,
+      "git_blob_sha": "88236839e23eb7cbd6c94a1b73ebdf3dd267b6ba",
+      "sha256": "5271d3842686824caced230f47368fb3339264eb6083c797a9a0a5d4af68f685"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/fpddm/training.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/fpddm/training.py",
+      "bytes": 9234,
+      "git_blob_sha": "180ceb6cc9861cb771475df5c61f4f82a26849ef",
+      "sha256": "ba65b8c76c17fa4778ec3251c77ccdedea659663028afece6c72b1916e8ae923"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/requirements.txt",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/requirements.txt",
+      "bytes": 56,
+      "git_blob_sha": "1902c6b2d3c96cd4fd370c8bfd09fca6239c3761",
+      "sha256": "ca9b2643c2fcff8c2db95fa89bc3bae5022c497e3c358a80d2e7fa78ce7f3c09"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/run_elasticity.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_elasticity.py",
+      "bytes": 1823,
+      "git_blob_sha": "1486b02047fcae6107e4083b7d56acd5ad07b687",
+      "sha256": "69d72868642a30d168bba4d6cf4ecc973a878b3c0144d7ecec4b0afdbbe59082"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/run_fpddm.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/run_fpddm.py",
+      "bytes": 2071,
+      "git_blob_sha": "f781d8a2ceb58a12402389d7cac00b30257661c1",
+      "sha256": "5916687a0efa0dbe7b80467ccf12e8bad383de866c4dddcdc237a8ff52d61a55"
+    },
+    {
+      "path": "examples/tcad/fp_ddm/train.py",
+      "url": "https://raw.githubusercontent.com/NVIDIA/physicsnemo/11685edb3ec1fb6f25665e96cf7a8c4d11a23f16/examples/tcad/fp_ddm/train.py",
+      "bytes": 2024,
+      "git_blob_sha": "63bdb59e764e2841a851563490589452156e49e0",
+      "sha256": "736f847874523a5eaca645e064c810a5724b021f8aa5572350263c3066f52bb6"
+    }
+  ],
+  "execution_status": "static source download only; no framework imports, solver execution or package installation"
+}

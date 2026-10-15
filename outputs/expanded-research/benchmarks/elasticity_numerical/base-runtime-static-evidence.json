@@ -1,0 +1,12 @@
+{
+  "status": "source_metadata_only_framework_not_imported",
+  "runtime": "preserved base Python 3.13.5",
+  "torch_distribution_metadata_version": "2.13.0",
+  "torch_version_py_declared_version": "2.13.0+cpu",
+  "torch_version_py_cuda": null,
+  "torch_version_py_hip": null,
+  "torch_version_py_sha256": "2aba2b231a8cda9e560ecdf9eee9f34923f648a3bf7c9c156a690562a1cd6957",
+  "second_available_memory_preflight_bytes": 918122496,
+  "minimum_available_memory_bytes": 1073741824,
+  "action": "Continue waiting; no framework imported, no package installed, no unrelated process closed."
+}

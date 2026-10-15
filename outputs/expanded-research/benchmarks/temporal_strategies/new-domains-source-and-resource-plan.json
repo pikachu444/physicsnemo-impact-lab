@@ -1,0 +1,131 @@
+{
+  "status": "Source initial velocity and support audited; new-domain framework probes/training not executed",
+  "bumper": {
+    "source_rad_sha256": "fad6cf13a8b214506b48b0d36dd30dc4b6d315c76a1aba4810e5ee5db3da0f62",
+    "source_card": "/INIVEL/TRA/1",
+    "initial_velocity": [
+      -5.0,
+      0.0,
+      0.0
+    ],
+    "velocity_unit": "mm/ms",
+    "source_group": 26,
+    "group_skew": 0,
+    "nested_groups": [
+      25,
+      24
+    ],
+    "group25_nodes": [
+      14153
+    ],
+    "group24_parts": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "shell_node_union": 13675,
+    "cache_node_id_set_matches_source_group": true,
+    "all_131_RAD_independently_audited": false,
+    "family_initial_velocity_basis": "Direct Run224 source plus constant velocity_x=-5 in family global metadata; other130 RAD decks not independently inspected",
+    "dt": 10.0,
+    "time_unit": "ms",
+    "actual_time_jitter_max_ms": 0.00098419189453125,
+    "features": "per-node original shell thickness; globals thickness_scale,velocity_x,rwall_origin_y; no coupon BC masks",
+    "targets": "TC7 original stress upper/lower and EPSP upper/lower; AR/TF3 positions only; no total strain ground-truth family",
+    "frozen_manifest": "work/expanded-ml/multifield7-cache/manifest.json",
+    "frozen_manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "data_shape": [
+      13675,
+      10,
+      7
+    ],
+    "split_counts": [
+      112,
+      12,
+      7
+    ]
+  },
+  "phone_full": {
+    "source_rad_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+    "source_card": "/INIVEL/TRA/1",
+    "initial_velocity": [
+      -3200.900476,
+      -3511.241739,
+      -2618.285239
+    ],
+    "velocity_unit": "mm/s",
+    "source_group": 1,
+    "group_skew": 0,
+    "group_nodes": 257099,
+    "exported_support_nodes": 76065,
+    "all_exported_nodes_covered": true,
+    "t0_ANIM_velocity_available": false,
+    "velocity_basis": "source card, not future FEM finite difference",
+    "dt": 2e-06,
+    "time_unit": "s",
+    "nominal_horizon_s": 2e-05,
+    "temporal_labels": "All six canonical fields linearly interpolated in physical units to nominal2..20us within actual saved-frame brackets; source metadata records every bracket/weight, no extrapolation.",
+    "geometry": "Fixed original RAD reference coordinates; wall normal rx varies, wall origin fixed",
+    "features": "Source-derived reference mean incident corner-cell volume cube root (mm); no coupon fixed/grip masks. This scalar does not encode14 TYPE2 ties,wall contact,17 parts or material identities.",
+    "scope": "All exported corner nodes of17 parts, not all257099 original solver nodes/degrees of freedom",
+    "targets": "TC6 uXYZmm+GPSnodalVMMPa+native-totalstrainFrobenius+EPSP; AR/TF3 positions only",
+    "data_freeze_status": "producer manifest-full-assembly-corners.json and dataset_READY_evidence.json now published; this source-only audit makes no GPU execution claim",
+    "expected_manifest": "outputs/expanded-research/benchmarks/drop_test/doe/canonical/manifest-full-assembly-corners.json",
+    "data_shape": [
+      76065,
+      10,
+      6
+    ],
+    "expected_split_counts": [
+      5,
+      2,
+      2
+    ]
+  },
+  "new_driver_plan": {
+    "coordinate_transform": "single train-geometry length scale and translation; kinematics normalized with same length scale, unlike arbitrary per-axis scale",
+    "loss_transform": "position error multiplied by geometry_length/train_displacement_common_std; each extra scalar uses the same train-only std as static models",
+    "kinematic_vector_statistics": "train-only streaming moments, source v0 vector, nominal dataset-specific dt; no full train stack",
+    "working_set": "mmap labels, one case transferred to GPU at once; stream training statistics and retain test only for final inference",
+    "strict_probes": "one real case forward/backward and one epoch before any long training; explicit root GPU allocation required",
+    "rough_not_measured_minutes_for_30_epochs": {
+      "bumper_TC7": [
+        45,
+        65
+      ],
+      "bumper_AR3": [
+        60,
+        100
+      ],
+      "bumper_TF3": [
+        60,
+        100
+      ],
+      "phone_TC6": [
+        15,
+        30
+      ],
+      "phone_AR3": [
+        15,
+        30
+      ],
+      "phone_TF3": [
+        15,
+        30
+      ]
+    },
+    "estimate_basis": "coupon3 actual275.33s plus earlier real13,675-node staticGeo step0.13~0.17s, node/case scaling; temporal memory/throughput must be measured",
+    "paid_resources_authorized": false
+  }
+}

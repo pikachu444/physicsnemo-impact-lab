@@ -1,0 +1,7 @@
+{
+  "status": "expected_rejection",
+  "alteration": "swap reference coordinate rows0and1; labels/order unchanged",
+  "exit_code": 1,
+  "reason": "Mesh/fields/units/times/split contract differs",
+  "prediction_file_written": false
+}

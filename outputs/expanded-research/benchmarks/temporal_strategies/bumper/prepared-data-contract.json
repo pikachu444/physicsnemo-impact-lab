@@ -1,0 +1,298 @@
+{
+  "domain": "bumper",
+  "cache_ready": {
+    "ready_sha256": "c06eabf774cb3f8f498491b9b6615f20ab05661850863f297f7fc62781578da8",
+    "manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+    "expected_cases": 131,
+    "verified_files": 399
+  },
+  "shape": [
+    13675,
+    10,
+    7
+  ],
+  "split": {
+    "train": [
+      "Run192",
+      "Run179",
+      "Run213",
+      "Run209",
+      "Run102",
+      "Run204",
+      "Run125",
+      "Run207",
+      "Run194",
+      "Run100",
+      "Run117",
+      "Run220",
+      "Run147",
+      "Run103",
+      "Run135",
+      "Run164",
+      "Run119",
+      "Run201",
+      "Run150",
+      "Run167",
+      "Run148",
+      "Run121",
+      "Run214",
+      "Run215",
+      "Run183",
+      "Run198",
+      "Run212",
+      "Run165",
+      "Run128",
+      "Run210",
+      "Run157",
+      "Run160",
+      "Run118",
+      "Run203",
+      "Run120",
+      "Run221",
+      "Run145",
+      "Run154",
+      "Run176",
+      "Run190",
+      "Run171",
+      "Run110",
+      "Run101",
+      "Run211",
+      "Run134",
+      "Run193",
+      "Run153",
+      "Run131",
+      "Run112",
+      "Run184",
+      "Run163",
+      "Run123",
+      "Run177",
+      "Run174",
+      "Run169",
+      "Run200",
+      "Run168",
+      "Run185",
+      "Run132",
+      "Run133",
+      "Run196",
+      "Run180",
+      "Run188",
+      "Run202",
+      "Run186",
+      "Run143",
+      "Run206",
+      "Run187",
+      "Run104",
+      "Run217",
+      "Run107",
+      "Run146",
+      "Run173",
+      "Run222",
+      "Run159",
+      "Run182",
+      "Run218",
+      "Run191",
+      "Run189",
+      "Run208",
+      "Run113",
+      "Run130",
+      "Run136",
+      "Run216",
+      "Run124",
+      "Run122",
+      "Run114",
+      "Run152",
+      "Run158",
+      "Run170",
+      "Run138",
+      "Run115",
+      "Run111",
+      "Run108",
+      "Run105",
+      "Run199",
+      "Run141",
+      "Run181",
+      "Run195",
+      "Run151",
+      "Run162",
+      "Run223",
+      "Run129",
+      "Run166",
+      "Run197",
+      "Run156",
+      "Run161",
+      "Run175",
+      "Run127",
+      "Run116",
+      "Run172",
+      "Run149"
+    ],
+    "validation": [
+      "Run219",
+      "Run139",
+      "Run126",
+      "Run178",
+      "Run109",
+      "Run137",
+      "Run106",
+      "Run155",
+      "Run142",
+      "Run205",
+      "Run144",
+      "Run140"
+    ],
+    "test": [
+      "Run224",
+      "Run225",
+      "Run226",
+      "Run227",
+      "Run228",
+      "Run229",
+      "Run230"
+    ]
+  },
+  "names": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "inplane_vm_upper",
+    "inplane_vm_lower",
+    "EPSP_upper",
+    "EPSP_lower"
+  ],
+  "units": [
+    "mm",
+    "mm",
+    "mm",
+    "GPa",
+    "GPa",
+    "dimensionless",
+    "dimensionless"
+  ],
+  "time_values": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0,
+    80.0,
+    90.0,
+    100.0
+  ],
+  "coordinate_length_mm": 2023.7344970703125,
+  "coordinate_origin_mm": [
+    68.33999633789062,
+    0.0,
+    0.5773568749427795
+  ],
+  "float32_coordinate_ulp_scale_mm": 0.00024124795163515955,
+  "position_loss_scale": [
+    47.39048767089844,
+    47.39048767089844,
+    47.39048767089844
+  ],
+  "initial_velocity": [
+    -5.0,
+    0.0,
+    0.0
+  ],
+  "velocity_unit": "mm/ms",
+  "dt": 10.0,
+  "time_unit": "ms",
+  "time_assumption": "nominal scalar dt10ms; actual animation jitter retained; frame correspondence without interpolation",
+  "time_input_encoding": "original wrapper future-frame index t/10: encoded0 corresponds to first future dt, encoded0.9 to final10dt; this is not physical t=0..1",
+  "initial_velocity_basis": "new-domains-source-and-resource-plan.json; source INIVEL vector and explicit group support verified, never future target differences",
+  "initial_velocity_scope_limit": "all131 RAD decks not independently inspected; Run224 plus family velocity metadata",
+  "static_feature_name": "nodal_thickness",
+  "boundary_mask_policy": "coupon fixed/moving masks are not reused; no explicit tied/contact boundary mask is encoded",
+  "kinematic_stats": {
+    "norm_vel_mean": [
+      -0.0006776394613177937,
+      -5.5315041989107515e-06,
+      4.548612061663847e-06
+    ],
+    "norm_vel_std": [
+      0.0004995086001845205,
+      0.0004995086001845205,
+      0.0004995086001845205
+    ],
+    "norm_acc_mean": [
+      2.4595260648865366e-05,
+      -4.2562781149356305e-09,
+      -4.505712359910532e-08
+    ],
+    "norm_acc_std": [
+      1.3223073338778366e-05,
+      1.3223073338778366e-05,
+      1.3223073338778366e-05
+    ]
+  },
+  "kinematic_statistics_scope": "train-only source-independent a2..a10; first acceleration excluded as in original datapipe",
+  "normalization": {
+    "field_mean": [
+      -114.42729703421286,
+      -0.681364247225673,
+      0.6356285611900461,
+      0.2272368642692865,
+      0.23092644314378213,
+      0.00543352199104044,
+      0.005311158471764617
+    ],
+    "field_std": [
+      42.7033919335029,
+      42.7033919335029,
+      42.7033919335029,
+      0.15724312009278052,
+      0.15711152137041534,
+      0.02195642461988229,
+      0.022048847535982904
+    ],
+    "constant_training_fields": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "normalization_groups": [
+      {
+        "fields": [
+          "displacement_x",
+          "displacement_y",
+          "displacement_z"
+        ],
+        "scale": 42.7033919335029,
+        "definition": "sqrt(trace(training displacement covariance)/3), shared by all three vector components"
+      }
+    ],
+    "thickness_mean": 1.7074053408163863,
+    "thickness_std": 0.30607826616737743,
+    "global_mean": [
+      1.6046428520764624,
+      -5.0,
+      -22.78169580442565
+    ],
+    "global_std": [
+      0.22549520782135554,
+      1.0,
+      276.25728290930994
+    ],
+    "coordinate_min": [
+      -43.575980224609374,
+      -1032.1045935058594,
+      -76.50174919128418
+    ],
+    "coordinate_span": [
+      364.74998291015623,
+      2064.2091870117188,
+      153.00176651000976
+    ],
+    "coordinate_margin_fraction": 0.01
+  },
+  "normalization_sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+  "memory_policy": "stream train statistics and mmap labels; at most one current case target held on GPU",
+  "scope": "published bumper conditions only"
+}

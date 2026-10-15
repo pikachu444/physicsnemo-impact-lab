@@ -1,0 +1,52 @@
+{
+  "nodes": 76065,
+  "solid_elements": 130218,
+  "undirected_edges": 280592,
+  "directed_edges": 561184,
+  "connected_components": 17,
+  "component_sizes_descending": [
+    19933,
+    16352,
+    13470,
+    11891,
+    6804,
+    1959,
+    1536,
+    1080,
+    872,
+    363,
+    363,
+    363,
+    363,
+    363,
+    200,
+    78,
+    75
+  ],
+  "degree_min_max": [
+    3,
+    23
+  ],
+  "definition": "Six corner edges per TETRA10 and twelve standard perimeter edges per eight-slot BRICK; degenerate self-edges discarded, duplicates removed, both directions retained.",
+  "coupling_limitation": "This graph contains physical element edges only. TYPE2 tied interfaces and contact/rigid-wall interactions between disjoint parts do not add edges. Dataset globals and FEM labels still include those interactions; graph connectivity alone does not encode them.",
+  "coverage": "Every solid-referenced ANIM/VTK corner node is covered. Original quadratic midside nodes omitted by ANIM connectivity are not claimed as predicted nodes.",
+  "original_RAD_nodes": 257099,
+  "original_RAD_nodes_outside_corner_support": 181034,
+  "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+  "static_feature_unit": "mm",
+  "elapsed_seconds": 2.0964340999998967,
+  "files": {
+    "edge_index_full.npy": {
+      "bytes": 8979072,
+      "sha256": "dc670b7640884ea26cf006f0b5a13d5cb91ff335701b89c90ee8b889bd6b2298"
+    },
+    "static_feature_full.npy": {
+      "bytes": 304388,
+      "sha256": "a845cb7dce8ad4b61003d42225f53cfd2d9cf0cdc727cc57b3f446f4b2f762c8"
+    },
+    "connected_component_full.npy": {
+      "bytes": 304388,
+      "sha256": "56749536b34e99a2286121d421bb0a193db1818b39379e2a8b7648d118c56a27"
+    }
+  }
+}

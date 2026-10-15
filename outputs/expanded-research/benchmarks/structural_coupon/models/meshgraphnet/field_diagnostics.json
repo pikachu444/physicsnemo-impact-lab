@@ -1,0 +1,177 @@
+{
+  "scope": "Posthoc diagnostics of saved raw predictions against the same heldout FEM references; no training or model selection",
+  "fields": {
+    "displacement_x": {
+      "unit": "mm",
+      "truth_absolute_peak": 11.309800148010254,
+      "prediction_absolute_peak": 12.307504653930664,
+      "component_rmse": 0.2714463897575172,
+      "absolute_error_max": 1.2276091575622559,
+      "truth_exact_nonzero_count": 33120,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 0.9998806532643927
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "truth_absolute_peak": 0.2597540020942688,
+      "prediction_absolute_peak": 0.13927161693572998,
+      "component_rmse": 0.06928045570333842,
+      "absolute_error_max": 0.28902437537908554,
+      "truth_exact_nonzero_count": 29480,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 0.015449246828571149
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "truth_absolute_peak": 2.3001100061593484e-14,
+      "prediction_absolute_peak": 0.1504424661397934,
+      "component_rmse": 0.032671460334993165,
+      "absolute_error_max": 0.15044246613979334,
+      "truth_exact_nonzero_count": 29480,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "reference_component_norm_to_vector_norm_ratio": 7.881459407146208e-16
+    },
+    "von_mises_shell_scalar_projected": {
+      "unit": "MPa",
+      "truth_absolute_peak": 789.0155029296875,
+      "prediction_absolute_peak": 778.5265502929688,
+      "component_rmse": 122.45142645009267,
+      "absolute_error_max": 564.2752685546875,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    },
+    "equivalent_plastic_strain_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.08809059858322144,
+      "prediction_absolute_peak": 0.09074009209871292,
+      "component_rmse": 0.007661208064627724,
+      "absolute_error_max": 0.06489400751888752,
+      "truth_exact_nonzero_count": 28897,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760,
+      "support_definition": "Reference EPSP >0 exactly; prediction >0 exactly. No clipping/threshold tuning. This is a nodal averaged projected support, not a raw-cell damage criterion.",
+      "reference_positive_support_count": 28897,
+      "reference_zero_support_count": 7863,
+      "rmse_on_reference_positive_support": 0.0085212740861268,
+      "rmse_on_reference_zero_support": 0.0027467448102551605,
+      "prediction_absolute_peak_on_reference_zero_support": 0.050082072615623474,
+      "prediction_negative_count": 6306,
+      "true_positive": 26303,
+      "false_positive": 4151,
+      "false_negative": 2594,
+      "positive_support_precision": 0.8636960661982006,
+      "positive_support_recall": 0.9102328961483891,
+      "positive_support_iou": 0.7959029290728638,
+      "per_case_support_errors": [
+        {
+          "case": "holdout_test_01",
+          "reference_positive_count": 7252,
+          "reference_positive_rmse": 0.004529156866596363,
+          "reference_zero_rmse": 0.0007696644520671656,
+          "reference_peak": 0.08595474809408188,
+          "prediction_absolute_peak": 0.08703054487705231
+        },
+        {
+          "case": "holdout_test_02",
+          "reference_positive_count": 7155,
+          "reference_positive_rmse": 0.009147124784085353,
+          "reference_zero_rmse": 0.00332451383745716,
+          "reference_peak": 0.06141209974884987,
+          "prediction_absolute_peak": 0.061502836644649506
+        },
+        {
+          "case": "holdout_test_03",
+          "reference_positive_count": 7266,
+          "reference_positive_rmse": 0.0033006020911989387,
+          "reference_zero_rmse": 0.0006564453723523625,
+          "reference_peak": 0.08809059858322144,
+          "prediction_absolute_peak": 0.09074009209871292
+        },
+        {
+          "case": "holdout_test_04",
+          "reference_positive_count": 7224,
+          "reference_positive_rmse": 0.013267919902543173,
+          "reference_zero_rmse": 0.004210538596916285,
+          "reference_peak": 0.07296130061149597,
+          "prediction_absolute_peak": 0.07190761715173721
+        }
+      ],
+      "history_diagnostics": {
+        "definition": "Exact negative time increments at fixed projected support; raw cumulative EPSP is expected not to decrease. Report reference rounding/decrease separately; no correction is applied.",
+        "prediction_negative_time_increment_count": 6842,
+        "reference_negative_time_increment_count": 0,
+        "prediction_maximum_time_decrease": 0.002332407981157303,
+        "reference_maximum_time_decrease": 0.0,
+        "prediction_raw_delta_distribution": {
+          "minimum_delta": -0.002332407981157303,
+          "maximum_delta": 0.01171921193599701,
+          "negative_count": 6842,
+          "zero_count": 0,
+          "count": 33084,
+          "decrease_magnitude_quantiles": {
+            "0.5": 0.0005641961470246315,
+            "0.9": 0.0013176690787076951,
+            "0.95": 0.0015899941325187683,
+            "0.99": 0.0019473873637616634,
+            "1.0": 0.002332407981157303
+          }
+        },
+        "reference_raw_delta_distribution": {
+          "minimum_delta": 0.0,
+          "maximum_delta": 0.009391851723194122,
+          "negative_count": 0,
+          "zero_count": 7032,
+          "count": 33084,
+          "decrease_magnitude_quantiles": null
+        },
+        "stored_prediction_dtype": "float32",
+        "stored_reference_dtype": "float32",
+        "float32_machine_epsilon": 1.1920928955078125e-07,
+        "interpretation": "Strict negative counts include roundoff-sized changes. Quantile magnitudes and the same truth statistics are reported without an invented pass/fail threshold."
+      }
+    },
+    "total_strain_principal_major_inplane_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.09144166857004166,
+      "prediction_absolute_peak": 0.09494922310113907,
+      "component_rmse": 0.007893253167979479,
+      "absolute_error_max": 0.06426822254434228,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    },
+    "total_strain_principal_minor_inplane_projected": {
+      "unit": "1",
+      "truth_absolute_peak": 0.04487096890807152,
+      "prediction_absolute_peak": 0.04626099765300751,
+      "component_rmse": 0.0038583360861486906,
+      "absolute_error_max": 0.0322363949380815,
+      "truth_exact_nonzero_count": 30520,
+      "prediction_exact_nonzero_count": 36760,
+      "prediction_nonfinite_count": 0,
+      "count": 36760
+    }
+  },
+  "source_sha256": "7908c2b88784ee1725044385e97e183b535231655772f97f61ee6c538977d80c",
+  "principal_order_diagnostics": {
+    "prediction_minor_greater_than_major_count": 1840,
+    "reference_minor_greater_than_major_count": 0,
+    "prediction_maximum_order_violation": 0.00185405183583498,
+    "definition": "A projected in-plane major principal strain must be >= its paired minor principal strain. No reordering is applied."
+  },
+  "near_zero_reference_components": [
+    "displacement_z"
+  ],
+  "near_zero_diagnostic_definition": "Component reference L2 norm / vector reference L2 norm <1e-10; reporting diagnostic only, no field removal or model selection.",
+  "near_zero_axis_note": "For these near-zero reference components, emphasize absolute error and predicted magnitude in physical units. Relative error divided by a near-zero reference is not a useful standalone accuracy claim."
+}

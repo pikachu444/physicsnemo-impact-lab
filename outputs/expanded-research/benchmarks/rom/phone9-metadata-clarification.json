@@ -1,0 +1,19 @@
+{
+  "status": "external_scope_clarification_only_no_frozen_artifacts_modified",
+  "date": "2026-10-15",
+  "language": "ko",
+  "reason": "동결 wrapper의 label_source가 공개 기존 정답 또는 OpenRadioss 실행으로 오해될 수 있어 원본 입력과 이번 실행 정답을 구분한다.",
+  "source_input": "공개 Altair 휴대폰 RAD 원 deck. 내부 CC BY-NC 4.0 조건을 유지한다.",
+  "actual_label_generation": "이번 연구에서 OpenCourant Windows single-precision engine_win64_sp.exe로 실제 생성한 9개 FEM 조건이다. 중심 1조건은 이번 연구의 선행 20us pilot을 재사용하고 8조건을 추가 생성했다. 기존 공개 학습 정답 9개를 내려받은 것이 아니다.",
+  "solver_evidence": "../drop_test/20us/execution-metrics.json 및 ../drop_test/doe/*/execution-metrics.json",
+  "source_starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+  "frozen_full_manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+  "frozen_rear_manifest_sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48",
+  "geometry_scope": "full은 전체 17부품의 ANIM 선형화 코너 절점 76065개다. 원 RAD 절점257099개 중 TETRA10 midside181034개를 제외한다. rear는 part2 cover_rear의19933개 절점으로 full support의 정확한 부분집합이다.",
+  "stress_definition": "solver native GPS nodal stress 6성분으로 계산한 Von Mises invariant(MPa). solver가 직접 출력한 nodal VM scalar 또는 cell VM을 절점 평균한 값과 구분한다.",
+  "total_strain_definition": "TET4 표현은 valid integration point의 평균, BRICK은IP111을 사용한다. 초기 선형화 solid 체적으로 global total-strain tensor를 절점 투영한 뒤 Frobenius norm을 계산한다. EPSP와 다른 물리량이며 이 정의상 비음수다.",
+  "epsp_definition": "native cell 등가소성변형률 scalar를 초기 선형화 solid 체적으로 절점 투영한다. raw 음수·시간 감소는 모델 후처리에서 제거하지 않는다.",
+  "time_scope": "2..20us 명목 목표 시각 10개는 실제 raw solver 저장12시점의 명시적 bracketing/weight로 선형 보간한 결과다. 외삽하지 않았고 v2는 원 저장 시각과 목표 시각을 구분한다. 100us 단일 후속 FEM 실행은 이9조건 학습 배열에 포함하지 않는다.",
+  "model_scope": "고정 형상과 공통 Young modulus 배율0.8..1.2/벽 법선 Rx각도-1..1도의 2변수 초기접촉 보간이다. 원5재료를 독립으로 바꾼 연구, full drop/rebound, 신형상·신접촉·파손 검증이 아니다.",
+  "graph_scope": "full561184 directed element edges 및17 connected part components. TYPE2 tied/contact 또는 wall 접촉의 cross-part edge를 추가하지 않았다. ROM은 mesh graph 대신 고정 절점 field basis와 두 global 입력을 사용한다."
+}

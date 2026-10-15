@@ -1,0 +1,40 @@
+{
+  "status": "NOT_EXECUTED_USER_DIRECTION_PENDING",
+  "source_checkpoint": "work\\expanded-drop\\100us-run\\Cell_Phone_Drop_0002_0001.rst",
+  "source_checkpoint_bytes": 282786525,
+  "source_checkpoint_sha256": "e56c1f0764f5daa4946c313458d126f8df4230f19b7917b87de4843603de1dee",
+  "source_actual_time_s": 0.00010000866313930601,
+  "proposed_final_time_s": 0.0005,
+  "proposed_engine_file": "Cell_Phone_Drop_0003.rad, RUNnumber3; no file or process launched",
+  "source_physics_changes": "None; originalcenter geometry/material/contact/velocity/gravity unchanged. Frozen20us AI dataset stays unchanged.",
+  "expected_additional_cycles_approx": 40389,
+  "expected_additional_wall_seconds_linear_estimate": 3607.5638943116983,
+  "estimate_limit": "About1hour at the measured same-model rate; step-size evolution and host paging can increase this. Actual later peak/rebound time is unknown.",
+  "proposed_output_selection": {
+    "animation_interval_s": 1e-05,
+    "stress_and_total_strain_IPs": [
+      "111",
+      "112",
+      "121",
+      "211"
+    ],
+    "reason": "All4valid TETRA10 IPs and BRICKIP111; avoids nonexistent-zeroIP output ofALL while preserving all actual nativeIP fields for this unchanged model. Output-only change, not yet tested.",
+    "additional_fields": [
+      "nativecellVM",
+      "nativecellEPSP",
+      "GPSnodalstress",
+      "Velocity"
+    ],
+    "history_interval_s": 1e-07,
+    "estimated_frames": 41,
+    "estimated_raw_animation_bytes_approx": 1876907102,
+    "size_estimate_basis": "Existing70780726B/frame contains16tensorfields; replacing8nonexistentIPfields saves8*(130218*6*4+81)B/frame, about45.78MB/frame. Confirm firstoutputheaders and inheritedALL reset before accepting estimate. KeepingALL costsabout2.90GB for41frames."
+  },
+  "resource_proposal_not_yet_active": {
+    "threads": 2,
+    "memory_cap_MiB": 600,
+    "system_free_memory_graceful_stop_MiB": 128,
+    "suggested_wall_cap_seconds": 7200
+  },
+  "decision_needed": "Root has asked the user whether the research should extend this baseline to0.5ms; no continuation is authorized before that answer. Output rate and stage endpoints can be chosen after that decision."
+}

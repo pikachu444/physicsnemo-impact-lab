@@ -1,0 +1,343 @@
+{
+  "data_manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+  "source_manifest_sha256": "a4a057dc9006228459282e7a80ad2a6d174834495b4af2b0c9262beff3489103",
+  "torch": "2.10.0+cu126",
+  "device": "cpu",
+  "probe_only_not_accuracy_validation": true,
+  "rows": [
+    {
+      "example": "crash",
+      "strategy": "time_conditional",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        7
+      ],
+      "loss": 1.0865825414657593,
+      "seconds": 0.1646887000024435,
+      "parameter_count": 42465,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 6,
+        "out_dim": 7,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11
+      },
+      "inference_shape": [
+        919,
+        10,
+        7
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": true
+    },
+    {
+      "example": "crash",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        10,
+        3
+      ],
+      "loss": 1.7308863401412964,
+      "seconds": 0.5578688999994483,
+      "parameter_count": 42173,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 5,
+        "out_dim": 3,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11,
+        "dt": 1.0,
+        "initial_vel": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "inference_shape": [
+        919,
+        10,
+        3
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": false
+    },
+    {
+      "example": "crash",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        10,
+        3
+      ],
+      "loss": 0.004377938807010651,
+      "seconds": 0.6085739000009198,
+      "parameter_count": 42173,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 5,
+        "out_dim": 3,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11,
+        "dt": 1.0,
+        "initial_vel": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "inference_shape": [
+        919,
+        10,
+        3
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": false
+    },
+    {
+      "example": "crash",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "RuntimeError",
+      "error": "The size of tensor a (7) must match the size of tensor b (3) at non-singleton dimension 1",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 133, in probe\n    model.train(); pred=model(sample,dataset.kinematic_stats)\n                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 248, in forward\n    outf * data_stats[\"node\"][\"norm_acc_std\"]\n    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: The size of tensor a (7) must match the size of tensor b (3) at non-singleton dimension 1\n"
+    },
+    {
+      "example": "crash",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "RuntimeError",
+      "error": "Sizes of tensors must match except in dimension 0. Expected size 3 but got size 7 for tensor number 1 in the list.",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 133, in probe\n    model.train(); pred=model(sample,dataset.kinematic_stats)\n                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 370, in forward\n    gt_seq = torch.cat(\n        [\n    ...<3 lines>...\n        dim=0,\n    )\nRuntimeError: Sizes of tensors must match except in dimension 0. Expected size 3 but got size 7 for tensor number 1 in the list.\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "time_conditional",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        7
+      ],
+      "loss": 1.0865825414657593,
+      "seconds": 0.048828300001332536,
+      "parameter_count": 42465,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 6,
+        "out_dim": 7,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11
+      },
+      "inference_shape": [
+        919,
+        10,
+        7
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": false
+    },
+    {
+      "example": "drop_test",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        10,
+        3
+      ],
+      "loss": 1.7308863401412964,
+      "seconds": 0.5669197999995959,
+      "parameter_count": 42173,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 5,
+        "out_dim": 3,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11,
+        "dt": 1.0,
+        "initial_vel": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "inference_shape": [
+        919,
+        10,
+        3
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": false
+    },
+    {
+      "example": "drop_test",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "forward_backward_update_pass",
+      "training_shape": [
+        919,
+        10,
+        3
+      ],
+      "loss": 0.004377938807010651,
+      "seconds": 0.5626998000007006,
+      "parameter_count": 42173,
+      "changed_parameters": 70,
+      "config": {
+        "n_layers": 2,
+        "n_hidden": 48,
+        "n_head": 4,
+        "mlp_ratio": 2,
+        "slice_num": 8,
+        "dropout": 0.0,
+        "use_te": false,
+        "time_input": false,
+        "functional_dim": 5,
+        "out_dim": 3,
+        "geometry_dim": 3,
+        "global_dim": 2,
+        "include_local_features": false,
+        "structured_shape": null,
+        "plus": false,
+        "concrete_dropout": false,
+        "state_mixing_mode": "weighted",
+        "attention_type": "GALE",
+        "num_time_steps": 11,
+        "dt": 1.0,
+        "initial_vel": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "inference_shape": [
+        919,
+        10,
+        3
+      ],
+      "inference_target_value_independence_max_abs": 0.0,
+      "input_time_key_mutated": false
+    },
+    {
+      "example": "drop_test",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "RuntimeError",
+      "error": "The size of tensor a (7) must match the size of tensor b (3) at non-singleton dimension 1",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 133, in probe\n    model.train(); pred=model(sample,dataset.kinematic_stats)\n                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 248, in forward\n    outf * data_stats[\"node\"][\"norm_acc_std\"]\n    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: The size of tensor a (7) must match the size of tensor b (3) at non-singleton dimension 1\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "RuntimeError",
+      "error": "Sizes of tensors must match except in dimension 0. Expected size 3 but got size 7 for tensor number 1 in the list.",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 133, in probe\n    model.train(); pred=model(sample,dataset.kinematic_stats)\n                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 377, in forward\n    gt_seq = torch.cat(\n        [\n    ...<3 lines>...\n        dim=0,\n    )\nRuntimeError: Sizes of tensors must match except in dimension 0. Expected size 3 but got size 7 for tensor number 1 in the list.\n"
+    }
+  ]
+}

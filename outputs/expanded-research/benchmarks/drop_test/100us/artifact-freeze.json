@@ -1,0 +1,90 @@
+{
+  "freeze_utc": "2026-10-15T03:59:21.251583+00:00",
+  "actual_FEM_completed": true,
+  "file_hashes": {
+    "30us-progress-field-statistics.json": {
+      "bytes": 799,
+      "sha256": "1f8da6e0e94f58fe4f3347c87c0f2afae6b8a6154089aaef4e7e9f57a0b7a437"
+    },
+    "50us-progress-field-statistics.json": {
+      "bytes": 801,
+      "sha256": "de0cb7793d2e6d826307b6f17e53608dbdb9b714a3490a63b4977e423ecbfb46"
+    },
+    "Cell_Phone_Drop_0002.ctl": {
+      "bytes": 22,
+      "sha256": "ab2a33a622d4117fb1a310b1aecd69973eeb69c1a1c6382eb8e0b85532cc789d"
+    },
+    "Cell_Phone_Drop_0002.out": {
+      "bytes": 21764,
+      "sha256": "54c6f31ac8e147a3d828cf2b107567b56d0ad2bb82f33e8e4b6f3af056632132"
+    },
+    "Cell_Phone_Drop_0002.rad": {
+      "bytes": 375,
+      "sha256": "e93612db7e74b13d647ed7ee4cb05839c7d147585921614eed7fc9491fd1f471"
+    },
+    "Cell_Phone_DropT02-converter.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Cell_Phone_DropT02-converter.stdout.log": {
+      "bytes": 124,
+      "sha256": "109448a33d2a0f84d9b49a0ccfef6e70e839d975c213ae781d8aeb9fa453fbf9"
+    },
+    "Cell_Phone_DropT02.csv": {
+      "bytes": 253824,
+      "sha256": "7d7549e57202ef1444d5c1284ae833c472f36fc5e0e0a3b463f24faf58259f23"
+    },
+    "engine.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "engine.stdout.log": {
+      "bytes": 14562,
+      "sha256": "291dadfa6ebd4ebc6130758d5901bb20e7fa9c5a32baae8b581bddd9283ac91a"
+    },
+    "execution-metrics.json": {
+      "bytes": 423,
+      "sha256": "48029244abce33d1814c1b034c4b6bba1eb2010d784069cebedc356a08bd21d0"
+    },
+    "frame-field-statistics.json": {
+      "bytes": 10952,
+      "sha256": "b0203ae6945d99574cdbdaacd00f6ef58d6e05b973f97f07cb83dbd4406ca99b"
+    },
+    "frozen-continuation-inputs.json": {
+      "bytes": 1738,
+      "sha256": "210b1144daa60a910682b8374fcb3b8692fb5e64f72c5d13423fd0910c8ee8c5"
+    },
+    "job-progress.json": {
+      "bytes": 443,
+      "sha256": "968feafc9dd30021e64566d82675f882fe84a8b39d3e6172590d7ef7748a5bf9"
+    },
+    "phone-100us-energy-momentum.png": {
+      "bytes": 78600,
+      "sha256": "af3c58f00c9a926e1d41b184c8a592b9e8a180db996962c3b40a6218413ca9ba"
+    },
+    "phone-100us-field-trends.png": {
+      "bytes": 113418,
+      "sha256": "404c2c4608d09621005ab4a4de661004d09365f14975b191b8110d3855dfefd6"
+    },
+    "phone-100us-last-frame-native.npz": {
+      "bytes": 26896544,
+      "sha256": "cf49a1f51a3be283547313016858765a74405a252f56b66d4658d3ad94d07062"
+    },
+    "restart-boundary-bitwise-check.json": {
+      "bytes": 1333,
+      "sha256": "850e515f78553e635bc40d14a1986914e3f2ed11f6afd2ae0f8c4fae49c0695b"
+    },
+    "restart-boundary-check.json": {
+      "bytes": 427,
+      "sha256": "b4bc0d07c3630754125c7a7459cc516ee3813264b5ccb161958c7d156a97ba2b"
+    },
+    "summary.json": {
+      "bytes": 3389,
+      "sha256": "1f7259e4ca1ae9fed80f23ba940a4fa99404a0e5e94e15a649a4fc72b79b581d"
+    }
+  },
+  "all130218_solids_active_at_last_frame": true,
+  "frozen20us_learning_cache_unchanged": "../doe/canonical/dataset_READY_evidence.json",
+  "full_peak_rebound_validated": false,
+  "no_further_FEM_extension_started": true
+}

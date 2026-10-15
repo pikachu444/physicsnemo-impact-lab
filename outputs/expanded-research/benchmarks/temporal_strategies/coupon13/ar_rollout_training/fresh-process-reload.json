@@ -1,0 +1,14 @@
+{
+  "fresh_process": true,
+  "strategy": "ar_rollout_training",
+  "checkpoint_sha256": "50dfbd9ec5d157f1053cda674bc2a2802d45361b020be26cc3d85e1091285738",
+  "prediction_max_abs_difference": 0.0,
+  "truth_max_abs_difference": 0.0,
+  "prediction_reproducible_at_atol_1e-4": true,
+  "physical_units": "mixed fields: per-field maximum differences below",
+  "per_field_max_abs_difference": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

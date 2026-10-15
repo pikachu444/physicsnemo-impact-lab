@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": "Stdlib byte/hash, AST syntax, actual source-copy/profile-override and rejection checks only; no framework import/data/install/FEM/GPU execution.",
+  "manifest_files_verified": 169,
+  "python_files_AST_parsed": 122,
+  "current_files_restored": 115,
+  "recorded_profile": "pod-coupon13",
+  "recorded_profile_files_restored": 115,
+  "overwrite_refused": true,
+  "invalid_manifest_paths_rejected": 9,
+  "wall_seconds": 5.051689799998712,
+  "restore_target": "work/expanded-repro-audit/acceptance-20261015T035824610352",
+  "source_manifest_sha256": "814778d99dbca659f39768944eb4b99264ed3446c70dcfd7d60ab26ed6146ccf",
+  "resource_observation_previous_same_test": {
+    "sampled_peak_rss_bytes": 22802432,
+    "sample_interval_seconds": 0.02,
+    "memory_cap_bytes": 100000000,
+    "note": "Same acceptance procedure was monitored before final single-source diagnostic refresh; this final report does not invent a new peak sample."
+  }
+}

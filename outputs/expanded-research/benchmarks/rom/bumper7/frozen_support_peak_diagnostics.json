@@ -1,0 +1,4095 @@
+{
+  "status": "all_separate_formula_metric_assertions_passed",
+  "scope": "Author-side diagnostic; no model or hyperparameter changes, no clipping or target replacements. Independent review is a separate gate.",
+  "audit_source_sha256": "f2737cd0f13beabbef828f2dba072803f2ab583ed8d0db16d7a0581c93674af5",
+  "cache_manifest_sha256": "af937bc0798d9362e7e5298e5387099ac6aa305dccbee31b123a103c03c35e41",
+  "shared_normalization_sha256": "213b946707404130ed9e0f72513629cf158c4d118ef79574fe79c2af5bd9aba3",
+  "same_contract_split_fields_and_normalization": true,
+  "support_definition": "Exact nonzero nodal truth, without a newly selected numerical threshold. Source derivation/projection is defined in the frozen cache. Nodal peaks do not establish original element or integration-point extrema.",
+  "source_field_definition": "Displacement is nodal solver output. VM upper/lower is the in-plane invariant sqrt(sxx^2-sxx*syy+syy^2+3*sxy^2) of each local shell tensor, projected by initial shell area. EPSP upper/lower is scalar solver output projected by the same rule. These are surface-specific nodal averaged fields, not raw-cell hotspots or through-thickness-averaged solver VONM.",
+  "source_strain_note": "EPSP is equivalent plastic strain. Total strain was not exported in these original 131 cases and is absent here.",
+  "physical_diagnostics": {
+    "pod_rbf": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.01691523838018705,
+        "recomputed_rmse": 2.4404597044931493,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 2.4404597044931493,
+        "relative_l2_on_nonzero_truth_support": 0.01691523838018705,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -329.8511657714844,
+        "prediction_max": 14.482434272766113,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -266.4855651855469,
+            "prediction_at_truth_peak": -265.5589599609375,
+            "absolute_error_at_truth_peak": 0.926605224609375,
+            "magnitude_underprediction_at_truth_peak": 0.926605224609375
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -302.4269714355469,
+            "prediction_at_truth_peak": -300.5724182128906,
+            "absolute_error_at_truth_peak": 1.85455322265625,
+            "magnitude_underprediction_at_truth_peak": 1.85455322265625
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -275.974853515625,
+            "prediction_at_truth_peak": -275.9058532714844,
+            "absolute_error_at_truth_peak": 0.069000244140625,
+            "magnitude_underprediction_at_truth_peak": 0.069000244140625
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -326.2707214355469,
+            "prediction_at_truth_peak": -325.5085144042969,
+            "absolute_error_at_truth_peak": 0.76220703125,
+            "magnitude_underprediction_at_truth_peak": 0.76220703125
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -315.3874206542969,
+            "prediction_at_truth_peak": -311.064453125,
+            "absolute_error_at_truth_peak": 4.322967529296875,
+            "magnitude_underprediction_at_truth_peak": 4.322967529296875
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -324.76983642578125,
+            "prediction_at_truth_peak": -329.8511657714844,
+            "absolute_error_at_truth_peak": 5.081329345703125,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 6982,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -266.4646301269531,
+            "prediction_at_truth_peak": -264.0289001464844,
+            "absolute_error_at_truth_peak": 2.43572998046875,
+            "magnitude_underprediction_at_truth_peak": 2.43572998046875
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.13387224351654906,
+        "recomputed_rmse": 3.0021184311422267,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 3.014043915439687,
+        "relative_l2_on_nonzero_truth_support": 0.13387224351654906,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -56.80705642700195,
+        "prediction_max": 66.87671661376953,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 8062,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -44.84531784057617,
+            "prediction_at_truth_peak": -43.313472747802734,
+            "absolute_error_at_truth_peak": 1.5318450927734375,
+            "magnitude_underprediction_at_truth_peak": 1.5318450927734375
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 872,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 53.80976867675781,
+            "prediction_at_truth_peak": 53.86582946777344,
+            "absolute_error_at_truth_peak": 0.056060791015625,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 47,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 44.01810073852539,
+            "prediction_at_truth_peak": 43.84585952758789,
+            "absolute_error_at_truth_peak": 0.1722412109375,
+            "magnitude_underprediction_at_truth_peak": 0.1722412109375
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 102,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 68.78199005126953,
+            "prediction_at_truth_peak": 66.84590148925781,
+            "absolute_error_at_truth_peak": 1.9360885620117188,
+            "magnitude_underprediction_at_truth_peak": 1.9360885620117188
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 7747,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -59.22911834716797,
+            "prediction_at_truth_peak": -56.79170608520508,
+            "absolute_error_at_truth_peak": 2.4374122619628906,
+            "magnitude_underprediction_at_truth_peak": 2.4374122619628906
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 860,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 63.598785400390625,
+            "prediction_at_truth_peak": 63.583946228027344,
+            "absolute_error_at_truth_peak": 0.01483917236328125,
+            "magnitude_underprediction_at_truth_peak": 0.01483917236328125
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 686,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 42.708621978759766,
+            "prediction_at_truth_peak": 32.16447830200195,
+            "absolute_error_at_truth_peak": 10.544143676757812,
+            "magnitude_underprediction_at_truth_peak": 10.544143676757812
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.6473925886493982,
+        "recomputed_rmse": 2.1540667547397323,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 2.1626234755515616,
+        "relative_l2_on_nonzero_truth_support": 0.6473925886493982,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -22.248912811279297,
+        "prediction_max": 24.765153884887695,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 5220,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 29.67379379272461,
+            "prediction_at_truth_peak": 13.990415573120117,
+            "absolute_error_at_truth_peak": 15.683378219604492,
+            "magnitude_underprediction_at_truth_peak": 15.683378219604492
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 8875,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.316429138183594,
+            "prediction_at_truth_peak": 11.645211219787598,
+            "absolute_error_at_truth_peak": 19.671217918395996,
+            "magnitude_underprediction_at_truth_peak": 19.671217918395996
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 10100,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -27.40303611755371,
+            "prediction_at_truth_peak": -10.092338562011719,
+            "absolute_error_at_truth_peak": 17.310697555541992,
+            "magnitude_underprediction_at_truth_peak": 17.310697555541992
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 10172,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -28.170299530029297,
+            "prediction_at_truth_peak": -4.582659721374512,
+            "absolute_error_at_truth_peak": 23.587639808654785,
+            "magnitude_underprediction_at_truth_peak": 23.587639808654785
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2032,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 32.33177947998047,
+            "prediction_at_truth_peak": 3.7959702014923096,
+            "absolute_error_at_truth_peak": 28.53580927848816,
+            "magnitude_underprediction_at_truth_peak": 28.53580927848816
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 8926,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.45374298095703,
+            "prediction_at_truth_peak": 12.094972610473633,
+            "absolute_error_at_truth_peak": 19.3587703704834,
+            "magnitude_underprediction_at_truth_peak": 19.3587703704834
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 8764,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 28.55368423461914,
+            "prediction_at_truth_peak": 11.337624549865723,
+            "absolute_error_at_truth_peak": 17.216059684753418,
+            "magnitude_underprediction_at_truth_peak": 17.216059684753418
+          }
+        ]
+      },
+      "inplane_vm_upper": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.1505935339686049,
+        "recomputed_rmse": 0.0433569892435961,
+        "rmse_in_MPa_if_stress_GPa": 43.356989243596104,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.0433569892435961,
+        "relative_l2_on_nonzero_truth_support": 0.1505935339686049,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 201,
+        "negative_fraction_if_nonnegative_field": 0.00020997649516845128,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 201,
+        "prediction_min": -0.049826398491859436,
+        "prediction_max": 0.7800689935684204,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8181783556938171,
+            "prediction_at_truth_peak": 0.7288801670074463,
+            "absolute_error_at_truth_peak": 0.08929818868637085,
+            "magnitude_underprediction_at_truth_peak": 0.08929818868637085
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 10102,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8255447149276733,
+            "prediction_at_truth_peak": 0.6304444670677185,
+            "absolute_error_at_truth_peak": 0.19510024785995483,
+            "magnitude_underprediction_at_truth_peak": 0.19510024785995483
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8271451592445374,
+            "prediction_at_truth_peak": 0.7776097655296326,
+            "absolute_error_at_truth_peak": 0.049535393714904785,
+            "magnitude_underprediction_at_truth_peak": 0.049535393714904785
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8141143321990967,
+            "prediction_at_truth_peak": 0.6625574231147766,
+            "absolute_error_at_truth_peak": 0.15155690908432007,
+            "magnitude_underprediction_at_truth_peak": 0.15155690908432007
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8184420466423035,
+            "prediction_at_truth_peak": 0.674317479133606,
+            "absolute_error_at_truth_peak": 0.1441245675086975,
+            "magnitude_underprediction_at_truth_peak": 0.1441245675086975
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.811743438243866,
+            "prediction_at_truth_peak": 0.6721787452697754,
+            "absolute_error_at_truth_peak": 0.13956469297409058,
+            "magnitude_underprediction_at_truth_peak": 0.13956469297409058
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8267284631729126,
+            "prediction_at_truth_peak": 0.767764151096344,
+            "absolute_error_at_truth_peak": 0.058964312076568604,
+            "magnitude_underprediction_at_truth_peak": 0.058964312076568604
+          }
+        ]
+      },
+      "inplane_vm_lower": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.1557179095082521,
+        "recomputed_rmse": 0.04520101984860168,
+        "rmse_in_MPa_if_stress_GPa": 45.201019848601675,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.04520101984860168,
+        "relative_l2_on_nonzero_truth_support": 0.1557179095082521,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 191,
+        "negative_fraction_if_nonnegative_field": 0.00019952990336902584,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 191,
+        "prediction_min": -0.03838817775249481,
+        "prediction_max": 0.7707201838493347,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 5,
+            "truth_peak_time": 60.0,
+            "truth_value": 0.8299959897994995,
+            "prediction_at_truth_peak": 0.7432230114936829,
+            "absolute_error_at_truth_peak": 0.08677297830581665,
+            "magnitude_underprediction_at_truth_peak": 0.08677297830581665
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8396779298782349,
+            "prediction_at_truth_peak": 0.5698249936103821,
+            "absolute_error_at_truth_peak": 0.2698529362678528,
+            "magnitude_underprediction_at_truth_peak": 0.2698529362678528
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8488867878913879,
+            "prediction_at_truth_peak": 0.7659220695495605,
+            "absolute_error_at_truth_peak": 0.08296471834182739,
+            "magnitude_underprediction_at_truth_peak": 0.08296471834182739
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8300899863243103,
+            "prediction_at_truth_peak": 0.6564260721206665,
+            "absolute_error_at_truth_peak": 0.1736639142036438,
+            "magnitude_underprediction_at_truth_peak": 0.1736639142036438
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8367748856544495,
+            "prediction_at_truth_peak": 0.6716071367263794,
+            "absolute_error_at_truth_peak": 0.16516774892807007,
+            "magnitude_underprediction_at_truth_peak": 0.16516774892807007
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10053,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8157538771629333,
+            "prediction_at_truth_peak": 0.5910053849220276,
+            "absolute_error_at_truth_peak": 0.22474849224090576,
+            "magnitude_underprediction_at_truth_peak": 0.22474849224090576
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.861217737197876,
+            "prediction_at_truth_peak": 0.7413716316223145,
+            "absolute_error_at_truth_peak": 0.11984610557556152,
+            "magnitude_underprediction_at_truth_peak": 0.11984610557556152
+          }
+        ]
+      },
+      "EPSP_upper": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.5184886538899989,
+        "recomputed_rmse": 0.011865299652870177,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 361429,
+        "truth_zero_support_count": 595821,
+        "rmse_on_nonzero_truth_support": 0.018478379596401823,
+        "relative_l2_on_nonzero_truth_support": 0.4961617052958083,
+        "rmse_on_zero_truth_support": 0.004365833117078608,
+        "negative_count_if_nonnegative_field": 208644,
+        "negative_fraction_if_nonnegative_field": 0.2179618699399321,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 15056,
+        "prediction_min": -0.06594263762235641,
+        "prediction_max": 0.5727379322052002,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 13221,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.46271732449531555,
+            "prediction_at_truth_peak": 0.4152863621711731,
+            "absolute_error_at_truth_peak": 0.047430962324142456,
+            "magnitude_underprediction_at_truth_peak": 0.047430962324142456
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.48883387446403503,
+            "prediction_at_truth_peak": 0.49745413661003113,
+            "absolute_error_at_truth_peak": 0.008620262145996094,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43355509638786316,
+            "prediction_at_truth_peak": 0.23436182737350464,
+            "absolute_error_at_truth_peak": 0.19919326901435852,
+            "magnitude_underprediction_at_truth_peak": 0.19919326901435852
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.5958960056304932,
+            "prediction_at_truth_peak": 0.551325261592865,
+            "absolute_error_at_truth_peak": 0.044570744037628174,
+            "magnitude_underprediction_at_truth_peak": 0.044570744037628174
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 12659,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.5451143980026245,
+            "prediction_at_truth_peak": 0.49502792954444885,
+            "absolute_error_at_truth_peak": 0.05008646845817566,
+            "magnitude_underprediction_at_truth_peak": 0.05008646845817566
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.571723997592926,
+            "prediction_at_truth_peak": 0.5727379322052002,
+            "absolute_error_at_truth_peak": 0.00101393461227417,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43133097887039185,
+            "prediction_at_truth_peak": 0.244320809841156,
+            "absolute_error_at_truth_peak": 0.18701016902923584,
+            "magnitude_underprediction_at_truth_peak": 0.18701016902923584
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 34559,
+              "minimum_delta": -0.018460555002093315,
+              "maximum_delta": 0.1758849669713527,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.1351632312871516e-05,
+                0.0007102840114384888,
+                0.002490975130349395,
+                0.018460555002093315
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                843700.0,
+                12505807.7125,
+                19132167.029999975,
+                32858564.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.20034637488424778,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 23936,
+              "minimum_delta": -0.024000351317226887,
+              "maximum_delta": 0.15732944011688232,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.7598707927390933e-05,
+                0.0010802294709719718,
+                0.0037624508782756264,
+                0.024000351317226887
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                766385.0,
+                13312110.946166992,
+                18764498.075000018,
+                31863720.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14988146722316742,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 31690,
+              "minimum_delta": -0.007412945851683617,
+              "maximum_delta": 0.13801244646310806,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.1946516508487548e-05,
+                0.0004366083943750709,
+                0.0012941706087440255,
+                0.007412945851683617
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                848622.0,
+                12856038.112499999,
+                18493393.33250001,
+                32375727.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1402110606431961,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 29543,
+              "minimum_delta": -0.013434646651148796,
+              "maximum_delta": 0.17992807924747467,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.6081764847040176e-05,
+                0.0009860817517619578,
+                0.0026288607716560123,
+                0.013434646651148796
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                996517.0,
+                13617419.309374997,
+                19356778.409999955,
+                32997974.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1919291689991951,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 26361,
+              "minimum_delta": -0.013509838841855526,
+              "maximum_delta": 0.15722354501485825,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.908284320961684e-05,
+                0.0008688476518727839,
+                0.0025979658588767443,
+                0.013509838841855526
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1368639.0,
+                13775774.0,
+                19830674.40000003,
+                32856835.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.166188582777977,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 28983,
+              "minimum_delta": -0.022799795493483543,
+              "maximum_delta": 0.17209340631961823,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.317928010597825e-05,
+                0.0011767709424020678,
+                0.0036060428759083153,
+                0.022799795493483543
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1911369.0,
+                14409591.7,
+                19634650.440000005,
+                32839158.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1717970371246338,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 27482,
+              "minimum_delta": -0.012469649314880371,
+              "maximum_delta": 0.08219312969595194,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.116763400612399e-05,
+                0.0008371669362531968,
+                0.0021282867738045747,
+                0.012469649314880371
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                908753.0,
+                12873666.421874994,
+                19113003.38999997,
+                31795226.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14339091256260872,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      },
+      "EPSP_lower": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.5502177047931419,
+        "recomputed_rmse": 0.012558448010908442,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 371515,
+        "truth_zero_support_count": 585735,
+        "rmse_on_nonzero_truth_support": 0.01924681020350199,
+        "relative_l2_on_nonzero_truth_support": 0.525330772795108,
+        "rmse_on_zero_truth_support": 0.0047737996283163005,
+        "negative_count_if_nonnegative_field": 215197,
+        "negative_fraction_if_nonnegative_field": 0.2248075215460956,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 16246,
+        "prediction_min": -0.06765114516019821,
+        "prediction_max": 0.41335511207580566,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.4504644274711609,
+            "prediction_at_truth_peak": 0.23482097685337067,
+            "absolute_error_at_truth_peak": 0.21564345061779022,
+            "magnitude_underprediction_at_truth_peak": 0.21564345061779022
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.473239541053772,
+            "prediction_at_truth_peak": 0.14461712539196014,
+            "absolute_error_at_truth_peak": 0.32862241566181183,
+            "magnitude_underprediction_at_truth_peak": 0.32862241566181183
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.49654635787010193,
+            "prediction_at_truth_peak": 0.22074607014656067,
+            "absolute_error_at_truth_peak": 0.27580028772354126,
+            "magnitude_underprediction_at_truth_peak": 0.27580028772354126
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.44691288471221924,
+            "prediction_at_truth_peak": 0.07755733281373978,
+            "absolute_error_at_truth_peak": 0.36935555189847946,
+            "magnitude_underprediction_at_truth_peak": 0.36935555189847946
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.466749906539917,
+            "prediction_at_truth_peak": 0.12916991114616394,
+            "absolute_error_at_truth_peak": 0.33757999539375305,
+            "magnitude_underprediction_at_truth_peak": 0.33757999539375305
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.42412105202674866,
+            "prediction_at_truth_peak": 0.07976507395505905,
+            "absolute_error_at_truth_peak": 0.3443559780716896,
+            "magnitude_underprediction_at_truth_peak": 0.3443559780716896
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.532607913017273,
+            "prediction_at_truth_peak": 0.27730002999305725,
+            "absolute_error_at_truth_peak": 0.2553078830242157,
+            "magnitude_underprediction_at_truth_peak": 0.2553078830242157
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 35434,
+              "minimum_delta": -0.01964370347559452,
+              "maximum_delta": 0.16547226579859853,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.183546621381538e-05,
+                0.0007307892839889961,
+                0.002609315717127167,
+                0.01964370347559452
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                852948.0,
+                12205343.28125,
+                18554305.5775,
+                33091849.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.17995101667474955,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 24540,
+              "minimum_delta": -0.024806272238492966,
+              "maximum_delta": 0.12539914931403473,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.7572418073541485e-05,
+                0.00113892403896898,
+                0.0039205903513357095,
+                0.024806272238492966
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                784352.0,
+                13004004.6375,
+                19153690.995000005,
+                33299837.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14729319512844086,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 32846,
+              "minimum_delta": -0.007421358488500118,
+              "maximum_delta": 0.11458994186250493,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.2343982234597206e-05,
+                0.0004583524860208854,
+                0.001336650503799316,
+                0.007421358488500118
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                854388.0,
+                12887777.375,
+                18324301.07499999,
+                32989145.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14111094176769257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 30139,
+              "minimum_delta": -0.0121828094124794,
+              "maximum_delta": 0.14905929565429688,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.8016136386431754e-05,
+                0.0010404765838757156,
+                0.0027323881909251187,
+                0.0121828094124794
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1119244.0,
+                13899627.543359363,
+                19648390.184999973,
+                32065594.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1504404917359352,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 26836,
+              "minimum_delta": -0.013440042734146118,
+              "maximum_delta": 0.12165793776512146,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.0689013581431936e-05,
+                0.0009300108067691326,
+                0.0027792199514806676,
+                0.013440042734146118
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1480232.5,
+                13682232.21875,
+                20039073.800000023,
+                32053770.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1399286538362503,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 29736,
+              "minimum_delta": -0.02258853055536747,
+              "maximum_delta": 0.15282380557619035,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.337666228413582e-05,
+                0.0012149929534643888,
+                0.0037674255491765623,
+                0.02258853055536747
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1873851.5,
+                14343383.328125,
+                19245172.700000044,
+                31391909.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1575669921876397,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 28222,
+              "minimum_delta": -0.01209830678999424,
+              "maximum_delta": 0.08156711654737592,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.2872952147045e-05,
+                0.0008663223532494128,
+                0.002198561070254075,
+                0.01209830678999424
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                891893.0,
+                12818336.910937496,
+                19022535.695000038,
+                31864167.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14119312167167664,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    },
+    "pod_ridge": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.04534819352893539,
+        "recomputed_rmse": 6.542647315485246,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 6.542647315485246,
+        "relative_l2_on_nonzero_truth_support": 0.04534819352893539,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -328.6387023925781,
+        "prediction_max": -3.5584750175476074,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -266.4855651855469,
+            "prediction_at_truth_peak": -263.6224670410156,
+            "absolute_error_at_truth_peak": 2.86309814453125,
+            "magnitude_underprediction_at_truth_peak": 2.86309814453125
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -302.4269714355469,
+            "prediction_at_truth_peak": -296.0984802246094,
+            "absolute_error_at_truth_peak": 6.3284912109375,
+            "magnitude_underprediction_at_truth_peak": 6.3284912109375
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -275.974853515625,
+            "prediction_at_truth_peak": -269.9855041503906,
+            "absolute_error_at_truth_peak": 5.989349365234375,
+            "magnitude_underprediction_at_truth_peak": 5.989349365234375
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -326.2707214355469,
+            "prediction_at_truth_peak": -320.95550537109375,
+            "absolute_error_at_truth_peak": 5.315216064453125,
+            "magnitude_underprediction_at_truth_peak": 5.315216064453125
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -315.3874206542969,
+            "prediction_at_truth_peak": -310.18670654296875,
+            "absolute_error_at_truth_peak": 5.200714111328125,
+            "magnitude_underprediction_at_truth_peak": 5.200714111328125
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -324.76983642578125,
+            "prediction_at_truth_peak": -317.7203674316406,
+            "absolute_error_at_truth_peak": 7.049468994140625,
+            "magnitude_underprediction_at_truth_peak": 7.049468994140625
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 6982,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -266.4646301269531,
+            "prediction_at_truth_peak": -270.16058349609375,
+            "absolute_error_at_truth_peak": 3.695953369140625,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.2909597376314291,
+        "recomputed_rmse": 6.524844643808781,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 6.550763652045077,
+        "relative_l2_on_nonzero_truth_support": 0.2909597376314291,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -55.60198974609375,
+        "prediction_max": 61.80946350097656,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 8062,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -44.84531784057617,
+            "prediction_at_truth_peak": -45.77083969116211,
+            "absolute_error_at_truth_peak": 0.9255218505859375,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 872,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 53.80976867675781,
+            "prediction_at_truth_peak": 46.48500442504883,
+            "absolute_error_at_truth_peak": 7.324764251708984,
+            "magnitude_underprediction_at_truth_peak": 7.324764251708984
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 47,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 44.01810073852539,
+            "prediction_at_truth_peak": 40.59591293334961,
+            "absolute_error_at_truth_peak": 3.4221878051757812,
+            "magnitude_underprediction_at_truth_peak": 3.4221878051757812
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 102,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 68.78199005126953,
+            "prediction_at_truth_peak": 46.94233703613281,
+            "absolute_error_at_truth_peak": 21.83965301513672,
+            "magnitude_underprediction_at_truth_peak": 21.83965301513672
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 7747,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -59.22911834716797,
+            "prediction_at_truth_peak": -50.61597442626953,
+            "absolute_error_at_truth_peak": 8.613143920898438,
+            "magnitude_underprediction_at_truth_peak": 8.613143920898438
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 860,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 63.598785400390625,
+            "prediction_at_truth_peak": 58.647972106933594,
+            "absolute_error_at_truth_peak": 4.950813293457031,
+            "magnitude_underprediction_at_truth_peak": 4.950813293457031
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 686,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 42.708621978759766,
+            "prediction_at_truth_peak": 31.613378524780273,
+            "absolute_error_at_truth_peak": 11.095243453979492,
+            "magnitude_underprediction_at_truth_peak": 11.095243453979492
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.8601859080439116,
+        "recomputed_rmse": 2.862093109960599,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 2.8734623637803822,
+        "relative_l2_on_nonzero_truth_support": 0.8601859080439116,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -20.053192138671875,
+        "prediction_max": 20.98583984375,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 5220,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 29.67379379272461,
+            "prediction_at_truth_peak": 6.3655476570129395,
+            "absolute_error_at_truth_peak": 23.30824613571167,
+            "magnitude_underprediction_at_truth_peak": 23.30824613571167
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 8875,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.316429138183594,
+            "prediction_at_truth_peak": 3.9688029289245605,
+            "absolute_error_at_truth_peak": 27.347626209259033,
+            "magnitude_underprediction_at_truth_peak": 27.347626209259033
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 10100,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -27.40303611755371,
+            "prediction_at_truth_peak": 0.5526142120361328,
+            "absolute_error_at_truth_peak": 27.955650329589844,
+            "magnitude_underprediction_at_truth_peak": 26.850421905517578
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 10172,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -28.170299530029297,
+            "prediction_at_truth_peak": 1.4060996770858765,
+            "absolute_error_at_truth_peak": 29.576399207115173,
+            "magnitude_underprediction_at_truth_peak": 26.76419985294342
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2032,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 32.33177947998047,
+            "prediction_at_truth_peak": 3.8914682865142822,
+            "absolute_error_at_truth_peak": 28.440311193466187,
+            "magnitude_underprediction_at_truth_peak": 28.440311193466187
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 8926,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.45374298095703,
+            "prediction_at_truth_peak": 2.2132983207702637,
+            "absolute_error_at_truth_peak": 29.240444660186768,
+            "magnitude_underprediction_at_truth_peak": 29.240444660186768
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 8764,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 28.55368423461914,
+            "prediction_at_truth_peak": 4.567590236663818,
+            "absolute_error_at_truth_peak": 23.986093997955322,
+            "magnitude_underprediction_at_truth_peak": 23.986093997955322
+          }
+        ]
+      },
+      "inplane_vm_upper": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.2817048965828651,
+        "recomputed_rmse": 0.08110491764910659,
+        "rmse_in_MPa_if_stress_GPa": 81.10491764910658,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.08110491764910659,
+        "relative_l2_on_nonzero_truth_support": 0.2817048965828651,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 3067,
+        "negative_fraction_if_nonnegative_field": 0.0032039697048837816,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 3067,
+        "prediction_min": -0.09236953407526016,
+        "prediction_max": 0.7953664064407349,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8181783556938171,
+            "prediction_at_truth_peak": 0.5722127556800842,
+            "absolute_error_at_truth_peak": 0.2459656000137329,
+            "magnitude_underprediction_at_truth_peak": 0.2459656000137329
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 10102,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8255447149276733,
+            "prediction_at_truth_peak": 0.38794243335723877,
+            "absolute_error_at_truth_peak": 0.43760228157043457,
+            "magnitude_underprediction_at_truth_peak": 0.43760228157043457
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8271451592445374,
+            "prediction_at_truth_peak": 0.38185998797416687,
+            "absolute_error_at_truth_peak": 0.4452851712703705,
+            "magnitude_underprediction_at_truth_peak": 0.4452851712703705
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8141143321990967,
+            "prediction_at_truth_peak": 0.47742265462875366,
+            "absolute_error_at_truth_peak": 0.336691677570343,
+            "magnitude_underprediction_at_truth_peak": 0.336691677570343
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8184420466423035,
+            "prediction_at_truth_peak": 0.40555474162101746,
+            "absolute_error_at_truth_peak": 0.412887305021286,
+            "magnitude_underprediction_at_truth_peak": 0.412887305021286
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.811743438243866,
+            "prediction_at_truth_peak": 0.3426373302936554,
+            "absolute_error_at_truth_peak": 0.46910610795021057,
+            "magnitude_underprediction_at_truth_peak": 0.46910610795021057
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8267284631729126,
+            "prediction_at_truth_peak": 0.4078722298145294,
+            "absolute_error_at_truth_peak": 0.4188562333583832,
+            "magnitude_underprediction_at_truth_peak": 0.4188562333583832
+          }
+        ]
+      },
+      "inplane_vm_lower": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.2856387819276314,
+        "recomputed_rmse": 0.08291380414888667,
+        "rmse_in_MPa_if_stress_GPa": 82.91380414888667,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.08291380414888667,
+        "relative_l2_on_nonzero_truth_support": 0.2856387819276314,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 2625,
+        "negative_fraction_if_nonnegative_field": 0.002742230347349177,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 2625,
+        "prediction_min": -0.08915924280881882,
+        "prediction_max": 0.8131725788116455,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 5,
+            "truth_peak_time": 60.0,
+            "truth_value": 0.8299959897994995,
+            "prediction_at_truth_peak": 0.5999187231063843,
+            "absolute_error_at_truth_peak": 0.23007726669311523,
+            "magnitude_underprediction_at_truth_peak": 0.23007726669311523
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8396779298782349,
+            "prediction_at_truth_peak": 0.37878546118736267,
+            "absolute_error_at_truth_peak": 0.4608924686908722,
+            "magnitude_underprediction_at_truth_peak": 0.4608924686908722
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8488867878913879,
+            "prediction_at_truth_peak": 0.39185401797294617,
+            "absolute_error_at_truth_peak": 0.4570327699184418,
+            "magnitude_underprediction_at_truth_peak": 0.4570327699184418
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8300899863243103,
+            "prediction_at_truth_peak": 0.4886721968650818,
+            "absolute_error_at_truth_peak": 0.3414177894592285,
+            "magnitude_underprediction_at_truth_peak": 0.3414177894592285
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8367748856544495,
+            "prediction_at_truth_peak": 0.3932742476463318,
+            "absolute_error_at_truth_peak": 0.4435006380081177,
+            "magnitude_underprediction_at_truth_peak": 0.4435006380081177
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10053,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8157538771629333,
+            "prediction_at_truth_peak": 0.33886799216270447,
+            "absolute_error_at_truth_peak": 0.4768858850002289,
+            "magnitude_underprediction_at_truth_peak": 0.4768858850002289
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.861217737197876,
+            "prediction_at_truth_peak": 0.4049272835254669,
+            "absolute_error_at_truth_peak": 0.45629045367240906,
+            "magnitude_underprediction_at_truth_peak": 0.45629045367240906
+          }
+        ]
+      },
+      "EPSP_upper": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.6830750026189555,
+        "recomputed_rmse": 0.015631758825678178,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 361429,
+        "truth_zero_support_count": 595821,
+        "rmse_on_nonzero_truth_support": 0.02383642953814819,
+        "relative_l2_on_nonzero_truth_support": 0.6400303374065291,
+        "rmse_on_zero_truth_support": 0.006922311146869436,
+        "negative_count_if_nonnegative_field": 187343,
+        "negative_fraction_if_nonnegative_field": 0.19570958474797598,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 16907,
+        "prediction_min": -0.041718848049640656,
+        "prediction_max": 0.5153054594993591,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 13221,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.46271732449531555,
+            "prediction_at_truth_peak": 0.468343049287796,
+            "absolute_error_at_truth_peak": 0.005625724792480469,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.48883387446403503,
+            "prediction_at_truth_peak": 0.3902987241744995,
+            "absolute_error_at_truth_peak": 0.09853515028953552,
+            "magnitude_underprediction_at_truth_peak": 0.09853515028953552
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43355509638786316,
+            "prediction_at_truth_peak": 0.0543232187628746,
+            "absolute_error_at_truth_peak": 0.37923187762498856,
+            "magnitude_underprediction_at_truth_peak": 0.37923187762498856
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.5958960056304932,
+            "prediction_at_truth_peak": 0.31957027316093445,
+            "absolute_error_at_truth_peak": 0.2763257324695587,
+            "magnitude_underprediction_at_truth_peak": 0.2763257324695587
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 12659,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.5451143980026245,
+            "prediction_at_truth_peak": 0.4189426302909851,
+            "absolute_error_at_truth_peak": 0.1261717677116394,
+            "magnitude_underprediction_at_truth_peak": 0.1261717677116394
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.571723997592926,
+            "prediction_at_truth_peak": 0.5105058550834656,
+            "absolute_error_at_truth_peak": 0.06121814250946045,
+            "magnitude_underprediction_at_truth_peak": 0.06121814250946045
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43133097887039185,
+            "prediction_at_truth_peak": 0.0622297003865242,
+            "absolute_error_at_truth_peak": 0.36910127848386765,
+            "magnitude_underprediction_at_truth_peak": 0.36910127848386765
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 39888,
+              "minimum_delta": -0.019010831601917744,
+              "maximum_delta": 0.18410241091623902,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.30441265848458e-05,
+                0.001293420053775664,
+                0.003798835789784787,
+                0.019010831601917744
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                965069.0,
+                12502217.831250006,
+                18787291.887499984,
+                31050234.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.20034637488424778,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 19762,
+              "minimum_delta": -0.008052298333495855,
+              "maximum_delta": 0.12177519942633808,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.003329377155751e-05,
+                0.0008572314109187576,
+                0.0023695846693590275,
+                0.008052298333495855
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1351943.0,
+                14022413.843750002,
+                19786350.204999983,
+                33129718.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14988146722316742,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 24850,
+              "minimum_delta": -0.007769998162984848,
+              "maximum_delta": 0.12948056869208813,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.7804137314669788e-05,
+                0.0006811459029449904,
+                0.0019735572207719085,
+                0.007769998162984848
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                841953.5,
+                12831294.574999997,
+                16285237.446562486,
+                33078543.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1402110606431961,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 13858,
+              "minimum_delta": -0.011794702149927616,
+              "maximum_delta": 0.09913574904203415,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                6.459496222532835e-05,
+                0.0014377879968378688,
+                0.003952013719826947,
+                0.011794702149927616
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1812119.5,
+                15392444.681249999,
+                21092582.40500001,
+                33200265.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1919291689991951,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 18090,
+              "minimum_delta": -0.008749031461775303,
+              "maximum_delta": 0.1307411789894104,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.0678438381291926e-05,
+                0.0009218893188517537,
+                0.0024716203543357555,
+                0.008749031461775303
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1664252.5,
+                14300830.368749997,
+                19573982.835000016,
+                32362116.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.166188582777977,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 18614,
+              "minimum_delta": -0.011915016162674874,
+              "maximum_delta": 0.16145832790061831,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.283320595277473e-05,
+                0.0008783048047916944,
+                0.0023494650656357384,
+                0.011915016162674874
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1639556.5,
+                14945440.7,
+                21461528.244999968,
+                32583576.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1717970371246338,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 31355,
+              "minimum_delta": -0.01033972343429923,
+              "maximum_delta": 0.08716617431491613,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.3246316775148443e-05,
+                0.0008747000712901352,
+                0.002404043239221208,
+                0.01033972343429923
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1446202.0,
+                13907069.549999995,
+                17382084.559999973,
+                31591692.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.4901161193847656e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14339091256260872,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      },
+      "EPSP_lower": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.7027737744980355,
+        "recomputed_rmse": 0.01604046513512605,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 371515,
+        "truth_zero_support_count": 585735,
+        "rmse_on_nonzero_truth_support": 0.024183009287603686,
+        "relative_l2_on_nonzero_truth_support": 0.6600615282867281,
+        "rmse_on_zero_truth_support": 0.00703981755377731,
+        "negative_count_if_nonnegative_field": 191249,
+        "negative_fraction_if_nonnegative_field": 0.19979002350483155,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 20577,
+        "prediction_min": -0.0399814173579216,
+        "prediction_max": 0.3978061079978943,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.4504644274711609,
+            "prediction_at_truth_peak": 0.1431240439414978,
+            "absolute_error_at_truth_peak": 0.3073403835296631,
+            "magnitude_underprediction_at_truth_peak": 0.3073403835296631
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.473239541053772,
+            "prediction_at_truth_peak": 0.051753442734479904,
+            "absolute_error_at_truth_peak": 0.42148609831929207,
+            "magnitude_underprediction_at_truth_peak": 0.42148609831929207
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.49654635787010193,
+            "prediction_at_truth_peak": 0.05172501876950264,
+            "absolute_error_at_truth_peak": 0.4448213391005993,
+            "magnitude_underprediction_at_truth_peak": 0.4448213391005993
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.44691288471221924,
+            "prediction_at_truth_peak": 0.06199810281395912,
+            "absolute_error_at_truth_peak": 0.3849147818982601,
+            "magnitude_underprediction_at_truth_peak": 0.3849147818982601
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.466749906539917,
+            "prediction_at_truth_peak": 0.05198248475790024,
+            "absolute_error_at_truth_peak": 0.41476742178201675,
+            "magnitude_underprediction_at_truth_peak": 0.41476742178201675
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.42412105202674866,
+            "prediction_at_truth_peak": 0.02101343497633934,
+            "absolute_error_at_truth_peak": 0.4031076170504093,
+            "magnitude_underprediction_at_truth_peak": 0.4031076170504093
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.532607913017273,
+            "prediction_at_truth_peak": 0.06947968900203705,
+            "absolute_error_at_truth_peak": 0.4631282240152359,
+            "magnitude_underprediction_at_truth_peak": 0.4631282240152359
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 40256,
+              "minimum_delta": -0.018055207328870893,
+              "maximum_delta": 0.17444614437408745,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.484018427319825e-05,
+                0.001301563112065196,
+                0.003762366593582532,
+                0.018055207328870893
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                970909.75,
+                12366356.4375,
+                18180881.999999996,
+                32552713.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.17995101667474955,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 20046,
+              "minimum_delta": -0.009445360396057367,
+              "maximum_delta": 0.1155664084944874,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.0315790101885796e-05,
+                0.0008730910194572061,
+                0.002337608998641365,
+                0.009445360396057367
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1430691.0,
+                13981785.796875,
+                18702301.69999999,
+                32841718.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14729319512844086,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 24850,
+              "minimum_delta": -0.008869300363585353,
+              "maximum_delta": 0.11753588542342186,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.8558958856829122e-05,
+                0.0006748063882696438,
+                0.002019621827639639,
+                0.008869300363585353
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                775930.0,
+                12637227.85625,
+                16042722.299999995,
+                30698399.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.4901161193847656e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14111094176769257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 14177,
+              "minimum_delta": -0.011027521453797817,
+              "maximum_delta": 0.07917774841189384,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                7.332235691137612e-05,
+                0.001456681964918969,
+                0.003904091883450734,
+                0.011027521453797817
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1969950.0,
+                15414629.199999997,
+                21511560.54,
+                32611582.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.4901161193847656e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1504404917359352,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 18475,
+              "minimum_delta": -0.008497283793985844,
+              "maximum_delta": 0.11279844248201698,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.1053746826946735e-05,
+                0.0009048950334545224,
+                0.0023081669816747297,
+                0.008497283793985844
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1762041.0,
+                14279104.75,
+                19992702.73999997,
+                32188932.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1399286538362503,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 19128,
+              "minimum_delta": -0.009308922570198774,
+              "maximum_delta": 0.1506361236097291,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.126018757233396e-05,
+                0.0008736510993912814,
+                0.0023604228114709244,
+                0.009308922570198774
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1764674.5,
+                15189470.32812499,
+                21565853.35999999,
+                32116762.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1575669921876397,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 31041,
+              "minimum_delta": -0.01188050676137209,
+              "maximum_delta": 0.08411498088389635,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.385040326975286e-05,
+                0.0008929874747991562,
+                0.0024184213223634233,
+                0.01188050676137209
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1403344.0,
+                13936370.03125,
+                17038453.94999999,
+                32086950.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 1.4901161193847656e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14119312167167664,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    },
+    "direct_rbf": {
+      "displacement_x": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.016450450055397758,
+        "recomputed_rmse": 2.3734019928444763,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 2.3734019928444763,
+        "relative_l2_on_nonzero_truth_support": 0.016450450055397758,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -328.9526062011719,
+        "prediction_max": 19.03434181213379,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -266.4855651855469,
+            "prediction_at_truth_peak": -266.8197326660156,
+            "absolute_error_at_truth_peak": 0.33416748046875,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -302.4269714355469,
+            "prediction_at_truth_peak": -299.7112121582031,
+            "absolute_error_at_truth_peak": 2.71575927734375,
+            "magnitude_underprediction_at_truth_peak": 2.71575927734375
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -275.974853515625,
+            "prediction_at_truth_peak": -275.6839294433594,
+            "absolute_error_at_truth_peak": 0.290924072265625,
+            "magnitude_underprediction_at_truth_peak": 0.290924072265625
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 6966,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -326.2707214355469,
+            "prediction_at_truth_peak": -328.8274841308594,
+            "absolute_error_at_truth_peak": 2.5567626953125,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2579,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -315.3874206542969,
+            "prediction_at_truth_peak": -310.0874328613281,
+            "absolute_error_at_truth_peak": 5.29998779296875,
+            "magnitude_underprediction_at_truth_peak": 5.29998779296875
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 9419,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -324.76983642578125,
+            "prediction_at_truth_peak": -328.80780029296875,
+            "absolute_error_at_truth_peak": 4.0379638671875,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 6982,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": -266.4646301269531,
+            "prediction_at_truth_peak": -265.98895263671875,
+            "absolute_error_at_truth_peak": 0.475677490234375,
+            "magnitude_underprediction_at_truth_peak": 0.475677490234375
+          }
+        ]
+      },
+      "displacement_y": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.13742801132247567,
+        "recomputed_rmse": 3.0818574105350303,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 3.0940996464758572,
+        "relative_l2_on_nonzero_truth_support": 0.13742801132247567,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -56.471622467041016,
+        "prediction_max": 68.39897918701172,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 8062,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": -44.84531784057617,
+            "prediction_at_truth_peak": -43.97832489013672,
+            "absolute_error_at_truth_peak": 0.8669929504394531,
+            "magnitude_underprediction_at_truth_peak": 0.8669929504394531
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 872,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 53.80976867675781,
+            "prediction_at_truth_peak": 52.91110610961914,
+            "absolute_error_at_truth_peak": 0.8986625671386719,
+            "magnitude_underprediction_at_truth_peak": 0.8986625671386719
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 47,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 44.01810073852539,
+            "prediction_at_truth_peak": 43.96871566772461,
+            "absolute_error_at_truth_peak": 0.04938507080078125,
+            "magnitude_underprediction_at_truth_peak": 0.04938507080078125
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 102,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 68.78199005126953,
+            "prediction_at_truth_peak": 68.39897918701172,
+            "absolute_error_at_truth_peak": 0.3830108642578125,
+            "magnitude_underprediction_at_truth_peak": 0.3830108642578125
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 7747,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": -59.22911834716797,
+            "prediction_at_truth_peak": -56.35535430908203,
+            "absolute_error_at_truth_peak": 2.8737640380859375,
+            "magnitude_underprediction_at_truth_peak": 2.8737640380859375
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 860,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 63.598785400390625,
+            "prediction_at_truth_peak": 63.52650451660156,
+            "absolute_error_at_truth_peak": 0.0722808837890625,
+            "magnitude_underprediction_at_truth_peak": 0.0722808837890625
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 686,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 42.708621978759766,
+            "prediction_at_truth_peak": 31.004146575927734,
+            "absolute_error_at_truth_peak": 11.704475402832031,
+            "magnitude_underprediction_at_truth_peak": 11.704475402832031
+          }
+        ]
+      },
+      "displacement_z": {
+        "unit": "mm",
+        "recomputed_relative_l2": 0.6550138234230591,
+        "recomputed_rmse": 2.1794248585299814,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 949690,
+        "truth_zero_support_count": 7560,
+        "rmse_on_nonzero_truth_support": 2.188082310767136,
+        "relative_l2_on_nonzero_truth_support": 0.6550138234230591,
+        "rmse_on_zero_truth_support": 0.0,
+        "negative_count_if_nonnegative_field": null,
+        "negative_fraction_if_nonnegative_field": null,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": null,
+        "prediction_min": -20.830554962158203,
+        "prediction_max": 24.439350128173828,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 5220,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 29.67379379272461,
+            "prediction_at_truth_peak": 19.35788345336914,
+            "absolute_error_at_truth_peak": 10.315910339355469,
+            "magnitude_underprediction_at_truth_peak": 10.315910339355469
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 8875,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.316429138183594,
+            "prediction_at_truth_peak": 16.220657348632812,
+            "absolute_error_at_truth_peak": 15.095771789550781,
+            "magnitude_underprediction_at_truth_peak": 15.095771789550781
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 10100,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -27.40303611755371,
+            "prediction_at_truth_peak": -10.00114917755127,
+            "absolute_error_at_truth_peak": 17.40188694000244,
+            "magnitude_underprediction_at_truth_peak": 17.40188694000244
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 10172,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": -28.170299530029297,
+            "prediction_at_truth_peak": -3.6107723712921143,
+            "absolute_error_at_truth_peak": 24.559527158737183,
+            "magnitude_underprediction_at_truth_peak": 24.559527158737183
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 2032,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 32.33177947998047,
+            "prediction_at_truth_peak": 1.897666335105896,
+            "absolute_error_at_truth_peak": 30.434113144874573,
+            "magnitude_underprediction_at_truth_peak": 30.434113144874573
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 8926,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 31.45374298095703,
+            "prediction_at_truth_peak": 14.235671997070312,
+            "absolute_error_at_truth_peak": 17.21807098388672,
+            "magnitude_underprediction_at_truth_peak": 17.21807098388672
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 8764,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 28.55368423461914,
+            "prediction_at_truth_peak": 11.233954429626465,
+            "absolute_error_at_truth_peak": 17.319729804992676,
+            "magnitude_underprediction_at_truth_peak": 17.319729804992676
+          }
+        ]
+      },
+      "inplane_vm_upper": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.15453797618939158,
+        "recomputed_rmse": 0.0444926232541127,
+        "rmse_in_MPa_if_stress_GPa": 44.4926232541127,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.0444926232541127,
+        "relative_l2_on_nonzero_truth_support": 0.15453797618939158,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 393,
+        "negative_fraction_if_nonnegative_field": 0.0004105510577174197,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 393,
+        "prediction_min": -0.05027352273464203,
+        "prediction_max": 0.7713547348976135,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8181783556938171,
+            "prediction_at_truth_peak": 0.7617494463920593,
+            "absolute_error_at_truth_peak": 0.05642890930175781,
+            "magnitude_underprediction_at_truth_peak": 0.05642890930175781
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 10102,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8255447149276733,
+            "prediction_at_truth_peak": 0.5912585258483887,
+            "absolute_error_at_truth_peak": 0.23428618907928467,
+            "magnitude_underprediction_at_truth_peak": 0.23428618907928467
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8271451592445374,
+            "prediction_at_truth_peak": 0.7713547348976135,
+            "absolute_error_at_truth_peak": 0.05579042434692383,
+            "magnitude_underprediction_at_truth_peak": 0.05579042434692383
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8141143321990967,
+            "prediction_at_truth_peak": 0.6591769456863403,
+            "absolute_error_at_truth_peak": 0.15493738651275635,
+            "magnitude_underprediction_at_truth_peak": 0.15493738651275635
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8184420466423035,
+            "prediction_at_truth_peak": 0.6788647174835205,
+            "absolute_error_at_truth_peak": 0.13957732915878296,
+            "magnitude_underprediction_at_truth_peak": 0.13957732915878296
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.811743438243866,
+            "prediction_at_truth_peak": 0.6546242237091064,
+            "absolute_error_at_truth_peak": 0.15711921453475952,
+            "magnitude_underprediction_at_truth_peak": 0.15711921453475952
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8267284631729126,
+            "prediction_at_truth_peak": 0.7467482089996338,
+            "absolute_error_at_truth_peak": 0.07998025417327881,
+            "magnitude_underprediction_at_truth_peak": 0.07998025417327881
+          }
+        ]
+      },
+      "inplane_vm_lower": {
+        "unit": "GPa",
+        "recomputed_relative_l2": 0.1596085937058142,
+        "recomputed_rmse": 0.04633038829564806,
+        "rmse_in_MPa_if_stress_GPa": 46.33038829564806,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 957250,
+        "truth_zero_support_count": 0,
+        "rmse_on_nonzero_truth_support": 0.04633038829564806,
+        "relative_l2_on_nonzero_truth_support": 0.1596085937058142,
+        "rmse_on_zero_truth_support": null,
+        "negative_count_if_nonnegative_field": 377,
+        "negative_fraction_if_nonnegative_field": 0.00039383651083833897,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 377,
+        "prediction_min": -0.05064123123884201,
+        "prediction_max": 0.7774636745452881,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 5,
+            "truth_peak_time": 60.0,
+            "truth_value": 0.8299959897994995,
+            "prediction_at_truth_peak": 0.7414839267730713,
+            "absolute_error_at_truth_peak": 0.08851206302642822,
+            "magnitude_underprediction_at_truth_peak": 0.08851206302642822
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8396779298782349,
+            "prediction_at_truth_peak": 0.5195598602294922,
+            "absolute_error_at_truth_peak": 0.3201180696487427,
+            "magnitude_underprediction_at_truth_peak": 0.3201180696487427
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8488867878913879,
+            "prediction_at_truth_peak": 0.759898841381073,
+            "absolute_error_at_truth_peak": 0.08898794651031494,
+            "magnitude_underprediction_at_truth_peak": 0.08898794651031494
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.8300899863243103,
+            "prediction_at_truth_peak": 0.6081220507621765,
+            "absolute_error_at_truth_peak": 0.2219679355621338,
+            "magnitude_underprediction_at_truth_peak": 0.2219679355621338
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 6,
+            "truth_peak_time": 70.0,
+            "truth_value": 0.8367748856544495,
+            "prediction_at_truth_peak": 0.6935304403305054,
+            "absolute_error_at_truth_peak": 0.1432444453239441,
+            "magnitude_underprediction_at_truth_peak": 0.1432444453239441
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10053,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.8157538771629333,
+            "prediction_at_truth_peak": 0.5275735855102539,
+            "absolute_error_at_truth_peak": 0.28818029165267944,
+            "magnitude_underprediction_at_truth_peak": 0.28818029165267944
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.861217737197876,
+            "prediction_at_truth_peak": 0.7451797723770142,
+            "absolute_error_at_truth_peak": 0.11603796482086182,
+            "magnitude_underprediction_at_truth_peak": 0.11603796482086182
+          }
+        ]
+      },
+      "EPSP_upper": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.5275224104562126,
+        "recomputed_rmse": 0.012072031715076401,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 361429,
+        "truth_zero_support_count": 595821,
+        "rmse_on_nonzero_truth_support": 0.01888186668105912,
+        "relative_l2_on_nonzero_truth_support": 0.5069957093784704,
+        "rmse_on_zero_truth_support": 0.004226908704999372,
+        "negative_count_if_nonnegative_field": 182174,
+        "negative_fraction_if_nonnegative_field": 0.19030974144685298,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 12582,
+        "prediction_min": -0.07477171719074249,
+        "prediction_max": 0.5775144100189209,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 13221,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.46271732449531555,
+            "prediction_at_truth_peak": 0.43446460366249084,
+            "absolute_error_at_truth_peak": 0.028252720832824707,
+            "magnitude_underprediction_at_truth_peak": 0.028252720832824707
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.48883387446403503,
+            "prediction_at_truth_peak": 0.5013977289199829,
+            "absolute_error_at_truth_peak": 0.012563854455947876,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43355509638786316,
+            "prediction_at_truth_peak": 0.24438080191612244,
+            "absolute_error_at_truth_peak": 0.18917429447174072,
+            "magnitude_underprediction_at_truth_peak": 0.18917429447174072
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.5958960056304932,
+            "prediction_at_truth_peak": 0.5441315174102783,
+            "absolute_error_at_truth_peak": 0.051764488220214844,
+            "magnitude_underprediction_at_truth_peak": 0.051764488220214844
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 12659,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.5451143980026245,
+            "prediction_at_truth_peak": 0.49214884638786316,
+            "absolute_error_at_truth_peak": 0.05296555161476135,
+            "magnitude_underprediction_at_truth_peak": 0.05296555161476135
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 5849,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.571723997592926,
+            "prediction_at_truth_peak": 0.5775144100189209,
+            "absolute_error_at_truth_peak": 0.005790412425994873,
+            "magnitude_underprediction_at_truth_peak": 0.0
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.43133097887039185,
+            "prediction_at_truth_peak": 0.24531926214694977,
+            "absolute_error_at_truth_peak": 0.18601171672344208,
+            "magnitude_underprediction_at_truth_peak": 0.18601171672344208
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 16688,
+              "minimum_delta": -0.020387081429362297,
+              "maximum_delta": 0.17642857716418803,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.4667282130176318e-05,
+                0.0012314683903241527,
+                0.0036445283330977284,
+                0.020387081429362297
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                415292.0,
+                12463373.8125,
+                18836805.64250004,
+                32974883.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.20034637488424778,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 26774,
+              "minimum_delta": -0.018008229322731495,
+              "maximum_delta": 0.15647977590560913,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.5835084670688957e-05,
+                0.0012069354765117167,
+                0.003500585574656725,
+                0.018008229322731495
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                765422.0,
+                13394989.1375,
+                19773775.175,
+                31595310.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14988146722316742,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 29933,
+              "minimum_delta": -0.008201655931770802,
+              "maximum_delta": 0.1360386535525322,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.94590460928157e-06,
+                0.0004403219325467903,
+                0.0012965140119194994,
+                0.008201655931770802
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                683494.0,
+                12780951.124999996,
+                17746838.700000018,
+                30375262.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1402110606431961,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 33486,
+              "minimum_delta": -0.013678938150405884,
+              "maximum_delta": 0.1745593175292015,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.8685910617932677e-05,
+                0.000843786918267142,
+                0.0022657147608697416,
+                0.013678938150405884
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1111477.0,
+                13151925.5625,
+                18043192.487500023,
+                32032284.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1919291689991951,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 25947,
+              "minimum_delta": -0.014418825507164001,
+              "maximum_delta": 0.15481193363666534,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.3713492080569267e-05,
+                0.0008356769569218153,
+                0.0024949021730572016,
+                0.014418825507164001
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                565429.0,
+                11721718.249999993,
+                17001401.54000003,
+                32460925.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.166188582777977,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 24596,
+              "minimum_delta": -0.01949265319854021,
+              "maximum_delta": 0.17395593225955963,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.9813183573423885e-05,
+                0.0014187463218604535,
+                0.003934632916934788,
+                0.01949265319854021
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1188291.0,
+                13688079.002929688,
+                17452777.63749999,
+                30376861.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1717970371246338,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 27805,
+              "minimum_delta": -0.012931400910019875,
+              "maximum_delta": 0.10153601597994566,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                5.322071956470609e-06,
+                0.0007289517670869819,
+                0.0022729934751987454,
+                0.012931400910019875
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                854847.0,
+                13596378.575,
+                20181591.259999964,
+                32378217.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14339091256260872,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      },
+      "EPSP_lower": {
+        "unit": "dimensionless",
+        "recomputed_relative_l2": 0.5629852504979703,
+        "recomputed_rmse": 0.012849860950848762,
+        "rmse_in_MPa_if_stress_GPa": null,
+        "total_count": 957250,
+        "truth_exact_nonzero_support_count": 371515,
+        "truth_zero_support_count": 585735,
+        "rmse_on_nonzero_truth_support": 0.01980140553069602,
+        "relative_l2_on_nonzero_truth_support": 0.5404681378308157,
+        "rmse_on_zero_truth_support": 0.004599354213968282,
+        "negative_count_if_nonnegative_field": 185841,
+        "negative_fraction_if_nonnegative_field": 0.19414050665970228,
+        "negative_on_nonzero_truth_support_if_nonnegative_field": 14478,
+        "prediction_min": -0.07451140880584717,
+        "prediction_max": 0.41526472568511963,
+        "nonfinite_count": 0,
+        "peaks": [
+          {
+            "case": "Run224",
+            "truth_peak_node_index": 3125,
+            "truth_peak_time_index": 7,
+            "truth_peak_time": 80.0,
+            "truth_value": 0.4504644274711609,
+            "prediction_at_truth_peak": 0.24153923988342285,
+            "absolute_error_at_truth_peak": 0.20892518758773804,
+            "magnitude_underprediction_at_truth_peak": 0.20892518758773804
+          },
+          {
+            "case": "Run225",
+            "truth_peak_node_index": 9883,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.473239541053772,
+            "prediction_at_truth_peak": 0.09421030431985855,
+            "absolute_error_at_truth_peak": 0.3790292367339134,
+            "magnitude_underprediction_at_truth_peak": 0.3790292367339134
+          },
+          {
+            "case": "Run226",
+            "truth_peak_node_index": 8877,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.49654635787010193,
+            "prediction_at_truth_peak": 0.24034273624420166,
+            "absolute_error_at_truth_peak": 0.25620362162590027,
+            "magnitude_underprediction_at_truth_peak": 0.25620362162590027
+          },
+          {
+            "case": "Run227",
+            "truth_peak_node_index": 8802,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.44691288471221924,
+            "prediction_at_truth_peak": 0.09332385659217834,
+            "absolute_error_at_truth_peak": 0.3535890281200409,
+            "magnitude_underprediction_at_truth_peak": 0.3535890281200409
+          },
+          {
+            "case": "Run228",
+            "truth_peak_node_index": 3259,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.466749906539917,
+            "prediction_at_truth_peak": 0.13570459187030792,
+            "absolute_error_at_truth_peak": 0.33104531466960907,
+            "magnitude_underprediction_at_truth_peak": 0.33104531466960907
+          },
+          {
+            "case": "Run229",
+            "truth_peak_node_index": 10051,
+            "truth_peak_time_index": 9,
+            "truth_peak_time": 100.0,
+            "truth_value": 0.42412105202674866,
+            "prediction_at_truth_peak": 0.09508435428142548,
+            "absolute_error_at_truth_peak": 0.3290366977453232,
+            "magnitude_underprediction_at_truth_peak": 0.3290366977453232
+          },
+          {
+            "case": "Run230",
+            "truth_peak_node_index": 10213,
+            "truth_peak_time_index": 8,
+            "truth_peak_time": 90.0,
+            "truth_value": 0.532607913017273,
+            "prediction_at_truth_peak": 0.2896874248981476,
+            "absolute_error_at_truth_peak": 0.24292048811912537,
+            "magnitude_underprediction_at_truth_peak": 0.24292048811912537
+          }
+        ],
+        "accumulated_epsp_history": [
+          {
+            "case": "Run224",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 17176,
+              "minimum_delta": -0.022739270702004433,
+              "maximum_delta": 0.16382838669233024,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.4360251952894032e-05,
+                0.0013179430388845503,
+                0.0034239437663927674,
+                0.022739270702004433
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                388367.5,
+                11845204.5078125,
+                18312298.625,
+                32372631.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.17995101667474955,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run225",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 27499,
+              "minimum_delta": -0.018383973743766546,
+              "maximum_delta": 0.128941837047023,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                2.5384360924363136e-05,
+                0.0012661665852647253,
+                0.0036655985284596826,
+                0.018383973743766546
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                837783.0,
+                13536763.97499999,
+                20213307.040000003,
+                32709730.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14729319512844086,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run226",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 30502,
+              "minimum_delta": -0.00829284731298685,
+              "maximum_delta": 0.11744009351241402,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                4.013833375893228e-06,
+                0.00047227173345163457,
+                0.0013955318555235834,
+                0.00829284731298685
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                702267.0,
+                12764268.799999997,
+                17650383.84999994,
+                33092833.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14111094176769257,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run227",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 34310,
+              "minimum_delta": -0.014280994422733784,
+              "maximum_delta": 0.13992905616760254,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.8499936530247396e-05,
+                0.0008662970038130878,
+                0.002379502207040785,
+                0.014280994422733784
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1222438.5,
+                13397344.875,
+                17835850.144999977,
+                32379765.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1504404917359352,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run228",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 26098,
+              "minimum_delta": -0.016634417697787285,
+              "maximum_delta": 0.12070686504011974,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                1.3826429494656622e-05,
+                0.0009047333092894401,
+                0.00253173730219712,
+                0.016634417697787285
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                613881.5,
+                11936998.543749996,
+                17727691.926249962,
+                32164066.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1399286538362503,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run229",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 24897,
+              "minimum_delta": -0.023004019632935524,
+              "maximum_delta": 0.1523946375818923,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                3.042976459255442e-05,
+                0.001463355275336651,
+                0.003911075945943603,
+                0.023004019632935524
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                1266528.0,
+                13888181.639453119,
+                18146531.09000001,
+                32348031.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.1575669921876397,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          },
+          {
+            "case": "Run230",
+            "prediction": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 28491,
+              "minimum_delta": -0.015883060172200203,
+              "maximum_delta": 0.09579395595937967,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": [
+                5.292706191539764e-06,
+                0.000752211781218648,
+                0.002335803350433706,
+                0.015883060172200203
+              ],
+              "decrease_to_max_endpoint_float32_ulp_quantiles": [
+                852262.0,
+                13423548.9375,
+                20039013.199999988,
+                32493345.0
+              ],
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 2.9802322387695312e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            },
+            "truth": {
+              "stored_dtype": "float32",
+              "difference_definition": "np.diff(time) in float64 of the stored float32 endpoints; exact negative signs retained without tolerance or clipping",
+              "interval_count": 123075,
+              "negative_increment_count": 0,
+              "minimum_delta": 0.0,
+              "maximum_delta": 0.14119312167167664,
+              "decrease_magnitude_quantile_probabilities": [
+                0.5,
+                0.95,
+                0.99,
+                1.0
+              ],
+              "decrease_magnitude_quantiles": null,
+              "decrease_to_max_endpoint_float32_ulp_quantiles": null,
+              "float32_endpoint_spacing_min": 1.401298464324817e-45,
+              "float32_endpoint_spacing_max": 5.960464477539063e-08,
+              "interpretation": "A negative increment is observed history inconsistency, not an automatic error verdict. Endpoint ULP ratios describe floating-point resolution; no success threshold was chosen. This diagnostic applies to accumulated EPSP, not total strain Frobenius or signed principal strains."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "source_shell_status": {
+    "policy": [
+      "Raw ANIM status (official VTK EROSION_STATUS), uint8 [T,E], is preserved. Fixed-initial-topology scalar projection includes every real shell, including status 0; it does not remove stale/eroded output or claim damage validity. Per-frame status-zero counts are reported."
+    ],
+    "upper_lower_semantics": [
+      "Stress/EPSP upper/lower outermost integration points; total strain upper/lower extrapolated outer shell surfaces; layer_1..5 also preserved."
+    ],
+    "cases_with_status_zero": [
+      {
+        "case": "Run100",
+        "status_zero_count_max": 1,
+        "status_zero_count_sum_over_frames": 5
+      },
+      {
+        "case": "Run130",
+        "status_zero_count_max": 2,
+        "status_zero_count_sum_over_frames": 11
+      },
+      {
+        "case": "Run139",
+        "status_zero_count_max": 1,
+        "status_zero_count_sum_over_frames": 3
+      },
+      {
+        "case": "Run144",
+        "status_zero_count_max": 1,
+        "status_zero_count_sum_over_frames": 4
+      }
+    ],
+    "maximum_status_zero_count_per_frame": 2,
+    "cases_checked": 131
+  }
+}

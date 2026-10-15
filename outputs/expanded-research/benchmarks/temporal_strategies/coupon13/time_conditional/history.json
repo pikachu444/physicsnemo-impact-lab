@@ -1,0 +1,182 @@
+[
+  {
+    "epoch": 1,
+    "training_mse": 0.6412442088127136,
+    "validation_rollout_mse": 0.4162127375602722,
+    "updates": 50
+  },
+  {
+    "epoch": 2,
+    "training_mse": 0.4786433822661638,
+    "validation_rollout_mse": 0.3799610137939453,
+    "updates": 100
+  },
+  {
+    "epoch": 3,
+    "training_mse": 0.4449616026878357,
+    "validation_rollout_mse": 0.36539238691329956,
+    "updates": 150
+  },
+  {
+    "epoch": 4,
+    "training_mse": 0.4253650295734406,
+    "validation_rollout_mse": 0.36161255836486816,
+    "updates": 200
+  },
+  {
+    "epoch": 5,
+    "training_mse": 0.3752651029825211,
+    "validation_rollout_mse": 0.29255135357379913,
+    "updates": 250
+  },
+  {
+    "epoch": 6,
+    "training_mse": 0.25927784144878385,
+    "validation_rollout_mse": 0.15913592465221882,
+    "updates": 300
+  },
+  {
+    "epoch": 7,
+    "training_mse": 0.1633520597591996,
+    "validation_rollout_mse": 0.14465497434139252,
+    "updates": 350
+  },
+  {
+    "epoch": 8,
+    "training_mse": 0.11132241170853377,
+    "validation_rollout_mse": 0.11961998697370291,
+    "updates": 400
+  },
+  {
+    "epoch": 9,
+    "training_mse": 0.07105355549603701,
+    "validation_rollout_mse": 0.03560964250937104,
+    "updates": 450
+  },
+  {
+    "epoch": 10,
+    "training_mse": 0.05538535980507731,
+    "validation_rollout_mse": 0.03868908854201436,
+    "updates": 500
+  },
+  {
+    "epoch": 11,
+    "training_mse": 0.04089813638478518,
+    "validation_rollout_mse": 0.033200968988239765,
+    "updates": 550
+  },
+  {
+    "epoch": 12,
+    "training_mse": 0.031426928732544185,
+    "validation_rollout_mse": 0.01651270710863173,
+    "updates": 600
+  },
+  {
+    "epoch": 13,
+    "training_mse": 0.021872587287798523,
+    "validation_rollout_mse": 0.03526510111987591,
+    "updates": 650
+  },
+  {
+    "epoch": 14,
+    "training_mse": 0.04099975575692952,
+    "validation_rollout_mse": 0.018558569718152285,
+    "updates": 700
+  },
+  {
+    "epoch": 15,
+    "training_mse": 0.037017766712233426,
+    "validation_rollout_mse": 0.011566953035071492,
+    "updates": 750
+  },
+  {
+    "epoch": 16,
+    "training_mse": 0.056488885190337894,
+    "validation_rollout_mse": 0.02739408193156123,
+    "updates": 800
+  },
+  {
+    "epoch": 17,
+    "training_mse": 0.049021083023399116,
+    "validation_rollout_mse": 0.02132728835567832,
+    "updates": 850
+  },
+  {
+    "epoch": 18,
+    "training_mse": 0.027508626189082862,
+    "validation_rollout_mse": 0.03783642500638962,
+    "updates": 900
+  },
+  {
+    "epoch": 19,
+    "training_mse": 0.024462651181966066,
+    "validation_rollout_mse": 0.010186892002820969,
+    "updates": 950
+  },
+  {
+    "epoch": 20,
+    "training_mse": 0.017558902818709612,
+    "validation_rollout_mse": 0.02315055951476097,
+    "updates": 1000
+  },
+  {
+    "epoch": 21,
+    "training_mse": 0.02973476069048047,
+    "validation_rollout_mse": 0.02083122986368835,
+    "updates": 1050
+  },
+  {
+    "epoch": 22,
+    "training_mse": 0.01857841925229877,
+    "validation_rollout_mse": 0.020568013656884432,
+    "updates": 1100
+  },
+  {
+    "epoch": 23,
+    "training_mse": 0.028766410956159234,
+    "validation_rollout_mse": 0.021606827154755592,
+    "updates": 1150
+  },
+  {
+    "epoch": 24,
+    "training_mse": 0.022098766267299653,
+    "validation_rollout_mse": 0.012357169762253761,
+    "updates": 1200
+  },
+  {
+    "epoch": 25,
+    "training_mse": 0.02219124442897737,
+    "validation_rollout_mse": 0.00996848288923502,
+    "updates": 1250
+  },
+  {
+    "epoch": 26,
+    "training_mse": 0.01087912254035473,
+    "validation_rollout_mse": 0.010708009358495474,
+    "updates": 1300
+  },
+  {
+    "epoch": 27,
+    "training_mse": 0.012918721130117774,
+    "validation_rollout_mse": 0.007734021521173418,
+    "updates": 1350
+  },
+  {
+    "epoch": 28,
+    "training_mse": 0.013736906838603317,
+    "validation_rollout_mse": 0.007698877481743693,
+    "updates": 1400
+  },
+  {
+    "epoch": 29,
+    "training_mse": 0.009876800468191504,
+    "validation_rollout_mse": 0.008362682885490358,
+    "updates": 1450
+  },
+  {
+    "epoch": 30,
+    "training_mse": 0.012722976673394441,
+    "validation_rollout_mse": 0.03393938299268484,
+    "updates": 1500
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "working_set_cap_bytes": 2000000000,
+  "sampled_peak_working_set_bytes": 206229504,
+  "terminated_by_cap": false,
+  "GPU_used": false,
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "observed_exit_code": 0,
+  "wall_cap_seconds": 300.0,
+  "cpu_threads": 1,
+  "elapsed_seconds": 10.8977499,
+  "python_environment": "preserved base Python, not GPU venv",
+  "available_memory_before_launch_bytes": 1983922176,
+  "stage": "official_q1_cpu_validation"
+}

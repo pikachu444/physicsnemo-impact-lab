@@ -1,0 +1,29 @@
+{
+  "finished_utc": "2026-10-15T03:50:07.9925284+00:00",
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "seconds": 32.4558905,
+  "stage": "fresh",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geotransolver/source/run_benchmark.py",
+    "--cache",
+    "work/expanded-structural-coupon/cache-initial13-nodal7/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geotransolver/fresh-inference",
+    "--mode",
+    "infer",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geotransolver/best_checkpoint.pt",
+    "--reference",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geotransolver/predictions.npy",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1"
+  ],
+  "started_utc": "2026-10-15T03:49:35.5366379+00:00",
+  "exit_code": 0,
+  "architecture": "geotransolver",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-geotransolver-fresh.log"
+}

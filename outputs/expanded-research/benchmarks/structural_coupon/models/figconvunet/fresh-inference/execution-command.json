@@ -1,0 +1,29 @@
+{
+  "architecture": "figconvunet",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-figconvunet-fresh.log",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/figconvunet/source/run_benchmark.py",
+    "--cache",
+    "work/expanded-structural-coupon/cache-initial13-nodal7/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/figconvunet/fresh-inference",
+    "--mode",
+    "infer",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/figconvunet/best_checkpoint.pt",
+    "--reference",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/figconvunet/predictions.npy",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1"
+  ],
+  "finished_utc": "2026-10-15T04:13:26.2675337+00:00",
+  "stage": "fresh",
+  "seconds": 35.0431792,
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "started_utc": "2026-10-15T04:12:51.2243545+00:00",
+  "exit_code": 0
+}

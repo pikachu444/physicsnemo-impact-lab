@@ -1,0 +1,109 @@
+{
+  "data_manifest_sha256": "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1",
+  "source_manifest_sha256": "a4a057dc9006228459282e7a80ad2a6d174834495b4af2b0c9262beff3489103",
+  "torch": "2.10.0+cu126",
+  "device": "cpu",
+  "probe_only_not_accuracy_validation": true,
+  "rows": [
+    {
+      "example": "crash",
+      "strategy": "time_conditional",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 274, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "crash",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 194, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "crash",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 360, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "crash",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 194, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "crash",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\crash\\rollout.py\", line 360, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "time_conditional",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 274, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 194, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 3,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 367, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "ar_rollout_training",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 194, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    },
+    {
+      "example": "drop_test",
+      "strategy": "one_step_teacher_forcing",
+      "requested_target_channels": 7,
+      "device": "cpu",
+      "status": "runtime_failure",
+      "error_type": "TypeError",
+      "error": "GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'",
+      "traceback": "Traceback (most recent call last):\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 128, in probe\n    model,cfg=build(wr,strategy,channels,device)\n              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\run_temporal.py\", line 46, in build\n    model=getattr(wrapper,STRATEGIES[strategy])(**config).to(device)\n          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"<LOCAL_WORKSPACE>\\work\\expanded-temporal\\sources\\drop_test\\rollout.py\", line 367, in __init__\n    super().__init__(*args, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nTypeError: GeoTransolver.__init__() got an unexpected keyword argument 'activation_checkpointing'\n"
+    }
+  ]
+}

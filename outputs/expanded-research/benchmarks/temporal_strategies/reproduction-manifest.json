@@ -1,0 +1,150 @@
+{
+  "files": [
+    {
+      "path": "work\\expanded-temporal\\fetch_sources.py",
+      "bytes": 1647,
+      "sha256": "d12b5714da568f58a75752996083d0359c060367430baea2bf91879c0405c00d"
+    },
+    {
+      "path": "work\\expanded-temporal\\source_audit.py",
+      "bytes": 6096,
+      "sha256": "c824ce3041bdbf1b4e888e4808c8d9f6f231b57c7ea0e34bd64e42b307c7ee60"
+    },
+    {
+      "path": "work\\expanded-temporal\\run_temporal.py",
+      "bytes": 21275,
+      "sha256": "baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af"
+    },
+    {
+      "path": "work\\expanded-temporal\\make_visuals.py",
+      "bytes": 3238,
+      "sha256": "7086cdac671fbba91c81ede19c61667add9a1e317b741f0b009d8da2ba79f518"
+    },
+    {
+      "path": "work\\expanded-temporal\\summarize_execution.py",
+      "bytes": 5064,
+      "sha256": "6a9b108630fb090e96e6061cde5d3743917682f5155aec51e653a0101e3f9ac9"
+    },
+    {
+      "path": "work\\expanded-temporal\\normalization.json",
+      "bytes": 723,
+      "sha256": "642d5df2e6cd940e52e1cf961506c9741027187c02214a0bf7e1f27331b1986f"
+    },
+    {
+      "path": "work\\expanded-temporal\\domain_source_audit.py",
+      "bytes": 6809,
+      "sha256": "b42231370e7be0094cb89533f8f6b55fbcecba196aced366a6c8967a6be430ca"
+    },
+    {
+      "path": "work\\expanded-temporal\\run_domain_temporal.py",
+      "bytes": 20931,
+      "sha256": "955f25cf30a173c578eaa620cce6a0fae1e3d89bf072b0e21c5177e3854f3013"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\datapipe.py",
+      "bytes": 30248,
+      "sha256": "8f60092549f30a37555e731ff4d7e41c9082b668826e3256636af5ccd2187f4a"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\rollout.py",
+      "bytes": 16103,
+      "sha256": "59d797f4fdf52473baac61d134923465b2620f344f5af3a2888f8b71bafa0afb"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\train.py",
+      "bytes": 15670,
+      "sha256": "1d9f7831ee22e2721b4656816932bc8c8f9a0071d9acdc89d4c4e02d935ca72b"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\datapipe.py",
+      "bytes": 31913,
+      "sha256": "ac3bfa3b4823966fa8220089d54efc02fa3b520937865b1d229b1d04d69f7239"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\rollout.py",
+      "bytes": 16531,
+      "sha256": "5b349a87aa6b5fcf994499d5848a655965fbec9ad51e1eeb384af56cfe548354"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\train.py",
+      "bytes": 18078,
+      "sha256": "66410fb3a1b02bef52dbcc39e66870e64197156e15cd078ae5f4626baafbce89"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\drop_test\\conf\\model\\geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_autoregressive_rollout_training.yaml",
+      "bytes": 1506,
+      "sha256": "3af4fc892285014395ffe8d51b062899e5ce81ad7c3a25114998fdd1b6d209ca"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_one_step_rollout.yaml",
+      "bytes": 1490,
+      "sha256": "7c02f23ccfcb78e4d43ddb1a5dc55f90d434f44b42d22db91ae4a34685eebf72"
+    },
+    {
+      "path": "work\\expanded-temporal\\sources\\crash\\conf\\model\\geotransolver_time_conditional.yaml",
+      "bytes": 1115,
+      "sha256": "8d2f06cd2963fde5991e4f37ccbeb1fa5ed038254201b9168c526eb343dacd4d"
+    },
+    {
+      "path": "work\\expanded-temporal\\probe-cpu.log",
+      "bytes": 4023,
+      "sha256": "d7972a1601799e786be53476babbc7a4b6af1da639b305e79ec7185ac38557f5"
+    },
+    {
+      "path": "work\\expanded-temporal\\probe-cpu-exit.json",
+      "bytes": 75,
+      "sha256": "e6eef471b40a7e63b47a50791596323066a3f84b84925c84f698120f8e7b49d5"
+    },
+    {
+      "path": "work\\expanded-temporal\\probe-cpu-initial-api-failure.log",
+      "bytes": 3064,
+      "sha256": "c1a3e7cc0eeb821a5eaf035013cfd641351210f0b81c07611358e8bfc921fb0c"
+    },
+    {
+      "path": "work\\expanded-temporal\\probe-train-gpu.log",
+      "bytes": 14903,
+      "sha256": "8368b4b755c7476b00ed530886249cafeff073c2de71855999e37d371bf18a35"
+    },
+    {
+      "path": "work\\expanded-temporal\\probe-train-gpu-exit.json",
+      "bytes": 75,
+      "sha256": "8056851ea434493f3b51672376b872d1090ae48c81bee45bbe8dde7d5b2b1760"
+    },
+    {
+      "path": "work\\expanded-temporal\\reload-gpu.log",
+      "bytes": 1600,
+      "sha256": "3a74ce61f21b782586db1145bfe590aa0cfb44714e22f2d51b405dd22a6ae6da"
+    },
+    {
+      "path": "work\\expanded-temporal\\reload-gpu-exit.json",
+      "bytes": 75,
+      "sha256": "ca7ada4ff086cd5d5971d3c68e51458d8b85a908f3989ab8e5b9c100b27748d0"
+    }
+  ],
+  "layout": "Keep source scripts at work/expanded-temporal relative to the research workspace root; all producer caches retain the paths stated in the scripts. Source audit reconstructs boundary_features.npy from the licensed, locally obtained original source deck.",
+  "execution_order": [
+    "fetch_sources.py",
+    "source_audit.py",
+    "run_temporal.py --allocated --mode probe --device cpu",
+    "run_temporal.py --allocated --mode probe-train-all --device cuda --epochs 30",
+    "run_temporal.py --allocated --mode reload-all --device cuda",
+    "make_visuals.py",
+    "summarize_execution.py"
+  ],
+  "warning": "--allocated requires an explicit exclusive GPU/memory slot from the orchestrator; it does not mean a paid resource is authorized."
+}

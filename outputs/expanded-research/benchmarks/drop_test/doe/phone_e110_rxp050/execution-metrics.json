@@ -1,0 +1,30 @@
+{
+  "run_id": "phone_e110_rxp050",
+  "status": "completed",
+  "source_starter_sha256": "fa6ba11a9a390e1df85b299322a1c6db136991319cdfd68a40bb9c2b3aeb24ff",
+  "requested_end_time_s": 2.002E-05,
+  "stages": [
+    {
+      "stage": "starter",
+      "executable": "starter_win64_sp.exe",
+      "arguments": "-i Cell_Phone_Drop_0000.rad -np 1 -nt 2",
+      "exit_code": 0,
+      "stopped_reason": null,
+      "elapsed_seconds": 12.3521231,
+      "sampled_peak_working_set_bytes": 573239296,
+      "minimum_sampled_system_free_memory_KiB": 714464,
+      "omp_threads": 2
+    },
+    {
+      "stage": "engine",
+      "executable": "engine_win64_sp.exe",
+      "arguments": "-i Cell_Phone_Drop_0001.rad -nt 2",
+      "exit_code": 0,
+      "stopped_reason": null,
+      "elapsed_seconds": 196.0399932,
+      "sampled_peak_working_set_bytes": 410456064,
+      "minimum_sampled_system_free_memory_KiB": 900236,
+      "omp_threads": 2
+    }
+  ]
+}

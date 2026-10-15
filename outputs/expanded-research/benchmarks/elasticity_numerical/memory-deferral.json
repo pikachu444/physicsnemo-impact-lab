@@ -1,0 +1,10 @@
+{
+  "status": "deferred_before_any_framework_import",
+  "phase": "first preflight at root CPU slot allocation",
+  "available_memory_bytes": 736858112,
+  "minimum_available_memory_bytes": 1073741824,
+  "torch_metadata_version_base_python": "2.13.0",
+  "torch_imported": false,
+  "GPU_used": false,
+  "action": "Wait for available RAM or a later root slot; no app/process was closed and no package was installed."
+}

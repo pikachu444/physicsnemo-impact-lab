@@ -1,0 +1,8 @@
+Prepared train-only POD snapshot 1/112
+Prepared train-only POD snapshot 20/112
+Prepared train-only POD snapshot 40/112
+Prepared train-only POD snapshot 60/112
+Prepared train-only POD snapshot 80/112
+Prepared train-only POD snapshot 100/112
+{"positive_modes": 111, "candidate_ranks": [16, 27, 63, 98, 109], "gram_seconds": 3.0839541999994253, "peak_rss": 62513152}
+{"selected": {"pod_rbf": {"method": "pod_rbf", "gamma": 3.0, "alpha": 0.1, "rank": 27, "training_energy_retained": 0.9510597179443265, "validation_normalized_mse": 0.11834814975083412, "validation_projection_lower_bound_mse": 0.02794025769944181}, "pod_ridge": {"method": "pod_ridge", "degree": 2, "alpha": 0.0001, "rank": 109, "training_energy_retained": 0.9999275759770809, "validation_normalized_mse": 0.23113642444273472, "validation_projection_lower_bound_mse": 0.01229064289017097}}, "test_normalized_mse": {"pod_rbf": 0.11228591135956752, "pod_ridge": 0.23313987661751823}, "seconds": {"snapshot_preparation": 12.716426599999977, "gram_eigendecomposition": 3.0839541999994253, "validation_projection_and_selection": 10.847347800001444, "heldout_prediction_including_streamed_reconstruction": {"pod_rbf": 8.07274469999902, "pod_ridge": 6.701675100001012}, "total_including_io_plots": 59.20783610000217}, "peak_rss": 279801856}

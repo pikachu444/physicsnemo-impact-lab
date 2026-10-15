@@ -1,0 +1,22 @@
+{
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "work/expanded-ml/predict_inputs.py",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/best_checkpoint.pt",
+    "--inputs",
+    "work/expanded-ml/coupon-heldout-inputs-only.npz",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/flare/inputs-only-inference"
+  ],
+  "architecture": "flare",
+  "exit_code": 0,
+  "seconds": 24.1948416,
+  "started_utc": "2026-10-15T03:42:18.0668739+00:00",
+  "finished_utc": "2026-10-15T03:42:42.2617155+00:00",
+  "stage": "predict",
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-flare-predict.log"
+}

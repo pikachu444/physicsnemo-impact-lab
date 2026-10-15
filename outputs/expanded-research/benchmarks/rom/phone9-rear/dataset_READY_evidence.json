@@ -1,0 +1,154 @@
+{
+  "status": "ready",
+  "writer_exit_code": 0,
+  "manifest_sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48",
+  "producer_exit_record_sha256": "75876e0e3f497cad271143ba85bd4f36569cd81195509043f860dab14265b716",
+  "expected_cases": 9,
+  "shape": [
+    19933,
+    10,
+    6
+  ],
+  "split_counts": {
+    "train": 5,
+    "validation": 2,
+    "test": 2
+  },
+  "files": [
+    {
+      "name": "coordinates.npy",
+      "bytes": 239324,
+      "sha256": "22195b6bc17b8e7b0ba7d847991f414b8fd9935daf8562d1ef66481611aad173"
+    },
+    {
+      "name": "edge_index.npy",
+      "bytes": 3146656,
+      "sha256": "4b8ff12b3a180b306122f50e49c0aa12636661b60e73019f80a2190fa17c3a16"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 34043,
+      "sha256": "fb2e0dd2eb7b15766ea6250c24812acf4678c135bdaee0b57227871a75d7fb48"
+    },
+    {
+      "name": "runs/phone_e080_rxm100.npy",
+      "bytes": 4784048,
+      "sha256": "773042b5cdb43e315554d43bfa0edcdbe7694586b3a66b721ecde16ed2df548a"
+    },
+    {
+      "name": "runs/phone_e080_rxp100.npy",
+      "bytes": 4784048,
+      "sha256": "c68a8981b384459fc9adbc21f5f1ea89099ffee0ef902d9e11ab0bb9d45057a9"
+    },
+    {
+      "name": "runs/phone_e090_rxm050.npy",
+      "bytes": 4784048,
+      "sha256": "256dd323aafda9ad5cbadd4280283a4e432b25d7e2bc84d83ce64ae897daa0da"
+    },
+    {
+      "name": "runs/phone_e090_rxp050.npy",
+      "bytes": 4784048,
+      "sha256": "247f6f6a434e7f4b61474318d1384841e63e725f396f05fbf9a59f43718c9d3c"
+    },
+    {
+      "name": "runs/phone_e100_rx000.npy",
+      "bytes": 4784048,
+      "sha256": "cd2bfebdd7bf02290a6ff82fa800e9cfeebb0a203f274736a618f7d2b890ffc8"
+    },
+    {
+      "name": "runs/phone_e110_rxm050.npy",
+      "bytes": 4784048,
+      "sha256": "a20adfa869a7d248001fd3d76b424b4332c5408b62065ccfc88ef2ef600ab71f"
+    },
+    {
+      "name": "runs/phone_e110_rxp050.npy",
+      "bytes": 4784048,
+      "sha256": "7f05d6ba3a9eade4b51e2fc0be4fb872095185a603a9822ed95f0d4931cf2b5b"
+    },
+    {
+      "name": "runs/phone_e120_rxm100.npy",
+      "bytes": 4784048,
+      "sha256": "ccb3b38c4f5a64423d74e206a5d1b6a00fc5aa24c1fc3412975d0e802d2c995c"
+    },
+    {
+      "name": "runs/phone_e120_rxp100.npy",
+      "bytes": 4784048,
+      "sha256": "619f163613d8c1a99bb56990167fdeabb1bf4e0bda072b39882647a8a8505a1b"
+    },
+    {
+      "name": "source_manifest.json",
+      "bytes": 4059,
+      "sha256": "e34043bdb7c6fb7d24a4f344a8edc1d121b3486ec4524d7c490e4dac0f4ef6c1"
+    },
+    {
+      "name": "source_metadata/frozen-case-manifest.json",
+      "bytes": 20813,
+      "sha256": "2995581f60626a0edbf9e48aa50fac56417760c39fc9b8717a1222a1102f74fd"
+    },
+    {
+      "name": "source_metadata/full-graph-contract.json",
+      "bytes": 1769,
+      "sha256": "8dcf6333b480900b50349c496885e4c64f3540b7fc7328edd347ca5643c870cf"
+    },
+    {
+      "name": "source_metadata/geometry-contract.json",
+      "bytes": 1636,
+      "sha256": "1db44a18006ec9dd02ad782e4f6bd7c6b5f2a44389fadbd53f51153f9c9faa1a"
+    },
+    {
+      "name": "source_metadata/phone_e080_rxm100.json",
+      "bytes": 9565,
+      "sha256": "f00b71880f4c86987b1b1a9024eec9aa21ae4cbbd2a8053b947fb758b5ea7057"
+    },
+    {
+      "name": "source_metadata/phone_e080_rxp100.json",
+      "bytes": 9566,
+      "sha256": "3b73f77c32c19bbdc6e89181ea21337a45dc70f0dc404e8b4b637d283ea60464"
+    },
+    {
+      "name": "source_metadata/phone_e090_rxm050.json",
+      "bytes": 9624,
+      "sha256": "70e0f35432667d501a2394115ee821d9494f95e4327d48df38c41b5c65d9263d"
+    },
+    {
+      "name": "source_metadata/phone_e090_rxp050.json",
+      "bytes": 9550,
+      "sha256": "ef30c73879bbb359fc00c840c1b70799bc3dd30728273de00705c6730915e73e"
+    },
+    {
+      "name": "source_metadata/phone_e100_rx000.json",
+      "bytes": 9158,
+      "sha256": "51b70d94336f4ead31ad9b39cabaf715b0e2c567d2d3521844e2dde7f810ad65"
+    },
+    {
+      "name": "source_metadata/phone_e110_rxm050.json",
+      "bytes": 9707,
+      "sha256": "c0b7d4b78c80560a3ad0b70a2398dc359343ab902433bec70ab4c9554c633bd3"
+    },
+    {
+      "name": "source_metadata/phone_e110_rxp050.json",
+      "bytes": 9664,
+      "sha256": "9095b8af54bbcbb541e443d55b47fbdfcfbb514df47de0d8f969a9fd96996b35"
+    },
+    {
+      "name": "source_metadata/phone_e120_rxm100.json",
+      "bytes": 9748,
+      "sha256": "ad77825d2d744dcde0fd07259b9ba6cb519b3374513bd73646b9a8abe42a906e"
+    },
+    {
+      "name": "source_metadata/phone_e120_rxp100.json",
+      "bytes": 9709,
+      "sha256": "b56c2cb7554a403c2a7593c01880f1162297f35fb33b199fd2066748f65d7dca"
+    },
+    {
+      "name": "source_READY_evidence.json",
+      "bytes": 15191,
+      "sha256": "77e509e4a98a08342187fcfa53e5240ecb3471d050199c443d624ca7fdb79f80"
+    },
+    {
+      "name": "static_feature.npy",
+      "bytes": 79860,
+      "sha256": "b9c398a1b97c9331aed881090914564b4dbbebb21b96b44f3e77a383963687ad"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "source_checkpoint":  "work/expanded-drop/20us-run/Cell_Phone_Drop_0001_0001.rst",
+    "checkpoint_sha256":  "85a12db11e73cebf6ae6dccc0d41affd3dda63825632f23b94ddbaa38c67ff18",
+    "checkpoint_bytes":  282786513,
+    "source_end_actual_time_s":  2.0001940356451087E-05,
+    "requested_final_time_s":  0.0001,
+    "engine_sha256":  "e93612db7e74b13d647ed7ee4cb05839c7d147585921614eed7fc9491fd1f471",
+    "physical_starter_sha256":  "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+    "changed_engine_cards":  [
+                                 "/ANIM/DT frequency 2us -\u003e 10us",
+                                 "/RUN number 1 -\u003e 2; stop20us -\u003e100us",
+                                 "terminal .ctl output19.99us -\u003e99.99us",
+                                 "/ANIM/VECT/VEL added for direct rebound diagnostics; output only"
+                             ],
+    "unchanged":  "Original geometry, materials, wall, velocity, gravity, topology; restart retains complete previous state. Tensor/VM/EPSP/GPS and0.1us history outputs retained.",
+    "expected_additional_cycles_approx":  8100,
+    "expected_wall_seconds_approx":  913,
+    "estimate_basis":  "Baseline2036cycles in228.18s, approximately9.90ns stable time step; continuation cost can change.",
+    "omp_threads":  2,
+    "memory_cap_bytes":  629145600,
+    "system_free_memory_graceful_stop_KiB":  131072,
+    "wall_cap_seconds":  1800,
+    "reference":  "https://help.altair.com/hwsolvers/rad/topics/solvers/rad/rad_user_guide_intro_c.htm",
+    "scope":  "Single center-condition FEM temporal diagnostic. It does not extend the frozen20us AI targets or by itself demonstrate full response peak/rebound."
+}

@@ -1,0 +1,50 @@
+{
+  "scope": "Read-only dependency inspection and source byte preservation; original work code, environments, datasets and earlier output evidence unchanged.",
+  "source_files": 169,
+  "default_source_files": 115,
+  "recorded_source_profiles": 22,
+  "source_bytes": 1479945,
+  "source_manifest_sha256": "814778d99dbca659f39768944eb4b99264ed3446c70dcfd7d60ab26ed6146ccf",
+  "resolved_gaps": [
+    "Restored original work directory depth and ordinary sibling module names instead of executing renamed snapshots in output folders.",
+    "Preserved historical POD/RBF and neural helper versions separately from current sources; old curated3 POD imports expanded-ml helper.",
+    "Added pinned official crash/drop utils/readers/config closure and plate train/download sources, verified by existing Git blob inventory.",
+    "Included domain_source_audit.py, shared benchmark_data.py, coupon13-normalization.json and plate meta.json as required helpers/small configuration.",
+    "Retained official generator sibling common/drop_test layout; installed PyG deps tree is intentionally excluded."
+  ],
+  "remaining_limits": [
+    "No fresh clean installation, framework import or end-to-end data/FEM/model rerun by this integration task.",
+    "Environment setup depends on original GPU environment/system-site packages and must be reconstructed separately.",
+    "Temporal historical summary reads a former absolute installed-model source path; no false portable success claimed.",
+    "Predictor arrays, checkpoints and original datasets are excluded; source restoration is not standalone saved-model deployment.",
+    "Official crash direct train default config name is absent upstream; choose an explicitly published recipe."
+  ],
+  "owners_confirmed_stable": {
+    "expanded-ml": "Owner reconfirmed field_diagnostics.py after root-requested EPSP accumulation diagnostics; latest stable capture refreshed. Core training triple unchanged.",
+    "expanded-temporal": "Owner confirmed current files stable and run_temporal.py hash baabebfe4198678a0915263edc348285a23bb02930ba45c52208be62b98950af matches all three coupon recorded driver_sha values."
+  },
+  "excluded_extensions": [
+    ".npy",
+    ".npz",
+    ".rad",
+    ".vtk",
+    ".vtp",
+    ".pt",
+    ".pth",
+    ".mdlus",
+    ".exe",
+    ".dll",
+    ".zip",
+    ".pyc"
+  ],
+  "excluded_trees": [
+    "venv",
+    ".venv",
+    "deps",
+    "data",
+    "cache",
+    "raw FEM source",
+    "credentials"
+  ],
+  "independent_read_only_bootstrap_review": "Passed with no blocking findings; path/overwrite/profile/dependency-layout and five README links checked; no execution/import by reviewer."
+}

@@ -1,0 +1,47 @@
+{
+  "nodes": 76065,
+  "solid_cells": 130218,
+  "cell_type_counts": {
+    "VTK_TETRA4_10": 109600,
+    "VTK_HEXAHEDRON8_12": 20150,
+    "VTK_WEDGE6_13": 468
+  },
+  "wedge_conversion": "All468cells have native8slots [a,b,c,c,d,e,f,f]; mapped to6corners[a,b,c,d,e,f]. All9unique physical edges are preserved.",
+  "max_relative_wedge_reference_volume_difference": 3.88946562683721e-06,
+  "wedge_volume_note": "Node coordinates and all9edges preserved exactly. Alternate tetrahedral diagonals on nearly planar float32 quadrilateral faces leave a small nonzero volume difference; this is recorded, not claimed as bitwise geometric integration equality.",
+  "tet_orientation": "Sorted corner IDs reoriented to positive VTK tetra volume; cell order and NODE_ID point order stay fixed.",
+  "positive_reference_corner_volumes": true,
+  "node_part_unique": true,
+  "coverage": "76065physicalsolidcornernodes only;181034originalTETRA10midsidenodes excluded. No artificialwall display cells.",
+  "linearization": "TETRA10 is shown as TETRA4 corners; original quadratic FEM formulation is not preserved in the visualization.",
+  "VTK_type_reference": "https://vtk.org/doc/nightly/html/vtkCellType_8h.html",
+  "VTU_XML_reference": "https://docs.vtk.org/en/latest/vtk_file_formats/vtkxml_file_format.html",
+  "run_id": "phone_e110_rxm050",
+  "split": "test",
+  "globals": [
+    1.1,
+    -0.5
+  ],
+  "nominal_time_s": 2e-05,
+  "time_bracket": {
+    "nominal_time_s": 1.9999999999999998e-05,
+    "lower_actual_time_s": 1.9992070519947447e-05,
+    "upper_actual_time_s": 2.0001514712930657e-05,
+    "upper_weight": 0.839614360554514
+  },
+  "target_full_sha256": "2163454d8f683532d818d9d9680679eaefc7882ebe429bfc1bc437d1033ffbcf",
+  "point_order": "Exact shared/node_ids_full.npy order;76065points unchanged.",
+  "geometry": "ReferenceCoordinates_mm + FEM_U_mm, deformation scale1. Already deformed; do not warp by FEM_U a second time.",
+  "field_units": {
+    "FEM_U_mm": "mm",
+    "FEM_GPS_VM_MPa": "MPa",
+    "FEM_TOTAL_STRAIN_FROB": "1",
+    "FEM_EPSP": "1"
+  },
+  "field_definitions": "GPSVM from nodalGPS tensor. Strain validIPmean\u2192corner-volume weighted globaltensor\u2192Frob. EPSP corner-volume projected. These are canonical nodal targets, not nativecell/IP hotspot values.",
+  "AI_arrays_present": false,
+  "all_displayed_corner_volumes_positive": true,
+  "VTU_bytes": 13759876,
+  "VTU_sha256": "58819d9a5a989b22e97b6c9c818c9be725b3805aaa3331e241be99fc7e323b41",
+  "publication": "VTU local-only. Publicpackage should containwriter,JSONhash/audit andPNGpreview; no VTU or rawmesh/data."
+}

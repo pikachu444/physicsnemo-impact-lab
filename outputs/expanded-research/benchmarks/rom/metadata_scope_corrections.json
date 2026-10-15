@@ -1,0 +1,35 @@
+{
+  "reason": "Generic descriptive text retained the previous dataset label. Actual cache contracts, source code, predictions, selections, errors and timings remain unchanged; originals preserved.",
+  "changes": [
+    {
+      "file": "outputs\\expanded-research\\benchmarks\\rom\\coupon13\\metrics.json",
+      "field": "scope",
+      "original": "Exploratory public benchmark; same fixed geometry, heldout GPU-model split cases previously exist in public FEM results; no blindtest or appliance generalization claim.",
+      "corrected": "Newly generated OpenCourant tensile FEM13-case exploratory benchmark:919registered nodes,7fields,5train anchors/4validation/4test in a fixed2-parameter geometry. No whole-appliance or independent certification claim.",
+      "numerical_results_changed": false,
+      "original_execution_record": "outputs\\expanded-research\\benchmarks\\rom\\coupon13\\metrics.executed.json",
+      "original_sha256": "aae39f3be09e520f5ff3e7b0c7e57ff6d24b9ebb3b52d485cfdb858bdbadaf5d",
+      "corrected_sha256": "6d75bd77784284bc4018cee6c4d89dcd06b10c3b3d5df5eddc8cd3edb2f088c7"
+    },
+    {
+      "file": "outputs\\expanded-research\\benchmarks\\rom\\bumper7-direct-rbf\\metrics.json",
+      "field": "prediction_scope",
+      "original": "Registered mesh, globals listed in common cache; initial13 coupon cases split5train/4validation/4test. No unseen topology or whole-appliance generalization tested.",
+      "corrected": "Published OpenRadioss bumper ANIM131-case benchmark:13675registered nodes,7fields,112train/12validation/7test. Fixed geometry and2varying globals; no whole-appliance or damage certification claim.",
+      "numerical_results_changed": false,
+      "original_execution_record": "outputs\\expanded-research\\benchmarks\\rom\\bumper7-direct-rbf\\metrics.executed.json",
+      "original_sha256": "3420235b3c3e3a950b23519294642003546496a9f4424f86ab6e4f2b719dea3c",
+      "corrected_sha256": "8d75cb66cab405b82d59acf184b8ab98692da4df5a1e09bd89d55c300f00e806"
+    },
+    {
+      "file": "outputs\\expanded-research\\benchmarks\\rom\\bumper7-direct-rbf\\inference_reuse\\metrics.json",
+      "field": "prediction_scope",
+      "original": "Registered mesh, globals listed in common cache; initial13 coupon cases split5train/4validation/4test. No unseen topology or whole-appliance generalization tested.",
+      "corrected": "Exact fresh-checkpoint inference on the same published bumper131-case cache with7heldout cases; no refitting or selection.",
+      "numerical_results_changed": false,
+      "original_execution_record": "outputs\\expanded-research\\benchmarks\\rom\\bumper7-direct-rbf\\inference_reuse\\metrics.executed.json",
+      "original_sha256": "a708b441e2bf0fa89d42a9a9804335ece4c5aae2dc3d00ffd0e70a153bc002b6",
+      "corrected_sha256": "2ce5c0a1a117d03ba3074753dd72dae8835620abfba9ca6cb4c91001fdffd2d9"
+    }
+  ]
+}

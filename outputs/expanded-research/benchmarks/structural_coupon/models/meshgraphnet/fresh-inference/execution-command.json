@@ -1,0 +1,29 @@
+{
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "finished_utc": "2026-10-15T04:05:34.2285981+00:00",
+  "seconds": 31.8465224,
+  "stage": "fresh",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/meshgraphnet/source/run_benchmark.py",
+    "--cache",
+    "work/expanded-structural-coupon/cache-initial13-nodal7/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/meshgraphnet/fresh-inference",
+    "--mode",
+    "infer",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/meshgraphnet/best_checkpoint.pt",
+    "--reference",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/meshgraphnet/predictions.npy",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1"
+  ],
+  "started_utc": "2026-10-15T04:05:02.3820757+00:00",
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-meshgraphnet-fresh.log",
+  "architecture": "meshgraphnet",
+  "exit_code": 0
+}

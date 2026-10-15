@@ -1,0 +1,33 @@
+{
+  "scope": "Frozen postprocessing only; all fixed test cases included, no threshold/error-based test selection, refitting or clipping.",
+  "case_ids": [
+    "phone_e090_rxp050",
+    "phone_e110_rxm050"
+  ],
+  "time": 1.9999999999999998e-05,
+  "time_unit": "s",
+  "roi_definition": "Exact nonzero final-time FEM EPSP support union over all fixed test cases; reference XY bounding rectangle plus 1 mm display-only margin. Margin is not an accuracy or success threshold.",
+  "roi_reference_xy_min_mm": [
+    -28.51717758178711,
+    -51.3586540222168
+  ],
+  "roi_reference_xy_max_mm": [
+    -24.67894172668457,
+    -47.996238708496094
+  ],
+  "roi_node_count": 89,
+  "final_time_truth_nonzero_counts": [
+    0,
+    11
+  ],
+  "overlap_policy": "At coincident reference XY, higher absolute scalar values are drawn last to expose localized fields; this is not a 3D deformed-surface view.",
+  "shared_truth_prediction_color_range": [
+    -0.00035214112722314894,
+    0.00271891662850976
+  ],
+  "absolute_error_color_range": [
+    0.0,
+    0.00035214106901548803
+  ],
+  "source_sha256": "2c1dd0ee1f8a5d08690ce0949333ce78cbe353d3ab708c121f4f3a1bee02b991"
+}

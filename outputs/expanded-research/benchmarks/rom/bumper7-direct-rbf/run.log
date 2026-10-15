@@ -1,0 +1,13 @@
+{"gamma": 0.1, "alpha": 0.0001, "validation_normalized_mse": 0.1790475853416124}
+{"gamma": 0.1, "alpha": 0.01, "validation_normalized_mse": 0.19561025418060965}
+{"gamma": 0.1, "alpha": 0.1, "validation_normalized_mse": 0.20929305681701438}
+{"gamma": 0.3, "alpha": 0.0001, "validation_normalized_mse": 0.17363149133149147}
+{"gamma": 0.3, "alpha": 0.01, "validation_normalized_mse": 0.17419272357059146}
+{"gamma": 0.3, "alpha": 0.1, "validation_normalized_mse": 0.1858399270372599}
+{"gamma": 1.0, "alpha": 0.0001, "validation_normalized_mse": 0.27774405423956805}
+{"gamma": 1.0, "alpha": 0.01, "validation_normalized_mse": 0.15998080118257968}
+{"gamma": 1.0, "alpha": 0.1, "validation_normalized_mse": 0.15139988786354588}
+{"gamma": 3.0, "alpha": 0.0001, "validation_normalized_mse": 1.2269592949314845}
+{"gamma": 3.0, "alpha": 0.01, "validation_normalized_mse": 0.15911866989851872}
+{"gamma": 3.0, "alpha": 0.1, "validation_normalized_mse": 0.12295716585302226}
+{"status": "rbf_direct_field_training_and_heldout_evaluation_completed", "selected": {"gamma": 3.0, "alpha": 0.1}, "seconds": 34.80502060000072}

@@ -1,0 +1,18 @@
+{
+  "fresh_process": true,
+  "strategy": "time_conditional",
+  "checkpoint_sha256": "ae974d6bf4cdbd2f00d1033037f0146934815fc31b64a2b14fc4718281abe42f",
+  "prediction_max_abs_difference": 0.0,
+  "truth_max_abs_difference": 0.0,
+  "prediction_reproducible_at_atol_1e-4": true,
+  "physical_units": "mixed fields: per-field maximum differences below",
+  "per_field_max_abs_difference": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "domain": "phone_full",
+  "cache_ready": {
+    "ready_sha256": "30fda5162715ba5414644f969fa53dee4493bf749b5fe66ef7170208a7774274",
+    "manifest_sha256": "aa0848d5da1ce3ab103a03bcad6ae356896869357d5eec00cde82bb8d1ef1dca",
+    "expected_cases": 9,
+    "verified_files": 27
+  },
+  "shape": [
+    76065,
+    10,
+    6
+  ],
+  "split": {
+    "train": [
+      "phone_e100_rx000",
+      "phone_e080_rxm100",
+      "phone_e080_rxp100",
+      "phone_e120_rxm100",
+      "phone_e120_rxp100"
+    ],
+    "validation": [
+      "phone_e090_rxm050",
+      "phone_e110_rxp050"
+    ],
+    "test": [
+      "phone_e090_rxp050",
+      "phone_e110_rxm050"
+    ]
+  },
+  "names": [
+    "displacement_x",
+    "displacement_y",
+    "displacement_z",
+    "von_mises_GPS",
+    "total_strain_frobenius",
+    "epsp"
+  ],
+  "units": [
+    "mm",
+    "mm",
+    "mm",
+    "MPa",
+    "1",
+    "1"
+  ],
+  "time_values": [
+    2e-06,
+    4e-06,
+    6e-06,
+    8e-06,
+    9.999999999999999e-06,
+    1.2e-05,
+    1.4e-05,
+    1.6e-05,
+    1.8e-05,
+    1.9999999999999998e-05
+  ],
+  "coordinate_length_mm": 103.66151428222656,
+  "coordinate_origin_mm": [
+    0.09531667828559875,
+    -1.237444519996643,
+    2.4576499462127686
+  ],
+  "float32_coordinate_ulp_scale_mm": 1.2357415471342392e-05,
+  "position_loss_scale": [
+    5767.1201171875,
+    5767.1201171875,
+    5767.1201171875
+  ],
+  "initial_velocity": [
+    -3200.900390625,
+    -3511.24169921875,
+    -2618.28515625
+  ],
+  "velocity_unit": "mm/s",
+  "dt": 2e-06,
+  "time_unit": "s",
+  "time_assumption": "constant dt2us on labels linearly interpolated in physical units within actual saved-frame brackets; no extrapolation; original12frame provenance remains separate",
+  "time_input_encoding": "original wrapper future-frame index t/10: encoded0 corresponds to first future dt, encoded0.9 to final10dt; this is not physical t=0..1",
+  "initial_velocity_basis": "new-domains-source-and-resource-plan.json; source INIVEL vector and explicit group support verified, never future target differences",
+  "initial_velocity_scope_limit": "t0 velocity array not stored in ANIM; source card is the evidence",
+  "static_feature_name": "reference_mean_incident_corner_cell_volume_cuberoot",
+  "boundary_mask_policy": "coupon fixed/moving masks are not reused; no explicit tied/contact boundary mask is encoded",
+  "kinematic_stats": {
+    "norm_vel_mean": [
+      -30.82849749614553,
+      -33.816652248541224,
+      -25.20699683724732
+    ],
+    "norm_vel_std": [
+      0.7626737839353888,
+      0.7626737839353888,
+      0.7626737839353888
+    ],
+    "norm_acc_mean": [
+      5959.629125207642,
+      6393.33459071734,
+      5778.413850789501
+    ],
+    "norm_acc_std": [
+      140658.33754971446,
+      140658.33754971446,
+      140658.33754971446
+    ]
+  },
+  "kinematic_statistics_scope": "train-only source-independent a2..a10; first acceleration excluded as in original datapipe",
+  "normalization": {
+    "field_mean": [
+      -0.03517315913418567,
+      -0.0385820438540878,
+      -0.02876316748505359,
+      0.06022952564607638,
+      1.7047754975666166e-05,
+      1.2411550147925982e-08
+    ],
+    "field_std": [
+      0.017974573123006966,
+      0.017974573123006966,
+      0.017974573123006966,
+      0.45369370230930534,
+      0.00021970957380470076,
+      4.92506686390329e-06
+    ],
+    "constant_training_fields": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "normalization_groups": [
+      {
+        "fields": [
+          "displacement_x",
+          "displacement_y",
+          "displacement_z"
+        ],
+        "scale": 0.017974573123006966,
+        "definition": "sqrt(trace(training displacement covariance)/3), shared by all three vector components"
+      }
+    ],
+    "thickness_mean": 0.4747608139003153,
+    "thickness_std": 0.10520534419585854,
+    "global_mean": [
+      1.0000000238418578,
+      0.0
+    ],
+    "global_std": [
+      0.17888545419358806,
+      0.8944271909999159
+    ],
+    "coordinate_min": [
+      -29.730728969573974,
+      -52.867303657531735,
+      -2.1805434894561766
+    ],
+    "coordinate_span": [
+      59.46104404449463,
+      105.73474845886231,
+      9.167717113494874
+    ],
+    "coordinate_margin_fraction": 0.01
+  },
+  "normalization_sha256": "a51410b8b2ed7066e650e94e0f704e5a9195273886da1f0399d07a70a6d8574d",
+  "memory_policy": "stream train statistics and mmap labels; at most one current case target held on GPU",
+  "scope": "Two-dimensional small-data interpolation of initial 20 us response, not full drop/rebound, full-phone generalization, or independent five-material DoE."
+}

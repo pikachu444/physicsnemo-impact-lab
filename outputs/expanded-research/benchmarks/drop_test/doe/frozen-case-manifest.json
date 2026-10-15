@@ -1,0 +1,594 @@
+{
+  "experiment": "Public phone early-contact interpolation slice",
+  "physicsnemo_generator_commit": "11685edb3ec1fb6f25665e96cf7a8c4d11a23f16",
+  "original_starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+  "global_keys": [
+    "e_scale_common",
+    "rwall_rx_deg"
+  ],
+  "split_counts": {
+    "train": 5,
+    "val": 2,
+    "test": 2
+  },
+  "split_frozen_before_new_fem": true,
+  "physics_variations": "The five original materials share a common Young modulus multiplier. Only the original wall normal rotates; phone NODE coordinates, wall origin, velocity, gravity and mesh stay unchanged.",
+  "scope": "Two-dimensional small-data interpolation of initial 20 us response, not full drop/rebound, full-phone generalization, or independent five-material DoE.",
+  "angle_range_reason": "Official default nonzero 10 degree variants geometrically penetrate the original phone. All chosen +/-1 degree and inner +/-0.5 degree variants have zero minimum gap without translating the wall.",
+  "reference_coordinates": "Original RAD physical coordinates keyed by NODE_ID. ANIM t0 is checked separately, never silently substituted.",
+  "learning_contract": "Rear-cover part2, 19933 shared corner nodes; uXYZ + GPS-derived nodal VM + volume-projected total-strain Frobenius + volume-projected EPSP; native full-solid fields kept separately.",
+  "runs": [
+    {
+      "run_id": "phone_e100_rx000",
+      "split": "train",
+      "e_scale_common": 1.0,
+      "rwall_rx_deg": 0.0,
+      "global_features": [
+        1.0,
+        0.0
+      ],
+      "raw_run_dir": "work/expanded-drop/20us-run",
+      "existing_baseline_reused": true,
+      "requested_engine_end_time_s": 2e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "435499d744ad560a843d9a21210483bbe74c9fc6e2775da4a232ce609cf097e2",
+      "engine_sha256": "2035ae33a3e4143276e6ac87eafef10029ed16f92839f0caf44fc236a381ea26",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.590034242563128,
+        0.6472402660805264,
+        0.48263819841260525
+      ]
+    },
+    {
+      "run_id": "phone_e080_rxm100",
+      "split": "train",
+      "e_scale_common": 0.8,
+      "rwall_rx_deg": -1.0,
+      "global_features": [
+        0.8,
+        -1.0
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e080_rxm100",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "fe6f6c2d41717ea151293e2c06fdb9cc8e9674df9b047b7015c91dfc87db896c",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                1600                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                1600                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               56000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               12000                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                1600                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.170720            4.058418"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900339820800796,
+        0.6555649800898344,
+        0.471268985687091
+      ]
+    },
+    {
+      "run_id": "phone_e080_rxp100",
+      "split": "train",
+      "e_scale_common": 0.8,
+      "rwall_rx_deg": 1.0,
+      "global_features": [
+        0.8,
+        1.0
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e080_rxp100",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "3dd8b5a9d368385582d56a7f02e9940c1f08ed6a765d1c906a0f37426b1245c0",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                1600                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                1600                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               56000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               12000                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                1600                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.187567            4.081009"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900344412633228,
+        0.638718477672178,
+        0.49386036933855476
+      ]
+    },
+    {
+      "run_id": "phone_e120_rxm100",
+      "split": "train",
+      "e_scale_common": 1.2,
+      "rwall_rx_deg": -1.0,
+      "global_features": [
+        1.2,
+        -1.0
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e120_rxm100",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "6d5b49b102b7caf13fcc52d55e58a583ee67d2d8f5a7325d9f51e68246836cc4",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                2400                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                2400                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               84000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               18000                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                2400                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.170720            4.058418"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900339820800796,
+        0.6555649800898344,
+        0.471268985687091
+      ]
+    },
+    {
+      "run_id": "phone_e120_rxp100",
+      "split": "train",
+      "e_scale_common": 1.2,
+      "rwall_rx_deg": 1.0,
+      "global_features": [
+        1.2,
+        1.0
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e120_rxp100",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "828fad594ef263fd8df88e9354abe5b15004b21830076673e8081e7149f94d88",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                2400                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                2400                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               84000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               18000                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                2400                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.187567            4.081009"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900344412633228,
+        0.638718477672178,
+        0.49386036933855476
+      ]
+    },
+    {
+      "run_id": "phone_e090_rxm050",
+      "split": "val",
+      "e_scale_common": 0.9,
+      "rwall_rx_deg": -0.5,
+      "global_features": [
+        0.9,
+        -0.5
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e090_rxm050",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "3530819242f430e4052a3c2331269b609fa5fcca12dd9efd6571a593e43e5c14",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                1800                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                1800                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               63000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               13500                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                1800                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.174858            4.064120"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900344152881992,
+        0.6514274584989088,
+        0.47697133571019285
+      ]
+    },
+    {
+      "run_id": "phone_e110_rxp050",
+      "split": "val",
+      "e_scale_common": 1.1,
+      "rwall_rx_deg": 0.5,
+      "global_features": [
+        1.1,
+        0.5
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e110_rxp050",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "fa6ba11a9a390e1df85b299322a1c6db136991319cdfd68a40bb9c2b3aeb24ff",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                2200                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                2200                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               77000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               16500                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                2200                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.183281            4.075417"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900340280277976,
+        0.6430040305439773,
+        0.48826802319370893
+      ]
+    },
+    {
+      "run_id": "phone_e090_rxp050",
+      "split": "test",
+      "e_scale_common": 0.9,
+      "rwall_rx_deg": 0.5,
+      "global_features": [
+        0.9,
+        0.5
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e090_rxp050",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "5952227ce9e8ebc4ff7683d887ca650708d63b5672a0218c74b8b462abb38360",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                1800                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                1800                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               63000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               13500                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                1800                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.183281            4.075417"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900340280277976,
+        0.6430040305439773,
+        0.48826802319370893
+      ]
+    },
+    {
+      "run_id": "phone_e110_rxm050",
+      "split": "test",
+      "e_scale_common": 1.1,
+      "rwall_rx_deg": -0.5,
+      "global_features": [
+        1.1,
+        -0.5
+      ],
+      "raw_run_dir": "work/expanded-drop/doe/phone_e110_rxm050",
+      "existing_baseline_reused": false,
+      "requested_engine_end_time_s": 2.002e-05,
+      "nominal_learning_times_s": [
+        2e-06,
+        4e-06,
+        6e-06,
+        8e-06,
+        9.999999999999999e-06,
+        1.2e-05,
+        1.4e-05,
+        1.6e-05,
+        1.8e-05,
+        1.9999999999999998e-05
+      ],
+      "starter_sha256": "b34c8e92993ebc5391210aa1e9d632418cc510415d09105fc8112a87c01de082",
+      "engine_sha256": "54a2bce74b5b0750c48a887eb6224a91a8fc3a49ce1813bbd81230f5144bab98",
+      "original_node_coordinates_unchanged": true,
+      "changed_lines": [
+        {
+          "line": 35,
+          "before": "                2000                  .4                   0                   0                   0",
+          "after": "                2200                  .4                   0                   0                   0"
+        },
+        {
+          "line": 52,
+          "before": "                2000                  .3",
+          "after": "                2200                  .3"
+        },
+        {
+          "line": 59,
+          "before": "               70000                  .3",
+          "after": "               77000                  .3"
+        },
+        {
+          "line": 66,
+          "before": "               15000                  .3",
+          "after": "               16500                  .3"
+        },
+        {
+          "line": 73,
+          "before": "                2000                  .3",
+          "after": "                2200                  .3"
+        },
+        {
+          "line": 629261,
+          "before": "           -26.35408          -49.179045            4.069787",
+          "after": "          -26.354080          -49.174858            4.064120"
+        }
+      ],
+      "minimum_initial_signed_gap_mm": 0.0,
+      "initial_penetrating_nodes": 0,
+      "wall_unit_normal": [
+        0.5900344152881992,
+        0.6514274584989088,
+        0.47697133571019285
+      ]
+    }
+  ]
+}

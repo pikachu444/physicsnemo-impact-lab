@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-10-15T03:58:39.0024163+00:00",
+  "stage": "fresh",
+  "architecture": "geoflare",
+  "seconds": 32.5133861,
+  "finished_utc": "2026-10-15T03:59:11.5158024+00:00",
+  "working_directory": "<LOCAL_WORKSPACE>",
+  "exit_code": 0,
+  "log": "<LOCAL_WORKSPACE>\\work\\expanded-ml\\coupon-geoflare-fresh.log",
+  "command": [
+    "<LOCAL_WORKSPACE>\\work\\expanded-ml\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geoflare/source/run_benchmark.py",
+    "--cache",
+    "work/expanded-structural-coupon/cache-initial13-nodal7/manifest.json",
+    "--out",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geoflare/fresh-inference",
+    "--mode",
+    "infer",
+    "--checkpoint",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geoflare/best_checkpoint.pt",
+    "--reference",
+    "outputs/expanded-research/benchmarks/structural_coupon/models/geoflare/predictions.npy",
+    "--require-ready",
+    "--expected-manifest-sha256",
+    "08876879b2b003f8222b831bb51a15c63f8d69d30e6b83e077385f80850169b1"
+  ]
+}

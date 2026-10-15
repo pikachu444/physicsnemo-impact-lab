@@ -1,0 +1,93 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                        OpenCourant Starter                         **
+**                                                                    **
+**            Non-linear Finite Element Analysis Software             **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+**                  Windows 64 bits, Intel compiler                   **
+**                 Extended Single Precision Version                  **
+**                                                                    **
+**                                                                    **
+**                                                                    **
+************************************************************************
+** OpenCourant Software                                               **
+** COPYRIGHT (C) 2026 Siemens                                         **
+** Licensed under GNU Affero General Public License.                  **
+** See License file.                                                  **
+************************************************************************
+ 
+
+ .. UNITS SYSTEM                                                                         
+ .. CONTROL VARIABLES                                                                    
+ .. STARTER RUNNING ON    2 THREADS
+ .. FUNCTIONS & TABLES
+ .. MATERIALS                                                                            
+ .. NODES                                                                                
+ .. PROPERTIES                                                                           
+ .. 3D SOLID ELEMENTS                                                                    
+ .. SUBSETS
+ .. ELEMENT GROUPS
+ .. PART GROUPS
+ .. SURFACES 
+ .. NODE GROUP
+ .. INITIAL VELOCITIES                                                                   
+ .. DOMAIN DECOMPOSITION
+ .. ELEMENT GROUPS                                                                       
+ .. INTERFACES                                                                           
+ .. INTERFACE BUFFER INITIALIZATION                                                      
+
+WARNING ID :   1873
+** WARNING: CHECK TIED INTERFACE - PROJECTION ON 3 NODES SEGMENTS
+ .. RIGID WALLS                                                                          
+ .. RETURNS TO DOMAIN DECOMPOSITION FOR OPTIMIZATION
+ .. DOMAIN DECOMPOSITION
+ .. ELEMENT GROUPS                                                                       
+ .. INTERFACES                                                                           
+ .. INTERFACE BUFFER INITIALIZATION                                                      
+
+WARNING ID :   1873
+** WARNING: CHECK TIED INTERFACE - PROJECTION ON 3 NODES SEGMENTS
+ .. RIGID WALLS                                                                          
+ .. ELEMENT BUFFER INITIALIZATION                                                        
+
+WARNING ID :   1179
+** WARNING: SWITCH TO PENALTY IN TIED INTERFACE
+
+WARNING ID :   1179
+** WARNING: SWITCH TO PENALTY IN TIED INTERFACE
+
+WARNING ID :    312
+** INCOMPATIBLE KINEMATIC CONDITIONS IN MODEL
+DESCRIPTION :  
+    3594 INCOMPATIBLE KINEMATIC CONDITIONS IN MODEL
+ .. GEOMETRY PLOT FILE                                                                   
+ .. PARALLEL RESTART FILES GENERATION                                                    
+  
+------------------------------------------------------------------------
+  
+                   ** COMPUTE TIME INFORMATION **
+  
+ EXECUTION STARTED      :      2026/10/15  12:34:50
+ EXECUTION COMPLETED    :      2026/10/15  12:34:59
+  
+ ELAPSED TIME...........=          8.92 s
+                               00:00:08
+  
+------------------------------------------------------------------------
+
+
+
+     TERMINATION WITH WARNING           
+     ------------------                                                                  
+              0 ERROR(S)            
+              6 WARNING(S)          
+
+
+
+
+PLEASE CHECK LISTING FILE FOR FURTHER DETAILS
+
+

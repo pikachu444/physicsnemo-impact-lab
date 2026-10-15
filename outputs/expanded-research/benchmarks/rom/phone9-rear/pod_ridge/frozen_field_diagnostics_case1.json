@@ -1,0 +1,113 @@
+{
+  "scope": "Frozen heldout predictions only. No refitting, rank changes, test selection or response clipping.",
+  "case": "phone_e110_rxm050",
+  "time": 1.9999999999999998e-05,
+  "time_unit": "s",
+  "postprocess_source_sha256": "99d43e9eaefd4a51ee601bfcbb5c296af0d50f832efeb0f083c374fc21983515",
+  "geometry": "Reference XY, nodal scalar fields. Source projection/derivation is defined by the frozen manifest. Nodal extrema do not establish original element/integration-point maxima; overlapping parts may be hidden by the XY projection.",
+  "figure_fields": {
+    "von_mises_GPS": {
+      "shared_fem_prediction_color_range": [
+        2.613943252072204e-06,
+        28.55896759033203
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.5539994239807129
+      ],
+      "display_unit": "MPa",
+      "source_unit": "MPa",
+      "display_multiplier": 1.0
+    },
+    "total_strain_frobenius": {
+      "shared_fem_prediction_color_range": [
+        4.1009828866123144e-10,
+        0.015889832749962807
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.00027203140780329704
+      ],
+      "display_unit": "1",
+      "source_unit": "1",
+      "display_multiplier": 1.0
+    },
+    "epsp": {
+      "shared_fem_prediction_color_range": [
+        -5.690077387043857e-08,
+        0.00271891662850976
+      ],
+      "absolute_error_color_range": [
+        0.0,
+        0.00036559603177011013
+      ],
+      "display_unit": "1",
+      "source_unit": "1",
+      "display_multiplier": 1.0
+    }
+  },
+  "physical_diagnostics": {
+    "displacement_x": {
+      "unit": "mm",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -0.06681832671165466,
+      "maximum": 0.0,
+      "unclipped": true
+    },
+    "displacement_y": {
+      "unit": "mm",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -0.07264651358127594,
+      "maximum": 0.0,
+      "unclipped": true
+    },
+    "displacement_z": {
+      "unit": "mm",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": null,
+      "negative_fraction_if_nonnegative_field": null,
+      "minimum": -0.05907949060201645,
+      "maximum": 0.005057420581579208,
+      "unclipped": true
+    },
+    "von_mises_GPS": {
+      "unit": "MPa",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": 5325,
+      "negative_fraction_if_nonnegative_field": 0.01335724677670195,
+      "minimum": -0.004940584767609835,
+      "maximum": 28.217388153076172,
+      "unclipped": true
+    },
+    "total_strain_frobenius": {
+      "unit": "1",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": 4208,
+      "negative_fraction_if_nonnegative_field": 0.010555360457532735,
+      "minimum": -2.0076167857041582e-06,
+      "maximum": 0.015832174569368362,
+      "unclipped": true
+    },
+    "epsp": {
+      "unit": "1",
+      "total_values": 398660,
+      "nonfinite_count": 0,
+      "negative_count_if_nonnegative_field": 39,
+      "negative_fraction_if_nonnegative_field": 9.782772287161993e-05,
+      "minimum": -0.00039480399573221803,
+      "maximum": 0.0023533205967396498,
+      "unclipped": true
+    }
+  },
+  "horizontal_reference_axis": "Y",
+  "vertical_reference_axis": "X"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "assertions_passed",
+  "scope": "Author-side separate-formula verification, not independent external review",
+  "train_mean_field_exact_match": true,
+  "channel_normalization_recomputed_from_train_only": true,
+  "112_12_7_disjoint": true,
+  "methods": {
+    "pod_rbf": {
+      "recomputed_l2": 0.030996432104822055,
+      "recomputed_component_rmse_mm": 2.613612085879994,
+      "shape": [
+        7,
+        13675,
+        10,
+        3
+      ],
+      "fresh_inference": 0.0
+    },
+    "pod_ridge": {
+      "recomputed_l2": 0.10056008191337139,
+      "recomputed_component_rmse_mm": 8.479203172709108,
+      "shape": [
+        7,
+        13675,
+        10,
+        3
+      ],
+      "fresh_inference": 0.0
+    }
+  },
+  "sources_match_recorded_hashes": true
+}
